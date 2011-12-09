@@ -1,0 +1,262 @@
+<?xml version="1.0" ?>
+<!--EXTERNAL_PROPERTIES: build.number -->
+<!--EXTERNAL_PROPERTIES: build.vcs.number.1 -->
+<project name="NHtmlUnit" default="build-and-merge-to-bin" xmlns="http://nant.sf.net/schemas/nant.xsd">
+   <property name="nant.settings.currentframework" value="net-4.0" />
+   <property name="project.config" value="release" />
+   <property name="company.name" value="OKB AS" />
+   <property name="product.name" value="NHtmlUnit" />
+   <property name="isIntegration" value="${environment::variable-exists('INTEGRATION_BASE')}" />
+
+   <!-- Version -->
+   <property name="version.major" value="1"/>
+   <property name="version.minor" value="0"/>
+   <property name="version.build" value="0"/>
+   <property name="project.version" value="${version.major}.${version.minor}.${version.build}" />
+   <property name="project.fullversion" value="${project.version}" dynamic="true" />
+
+    <!-- Directories and files -->
+   <property name="build.dir" value="build" />
+   <property name="root.dir" value="${directory::get-current-directory()}" />
+   <property name="solution.dir" value="${root.dir}"/>
+   <property name="solution.file" value="${solution.dir}\HtmlUnitWrapper.sln"/>
+   <property name="results.dir" value="${build.dir}\results" />
+   <property name="temp.dir" value="${build.dir}\temp" />
+   <property name="docs.dir" value="${build.dir}\docs" />
+   <property name="lib.dir" value="lib" />
+   <property name="tests.dir" value="tests" />
+   <property name="tools.dir" value="tools" />
+   <property name="ilmerge.dir" value="${tools.dir}\ILMerge" />
+   <property name="log.file" value="${results.dir}\merge.log" />
+   <property name="svn.dir" value="${tools.dir}\SVN" />
+   <property name="release.dir" value="${path::combine(build.dir, project.version)}" />
+   <property name="integration.dir" value="${environment::get-variable('INTEGRATION_BASE')}" if="${isIntegration}" />
+   
+   <!-- Assemblies -->
+   <property name="merged.assembly.name" value="${build.dir}\${project::get-name()}.dll" />
+   <property name="temp.assembly.name" value="${temp.dir}\${project::get-name()}.dll" />
+
+   <!-- Common -->
+   <include buildfile="${tools.dir}\Nant\ilmerge.task" />
+         
+   <!-- Targets -->
+   <target name="build-and-merge-to-bin" depends="build, move-to-bin, package">
+      <!-- Clean up -->
+      <delete dir="${temp.dir}" if="${directory::exists(temp.dir)}" />
+   </target>
+   
+   <target name="build-and-integrate" depends="build-and-merge-to-bin, documentation, integrate" />
+   
+   <target name="build" depends="move-for-merge">
+      <!--
+      <echo message="Merging assemblies. This is going to take a very long time"/>
+      <echo message="and probably make your computer quite unusable for the whole "/>
+      <echo message="period. Be very, very patient..!"/>
+      <echo message=""/>
+      
+      <fileset id="assembliesToMerge">
+         <include name="${temp.dir}\*.dll" />
+         <exclude name="${temp.dir}\${product.name}.dll" />
+      </fileset>
+
+      <ilmerge outputfile="${merged.assembly.name}"
+               primary="${temp.assembly.name}"
+               program="${ilmerge.dir}\ilmerge.exe"
+               logfile="${log.file}"
+               internalize="false"
+               allowDuplicates="true"
+               copyAttributes="true"
+               debugInfo="true"
+               xmldoc="true">
+         <assemblies refid="assembliesToMerge" />
+      </ilmerge>
+      -->
+   </target>
+   
+   <target name="move-for-merge" depends="compile, test">
+      <copy todir="${temp.dir}" flatten="true">
+         <fileset basedir="${solution.dir}\app">
+            <include name="/**/bin/${project.config}/**" />
+         </fileset>
+      </copy>
+   </target>
+   
+   <target name="compile" description="Compiles the solution" depends="clean, version">
+      <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" workingdir="${solution.dir}">
+         <arg file="${solution.file}" />
+         <arg value="/t:Clean" />
+         <arg value="/p:Configuration=${project.config}" />
+         <arg value="/p:Platform=Any CPU" />
+         <arg value="/v:q" />
+      </exec>
+      <exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" workingdir="${solution.dir}">
+         <arg file="${solution.file}" />
+         <arg value="/t:Rebuild" />
+         <arg value="/p:Configuration=${project.config}" />
+         <arg value="/p:Platform=Any CPU" />
+         <arg value="/v:q" />
+      </exec>
+   </target>
+   
+   <target name="clean" description="Delete Automated Build artifacts">
+      <delete dir="${temp.dir}" if="${directory::exists(temp.dir)}"/>
+   </target>
+   
+   <target name="version" description="Generate AssemblyInfo" depends="SubversionRevision">
+      <!--
+      <property name="version.build" value="${build.number}" if="${property::exists('build.number')}"/>
+
+      <echo message="Marking build with version ${project.fullversion}" />
+      <delete file="${solution.dir}/app/Shared/CommonAssemblyInfo.cs" failonerror="false"/>
+      <asminfo output="${solution.dir}/app/Shared/CommonAssemblyInfo.cs" language="CSharp">
+         <imports>
+            <import namespace="System.Reflection" />
+            <import namespace="System.Runtime.InteropServices" />
+         </imports>
+         <attributes>
+            <attribute type="AssemblyProductAttribute" value="${product.name}" />
+            <attribute type="AssemblyCompanyAttribute" value="${company.name}" />
+            <attribute type="AssemblyTrademarkAttribute" value="${company.name}" />
+            <attribute type="AssemblyCopyrightAttribute" value="Copyright © 2003-${datetime::get-year(datetime::now())} ${company.name}" />
+            <attribute type="AssemblyVersionAttribute" value="${project.fullversion}" />
+            <attribute type="AssemblyFileVersionAttribute" value="${project.fullversion}" />
+            <attribute type="AssemblyInformationalVersionAttribute" value="${project.fullversion}" />
+            <attribute type="AssemblyConfigurationAttribute" value="${project.config}" />
+            <attribute type="ComVisibleAttribute" value="false" />
+         </attributes>
+         <references>
+            <include name="System.dll" />
+         </references>
+      </asminfo>
+      -->
+   </target>
+   
+   <target name="SubversionRevision">
+      <mkdir dir="${results.dir}" />
+      <!-- Retrieve subversion revision number -->
+      <echo message="Retrieving Subversion revision number"/>
+      <property name="version.revision" value="0" dynamic="true" />
+      
+      <if test="${environment::variable-exists('revision')}">
+         <property name="version.revision" value="${environment::get-variable('revision')}" />
+      </if>
+      
+      <if test="${not environment::variable-exists('revision')}">
+         <exec program="${svn.dir}\svn.exe"
+               commandline='log "${solution.dir}" --xml --limit 1 --username TeamCity --password Kremo$t! --non-interactive'
+               output="${results.dir}\SvnLog.xml"
+               failonerror="true" />
+
+         <xmlpeek file="${results.dir}\SvnLog.xml"
+                  xpath="/log/logentry/@revision"
+                  property="version.revision"
+                  failonerror="true" />
+      </if>
+      <property name="project.fullversion" value="${project.version}.${version.revision}" />
+      <echo message="Using Subversion revision number: ${version.revision}"/>
+   </target>
+   
+   <target name="test" depends="compile">
+      <echo message="Running tests, this may take a while..." />
+
+      <exec program="${tools.dir}\nunit\nunit-console-x86.exe" timeout="720000">
+         <arg file="tests\IntegrationTests\bin\${project.config}\IntegrationTests.dll" />
+         <!--
+         <arg file="tests\Bizi.Framework.UnitTests\bin\${project.config}\Bizi.Framework.UnitTests.dll" />
+         <arg file="tests\Bizi.Framework.SystemTests\bin\${project.config}\Bizi.Framework.SystemTests.dll" />
+         -->
+         <arg value="/xml=${results.dir}\TestResult.xml" />
+         <arg value="/nologo" />
+         <arg value="/nodots" />
+         <arg value="/output=${results.dir}\TestOutput.txt" />
+      </exec>
+   </target>
+   
+   <target name="move-to-bin" depends="build">
+      <mkdir dir="${build.dir}/bin" />
+
+      <copy todir="${build.dir}/bin" overwrite="true">
+          <fileset basedir="${temp.dir}">
+             <include name="${temp.dir}\*.dll" />
+             <include name="${temp.dir}\*.pdb" />
+             <include name="${temp.dir}\*.xml" />
+             <exclude name="${temp.dir}\${product.name}.dll" />
+          </fileset>
+         
+         <!--
+         <fileset basedir="${temp.dir}">
+            <include name="${project::get-name()}.dll" />
+            <include name="${project::get-name()}.pdb" />
+            <include name="${project::get-name()}.xml" />
+         </fileset>
+         -->
+      </copy>
+   </target>
+
+   <target name="documentation" depends="compile">
+      <mkdir dir="${docs.dir}" unless="${directory::exists(docs.dir)}" />
+      
+      <exec program="${doxygen.dir}\doxygen.exe"
+            commandline='doxygen.config'
+            workingdir="${solution.dir}" />
+           
+      <copy todir="${docs.dir}\api\html">
+         <fileset basedir="${doxygen.dir}">
+            <include name="header-bg.png" />
+         </fileset>
+      </copy>
+   </target>
+   
+   <target name="integrate" depends="package">
+      <delete dir="${integration.dir}\${project.version}" />
+      <copy todir="${integration.dir}" overwrite="true">
+         <fileset basedir="${build.dir}">
+            <include name="**/*.*" />
+         </fileset>
+      </copy>
+      <copy todir="${integration.dir}\api" overwrite="true">
+         <fileset basedir="${docs.dir}\api\html">
+            <include name="**/*.*" />
+         </fileset>
+      </copy>
+   </target>
+   
+   <target name="package" depends="build, move-to-bin">
+      <delete dir="${release.dir}" if="${directory::exists(release.dir)}" />
+      <mkdir dir="${release.dir}" />
+      
+      <zip zipfile="${release.dir}\${project::get-name()}-bin-${project.config}-${project.fullversion}.zip">
+         <fileset basedir="${temp.dir}" prefix="${project::get-name()}">
+            <include name="${project::get-name()}.*.*" />
+         </fileset>
+         <fileset basedir="lib">
+            <include name="**/*.*" />
+         </fileset>
+      </zip>
+      
+      <zip zipfile="${release.dir}\${project::get-name()}-bin-${project.config}-merged-${project.fullversion}.zip">
+         <fileset basedir="${build.dir}\bin" prefix="${project::get-name()}">
+            <include name="${project::get-name()}.*" />
+         </fileset>
+         <fileset basedir="lib">
+            <include name="**/*.*" />
+         </fileset>
+      </zip>
+
+      <zip zipfile="${release.dir}\${project::get-name()}-src-${project.fullversion}.zip">
+         <fileset basedir="${solution.dir}">
+            <include name="*.*" />
+            <include name="app/**/*.*" />
+            <include name="tests/**/*.*" />
+            <include name="lib/**/*.*" />
+            <exclude name="**/*.user" />
+            <exclude name="**/*.cache" />
+            <exclude name="**/*.suo" />
+            <exclude name="**/bin/**" />
+            <exclude name="**/obj/**" />
+            <exclude name="**/_ReSharper.*/**" />
+            <exclude name="**/App_Data/*.*" />
+         </fileset>
+      </zip>
+   </target>
+</project>

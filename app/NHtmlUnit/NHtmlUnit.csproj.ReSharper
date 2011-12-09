@@ -1,0 +1,6 @@
+<Configuration>
+  <NamespaceFolders>
+    <SkipFolder>8E71417D-9EEE-4FCD-B738-9D4939D1F20C/d:Generated</SkipFolder>
+    <SkipFolder>8E71417D-9EEE-4FCD-B738-9D4939D1F20C/d:NonGenerated</SkipFolder>
+  </NamespaceFolders>
+</Configuration>

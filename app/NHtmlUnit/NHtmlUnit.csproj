@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E71417D-9EEE-4FCD-B738-9D4939D1F20C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NHtmlUnit</RootNamespace>
+    <AssemblyName>NHtmlUnit</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlUnit, Version=2.9.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\..\lib\HtmlUnit\x64\HtmlUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI">
+      <HintPath>..\..\lib\IKVM\_bin\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Generated\AjaxController.cs" />
+    <Compile Include="Generated\Attachment\IAttachmentHandler.cs" />
+    <Compile Include="Generated\BrowserVersion.cs" />
+    <Compile Include="Generated\BrowserVersionFeatures.cs" />
+    <Compile Include="Generated\Cache.cs" />
+    <Compile Include="Generated\CookieManager.cs" />
+    <Compile Include="Generated\DialogWindow.cs" />
+    <Compile Include="Generated\FormEncodingType.cs" />
+    <Compile Include="Generated\History.cs" />
+    <Compile Include="Generated\Html\BaseFrame.cs" />
+    <Compile Include="Generated\Html\DomAttr.cs" />
+    <Compile Include="Generated\Html\DomCDataSection.cs" />
+    <Compile Include="Generated\Html\DomChangeEvent.cs" />
+    <Compile Include="Generated\Html\DomCharacterData.cs" />
+    <Compile Include="Generated\Html\DomComment.cs" />
+    <Compile Include="Generated\Html\DomDocumentFragment.cs" />
+    <Compile Include="Generated\Html\DomDocumentType.cs" />
+    <Compile Include="Generated\Html\DomElement.cs" />
+    <Compile Include="Generated\Html\DomNamespaceNode.cs" />
+    <Compile Include="Generated\Html\DomNode.cs" />
+    <Compile Include="Generated\Html\DomProcessingInstruction.cs" />
+    <Compile Include="Generated\Html\DomText.cs" />
+    <Compile Include="Generated\Html\FrameWindow.cs" />
+    <Compile Include="Generated\Html\HtmlAbbreviated.cs" />
+    <Compile Include="Generated\Html\HtmlAcronym.cs" />
+    <Compile Include="Generated\Html\HtmlAddress.cs" />
+    <Compile Include="Generated\Html\HtmlAnchor.cs" />
+    <Compile Include="Generated\Html\HtmlApplet.cs" />
+    <Compile Include="Generated\Html\HtmlArea.cs" />
+    <Compile Include="Generated\Html\HtmlAttributeChangeEvent.cs" />
+    <Compile Include="Generated\Html\HtmlAudio.cs" />
+    <Compile Include="Generated\Html\HtmlBackgroundSound.cs" />
+    <Compile Include="Generated\Html\HtmlBase.cs" />
+    <Compile Include="Generated\Html\HtmlBaseFont.cs" />
+    <Compile Include="Generated\Html\HtmlBidirectionalOverride.cs" />
+    <Compile Include="Generated\Html\HtmlBig.cs" />
+    <Compile Include="Generated\Html\HtmlBlink.cs" />
+    <Compile Include="Generated\Html\HtmlBlockQuote.cs" />
+    <Compile Include="Generated\Html\HtmlBody.cs" />
+    <Compile Include="Generated\Html\HtmlBold.cs" />
+    <Compile Include="Generated\Html\HtmlBreak.cs" />
+    <Compile Include="Generated\Html\HtmlButton.cs" />
+    <Compile Include="Generated\Html\HtmlButtonInput.cs" />
+    <Compile Include="Generated\Html\HtmlCanvas.cs" />
+    <Compile Include="Generated\Html\HtmlCaption.cs" />
+    <Compile Include="Generated\Html\HtmlCenter.cs" />
+    <Compile Include="Generated\Html\HtmlCheckBoxInput.cs" />
+    <Compile Include="Generated\Html\HtmlCitation.cs" />
+    <Compile Include="Generated\Html\HtmlCode.cs" />
+    <Compile Include="Generated\Html\HtmlDefinition.cs" />
+    <Compile Include="Generated\Html\HtmlDefinitionDescription.cs" />
+    <Compile Include="Generated\Html\HtmlDefinitionList.cs" />
+    <Compile Include="Generated\Html\HtmlDefinitionTerm.cs" />
+    <Compile Include="Generated\Html\HtmlDeletedText.cs" />
+    <Compile Include="Generated\Html\HtmlDirectory.cs" />
+    <Compile Include="Generated\Html\HtmlDivision.cs" />
+    <Compile Include="Generated\Html\HtmlElement.cs" />
+    <Compile Include="Generated\Html\HtmlEmbed.cs" />
+    <Compile Include="Generated\Html\HtmlEmphasis.cs" />
+    <Compile Include="Generated\Html\HtmlExample.cs" />
+    <Compile Include="Generated\Html\HtmlFieldSet.cs" />
+    <Compile Include="Generated\Html\HtmlFileInput.cs" />
+    <Compile Include="Generated\Html\HtmlFont.cs" />
+    <Compile Include="Generated\Html\HtmlForm.cs" />
+    <Compile Include="Generated\Html\HtmlFrame.cs" />
+    <Compile Include="Generated\Html\HtmlFrameSet.cs" />
+    <Compile Include="Generated\Html\HtmlHead.cs" />
+    <Compile Include="Generated\Html\HtmlHeading1.cs" />
+    <Compile Include="Generated\Html\HtmlHeading2.cs" />
+    <Compile Include="Generated\Html\HtmlHeading3.cs" />
+    <Compile Include="Generated\Html\HtmlHeading4.cs" />
+    <Compile Include="Generated\Html\HtmlHeading5.cs" />
+    <Compile Include="Generated\Html\HtmlHeading6.cs" />
+    <Compile Include="Generated\Html\HtmlHiddenInput.cs" />
+    <Compile Include="Generated\Html\HtmlHorizontalRule.cs" />
+    <Compile Include="Generated\Html\HtmlHtml.cs" />
+    <Compile Include="Generated\Html\HtmlImage.cs" />
+    <Compile Include="Generated\Html\HtmlImageInput.cs" />
+    <Compile Include="Generated\Html\HtmlInlineFrame.cs" />
+    <Compile Include="Generated\Html\HtmlInlineQuotation.cs" />
+    <Compile Include="Generated\Html\HtmlInput.cs" />
+    <Compile Include="Generated\Html\HtmlInsertedText.cs" />
+    <Compile Include="Generated\Html\HtmlIsIndex.cs" />
+    <Compile Include="Generated\Html\HtmlItalic.cs" />
+    <Compile Include="Generated\Html\HtmlKeyboard.cs" />
+    <Compile Include="Generated\Html\HtmlLabel.cs" />
+    <Compile Include="Generated\Html\HtmlLegend.cs" />
+    <Compile Include="Generated\Html\HtmlLink.cs" />
+    <Compile Include="Generated\Html\HtmlListing.cs" />
+    <Compile Include="Generated\Html\HtmlListItem.cs" />
+    <Compile Include="Generated\Html\HtmlMap.cs" />
+    <Compile Include="Generated\Html\HtmlMarquee.cs" />
+    <Compile Include="Generated\Html\HtmlMenu.cs" />
+    <Compile Include="Generated\Html\HtmlMeta.cs" />
+    <Compile Include="Generated\Html\HtmlMultiColumn.cs" />
+    <Compile Include="Generated\Html\HtmlNoBreak.cs" />
+    <Compile Include="Generated\Html\HtmlNoEmbed.cs" />
+    <Compile Include="Generated\Html\HtmlNoFrames.cs" />
+    <Compile Include="Generated\Html\HtmlNoScript.cs" />
+    <Compile Include="Generated\Html\HtmlObject.cs" />
+    <Compile Include="Generated\Html\HtmlOption.cs" />
+    <Compile Include="Generated\Html\HtmlOptionGroup.cs" />
+    <Compile Include="Generated\Html\HtmlOrderedList.cs" />
+    <Compile Include="Generated\Html\HtmlPage.cs" />
+    <Compile Include="Generated\Html\HtmlParagraph.cs" />
+    <Compile Include="Generated\Html\HtmlParameter.cs" />
+    <Compile Include="Generated\Html\HtmlPasswordInput.cs" />
+    <Compile Include="Generated\Html\HtmlPlainText.cs" />
+    <Compile Include="Generated\Html\HtmlPreformattedText.cs" />
+    <Compile Include="Generated\Html\HtmlRadioButtonInput.cs" />
+    <Compile Include="Generated\Html\HtmlResetInput.cs" />
+    <Compile Include="Generated\Html\HtmlS.cs" />
+    <Compile Include="Generated\Html\HtmlSample.cs" />
+    <Compile Include="Generated\Html\HtmlScript.cs" />
+    <Compile Include="Generated\Html\HtmlSelect.cs" />
+    <Compile Include="Generated\Html\HtmlSmall.cs" />
+    <Compile Include="Generated\Html\HtmlSource.cs" />
+    <Compile Include="Generated\Html\HtmlSpacer.cs" />
+    <Compile Include="Generated\Html\HtmlSpan.cs" />
+    <Compile Include="Generated\Html\HtmlStrike.cs" />
+    <Compile Include="Generated\Html\HtmlStrong.cs" />
+    <Compile Include="Generated\Html\HtmlStyle.cs" />
+    <Compile Include="Generated\Html\HtmlSubmitInput.cs" />
+    <Compile Include="Generated\Html\HtmlSubscript.cs" />
+    <Compile Include="Generated\Html\HtmlSuperscript.cs" />
+    <Compile Include="Generated\Html\HtmlTable.cs" />
+    <Compile Include="Generated\Html\HtmlTableBody.cs" />
+    <Compile Include="Generated\Html\HtmlTableCell.cs" />
+    <Compile Include="Generated\Html\HtmlTableColumn.cs" />
+    <Compile Include="Generated\Html\HtmlTableColumnGroup.cs" />
+    <Compile Include="Generated\Html\HtmlTableDataCell.cs" />
+    <Compile Include="Generated\Html\HtmlTableFooter.cs" />
+    <Compile Include="Generated\Html\HtmlTableHeader.cs" />
+    <Compile Include="Generated\Html\HtmlTableHeaderCell.cs" />
+    <Compile Include="Generated\Html\HtmlTableRow.cs" />
+    <Compile Include="Generated\Html\HtmlTeletype.cs" />
+    <Compile Include="Generated\Html\HtmlTextArea.cs" />
+    <Compile Include="Generated\Html\HtmlTextInput.cs" />
+    <Compile Include="Generated\Html\HtmlTitle.cs" />
+    <Compile Include="Generated\Html\HtmlUnderlined.cs" />
+    <Compile Include="Generated\Html\HtmlUnknownElement.cs" />
+    <Compile Include="Generated\Html\HtmlUnorderedList.cs" />
+    <Compile Include="Generated\Html\HtmlVariable.cs" />
+    <Compile Include="Generated\Html\HtmlVideo.cs" />
+    <Compile Include="Generated\Html\HtmlWordBreak.cs" />
+    <Compile Include="Generated\Html\IDisabledElement.cs" />
+    <Compile Include="Generated\Html\IDomChangeListener.cs" />
+    <Compile Include="Generated\Html\IFormFieldWithNameHistory.cs" />
+    <Compile Include="Generated\Html\IHtmlAttributeChangeListener.cs" />
+    <Compile Include="Generated\Html\IHTMLParserListener.cs" />
+    <Compile Include="Generated\Html\Impl\ISelectableTextInput.cs" />
+    <Compile Include="Generated\Html\Impl\SimpleRange.cs" />
+    <Compile Include="Generated\Html\ISubmittableElement.cs" />
+    <Compile Include="Generated\Html\TableRowGroup.cs" />
+    <Compile Include="Generated\Html\XHtmlPage.cs" />
+    <Compile Include="Generated\HttpMethod.cs" />
+    <Compile Include="Generated\IAlertHandler.cs" />
+    <Compile Include="Generated\IConfirmHandler.cs" />
+    <Compile Include="Generated\IDownloadedContent.cs" />
+    <Compile Include="Generated\IIncorrectnessListener.cs" />
+    <Compile Include="Generated\IOnbeforeunloadHandler.cs" />
+    <Compile Include="Generated\IPage.cs" />
+    <Compile Include="Generated\IPageCreator.cs" />
+    <Compile Include="Generated\IPromptHandler.cs" />
+    <Compile Include="Generated\IRefreshHandler.cs" />
+    <Compile Include="Generated\IScriptPreProcessor.cs" />
+    <Compile Include="Generated\IStatusHandler.cs" />
+    <Compile Include="Generated\IWebConnection.cs" />
+    <Compile Include="Generated\IWebWindow.cs" />
+    <Compile Include="Generated\IWebWindowListener.cs" />
+    <Compile Include="Generated\Javascript\Background\GAEJavaScriptExecutor.cs" />
+    <Compile Include="Generated\Javascript\Background\IJavaScriptJobManager.cs" />
+    <Compile Include="Generated\Javascript\Background\JavaScriptExecutionJob.cs" />
+    <Compile Include="Generated\Javascript\Background\JavaScriptExecutor.cs" />
+    <Compile Include="Generated\Javascript\Background\JavaScriptFunctionJob.cs" />
+    <Compile Include="Generated\Javascript\Background\JavaScriptJob.cs" />
+    <Compile Include="Generated\Javascript\Background\JavaScriptStringJob.cs" />
+    <Compile Include="Generated\Javascript\Host\ActiveXObject.cs" />
+    <Compile Include="Generated\Javascript\Host\ActiveXObjectImpl.cs" />
+    <Compile Include="Generated\Javascript\Host\Attr.cs" />
+    <Compile Include="Generated\Javascript\Host\BoxObject.cs" />
+    <Compile Include="Generated\Javascript\Host\Canvas\CanvasRenderingContext2D.cs" />
+    <Compile Include="Generated\Javascript\Host\CDATASection.cs" />
+    <Compile Include="Generated\Javascript\Host\CharacterDataImpl.cs" />
+    <Compile Include="Generated\Javascript\Host\ClipboardData.cs" />
+    <Compile Include="Generated\Javascript\Host\Comment.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\ComputedCSSStyleDeclaration.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSCharsetRule.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSImportRule.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSMediaRule.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSPrimitiveValue.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSRule.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSRuleList.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSStyleDeclaration.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSStyleRule.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSStyleSheet.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\CSSValue.cs" />
+    <Compile Include="Generated\Javascript\Host\Css\StyleSheetList.cs" />
+    <Compile Include="Generated\Javascript\Host\Document.cs" />
+    <Compile Include="Generated\Javascript\Host\DocumentFragment.cs" />
+    <Compile Include="Generated\Javascript\Host\DocumentType.cs" />
+    <Compile Include="Generated\Javascript\Host\DOMException.cs" />
+    <Compile Include="Generated\Javascript\Host\DOMImplementation.cs" />
+    <Compile Include="Generated\Javascript\Host\DOMParser.cs" />
+    <Compile Include="Generated\Javascript\Host\Element.cs" />
+    <Compile Include="Generated\Javascript\Host\Enumerator.cs" />
+    <Compile Include="Generated\Javascript\Host\Event.cs" />
+    <Compile Include="Generated\Javascript\Host\EventListenersContainer.cs" />
+    <Compile Include="Generated\Javascript\Host\EventNode.cs" />
+    <Compile Include="Generated\Javascript\Host\External.cs" />
+    <Compile Include="Generated\Javascript\Host\FormChild.cs" />
+    <Compile Include="Generated\Javascript\Host\FormField.cs" />
+    <Compile Include="Generated\Javascript\Host\History.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\DocumentProxy.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLAnchorElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLAppletElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLAreaElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLAudioElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBaseElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBaseFontElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBodyElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBRElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLButtonElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLCanvasElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLCollection.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLCollectionTags.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLDelElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLDirectoryElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLDivElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLDListElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLDocument.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLEmbedElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLFieldSetElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLFontElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLFormElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLFrameElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLFrameSetElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLHeadElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLHeadingElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLHRElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLHtmlElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLIFrameElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLImageElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLInputElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLInsElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLIsIndexElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLLabelElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLLegendElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLLIElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLLinkElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLListElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLMapElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLMenuElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLMetaElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLObjectElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLOListElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLOptGroupElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLOptionElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLOptionsCollection.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLParagraphElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLParamElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLPreElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLQuoteElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLScriptElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLSelectElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLSourceElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLSpacerElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLSpanElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLStyleElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableCaptionElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableCellElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableColElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableComponent.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableRowElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTableSectionElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTextAreaElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLTitleElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLUListElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLUnknownElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLVideoElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLWBRElement.cs" />
+    <Compile Include="Generated\Javascript\Host\KeyboardEvent.cs" />
+    <Compile Include="Generated\Javascript\Host\Location.cs" />
+    <Compile Include="Generated\Javascript\Host\MediaList.cs" />
+    <Compile Include="Generated\Javascript\Host\MimeTypeArray.cs" />
+    <Compile Include="Generated\Javascript\Host\MouseEvent.cs" />
+    <Compile Include="Generated\Javascript\Host\MutationEvent.cs" />
+    <Compile Include="Generated\Javascript\Host\Namespace.cs" />
+    <Compile Include="Generated\Javascript\Host\NamespaceCollection.cs" />
+    <Compile Include="Generated\Javascript\Host\Navigator.cs" />
+    <Compile Include="Generated\Javascript\Host\Node.cs" />
+    <Compile Include="Generated\Javascript\Host\NodeFilter.cs" />
+    <Compile Include="Generated\Javascript\Host\OfflineResourceList.cs" />
+    <Compile Include="Generated\Javascript\Host\Plugin.cs" />
+    <Compile Include="Generated\Javascript\Host\PluginArray.cs" />
+    <Compile Include="Generated\Javascript\Host\Popup.cs" />
+    <Compile Include="Generated\Javascript\Host\ProcessingInstruction.cs" />
+    <Compile Include="Generated\Javascript\Host\Range.cs" />
+    <Compile Include="Generated\Javascript\Host\RowContainer.cs" />
+    <Compile Include="Generated\Javascript\Host\Screen.cs" />
+    <Compile Include="Generated\Javascript\Host\Selection.cs" />
+    <Compile Include="Generated\Javascript\Host\SimpleArray.cs" />
+    <Compile Include="Generated\Javascript\Host\StaticNodeList.cs" />
+    <Compile Include="Generated\Javascript\Host\Storage.cs" />
+    <Compile Include="Generated\Javascript\Host\StorageList.cs" />
+    <Compile Include="Generated\Javascript\Host\Text.cs" />
+    <Compile Include="Generated\Javascript\Host\TextRange.cs" />
+    <Compile Include="Generated\Javascript\Host\TextRectangle.cs" />
+    <Compile Include="Generated\Javascript\Host\TreeWalker.cs" />
+    <Compile Include="Generated\Javascript\Host\UIEvent.cs" />
+    <Compile Include="Generated\Javascript\Host\Window.cs" />
+    <Compile Include="Generated\Javascript\Host\WindowProxy.cs" />
+    <Compile Include="Generated\Javascript\Host\Xml\XMLAttr.cs" />
+    <Compile Include="Generated\Javascript\Host\Xml\XMLDocument.cs" />
+    <Compile Include="Generated\Javascript\Host\Xml\XMLDOMParseError.cs" />
+    <Compile Include="Generated\Javascript\Host\Xml\XMLHttpRequest.cs" />
+    <Compile Include="Generated\Javascript\Host\Xml\XMLSerializer.cs" />
+    <Compile Include="Generated\Javascript\Host\XPathNSResolver.cs" />
+    <Compile Include="Generated\Javascript\Host\XPathResult.cs" />
+    <Compile Include="Generated\Javascript\Host\XSLTemplate.cs" />
+    <Compile Include="Generated\Javascript\Host\XSLTProcessor.cs" />
+    <Compile Include="Generated\Javascript\HtmlUnitContextFactory.cs" />
+    <Compile Include="Generated\Javascript\IJavaScriptErrorListener.cs" />
+    <Compile Include="Generated\Javascript\IScriptableWithFallbackGetter.cs" />
+    <Compile Include="Generated\Javascript\JavaScriptEngine.cs" />
+    <Compile Include="Generated\Javascript\NamedNodeMap.cs" />
+    <Compile Include="Generated\Javascript\PostponedAction.cs" />
+    <Compile Include="Generated\Javascript\SimpleScriptable.cs" />
+    <Compile Include="Generated\Javascript\SimpleScriptableProxy.cs" />
+    <Compile Include="Generated\NicelyResynchronizingAjaxController.cs" />
+    <Compile Include="Generated\PluginConfiguration.cs" />
+    <Compile Include="Generated\ProxyConfig.cs" />
+    <Compile Include="Generated\ScriptException.cs" />
+    <Compile Include="Generated\ScriptResult.cs" />
+    <Compile Include="Generated\SgmlPage.cs" />
+    <Compile Include="Generated\StringWebResponse.cs" />
+    <Compile Include="Generated\TopLevelWindow.cs" />
+    <Compile Include="Generated\Util\Cookie.cs" />
+    <Compile Include="Generated\Util\KeyDataPair.cs" />
+    <Compile Include="Generated\Util\NameValuePair.cs" />
+    <Compile Include="Generated\Util\WebResponseWrapper.cs" />
+    <Compile Include="Generated\W3C\Dom\Css\ICSSStyleDeclaration.cs" />
+    <Compile Include="Generated\W3C\Dom\Css\ICSSStyleSheet.cs" />
+    <Compile Include="Generated\W3C\Dom\IAttr.cs" />
+    <Compile Include="Generated\W3C\Dom\ICDATASection.cs" />
+    <Compile Include="Generated\W3C\Dom\ICharacterData.cs" />
+    <Compile Include="Generated\W3C\Dom\IComment.cs" />
+    <Compile Include="Generated\W3C\Dom\IDocument.cs" />
+    <Compile Include="Generated\W3C\Dom\IDocumentFragment.cs" />
+    <Compile Include="Generated\W3C\Dom\IDocumentType.cs" />
+    <Compile Include="Generated\W3C\Dom\IDOMConfiguration.cs" />
+    <Compile Include="Generated\W3C\Dom\IDOMImplementation.cs" />
+    <Compile Include="Generated\W3C\Dom\IElement.cs" />
+    <Compile Include="Generated\W3C\Dom\IEntityReference.cs" />
+    <Compile Include="Generated\W3C\Dom\INamedNodeMap.cs" />
+    <Compile Include="Generated\W3C\Dom\INode.cs" />
+    <Compile Include="Generated\W3C\Dom\INodeList.cs" />
+    <Compile Include="Generated\W3C\Dom\IProcessingInstruction.cs" />
+    <Compile Include="Generated\W3C\Dom\IText.cs" />
+    <Compile Include="Generated\W3C\Dom\ITypeInfo.cs" />
+    <Compile Include="Generated\W3C\Dom\IUserDataHandler.cs" />
+    <Compile Include="Generated\W3C\Dom\Ranges\IRange.cs" />
+    <Compile Include="Generated\W3C\Dom\Stylesheets\IMediaList.cs" />
+    <Compile Include="Generated\W3C\Dom\Stylesheets\IStyleSheet.cs" />
+    <Compile Include="Generated\WebClient.cs" />
+    <Compile Include="Generated\WebRequest.cs" />
+    <Compile Include="Generated\WebResponse.cs" />
+    <Compile Include="Generated\WebResponseData.cs" />
+    <Compile Include="Generated\WebWindowEvent.cs" />
+    <Compile Include="Generated\WebWindowImpl.cs" />
+    <Compile Include="Generated\Xml\XmlPage.cs" />
+    <Compile Include="NonGenerated\AjaxController.cs" />
+    <Compile Include="NonGenerated\Attachment\IAttachmentHandler.cs" />
+    <Compile Include="NonGenerated\BrowserVersion.cs" />
+    <Compile Include="NonGenerated\BrowserVersionFeatures.cs" />
+    <Compile Include="NonGenerated\Cache.cs" />
+    <Compile Include="NonGenerated\CookieManager.cs" />
+    <Compile Include="NonGenerated\DialogWindow.cs" />
+    <Compile Include="NonGenerated\FormEncodingType.cs" />
+    <Compile Include="NonGenerated\History.cs" />
+    <Compile Include="NonGenerated\HtmlElementNotFoundException.cs" />
+    <Compile Include="NonGenerated\Html\BaseFrame.cs" />
+    <Compile Include="NonGenerated\Html\DomAttr.cs" />
+    <Compile Include="NonGenerated\Html\DomCDataSection.cs" />
+    <Compile Include="NonGenerated\Html\DomChangeEvent.cs" />
+    <Compile Include="NonGenerated\Html\DomCharacterData.cs" />
+    <Compile Include="NonGenerated\Html\DomComment.cs" />
+    <Compile Include="NonGenerated\Html\DomDocumentFragment.cs" />
+    <Compile Include="NonGenerated\Html\DomDocumentType.cs" />
+    <Compile Include="NonGenerated\Html\DomElement.cs" />
+    <Compile Include="NonGenerated\Html\DomNamespaceNode.cs" />
+    <Compile Include="NonGenerated\Html\DomNode.cs" />
+    <Compile Include="NonGenerated\Html\DomProcessingInstruction.cs" />
+    <Compile Include="NonGenerated\Html\DomText.cs" />
+    <Compile Include="NonGenerated\Html\FrameWindow.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAbbreviated.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAcronym.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAddress.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAnchor.cs" />
+    <Compile Include="NonGenerated\Html\HtmlApplet.cs" />
+    <Compile Include="NonGenerated\Html\HtmlArea.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAttributeChangeEvent.cs" />
+    <Compile Include="NonGenerated\Html\HtmlAudio.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBackgroundSound.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBase.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBaseFont.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBidirectionalOverride.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBig.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBlink.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBlockQuote.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBody.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBold.cs" />
+    <Compile Include="NonGenerated\Html\HtmlBreak.cs" />
+    <Compile Include="NonGenerated\Html\HtmlButton.cs" />
+    <Compile Include="NonGenerated\Html\HtmlButtonInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCanvas.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCaption.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCenter.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCheckBoxInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCitation.cs" />
+    <Compile Include="NonGenerated\Html\HtmlCode.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDefinition.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDefinitionDescription.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDefinitionList.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDefinitionTerm.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDeletedText.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDirectory.cs" />
+    <Compile Include="NonGenerated\Html\HtmlDivision.cs" />
+    <Compile Include="NonGenerated\Html\HtmlElement.cs" />
+    <Compile Include="NonGenerated\Html\HtmlEmbed.cs" />
+    <Compile Include="NonGenerated\Html\HtmlEmphasis.cs" />
+    <Compile Include="NonGenerated\Html\HtmlExample.cs" />
+    <Compile Include="NonGenerated\Html\HtmlFieldSet.cs" />
+    <Compile Include="NonGenerated\Html\HtmlFileInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlFont.cs" />
+    <Compile Include="NonGenerated\Html\HtmlForm.cs" />
+    <Compile Include="NonGenerated\Html\HtmlFrame.cs" />
+    <Compile Include="NonGenerated\Html\HtmlFrameSet.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHead.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading1.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading2.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading3.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading4.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading5.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHeading6.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHiddenInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHorizontalRule.cs" />
+    <Compile Include="NonGenerated\Html\HtmlHtml.cs" />
+    <Compile Include="NonGenerated\Html\HtmlImage.cs" />
+    <Compile Include="NonGenerated\Html\HtmlImageInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlInlineFrame.cs" />
+    <Compile Include="NonGenerated\Html\HtmlInlineQuotation.cs" />
+    <Compile Include="NonGenerated\Html\HtmlInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlInsertedText.cs" />
+    <Compile Include="NonGenerated\Html\HtmlIsIndex.cs" />
+    <Compile Include="NonGenerated\Html\HtmlItalic.cs" />
+    <Compile Include="NonGenerated\Html\HtmlKeyboard.cs" />
+    <Compile Include="NonGenerated\Html\HtmlLabel.cs" />
+    <Compile Include="NonGenerated\Html\HtmlLegend.cs" />
+    <Compile Include="NonGenerated\Html\HtmlLink.cs" />
+    <Compile Include="NonGenerated\Html\HtmlListing.cs" />
+    <Compile Include="NonGenerated\Html\HtmlListItem.cs" />
+    <Compile Include="NonGenerated\Html\HtmlMap.cs" />
+    <Compile Include="NonGenerated\Html\HtmlMarquee.cs" />
+    <Compile Include="NonGenerated\Html\HtmlMenu.cs" />
+    <Compile Include="NonGenerated\Html\HtmlMeta.cs" />
+    <Compile Include="NonGenerated\Html\HtmlMultiColumn.cs" />
+    <Compile Include="NonGenerated\Html\HtmlNoBreak.cs" />
+    <Compile Include="NonGenerated\Html\HtmlNoEmbed.cs" />
+    <Compile Include="NonGenerated\Html\HtmlNoFrames.cs" />
+    <Compile Include="NonGenerated\Html\HtmlNoScript.cs" />
+    <Compile Include="NonGenerated\Html\HtmlObject.cs" />
+    <Compile Include="NonGenerated\Html\HtmlOption.cs" />
+    <Compile Include="NonGenerated\Html\HtmlOptionGroup.cs" />
+    <Compile Include="NonGenerated\Html\HtmlOrderedList.cs" />
+    <Compile Include="NonGenerated\Html\HtmlPage.cs" />
+    <Compile Include="NonGenerated\Html\HtmlParagraph.cs" />
+    <Compile Include="NonGenerated\Html\HtmlParameter.cs" />
+    <Compile Include="NonGenerated\Html\HtmlPasswordInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlPlainText.cs" />
+    <Compile Include="NonGenerated\Html\HtmlPreformattedText.cs" />
+    <Compile Include="NonGenerated\Html\HtmlRadioButtonInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlResetInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlS.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSample.cs" />
+    <Compile Include="NonGenerated\Html\HtmlScript.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSelect.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSmall.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSource.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSpacer.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSpan.cs" />
+    <Compile Include="NonGenerated\Html\HtmlStrike.cs" />
+    <Compile Include="NonGenerated\Html\HtmlStrong.cs" />
+    <Compile Include="NonGenerated\Html\HtmlStyle.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSubmitInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSubscript.cs" />
+    <Compile Include="NonGenerated\Html\HtmlSuperscript.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTable.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableBody.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableCell.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableColumn.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableColumnGroup.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableDataCell.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableFooter.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableHeader.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableHeaderCell.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTableRow.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTeletype.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTextArea.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTextInput.cs" />
+    <Compile Include="NonGenerated\Html\HtmlTitle.cs" />
+    <Compile Include="NonGenerated\Html\HtmlUnderlined.cs" />
+    <Compile Include="NonGenerated\Html\HtmlUnknownElement.cs" />
+    <Compile Include="NonGenerated\Html\HtmlUnorderedList.cs" />
+    <Compile Include="NonGenerated\Html\HtmlVariable.cs" />
+    <Compile Include="NonGenerated\Html\HtmlVideo.cs" />
+    <Compile Include="NonGenerated\Html\HtmlWordBreak.cs" />
+    <Compile Include="NonGenerated\Html\IDisabledElement.cs" />
+    <Compile Include="NonGenerated\Html\IDomChangeListener.cs" />
+    <Compile Include="NonGenerated\Html\IFormFieldWithNameHistory.cs" />
+    <Compile Include="NonGenerated\Html\IHtmlAttributeChangeListener.cs" />
+    <Compile Include="NonGenerated\Html\IHTMLParserListener.cs" />
+    <Compile Include="NonGenerated\Html\Impl\ISelectableTextInput.cs" />
+    <Compile Include="NonGenerated\Html\Impl\SimpleRange.cs" />
+    <Compile Include="NonGenerated\Html\ISubmittableElement.cs" />
+    <Compile Include="NonGenerated\Html\TableRowGroup.cs" />
+    <Compile Include="NonGenerated\Html\XHtmlPage.cs" />
+    <Compile Include="NonGenerated\HttpMethod.cs" />
+    <Compile Include="NonGenerated\IAlertHandler.cs" />
+    <Compile Include="NonGenerated\IConfirmHandler.cs" />
+    <Compile Include="NonGenerated\IDownloadedContent.cs" />
+    <Compile Include="NonGenerated\IIncorrectnessListener.cs" />
+    <Compile Include="NonGenerated\IOnbeforeunloadHandler.cs" />
+    <Compile Include="NonGenerated\IPage.cs" />
+    <Compile Include="NonGenerated\IPageCreator.cs" />
+    <Compile Include="NonGenerated\IPromptHandler.cs" />
+    <Compile Include="NonGenerated\IRefreshHandler.cs" />
+    <Compile Include="NonGenerated\IScriptPreProcessor.cs" />
+    <Compile Include="NonGenerated\IStatusHandler.cs" />
+    <Compile Include="NonGenerated\IWebConnection.cs" />
+    <Compile Include="NonGenerated\IWebWindow.cs" />
+    <Compile Include="NonGenerated\IWebWindowListener.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\GAEJavaScriptExecutor.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\IJavaScriptJobManager.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\JavaScriptExecutionJob.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\JavaScriptExecutor.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\JavaScriptFunctionJob.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\JavaScriptJob.cs" />
+    <Compile Include="NonGenerated\Javascript\Background\JavaScriptStringJob.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\ActiveXObject.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\ActiveXObjectImpl.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Attr.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\BoxObject.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Canvas\CanvasRenderingContext2D.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\CDATASection.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\CharacterDataImpl.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\ClipboardData.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Comment.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\ComputedCSSStyleDeclaration.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSCharsetRule.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSImportRule.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSMediaRule.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSPrimitiveValue.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSRule.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSRuleList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSStyleDeclaration.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSStyleRule.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSStyleSheet.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\CSSValue.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Css\StyleSheetList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Document.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\DocumentFragment.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\DocumentType.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\DOMException.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\DOMImplementation.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\DOMParser.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Element.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Enumerator.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Event.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\EventListenersContainer.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\EventNode.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\External.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\FormChild.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\FormField.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\History.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\DocumentProxy.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAnchorElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAppletElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAreaElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAudioElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBaseElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBaseFontElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBodyElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBRElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLButtonElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLCanvasElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLCollection.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLCollectionTags.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLDelElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLDirectoryElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLDivElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLDListElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLDocument.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLEmbedElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLFieldSetElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLFontElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLFormElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLFrameElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLFrameSetElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLHeadElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLHeadingElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLHRElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLHtmlElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLIFrameElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLImageElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLInputElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLInsElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLIsIndexElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLLabelElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLLegendElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLLIElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLLinkElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLListElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMapElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMenuElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMetaElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLObjectElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOListElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOptGroupElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOptionElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOptionsCollection.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLParagraphElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLParamElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLPreElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLQuoteElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLScriptElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLSelectElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLSourceElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLSpacerElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLSpanElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLStyleElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableCaptionElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableCellElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableColElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableComponent.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableRowElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTableSectionElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTextAreaElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLTitleElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLUListElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLUnknownElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLVideoElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLWBRElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\KeyboardEvent.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Location.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\MediaList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\MimeTypeArray.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\MouseEvent.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\MutationEvent.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Namespace.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\NamespaceCollection.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Navigator.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Node.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\NodeFilter.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\OfflineResourceList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Plugin.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\PluginArray.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Popup.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\ProcessingInstruction.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Range.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\RowContainer.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Screen.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Selection.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\SimpleArray.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\StaticNodeList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Storage.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\StorageList.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Text.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\TextRange.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\TextRectangle.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\TreeWalker.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\UIEvent.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Window.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\WindowProxy.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Xml\XMLAttr.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Xml\XMLDocument.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Xml\XMLDOMParseError.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Xml\XMLHttpRequest.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Xml\XMLSerializer.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\XPathNSResolver.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\XPathResult.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\XSLTemplate.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\XSLTProcessor.cs" />
+    <Compile Include="NonGenerated\Javascript\HtmlUnitContextFactory.cs" />
+    <Compile Include="NonGenerated\Javascript\IJavaScriptErrorListener.cs" />
+    <Compile Include="NonGenerated\Javascript\IScriptableWithFallbackGetter.cs" />
+    <Compile Include="NonGenerated\Javascript\JavaScriptEngine.cs" />
+    <Compile Include="NonGenerated\Javascript\NamedNodeMap.cs" />
+    <Compile Include="NonGenerated\Javascript\PostponedAction.cs" />
+    <Compile Include="NonGenerated\Javascript\SimpleScriptable.cs" />
+    <Compile Include="NonGenerated\Javascript\SimpleScriptableProxy.cs" />
+    <Compile Include="Wrappers\ListWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NonGenerated\NicelyResynchronizingAjaxController.cs" />
+    <Compile Include="NonGenerated\ObjectWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NonGenerated\PluginConfiguration.cs" />
+    <Compile Include="NonGenerated\ProxyConfig.cs" />
+    <Compile Include="NonGenerated\ScriptException.cs" />
+    <Compile Include="NonGenerated\ScriptResult.cs" />
+    <Compile Include="NonGenerated\SgmlPage.cs" />
+    <Compile Include="NonGenerated\StringWebResponse.cs" />
+    <Compile Include="NonGenerated\TopLevelWindow.cs" />
+    <Compile Include="NonGenerated\Util\Cookie.cs" />
+    <Compile Include="NonGenerated\Util\KeyDataPair.cs" />
+    <Compile Include="NonGenerated\Util\NameValuePair.cs" />
+    <Compile Include="NonGenerated\Util\WebResponseWrapper.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\Css\ICSSStyleDeclaration.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\Css\ICSSStyleSheet.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IAttr.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\ICDATASection.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\ICharacterData.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IComment.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IDocument.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IDocumentFragment.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IDocumentType.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IDOMConfiguration.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IDOMImplementation.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IElement.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IEntityReference.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\INamedNodeMap.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\INode.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\INodeList.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IProcessingInstruction.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IText.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\ITypeInfo.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\IUserDataHandler.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\Ranges\IRange.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\Stylesheets\IMediaList.cs" />
+    <Compile Include="NonGenerated\W3C\Dom\Stylesheets\IStyleSheet.cs" />
+    <Compile Include="NonGenerated\WebClient.cs" />
+    <Compile Include="NonGenerated\WebRequest.cs" />
+    <Compile Include="NonGenerated\WebResponse.cs" />
+    <Compile Include="NonGenerated\WebResponseData.cs" />
+    <Compile Include="NonGenerated\WebWindowEvent.cs" />
+    <Compile Include="NonGenerated\WebWindowImpl.cs" />
+    <Compile Include="NonGenerated\Xml\XmlPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrappers\CollectionWrapper.cs" />
+    <Compile Include="Wrappers\IObjectWrapper.cs" />
+    <Compile Include="Wrappers\IterableWrapper.cs" />
+    <Compile Include="Wrappers\NodeListWrapper.cs" />
+    <Compile Include="Wrappers\ShallowCollectionWrapper.cs" />
+    <Compile Include="Wrappers\ShallowIterableWrapper.cs" />
+    <Compile Include="Wrappers\ShallowListWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
