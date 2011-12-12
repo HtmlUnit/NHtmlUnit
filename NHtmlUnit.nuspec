@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>NHtmlUnit</id>
+    <version>2.9.0.0</version>
+    <title>NHtmlUnit</title>
+    <authors>OKB AS</authors>
+    <owners>OKB AS</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/HtmlUnit/NHtmlUnit</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET wrapper of HtmlUnit.</description>
+    <releaseNotes>Initial release for testing.</releaseNotes>
+    <copyright>Copyright © OKB AS 2011</copyright>
+    <tags>testing htmlunit nhtmlunit</tags>
+<!--    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies> -->
+    <frameworkAssemblies />
+    <references />
+  </metadata>
+  <files>
+	<file src="app\NHtmlUnit\bin\Debug\HtmlUnit.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Core.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Management.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Media.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Security.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.SwingAWT.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Text.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Util.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.XML.API.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.XML.Parse.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.XML.XPath.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.Runtime.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\NHtmlUnit.dll" target="lib" />
+  </files>
+</package>
