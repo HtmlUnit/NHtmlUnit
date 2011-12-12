@@ -6,20 +6,20 @@ NHtmlUnit is .NET friendly wrapper for HtmlUnit.
 Introduction
 ----------
 
-We really like the HtmlUnit project, which enables headless web testing without
-needing to have a complete browser running.
-
-By using IKVM it is possible to convert the HtmlUnit java library for use on.NET.
+We really like the [HtmlUnit](http://htmlunit.sourceforge.net/) project, which enables
+headless web testing without needing to have a complete browser running. By using
+[IKVM](http://www.ikvm.net/) it is possible to convert the HtmlUnit Java library for use
+on Microsoft's .NET platform.
 
 However it doesn't feel very natural to use a java library in a .NET language,
-and therefore we created a NHtmlUnit wrapper.
+and therefore we created an HtmlUnit wrapper written in C#.
 
 Building NHtmlUnit
 ------------------
 
-NHtmlUnit can be built using either msbuild or Visual Studio.
+NHtmlUnit can be built using either MSBuild or Visual Studio 2010.
 
-After building you can find NHtmlUnit.dll plus its dependencies here:
+After building you can find `NHtmlUnit.dll` plus its dependencies here:
 
 * app\NHtmlUnit\bin\Debug
 * app\NHtmlUnit\bin\Release
@@ -32,19 +32,19 @@ Usage
 
 For now there is no manual or API reference written for NHtmlUnit.
 
-You can however use the HtmlUnit reference, as this wrapper almost completely
-reflects the original API.
+You can however use the [HtmlUnit reference](http://htmlunit.sourceforge.net/gettingStarted.html),
+as this wrapper almost completely reflects the original API.
 
-The difference is that java iterators, lists and collections are exposed as
-their .NET-friendly counterparts (IEnumerable, IList and ICollection).
+The difference is that Java iterators, lists and collections are exposed as
+their .NET-friendly counterparts (`IEnumerable`, `IList` and `ICollection`).
 
-In addition properties are now "real" .NET properties. obj.getSomething() and
-obj.setSomething() is wrapped as obj.Something;
+In addition, properties are now "real" .NET properties. `obj.getSomething()` and
+`obj.setSomething()` is exposed as `obj.Something`;
 
 NHtmlUnitGenerator
 ------------------
 
-Note that this only needs to be run when HtmlUnit jar file has changed!
+This executable only needs to be run when the HtmlUnit jar file has changed!
 
 When NHtmlUnitGenerator is run it will overwrite all files
 in app\NHtmlUnit\Generated.
@@ -57,7 +57,7 @@ License
 -------
 
 NHtmlUnit is licensed under the Apache License Version 2.0, which is the same
-license used for HtmlUnit too.
+license used for HtmlUnit.
 
 Tech details
 ------------
@@ -70,8 +70,8 @@ NHtmlUnitGenerator is basically a large hack.
 Future
 ------
 
-A complete rewrite of the NHtmlUnitGenerator using Mono.Cecil would be nice,
-although I'm unsure exactly how much this would do for the final product.
+A complete rewrite of the NHtmlUnitGenerator using [Mono.Cecil](http://www.mono-project.com/Cecil)
+would be nice, although we're unsure exactly how much this would do for the final product.
 
 Authours
 --------
