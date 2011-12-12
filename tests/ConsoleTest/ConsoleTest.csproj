@@ -35,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlUnit">
-      <HintPath>..\..\lib\HtmlUnit\x64\HtmlUnit.dll</HintPath>
+      <HintPath>..\..\lib\HtmlUnit\anycpu\HtmlUnit.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
       <HintPath>..\..\lib\IKVM\_bin\IKVM.OpenJDK.Core.dll</HintPath>

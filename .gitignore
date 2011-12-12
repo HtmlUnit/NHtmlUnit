@@ -1,0 +1,8 @@
+*/bin
+*/*/bin
+*/obj
+*/*/obj
+*.ReSharper
+*.suo
+*.user
+*.dotCover
