@@ -76,4 +76,4 @@ although I'm unsure exactly how much this would do for the final product.
 Authours
 --------
 
-NHtmlUnit was written by Asbjørn Ulsberg and Karsten Strand at OKB AS.
+NHtmlUnit was written by AsbjÃ¸rn Ulsberg and Karsten Strand at OKB AS.
