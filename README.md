@@ -24,8 +24,11 @@ After building you can find `NHtmlUnit.dll` plus its dependencies here:
 * app\NHtmlUnit\bin\Debug
 * app\NHtmlUnit\bin\Release
 
-An prepackaged binary is planned for release in the near future plus a
-nuget package.
+An prepackaged binary is planned for release in the near future.
+
+A package is also available using the NuGet package manager:
+
+[NHtmlUnit NuGet package](http://nuget.org/packages/NHtmlUnit/2.9.0.0/)
 
 Usage
 -----
