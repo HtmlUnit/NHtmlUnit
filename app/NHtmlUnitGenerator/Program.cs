@@ -47,13 +47,29 @@ namespace NHtmlUnit.Generator
 
             AssemblyDefinition htmlUnitAssembly = AssemblyDefinition.ReadAssembly(fileName);
 
-            foreach (var type in htmlUnitAssembly.MainModule.Types.Where(t => t.IsPublic))
+            var publicTypes = htmlUnitAssembly.MainModule.Types.Where(t => t.IsPublic);
+
+            foreach (var type in publicTypes)
             {
-                var segments = type.Namespace.Split('.').Select(TransformNamespaceSegment).Where(s => s != null);
-                type.Namespace = String.Join(".", segments);
+                NamespaceTransformer namespaceTransformer = new NamespaceTransformer(type.Namespace);
+                type.Namespace = namespaceTransformer.Transform();
 
                 if (type.IsInterface)
                     type.Name = String.Concat('I', type.Name);
+
+                if (type.HasInterfaces)
+                {
+                    foreach (var @interface in type.Interfaces.Select(x => x.Resolve()))
+                    {
+                        foreach (var interfaceMethod in @interface.Methods)
+                        {
+                            var typeMethod = type.Methods.FirstOrDefault(x => x.Name == interfaceMethod.Name);
+                            
+                            // var explicitMethod = new MethodDefinition("")
+                        }
+                    }
+                }
+
             }
 
             htmlUnitAssembly.Write("NHtmlUnit.dll");
@@ -64,30 +80,5 @@ namespace NHtmlUnit.Generator
             Console.WriteLine(v);
         }
 
-
-        private static string TransformNamespaceSegment(string namespaceSegment)
-        {
-            string[] ignore = new[]
-            {
-                "org", "com", "net", "gargoylesoftware", "sourceforge"
-            };
-
-            if (ignore.Contains(namespaceSegment))
-                return null;
-
-            IDictionary<string, string> map = new Dictionary<string, string>
-            {
-                { "htmlunit", "HtmlUnit" },
-                { "io", "IO" },
-                { "xmlcommons", "Xml.Commons" },
-                { "javascript", "JavaScript" },
-                { "corejs", "CoreJS" },
-            };
-
-            if (map.ContainsKey(namespaceSegment))
-                return map[namespaceSegment];
-
-            return namespaceSegment.InflectTo().Pascalized;
-        }
     }
 }
