@@ -10,68 +10,43 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 using com.gargoylesoftware.htmlunit;
-using com.gargoylesoftware.htmlunit.html;
+
+using Mono.Cecil;
 
 namespace NHtmlUnit.Generator
 {
-    internal class Program
+    internal static class Program
     {
-        private static Dictionary<string, Type> CreateTypeList(
-            IEnumerable<Assembly> assemblies, IEnumerable<Type> types)
+        private static void Main(string[] args)
         {
-            var dict = new Dictionary<string, Type>();
-
-            foreach (Type t in types)
+            try
             {
-                IEnumerable<Type> superTypes =
-                    assemblies.SelectMany(a => a.GetTypes()).Where(x => x.IsSubclassOf(t) && x.IsPublic);
-
-                foreach (Type st in superTypes.Concat(new[] { t }))
-                {
-                    if (!dict.ContainsKey(st.Name))
-                        dict[st.Name] = st;
-                }
+                Transform();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
             }
 
-            return dict;
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey(true);
         }
 
 
-        private static void Main(string[] args)
+        private static void Transform()
         {
-            // Console.WriteLine("App config path: " + Settings.Default);
+            ReaderParameters parameters = new ReaderParameters(ReadingMode.Immediate);
 
-            Type webClientType = typeof(WebClient);
-            var wrapperRep = new WrapperRepository(typeof(HtmlPage).Assembly);
-            //GetJavaPropsFromType(webClientType);
-            //GetJavaPropsFromType(typeof(HtmlPage));
-            //GetJavaPropsFromType(typeof(HtmlInput));
+            string fileName = typeof(WebClient).Assembly.Location;
 
-            wrapperRep.GenerateUntilDone(typeof(DomNode), typeof(WebClient), typeof(HtmlPage));
+            Console.WriteLine("Reading {0}.", fileName);
 
-            //var classInfoList = CreateTypeList(
-            //   new[] { typeof(HtmlPage).Assembly },
-            //   new[]
-            //   {
-            //      typeof(HtmlPage),
-            //      typeof(SgmlPage)
-            //   }).Select(t => new WrapperClassInfo(t.Value, wrapperRep))
-            //   .ToArray()
-            //   .Select((ci => ci.GenerateClassCode(new StringBuilder()).ToString()));
-
-            //foreach (var src in classInfoList)
-            //   Console.WriteLine(src);
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Done! Press any key to exit.");
-
-            Console.ReadKey();
+            AssemblyDefinition htmlUnitAssembly =
+                AssemblyDefinition.ReadAssembly(fileName, parameters);
         }
     }
 }
