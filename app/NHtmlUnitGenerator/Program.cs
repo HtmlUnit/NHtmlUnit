@@ -59,17 +59,46 @@ namespace NHtmlUnit.Generator
 
                 if (type.HasInterfaces)
                 {
-                    foreach (var @interface in type.Interfaces.Select(x => x.Resolve()))
+                    var interfaces = type.Interfaces.Select(x => x.Resolve());
+
+                    foreach (var i in interfaces)
                     {
-                        foreach (var interfaceMethod in @interface.Methods)
+                        bool isExternalInterface = i.Module != htmlUnitAssembly.MainModule;
+
+                        foreach (var method in type.Methods)
                         {
-                            var typeMethod = type.Methods.FirstOrDefault(x => x.Name == interfaceMethod.Name);
-                            
-                            // var explicitMethod = new MethodDefinition("")
+                            // If the method is implemented through an interface defined in an external module, don't touch it.
+                            if (method.IsImplementationOf(i) && isExternalInterface)
+                            {
+                                Console.WriteLine("{0} is from the external interface {1}, skipping.", method.Name, i.FullName);
+                                continue;
+                            }
+
+                            method.Name = method.Name.InflectTo().Pascalized;
+
+                            Console.WriteLine(":: {0}", method.Name);
                         }
                     }
                 }
 
+                /*if (type.HasInterfaces)
+                {
+                    var interfaces = type.Interfaces.Select(x => x.Resolve());
+
+                    foreach (var i in interfaces)
+                    {
+                        foreach (var interfaceMethod in i.Methods)
+                        {
+                            var m = interfaceMethod;
+                            var typeMethod = type.Methods.FirstOrDefault(x => Matches(m, x));
+
+                            var explicitMethodName = String.Concat(i.Name, '.',  m.Name);
+
+                            interfaceMethod.Name = explicitMethodName;
+                            //var explicitMethod = new MethodDefinition(explicitMethodName, m.Attributes, m.ReturnType);
+                        }
+                    }
+                }*/
             }
 
             htmlUnitAssembly.Write("NHtmlUnit.dll");
@@ -79,6 +108,8 @@ namespace NHtmlUnit.Generator
             verifier.Verify("NHtmlUnit.dll", out v);
             Console.WriteLine(v);
         }
+
+        
 
     }
 }
