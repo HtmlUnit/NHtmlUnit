@@ -7,3 +7,4 @@
 *.user
 *.dotCover
 *.nupkg
+/_ReSharper.NHtmlUnit/
