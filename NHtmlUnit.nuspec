@@ -22,9 +22,14 @@
   </metadata>
   <files>
 	<file src="app\NHtmlUnit\bin\Debug\HtmlUnit.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Beans.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Charsets.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Corba.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Core.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Management.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Media.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Naming.dll" target="lib" />
+	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Remoting.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Security.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.SwingAWT.dll" target="lib" />
 	<file src="app\NHtmlUnit\bin\Debug\IKVM.OpenJDK.Text.dll" target="lib" />
