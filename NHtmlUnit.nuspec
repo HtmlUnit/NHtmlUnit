@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>NHtmlUnit</id>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET wrapper of HtmlUnit.</description>
     <releaseNotes>Initial release for testing.</releaseNotes>
-    <copyright>Copyright � OKB AS 2011</copyright>
+    <copyright>Copyright © OKB AS 2011</copyright>
     <tags>testing htmlunit nhtmlunit</tags>
 <!--    <dependencies>
       <dependency id="SampleDependency" version="1.0" />
