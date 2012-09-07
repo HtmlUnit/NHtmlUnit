@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{5B152A0C
 		clean.cmd = clean.cmd
 		LICENSE-HtmlUnit.txt = LICENSE-HtmlUnit.txt
 		LICENSE.txt = LICENSE.txt
+		lib\HtmlUnit\Make.cmd = lib\HtmlUnit\Make.cmd
 		NHtmlUnit.nuspec = NHtmlUnit.nuspec
 		README.md = README.md
 	EndProjectSection
