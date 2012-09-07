@@ -8,3 +8,5 @@
 *.dotCover
 *.nupkg
 /_ReSharper.NHtmlUnit/
+/packages/*
+!/packages/repositories.config
