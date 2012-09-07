@@ -1,4 +1,6 @@
 @echo off
+: This file makes a new version of HtmlUnit.dll from the original HtmlUnit JAR files.
+
 : The version should be set to the same as that of the Java version of HtmlUnit
 set VERSION=2.10.0.0
 
