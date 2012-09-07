@@ -1,18 +1,19 @@
 NHtmlUnit
 =========
 
-NHtmlUnit is .NET friendly wrapper for HtmlUnit.
+NHtmlUnit is a .NET wrapper of [HtmlUnit](http://htmlunit.sourceforge.net/);
+a "GUI-less browser for Java programs".
 
 Introduction
 ----------
 
-We really like the [HtmlUnit](http://htmlunit.sourceforge.net/) project, which enables
-headless web testing without needing to have a complete browser running. By using
-[IKVM](http://www.ikvm.net/) it is possible to convert the HtmlUnit Java library for use
-on Microsoft's .NET platform.
+We really like the HtmlUnit project, which enables headless web testing without needing
+to have a complete browser running. By using [IKVM](http://www.ikvm.net/) it is possible
+to convert the HtmlUnit Java library for use on Microsoft's .NET platform.
 
-However it doesn't feel very natural to use a java library in a .NET language,
-and therefore we created an HtmlUnit wrapper written in C#.
+However, it doesn't feel very natural to use a java library in a .NET language,
+and therefore we created an HtmlUnit wrapper written in C#, so you can write tests for
+your web pages in clean C# code (or any code running on the .NET platform).
 
 Downloading NHtmlUnit
 ---------------------
@@ -34,28 +35,25 @@ After building you can find `NHtmlUnit.dll` plus its dependencies here:
 Usage
 -----
 
-For now there is no manual or API reference written for NHtmlUnit.
+For now there is no manual or API reference written for NHtmlUnit. You can however use the
+[HtmlUnit reference](http://htmlunit.sourceforge.net/gettingStarted.html), as this wrapper
+almost completely reflects the original API.
 
-You can however use the [HtmlUnit reference](http://htmlunit.sourceforge.net/gettingStarted.html),
-as this wrapper almost completely reflects the original API.
-
-The difference is that Java iterators, lists and collections are exposed as
-their .NET-friendly counterparts (`IEnumerable`, `IList` and `ICollection`).
-
-In addition, properties are now "real" .NET properties. `obj.getSomething()` and
-`obj.setSomething()` is exposed as `obj.Something`;
+The difference is that Java iterators, lists and collections are exposed as their
+.NET-friendly counterparts (`IEnumerable`, `IList` and `ICollection`). In addition,
+properties are "real" .NET properties, so `obj.getSomething()` and `obj.setSomething()` is
+exposed as `obj.Something`.
 
 NHtmlUnitGenerator
 ------------------
 
-This executable only needs to be run when the HtmlUnit jar file has changed.
+The `NHtmlUnitGenerator` executable only needs to be run when the HtmlUnit jar file has
+changed. When `NHtmlUnitGenerator` is run it will overwrite all files in
+`app\NHtmlUnit\Generated`.
 
-When `NHtmlUnitGenerator` is run it will overwrite all files
-in `app\NHtmlUnit\Generated`.
-
-Note that it doesn't do anything with the project files, so if classes are
-added or removed from the origin HtmlUnit jar file this will not be
-synchronized. You have to manually add new files to the project.
+Note that it doesn't do anything with the project files, so if classes are added or
+removed from the origin HtmlUnit jar file this will not be synchronized. You have to
+manually add new files to the project.
 
 License
 -------
