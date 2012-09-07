@@ -19,6 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{48CA8B
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{5B152A0C-87B8-4920-80AE-77F60A184ABF}"
+	ProjectSection(SolutionItems) = preProject
+		clean.cmd = clean.cmd
+		LICENSE-HtmlUnit.txt = LICENSE-HtmlUnit.txt
+		LICENSE.txt = LICENSE.txt
+		NHtmlUnit.nuspec = NHtmlUnit.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
