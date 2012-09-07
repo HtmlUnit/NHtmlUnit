@@ -150,8 +150,9 @@
     <Reference Include="ikvmstub">
       <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\ikvmstub.exe</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\tools\NUnit\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
