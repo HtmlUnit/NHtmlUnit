@@ -305,13 +305,9 @@
     <Compile Include="Generated\IWebConnection.cs" />
     <Compile Include="Generated\IWebWindow.cs" />
     <Compile Include="Generated\IWebWindowListener.cs" />
-    <Compile Include="Generated\Javascript\Background\GAEJavaScriptExecutor.cs" />
+    <Compile Include="Generated\Javascript\Background\IJavaScriptExecutor.cs" />
+    <Compile Include="Generated\Javascript\Background\IJavaScriptJob.cs" />
     <Compile Include="Generated\Javascript\Background\IJavaScriptJobManager.cs" />
-    <Compile Include="Generated\Javascript\Background\JavaScriptExecutionJob.cs" />
-    <Compile Include="Generated\Javascript\Background\JavaScriptExecutor.cs" />
-    <Compile Include="Generated\Javascript\Background\JavaScriptFunctionJob.cs" />
-    <Compile Include="Generated\Javascript\Background\JavaScriptJob.cs" />
-    <Compile Include="Generated\Javascript\Background\JavaScriptStringJob.cs" />
     <Compile Include="Generated\Javascript\Host\ActiveXObject.cs" />
     <Compile Include="Generated\Javascript\Host\ActiveXObjectImpl.cs" />
     <Compile Include="Generated\Javascript\Host\Attr.cs" />
@@ -319,6 +315,7 @@
     <Compile Include="Generated\Javascript\Host\Canvas\CanvasRenderingContext2D.cs" />
     <Compile Include="Generated\Javascript\Host\CDATASection.cs" />
     <Compile Include="Generated\Javascript\Host\CharacterDataImpl.cs" />
+    <Compile Include="Generated\Javascript\Host\ClientRect.cs" />
     <Compile Include="Generated\Javascript\Host\ClipboardData.cs" />
     <Compile Include="Generated\Javascript\Host\Comment.cs" />
     <Compile Include="Generated\Javascript\Host\Css\ComputedCSSStyleDeclaration.cs" />
@@ -347,6 +344,7 @@
     <Compile Include="Generated\Javascript\Host\External.cs" />
     <Compile Include="Generated\Javascript\Host\FormChild.cs" />
     <Compile Include="Generated\Javascript\Host\FormField.cs" />
+    <Compile Include="Generated\Javascript\Host\HashChangeEvent.cs" />
     <Compile Include="Generated\Javascript\Host\History.cs" />
     <Compile Include="Generated\Javascript\Host\Html\DocumentProxy.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLAnchorElement.cs" />
@@ -421,6 +419,7 @@
     <Compile Include="Generated\Javascript\Host\KeyboardEvent.cs" />
     <Compile Include="Generated\Javascript\Host\Location.cs" />
     <Compile Include="Generated\Javascript\Host\MediaList.cs" />
+    <Compile Include="Generated\Javascript\Host\MessageEvent.cs" />
     <Compile Include="Generated\Javascript\Host\MimeTypeArray.cs" />
     <Compile Include="Generated\Javascript\Host\MouseEvent.cs" />
     <Compile Include="Generated\Javascript\Host\MutationEvent.cs" />
@@ -444,9 +443,9 @@
     <Compile Include="Generated\Javascript\Host\StorageList.cs" />
     <Compile Include="Generated\Javascript\Host\Text.cs" />
     <Compile Include="Generated\Javascript\Host\TextRange.cs" />
-    <Compile Include="Generated\Javascript\Host\TextRectangle.cs" />
     <Compile Include="Generated\Javascript\Host\TreeWalker.cs" />
     <Compile Include="Generated\Javascript\Host\UIEvent.cs" />
+    <Compile Include="Generated\Javascript\Host\WebSocket.cs" />
     <Compile Include="Generated\Javascript\Host\Window.cs" />
     <Compile Include="Generated\Javascript\Host\WindowProxy.cs" />
     <Compile Include="Generated\Javascript\Host\Xml\XMLAttr.cs" />

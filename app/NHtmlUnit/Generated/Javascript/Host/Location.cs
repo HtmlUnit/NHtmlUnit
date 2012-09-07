@@ -32,6 +32,12 @@ namespace NHtmlUnit.Javascript.Host
          WObj.jsxSet_hash(hash);
       }
 
+// Generating method code for jsxGet_href
+      public virtual string JsxGet_href()
+      {
+         return WObj.jsxGet_href();
+      }
+
 // Generating method code for jsxSet_href
       public virtual void JsxSet_href(string newLocation)
       {
@@ -42,12 +48,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Initialize(NHtmlUnit.Javascript.Host.Window window)
       {
          WObj.initialize((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject);
-      }
-
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
-      {
-         return WObj.jsxGet_href();
       }
 
 // Generating method code for jsxFunction_assign

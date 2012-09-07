@@ -26,6 +26,9 @@ namespace NHtmlUnit.Javascript.Host
       public Event(NHtmlUnit.Html.DomNode domNode, string type)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Event((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type)) {}
 
+      public Event(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Event((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
+
       public Event()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Event()) {}
 
@@ -33,6 +36,24 @@ namespace NHtmlUnit.Javascript.Host
       public virtual bool IsAborted(NHtmlUnit.ScriptResult result)
       {
          return WObj.isAborted((com.gargoylesoftware.htmlunit.ScriptResult)result.WrappedObject);
+      }
+
+// Generating method code for jsxGet_shiftKey
+      public virtual bool JsxGet_shiftKey()
+      {
+         return WObj.jsxGet_shiftKey();
+      }
+
+// Generating method code for jsxGet_ctrlKey
+      public virtual bool JsxGet_ctrlKey()
+      {
+         return WObj.jsxGet_ctrlKey();
+      }
+
+// Generating method code for jsxGet_altKey
+      public virtual bool JsxGet_altKey()
+      {
+         return WObj.jsxGet_altKey();
       }
 
 // Generating method code for jsxGet_type
@@ -47,16 +68,34 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_returnValue();
       }
 
-// Generating method code for jsxGet_srcElement
-      public virtual object JsxGet_srcElement()
+// Generating method code for isPropagationStopped
+      public virtual bool IsPropagationStopped()
       {
-         return WObj.jsxGet_srcElement();
+         return WObj.isPropagationStopped();
+      }
+
+// Generating method code for jsxSet_cancelBubble
+      public virtual void JsxSet_cancelBubble(bool newValue)
+      {
+         WObj.jsxSet_cancelBubble(newValue);
+      }
+
+// Generating method code for jsxSet_returnValue
+      public virtual void JsxSet_returnValue(object returnValue)
+      {
+         WObj.jsxSet_returnValue(returnValue);
       }
 
 // Generating method code for jsxSet_srcElement
       public virtual void JsxSet_srcElement(object srcElement)
       {
          WObj.jsxSet_srcElement(srcElement);
+      }
+
+// Generating method code for jsxGet_srcElement
+      public virtual object JsxGet_srcElement()
+      {
+         return WObj.jsxGet_srcElement();
       }
 
 // Generating method code for jsxGet_target
@@ -83,24 +122,6 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_keyCode();
       }
 
-// Generating method code for jsxGet_shiftKey
-      public virtual bool JsxGet_shiftKey()
-      {
-         return WObj.jsxGet_shiftKey();
-      }
-
-// Generating method code for jsxGet_ctrlKey
-      public virtual bool JsxGet_ctrlKey()
-      {
-         return WObj.jsxGet_ctrlKey();
-      }
-
-// Generating method code for jsxGet_altKey
-      public virtual bool JsxGet_altKey()
-      {
-         return WObj.jsxGet_altKey();
-      }
-
 // Generating method code for jsxGet_eventPhase
       public virtual int JsxGet_eventPhase()
       {
@@ -125,34 +146,16 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_cancelBubble();
       }
 
-// Generating method code for jsxSet_cancelBubble
-      public virtual void JsxSet_cancelBubble(bool newValue)
-      {
-         WObj.jsxSet_cancelBubble(newValue);
-      }
-
 // Generating method code for jsxFunction_stopPropagation
       public virtual void JsxFunction_stopPropagation()
       {
          WObj.jsxFunction_stopPropagation();
       }
 
-// Generating method code for isPropagationStopped
-      public virtual bool IsPropagationStopped()
-      {
-         return WObj.isPropagationStopped();
-      }
-
 // Generating method code for jsxGet_propertyName
       public virtual string JsxGet_propertyName()
       {
          return WObj.jsxGet_propertyName();
-      }
-
-// Generating method code for jsxSet_returnValue
-      public virtual void JsxSet_returnValue(object returnValue)
-      {
-         WObj.jsxSet_returnValue(returnValue);
       }
 
 // Generating method code for jsxFunction_initEvent

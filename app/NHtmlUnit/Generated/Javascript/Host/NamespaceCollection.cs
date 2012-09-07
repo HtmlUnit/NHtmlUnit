@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection)WrappedObject; }
       }
 
-      public NamespaceCollection()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection()) {}
-
       public NamespaceCollection(NHtmlUnit.Javascript.Host.Html.HTMLDocument doc)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)doc.WrappedObject)) {}
+
+      public NamespaceCollection()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection()) {}
 
 // Generating method code for jsxFunction_item
       public virtual object JsxFunction_item(object index)

@@ -47,31 +47,13 @@ namespace NHtmlUnit.Javascript
       }
 
 
-      public NHtmlUnit.Javascript.Background.JavaScriptExecutor JavaScriptExecutor
+      public NHtmlUnit.Javascript.Background.IJavaScriptExecutor JavaScriptExecutor
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Background.JavaScriptExecutor>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Background.IJavaScriptExecutor>(
                WObj.getJavaScriptExecutor());
          }
-      }
-
-// Generating method code for registerWindowAndMaybeStartEventLoop
-      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for shutdownJavaScriptExecutor
-      public virtual void ShutdownJavaScriptExecutor()
-      {
-         WObj.shutdownJavaScriptExecutor();
       }
 
 // Generating method code for processPostponedActions
@@ -122,10 +104,28 @@ namespace NHtmlUnit.Javascript
          return WObj.compile((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, sourceCode, sourceName, startLine);
       }
 
+// Generating method code for getJavaScriptClass
+      public virtual java.lang.Class GetJavaScriptClass(java.lang.Class c)
+      {
+         return WObj.getJavaScriptClass(c);
+      }
+
 // Generating method code for callFunction
       public virtual object CallFunction(NHtmlUnit.Html.HtmlPage htmlPage, net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args)
       {
          return WObj.callFunction((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, function, scope, thisObject, args);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for registerWindowAndMaybeStartEventLoop
+      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
       }
 
 // Generating method code for pumpEventLoop
@@ -134,10 +134,10 @@ namespace NHtmlUnit.Javascript
          return WObj.pumpEventLoop(timeoutMillis);
       }
 
-// Generating method code for getJavaScriptClass
-      public virtual java.lang.Class GetJavaScriptClass(java.lang.Class c)
+// Generating method code for shutdownJavaScriptExecutor
+      public virtual void ShutdownJavaScriptExecutor()
       {
-         return WObj.getJavaScriptClass(c);
+         WObj.shutdownJavaScriptExecutor();
       }
 
    }

@@ -8,26 +8,26 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class TextRectangle : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class ClientRect : NHtmlUnit.Javascript.SimpleScriptable
    {
-      static TextRectangle()
+      static ClientRect()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.TextRectangle o) =>
-            new TextRectangle(o));
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.ClientRect o) =>
+            new ClientRect(o));
       }
 
-      public TextRectangle(com.gargoylesoftware.htmlunit.javascript.host.TextRectangle wrappedObject) : base(wrappedObject) {}
+      public ClientRect(com.gargoylesoftware.htmlunit.javascript.host.ClientRect wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.TextRectangle WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.ClientRect WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.TextRectangle)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.ClientRect)WrappedObject; }
       }
 
-      public TextRectangle(int bottom, int left, int right, int top)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.TextRectangle(bottom, left, right, top)) {}
+      public ClientRect()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect()) {}
 
-      public TextRectangle()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.TextRectangle()) {}
+      public ClientRect(int bottom, int left, int right, int top)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect(bottom, left, right, top)) {}
 
 // Generating method code for jsxSet_bottom
       public virtual void JsxSet_bottom(int bottom)

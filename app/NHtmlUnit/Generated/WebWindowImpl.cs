@@ -24,34 +24,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.IPage EnclosedPage
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
-               WObj.getEnclosedPage());
-         }
-         set
-         {
-            WObj.setEnclosedPage((com.gargoylesoftware.htmlunit.Page)value.WrappedObject);
-         }
-
-      }
-
-
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-         set
-         {
-            WObj.setName(value);
-         }
-
-      }
-
       public NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager
       {
          get
@@ -62,6 +34,21 @@ namespace NHtmlUnit
          set
          {
             WObj.setJobManager((com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager)value.WrappedObject);
+         }
+
+      }
+
+
+      public NHtmlUnit.IPage EnclosedPage
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
+               WObj.getEnclosedPage());
+         }
+         set
+         {
+            WObj.setEnclosedPage((com.gargoylesoftware.htmlunit.Page)value.WrappedObject);
          }
 
       }
@@ -86,6 +73,19 @@ namespace NHtmlUnit
          set
          {
             WObj.setScriptObject(value);
+         }
+
+      }
+
+      public System.String Name
+      {
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
          }
 
       }

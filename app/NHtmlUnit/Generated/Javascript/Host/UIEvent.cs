@@ -29,6 +29,9 @@ namespace NHtmlUnit.Javascript.Host
       public UIEvent(NHtmlUnit.Html.DomNode domNode, string type)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.UIEvent((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type)) {}
 
+      public UIEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.UIEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
+
 // Generating method code for jsxGet_detail
       public virtual System.Int64 JsxGet_detail()
       {

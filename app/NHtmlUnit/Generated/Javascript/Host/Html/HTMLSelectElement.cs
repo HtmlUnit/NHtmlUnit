@@ -26,6 +26,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLSelectElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLSelectElement()) {}
 
+// Generating method code for jsxSet_selectedIndex
+      public virtual void JsxSet_selectedIndex(int index)
+      {
+         WObj.jsxSet_selectedIndex(index);
+      }
+
 // Generating method code for jsxGet_length
       public virtual int JsxGet_length()
       {
@@ -36,12 +42,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void Initialize()
       {
          WObj.initialize();
-      }
-
-// Generating method code for jsxSet_selectedIndex
-      public virtual void JsxSet_selectedIndex(int index)
-      {
-         WObj.jsxSet_selectedIndex(index);
       }
 
 // Generating method code for jsxGet_selectedIndex

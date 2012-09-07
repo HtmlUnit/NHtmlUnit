@@ -24,14 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String IdAttribute
-      {
-         get
-         {
-            return WObj.getIdAttribute();
-         }
-      }
-
       public System.String NameAttribute
       {
          get
@@ -45,6 +37,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getValueAttribute();
+         }
+      }
+
+      public System.String IdAttribute
+      {
+         get
+         {
+            return WObj.getIdAttribute();
          }
       }
 

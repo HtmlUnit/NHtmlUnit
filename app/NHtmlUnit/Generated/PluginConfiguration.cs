@@ -27,6 +27,14 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.PluginConfiguration(name, description, filename)) {}
 
 
+      public System.String Name
+      {
+         get
+         {
+            return WObj.getName();
+         }
+      }
+
       public System.String Description
       {
          get
@@ -40,14 +48,6 @@ namespace NHtmlUnit
          get
          {
             return WObj.getFilename();
-         }
-      }
-
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
          }
       }
    }

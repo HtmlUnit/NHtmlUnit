@@ -27,19 +27,19 @@ namespace NHtmlUnit.Util
          : this(new com.gargoylesoftware.htmlunit.util.NameValuePair(name, value)) {}
 
 
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-      }
-
       public System.String Value
       {
          get
          {
             return WObj.getValue();
+         }
+      }
+
+      public System.String Name
+      {
+         get
+         {
+            return WObj.getName();
          }
       }
    }

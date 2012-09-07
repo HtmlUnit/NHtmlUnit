@@ -27,21 +27,15 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
 
-      public System.Int32 PosY
+      public NHtmlUnit.Javascript.Host.BoxObject BoxObject
       {
          get
          {
-            return WObj.getPosY();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(
+               WObj.getBoxObject());
          }
       }
 
-      public System.Int32 PosX
-      {
-         get
-         {
-            return WObj.getPosX();
-         }
-      }
 
       public System.Int32 AvailHeight
       {
@@ -66,16 +60,6 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getBufferDepth();
          }
       }
-
-      public NHtmlUnit.Javascript.Host.BoxObject BoxObject
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(
-               WObj.getBoxObject());
-         }
-      }
-
 
       public System.Int32 ColorDepth
       {
@@ -166,16 +150,46 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-// Generating method code for jsxGet_currentStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration JsxGet_currentStyle()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.jsxGet_currentStyle());
-      }
-
 // Generating method code for jsxFunction_setActive
       public virtual void JsxFunction_setActive()
       {
          WObj.jsxFunction_setActive();
+      }
+
+// Generating method code for jsxGet_clientWidth
+      public virtual int JsxGet_clientWidth()
+      {
+         return WObj.jsxGet_clientWidth();
+      }
+
+// Generating method code for jsxGet_clientHeight
+      public virtual int JsxGet_clientHeight()
+      {
+         return WObj.jsxGet_clientHeight();
+      }
+
+// Generating method code for jsxFunction_addBehavior
+      public virtual int JsxFunction_addBehavior(string behavior)
+      {
+         return WObj.jsxFunction_addBehavior(behavior);
+      }
+
+// Generating method code for jsxFunction_removeBehavior
+      public virtual void JsxFunction_removeBehavior(int id)
+      {
+         WObj.jsxFunction_removeBehavior(id);
+      }
+
+// Generating method code for jsxGet_scrollLeft
+      public virtual int JsxGet_scrollLeft()
+      {
+         return WObj.jsxGet_scrollLeft();
+      }
+
+// Generating method code for jsxGet_scrollTop
+      public virtual int JsxGet_scrollTop()
+      {
+         return WObj.jsxGet_scrollTop();
       }
 
 // Generating method code for jsxFunction_removeAttributeNS
@@ -190,53 +204,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxGet_parentElement());
       }
 
-// Generating method code for jsxGet_offsetLeft
-      public virtual int JsxGet_offsetLeft()
-      {
-         return WObj.jsxGet_offsetLeft();
-      }
-
-// Generating method code for jsxGet_offsetParent
-      public virtual object JsxGet_offsetParent()
-      {
-         return WObj.jsxGet_offsetParent();
-      }
-
-// Generating method code for jsxGet_offsetTop
-      public virtual int JsxGet_offsetTop()
-      {
-         return WObj.jsxGet_offsetTop();
-      }
-
-// Generating method code for jsxGet_clientLeft
-      public virtual int JsxGet_clientLeft()
-      {
-         return WObj.jsxGet_clientLeft();
-      }
-
-// Generating method code for jsxGet_clientTop
-      public virtual int JsxGet_clientTop()
-      {
-         return WObj.jsxGet_clientTop();
-      }
-
 // Generating method code for jsxGet_all
       public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxGet_all()
       {
 
          return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxGet_all());
-      }
-
-// Generating method code for jsxGet_style
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration JsxGet_style()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(WObj.jsxGet_style());
-      }
-
-// Generating method code for jsxGet_runtimeStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration JsxGet_runtimeStyle()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(WObj.jsxGet_runtimeStyle());
       }
 
 // Generating method code for jsxGet_id
@@ -354,18 +326,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.jsxGet_className();
       }
 
-// Generating method code for jsxGet_clientHeight
-      public virtual int JsxGet_clientHeight()
-      {
-         return WObj.jsxGet_clientHeight();
-      }
-
-// Generating method code for jsxGet_clientWidth
-      public virtual int JsxGet_clientWidth()
-      {
-         return WObj.jsxGet_clientWidth();
-      }
-
 // Generating method code for jsxSet_className
       public virtual void JsxSet_className(string className)
       {
@@ -406,18 +366,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual object JsxFunction_insertAdjacentElement(string whereArg, object objectArg)
       {
          return WObj.jsxFunction_insertAdjacentElement(whereArg, objectArg);
-      }
-
-// Generating method code for jsxFunction_addBehavior
-      public virtual int JsxFunction_addBehavior(string behavior)
-      {
-         return WObj.jsxFunction_addBehavior(behavior);
-      }
-
-// Generating method code for jsxFunction_removeBehavior
-      public virtual void JsxFunction_removeBehavior(int id)
-      {
-         WObj.jsxFunction_removeBehavior(id);
       }
 
 // Generating method code for addComponentRequest
@@ -493,22 +441,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.jsxGet_offsetWidth();
       }
 
-// Generating method code for jsxGet_scrollTop
-      public virtual int JsxGet_scrollTop()
-      {
-         return WObj.jsxGet_scrollTop();
-      }
-
 // Generating method code for jsxSet_scrollTop
       public virtual void JsxSet_scrollTop(int scroll)
       {
          WObj.jsxSet_scrollTop(scroll);
-      }
-
-// Generating method code for jsxGet_scrollLeft
-      public virtual int JsxGet_scrollLeft()
-      {
-         return WObj.jsxGet_scrollLeft();
       }
 
 // Generating method code for jsxSet_scrollLeft
@@ -551,12 +487,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void JsxFunction_scrollIntoView()
       {
          WObj.jsxFunction_scrollIntoView();
-      }
-
-// Generating method code for jsxFunction_getBoundingClientRect
-      public virtual NHtmlUnit.Javascript.Host.TextRectangle JsxFunction_getBoundingClientRect()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.TextRectangle>(WObj.jsxFunction_getBoundingClientRect());
       }
 
 // Generating method code for jsxFunction_getClientRects

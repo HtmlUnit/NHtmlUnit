@@ -24,27 +24,11 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ArchiveAttribute
+      public System.String NameAttribute
       {
          get
          {
-            return WObj.getArchiveAttribute();
-         }
-      }
-
-      public System.String CodeAttribute
-      {
-         get
-         {
-            return WObj.getCodeAttribute();
-         }
-      }
-
-      public System.String CodebaseAttribute
-      {
-         get
-         {
-            return WObj.getCodebaseAttribute();
+            return WObj.getNameAttribute();
          }
       }
 
@@ -56,6 +40,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public System.String AlignAttribute
+      {
+         get
+         {
+            return WObj.getAlignAttribute();
+         }
+      }
+
       public System.String AltAttribute
       {
          get
@@ -64,35 +56,11 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String NameAttribute
-      {
-         get
-         {
-            return WObj.getNameAttribute();
-         }
-      }
-
-      public System.String WidthAttribute
-      {
-         get
-         {
-            return WObj.getWidthAttribute();
-         }
-      }
-
       public System.String HeightAttribute
       {
          get
          {
             return WObj.getHeightAttribute();
-         }
-      }
-
-      public System.String AlignAttribute
-      {
-         get
-         {
-            return WObj.getAlignAttribute();
          }
       }
 
@@ -112,6 +80,38 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public System.String WidthAttribute
+      {
+         get
+         {
+            return WObj.getWidthAttribute();
+         }
+      }
+
+      public System.String CodebaseAttribute
+      {
+         get
+         {
+            return WObj.getCodebaseAttribute();
+         }
+      }
+
+      public System.String ArchiveAttribute
+      {
+         get
+         {
+            return WObj.getArchiveAttribute();
+         }
+      }
+
+      public System.String CodeAttribute
+      {
+         get
+         {
+            return WObj.getCodeAttribute();
+         }
+      }
+
       public java.applet.Applet Applet
       {
          get
@@ -119,6 +119,15 @@ namespace NHtmlUnit.Html
             return WObj.getApplet();
          }
       }
+
+      public IList<java.net.URL> ArchiveUrls
+      {
+         get
+         {
+            return new ShallowListWrapper<java.net.URL>(
+               WObj.getArchiveUrls());
+         }
+       }
    }
 
 

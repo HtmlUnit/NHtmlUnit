@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Xml
          get { return (com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument)WrappedObject; }
       }
 
-      public XMLDocument()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
-
       public XMLDocument(NHtmlUnit.IWebWindow enclosingWindow)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument((com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
+
+      public XMLDocument()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
 
 // Generating method code for jsxFunction_loadXML
       public virtual bool JsxFunction_loadXML(string strXML)

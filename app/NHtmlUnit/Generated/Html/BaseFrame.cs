@@ -125,6 +125,30 @@ namespace NHtmlUnit.Html
             return WObj.getOnLoadAttribute();
          }
       }
+// Generating method code for loadInnerPage
+      public virtual void LoadInnerPage()
+      {
+         WObj.loadInnerPage();
+      }
+
+// Generating method code for markAsCreatedByJavascript
+      public virtual void MarkAsCreatedByJavascript()
+      {
+         WObj.markAsCreatedByJavascript();
+      }
+
+// Generating method code for unmarkAsCreatedByJavascript
+      public virtual void UnmarkAsCreatedByJavascript()
+      {
+         WObj.unmarkAsCreatedByJavascript();
+      }
+
+// Generating method code for wasCreatedByJavascript
+      public virtual bool WasCreatedByJavascript()
+      {
+         return WObj.wasCreatedByJavascript();
+      }
+
    }
 
 

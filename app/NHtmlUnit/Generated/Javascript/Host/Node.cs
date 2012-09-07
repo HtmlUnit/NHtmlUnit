@@ -36,12 +36,6 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-// Generating method code for executeEvent
-      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
-      }
-
 // Generating method code for hasEventHandlers
       public virtual bool HasEventHandlers(string eventName)
       {
@@ -58,6 +52,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
+      }
+
+// Generating method code for executeEvent
+      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for jsxGet_nextSibling

@@ -26,6 +26,44 @@ namespace NHtmlUnit.Javascript.Host
       public Element()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Element()) {}
 
+
+      public System.Int32 PosX
+      {
+         get
+         {
+            return WObj.getPosX();
+         }
+      }
+
+      public System.Int32 PosY
+      {
+         get
+         {
+            return WObj.getPosY();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Element ParentElement
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getParentElement());
+         }
+      }
+
+// Generating method code for jsxGet_currentStyle
+      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration JsxGet_currentStyle()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.jsxGet_currentStyle());
+      }
+
+// Generating method code for jsxGet_tagName
+      public virtual string JsxGet_tagName()
+      {
+         return WObj.jsxGet_tagName();
+      }
+
 // Generating method code for jsxFunction_selectNodes
       public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxFunction_selectNodes(string expression)
       {
@@ -33,16 +71,28 @@ namespace NHtmlUnit.Javascript.Host
          return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxFunction_selectNodes(expression));
       }
 
+// Generating method code for jsxGet_offsetParent
+      public virtual object JsxGet_offsetParent()
+      {
+         return WObj.jsxGet_offsetParent();
+      }
+
+// Generating method code for jsxGet_offsetLeft
+      public virtual int JsxGet_offsetLeft()
+      {
+         return WObj.jsxGet_offsetLeft();
+      }
+
+// Generating method code for jsxGet_offsetTop
+      public virtual int JsxGet_offsetTop()
+      {
+         return WObj.jsxGet_offsetTop();
+      }
+
 // Generating method code for jsxFunction_selectSingleNode
       public virtual object JsxFunction_selectSingleNode(string expression)
       {
          return WObj.jsxFunction_selectSingleNode(expression);
-      }
-
-// Generating method code for jsxGet_tagName
-      public virtual string JsxGet_tagName()
-      {
-         return WObj.jsxGet_tagName();
       }
 
 // Generating method code for jsxGet_attributes
@@ -97,6 +147,36 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void JsxFunction_removeAttribute(string name)
       {
          WObj.jsxFunction_removeAttribute(name);
+      }
+
+// Generating method code for jsxFunction_getBoundingClientRect
+      public virtual NHtmlUnit.Javascript.Host.ClientRect JsxFunction_getBoundingClientRect()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClientRect>(WObj.jsxFunction_getBoundingClientRect());
+      }
+
+// Generating method code for jsxGet_clientLeft
+      public virtual int JsxGet_clientLeft()
+      {
+         return WObj.jsxGet_clientLeft();
+      }
+
+// Generating method code for jsxGet_clientTop
+      public virtual int JsxGet_clientTop()
+      {
+         return WObj.jsxGet_clientTop();
+      }
+
+// Generating method code for jsxGet_style
+      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration JsxGet_style()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(WObj.jsxGet_style());
+      }
+
+// Generating method code for jsxGet_runtimeStyle
+      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration JsxGet_runtimeStyle()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(WObj.jsxGet_runtimeStyle());
       }
 
    }

@@ -26,6 +26,36 @@ namespace NHtmlUnit.Javascript.Host
       public DocumentFragment()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.DocumentFragment()) {}
 
+// Generating method code for jsxFunction_createAttribute
+      public virtual object JsxFunction_createAttribute(string attributeName)
+      {
+         return WObj.jsxFunction_createAttribute(attributeName);
+      }
+
+// Generating method code for jsxFunction_createElement
+      public virtual object JsxFunction_createElement(string tagName)
+      {
+         return WObj.jsxFunction_createElement(tagName);
+      }
+
+// Generating method code for jsxFunction_createComment
+      public virtual object JsxFunction_createComment(string comment)
+      {
+         return WObj.jsxFunction_createComment(comment);
+      }
+
+// Generating method code for jsxFunction_createDocumentFragment
+      public virtual object JsxFunction_createDocumentFragment()
+      {
+         return WObj.jsxFunction_createDocumentFragment();
+      }
+
+// Generating method code for jsxFunction_createTextNode
+      public virtual object JsxFunction_createTextNode(string newData)
+      {
+         return WObj.jsxFunction_createTextNode(newData);
+      }
+
    }
 
 

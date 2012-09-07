@@ -24,6 +24,14 @@ namespace NHtmlUnit
       }
 
 
+      public System.String PageEncoding
+      {
+         get
+         {
+            return WObj.getPageEncoding();
+         }
+      }
+
       public NHtmlUnit.Html.DomElement DocumentElement
       {
          get
@@ -33,14 +41,6 @@ namespace NHtmlUnit
          }
       }
 
-
-      public System.String PageEncoding
-      {
-         get
-         {
-            return WObj.getPageEncoding();
-         }
-      }
 
       public System.String InputEncoding
       {
@@ -130,16 +130,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.WebResponse WebResponse
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
-               WObj.getWebResponse());
-         }
-      }
-
-
       public NHtmlUnit.WebClient WebClient
       {
          get
@@ -165,6 +155,16 @@ namespace NHtmlUnit
       }
 
 
+      public NHtmlUnit.WebResponse WebResponse
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
+               WObj.getWebResponse());
+         }
+      }
+
+
       public NHtmlUnit.W3C.Dom.IDocumentType Doctype
       {
          get
@@ -182,6 +182,12 @@ namespace NHtmlUnit
             return WObj.getUrl();
          }
       }
+// Generating method code for cleanUp
+      public virtual void CleanUp()
+      {
+         WObj.cleanUp();
+      }
+
 // Generating method code for createElement
       public virtual NHtmlUnit.W3C.Dom.IElement CreateElement(string str)
       {
@@ -224,12 +230,6 @@ namespace NHtmlUnit
       public virtual void Initialize()
       {
          WObj.initialize();
-      }
-
-// Generating method code for cleanUp
-      public virtual void CleanUp()
-      {
-         WObj.cleanUp();
       }
 
 // Generating method code for importNode

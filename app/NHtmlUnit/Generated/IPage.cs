@@ -16,10 +16,10 @@ namespace NHtmlUnit
       NHtmlUnit.WebResponse WebResponse  { get; }
       NHtmlUnit.IWebWindow EnclosingWindow  { get; }
       java.net.URL Url  { get; }
-// Generating method code for cleanUp
-      void CleanUp();
 // Generating method code for initialize
       void Initialize();
+// Generating method code for cleanUp
+      void CleanUp();
 
    }
 }

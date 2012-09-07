@@ -34,6 +34,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersion FIREFOX_10
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_10);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_6
       {
          get
@@ -63,46 +73,22 @@ namespace NHtmlUnit
          }
       }
 
+
+      public static NHtmlUnit.BrowserVersion CHROME_16
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               com.gargoylesoftware.htmlunit.BrowserVersion.CHROME_16);
+         }
+      }
+
       public BrowserVersion(string applicationName, string applicationVersion, string userAgent, System.Single browserVersionNumeric)
          : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric)) {}
 
       public BrowserVersion(string applicationName, string applicationVersion, string userAgent, System.Single browserVersionNumeric, com.gargoylesoftware.htmlunit.BrowserVersionFeatures[] features)
          : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric, features)) {}
 
-
-      public System.String BrowserLanguage
-      {
-         get
-         {
-            return WObj.getBrowserLanguage();
-         }
-         set
-         {
-            WObj.setBrowserLanguage(value);
-         }
-
-      }
-
-      public System.String UserAgent
-      {
-         get
-         {
-            return WObj.getUserAgent();
-         }
-         set
-         {
-            WObj.setUserAgent(value);
-         }
-
-      }
-
-      public System.Single BrowserVersionNumeric
-      {
-         get
-         {
-            return WObj.getBrowserVersionNumeric();
-         }
-      }
 
       public System.String ApplicationVersion
       {
@@ -130,6 +116,14 @@ namespace NHtmlUnit
 
       }
 
+      public System.String Nickname
+      {
+         get
+         {
+            return WObj.getNickname();
+         }
+      }
+
       public ICollection<NHtmlUnit.PluginConfiguration> Plugins
       {
          get
@@ -152,15 +146,15 @@ namespace NHtmlUnit
 
       }
 
-      public System.String ApplicationMinorVersion
+      public System.String Platform
       {
          get
          {
-            return WObj.getApplicationMinorVersion();
+            return WObj.getPlatform();
          }
          set
          {
-            WObj.setApplicationMinorVersion(value);
+            WObj.setPlatform(value);
          }
 
       }
@@ -178,15 +172,28 @@ namespace NHtmlUnit
 
       }
 
-      public System.String Platform
+      public System.String BrowserLanguage
       {
          get
          {
-            return WObj.getPlatform();
+            return WObj.getBrowserLanguage();
          }
          set
          {
-            WObj.setPlatform(value);
+            WObj.setBrowserLanguage(value);
+         }
+
+      }
+
+      public System.String ApplicationMinorVersion
+      {
+         get
+         {
+            return WObj.getApplicationMinorVersion();
+         }
+         set
+         {
+            WObj.setApplicationMinorVersion(value);
          }
 
       }
@@ -204,6 +211,19 @@ namespace NHtmlUnit
 
       }
 
+      public System.String UserAgent
+      {
+         get
+         {
+            return WObj.getUserAgent();
+         }
+         set
+         {
+            WObj.setUserAgent(value);
+         }
+
+      }
+
       public System.String UserLanguage
       {
          get
@@ -217,17 +237,17 @@ namespace NHtmlUnit
 
       }
 
-      public System.String Nickname
+      public System.Single BrowserVersionNumeric
       {
          get
          {
-            return WObj.getNickname();
+            return WObj.getBrowserVersionNumeric();
          }
       }
-// Generating method code for hasFeature
-      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
+// Generating method code for isChrome
+      public virtual bool IsChrome()
       {
-         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+         return WObj.isChrome();
       }
 
 // Generating method code for isIE
@@ -246,6 +266,12 @@ namespace NHtmlUnit
       public virtual bool IsOnLine()
       {
          return WObj.isOnLine();
+      }
+
+// Generating method code for hasFeature
+      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
+      {
+         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
       }
 
    }

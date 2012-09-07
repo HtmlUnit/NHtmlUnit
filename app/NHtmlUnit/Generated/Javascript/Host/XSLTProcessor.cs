@@ -26,6 +26,12 @@ namespace NHtmlUnit.Javascript.Host
       public XSLTProcessor()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.XSLTProcessor()) {}
 
+// Generating method code for jsxFunction_importStylesheet
+      public virtual void JsxFunction_importStylesheet(NHtmlUnit.Javascript.Host.Node style)
+      {
+         WObj.jsxFunction_importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
+      }
+
 // Generating method code for jsxFunction_setParameter
       public virtual void JsxFunction_setParameter(string namespaceURI, string localName, object value)
       {
@@ -36,12 +42,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void JsConstructor()
       {
          WObj.jsConstructor();
-      }
-
-// Generating method code for jsxFunction_importStylesheet
-      public virtual void JsxFunction_importStylesheet(NHtmlUnit.Javascript.Host.Node style)
-      {
-         WObj.jsxFunction_importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
       }
 
 // Generating method code for jsxFunction_transformToDocument

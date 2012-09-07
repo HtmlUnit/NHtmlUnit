@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class CSSStyleDeclaration : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class CSSStyleDeclaration : NHtmlUnit.Javascript.SimpleScriptable, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static CSSStyleDeclaration()
       {
@@ -23,586 +23,196 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)WrappedObject; }
       }
 
-      public CSSStyleDeclaration(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject)) {}
-
       public CSSStyleDeclaration()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration()) {}
 
-// Generating method code for jsxGet_MozBorderTopColors
-      public virtual string JsxGet_MozBorderTopColors()
-      {
-         return WObj.jsxGet_MozBorderTopColors();
-      }
-
-// Generating method code for jsxSet_MozBorderTopColors
-      public virtual void JsxSet_MozBorderTopColors(string mozBorderTopColors)
-      {
-         WObj.jsxSet_MozBorderTopColors(mozBorderTopColors);
-      }
-
-// Generating method code for jsxGet_MozBoxAlign
-      public virtual string JsxGet_MozBoxAlign()
-      {
-         return WObj.jsxGet_MozBoxAlign();
-      }
-
-// Generating method code for jsxSet_MozBoxAlign
-      public virtual void JsxSet_MozBoxAlign(string mozBoxAlign)
-      {
-         WObj.jsxSet_MozBoxAlign(mozBoxAlign);
-      }
-
-// Generating method code for jsxGet_MozBoxDirection
-      public virtual string JsxGet_MozBoxDirection()
-      {
-         return WObj.jsxGet_MozBoxDirection();
-      }
-
-// Generating method code for jsxSet_MozBoxDirection
-      public virtual void JsxSet_MozBoxDirection(string mozBoxDirection)
-      {
-         WObj.jsxSet_MozBoxDirection(mozBoxDirection);
-      }
-
-// Generating method code for jsxGet_MozBoxFlex
-      public virtual string JsxGet_MozBoxFlex()
-      {
-         return WObj.jsxGet_MozBoxFlex();
-      }
-
-// Generating method code for jsxSet_MozBoxFlex
-      public virtual void JsxSet_MozBoxFlex(string mozBoxFlex)
-      {
-         WObj.jsxSet_MozBoxFlex(mozBoxFlex);
-      }
-
-// Generating method code for jsxGet_MozBoxOrdinalGroup
-      public virtual string JsxGet_MozBoxOrdinalGroup()
-      {
-         return WObj.jsxGet_MozBoxOrdinalGroup();
-      }
-
-// Generating method code for jsxSet_MozBoxOrdinalGroup
-      public virtual void JsxSet_MozBoxOrdinalGroup(string mozBoxOrdinalGroup)
-      {
-         WObj.jsxSet_MozBoxOrdinalGroup(mozBoxOrdinalGroup);
-      }
-
-// Generating method code for jsxGet_MozBoxOrient
-      public virtual string JsxGet_MozBoxOrient()
-      {
-         return WObj.jsxGet_MozBoxOrient();
-      }
-
-// Generating method code for jsxSet_MozBoxOrient
-      public virtual void JsxSet_MozBoxOrient(string mozBoxOrient)
-      {
-         WObj.jsxSet_MozBoxOrient(mozBoxOrient);
-      }
-
-// Generating method code for jsxGet_MozBoxPack
-      public virtual string JsxGet_MozBoxPack()
-      {
-         return WObj.jsxGet_MozBoxPack();
-      }
-
-// Generating method code for jsxSet_MozBoxPack
-      public virtual void JsxSet_MozBoxPack(string mozBoxPack)
-      {
-         WObj.jsxSet_MozBoxPack(mozBoxPack);
-      }
-
-// Generating method code for jsxGet_MozBoxSizing
-      public virtual string JsxGet_MozBoxSizing()
-      {
-         return WObj.jsxGet_MozBoxSizing();
-      }
-
-// Generating method code for jsxSet_MozBoxSizing
-      public virtual void JsxSet_MozBoxSizing(string mozBoxSizing)
-      {
-         WObj.jsxSet_MozBoxSizing(mozBoxSizing);
-      }
-
-// Generating method code for jsxGet_MozColumnCount
-      public virtual string JsxGet_MozColumnCount()
-      {
-         return WObj.jsxGet_MozColumnCount();
-      }
-
-// Generating method code for jsxSet_MozColumnCount
-      public virtual void JsxSet_MozColumnCount(string mozColumnCount)
-      {
-         WObj.jsxSet_MozColumnCount(mozColumnCount);
-      }
-
-// Generating method code for jsxGet_MozColumnGap
-      public virtual string JsxGet_MozColumnGap()
-      {
-         return WObj.jsxGet_MozColumnGap();
-      }
-
-// Generating method code for jsxSet_MozColumnGap
-      public virtual void JsxSet_MozColumnGap(string mozColumnGap)
-      {
-         WObj.jsxSet_MozColumnGap(mozColumnGap);
-      }
-
-// Generating method code for jsxGet_MozColumnWidth
-      public virtual string JsxGet_MozColumnWidth()
-      {
-         return WObj.jsxGet_MozColumnWidth();
-      }
-
-// Generating method code for jsxSet_MozColumnWidth
-      public virtual void JsxSet_MozColumnWidth(string mozColumnWidth)
-      {
-         WObj.jsxSet_MozColumnWidth(mozColumnWidth);
-      }
-
-// Generating method code for jsxGet_MozFloatEdge
-      public virtual string JsxGet_MozFloatEdge()
-      {
-         return WObj.jsxGet_MozFloatEdge();
-      }
-
-// Generating method code for jsxSet_MozFloatEdge
-      public virtual void JsxSet_MozFloatEdge(string mozFloatEdge)
-      {
-         WObj.jsxSet_MozFloatEdge(mozFloatEdge);
-      }
-
-// Generating method code for jsxGet_MozForceBrokenImageIcon
-      public virtual string JsxGet_MozForceBrokenImageIcon()
-      {
-         return WObj.jsxGet_MozForceBrokenImageIcon();
-      }
-
-// Generating method code for jsxSet_MozForceBrokenImageIcon
-      public virtual void JsxSet_MozForceBrokenImageIcon(string mozForceBrokenImageIcon)
-      {
-         WObj.jsxSet_MozForceBrokenImageIcon(mozForceBrokenImageIcon);
-      }
-
-// Generating method code for jsxGet_MozImageRegion
-      public virtual string JsxGet_MozImageRegion()
-      {
-         return WObj.jsxGet_MozImageRegion();
-      }
-
-// Generating method code for jsxSet_MozImageRegion
-      public virtual void JsxSet_MozImageRegion(string mozImageRegion)
-      {
-         WObj.jsxSet_MozImageRegion(mozImageRegion);
-      }
-
-// Generating method code for jsxGet_MozMarginEnd
-      public virtual string JsxGet_MozMarginEnd()
-      {
-         return WObj.jsxGet_MozMarginEnd();
-      }
-
-// Generating method code for jsxSet_MozMarginEnd
-      public virtual void JsxSet_MozMarginEnd(string mozMarginEnd)
-      {
-         WObj.jsxSet_MozMarginEnd(mozMarginEnd);
-      }
-
-// Generating method code for jsxGet_MozMarginStart
-      public virtual string JsxGet_MozMarginStart()
-      {
-         return WObj.jsxGet_MozMarginStart();
-      }
-
-// Generating method code for jsxSet_MozMarginStart
-      public virtual void JsxSet_MozMarginStart(string mozMarginStart)
-      {
-         WObj.jsxSet_MozMarginStart(mozMarginStart);
-      }
-
-// Generating method code for jsxGet_MozOpacity
-      public virtual string JsxGet_MozOpacity()
-      {
-         return WObj.jsxGet_MozOpacity();
-      }
-
-// Generating method code for jsxSet_MozOpacity
-      public virtual void JsxSet_MozOpacity(string mozOpacity)
-      {
-         WObj.jsxSet_MozOpacity(mozOpacity);
-      }
-
-// Generating method code for jsxGet_MozOutline
-      public virtual string JsxGet_MozOutline()
-      {
-         return WObj.jsxGet_MozOutline();
-      }
-
-// Generating method code for jsxSet_MozOutline
-      public virtual void JsxSet_MozOutline(string mozOutline)
-      {
-         WObj.jsxSet_MozOutline(mozOutline);
-      }
-
-// Generating method code for jsxGet_MozOutlineColor
-      public virtual string JsxGet_MozOutlineColor()
-      {
-         return WObj.jsxGet_MozOutlineColor();
-      }
-
-// Generating method code for jsxSet_MozOutlineColor
-      public virtual void JsxSet_MozOutlineColor(string mozOutlineColor)
-      {
-         WObj.jsxSet_MozOutlineColor(mozOutlineColor);
-      }
-
-// Generating method code for jsxGet_MozOutlineOffset
-      public virtual string JsxGet_MozOutlineOffset()
-      {
-         return WObj.jsxGet_MozOutlineOffset();
-      }
-
-// Generating method code for jsxSet_MozOutlineOffset
-      public virtual void JsxSet_MozOutlineOffset(string mozOutlineOffset)
-      {
-         WObj.jsxSet_MozOutlineOffset(mozOutlineOffset);
-      }
-
-// Generating method code for jsxGet_MozOutlineRadius
-      public virtual string JsxGet_MozOutlineRadius()
-      {
-         return WObj.jsxGet_MozOutlineRadius();
-      }
-
-// Generating method code for jsxSet_MozOutlineRadius
-      public virtual void JsxSet_MozOutlineRadius(string mozOutlineRadius)
-      {
-         WObj.jsxSet_MozOutlineRadius(mozOutlineRadius);
-      }
-
-// Generating method code for jsxGet_MozOutlineRadiusBottomleft
-      public virtual string JsxGet_MozOutlineRadiusBottomleft()
-      {
-         return WObj.jsxGet_MozOutlineRadiusBottomleft();
-      }
-
-// Generating method code for jsxSet_MozOutlineRadiusBottomleft
-      public virtual void JsxSet_MozOutlineRadiusBottomleft(string mozOutlineRadiusBottomleft)
-      {
-         WObj.jsxSet_MozOutlineRadiusBottomleft(mozOutlineRadiusBottomleft);
-      }
-
-// Generating method code for jsxGet_MozOutlineRadiusBottomright
-      public virtual string JsxGet_MozOutlineRadiusBottomright()
-      {
-         return WObj.jsxGet_MozOutlineRadiusBottomright();
-      }
-
-// Generating method code for jsxSet_MozOutlineRadiusBottomright
-      public virtual void JsxSet_MozOutlineRadiusBottomright(string mozOutlineRadiusBottomright)
-      {
-         WObj.jsxSet_MozOutlineRadiusBottomright(mozOutlineRadiusBottomright);
-      }
-
-// Generating method code for jsxGet_MozOutlineRadiusTopleft
-      public virtual string JsxGet_MozOutlineRadiusTopleft()
-      {
-         return WObj.jsxGet_MozOutlineRadiusTopleft();
-      }
-
-// Generating method code for jsxSet_MozOutlineRadiusTopleft
-      public virtual void JsxSet_MozOutlineRadiusTopleft(string mozOutlineRadiusTopleft)
-      {
-         WObj.jsxSet_MozOutlineRadiusTopleft(mozOutlineRadiusTopleft);
-      }
-
-// Generating method code for jsxGet_MozOutlineRadiusTopright
-      public virtual string JsxGet_MozOutlineRadiusTopright()
-      {
-         return WObj.jsxGet_MozOutlineRadiusTopright();
-      }
-
-// Generating method code for jsxSet_MozOutlineRadiusTopright
-      public virtual void JsxSet_MozOutlineRadiusTopright(string mozOutlineRadiusTopright)
-      {
-         WObj.jsxSet_MozOutlineRadiusTopright(mozOutlineRadiusTopright);
-      }
-
-// Generating method code for jsxGet_MozOutlineStyle
-      public virtual string JsxGet_MozOutlineStyle()
-      {
-         return WObj.jsxGet_MozOutlineStyle();
-      }
-
-// Generating method code for jsxSet_MozOutlineStyle
-      public virtual void JsxSet_MozOutlineStyle(string mozOutlineStyle)
-      {
-         WObj.jsxSet_MozOutlineStyle(mozOutlineStyle);
-      }
-
-// Generating method code for jsxGet_MozOutlineWidth
-      public virtual string JsxGet_MozOutlineWidth()
-      {
-         return WObj.jsxGet_MozOutlineWidth();
-      }
-
-// Generating method code for jsxSet_MozOutlineWidth
-      public virtual void JsxSet_MozOutlineWidth(string mozOutlineWidth)
-      {
-         WObj.jsxSet_MozOutlineWidth(mozOutlineWidth);
-      }
-
-// Generating method code for jsxGet_MozPaddingEnd
-      public virtual string JsxGet_MozPaddingEnd()
-      {
-         return WObj.jsxGet_MozPaddingEnd();
-      }
-
-// Generating method code for jsxSet_MozPaddingEnd
-      public virtual void JsxSet_MozPaddingEnd(string mozPaddingEnd)
-      {
-         WObj.jsxSet_MozPaddingEnd(mozPaddingEnd);
-      }
-
-// Generating method code for jsxGet_MozPaddingStart
-      public virtual string JsxGet_MozPaddingStart()
-      {
-         return WObj.jsxGet_MozPaddingStart();
-      }
-
-// Generating method code for jsxSet_MozPaddingStart
-      public virtual void JsxSet_MozPaddingStart(string mozPaddingStart)
-      {
-         WObj.jsxSet_MozPaddingStart(mozPaddingStart);
-      }
-
-// Generating method code for jsxGet_MozUserFocus
-      public virtual string JsxGet_MozUserFocus()
-      {
-         return WObj.jsxGet_MozUserFocus();
-      }
-
-// Generating method code for jsxSet_MozUserFocus
-      public virtual void JsxSet_MozUserFocus(string mozUserFocus)
-      {
-         WObj.jsxSet_MozUserFocus(mozUserFocus);
-      }
-
-// Generating method code for jsxGet_MozUserInput
-      public virtual string JsxGet_MozUserInput()
-      {
-         return WObj.jsxGet_MozUserInput();
-      }
-
-// Generating method code for jsxSet_MozUserInput
-      public virtual void JsxSet_MozUserInput(string mozUserInput)
-      {
-         WObj.jsxSet_MozUserInput(mozUserInput);
-      }
-
-// Generating method code for jsxGet_MozUserModify
-      public virtual string JsxGet_MozUserModify()
-      {
-         return WObj.jsxGet_MozUserModify();
-      }
-
-// Generating method code for jsxSet_MozUserModify
-      public virtual void JsxSet_MozUserModify(string mozUserModify)
-      {
-         WObj.jsxSet_MozUserModify(mozUserModify);
-      }
-
-// Generating method code for jsxGet_MozUserSelect
-      public virtual string JsxGet_MozUserSelect()
-      {
-         return WObj.jsxGet_MozUserSelect();
-      }
+      public CSSStyleDeclaration(NHtmlUnit.Javascript.Host.Element element)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject)) {}
 
-// Generating method code for jsxSet_MozUserSelect
-      public virtual void JsxSet_MozUserSelect(string mozUserSelect)
+// Generating method code for jsxSet_visibility
+      public virtual void JsxSet_visibility(string visibility)
       {
-         WObj.jsxSet_MozUserSelect(mozUserSelect);
+         WObj.jsxSet_visibility(visibility);
       }
 
-// Generating method code for jsxGet_msInterpolationMode
-      public virtual string JsxGet_msInterpolationMode()
+// Generating method code for jsxGet_voiceFamily
+      public virtual string JsxGet_voiceFamily()
       {
-         return WObj.jsxGet_msInterpolationMode();
+         return WObj.jsxGet_voiceFamily();
       }
 
-// Generating method code for jsxSet_msInterpolationMode
-      public virtual void JsxSet_msInterpolationMode(string msInterpolationMode)
+// Generating method code for jsxSet_voiceFamily
+      public virtual void JsxSet_voiceFamily(string voiceFamily)
       {
-         WObj.jsxSet_msInterpolationMode(msInterpolationMode);
+         WObj.jsxSet_voiceFamily(voiceFamily);
       }
 
-// Generating method code for jsxGet_opacity
-      public virtual string JsxGet_opacity()
+// Generating method code for jsxGet_volume
+      public virtual string JsxGet_volume()
       {
-         return WObj.jsxGet_opacity();
+         return WObj.jsxGet_volume();
       }
 
-// Generating method code for jsxSet_opacity
-      public virtual void JsxSet_opacity(string opacity)
+// Generating method code for jsxSet_volume
+      public virtual void JsxSet_volume(string volume)
       {
-         WObj.jsxSet_opacity(opacity);
+         WObj.jsxSet_volume(volume);
       }
 
-// Generating method code for jsxGet_orphans
-      public virtual string JsxGet_orphans()
+// Generating method code for jsxGet_whiteSpace
+      public virtual string JsxGet_whiteSpace()
       {
-         return WObj.jsxGet_orphans();
+         return WObj.jsxGet_whiteSpace();
       }
 
-// Generating method code for jsxSet_orphans
-      public virtual void JsxSet_orphans(string orphans)
+// Generating method code for jsxSet_whiteSpace
+      public virtual void JsxSet_whiteSpace(string whiteSpace)
       {
-         WObj.jsxSet_orphans(orphans);
+         WObj.jsxSet_whiteSpace(whiteSpace);
       }
 
-// Generating method code for jsxGet_outline
-      public virtual string JsxGet_outline()
+// Generating method code for jsxGet_widows
+      public virtual string JsxGet_widows()
       {
-         return WObj.jsxGet_outline();
+         return WObj.jsxGet_widows();
       }
 
-// Generating method code for jsxSet_outline
-      public virtual void JsxSet_outline(string outline)
+// Generating method code for jsxSet_widows
+      public virtual void JsxSet_widows(string widows)
       {
-         WObj.jsxSet_outline(outline);
+         WObj.jsxSet_widows(widows);
       }
 
-// Generating method code for jsxGet_outlineColor
-      public virtual string JsxGet_outlineColor()
+// Generating method code for jsxGet_width
+      public virtual string JsxGet_width()
       {
-         return WObj.jsxGet_outlineColor();
+         return WObj.jsxGet_width();
       }
 
-// Generating method code for jsxSet_outlineColor
-      public virtual void JsxSet_outlineColor(string outlineColor)
+// Generating method code for jsxSet_width
+      public virtual void JsxSet_width(string width)
       {
-         WObj.jsxSet_outlineColor(outlineColor);
+         WObj.jsxSet_width(width);
       }
 
-// Generating method code for jsxGet_outlineOffset
-      public virtual string JsxGet_outlineOffset()
+// Generating method code for jsxGet_wordBreak
+      public virtual string JsxGet_wordBreak()
       {
-         return WObj.jsxGet_outlineOffset();
+         return WObj.jsxGet_wordBreak();
       }
 
-// Generating method code for jsxSet_outlineOffset
-      public virtual void JsxSet_outlineOffset(string outlineOffset)
+// Generating method code for jsxSet_wordBreak
+      public virtual void JsxSet_wordBreak(string wordBreak)
       {
-         WObj.jsxSet_outlineOffset(outlineOffset);
+         WObj.jsxSet_wordBreak(wordBreak);
       }
 
-// Generating method code for jsxGet_outlineStyle
-      public virtual string JsxGet_outlineStyle()
+// Generating method code for jsxGet_wordSpacing
+      public virtual string JsxGet_wordSpacing()
       {
-         return WObj.jsxGet_outlineStyle();
+         return WObj.jsxGet_wordSpacing();
       }
 
-// Generating method code for jsxSet_outlineStyle
-      public virtual void JsxSet_outlineStyle(string outlineStyle)
+// Generating method code for jsxSet_wordSpacing
+      public virtual void JsxSet_wordSpacing(string wordSpacing)
       {
-         WObj.jsxSet_outlineStyle(outlineStyle);
+         WObj.jsxSet_wordSpacing(wordSpacing);
       }
 
-// Generating method code for jsxGet_outlineWidth
-      public virtual string JsxGet_outlineWidth()
+// Generating method code for jsxGet_wordWrap
+      public virtual string JsxGet_wordWrap()
       {
-         return WObj.jsxGet_outlineWidth();
+         return WObj.jsxGet_wordWrap();
       }
 
-// Generating method code for jsxSet_outlineWidth
-      public virtual void JsxSet_outlineWidth(string outlineWidth)
+// Generating method code for jsxSet_wordWrap
+      public virtual void JsxSet_wordWrap(string wordWrap)
       {
-         WObj.jsxSet_outlineWidth(outlineWidth);
+         WObj.jsxSet_wordWrap(wordWrap);
       }
 
-// Generating method code for jsxGet_overflow
-      public virtual string JsxGet_overflow()
+// Generating method code for jsxGet_writingMode
+      public virtual string JsxGet_writingMode()
       {
-         return WObj.jsxGet_overflow();
+         return WObj.jsxGet_writingMode();
       }
 
-// Generating method code for jsxSet_overflow
-      public virtual void JsxSet_overflow(string overflow)
+// Generating method code for jsxSet_writingMode
+      public virtual void JsxSet_writingMode(string writingMode)
       {
-         WObj.jsxSet_overflow(overflow);
+         WObj.jsxSet_writingMode(writingMode);
       }
 
-// Generating method code for jsxGet_overflowX
-      public virtual string JsxGet_overflowX()
+// Generating method code for jsxGet_zIndex
+      public virtual object JsxGet_zIndex()
       {
-         return WObj.jsxGet_overflowX();
+         return WObj.jsxGet_zIndex();
       }
 
-// Generating method code for jsxSet_overflowX
-      public virtual void JsxSet_overflowX(string overflowX)
+// Generating method code for jsxSet_zIndex
+      public virtual void JsxSet_zIndex(object zIndex)
       {
-         WObj.jsxSet_overflowX(overflowX);
+         WObj.jsxSet_zIndex(zIndex);
       }
 
-// Generating method code for jsxGet_overflowY
-      public virtual string JsxGet_overflowY()
+// Generating method code for jsxGet_zoom
+      public virtual string JsxGet_zoom()
       {
-         return WObj.jsxGet_overflowY();
+         return WObj.jsxGet_zoom();
       }
 
-// Generating method code for jsxSet_overflowY
-      public virtual void JsxSet_overflowY(string overflowY)
+// Generating method code for jsxSet_zoom
+      public virtual void JsxSet_zoom(string zoom)
       {
-         WObj.jsxSet_overflowY(overflowY);
+         WObj.jsxSet_zoom(zoom);
       }
 
-// Generating method code for jsxGet_padding
-      public virtual string JsxGet_padding()
+// Generating method code for jsxFunction_getPropertyValue
+      public virtual string JsxFunction_getPropertyValue(string name)
       {
-         return WObj.jsxGet_padding();
+         return WObj.jsxFunction_getPropertyValue(name);
       }
 
-// Generating method code for jsxSet_padding
-      public virtual void JsxSet_padding(string padding)
+// Generating method code for jsxFunction_getPropertyCSSValue
+      public virtual NHtmlUnit.Javascript.Host.Css.CSSValue JsxFunction_getPropertyCSSValue(string name)
       {
-         WObj.jsxSet_padding(padding);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSValue>(WObj.jsxFunction_getPropertyCSSValue(name));
       }
 
-// Generating method code for jsxGet_paddingBottom
-      public virtual string JsxGet_paddingBottom()
+// Generating method code for jsxFunction_removeProperty
+      public virtual string JsxFunction_removeProperty(string name)
       {
-         return WObj.jsxGet_paddingBottom();
+         return WObj.jsxFunction_removeProperty(name);
       }
 
-// Generating method code for jsxSet_paddingBottom
-      public virtual void JsxSet_paddingBottom(string paddingBottom)
+// Generating method code for jsxFunction_setExpression
+      public virtual void JsxFunction_setExpression(string propertyName, string expression, string language)
       {
-         WObj.jsxSet_paddingBottom(paddingBottom);
+         WObj.jsxFunction_setExpression(propertyName, expression, language);
       }
 
-// Generating method code for jsxGet_paddingLeft
-      public virtual string JsxGet_paddingLeft()
+// Generating method code for jsxFunction_removeExpression
+      public virtual bool JsxFunction_removeExpression(string propertyName)
       {
-         return WObj.jsxGet_paddingLeft();
+         return WObj.jsxFunction_removeExpression(propertyName);
       }
 
-// Generating method code for jsxSet_paddingLeft
-      public virtual void JsxSet_paddingLeft(string paddingLeft)
+// Generating method code for jsxFunction_getAttribute
+      public virtual object JsxFunction_getAttribute(string name, int flag)
       {
-         WObj.jsxSet_paddingLeft(paddingLeft);
+         return WObj.jsxFunction_getAttribute(name, flag);
       }
 
-// Generating method code for jsxGet_paddingRight
-      public virtual string JsxGet_paddingRight()
+// Generating method code for jsxFunction_setAttribute
+      public virtual void JsxFunction_setAttribute(string name, string value, object flag)
       {
-         return WObj.jsxGet_paddingRight();
+         WObj.jsxFunction_setAttribute(name, value, flag);
       }
 
-// Generating method code for jsxSet_paddingRight
-      public virtual void JsxSet_paddingRight(string paddingRight)
+// Generating method code for jsxFunction_removeAttribute
+      public virtual bool JsxFunction_removeAttribute(string name, object flag)
       {
-         WObj.jsxSet_paddingRight(paddingRight);
+         return WObj.jsxFunction_removeAttribute(name, flag);
       }
 
 // Generating method code for jsxGet_paddingTop
@@ -723,6 +333,18 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual void JsxSet_pitchRange(string pitchRange)
       {
          WObj.jsxSet_pitchRange(pitchRange);
+      }
+
+// Generating method code for jsxGet_pointerEvents
+      public virtual string JsxGet_pointerEvents()
+      {
+         return WObj.jsxGet_pointerEvents();
+      }
+
+// Generating method code for jsxSet_pointerEvents
+      public virtual void JsxSet_pointerEvents(string pointerEvents)
+      {
+         WObj.jsxSet_pointerEvents(pointerEvents);
       }
 
 // Generating method code for jsxGet_pixelBottom
@@ -1361,688 +983,772 @@ namespace NHtmlUnit.Javascript.Host.Css
          WObj.jsxSet_verticalAlign(verticalAlign);
       }
 
-// Generating method code for jsxSet_visibility
-      public virtual void JsxSet_visibility(string visibility)
+// Generating method code for jsxGet_MozBorderRadiusTopright
+      public virtual string JsxGet_MozBorderRadiusTopright()
       {
-         WObj.jsxSet_visibility(visibility);
+         return WObj.jsxGet_MozBorderRadiusTopright();
       }
 
-// Generating method code for jsxGet_voiceFamily
-      public virtual string JsxGet_voiceFamily()
+// Generating method code for jsxSet_MozBorderRadiusTopright
+      public virtual void JsxSet_MozBorderRadiusTopright(string mozBorderRadiusTopright)
       {
-         return WObj.jsxGet_voiceFamily();
+         WObj.jsxSet_MozBorderRadiusTopright(mozBorderRadiusTopright);
       }
 
-// Generating method code for jsxSet_voiceFamily
-      public virtual void JsxSet_voiceFamily(string voiceFamily)
+// Generating method code for jsxGet_MozBorderRightColors
+      public virtual string JsxGet_MozBorderRightColors()
       {
-         WObj.jsxSet_voiceFamily(voiceFamily);
+         return WObj.jsxGet_MozBorderRightColors();
       }
 
-// Generating method code for jsxGet_volume
-      public virtual string JsxGet_volume()
+// Generating method code for jsxSet_MozBorderRightColors
+      public virtual void JsxSet_MozBorderRightColors(string mozBorderRightColors)
       {
-         return WObj.jsxGet_volume();
+         WObj.jsxSet_MozBorderRightColors(mozBorderRightColors);
       }
 
-// Generating method code for jsxSet_volume
-      public virtual void JsxSet_volume(string volume)
+// Generating method code for jsxGet_MozBorderStart
+      public virtual string JsxGet_MozBorderStart()
       {
-         WObj.jsxSet_volume(volume);
+         return WObj.jsxGet_MozBorderStart();
       }
 
-// Generating method code for jsxGet_whiteSpace
-      public virtual string JsxGet_whiteSpace()
+// Generating method code for jsxSet_MozBorderStart
+      public virtual void JsxSet_MozBorderStart(string mozBorderStart)
       {
-         return WObj.jsxGet_whiteSpace();
+         WObj.jsxSet_MozBorderStart(mozBorderStart);
       }
 
-// Generating method code for jsxSet_whiteSpace
-      public virtual void JsxSet_whiteSpace(string whiteSpace)
+// Generating method code for jsxGet_MozBorderStartColor
+      public virtual string JsxGet_MozBorderStartColor()
       {
-         WObj.jsxSet_whiteSpace(whiteSpace);
+         return WObj.jsxGet_MozBorderStartColor();
       }
 
-// Generating method code for jsxGet_widows
-      public virtual string JsxGet_widows()
+// Generating method code for jsxSet_MozBorderStartColor
+      public virtual void JsxSet_MozBorderStartColor(string mozBorderStartColor)
       {
-         return WObj.jsxGet_widows();
+         WObj.jsxSet_MozBorderStartColor(mozBorderStartColor);
       }
 
-// Generating method code for jsxSet_widows
-      public virtual void JsxSet_widows(string widows)
+// Generating method code for jsxGet_MozBorderStartStyle
+      public virtual string JsxGet_MozBorderStartStyle()
       {
-         WObj.jsxSet_widows(widows);
+         return WObj.jsxGet_MozBorderStartStyle();
       }
 
-// Generating method code for jsxGet_width
-      public virtual string JsxGet_width()
+// Generating method code for jsxSet_MozBorderStartStyle
+      public virtual void JsxSet_MozBorderStartStyle(string mozBorderStartStyle)
       {
-         return WObj.jsxGet_width();
+         WObj.jsxSet_MozBorderStartStyle(mozBorderStartStyle);
       }
 
-// Generating method code for jsxSet_width
-      public virtual void JsxSet_width(string width)
+// Generating method code for jsxGet_MozBorderStartWidth
+      public virtual string JsxGet_MozBorderStartWidth()
       {
-         WObj.jsxSet_width(width);
+         return WObj.jsxGet_MozBorderStartWidth();
       }
 
-// Generating method code for jsxGet_wordBreak
-      public virtual string JsxGet_wordBreak()
+// Generating method code for jsxSet_MozBorderStartWidth
+      public virtual void JsxSet_MozBorderStartWidth(string mozBorderStartWidth)
       {
-         return WObj.jsxGet_wordBreak();
+         WObj.jsxSet_MozBorderStartWidth(mozBorderStartWidth);
       }
 
-// Generating method code for jsxSet_wordBreak
-      public virtual void JsxSet_wordBreak(string wordBreak)
+// Generating method code for jsxGet_MozBorderTopColors
+      public virtual string JsxGet_MozBorderTopColors()
       {
-         WObj.jsxSet_wordBreak(wordBreak);
+         return WObj.jsxGet_MozBorderTopColors();
       }
 
-// Generating method code for jsxGet_wordSpacing
-      public virtual string JsxGet_wordSpacing()
+// Generating method code for jsxSet_MozBorderTopColors
+      public virtual void JsxSet_MozBorderTopColors(string mozBorderTopColors)
       {
-         return WObj.jsxGet_wordSpacing();
+         WObj.jsxSet_MozBorderTopColors(mozBorderTopColors);
       }
 
-// Generating method code for jsxSet_wordSpacing
-      public virtual void JsxSet_wordSpacing(string wordSpacing)
+// Generating method code for jsxGet_MozBoxAlign
+      public virtual string JsxGet_MozBoxAlign()
       {
-         WObj.jsxSet_wordSpacing(wordSpacing);
+         return WObj.jsxGet_MozBoxAlign();
       }
 
-// Generating method code for jsxGet_wordWrap
-      public virtual string JsxGet_wordWrap()
+// Generating method code for jsxSet_MozBoxAlign
+      public virtual void JsxSet_MozBoxAlign(string mozBoxAlign)
       {
-         return WObj.jsxGet_wordWrap();
+         WObj.jsxSet_MozBoxAlign(mozBoxAlign);
       }
 
-// Generating method code for jsxSet_wordWrap
-      public virtual void JsxSet_wordWrap(string wordWrap)
+// Generating method code for jsxGet_MozBoxDirection
+      public virtual string JsxGet_MozBoxDirection()
       {
-         WObj.jsxSet_wordWrap(wordWrap);
+         return WObj.jsxGet_MozBoxDirection();
       }
 
-// Generating method code for jsxGet_writingMode
-      public virtual string JsxGet_writingMode()
+// Generating method code for jsxSet_MozBoxDirection
+      public virtual void JsxSet_MozBoxDirection(string mozBoxDirection)
       {
-         return WObj.jsxGet_writingMode();
+         WObj.jsxSet_MozBoxDirection(mozBoxDirection);
       }
 
-// Generating method code for jsxSet_writingMode
-      public virtual void JsxSet_writingMode(string writingMode)
+// Generating method code for jsxGet_MozBoxFlex
+      public virtual string JsxGet_MozBoxFlex()
       {
-         WObj.jsxSet_writingMode(writingMode);
+         return WObj.jsxGet_MozBoxFlex();
       }
 
-// Generating method code for jsxGet_zIndex
-      public virtual object JsxGet_zIndex()
+// Generating method code for jsxSet_MozBoxFlex
+      public virtual void JsxSet_MozBoxFlex(string mozBoxFlex)
       {
-         return WObj.jsxGet_zIndex();
+         WObj.jsxSet_MozBoxFlex(mozBoxFlex);
       }
 
-// Generating method code for jsxSet_zIndex
-      public virtual void JsxSet_zIndex(object zIndex)
+// Generating method code for jsxGet_MozBoxOrdinalGroup
+      public virtual string JsxGet_MozBoxOrdinalGroup()
       {
-         WObj.jsxSet_zIndex(zIndex);
+         return WObj.jsxGet_MozBoxOrdinalGroup();
       }
 
-// Generating method code for jsxGet_zoom
-      public virtual string JsxGet_zoom()
+// Generating method code for jsxSet_MozBoxOrdinalGroup
+      public virtual void JsxSet_MozBoxOrdinalGroup(string mozBoxOrdinalGroup)
       {
-         return WObj.jsxGet_zoom();
+         WObj.jsxSet_MozBoxOrdinalGroup(mozBoxOrdinalGroup);
       }
 
-// Generating method code for jsxSet_zoom
-      public virtual void JsxSet_zoom(string zoom)
+// Generating method code for jsxGet_MozBoxOrient
+      public virtual string JsxGet_MozBoxOrient()
       {
-         WObj.jsxSet_zoom(zoom);
+         return WObj.jsxGet_MozBoxOrient();
       }
 
-// Generating method code for jsxFunction_getPropertyValue
-      public virtual string JsxFunction_getPropertyValue(string name)
+// Generating method code for jsxSet_MozBoxOrient
+      public virtual void JsxSet_MozBoxOrient(string mozBoxOrient)
       {
-         return WObj.jsxFunction_getPropertyValue(name);
+         WObj.jsxSet_MozBoxOrient(mozBoxOrient);
       }
 
-// Generating method code for jsxFunction_getPropertyCSSValue
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSValue JsxFunction_getPropertyCSSValue(string name)
+// Generating method code for jsxGet_MozBoxPack
+      public virtual string JsxGet_MozBoxPack()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSValue>(WObj.jsxFunction_getPropertyCSSValue(name));
+         return WObj.jsxGet_MozBoxPack();
       }
 
-// Generating method code for jsxFunction_setExpression
-      public virtual void JsxFunction_setExpression(string propertyName, string expression, string language)
+// Generating method code for jsxSet_MozBoxPack
+      public virtual void JsxSet_MozBoxPack(string mozBoxPack)
       {
-         WObj.jsxFunction_setExpression(propertyName, expression, language);
+         WObj.jsxSet_MozBoxPack(mozBoxPack);
       }
 
-// Generating method code for jsxFunction_removeExpression
-      public virtual bool JsxFunction_removeExpression(string propertyName)
+// Generating method code for jsxGet_MozBoxShadow
+      public virtual string JsxGet_MozBoxShadow()
       {
-         return WObj.jsxFunction_removeExpression(propertyName);
+         return WObj.jsxGet_MozBoxShadow();
       }
 
-// Generating method code for jsxFunction_getAttribute
-      public virtual object JsxFunction_getAttribute(string name, int flag)
+// Generating method code for jsxSet_MozBoxShadow
+      public virtual void JsxSet_MozBoxShadow(string mozBoxShadow)
       {
-         return WObj.jsxFunction_getAttribute(name, flag);
+         WObj.jsxSet_MozBoxShadow(mozBoxShadow);
       }
 
-// Generating method code for jsxFunction_setAttribute
-      public virtual void JsxFunction_setAttribute(string name, string value, object flag)
+// Generating method code for jsxGet_MozBoxSizing
+      public virtual string JsxGet_MozBoxSizing()
       {
-         WObj.jsxFunction_setAttribute(name, value, flag);
+         return WObj.jsxGet_MozBoxSizing();
       }
 
-// Generating method code for jsxFunction_removeAttribute
-      public virtual bool JsxFunction_removeAttribute(string name, object flag)
+// Generating method code for jsxSet_MozBoxSizing
+      public virtual void JsxSet_MozBoxSizing(string mozBoxSizing)
       {
-         return WObj.jsxFunction_removeAttribute(name, flag);
+         WObj.jsxSet_MozBoxSizing(mozBoxSizing);
       }
 
-// Generating method code for jsxGet_display
-      public virtual string JsxGet_display()
+// Generating method code for jsxGet_MozColumnCount
+      public virtual string JsxGet_MozColumnCount()
       {
-         return WObj.jsxGet_display();
+         return WObj.jsxGet_MozColumnCount();
       }
 
-// Generating method code for jsxGet_visibility
-      public virtual string JsxGet_visibility()
+// Generating method code for jsxSet_MozColumnCount
+      public virtual void JsxSet_MozColumnCount(string mozColumnCount)
       {
-         return WObj.jsxGet_visibility();
+         WObj.jsxSet_MozColumnCount(mozColumnCount);
       }
 
-// Generating method code for jsxGet_bottom
-      public virtual string JsxGet_bottom()
+// Generating method code for jsxGet_MozColumnGap
+      public virtual string JsxGet_MozColumnGap()
       {
-         return WObj.jsxGet_bottom();
+         return WObj.jsxGet_MozColumnGap();
       }
 
-// Generating method code for jsxSet_bottom
-      public virtual void JsxSet_bottom(string bottom)
+// Generating method code for jsxSet_MozColumnGap
+      public virtual void JsxSet_MozColumnGap(string mozColumnGap)
       {
-         WObj.jsxSet_bottom(bottom);
+         WObj.jsxSet_MozColumnGap(mozColumnGap);
       }
 
-// Generating method code for jsxGet_left
-      public virtual string JsxGet_left()
+// Generating method code for jsxGet_MozColumnRule
+      public virtual string JsxGet_MozColumnRule()
       {
-         return WObj.jsxGet_left();
+         return WObj.jsxGet_MozColumnRule();
       }
 
-// Generating method code for jsxSet_left
-      public virtual void JsxSet_left(string left)
+// Generating method code for jsxSet_MozColumnRule
+      public virtual void JsxSet_MozColumnRule(string mozColumnRule)
       {
-         WObj.jsxSet_left(left);
+         WObj.jsxSet_MozColumnRule(mozColumnRule);
       }
 
-// Generating method code for jsxGet_right
-      public virtual string JsxGet_right()
+// Generating method code for jsxGet_MozColumnRuleColor
+      public virtual string JsxGet_MozColumnRuleColor()
       {
-         return WObj.jsxGet_right();
+         return WObj.jsxGet_MozColumnRuleColor();
       }
 
-// Generating method code for jsxSet_right
-      public virtual void JsxSet_right(string right)
+// Generating method code for jsxSet_MozColumnRuleColor
+      public virtual void JsxSet_MozColumnRuleColor(string mozColumnRuleColor)
       {
-         WObj.jsxSet_right(right);
+         WObj.jsxSet_MozColumnRuleColor(mozColumnRuleColor);
       }
 
-// Generating method code for jsxGet_top
-      public virtual string JsxGet_top()
+// Generating method code for jsxGet_MozColumnRuleStyle
+      public virtual string JsxGet_MozColumnRuleStyle()
       {
-         return WObj.jsxGet_top();
+         return WObj.jsxGet_MozColumnRuleStyle();
       }
 
-// Generating method code for jsxSet_top
-      public virtual void JsxSet_top(string top)
+// Generating method code for jsxSet_MozColumnRuleStyle
+      public virtual void JsxSet_MozColumnRuleStyle(string mozColumnRuleStyle)
       {
-         WObj.jsxSet_top(top);
+         WObj.jsxSet_MozColumnRuleStyle(mozColumnRuleStyle);
       }
 
-// Generating method code for jsxGet_azimuth
-      public virtual string JsxGet_azimuth()
+// Generating method code for jsxGet_MozColumnRuleWidth
+      public virtual string JsxGet_MozColumnRuleWidth()
       {
-         return WObj.jsxGet_azimuth();
+         return WObj.jsxGet_MozColumnRuleWidth();
       }
 
-// Generating method code for jsxSet_azimuth
-      public virtual void JsxSet_azimuth(string azimuth)
+// Generating method code for jsxSet_MozColumnRuleWidth
+      public virtual void JsxSet_MozColumnRuleWidth(string mozColumnRuleWidth)
       {
-         WObj.jsxSet_azimuth(azimuth);
+         WObj.jsxSet_MozColumnRuleWidth(mozColumnRuleWidth);
       }
 
-// Generating method code for jsxGet_background
-      public virtual string JsxGet_background()
+// Generating method code for jsxGet_MozColumnWidth
+      public virtual string JsxGet_MozColumnWidth()
       {
-         return WObj.jsxGet_background();
+         return WObj.jsxGet_MozColumnWidth();
       }
 
-// Generating method code for jsxSet_background
-      public virtual void JsxSet_background(string background)
+// Generating method code for jsxSet_MozColumnWidth
+      public virtual void JsxSet_MozColumnWidth(string mozColumnWidth)
       {
-         WObj.jsxSet_background(background);
+         WObj.jsxSet_MozColumnWidth(mozColumnWidth);
       }
 
-// Generating method code for jsxGet_backgroundAttachment
-      public virtual string JsxGet_backgroundAttachment()
+// Generating method code for jsxGet_MozFloatEdge
+      public virtual string JsxGet_MozFloatEdge()
       {
-         return WObj.jsxGet_backgroundAttachment();
+         return WObj.jsxGet_MozFloatEdge();
       }
 
-// Generating method code for jsxSet_backgroundAttachment
-      public virtual void JsxSet_backgroundAttachment(string backgroundAttachment)
+// Generating method code for jsxSet_MozFloatEdge
+      public virtual void JsxSet_MozFloatEdge(string mozFloatEdge)
       {
-         WObj.jsxSet_backgroundAttachment(backgroundAttachment);
+         WObj.jsxSet_MozFloatEdge(mozFloatEdge);
       }
 
-// Generating method code for jsxGet_backgroundColor
-      public virtual string JsxGet_backgroundColor()
+// Generating method code for jsxGet_MozForceBrokenImageIcon
+      public virtual string JsxGet_MozForceBrokenImageIcon()
       {
-         return WObj.jsxGet_backgroundColor();
+         return WObj.jsxGet_MozForceBrokenImageIcon();
       }
 
-// Generating method code for jsxSet_backgroundColor
-      public virtual void JsxSet_backgroundColor(string backgroundColor)
+// Generating method code for jsxSet_MozForceBrokenImageIcon
+      public virtual void JsxSet_MozForceBrokenImageIcon(string mozForceBrokenImageIcon)
       {
-         WObj.jsxSet_backgroundColor(backgroundColor);
+         WObj.jsxSet_MozForceBrokenImageIcon(mozForceBrokenImageIcon);
       }
 
-// Generating method code for jsxGet_backgroundImage
-      public virtual string JsxGet_backgroundImage()
+// Generating method code for jsxGet_MozImageRegion
+      public virtual string JsxGet_MozImageRegion()
       {
-         return WObj.jsxGet_backgroundImage();
+         return WObj.jsxGet_MozImageRegion();
       }
 
-// Generating method code for jsxSet_backgroundImage
-      public virtual void JsxSet_backgroundImage(string backgroundImage)
+// Generating method code for jsxSet_MozImageRegion
+      public virtual void JsxSet_MozImageRegion(string mozImageRegion)
       {
-         WObj.jsxSet_backgroundImage(backgroundImage);
+         WObj.jsxSet_MozImageRegion(mozImageRegion);
       }
 
-// Generating method code for jsxGet_backgroundPosition
-      public virtual string JsxGet_backgroundPosition()
+// Generating method code for jsxGet_MozMarginEnd
+      public virtual string JsxGet_MozMarginEnd()
       {
-         return WObj.jsxGet_backgroundPosition();
+         return WObj.jsxGet_MozMarginEnd();
       }
 
-// Generating method code for jsxSet_backgroundPosition
-      public virtual void JsxSet_backgroundPosition(string backgroundPosition)
+// Generating method code for jsxSet_MozMarginEnd
+      public virtual void JsxSet_MozMarginEnd(string mozMarginEnd)
       {
-         WObj.jsxSet_backgroundPosition(backgroundPosition);
+         WObj.jsxSet_MozMarginEnd(mozMarginEnd);
       }
 
-// Generating method code for jsxGet_backgroundPositionX
-      public virtual string JsxGet_backgroundPositionX()
+// Generating method code for jsxGet_MozMarginStart
+      public virtual string JsxGet_MozMarginStart()
       {
-         return WObj.jsxGet_backgroundPositionX();
+         return WObj.jsxGet_MozMarginStart();
       }
 
-// Generating method code for jsxSet_backgroundPositionX
-      public virtual void JsxSet_backgroundPositionX(string backgroundPositionX)
+// Generating method code for jsxSet_MozMarginStart
+      public virtual void JsxSet_MozMarginStart(string mozMarginStart)
       {
-         WObj.jsxSet_backgroundPositionX(backgroundPositionX);
+         WObj.jsxSet_MozMarginStart(mozMarginStart);
       }
 
-// Generating method code for jsxGet_backgroundPositionY
-      public virtual string JsxGet_backgroundPositionY()
+// Generating method code for jsxGet_MozOpacity
+      public virtual string JsxGet_MozOpacity()
       {
-         return WObj.jsxGet_backgroundPositionY();
+         return WObj.jsxGet_MozOpacity();
       }
 
-// Generating method code for jsxSet_backgroundPositionY
-      public virtual void JsxSet_backgroundPositionY(string backgroundPositionY)
+// Generating method code for jsxSet_MozOpacity
+      public virtual void JsxSet_MozOpacity(string mozOpacity)
       {
-         WObj.jsxSet_backgroundPositionY(backgroundPositionY);
+         WObj.jsxSet_MozOpacity(mozOpacity);
       }
 
-// Generating method code for jsxGet_backgroundRepeat
-      public virtual string JsxGet_backgroundRepeat()
+// Generating method code for jsxGet_MozOutline
+      public virtual string JsxGet_MozOutline()
       {
-         return WObj.jsxGet_backgroundRepeat();
+         return WObj.jsxGet_MozOutline();
       }
 
-// Generating method code for jsxSet_backgroundRepeat
-      public virtual void JsxSet_backgroundRepeat(string backgroundRepeat)
+// Generating method code for jsxSet_MozOutline
+      public virtual void JsxSet_MozOutline(string mozOutline)
       {
-         WObj.jsxSet_backgroundRepeat(backgroundRepeat);
+         WObj.jsxSet_MozOutline(mozOutline);
       }
 
-// Generating method code for jsxGet_behavior
-      public virtual string JsxGet_behavior()
+// Generating method code for jsxGet_MozOutlineColor
+      public virtual string JsxGet_MozOutlineColor()
       {
-         return WObj.jsxGet_behavior();
+         return WObj.jsxGet_MozOutlineColor();
       }
 
-// Generating method code for jsxSet_behavior
-      public virtual void JsxSet_behavior(string behavior)
+// Generating method code for jsxSet_MozOutlineColor
+      public virtual void JsxSet_MozOutlineColor(string mozOutlineColor)
       {
-         WObj.jsxSet_behavior(behavior);
+         WObj.jsxSet_MozOutlineColor(mozOutlineColor);
       }
 
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
+// Generating method code for jsxGet_MozOutlineOffset
+      public virtual string JsxGet_MozOutlineOffset()
       {
-         return WObj.jsxGet_border();
+         return WObj.jsxGet_MozOutlineOffset();
       }
 
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
+// Generating method code for jsxSet_MozOutlineOffset
+      public virtual void JsxSet_MozOutlineOffset(string mozOutlineOffset)
       {
-         WObj.jsxSet_border(border);
+         WObj.jsxSet_MozOutlineOffset(mozOutlineOffset);
       }
 
-// Generating method code for jsxGet_borderBottom
-      public virtual string JsxGet_borderBottom()
+// Generating method code for jsxGet_MozOutlineRadius
+      public virtual string JsxGet_MozOutlineRadius()
       {
-         return WObj.jsxGet_borderBottom();
+         return WObj.jsxGet_MozOutlineRadius();
       }
 
-// Generating method code for jsxSet_borderBottom
-      public virtual void JsxSet_borderBottom(string borderBottom)
+// Generating method code for jsxSet_MozOutlineRadius
+      public virtual void JsxSet_MozOutlineRadius(string mozOutlineRadius)
       {
-         WObj.jsxSet_borderBottom(borderBottom);
+         WObj.jsxSet_MozOutlineRadius(mozOutlineRadius);
       }
 
-// Generating method code for jsxGet_borderBottomColor
-      public virtual string JsxGet_borderBottomColor()
+// Generating method code for jsxGet_MozOutlineRadiusBottomleft
+      public virtual string JsxGet_MozOutlineRadiusBottomleft()
       {
-         return WObj.jsxGet_borderBottomColor();
+         return WObj.jsxGet_MozOutlineRadiusBottomleft();
       }
 
-// Generating method code for jsxSet_borderBottomColor
-      public virtual void JsxSet_borderBottomColor(string borderBottomColor)
+// Generating method code for jsxSet_MozOutlineRadiusBottomleft
+      public virtual void JsxSet_MozOutlineRadiusBottomleft(string mozOutlineRadiusBottomleft)
       {
-         WObj.jsxSet_borderBottomColor(borderBottomColor);
+         WObj.jsxSet_MozOutlineRadiusBottomleft(mozOutlineRadiusBottomleft);
       }
 
-// Generating method code for jsxGet_borderBottomStyle
-      public virtual string JsxGet_borderBottomStyle()
+// Generating method code for jsxGet_MozOutlineRadiusBottomright
+      public virtual string JsxGet_MozOutlineRadiusBottomright()
       {
-         return WObj.jsxGet_borderBottomStyle();
+         return WObj.jsxGet_MozOutlineRadiusBottomright();
       }
 
-// Generating method code for jsxSet_borderBottomStyle
-      public virtual void JsxSet_borderBottomStyle(string borderBottomStyle)
+// Generating method code for jsxSet_MozOutlineRadiusBottomright
+      public virtual void JsxSet_MozOutlineRadiusBottomright(string mozOutlineRadiusBottomright)
       {
-         WObj.jsxSet_borderBottomStyle(borderBottomStyle);
+         WObj.jsxSet_MozOutlineRadiusBottomright(mozOutlineRadiusBottomright);
       }
 
-// Generating method code for jsxGet_borderBottomWidth
-      public virtual string JsxGet_borderBottomWidth()
+// Generating method code for jsxGet_MozOutlineRadiusTopleft
+      public virtual string JsxGet_MozOutlineRadiusTopleft()
       {
-         return WObj.jsxGet_borderBottomWidth();
+         return WObj.jsxGet_MozOutlineRadiusTopleft();
       }
 
-// Generating method code for jsxSet_borderBottomWidth
-      public virtual void JsxSet_borderBottomWidth(string borderBottomWidth)
+// Generating method code for jsxSet_MozOutlineRadiusTopleft
+      public virtual void JsxSet_MozOutlineRadiusTopleft(string mozOutlineRadiusTopleft)
       {
-         WObj.jsxSet_borderBottomWidth(borderBottomWidth);
+         WObj.jsxSet_MozOutlineRadiusTopleft(mozOutlineRadiusTopleft);
       }
 
-// Generating method code for jsxGet_borderCollapse
-      public virtual string JsxGet_borderCollapse()
+// Generating method code for jsxGet_MozOutlineRadiusTopright
+      public virtual string JsxGet_MozOutlineRadiusTopright()
       {
-         return WObj.jsxGet_borderCollapse();
+         return WObj.jsxGet_MozOutlineRadiusTopright();
       }
 
-// Generating method code for jsxSet_borderCollapse
-      public virtual void JsxSet_borderCollapse(string borderCollapse)
+// Generating method code for jsxSet_MozOutlineRadiusTopright
+      public virtual void JsxSet_MozOutlineRadiusTopright(string mozOutlineRadiusTopright)
       {
-         WObj.jsxSet_borderCollapse(borderCollapse);
+         WObj.jsxSet_MozOutlineRadiusTopright(mozOutlineRadiusTopright);
       }
 
-// Generating method code for jsxGet_borderColor
-      public virtual string JsxGet_borderColor()
+// Generating method code for jsxGet_MozOutlineStyle
+      public virtual string JsxGet_MozOutlineStyle()
       {
-         return WObj.jsxGet_borderColor();
+         return WObj.jsxGet_MozOutlineStyle();
       }
 
-// Generating method code for jsxSet_borderColor
-      public virtual void JsxSet_borderColor(string borderColor)
+// Generating method code for jsxSet_MozOutlineStyle
+      public virtual void JsxSet_MozOutlineStyle(string mozOutlineStyle)
       {
-         WObj.jsxSet_borderColor(borderColor);
+         WObj.jsxSet_MozOutlineStyle(mozOutlineStyle);
       }
 
-// Generating method code for jsxGet_borderLeft
-      public virtual string JsxGet_borderLeft()
+// Generating method code for jsxGet_MozOutlineWidth
+      public virtual string JsxGet_MozOutlineWidth()
       {
-         return WObj.jsxGet_borderLeft();
+         return WObj.jsxGet_MozOutlineWidth();
       }
 
-// Generating method code for jsxSet_borderLeft
-      public virtual void JsxSet_borderLeft(string borderLeft)
+// Generating method code for jsxSet_MozOutlineWidth
+      public virtual void JsxSet_MozOutlineWidth(string mozOutlineWidth)
       {
-         WObj.jsxSet_borderLeft(borderLeft);
+         WObj.jsxSet_MozOutlineWidth(mozOutlineWidth);
       }
 
-// Generating method code for jsxGet_borderLeftColor
-      public virtual string JsxGet_borderLeftColor()
+// Generating method code for jsxGet_MozPaddingEnd
+      public virtual string JsxGet_MozPaddingEnd()
       {
-         return WObj.jsxGet_borderLeftColor();
+         return WObj.jsxGet_MozPaddingEnd();
       }
 
-// Generating method code for jsxSet_borderLeftColor
-      public virtual void JsxSet_borderLeftColor(string borderLeftColor)
+// Generating method code for jsxSet_MozPaddingEnd
+      public virtual void JsxSet_MozPaddingEnd(string mozPaddingEnd)
       {
-         WObj.jsxSet_borderLeftColor(borderLeftColor);
+         WObj.jsxSet_MozPaddingEnd(mozPaddingEnd);
       }
 
-// Generating method code for jsxGet_borderLeftStyle
-      public virtual string JsxGet_borderLeftStyle()
+// Generating method code for jsxGet_MozPaddingStart
+      public virtual string JsxGet_MozPaddingStart()
       {
-         return WObj.jsxGet_borderLeftStyle();
+         return WObj.jsxGet_MozPaddingStart();
       }
 
-// Generating method code for jsxSet_borderLeftStyle
-      public virtual void JsxSet_borderLeftStyle(string borderLeftStyle)
+// Generating method code for jsxSet_MozPaddingStart
+      public virtual void JsxSet_MozPaddingStart(string mozPaddingStart)
       {
-         WObj.jsxSet_borderLeftStyle(borderLeftStyle);
+         WObj.jsxSet_MozPaddingStart(mozPaddingStart);
       }
 
-// Generating method code for jsxGet_borderLeftWidth
-      public virtual string JsxGet_borderLeftWidth()
+// Generating method code for jsxGet_MozStackSizing
+      public virtual string JsxGet_MozStackSizing()
       {
-         return WObj.jsxGet_borderLeftWidth();
+         return WObj.jsxGet_MozStackSizing();
       }
 
-// Generating method code for jsxSet_borderLeftWidth
-      public virtual void JsxSet_borderLeftWidth(string borderLeftWidth)
+// Generating method code for jsxSet_MozStackSizing
+      public virtual void JsxSet_MozStackSizing(string mozStackSizing)
       {
-         WObj.jsxSet_borderLeftWidth(borderLeftWidth);
+         WObj.jsxSet_MozStackSizing(mozStackSizing);
       }
 
-// Generating method code for jsxGet_borderRight
-      public virtual string JsxGet_borderRight()
+// Generating method code for jsxGet_MozTransform
+      public virtual string JsxGet_MozTransform()
       {
-         return WObj.jsxGet_borderRight();
+         return WObj.jsxGet_MozTransform();
       }
 
-// Generating method code for jsxSet_borderRight
-      public virtual void JsxSet_borderRight(string borderRight)
+// Generating method code for jsxSet_MozTransform
+      public virtual void JsxSet_MozTransform(string mozTransform)
       {
-         WObj.jsxSet_borderRight(borderRight);
+         WObj.jsxSet_MozTransform(mozTransform);
       }
 
-// Generating method code for jsxGet_borderRightColor
-      public virtual string JsxGet_borderRightColor()
+// Generating method code for jsxGet_MozTransformOrigin
+      public virtual string JsxGet_MozTransformOrigin()
       {
-         return WObj.jsxGet_borderRightColor();
+         return WObj.jsxGet_MozTransformOrigin();
       }
 
-// Generating method code for jsxSet_borderRightColor
-      public virtual void JsxSet_borderRightColor(string borderRightColor)
+// Generating method code for jsxSet_MozTransformOrigin
+      public virtual void JsxSet_MozTransformOrigin(string mozTransformOrigin)
       {
-         WObj.jsxSet_borderRightColor(borderRightColor);
+         WObj.jsxSet_MozTransformOrigin(mozTransformOrigin);
       }
 
-// Generating method code for jsxGet_borderRightStyle
-      public virtual string JsxGet_borderRightStyle()
+// Generating method code for jsxGet_MozUserFocus
+      public virtual string JsxGet_MozUserFocus()
       {
-         return WObj.jsxGet_borderRightStyle();
+         return WObj.jsxGet_MozUserFocus();
       }
 
-// Generating method code for jsxSet_borderRightStyle
-      public virtual void JsxSet_borderRightStyle(string borderRightStyle)
+// Generating method code for jsxSet_MozUserFocus
+      public virtual void JsxSet_MozUserFocus(string mozUserFocus)
       {
-         WObj.jsxSet_borderRightStyle(borderRightStyle);
+         WObj.jsxSet_MozUserFocus(mozUserFocus);
       }
 
-// Generating method code for jsxGet_borderRightWidth
-      public virtual string JsxGet_borderRightWidth()
+// Generating method code for jsxGet_MozUserInput
+      public virtual string JsxGet_MozUserInput()
       {
-         return WObj.jsxGet_borderRightWidth();
+         return WObj.jsxGet_MozUserInput();
       }
 
-// Generating method code for jsxSet_borderRightWidth
-      public virtual void JsxSet_borderRightWidth(string borderRightWidth)
+// Generating method code for jsxSet_MozUserInput
+      public virtual void JsxSet_MozUserInput(string mozUserInput)
       {
-         WObj.jsxSet_borderRightWidth(borderRightWidth);
+         WObj.jsxSet_MozUserInput(mozUserInput);
       }
 
-// Generating method code for jsxGet_borderSpacing
-      public virtual string JsxGet_borderSpacing()
+// Generating method code for jsxGet_MozUserModify
+      public virtual string JsxGet_MozUserModify()
       {
-         return WObj.jsxGet_borderSpacing();
+         return WObj.jsxGet_MozUserModify();
       }
 
-// Generating method code for jsxSet_borderSpacing
-      public virtual void JsxSet_borderSpacing(string borderSpacing)
+// Generating method code for jsxSet_MozUserModify
+      public virtual void JsxSet_MozUserModify(string mozUserModify)
       {
-         WObj.jsxSet_borderSpacing(borderSpacing);
+         WObj.jsxSet_MozUserModify(mozUserModify);
       }
 
-// Generating method code for jsxGet_borderStyle
-      public virtual string JsxGet_borderStyle()
+// Generating method code for jsxGet_MozUserSelect
+      public virtual string JsxGet_MozUserSelect()
       {
-         return WObj.jsxGet_borderStyle();
+         return WObj.jsxGet_MozUserSelect();
       }
 
-// Generating method code for jsxSet_borderStyle
-      public virtual void JsxSet_borderStyle(string borderStyle)
+// Generating method code for jsxSet_MozUserSelect
+      public virtual void JsxSet_MozUserSelect(string mozUserSelect)
       {
-         WObj.jsxSet_borderStyle(borderStyle);
+         WObj.jsxSet_MozUserSelect(mozUserSelect);
       }
 
-// Generating method code for jsxGet_borderTop
-      public virtual string JsxGet_borderTop()
+// Generating method code for jsxGet_MozWindowShadow
+      public virtual string JsxGet_MozWindowShadow()
       {
-         return WObj.jsxGet_borderTop();
+         return WObj.jsxGet_MozWindowShadow();
       }
 
-// Generating method code for jsxSet_borderTop
-      public virtual void JsxSet_borderTop(string borderTop)
+// Generating method code for jsxSet_MozWindowShadow
+      public virtual void JsxSet_MozWindowShadow(string mozWindowShadow)
       {
-         WObj.jsxSet_borderTop(borderTop);
+         WObj.jsxSet_MozWindowShadow(mozWindowShadow);
       }
 
-// Generating method code for jsxGet_borderTopColor
-      public virtual string JsxGet_borderTopColor()
+// Generating method code for jsxGet_msBlockProgression
+      public virtual string JsxGet_msBlockProgression()
       {
-         return WObj.jsxGet_borderTopColor();
+         return WObj.jsxGet_msBlockProgression();
       }
 
-// Generating method code for jsxSet_borderTopColor
-      public virtual void JsxSet_borderTopColor(string borderTopColor)
+// Generating method code for jsxSet_msBlockProgression
+      public virtual void JsxSet_msBlockProgression(string msBlockProgression)
       {
-         WObj.jsxSet_borderTopColor(borderTopColor);
+         WObj.jsxSet_msBlockProgression(msBlockProgression);
       }
 
-// Generating method code for jsxGet_borderTopStyle
-      public virtual string JsxGet_borderTopStyle()
+// Generating method code for jsxGet_msInterpolationMode
+      public virtual string JsxGet_msInterpolationMode()
       {
-         return WObj.jsxGet_borderTopStyle();
+         return WObj.jsxGet_msInterpolationMode();
       }
 
-// Generating method code for jsxSet_borderTopStyle
-      public virtual void JsxSet_borderTopStyle(string borderTopStyle)
+// Generating method code for jsxSet_msInterpolationMode
+      public virtual void JsxSet_msInterpolationMode(string msInterpolationMode)
       {
-         WObj.jsxSet_borderTopStyle(borderTopStyle);
+         WObj.jsxSet_msInterpolationMode(msInterpolationMode);
       }
 
-// Generating method code for jsxGet_borderTopWidth
-      public virtual string JsxGet_borderTopWidth()
+// Generating method code for jsxGet_opacity
+      public virtual string JsxGet_opacity()
       {
-         return WObj.jsxGet_borderTopWidth();
+         return WObj.jsxGet_opacity();
       }
 
-// Generating method code for jsxSet_borderTopWidth
-      public virtual void JsxSet_borderTopWidth(string borderTopWidth)
+// Generating method code for jsxSet_opacity
+      public virtual void JsxSet_opacity(string opacity)
       {
-         WObj.jsxSet_borderTopWidth(borderTopWidth);
+         WObj.jsxSet_opacity(opacity);
       }
 
-// Generating method code for jsxGet_borderWidth
-      public virtual string JsxGet_borderWidth()
+// Generating method code for jsxGet_orphans
+      public virtual string JsxGet_orphans()
       {
-         return WObj.jsxGet_borderWidth();
+         return WObj.jsxGet_orphans();
       }
 
-// Generating method code for jsxSet_borderWidth
-      public virtual void JsxSet_borderWidth(string borderWidth)
+// Generating method code for jsxSet_orphans
+      public virtual void JsxSet_orphans(string orphans)
       {
-         WObj.jsxSet_borderWidth(borderWidth);
+         WObj.jsxSet_orphans(orphans);
       }
 
-// Generating method code for jsxGet_captionSide
-      public virtual string JsxGet_captionSide()
+// Generating method code for jsxGet_outline
+      public virtual string JsxGet_outline()
       {
-         return WObj.jsxGet_captionSide();
+         return WObj.jsxGet_outline();
       }
 
-// Generating method code for jsxSet_captionSide
-      public virtual void JsxSet_captionSide(string captionSide)
+// Generating method code for jsxSet_outline
+      public virtual void JsxSet_outline(string outline)
       {
-         WObj.jsxSet_captionSide(captionSide);
+         WObj.jsxSet_outline(outline);
       }
 
-// Generating method code for jsxGet_clear
-      public virtual string JsxGet_clear()
+// Generating method code for jsxGet_outlineColor
+      public virtual string JsxGet_outlineColor()
       {
-         return WObj.jsxGet_clear();
+         return WObj.jsxGet_outlineColor();
       }
 
-// Generating method code for jsxSet_clear
-      public virtual void JsxSet_clear(string clear)
+// Generating method code for jsxSet_outlineColor
+      public virtual void JsxSet_outlineColor(string outlineColor)
       {
-         WObj.jsxSet_clear(clear);
+         WObj.jsxSet_outlineColor(outlineColor);
       }
 
-// Generating method code for jsxGet_clip
-      public virtual string JsxGet_clip()
+// Generating method code for jsxGet_outlineOffset
+      public virtual string JsxGet_outlineOffset()
       {
-         return WObj.jsxGet_clip();
+         return WObj.jsxGet_outlineOffset();
       }
 
-// Generating method code for jsxSet_clip
-      public virtual void JsxSet_clip(string clip)
+// Generating method code for jsxSet_outlineOffset
+      public virtual void JsxSet_outlineOffset(string outlineOffset)
       {
-         WObj.jsxSet_clip(clip);
+         WObj.jsxSet_outlineOffset(outlineOffset);
       }
 
-// Generating method code for jsxGet_color
-      public virtual string JsxGet_color()
+// Generating method code for jsxGet_outlineStyle
+      public virtual string JsxGet_outlineStyle()
       {
-         return WObj.jsxGet_color();
+         return WObj.jsxGet_outlineStyle();
       }
 
-// Generating method code for jsxSet_color
-      public virtual void JsxSet_color(string color)
+// Generating method code for jsxSet_outlineStyle
+      public virtual void JsxSet_outlineStyle(string outlineStyle)
       {
-         WObj.jsxSet_color(color);
+         WObj.jsxSet_outlineStyle(outlineStyle);
       }
 
-// Generating method code for jsxGet_content
-      public virtual string JsxGet_content()
+// Generating method code for jsxGet_outlineWidth
+      public virtual string JsxGet_outlineWidth()
       {
-         return WObj.jsxGet_content();
+         return WObj.jsxGet_outlineWidth();
       }
 
-// Generating method code for jsxSet_content
-      public virtual void JsxSet_content(string content)
+// Generating method code for jsxSet_outlineWidth
+      public virtual void JsxSet_outlineWidth(string outlineWidth)
       {
-         WObj.jsxSet_content(content);
+         WObj.jsxSet_outlineWidth(outlineWidth);
+      }
+
+// Generating method code for jsxGet_overflow
+      public virtual string JsxGet_overflow()
+      {
+         return WObj.jsxGet_overflow();
+      }
+
+// Generating method code for jsxSet_overflow
+      public virtual void JsxSet_overflow(string overflow)
+      {
+         WObj.jsxSet_overflow(overflow);
+      }
+
+// Generating method code for jsxGet_overflowX
+      public virtual string JsxGet_overflowX()
+      {
+         return WObj.jsxGet_overflowX();
+      }
+
+// Generating method code for jsxSet_overflowX
+      public virtual void JsxSet_overflowX(string overflowX)
+      {
+         WObj.jsxSet_overflowX(overflowX);
+      }
+
+// Generating method code for jsxGet_overflowY
+      public virtual string JsxGet_overflowY()
+      {
+         return WObj.jsxGet_overflowY();
+      }
+
+// Generating method code for jsxSet_overflowY
+      public virtual void JsxSet_overflowY(string overflowY)
+      {
+         WObj.jsxSet_overflowY(overflowY);
+      }
+
+// Generating method code for jsxGet_padding
+      public virtual string JsxGet_padding()
+      {
+         return WObj.jsxGet_padding();
+      }
+
+// Generating method code for jsxSet_padding
+      public virtual void JsxSet_padding(string padding)
+      {
+         WObj.jsxSet_padding(padding);
+      }
+
+// Generating method code for jsxGet_paddingBottom
+      public virtual string JsxGet_paddingBottom()
+      {
+         return WObj.jsxGet_paddingBottom();
+      }
+
+// Generating method code for jsxSet_paddingBottom
+      public virtual void JsxSet_paddingBottom(string paddingBottom)
+      {
+         WObj.jsxSet_paddingBottom(paddingBottom);
+      }
+
+// Generating method code for jsxGet_paddingLeft
+      public virtual string JsxGet_paddingLeft()
+      {
+         return WObj.jsxGet_paddingLeft();
+      }
+
+// Generating method code for jsxSet_paddingLeft
+      public virtual void JsxSet_paddingLeft(string paddingLeft)
+      {
+         WObj.jsxSet_paddingLeft(paddingLeft);
+      }
+
+// Generating method code for jsxGet_paddingRight
+      public virtual string JsxGet_paddingRight()
+      {
+         return WObj.jsxGet_paddingRight();
+      }
+
+// Generating method code for jsxSet_paddingRight
+      public virtual void JsxSet_paddingRight(string paddingRight)
+      {
+         WObj.jsxSet_paddingRight(paddingRight);
       }
 
 // Generating method code for jsxGet_counterIncrement
@@ -2657,6 +2363,18 @@ namespace NHtmlUnit.Javascript.Host.Css
          WObj.jsxSet_MozBackgroundOrigin(mozBackgroundOrigin);
       }
 
+// Generating method code for jsxGet_MozBackgroundSize
+      public virtual string JsxGet_MozBackgroundSize()
+      {
+         return WObj.jsxGet_MozBackgroundSize();
+      }
+
+// Generating method code for jsxSet_MozBackgroundSize
+      public virtual void JsxSet_MozBackgroundSize(string mozBackgroundSize)
+      {
+         WObj.jsxSet_MozBackgroundSize(mozBackgroundSize);
+      }
+
 // Generating method code for jsxGet_MozBinding
       public virtual string JsxGet_MozBinding()
       {
@@ -2679,6 +2397,66 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual void JsxSet_MozBorderBottomColors(string mozBorderBottomColors)
       {
          WObj.jsxSet_MozBorderBottomColors(mozBorderBottomColors);
+      }
+
+// Generating method code for jsxGet_MozBorderEnd
+      public virtual string JsxGet_MozBorderEnd()
+      {
+         return WObj.jsxGet_MozBorderEnd();
+      }
+
+// Generating method code for jsxSet_MozBorderEnd
+      public virtual void JsxSet_MozBorderEnd(string mozBorderEnd)
+      {
+         WObj.jsxSet_MozBorderEnd(mozBorderEnd);
+      }
+
+// Generating method code for jsxGet_MozBorderEndColor
+      public virtual string JsxGet_MozBorderEndColor()
+      {
+         return WObj.jsxGet_MozBorderEndColor();
+      }
+
+// Generating method code for jsxSet_MozBorderEndColor
+      public virtual void JsxSet_MozBorderEndColor(string mozBorderEndColor)
+      {
+         WObj.jsxSet_MozBorderEndColor(mozBorderEndColor);
+      }
+
+// Generating method code for jsxGet_MozBorderEndStyle
+      public virtual string JsxGet_MozBorderEndStyle()
+      {
+         return WObj.jsxGet_MozBorderEndStyle();
+      }
+
+// Generating method code for jsxSet_MozBorderEndStyle
+      public virtual void JsxSet_MozBorderEndStyle(string mozBorderEndStyle)
+      {
+         WObj.jsxSet_MozBorderEndStyle(mozBorderEndStyle);
+      }
+
+// Generating method code for jsxGet_MozBorderEndWidth
+      public virtual string JsxGet_MozBorderEndWidth()
+      {
+         return WObj.jsxGet_MozBorderEndWidth();
+      }
+
+// Generating method code for jsxSet_MozBorderEndWidth
+      public virtual void JsxSet_MozBorderEndWidth(string mozBorderEndWidth)
+      {
+         WObj.jsxSet_MozBorderEndWidth(mozBorderEndWidth);
+      }
+
+// Generating method code for jsxGet_MozBorderImage
+      public virtual string JsxGet_MozBorderImage()
+      {
+         return WObj.jsxGet_MozBorderImage();
+      }
+
+// Generating method code for jsxSet_MozBorderImage
+      public virtual void JsxSet_MozBorderImage(string mozBorderImage)
+      {
+         WObj.jsxSet_MozBorderImage(mozBorderImage);
       }
 
 // Generating method code for jsxGet_MozBorderLeftColors
@@ -2741,28 +2519,526 @@ namespace NHtmlUnit.Javascript.Host.Css
          WObj.jsxSet_MozBorderRadiusTopleft(mozBorderRadiusTopleft);
       }
 
-// Generating method code for jsxGet_MozBorderRadiusTopright
-      public virtual string JsxGet_MozBorderRadiusTopright()
+// Generating method code for jsxGet_display
+      public virtual string JsxGet_display()
       {
-         return WObj.jsxGet_MozBorderRadiusTopright();
+         return WObj.jsxGet_display();
       }
 
-// Generating method code for jsxSet_MozBorderRadiusTopright
-      public virtual void JsxSet_MozBorderRadiusTopright(string mozBorderRadiusTopright)
+// Generating method code for jsxGet_visibility
+      public virtual string JsxGet_visibility()
       {
-         WObj.jsxSet_MozBorderRadiusTopright(mozBorderRadiusTopright);
+         return WObj.jsxGet_visibility();
       }
 
-// Generating method code for jsxGet_MozBorderRightColors
-      public virtual string JsxGet_MozBorderRightColors()
+// Generating method code for jsxGet_bottom
+      public virtual string JsxGet_bottom()
       {
-         return WObj.jsxGet_MozBorderRightColors();
+         return WObj.jsxGet_bottom();
       }
 
-// Generating method code for jsxSet_MozBorderRightColors
-      public virtual void JsxSet_MozBorderRightColors(string mozBorderRightColors)
+// Generating method code for jsxSet_bottom
+      public virtual void JsxSet_bottom(string bottom)
       {
-         WObj.jsxSet_MozBorderRightColors(mozBorderRightColors);
+         WObj.jsxSet_bottom(bottom);
+      }
+
+// Generating method code for jsxGet_left
+      public virtual string JsxGet_left()
+      {
+         return WObj.jsxGet_left();
+      }
+
+// Generating method code for jsxSet_left
+      public virtual void JsxSet_left(string left)
+      {
+         WObj.jsxSet_left(left);
+      }
+
+// Generating method code for jsxGet_right
+      public virtual string JsxGet_right()
+      {
+         return WObj.jsxGet_right();
+      }
+
+// Generating method code for jsxSet_right
+      public virtual void JsxSet_right(string right)
+      {
+         WObj.jsxSet_right(right);
+      }
+
+// Generating method code for jsxGet_top
+      public virtual string JsxGet_top()
+      {
+         return WObj.jsxGet_top();
+      }
+
+// Generating method code for jsxSet_top
+      public virtual void JsxSet_top(string top)
+      {
+         WObj.jsxSet_top(top);
+      }
+
+// Generating method code for getWithFallback
+      public virtual object GetWithFallback(string name)
+      {
+         return WObj.getWithFallback(name);
+      }
+
+// Generating method code for jsxGet_azimuth
+      public virtual string JsxGet_azimuth()
+      {
+         return WObj.jsxGet_azimuth();
+      }
+
+// Generating method code for jsxSet_azimuth
+      public virtual void JsxSet_azimuth(string azimuth)
+      {
+         WObj.jsxSet_azimuth(azimuth);
+      }
+
+// Generating method code for jsxGet_background
+      public virtual string JsxGet_background()
+      {
+         return WObj.jsxGet_background();
+      }
+
+// Generating method code for jsxSet_background
+      public virtual void JsxSet_background(string background)
+      {
+         WObj.jsxSet_background(background);
+      }
+
+// Generating method code for jsxGet_backgroundAttachment
+      public virtual string JsxGet_backgroundAttachment()
+      {
+         return WObj.jsxGet_backgroundAttachment();
+      }
+
+// Generating method code for jsxSet_backgroundAttachment
+      public virtual void JsxSet_backgroundAttachment(string backgroundAttachment)
+      {
+         WObj.jsxSet_backgroundAttachment(backgroundAttachment);
+      }
+
+// Generating method code for jsxGet_backgroundColor
+      public virtual string JsxGet_backgroundColor()
+      {
+         return WObj.jsxGet_backgroundColor();
+      }
+
+// Generating method code for jsxSet_backgroundColor
+      public virtual void JsxSet_backgroundColor(string backgroundColor)
+      {
+         WObj.jsxSet_backgroundColor(backgroundColor);
+      }
+
+// Generating method code for jsxGet_backgroundImage
+      public virtual string JsxGet_backgroundImage()
+      {
+         return WObj.jsxGet_backgroundImage();
+      }
+
+// Generating method code for jsxSet_backgroundImage
+      public virtual void JsxSet_backgroundImage(string backgroundImage)
+      {
+         WObj.jsxSet_backgroundImage(backgroundImage);
+      }
+
+// Generating method code for jsxGet_backgroundPosition
+      public virtual string JsxGet_backgroundPosition()
+      {
+         return WObj.jsxGet_backgroundPosition();
+      }
+
+// Generating method code for jsxSet_backgroundPosition
+      public virtual void JsxSet_backgroundPosition(string backgroundPosition)
+      {
+         WObj.jsxSet_backgroundPosition(backgroundPosition);
+      }
+
+// Generating method code for jsxGet_backgroundPositionX
+      public virtual string JsxGet_backgroundPositionX()
+      {
+         return WObj.jsxGet_backgroundPositionX();
+      }
+
+// Generating method code for jsxSet_backgroundPositionX
+      public virtual void JsxSet_backgroundPositionX(string backgroundPositionX)
+      {
+         WObj.jsxSet_backgroundPositionX(backgroundPositionX);
+      }
+
+// Generating method code for jsxGet_backgroundPositionY
+      public virtual string JsxGet_backgroundPositionY()
+      {
+         return WObj.jsxGet_backgroundPositionY();
+      }
+
+// Generating method code for jsxSet_backgroundPositionY
+      public virtual void JsxSet_backgroundPositionY(string backgroundPositionY)
+      {
+         WObj.jsxSet_backgroundPositionY(backgroundPositionY);
+      }
+
+// Generating method code for jsxGet_backgroundRepeat
+      public virtual string JsxGet_backgroundRepeat()
+      {
+         return WObj.jsxGet_backgroundRepeat();
+      }
+
+// Generating method code for jsxSet_backgroundRepeat
+      public virtual void JsxSet_backgroundRepeat(string backgroundRepeat)
+      {
+         WObj.jsxSet_backgroundRepeat(backgroundRepeat);
+      }
+
+// Generating method code for jsxGet_behavior
+      public virtual string JsxGet_behavior()
+      {
+         return WObj.jsxGet_behavior();
+      }
+
+// Generating method code for jsxSet_behavior
+      public virtual void JsxSet_behavior(string behavior)
+      {
+         WObj.jsxSet_behavior(behavior);
+      }
+
+// Generating method code for jsxGet_border
+      public virtual string JsxGet_border()
+      {
+         return WObj.jsxGet_border();
+      }
+
+// Generating method code for jsxSet_border
+      public virtual void JsxSet_border(string border)
+      {
+         WObj.jsxSet_border(border);
+      }
+
+// Generating method code for jsxGet_borderBottom
+      public virtual string JsxGet_borderBottom()
+      {
+         return WObj.jsxGet_borderBottom();
+      }
+
+// Generating method code for jsxSet_borderBottom
+      public virtual void JsxSet_borderBottom(string borderBottom)
+      {
+         WObj.jsxSet_borderBottom(borderBottom);
+      }
+
+// Generating method code for jsxGet_borderBottomColor
+      public virtual string JsxGet_borderBottomColor()
+      {
+         return WObj.jsxGet_borderBottomColor();
+      }
+
+// Generating method code for jsxSet_borderBottomColor
+      public virtual void JsxSet_borderBottomColor(string borderBottomColor)
+      {
+         WObj.jsxSet_borderBottomColor(borderBottomColor);
+      }
+
+// Generating method code for jsxGet_borderBottomStyle
+      public virtual string JsxGet_borderBottomStyle()
+      {
+         return WObj.jsxGet_borderBottomStyle();
+      }
+
+// Generating method code for jsxSet_borderBottomStyle
+      public virtual void JsxSet_borderBottomStyle(string borderBottomStyle)
+      {
+         WObj.jsxSet_borderBottomStyle(borderBottomStyle);
+      }
+
+// Generating method code for jsxGet_borderBottomWidth
+      public virtual string JsxGet_borderBottomWidth()
+      {
+         return WObj.jsxGet_borderBottomWidth();
+      }
+
+// Generating method code for jsxSet_borderBottomWidth
+      public virtual void JsxSet_borderBottomWidth(string borderBottomWidth)
+      {
+         WObj.jsxSet_borderBottomWidth(borderBottomWidth);
+      }
+
+// Generating method code for jsxGet_borderCollapse
+      public virtual string JsxGet_borderCollapse()
+      {
+         return WObj.jsxGet_borderCollapse();
+      }
+
+// Generating method code for jsxSet_borderCollapse
+      public virtual void JsxSet_borderCollapse(string borderCollapse)
+      {
+         WObj.jsxSet_borderCollapse(borderCollapse);
+      }
+
+// Generating method code for jsxGet_borderColor
+      public virtual string JsxGet_borderColor()
+      {
+         return WObj.jsxGet_borderColor();
+      }
+
+// Generating method code for jsxSet_borderColor
+      public virtual void JsxSet_borderColor(string borderColor)
+      {
+         WObj.jsxSet_borderColor(borderColor);
+      }
+
+// Generating method code for jsxGet_borderLeft
+      public virtual string JsxGet_borderLeft()
+      {
+         return WObj.jsxGet_borderLeft();
+      }
+
+// Generating method code for jsxSet_borderLeft
+      public virtual void JsxSet_borderLeft(string borderLeft)
+      {
+         WObj.jsxSet_borderLeft(borderLeft);
+      }
+
+// Generating method code for jsxGet_borderLeftColor
+      public virtual string JsxGet_borderLeftColor()
+      {
+         return WObj.jsxGet_borderLeftColor();
+      }
+
+// Generating method code for jsxSet_borderLeftColor
+      public virtual void JsxSet_borderLeftColor(string borderLeftColor)
+      {
+         WObj.jsxSet_borderLeftColor(borderLeftColor);
+      }
+
+// Generating method code for jsxGet_borderLeftStyle
+      public virtual string JsxGet_borderLeftStyle()
+      {
+         return WObj.jsxGet_borderLeftStyle();
+      }
+
+// Generating method code for jsxSet_borderLeftStyle
+      public virtual void JsxSet_borderLeftStyle(string borderLeftStyle)
+      {
+         WObj.jsxSet_borderLeftStyle(borderLeftStyle);
+      }
+
+// Generating method code for jsxGet_borderLeftWidth
+      public virtual string JsxGet_borderLeftWidth()
+      {
+         return WObj.jsxGet_borderLeftWidth();
+      }
+
+// Generating method code for jsxSet_borderLeftWidth
+      public virtual void JsxSet_borderLeftWidth(string borderLeftWidth)
+      {
+         WObj.jsxSet_borderLeftWidth(borderLeftWidth);
+      }
+
+// Generating method code for jsxGet_borderRight
+      public virtual string JsxGet_borderRight()
+      {
+         return WObj.jsxGet_borderRight();
+      }
+
+// Generating method code for jsxSet_borderRight
+      public virtual void JsxSet_borderRight(string borderRight)
+      {
+         WObj.jsxSet_borderRight(borderRight);
+      }
+
+// Generating method code for jsxGet_borderRightColor
+      public virtual string JsxGet_borderRightColor()
+      {
+         return WObj.jsxGet_borderRightColor();
+      }
+
+// Generating method code for jsxSet_borderRightColor
+      public virtual void JsxSet_borderRightColor(string borderRightColor)
+      {
+         WObj.jsxSet_borderRightColor(borderRightColor);
+      }
+
+// Generating method code for jsxGet_borderRightStyle
+      public virtual string JsxGet_borderRightStyle()
+      {
+         return WObj.jsxGet_borderRightStyle();
+      }
+
+// Generating method code for jsxSet_borderRightStyle
+      public virtual void JsxSet_borderRightStyle(string borderRightStyle)
+      {
+         WObj.jsxSet_borderRightStyle(borderRightStyle);
+      }
+
+// Generating method code for jsxGet_borderRightWidth
+      public virtual string JsxGet_borderRightWidth()
+      {
+         return WObj.jsxGet_borderRightWidth();
+      }
+
+// Generating method code for jsxSet_borderRightWidth
+      public virtual void JsxSet_borderRightWidth(string borderRightWidth)
+      {
+         WObj.jsxSet_borderRightWidth(borderRightWidth);
+      }
+
+// Generating method code for jsxGet_borderSpacing
+      public virtual string JsxGet_borderSpacing()
+      {
+         return WObj.jsxGet_borderSpacing();
+      }
+
+// Generating method code for jsxSet_borderSpacing
+      public virtual void JsxSet_borderSpacing(string borderSpacing)
+      {
+         WObj.jsxSet_borderSpacing(borderSpacing);
+      }
+
+// Generating method code for jsxGet_borderStyle
+      public virtual string JsxGet_borderStyle()
+      {
+         return WObj.jsxGet_borderStyle();
+      }
+
+// Generating method code for jsxSet_borderStyle
+      public virtual void JsxSet_borderStyle(string borderStyle)
+      {
+         WObj.jsxSet_borderStyle(borderStyle);
+      }
+
+// Generating method code for jsxGet_borderTop
+      public virtual string JsxGet_borderTop()
+      {
+         return WObj.jsxGet_borderTop();
+      }
+
+// Generating method code for jsxSet_borderTop
+      public virtual void JsxSet_borderTop(string borderTop)
+      {
+         WObj.jsxSet_borderTop(borderTop);
+      }
+
+// Generating method code for jsxGet_borderTopColor
+      public virtual string JsxGet_borderTopColor()
+      {
+         return WObj.jsxGet_borderTopColor();
+      }
+
+// Generating method code for jsxSet_borderTopColor
+      public virtual void JsxSet_borderTopColor(string borderTopColor)
+      {
+         WObj.jsxSet_borderTopColor(borderTopColor);
+      }
+
+// Generating method code for jsxGet_borderTopStyle
+      public virtual string JsxGet_borderTopStyle()
+      {
+         return WObj.jsxGet_borderTopStyle();
+      }
+
+// Generating method code for jsxSet_borderTopStyle
+      public virtual void JsxSet_borderTopStyle(string borderTopStyle)
+      {
+         WObj.jsxSet_borderTopStyle(borderTopStyle);
+      }
+
+// Generating method code for jsxGet_borderTopWidth
+      public virtual string JsxGet_borderTopWidth()
+      {
+         return WObj.jsxGet_borderTopWidth();
+      }
+
+// Generating method code for jsxSet_borderTopWidth
+      public virtual void JsxSet_borderTopWidth(string borderTopWidth)
+      {
+         WObj.jsxSet_borderTopWidth(borderTopWidth);
+      }
+
+// Generating method code for jsxGet_borderWidth
+      public virtual string JsxGet_borderWidth()
+      {
+         return WObj.jsxGet_borderWidth();
+      }
+
+// Generating method code for jsxSet_borderWidth
+      public virtual void JsxSet_borderWidth(string borderWidth)
+      {
+         WObj.jsxSet_borderWidth(borderWidth);
+      }
+
+// Generating method code for jsxGet_boxSizing
+      public virtual string JsxGet_boxSizing()
+      {
+         return WObj.jsxGet_boxSizing();
+      }
+
+// Generating method code for jsxSet_boxSizing
+      public virtual void JsxSet_boxSizing(string boxSizing)
+      {
+         WObj.jsxSet_boxSizing(boxSizing);
+      }
+
+// Generating method code for jsxGet_captionSide
+      public virtual string JsxGet_captionSide()
+      {
+         return WObj.jsxGet_captionSide();
+      }
+
+// Generating method code for jsxSet_captionSide
+      public virtual void JsxSet_captionSide(string captionSide)
+      {
+         WObj.jsxSet_captionSide(captionSide);
+      }
+
+// Generating method code for jsxGet_clear
+      public virtual string JsxGet_clear()
+      {
+         return WObj.jsxGet_clear();
+      }
+
+// Generating method code for jsxSet_clear
+      public virtual void JsxSet_clear(string clear)
+      {
+         WObj.jsxSet_clear(clear);
+      }
+
+// Generating method code for jsxGet_clip
+      public virtual string JsxGet_clip()
+      {
+         return WObj.jsxGet_clip();
+      }
+
+// Generating method code for jsxSet_clip
+      public virtual void JsxSet_clip(string clip)
+      {
+         WObj.jsxSet_clip(clip);
+      }
+
+// Generating method code for jsxGet_color
+      public virtual string JsxGet_color()
+      {
+         return WObj.jsxGet_color();
+      }
+
+// Generating method code for jsxSet_color
+      public virtual void JsxSet_color(string color)
+      {
+         WObj.jsxSet_color(color);
+      }
+
+// Generating method code for jsxGet_content
+      public virtual string JsxGet_content()
+      {
+         return WObj.jsxGet_content();
+      }
+
+// Generating method code for jsxSet_content
+      public virtual void JsxSet_content(string content)
+      {
+         WObj.jsxSet_content(content);
       }
 
    }

@@ -23,7 +23,7 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.TreeWalker)WrappedObject; }
       }
 
-      public TreeWalker(NHtmlUnit.Javascript.Host.Node root, int whatToShow, NHtmlUnit.Javascript.Host.NodeFilter filter, java.lang.Boolean expandEntityReferences)
+      public TreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Int64 whatToShow, NHtmlUnit.Javascript.Host.NodeFilter filter, java.lang.Boolean expandEntityReferences)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, (com.gargoylesoftware.htmlunit.javascript.host.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
 
       public TreeWalker()

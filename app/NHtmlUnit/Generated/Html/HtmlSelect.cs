@@ -24,6 +24,19 @@ namespace NHtmlUnit.Html
       }
 
 
+      public System.Int32 OptionSize
+      {
+         get
+         {
+            return WObj.getOptionSize();
+         }
+         set
+         {
+            WObj.setOptionSize(value);
+         }
+
+      }
+
       public System.String NameAttribute
       {
          get
@@ -57,19 +70,6 @@ namespace NHtmlUnit.Html
                WObj.getOptions());
          }
        }
-
-      public System.Int32 OptionSize
-      {
-         get
-         {
-            return WObj.getOptionSize();
-         }
-         set
-         {
-            WObj.setOptionSize(value);
-         }
-
-      }
 
       public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
       {
@@ -163,6 +163,12 @@ namespace NHtmlUnit.Html
       }
 
 // Generating method code for setSelectedAttribute
+      public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected, bool invokeOnFocus)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus));
+      }
+
+// Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected));
@@ -172,12 +178,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.Html.HtmlOption GetOptionByValue(string value)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(WObj.getOptionByValue(value));
-      }
-
-// Generating method code for setSelectedAttribute
-      public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected, bool invokeOnFocus)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus));
       }
 
 // Generating method code for setSelectedAttribute

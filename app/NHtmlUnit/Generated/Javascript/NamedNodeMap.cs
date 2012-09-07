@@ -35,6 +35,12 @@ namespace NHtmlUnit.Javascript
          return WObj.jsxFunction_getNamedItem(name);
       }
 
+// Generating method code for getNamedItemWithoutSytheticClassAttr
+      public virtual object GetNamedItemWithoutSytheticClassAttr(string name)
+      {
+         return WObj.getNamedItemWithoutSytheticClassAttr(name);
+      }
+
 // Generating method code for jsxFunction_item
       public virtual object JsxFunction_item(int index)
       {

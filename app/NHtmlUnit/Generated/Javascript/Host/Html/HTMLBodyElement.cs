@@ -32,12 +32,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.createEventHandlerFromAttribute(attributeName, value);
       }
 
-// Generating method code for jsxSet_bgColor
-      public virtual void JsxSet_bgColor(string bgColor)
-      {
-         WObj.jsxSet_bgColor(bgColor);
-      }
-
 // Generating method code for jsxGet_aLink
       public virtual string JsxGet_aLink()
       {
@@ -66,6 +60,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual string JsxGet_bgColor()
       {
          return WObj.jsxGet_bgColor();
+      }
+
+// Generating method code for jsxSet_bgColor
+      public virtual void JsxSet_bgColor(string bgColor)
+      {
+         WObj.jsxSet_bgColor(bgColor);
       }
 
 // Generating method code for jsxGet_link

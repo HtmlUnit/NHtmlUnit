@@ -35,12 +35,6 @@ namespace NHtmlUnit.Javascript.Host
          WObj.removeEventListener(type, listener, useCapture);
       }
 
-// Generating method code for executeListeners
-      public virtual NHtmlUnit.ScriptResult ExecuteListeners(NHtmlUnit.Javascript.Host.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeListeners((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject, args, propHandlerArgs));
-      }
-
 // Generating method code for executeCapturingListeners
       public virtual NHtmlUnit.ScriptResult ExecuteCapturingListeners(NHtmlUnit.Javascript.Host.Event eventArg, System.Object[] args)
       {
@@ -75,6 +69,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual object GetEventHandlerProp(string eventName)
       {
          return WObj.getEventHandlerProp(eventName);
+      }
+
+// Generating method code for executeListeners
+      public virtual NHtmlUnit.ScriptResult ExecuteListeners(NHtmlUnit.Javascript.Host.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeListeners((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject, args, propHandlerArgs));
       }
 
    }

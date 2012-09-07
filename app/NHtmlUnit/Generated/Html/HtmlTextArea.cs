@@ -37,14 +37,6 @@ namespace NHtmlUnit.Html
 
       }
 
-      public System.String NameAttribute
-      {
-         get
-         {
-            return WObj.getNameAttribute();
-         }
-      }
-
       public System.Int32 SelectionStart
       {
          get
@@ -69,6 +61,14 @@ namespace NHtmlUnit.Html
             WObj.setSelectionEnd(value);
          }
 
+      }
+
+      public System.String NameAttribute
+      {
+         get
+         {
+            return WObj.getNameAttribute();
+         }
       }
 
       public System.String DefaultValue

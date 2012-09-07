@@ -14,13 +14,13 @@ namespace NHtmlUnit
    public interface IWebWindow : NHtmlUnit.IObjectWrapper
    {
       NHtmlUnit.IPage EnclosedPage { get; set; }
-      NHtmlUnit.History History  { get; }
       System.String Name { get; set; }
-      NHtmlUnit.IWebWindow TopWindow  { get; }
-      System.Object ScriptObject { get; set; }
       NHtmlUnit.IWebWindow ParentWindow  { get; }
-      NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager  { get; }
+      NHtmlUnit.IWebWindow TopWindow  { get; }
       NHtmlUnit.WebClient WebClient  { get; }
+      NHtmlUnit.History History  { get; }
+      System.Object ScriptObject { get; set; }
+      NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager  { get; }
 // Generating method code for isClosed
       bool IsClosed();
 

@@ -24,19 +24,19 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ContentAttribute
-      {
-         get
-         {
-            return WObj.getContentAttribute();
-         }
-      }
-
       public System.String HttpEquivAttribute
       {
          get
          {
             return WObj.getHttpEquivAttribute();
+         }
+      }
+
+      public System.String ContentAttribute
+      {
+         get
+         {
+            return WObj.getContentAttribute();
          }
       }
 

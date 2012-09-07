@@ -24,19 +24,19 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.Int32 ColumnSpan
-      {
-         get
-         {
-            return WObj.getColumnSpan();
-         }
-      }
-
       public System.Int32 RowSpan
       {
          get
          {
             return WObj.getRowSpan();
+         }
+      }
+
+      public System.Int32 ColumnSpan
+      {
+         get
+         {
+            return WObj.getColumnSpan();
          }
       }
 

@@ -13,11 +13,10 @@ namespace NHtmlUnit.Html.Impl
 {
    public interface ISelectableTextInput : NHtmlUnit.IObjectWrapper, NHtmlUnit.W3C.Dom.INode
    {
-      // NHtmlUnit.IPage Page  { get; }
-      System.String Text { get; set; }
-      System.String SelectedText  { get; }
       System.Int32 SelectionStart { get; set; }
       System.Int32 SelectionEnd { get; set; }
+      System.String Text { get; set; }
+      System.String SelectedText  { get; }
 // Generating method code for focus
       void Focus();
 // Generating method code for select

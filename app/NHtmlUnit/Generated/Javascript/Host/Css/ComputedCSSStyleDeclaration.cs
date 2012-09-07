@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class ComputedCSSStyleDeclaration : NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration
+   public partial class ComputedCSSStyleDeclaration : NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static ComputedCSSStyleDeclaration()
       {
@@ -30,43 +30,11 @@ namespace NHtmlUnit.Javascript.Host.Css
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
 
 
-      public System.Int32 BorderLeft
+      public System.Int32 MarginRight
       {
          get
          {
-            return WObj.getBorderLeft();
-         }
-      }
-
-      public System.Int32 BorderTop
-      {
-         get
-         {
-            return WObj.getBorderTop();
-         }
-      }
-
-      public System.String PositionWithInheritance
-      {
-         get
-         {
-            return WObj.getPositionWithInheritance();
-         }
-      }
-
-      public System.Int32 MarginLeft
-      {
-         get
-         {
-            return WObj.getMarginLeft();
-         }
-      }
-
-      public System.Int32 PaddingLeft
-      {
-         get
-         {
-            return WObj.getPaddingLeft();
+            return WObj.getMarginRight();
          }
       }
 
@@ -78,11 +46,11 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public System.Int32 PaddingTop
+      public System.Int32 MarginBottom
       {
          get
          {
-            return WObj.getPaddingTop();
+            return WObj.getMarginBottom();
          }
       }
 
@@ -102,6 +70,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public System.String PositionWithInheritance
+      {
+         get
+         {
+            return WObj.getPositionWithInheritance();
+         }
+      }
+
       public System.String TopWithInheritance
       {
          get
@@ -115,6 +91,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          get
          {
             return WObj.getBottomWithInheritance();
+         }
+      }
+
+      public System.Int32 PaddingTop
+      {
+         get
+         {
+            return WObj.getPaddingTop();
          }
       }
 
@@ -134,6 +118,22 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public System.Int32 MarginLeft
+      {
+         get
+         {
+            return WObj.getMarginLeft();
+         }
+      }
+
+      public System.Int32 PaddingLeft
+      {
+         get
+         {
+            return WObj.getPaddingLeft();
+         }
+      }
+
       public System.Int32 PaddingRight
       {
          get
@@ -150,11 +150,27 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public System.Int32 BorderLeft
+      {
+         get
+         {
+            return WObj.getBorderLeft();
+         }
+      }
+
       public System.Int32 BorderRight
       {
          get
          {
             return WObj.getBorderRight();
+         }
+      }
+
+      public System.Int32 BorderTop
+      {
+         get
+         {
+            return WObj.getBorderTop();
          }
       }
 
@@ -165,32 +181,10 @@ namespace NHtmlUnit.Javascript.Host.Css
             return WObj.getBorderBottom();
          }
       }
-
-      public System.Int32 MarginRight
+// Generating method code for isScrollable
+      public virtual bool IsScrollable(bool horizontal)
       {
-         get
-         {
-            return WObj.getMarginRight();
-         }
-      }
-
-      public System.Int32 MarginBottom
-      {
-         get
-         {
-            return WObj.getMarginBottom();
-         }
-      }
-// Generating method code for getCalculatedWidth
-      public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
-      {
-         return WObj.getCalculatedWidth(includeBorder, includePadding);
-      }
-
-// Generating method code for getCalculatedHeight
-      public virtual int GetCalculatedHeight(bool includeBorder, bool includePadding)
-      {
-         return WObj.getCalculatedHeight(includeBorder, includePadding);
+         return WObj.isScrollable(horizontal);
       }
 
 // Generating method code for getLeft
@@ -199,16 +193,22 @@ namespace NHtmlUnit.Javascript.Host.Css
          return WObj.getLeft(includeMargin, includeBorder, includePadding);
       }
 
+// Generating method code for getCalculatedWidth
+      public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
+      {
+         return WObj.getCalculatedWidth(includeBorder, includePadding);
+      }
+
 // Generating method code for getTop
       public virtual int GetTop(bool includeMargin, bool includeBorder, bool includePadding)
       {
          return WObj.getTop(includeMargin, includeBorder, includePadding);
       }
 
-// Generating method code for isScrollable
-      public virtual bool IsScrollable(bool horizontal)
+// Generating method code for getCalculatedHeight
+      public virtual int GetCalculatedHeight(bool includeBorder, bool includePadding)
       {
-         return WObj.isScrollable(horizontal);
+         return WObj.getCalculatedHeight(includeBorder, includePadding);
       }
 
 // Generating method code for applyStyleFromSelector

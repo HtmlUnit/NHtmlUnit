@@ -27,16 +27,6 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
 
-      public NHtmlUnit.Javascript.Host.Document Document
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
-               WObj.getDocument());
-         }
-      }
-
-
       public NHtmlUnit.IWebWindow WebWindow
       {
          get
@@ -67,6 +57,16 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
+      public NHtmlUnit.Javascript.Host.Document Document
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
+               WObj.getDocument());
+         }
+      }
+
+
       public NHtmlUnit.Javascript.Host.Selection Selection
       {
          get
@@ -76,22 +76,10 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IPage enclosedPage)
+// Generating method code for jsxGet_scrollY
+      public virtual int JsxGet_scrollY()
       {
-         WObj.initialize((com.gargoylesoftware.htmlunit.Page)enclosedPage.WrappedObject);
-      }
-
-// Generating method code for initialize
-      public virtual void Initialize()
-      {
-         WObj.initialize();
-      }
-
-// Generating method code for jsxGet_location
-      public virtual NHtmlUnit.Javascript.Host.Location JsxGet_location()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.jsxGet_location());
+         return WObj.jsxGet_scrollY();
       }
 
 // Generating method code for jsxSet_status
@@ -106,18 +94,6 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxFunction_attachEvent(type, listener);
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for triggerOnError
-      public virtual void TriggerOnError(NHtmlUnit.ScriptException e)
-      {
-         WObj.triggerOnError((com.gargoylesoftware.htmlunit.ScriptException)e.WrappedObject);
-      }
-
 // Generating method code for getPrototype
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
       {
@@ -125,9 +101,21 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for jsxFunction_getComputedStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration JsxFunction_getComputedStyle(NHtmlUnit.Javascript.Host.Html.HTMLElement element, string pseudo)
+      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration JsxFunction_getComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.jsxFunction_getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject, pseudo));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.jsxFunction_getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
+      }
+
+// Generating method code for jsxGet_location
+      public virtual NHtmlUnit.Javascript.Host.Location JsxGet_location()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.jsxGet_location());
+      }
+
+// Generating method code for jsxSet_location
+      public virtual void JsxSet_location(string newLocation)
+      {
+         WObj.jsxSet_location(newLocation);
       }
 
 // Generating method code for jsxGet_document
@@ -148,10 +136,10 @@ namespace NHtmlUnit.Javascript.Host
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(WObj.jsxGet_navigator());
       }
 
-// Generating method code for jsxSet_location
-      public virtual void JsxSet_location(string newLocation)
+// Generating method code for jsxGet_frames
+      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_frames()
       {
-         WObj.jsxSet_location(newLocation);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_frames());
       }
 
 // Generating method code for jsxGet_innerWidth
@@ -166,10 +154,10 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_innerHeight();
       }
 
-// Generating method code for jsxGet_frames
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_frames()
+// Generating method code for executeEvent
+      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_frames());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for jsxFunction_scrollTo
@@ -308,6 +296,24 @@ namespace NHtmlUnit.Javascript.Host
       public virtual NHtmlUnit.Javascript.Host.External JsxGet_external()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.External>(WObj.jsxGet_external());
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IPage enclosedPage)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.Page)enclosedPage.WrappedObject);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize()
+      {
+         WObj.initialize();
       }
 
 // Generating method code for jsxGet_top
@@ -460,6 +466,18 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_onload();
       }
 
+// Generating method code for jsxGet_onhashchange
+      public virtual object JsxGet_onhashchange()
+      {
+         return WObj.jsxGet_onhashchange();
+      }
+
+// Generating method code for jsxSet_onhashchange
+      public virtual void JsxSet_onhashchange(object newHandler)
+      {
+         WObj.jsxSet_onhashchange(newHandler);
+      }
+
 // Generating method code for jsxFunction_addEventListener
       public virtual void JsxFunction_addEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
       {
@@ -506,6 +524,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void JsxSet_onerror(object onerror)
       {
          WObj.jsxSet_onerror(onerror);
+      }
+
+// Generating method code for triggerOnError
+      public virtual void TriggerOnError(NHtmlUnit.ScriptException e)
+      {
+         WObj.triggerOnError((com.gargoylesoftware.htmlunit.ScriptException)e.WrappedObject);
       }
 
 // Generating method code for call
@@ -610,6 +634,24 @@ namespace NHtmlUnit.Javascript.Host
          WObj.jsxSet_controllers(value);
       }
 
+// Generating method code for jsxGet_mozInnerScreenX
+      public virtual int JsxGet_mozInnerScreenX()
+      {
+         return WObj.jsxGet_mozInnerScreenX();
+      }
+
+// Generating method code for jsxGet_mozInnerScreenY
+      public virtual int JsxGet_mozInnerScreenY()
+      {
+         return WObj.jsxGet_mozInnerScreenY();
+      }
+
+// Generating method code for jsxGet_mozPaintCount
+      public virtual int JsxGet_mozPaintCount()
+      {
+         return WObj.jsxGet_mozPaintCount();
+      }
+
 // Generating method code for jsxFunction_ScriptEngine
       public virtual string JsxFunction_ScriptEngine()
       {
@@ -656,12 +698,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual int JsxGet_scrollX()
       {
          return WObj.jsxGet_scrollX();
-      }
-
-// Generating method code for jsxGet_scrollY
-      public virtual int JsxGet_scrollY()
-      {
-         return WObj.jsxGet_scrollY();
       }
 
    }

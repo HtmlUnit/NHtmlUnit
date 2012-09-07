@@ -63,9 +63,9 @@ namespace NHtmlUnit.Javascript.Host.Css
       }
 
 // Generating method code for modifyIfNecessary
-      public virtual void ModifyIfNecessary(NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration style, NHtmlUnit.Javascript.Host.Html.HTMLElement element)
+      public virtual void ModifyIfNecessary(NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration style, NHtmlUnit.Javascript.Host.Element element)
       {
-         WObj.modifyIfNecessary((com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)style.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject);
+         WObj.modifyIfNecessary((com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)style.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject);
       }
 
 // Generating method code for parseSelectors

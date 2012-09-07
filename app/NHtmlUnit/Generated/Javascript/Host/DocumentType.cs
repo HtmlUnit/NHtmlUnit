@@ -51,13 +51,13 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for jsxGet_entities
-      public virtual string JsxGet_entities()
+      public virtual object JsxGet_entities()
       {
          return WObj.jsxGet_entities();
       }
 
 // Generating method code for jsxGet_notations
-      public virtual string JsxGet_notations()
+      public virtual object JsxGet_notations()
       {
          return WObj.jsxGet_notations();
       }

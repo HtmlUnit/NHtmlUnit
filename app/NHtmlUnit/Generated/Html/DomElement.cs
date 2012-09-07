@@ -52,6 +52,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+
+      public System.String Id
+      {
+         get
+         {
+            return WObj.getId();
+         }
+      }
 // Generating method code for removeAttribute
       public virtual void RemoveAttribute(string attributeName)
       {

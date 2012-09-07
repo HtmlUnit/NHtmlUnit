@@ -23,14 +23,17 @@ namespace NHtmlUnit.Util
          get { return (com.gargoylesoftware.htmlunit.util.Cookie)WrappedObject; }
       }
 
-      public Cookie(string domain, string name, string value)
-         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value)) {}
-
       public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure)) {}
 
-      public Cookie(string name, string value)
-         : this(new com.gargoylesoftware.htmlunit.util.Cookie(name, value)) {}
+      public Cookie(org.apache.http.cookie.Cookie c)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(c)) {}
+
+      public Cookie(string domain, string name, string value)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value)) {}
+
+      public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure, bool httpOnly)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure, httpOnly)) {}
 
       public Cookie(string domain, string name, string value, string path, int maxAge, bool secure)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, maxAge, secure)) {}
@@ -75,6 +78,12 @@ namespace NHtmlUnit.Util
             return WObj.getPath();
          }
       }
+// Generating method code for isHttpOnly
+      public virtual bool IsHttpOnly()
+      {
+         return WObj.isHttpOnly();
+      }
+
 // Generating method code for toHttpClient
       public virtual org.apache.http.cookie.Cookie ToHttpClient()
       {

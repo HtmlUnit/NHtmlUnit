@@ -24,15 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public IList<NHtmlUnit.Html.HtmlElement> LostChildren
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getLostChildren());
-         }
-       }
-
       public System.String ActionAttribute
       {
          get
@@ -92,6 +83,15 @@ namespace NHtmlUnit.Html
             return WObj.getAcceptCharsetAttribute();
          }
       }
+
+      public IList<NHtmlUnit.Html.HtmlElement> LostChildren
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getLostChildren());
+         }
+       }
 
       public System.String NameAttribute
       {

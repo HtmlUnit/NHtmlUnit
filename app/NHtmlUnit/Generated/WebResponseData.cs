@@ -55,19 +55,19 @@ namespace NHtmlUnit
          }
       }
 
-      public System.Byte[] Body
-      {
-         get
-         {
-            return WObj.getBody();
-         }
-      }
-
       public java.io.InputStream InputStream
       {
          get
          {
             return WObj.getInputStream();
+         }
+      }
+
+      public System.Byte[] Body
+      {
+         get
+         {
+            return WObj.getBody();
          }
       }
    }

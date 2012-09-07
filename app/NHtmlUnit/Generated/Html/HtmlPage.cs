@@ -27,6 +27,23 @@ namespace NHtmlUnit.Html
          : this(new com.gargoylesoftware.htmlunit.html.HtmlPage(originatingUrl, (com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
 
 
+      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
+               WObj.getSelectionRanges());
+         }
+       }
+
+      public java.util.Map Namespaces
+      {
+         get
+         {
+            return WObj.getNamespaces();
+         }
+      }
+
       public NHtmlUnit.Html.HtmlElement FocusedElement
       {
          get
@@ -36,14 +53,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public java.util.Map Namespaces
-      {
-         get
-         {
-            return WObj.getNamespaces();
-         }
-      }
 
       public IList<NHtmlUnit.Html.FrameWindow> Frames
       {
@@ -112,37 +121,29 @@ namespace NHtmlUnit.Html
          }
 
       }
-
-      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
+// Generating method code for save
+      public virtual void Save(java.io.File file)
       {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
-               WObj.getSelectionRanges());
-         }
-       }
-// Generating method code for isOnbeforeunloadAccepted
-      public virtual bool IsOnbeforeunloadAccepted()
-      {
-         return WObj.isOnbeforeunloadAccepted();
+         WObj.save(file);
       }
 
-// Generating method code for setFocusedElement
-      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement, bool windowActivated)
+// Generating method code for isQuirksMode
+      public virtual bool IsQuirksMode()
       {
-         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject, windowActivated);
+         return WObj.isQuirksMode();
       }
 
-// Generating method code for executeJavaScriptIfPossible
-      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
+// Generating method code for querySelectorAll
+      public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
+
+         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
       }
 
-// Generating method code for executeJavaScript
-      public virtual NHtmlUnit.ScriptResult ExecuteJavaScript(string sourceCode)
+// Generating method code for querySelector
+      public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScript(sourceCode));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.querySelector(selectors));
       }
 
 // Generating method code for getHtmlElementById
@@ -161,6 +162,18 @@ namespace NHtmlUnit.Html
       public virtual java.net.URL GetFullyQualifiedUrl(string relativeUrl)
       {
          return WObj.getFullyQualifiedUrl(relativeUrl);
+      }
+
+// Generating method code for executeJavaScriptIfPossible
+      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
+      }
+
+// Generating method code for getResolvedTarget
+      public virtual string GetResolvedTarget(string elementTarget)
+      {
+         return WObj.getResolvedTarget(elementTarget);
       }
 
 // Generating method code for deregisterFramesIfNeeded
@@ -188,6 +201,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id, caseSensitive));
       }
 
+// Generating method code for setFocusedElement
+      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement, bool windowActivated)
+      {
+         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject, windowActivated);
+      }
+
 // Generating method code for getAnchorByName
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByName(string name)
       {
@@ -212,10 +231,10 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(WObj.getFormByName(name));
       }
 
-// Generating method code for getResolvedTarget
-      public virtual string GetResolvedTarget(string elementTarget)
+// Generating method code for executeJavaScript
+      public virtual NHtmlUnit.ScriptResult ExecuteJavaScript(string sourceCode)
       {
-         return WObj.getResolvedTarget(elementTarget);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScript(sourceCode));
       }
 
 // Generating method code for executeJavaScriptFunctionIfPossible
@@ -280,6 +299,12 @@ namespace NHtmlUnit.Html
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
       }
 
+// Generating method code for isOnbeforeunloadAccepted
+      public virtual bool IsOnbeforeunloadAccepted()
+      {
+         return WObj.isOnbeforeunloadAccepted();
+      }
+
 // Generating method code for isBeingParsed
       public virtual bool IsBeingParsed()
       {
@@ -296,31 +321,6 @@ namespace NHtmlUnit.Html
       public virtual void WriteInParsedStream(string stringArg)
       {
          WObj.writeInParsedStream(stringArg);
-      }
-
-// Generating method code for save
-      public virtual void Save(java.io.File file)
-      {
-         WObj.save(file);
-      }
-
-// Generating method code for isQuirksMode
-      public virtual bool IsQuirksMode()
-      {
-         return WObj.isQuirksMode();
-      }
-
-// Generating method code for querySelectorAll
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
-      {
-
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
-      }
-
-// Generating method code for querySelector
-      public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.querySelector(selectors));
       }
 
    }

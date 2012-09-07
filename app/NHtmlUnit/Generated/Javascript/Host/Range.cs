@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Range)WrappedObject; }
       }
 
-      public Range()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Range()) {}
-
       public Range(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Range((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
+
+      public Range()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Range()) {}
 
 // Generating method code for toW3C
       public virtual NHtmlUnit.Html.Impl.SimpleRange ToW3C()

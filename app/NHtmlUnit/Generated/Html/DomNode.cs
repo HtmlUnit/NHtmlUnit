@@ -24,6 +24,14 @@ namespace NHtmlUnit.Html
       }
 
 
+      public System.String NamespaceURI
+      {
+         get
+         {
+            return WObj.getNamespaceURI();
+         }
+      }
+
       public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptObject
       {
          get
@@ -37,6 +45,16 @@ namespace NHtmlUnit.Html
 
       }
 
+      public NHtmlUnit.SgmlPage Page
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.SgmlPage>(
+               WObj.getPage());
+         }
+      }
+
+
       public System.String ReadyState
       {
          get
@@ -49,24 +67,6 @@ namespace NHtmlUnit.Html
          }
 
       }
-
-      public System.String NamespaceURI
-      {
-         get
-         {
-            return WObj.getNamespaceURI();
-         }
-      }
-
-      public NHtmlUnit.SgmlPage Page
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.SgmlPage>(
-               WObj.getPage());
-         }
-      }
-
 
       public NHtmlUnit.Html.DomNode ParentNode
       {
@@ -292,12 +292,6 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
-// Generating method code for isDisplayed
-      public virtual bool IsDisplayed()
-      {
-         return WObj.isDisplayed();
-      }
-
 // Generating method code for isAncestorOf
       public virtual bool IsAncestorOf(NHtmlUnit.Html.DomNode node)
       {
@@ -443,6 +437,12 @@ namespace NHtmlUnit.Html
          return WObj.hasAttributes();
       }
 
+// Generating method code for isDisplayed
+      public virtual bool IsDisplayed()
+      {
+         return WObj.isDisplayed();
+      }
+
 // Generating method code for asText
       public virtual string AsText()
       {
@@ -483,6 +483,12 @@ namespace NHtmlUnit.Html
       public virtual void RemoveDomChangeListener(NHtmlUnit.Html.IDomChangeListener listener)
       {
          WObj.removeDomChangeListener((com.gargoylesoftware.htmlunit.html.DomChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for processImportNode
+      public virtual void ProcessImportNode()
+      {
+         WObj.processImportNode();
       }
 
    }

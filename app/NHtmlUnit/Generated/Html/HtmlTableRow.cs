@@ -24,6 +24,16 @@ namespace NHtmlUnit.Html
       }
 
 
+      public NHtmlUnit.Html.HtmlTable EnclosingTable
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTable>(
+               WObj.getEnclosingTable());
+         }
+      }
+
+
       public IList<NHtmlUnit.Html.HtmlTableCell> Cells
       {
          get
@@ -64,16 +74,6 @@ namespace NHtmlUnit.Html
             return WObj.getValignAttribute();
          }
       }
-
-      public NHtmlUnit.Html.HtmlTable EnclosingTable
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTable>(
-               WObj.getEnclosingTable());
-         }
-      }
-
 
       public System.String BgcolorAttribute
       {

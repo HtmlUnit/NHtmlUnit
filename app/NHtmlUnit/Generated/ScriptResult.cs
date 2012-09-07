@@ -27,14 +27,6 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.ScriptResult(javaScriptResult, (com.gargoylesoftware.htmlunit.Page)newPage.WrappedObject)) {}
 
 
-      public System.Object JavaScriptResult
-      {
-         get
-         {
-            return WObj.getJavaScriptResult();
-         }
-      }
-
       public NHtmlUnit.IPage NewPage
       {
          get
@@ -44,6 +36,14 @@ namespace NHtmlUnit
          }
       }
 
+
+      public System.Object JavaScriptResult
+      {
+         get
+         {
+            return WObj.getJavaScriptResult();
+         }
+      }
    }
 
 

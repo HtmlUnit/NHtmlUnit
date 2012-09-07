@@ -26,6 +26,42 @@ namespace NHtmlUnit.Javascript.Host
       public Navigator()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Navigator()) {}
 
+// Generating method code for jsxGet_cookieEnabled
+      public virtual bool JsxGet_cookieEnabled()
+      {
+         return WObj.jsxGet_cookieEnabled();
+      }
+
+// Generating method code for jsxGet_cpuClass
+      public virtual string JsxGet_cpuClass()
+      {
+         return WObj.jsxGet_cpuClass();
+      }
+
+// Generating method code for jsxFunction_javaEnabled
+      public virtual bool JsxFunction_javaEnabled()
+      {
+         return WObj.jsxFunction_javaEnabled();
+      }
+
+// Generating method code for jsxGet_platform
+      public virtual string JsxGet_platform()
+      {
+         return WObj.jsxGet_platform();
+      }
+
+// Generating method code for jsxGet_systemLanguage
+      public virtual string JsxGet_systemLanguage()
+      {
+         return WObj.jsxGet_systemLanguage();
+      }
+
+// Generating method code for jsxGet_userLanguage
+      public virtual string JsxGet_userLanguage()
+      {
+         return WObj.jsxGet_userLanguage();
+      }
+
 // Generating method code for jsxGet_appCodeName
       public virtual string JsxGet_appCodeName()
       {
@@ -62,28 +98,10 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_language();
       }
 
-// Generating method code for jsxGet_cookieEnabled
-      public virtual bool JsxGet_cookieEnabled()
-      {
-         return WObj.jsxGet_cookieEnabled();
-      }
-
-// Generating method code for jsxGet_cpuClass
-      public virtual string JsxGet_cpuClass()
-      {
-         return WObj.jsxGet_cpuClass();
-      }
-
 // Generating method code for jsxGet_onLine
       public virtual bool JsxGet_onLine()
       {
          return WObj.jsxGet_onLine();
-      }
-
-// Generating method code for jsxGet_platform
-      public virtual string JsxGet_platform()
-      {
-         return WObj.jsxGet_platform();
       }
 
 // Generating method code for jsxGet_product
@@ -98,22 +116,10 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.jsxGet_productSub();
       }
 
-// Generating method code for jsxGet_systemLanguage
-      public virtual string JsxGet_systemLanguage()
-      {
-         return WObj.jsxGet_systemLanguage();
-      }
-
 // Generating method code for jsxGet_userAgent
       public virtual string JsxGet_userAgent()
       {
          return WObj.jsxGet_userAgent();
-      }
-
-// Generating method code for jsxGet_userLanguage
-      public virtual string JsxGet_userLanguage()
-      {
-         return WObj.jsxGet_userLanguage();
       }
 
 // Generating method code for jsxGet_plugins
@@ -126,12 +132,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual object JsxGet_mimeTypes()
       {
          return WObj.jsxGet_mimeTypes();
-      }
-
-// Generating method code for jsxFunction_javaEnabled
-      public virtual bool JsxFunction_javaEnabled()
-      {
-         return WObj.jsxFunction_javaEnabled();
       }
 
 // Generating method code for jsxFunction_taintEnabled

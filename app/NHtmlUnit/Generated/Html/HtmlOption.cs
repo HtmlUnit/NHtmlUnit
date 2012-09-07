@@ -24,18 +24,15 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ValueAttribute
+      public NHtmlUnit.Html.HtmlSelect EnclosingSelect
       {
          get
          {
-            return WObj.getValueAttribute();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlSelect>(
+               WObj.getEnclosingSelect());
          }
-         set
-         {
-            WObj.setValueAttribute(value);
-         }
-
       }
+
 
       public System.String Text
       {
@@ -49,16 +46,6 @@ namespace NHtmlUnit.Html
          }
 
       }
-
-      public NHtmlUnit.Html.HtmlSelect EnclosingSelect
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlSelect>(
-               WObj.getEnclosingSelect());
-         }
-      }
-
 
       public System.String SelectedAttribute
       {
@@ -88,6 +75,25 @@ namespace NHtmlUnit.Html
          }
 
       }
+
+      public System.String ValueAttribute
+      {
+         get
+         {
+            return WObj.getValueAttribute();
+         }
+         set
+         {
+            WObj.setValueAttribute(value);
+         }
+
+      }
+// Generating method code for setSelected
+      public virtual void SetSelected(bool selected, bool invokeOnFocus)
+      {
+         WObj.setSelected(selected, invokeOnFocus);
+      }
+
 // Generating method code for isSelected
       public virtual bool IsSelected()
       {

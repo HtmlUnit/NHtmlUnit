@@ -23,17 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          get { return (com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection)WrappedObject; }
       }
 
-      public HTMLOptionsCollection(NHtmlUnit.Javascript.SimpleScriptable parentScope)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)parentScope.WrappedObject)) {}
-
       public HTMLOptionsCollection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection()) {}
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.Html.HtmlSelect select)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.html.HtmlSelect)select.WrappedObject);
-      }
+      public HTMLOptionsCollection(NHtmlUnit.Javascript.SimpleScriptable parentScope)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)parentScope.WrappedObject)) {}
 
 // Generating method code for jsxGet_length
       public virtual int JsxGet_length()
@@ -41,10 +35,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.jsxGet_length();
       }
 
-// Generating method code for jsxSet_length
-      public virtual void JsxSet_length(int newLength)
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.Html.HtmlSelect select)
       {
-         WObj.jsxSet_length(newLength);
+         WObj.initialize((com.gargoylesoftware.htmlunit.html.HtmlSelect)select.WrappedObject);
       }
 
 // Generating method code for getWithFallback
@@ -57,6 +51,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual object JsxFunction_item(int index)
       {
          return WObj.jsxFunction_item(index);
+      }
+
+// Generating method code for jsxSet_length
+      public virtual void JsxSet_length(int newLength)
+      {
+         WObj.jsxSet_length(newLength);
       }
 
 // Generating method code for jsxFunction_add

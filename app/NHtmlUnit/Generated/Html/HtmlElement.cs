@@ -34,19 +34,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String Id
-      {
-         get
-         {
-            return WObj.getId();
-         }
-         set
-         {
-            WObj.setId(value);
-         }
-
-      }
-
       public java.lang.Short TabIndex
       {
          get
@@ -177,18 +164,6 @@ namespace NHtmlUnit.Html
             return WObj.getOnKeyUpAttribute();
          }
       }
-// Generating method code for hasEventHandlers
-      public virtual bool HasEventHandlers(string eventName)
-      {
-         return WObj.hasEventHandlers(eventName);
-      }
-
-// Generating method code for fireEvent
-      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
-      }
-
 // Generating method code for fireEvent
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
@@ -348,6 +323,12 @@ namespace NHtmlUnit.Html
          WObj.removeChild(tagName, i);
       }
 
+// Generating method code for hasEventHandlers
+      public virtual bool HasEventHandlers(string eventName)
+      {
+         return WObj.hasEventHandlers(eventName);
+      }
+
 // Generating method code for setEventHandler
       public virtual void SetEventHandler(string eventName, string jsSnippet)
       {
@@ -370,6 +351,12 @@ namespace NHtmlUnit.Html
       public virtual void RemoveHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
       {
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for fireEvent
+      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
       }
 
 // Generating method code for mouseOver

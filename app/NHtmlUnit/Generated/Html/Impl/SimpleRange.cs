@@ -26,14 +26,14 @@ namespace NHtmlUnit.Html.Impl
       public SimpleRange(NHtmlUnit.W3C.Dom.INode startNode, int startOffset, NHtmlUnit.W3C.Dom.INode endNode, int endOffset)
          : this(new com.gargoylesoftware.htmlunit.html.impl.SimpleRange((org.w3c.dom.Node)startNode.WrappedObject, startOffset, (org.w3c.dom.Node)endNode.WrappedObject, endOffset)) {}
 
+      public SimpleRange(NHtmlUnit.W3C.Dom.INode node, int offset)
+         : this(new com.gargoylesoftware.htmlunit.html.impl.SimpleRange((org.w3c.dom.Node)node.WrappedObject, offset)) {}
+
       public SimpleRange()
          : this(new com.gargoylesoftware.htmlunit.html.impl.SimpleRange()) {}
 
       public SimpleRange(NHtmlUnit.W3C.Dom.INode node)
          : this(new com.gargoylesoftware.htmlunit.html.impl.SimpleRange((org.w3c.dom.Node)node.WrappedObject)) {}
-
-      public SimpleRange(NHtmlUnit.W3C.Dom.INode node, int offset)
-         : this(new com.gargoylesoftware.htmlunit.html.impl.SimpleRange((org.w3c.dom.Node)node.WrappedObject, offset)) {}
 
 
       public NHtmlUnit.W3C.Dom.INode CommonAncestorContainer

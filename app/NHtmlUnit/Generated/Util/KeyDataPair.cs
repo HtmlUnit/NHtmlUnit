@@ -27,30 +27,6 @@ namespace NHtmlUnit.Util
          : this(new com.gargoylesoftware.htmlunit.util.KeyDataPair(key, file, contentType, charset)) {}
 
 
-      public java.io.File File
-      {
-         get
-         {
-            return WObj.getFile();
-         }
-      }
-
-      public System.String Charset
-      {
-         get
-         {
-            return WObj.getCharset();
-         }
-      }
-
-      public System.String ContentType
-      {
-         get
-         {
-            return WObj.getContentType();
-         }
-      }
-
       public System.Byte[] Data
       {
          get
@@ -62,6 +38,30 @@ namespace NHtmlUnit.Util
             WObj.setData(value);
          }
 
+      }
+
+      public java.io.File File
+      {
+         get
+         {
+            return WObj.getFile();
+         }
+      }
+
+      public System.String ContentType
+      {
+         get
+         {
+            return WObj.getContentType();
+         }
+      }
+
+      public System.String Charset
+      {
+         get
+         {
+            return WObj.getCharset();
+         }
       }
    }
 

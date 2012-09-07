@@ -46,12 +46,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-// Generating method code for jsxGet_activeElement
-      public virtual object JsxGet_activeElement()
-      {
-         return WObj.jsxGet_activeElement();
-      }
-
 // Generating method code for jsxFunction_close
       public virtual void JsxFunction_close()
       {
@@ -278,7 +272,7 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for jsxFunction_createTreeWalker
-      public virtual object JsxFunction_createTreeWalker(NHtmlUnit.Javascript.Host.Node root, int whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter, bool expandEntityReferences)
+      public virtual object JsxFunction_createTreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter, bool expandEntityReferences)
       {
          return WObj.jsxFunction_createTreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, filter, expandEntityReferences);
       }
@@ -299,6 +293,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual bool JsxFunction_execCommand(string cmd, bool userInterface, object value)
       {
          return WObj.jsxFunction_execCommand(cmd, userInterface, value);
+      }
+
+// Generating method code for jsxGet_activeElement
+      public virtual object JsxGet_activeElement()
+      {
+         return WObj.jsxGet_activeElement();
       }
 
 // Generating method code for jsxFunction_dispatchEvent
