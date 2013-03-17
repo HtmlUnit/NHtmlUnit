@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,52 +26,55 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableComponent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableComponent()) {}
 
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
+
+      public System.String Align
       {
-         return WObj.jsxGet_align();
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
       }
 
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
+      public System.String Ch
       {
-         WObj.jsxSet_align(align);
+         get
+         {
+            return WObj.getCh();
+         }
+         set
+         {
+            WObj.setCh(value);
+         }
+
       }
 
-// Generating method code for jsxGet_vAlign
-      public virtual string JsxGet_vAlign()
+      public System.String ChOff
       {
-         return WObj.jsxGet_vAlign();
+         get
+         {
+            return WObj.getChOff();
+         }
+         set
+         {
+            WObj.setChOff(value);
+         }
+
+      }
+// Generating method code for getVAlign
+      public virtual string GetVAlign()
+      {
+         return WObj.getVAlign();
       }
 
-// Generating method code for jsxSet_vAlign
-      public virtual void JsxSet_vAlign(object vAlign)
+// Generating method code for setVAlign
+      public virtual void SetVAlign(object vAlign)
       {
-         WObj.jsxSet_vAlign(vAlign);
-      }
-
-// Generating method code for jsxGet_ch
-      public virtual string JsxGet_ch()
-      {
-         return WObj.jsxGet_ch();
-      }
-
-// Generating method code for jsxSet_ch
-      public virtual void JsxSet_ch(string ch)
-      {
-         WObj.jsxSet_ch(ch);
-      }
-
-// Generating method code for jsxGet_chOff
-      public virtual string JsxGet_chOff()
-      {
-         return WObj.jsxGet_chOff();
-      }
-
-// Generating method code for jsxSet_chOff
-      public virtual void JsxSet_chOff(string chOff)
-      {
-         WObj.jsxSet_chOff(chOff);
+         WObj.setVAlign(vAlign);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,36 +23,26 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.ScriptException)WrappedObject; }
       }
 
-      public ScriptException(NHtmlUnit.Html.HtmlPage page, System.Exception throwable)
-         : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.html.HtmlPage)page.WrappedObject, throwable)) {}
-
       public ScriptException(NHtmlUnit.Html.HtmlPage page, System.Exception throwable, string scriptSourceCode)
          : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.html.HtmlPage)page.WrappedObject, throwable, scriptSourceCode)) {}
 
+      public ScriptException(NHtmlUnit.Html.HtmlPage page, System.Exception throwable)
+         : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.html.HtmlPage)page.WrappedObject, throwable)) {}
 
-      public NHtmlUnit.Html.HtmlPage Page
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
-               WObj.getPage());
-         }
-      }
-
-
-      public System.Int32 FailingLineNumber
-      {
-         get
-         {
-            return WObj.getFailingLineNumber();
-         }
-      }
 
       public System.String FailingLine
       {
          get
          {
             return WObj.getFailingLine();
+         }
+      }
+
+      public System.Int32 FailingLineNumber
+      {
+         get
+         {
+            return WObj.getFailingLineNumber();
          }
       }
 
@@ -63,6 +53,16 @@ namespace NHtmlUnit
             return WObj.getScriptSourceCode();
          }
       }
+
+      public NHtmlUnit.Html.HtmlPage Page
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
+               WObj.getPage());
+         }
+      }
+
 // Generating method code for printScriptStackTrace
       public virtual void PrintScriptStackTrace(java.io.PrintWriter writer)
       {

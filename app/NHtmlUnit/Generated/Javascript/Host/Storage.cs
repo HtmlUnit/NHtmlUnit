@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,43 +23,45 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Storage)WrappedObject; }
       }
 
-      public Storage()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Storage()) {}
+      public Storage(NHtmlUnit.Javascript.Host.Window window, java.util.Map store)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Storage((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject, store)) {}
 
-// Generating method code for jsxFunction_setItem
-      public virtual void JsxFunction_setItem(string key, string data)
+
+      public System.Int32 Length
       {
-         WObj.jsxFunction_setItem(key, data);
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for setItem
+      public virtual void SetItem(string key, string data)
+      {
+         WObj.setItem(key, data);
       }
 
-// Generating method code for jsxFunction_getItem
-      public virtual object JsxFunction_getItem(string key)
+// Generating method code for getItem
+      public virtual object GetItem(string key)
       {
-         return WObj.jsxFunction_getItem(key);
+         return WObj.getItem(key);
       }
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+// Generating method code for removeItem
+      public virtual void RemoveItem(string key)
       {
-         return WObj.jsxGet_length();
+         WObj.removeItem(key);
       }
 
-// Generating method code for jsxFunction_removeItem
-      public virtual void JsxFunction_removeItem(string key)
+// Generating method code for key
+      public virtual string Key(int index)
       {
-         WObj.jsxFunction_removeItem(key);
+         return WObj.key(index);
       }
 
-// Generating method code for jsxFunction_key
-      public virtual string JsxFunction_key(int index)
+// Generating method code for clear
+      public virtual void Clear()
       {
-         return WObj.jsxFunction_key(index);
-      }
-
-// Generating method code for jsxFunction_clear
-      public virtual void JsxFunction_clear()
-      {
-         WObj.jsxFunction_clear();
+         WObj.clear();
       }
 
    }

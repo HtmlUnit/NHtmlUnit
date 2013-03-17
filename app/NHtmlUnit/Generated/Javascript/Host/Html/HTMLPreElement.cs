@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLPreElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLPreElement()) {}
 
-// Generating method code for jsxGet_cite
-      public virtual string JsxGet_cite()
-      {
-         return WObj.jsxGet_cite();
-      }
 
-// Generating method code for jsxSet_cite
-      public virtual void JsxSet_cite(string cite)
+      public System.String Cite
       {
-         WObj.jsxSet_cite(cite);
-      }
+         get
+         {
+            return WObj.getCite();
+         }
+         set
+         {
+            WObj.setCite(value);
+         }
 
+      }
    }
 
 

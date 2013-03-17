@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,18 +23,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSCharsetRule)WrappedObject; }
       }
 
-// Generating method code for jsxGet_encoding
-      public virtual string JsxGet_encoding()
-      {
-         return WObj.jsxGet_encoding();
-      }
 
-// Generating method code for jsxSet_encoding
-      public virtual void JsxSet_encoding(string encoding)
+      public System.String Encoding
       {
-         WObj.jsxSet_encoding(encoding);
-      }
+         get
+         {
+            return WObj.getEncoding();
+         }
+         set
+         {
+            WObj.setEncoding(value);
+         }
 
+      }
    }
 
 

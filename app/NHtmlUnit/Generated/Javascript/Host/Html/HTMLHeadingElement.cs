@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLHeadingElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLHeadingElement()) {}
 
+
+      public System.String Align
+      {
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlParameter : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class HtmlParameter : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlParameter()
       {
@@ -24,6 +24,14 @@ namespace NHtmlUnit.Html
       }
 
 
+      public System.String IdAttribute
+      {
+         get
+         {
+            return WObj.getIdAttribute();
+         }
+      }
+
       public System.String NameAttribute
       {
          get
@@ -37,14 +45,6 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getValueAttribute();
-         }
-      }
-
-      public System.String IdAttribute
-      {
-         get
-         {
-            return WObj.getIdAttribute();
          }
       }
 

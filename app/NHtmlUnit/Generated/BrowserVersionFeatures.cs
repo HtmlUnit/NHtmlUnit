@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -74,22 +74,32 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures CSS_DEFAULT_ELMENT_HEIGHT_15
+      public static NHtmlUnit.BrowserVersionFeatures CONTROL_UPDATE_DONE_BEFORE_CLICK_EVENT_FIRED
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_DEFAULT_ELMENT_HEIGHT_15);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CONTROL_UPDATE_DONE_BEFORE_CLICK_EVENT_FIRED);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures CSS_DEFAULT_ELMENT_HEIGHT_MARKS_MIN
+      public static NHtmlUnit.BrowserVersionFeatures CSS_DEFAULT_ELEMENT_HEIGHT_15
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_DEFAULT_ELMENT_HEIGHT_MARKS_MIN);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_DEFAULT_ELEMENT_HEIGHT_15);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures CSS_DEFAULT_ELEMENT_HEIGHT_MARKS_MIN
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_DEFAULT_ELEMENT_HEIGHT_MARKS_MIN);
          }
       }
 
@@ -154,16 +164,6 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures CSS_SPECIAL_PSEUDO_CLASSES
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_SPECIAL_PSEUDO_CLASSES);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures CSS_SUPPORTS_BEHAVIOR_PROPERTY
       {
          get
@@ -180,16 +180,6 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_TEXT_SHADOW_DEFAULT_NONE);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures CSS_UNICODE_BIDI_DEFAULT_NORMAL
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.CSS_UNICODE_BIDI_DEFAULT_NORMAL);
          }
       }
 
@@ -274,6 +264,26 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures DOCTYPE_IS_COMMENT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.DOCTYPE_IS_COMMENT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures DOMIMPLEMENTATION_ONLY_HTML
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.DOMIMPLEMENTATION_ONLY_HTML);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures DOM_NORMALIZE_REMOVE_CHILDREN
       {
          get
@@ -290,6 +300,16 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.EVENT_DOM_CONTENT_LOADED);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures EVENT_FOCUS_DOCUMENT_DESCENDANTS
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.EVENT_FOCUS_DOCUMENT_DESCENDANTS);
          }
       }
 
@@ -404,6 +424,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures FOCUS_HTML_ELEMENT_AT_START
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.FOCUS_HTML_ELEMENT_AT_START);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures FORMFIELD_REACHABLE_BY_NEW_NAMES
       {
          get
@@ -450,26 +480,6 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_101);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_102
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_102);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_103
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_103);
          }
       }
 
@@ -594,16 +604,6 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_129
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_129);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_13
       {
          get
@@ -624,72 +624,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_142
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_142);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_143
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_143);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_144
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_144);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_146
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_146);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_147
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_147);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_150
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_150);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_155
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_155);
          }
       }
 
@@ -744,32 +684,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_162
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_162);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_164
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_164);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_165
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_165);
          }
       }
 
@@ -790,16 +710,6 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_169);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_17
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_17);
          }
       }
 
@@ -844,16 +754,6 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_2
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_2);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_21
       {
          get
@@ -874,26 +774,6 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_30
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_30);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_31
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_31);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_32
       {
          get
@@ -904,32 +784,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_35
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_35);
-         }
-      }
-
-
       public static NHtmlUnit.BrowserVersionFeatures GENERATED_37
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_37);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_39
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_39);
          }
       }
 
@@ -990,16 +850,6 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_45);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_47
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_47);
          }
       }
 
@@ -1120,26 +970,6 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_65);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_66
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_66);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersionFeatures GENERATED_69
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GENERATED_69);
          }
       }
 
@@ -1354,6 +1184,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures GEO_GEOLOCATION
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.GEO_GEOLOCATION);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures HEADER_CONTENT_DISPOSITION_ABSOLUTE_PATH
       {
          get
@@ -1380,6 +1220,36 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLABBREVIATED);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLBASEFONT_END_TAG_FORBIDDEN
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLBASEFONT_END_TAG_FORBIDDEN);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLBGSOUND
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLBGSOUND);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLCOLLECTION_COMMENT_IS_ELEMENT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLCOLLECTION_COMMENT_IS_ELEMENT);
          }
       }
 
@@ -1414,12 +1284,52 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures HTMLDOCUMENT_CHARSET_LOWERCASE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLDOCUMENT_CHARSET_LOWERCASE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLDOCUMENT_COLOR
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLDOCUMENT_COLOR);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures HTMLELEMENT_ALIGN_INVALID
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLELEMENT_ALIGN_INVALID);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLELEMENT_ATTRIBUTE_FIX_IN_QUIRKS_MODE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLELEMENT_ATTRIBUTE_FIX_IN_QUIRKS_MODE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLELEMENT_OUTER_HTML_UPPER_CASE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLELEMENT_OUTER_HTML_UPPER_CASE);
          }
       }
 
@@ -1504,12 +1414,22 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures HTMLRADIOINPUT_SET_CHECKED_TO_DEFAULT_WHEN_ADDED_TO_PAGE
+      public static NHtmlUnit.BrowserVersionFeatures HTMLPARSER_REMOVE_EMPTY_CONTENT
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLRADIOINPUT_SET_CHECKED_TO_DEFAULT_WHEN_ADDED_TO_PAGE);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLPARSER_REMOVE_EMPTY_CONTENT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTMLRADIOINPUT_SET_CHECKED_TO_DEFAULT_WHEN_ADDED
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTMLRADIOINPUT_SET_CHECKED_TO_DEFAULT_WHEN_ADDED);
          }
       }
 
@@ -1544,12 +1464,32 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures HTML_BODY_COLOR
+      public static NHtmlUnit.BrowserVersionFeatures HTML_COLOR_RESTRICT
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTML_BODY_COLOR);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTML_COLOR_RESTRICT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTML_COMMENT_ELEMENT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTML_COMMENT_ELEMENT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures HTML_GENERIC_ELEMENT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.HTML_GENERIC_ELEMENT);
          }
       }
 
@@ -1604,6 +1544,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_ALLOW_CONST_ASSIGNMENT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_ALLOW_CONST_ASSIGNMENT);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_ANCHORS_REQUIRES_NAME_OR_ID
       {
          get
@@ -1614,12 +1564,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_APPEND_CHILD_CREATE_DOCUMENT_FRAGMENT_PARENT_IF_PARENT_IS_NULL
+      public static NHtmlUnit.BrowserVersionFeatures JS_APPEND_CHILD_CREATE_DOCUMENT_FRAGMENT_PARENT
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_APPEND_CHILD_CREATE_DOCUMENT_FRAGMENT_PARENT_IF_PARENT_IS_NULL);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_APPEND_CHILD_CREATE_DOCUMENT_FRAGMENT_PARENT);
          }
       }
 
@@ -1630,6 +1580,26 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_APPEND_CHILD_THROWS_NO_EXCEPTION_FOR_WRONG_NOTE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_ARGUMENTS_IS_OBJECT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_ARGUMENTS_IS_OBJECT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_ARGUMENTS_IS_READ_ONLY
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_ARGUMENTS_IS_READ_ONLY);
          }
       }
 
@@ -1724,12 +1694,42 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_CONSTRUCTOR
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_CONSTRUCTOR);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_DATE_LOCATE_TIME_24
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DATE_LOCATE_TIME_24);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_DEFERRED
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DEFERRED);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_DEFINE_GETTER
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DEFINE_GETTER);
          }
       }
 
@@ -1804,6 +1804,26 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_DOCUMENT_CREATE_ELEMENT_STRICT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DOCUMENT_CREATE_ELEMENT_STRICT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_DOCUMENT_DESIGN_MODE_INHERIT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DOCUMENT_DESIGN_MODE_INHERIT);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_DOCUMENT_DOCTYPE_NULL
       {
          get
@@ -1844,6 +1864,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_DONT_ENUM_FUNCTIONS
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_DONT_ENUM_FUNCTIONS);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_ECMA5_FUNCTIONS
       {
          get
@@ -1864,6 +1894,26 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_ERROR_STACK
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_ERROR_STACK);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_EVAL_LOCAL_SCOPE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_EVAL_LOCAL_SCOPE);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_EVENT_ABORTED_BY_RETURN_VALUE_FALSE
       {
          get
@@ -1874,12 +1924,42 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_EVENT_HANDLER_DECLARED_AS_PROPERTY_DONT_RECEIVE_EVENT
+      public static NHtmlUnit.BrowserVersionFeatures JS_EVENT_HANDLER_AS_PROPERTY_DONT_RECEIVE_EVENT
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_EVENT_HANDLER_DECLARED_AS_PROPERTY_DONT_RECEIVE_EVENT);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_EVENT_HANDLER_AS_PROPERTY_DONT_RECEIVE_EVENT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_EVENT_KEY_CODE_UNDEFINED
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_EVENT_KEY_CODE_UNDEFINED);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_EVENT_NO_PARAMETER
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_EVENT_NO_PARAMETER);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_FORM_ENCODING_NORMALIZED
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_FORM_ENCODING_NORMALIZED);
          }
       }
 
@@ -1904,6 +1984,36 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_FUNCTION_DECLARED_FORWARD_IN_BLOCK
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_FUNCTION_DECLARED_FORWARD_IN_BLOCK);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_FUNCTION_ISXMLNAME
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_FUNCTION_ISXMLNAME);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_FUNCTION_OBJECT_METHOD
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_FUNCTION_OBJECT_METHOD);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_FUNCTION_TOSOURCE
       {
          get
@@ -1914,32 +2024,32 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_GET_ATTRIBUTE_SUPPORTS_FLAGS
+      public static NHtmlUnit.BrowserVersionFeatures JS_GET_ATTRIBUTE_SUPPORTS_FLAGS_IN_QUIRKS_MODE
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_ATTRIBUTE_SUPPORTS_FLAGS);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_ATTRIBUTE_SUPPORTS_FLAGS_IN_QUIRKS_MODE);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_GET_BACKGROUND_COLOR_FOR_COMPUTED_STYLE_RETURNS_RGB
+      public static NHtmlUnit.BrowserVersionFeatures JS_GET_BACKGROUND_COLOR_FOR_COMPUTED_STYLE_AS_RGB
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_BACKGROUND_COLOR_FOR_COMPUTED_STYLE_RETURNS_RGB);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_BACKGROUND_COLOR_FOR_COMPUTED_STYLE_AS_RGB);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_GET_ELEMENT_BY_ID_ALSO_BY_NAME
+      public static NHtmlUnit.BrowserVersionFeatures JS_GET_ELEMENT_BY_ID_ALSO_BY_NAME_IN_QUICKS_MODE
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_ELEMENT_BY_ID_ALSO_BY_NAME);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_ELEMENT_BY_ID_ALSO_BY_NAME_IN_QUICKS_MODE);
          }
       }
 
@@ -1950,6 +2060,16 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_GET_ELEMENT_BY_ID_CASE_SENSITIVE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_HANDLER_UNDEFINED
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_HANDLER_UNDEFINED);
          }
       }
 
@@ -2034,22 +2154,22 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_OBJECT_ONLY
+      public static NHtmlUnit.BrowserVersionFeatures JS_NON_ECMA_GET_YEAR
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_OBJECT_ONLY);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_NON_ECMA_GET_YEAR);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures JS_OBJECT_PREFIX
+      public static NHtmlUnit.BrowserVersionFeatures JS_OBJECT_IN_QUIRKS_MODE
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_OBJECT_PREFIX);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_OBJECT_IN_QUIRKS_MODE);
          }
       }
 
@@ -2070,6 +2190,36 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_OPACITY_ACCEPTS_ARBITRARY_VALUES);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_PARENT_PROTO_PROPERTIES
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_PARENT_PROTO_PROPERTIES);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_QUERYCOMMAND_SUPPORTED_ONLY_DESIGNMODE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_QUERYCOMMAND_SUPPORTED_ONLY_DESIGNMODE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_SCRIPT_ALWAYS_REEXECUTE_ON_SET_TEXT
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_SCRIPT_ALWAYS_REEXECUTE_ON_SET_TEXT);
          }
       }
 
@@ -2234,6 +2384,16 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_TREEWALKER_EXPAND_ENTITY_REFERENCES_FALSE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_TREEWALKER_EXPAND_ENTITY_REFERENCES_FALSE);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_WINDOW_CHANGE_OPENER_NOT_ALLOWED
       {
          get
@@ -2244,12 +2404,32 @@ namespace NHtmlUnit
       }
 
 
+      public static NHtmlUnit.BrowserVersionFeatures JS_WINDOW_FRAMES_ACCESSIBLE_BY_ID
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_WINDOW_FRAMES_ACCESSIBLE_BY_ID);
+         }
+      }
+
+
       public static NHtmlUnit.BrowserVersionFeatures JS_WINDOW_IS_NOT_A_FUNCTION
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_WINDOW_IS_NOT_A_FUNCTION);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures JS_XML
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_XML);
          }
       }
 
@@ -2310,6 +2490,36 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
                com.gargoylesoftware.htmlunit.BrowserVersionFeatures.JS_XML_SUPPORT_VIA_ACTIVEXOBJECT);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures KEYBOARD_EVENT_SPECIAL_KEYPRESS
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.KEYBOARD_EVENT_SPECIAL_KEYPRESS);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures META_X_UA_COMPATIBLE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.META_X_UA_COMPATIBLE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures NODE_APPEND_CHILD_SELF_IGNORE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.NODE_APPEND_CHILD_SELF_IGNORE);
          }
       }
 
@@ -2444,12 +2654,32 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures SVG_SUPPORT
+      public static NHtmlUnit.BrowserVersionFeatures SVG
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.SVG_SUPPORT);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.SVG);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures TABLE_COLUMN_SPAN_THROWS_EXCEPTION_IF_LESS_THAN_ONE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.TABLE_COLUMN_SPAN_THROWS_EXCEPTION_IF_LESS_THAN_ONE);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures TABLE_COLUMN_WIDTH_DOES_NOT_RETURN_NEGATIVE_VALUES
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.TABLE_COLUMN_WIDTH_DOES_NOT_RETURN_NEGATIVE_VALUES);
          }
       }
 
@@ -2524,82 +2754,102 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_ERRORHANDLER_NOT_SUPPORTED
+      public static NHtmlUnit.BrowserVersionFeatures XHR_ERRORHANDLER_NOT_SUPPORTED
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_ERRORHANDLER_NOT_SUPPORTED);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_ERRORHANDLER_NOT_SUPPORTED);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_HANDLER_THIS_IS_FUNCTION
+      public static NHtmlUnit.BrowserVersionFeatures XHR_HANDLER_THIS_IS_FUNCTION
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_HANDLER_THIS_IS_FUNCTION);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_HANDLER_THIS_IS_FUNCTION);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_IGNORE_SAME_ORIGIN
+      public static NHtmlUnit.BrowserVersionFeatures XHR_IGNORE_SAME_ORIGIN
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_IGNORE_SAME_ORIGIN);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_IGNORE_SAME_ORIGIN);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_IGNORE_SAME_ORIGIN_TO_ABOUT
+      public static NHtmlUnit.BrowserVersionFeatures XHR_IGNORE_SAME_ORIGIN_TO_ABOUT
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_IGNORE_SAME_ORIGIN_TO_ABOUT);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_IGNORE_SAME_ORIGIN_TO_ABOUT);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_ONREADYSTATECANGE_SYNC_REQUESTS_NOT_TRIGGERED
+      public static NHtmlUnit.BrowserVersionFeatures XHR_ONREADYSTATECANGE_SYNC_REQUESTS_COMPLETED
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_ONREADYSTATECANGE_SYNC_REQUESTS_NOT_TRIGGERED);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_ONREADYSTATECANGE_SYNC_REQUESTS_COMPLETED);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_ONREADYSTATECANGE_SYNC_REQUESTS_TRIGGER_COMPLETED
+      public static NHtmlUnit.BrowserVersionFeatures XHR_ONREADYSTATECANGE_SYNC_REQUESTS_NOT_TRIGGERED
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_ONREADYSTATECANGE_SYNC_REQUESTS_TRIGGER_COMPLETED);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_ONREADYSTATECANGE_SYNC_REQUESTS_NOT_TRIGGERED);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_ONREADYSTATECHANGE_WITH_EVENT_PARAM
+      public static NHtmlUnit.BrowserVersionFeatures XHR_ONREADYSTATECHANGE_WITH_EVENT_PARAM
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_ONREADYSTATECHANGE_WITH_EVENT_PARAM);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_ONREADYSTATECHANGE_WITH_EVENT_PARAM);
          }
       }
 
 
-      public static NHtmlUnit.BrowserVersionFeatures XMLHTTPREQUEST_TRIGGER_ONLOAD_ON_COMPLETED
+      public static NHtmlUnit.BrowserVersionFeatures XHR_OPEN_ALLOW_EMTPY_URL
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
-               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XMLHTTPREQUEST_TRIGGER_ONLOAD_ON_COMPLETED);
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_OPEN_ALLOW_EMTPY_URL);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures XHR_ORIGIN_HEADER
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_ORIGIN_HEADER);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersionFeatures XHR_TRIGGER_ONLOAD_ON_COMPLETED
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersionFeatures>(
+               com.gargoylesoftware.htmlunit.BrowserVersionFeatures.XHR_TRIGGER_ONLOAD_ON_COMPLETED);
          }
       }
 

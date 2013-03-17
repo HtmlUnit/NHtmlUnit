@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,94 +26,95 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLSelectElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLSelectElement()) {}
 
-// Generating method code for jsxSet_selectedIndex
-      public virtual void JsxSet_selectedIndex(int index)
+
+      public System.Int32 Length
       {
-         WObj.jsxSet_selectedIndex(index);
+         get
+         {
+            return WObj.getLength();
+         }
+         set
+         {
+            WObj.setLength(value);
+         }
+
       }
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+      public System.Int32 SelectedIndex
       {
-         return WObj.jsxGet_length();
+         get
+         {
+            return WObj.getSelectedIndex();
+         }
+         set
+         {
+            WObj.setSelectedIndex(value);
+         }
+
       }
 
+      public NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection Options
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection>(
+               WObj.getOptions());
+         }
+      }
+
+
+      public System.Boolean Multiple
+      {
+         get
+         {
+            return WObj.getMultiple();
+         }
+         set
+         {
+            WObj.setMultiple(value);
+         }
+
+      }
 // Generating method code for initialize
       public virtual void Initialize()
       {
          WObj.initialize();
       }
 
-// Generating method code for jsxGet_selectedIndex
-      public virtual int JsxGet_selectedIndex()
+// Generating method code for remove
+      public virtual void Remove(int index)
       {
-         return WObj.jsxGet_selectedIndex();
+         WObj.remove(index);
       }
 
-// Generating method code for jsConstructor
-      public virtual void JsConstructor()
+// Generating method code for add
+      public virtual void Add(NHtmlUnit.Javascript.Host.Html.HTMLOptionElement newOptionObject, object arg2)
       {
-         WObj.jsConstructor();
+         WObj.add((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement)newOptionObject.WrappedObject, arg2);
       }
 
-// Generating method code for jsxFunction_remove
-      public virtual void JsxFunction_remove(int index)
+// Generating method code for insertBeforeImpl
+      public virtual object InsertBeforeImpl(System.Object[] args)
       {
-         WObj.jsxFunction_remove(index);
+         return WObj.insertBeforeImpl(args);
       }
 
-// Generating method code for jsxFunction_add
-      public virtual void JsxFunction_add(NHtmlUnit.Javascript.Host.Html.HTMLOptionElement newOptionObject, object arg2)
+// Generating method code for item
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLOptionElement Item(int index)
       {
-         WObj.jsxFunction_add((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement)newOptionObject.WrappedObject, arg2);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionElement>(WObj.item(index));
       }
 
-// Generating method code for jsxFunction_insertBefore
-      public virtual object JsxFunction_insertBefore(System.Object[] args)
+// Generating method code for getSize
+      public virtual int GetSize()
       {
-         return WObj.jsxFunction_insertBefore(args);
+         return WObj.getSize();
       }
 
-// Generating method code for jsxFunction_item
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLOptionElement JsxFunction_item(int index)
+// Generating method code for setSize
+      public virtual void SetSize(string size)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionElement>(WObj.jsxFunction_item(index));
-      }
-
-// Generating method code for jsxGet_options
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection JsxGet_options()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection>(WObj.jsxGet_options());
-      }
-
-// Generating method code for jsxSet_length
-      public virtual void JsxSet_length(int newLength)
-      {
-         WObj.jsxSet_length(newLength);
-      }
-
-// Generating method code for jsxGet_size
-      public virtual int JsxGet_size()
-      {
-         return WObj.jsxGet_size();
-      }
-
-// Generating method code for jsxSet_size
-      public virtual void JsxSet_size(string size)
-      {
-         WObj.jsxSet_size(size);
-      }
-
-// Generating method code for jsxGet_multiple
-      public virtual bool JsxGet_multiple()
-      {
-         return WObj.jsxGet_multiple();
-      }
-
-// Generating method code for jsxSet_multiple
-      public virtual void JsxSet_multiple(bool multiple)
-      {
-         WObj.jsxSet_multiple(multiple);
+         WObj.setSize(size);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLBRElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLBRElement()) {}
 
-// Generating method code for jsxGet_clear
-      public virtual string JsxGet_clear()
-      {
-         return WObj.jsxGet_clear();
-      }
 
-// Generating method code for jsxSet_clear
-      public virtual void JsxSet_clear(string clear)
+      public System.String Clear
       {
-         WObj.jsxSet_clear(clear);
-      }
+         get
+         {
+            return WObj.getClear();
+         }
+         set
+         {
+            WObj.setClear(value);
+         }
 
+      }
    }
 
 

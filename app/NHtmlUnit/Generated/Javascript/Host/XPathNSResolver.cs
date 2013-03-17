@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host
       public XPathNSResolver()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.XPathNSResolver()) {}
 
-// Generating method code for jsxFunction_lookupNamespaceURI
-      public virtual string JsxFunction_lookupNamespaceURI(string prefix)
+// Generating method code for lookupNamespaceURI
+      public virtual string LookupNamespaceURI(string prefix)
       {
-         return WObj.jsxFunction_lookupNamespaceURI(prefix);
+         return WObj.lookupNamespaceURI(prefix);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,12 +25,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLTitleElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTitleElement()) {}
-
-// Generating method code for jsxSet_text
-      public virtual void JsxSet_text(string text)
-      {
-         WObj.jsxSet_text(text);
-      }
 
    }
 

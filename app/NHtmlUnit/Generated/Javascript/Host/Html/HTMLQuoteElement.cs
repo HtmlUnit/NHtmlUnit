@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,30 +26,32 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLQuoteElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLQuoteElement()) {}
 
-// Generating method code for jsxGet_cite
-      public virtual string JsxGet_cite()
+
+      public System.String Cite
       {
-         return WObj.jsxGet_cite();
+         get
+         {
+            return WObj.getCite();
+         }
+         set
+         {
+            WObj.setCite(value);
+         }
+
       }
 
-// Generating method code for jsxSet_cite
-      public virtual void JsxSet_cite(string cite)
+      public System.String DateTime
       {
-         WObj.jsxSet_cite(cite);
-      }
+         get
+         {
+            return WObj.getDateTime();
+         }
+         set
+         {
+            WObj.setDateTime(value);
+         }
 
-// Generating method code for jsxGet_dateTime
-      public virtual string JsxGet_dateTime()
-      {
-         return WObj.jsxGet_dateTime();
       }
-
-// Generating method code for jsxSet_dateTime
-      public virtual void JsxSet_dateTime(string dateTime)
-      {
-         WObj.jsxSet_dateTime(dateTime);
-      }
-
    }
 
 

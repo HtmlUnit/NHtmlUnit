@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,137 +26,154 @@ namespace NHtmlUnit.Javascript.Host
       public Document()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Document()) {}
 
-// Generating method code for jsxGet_location
-      public virtual NHtmlUnit.Javascript.Host.Location JsxGet_location()
+
+      public System.String Referrer
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.jsxGet_location());
+         get
+         {
+            return WObj.getReferrer();
+         }
       }
 
-// Generating method code for jsxSet_location
-      public virtual void JsxSet_location(string location)
+      public NHtmlUnit.Javascript.Host.Element DocumentElement
       {
-         WObj.jsxSet_location(location);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getDocumentElement());
+         }
       }
 
-// Generating method code for jsxGet_referrer
-      public virtual string JsxGet_referrer()
+
+      public NHtmlUnit.Javascript.SimpleScriptable Doctype
       {
-         return WObj.jsxGet_referrer();
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(
+               WObj.getDoctype());
+         }
       }
 
-// Generating method code for jsxGet_documentElement
-      public virtual NHtmlUnit.Javascript.Host.Element JsxGet_documentElement()
+
+      public System.String DesignMode
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(WObj.jsxGet_documentElement());
+         get
+         {
+            return WObj.getDesignMode();
+         }
+         set
+         {
+            WObj.setDesignMode(value);
+         }
+
       }
 
-// Generating method code for jsxGet_doctype
-      public virtual NHtmlUnit.Javascript.SimpleScriptable JsxGet_doctype()
+      public System.Object DefaultView
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(WObj.jsxGet_doctype());
+         get
+         {
+            return WObj.getDefaultView();
+         }
       }
 
-// Generating method code for jsxGet_designMode
-      public virtual string JsxGet_designMode()
+      public NHtmlUnit.Javascript.Host.Dom.DOMImplementation Implementation
       {
-         return WObj.jsxGet_designMode();
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMImplementation>(
+               WObj.getImplementation());
+         }
       }
 
-// Generating method code for jsxSet_designMode
-      public virtual void JsxSet_designMode(string mode)
+// Generating method code for createDocumentFragment
+      public virtual object CreateDocumentFragment()
       {
-         WObj.jsxSet_designMode(mode);
+         return WObj.createDocumentFragment();
       }
 
-// Generating method code for jsxGet_defaultView
-      public virtual object JsxGet_defaultView()
+// Generating method code for createAttribute
+      public virtual NHtmlUnit.Javascript.Host.Attr CreateAttribute(string attributeName)
       {
-         return WObj.jsxGet_defaultView();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.createAttribute(attributeName));
       }
 
-// Generating method code for jsxFunction_createDocumentFragment
-      public virtual object JsxFunction_createDocumentFragment()
+// Generating method code for getBoxObjectFor
+      public virtual NHtmlUnit.Javascript.Host.BoxObject GetBoxObjectFor(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
       {
-         return WObj.jsxFunction_createDocumentFragment();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(WObj.getBoxObjectFor((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject));
       }
 
-// Generating method code for jsxFunction_createAttribute
-      public virtual NHtmlUnit.Javascript.Host.Attr JsxFunction_createAttribute(string attributeName)
+// Generating method code for importNode
+      public virtual object ImportNode(NHtmlUnit.Javascript.Host.Node importedNode, bool deep)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.jsxFunction_createAttribute(attributeName));
+         return WObj.importNode((com.gargoylesoftware.htmlunit.javascript.host.Node)importedNode.WrappedObject, deep);
       }
 
-// Generating method code for jsxFunction_getBoxObjectFor
-      public virtual NHtmlUnit.Javascript.Host.BoxObject JsxFunction_getBoxObjectFor(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
+// Generating method code for captureEvents
+      public virtual void CaptureEvents(string type)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(WObj.jsxFunction_getBoxObjectFor((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject));
+         WObj.captureEvents(type);
       }
 
-// Generating method code for jsxFunction_importNode
-      public virtual object JsxFunction_importNode(NHtmlUnit.Javascript.Host.Node importedNode, bool deep)
+// Generating method code for createNSResolver
+      public virtual NHtmlUnit.Javascript.Host.XPathNSResolver CreateNSResolver(NHtmlUnit.Javascript.Host.Node nodeResolver)
       {
-         return WObj.jsxFunction_importNode((com.gargoylesoftware.htmlunit.javascript.host.Node)importedNode.WrappedObject, deep);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XPathNSResolver>(WObj.createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.Node)nodeResolver.WrappedObject));
       }
 
-// Generating method code for jsxGet_implementation
-      public virtual NHtmlUnit.Javascript.Host.DOMImplementation JsxGet_implementation()
+// Generating method code for createTextNode
+      public virtual object CreateTextNode(string newData)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.DOMImplementation>(WObj.jsxGet_implementation());
+         return WObj.createTextNode(newData);
       }
 
-// Generating method code for jsxFunction_captureEvents
-      public virtual void JsxFunction_captureEvents(string type)
+// Generating method code for createComment
+      public virtual object CreateComment(string comment)
       {
-         WObj.jsxFunction_captureEvents(type);
+         return WObj.createComment(comment);
       }
 
-// Generating method code for jsxFunction_createNSResolver
-      public virtual NHtmlUnit.Javascript.Host.XPathNSResolver JsxFunction_createNSResolver(NHtmlUnit.Javascript.Host.Node nodeResolver)
+// Generating method code for evaluate
+      public virtual NHtmlUnit.Javascript.Host.XPathResult Evaluate(string expression, NHtmlUnit.Javascript.Host.Node contextNode, object resolver, int type, object result)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XPathNSResolver>(WObj.jsxFunction_createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.Node)nodeResolver.WrappedObject));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XPathResult>(WObj.evaluate(expression, (com.gargoylesoftware.htmlunit.javascript.host.Node)contextNode.WrappedObject, resolver, type, result));
       }
 
-// Generating method code for jsxFunction_createTextNode
-      public virtual object JsxFunction_createTextNode(string newData)
+// Generating method code for createElement
+      public virtual object CreateElement(string tagName)
       {
-         return WObj.jsxFunction_createTextNode(newData);
+         return WObj.createElement(tagName);
       }
 
-// Generating method code for jsxFunction_createComment
-      public virtual object JsxFunction_createComment(string comment)
+// Generating method code for createElementNS
+      public virtual object CreateElementNS(string namespaceURI, string qualifiedName)
       {
-         return WObj.jsxFunction_createComment(comment);
+         return WObj.createElementNS(namespaceURI, qualifiedName);
       }
 
-// Generating method code for jsxFunction_evaluate
-      public virtual NHtmlUnit.Javascript.Host.XPathResult JsxFunction_evaluate(string expression, NHtmlUnit.Javascript.Host.Node contextNode, object resolver, int type, object result)
+// Generating method code for getElementsByTagName
+      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XPathResult>(WObj.jsxFunction_evaluate(expression, (com.gargoylesoftware.htmlunit.javascript.host.Node)contextNode.WrappedObject, resolver, type, result));
+
+         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
       }
 
-// Generating method code for jsxFunction_createElement
-      public virtual object JsxFunction_createElement(string tagName)
+// Generating method code for getElementsByTagNameNS
+      public virtual object GetElementsByTagNameNS(object namespaceURI, string localName)
       {
-         return WObj.jsxFunction_createElement(tagName);
+         return WObj.getElementsByTagNameNS(namespaceURI, localName);
       }
 
-// Generating method code for jsxFunction_createElementNS
-      public virtual object JsxFunction_createElementNS(string namespaceURI, string qualifiedName)
+// Generating method code for getLocation
+      public virtual NHtmlUnit.Javascript.Host.Location GetLocation()
       {
-         return WObj.jsxFunction_createElementNS(namespaceURI, qualifiedName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.getLocation());
       }
 
-// Generating method code for jsxFunction_getElementsByTagName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxFunction_getElementsByTagName(string tagName)
+// Generating method code for setLocation
+      public virtual void SetLocation(string location)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxFunction_getElementsByTagName(tagName));
-      }
-
-// Generating method code for jsxFunction_getElementsByTagNameNS
-      public virtual object JsxFunction_getElementsByTagNameNS(object namespaceURI, string localName)
-      {
-         return WObj.jsxFunction_getElementsByTagNameNS(namespaceURI, localName);
+         WObj.setLocation(location);
       }
 
    }

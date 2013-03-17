@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,12 +26,14 @@ namespace NHtmlUnit.Javascript.Host.Css
       public CSSValue()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSValue()) {}
 
-// Generating method code for jsxGet_cssText
-      public virtual string JsxGet_cssText()
-      {
-         return WObj.jsxGet_cssText();
-      }
 
+      public System.String CssText
+      {
+         get
+         {
+            return WObj.getCssText();
+         }
+      }
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,132 +26,162 @@ namespace NHtmlUnit.Javascript.Host
       public Screen()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Screen()) {}
 
-// Generating method code for jsxGet_availHeight
-      public virtual int JsxGet_availHeight()
+
+      public System.Int32 AvailHeight
       {
-         return WObj.jsxGet_availHeight();
+         get
+         {
+            return WObj.getAvailHeight();
+         }
       }
 
-// Generating method code for jsxGet_availWidth
-      public virtual int JsxGet_availWidth()
+      public System.Int32 AvailWidth
       {
-         return WObj.jsxGet_availWidth();
+         get
+         {
+            return WObj.getAvailWidth();
+         }
       }
 
-// Generating method code for jsxGet_bufferDepth
-      public virtual int JsxGet_bufferDepth()
+      public System.Int32 BufferDepth
       {
-         return WObj.jsxGet_bufferDepth();
+         get
+         {
+            return WObj.getBufferDepth();
+         }
+         set
+         {
+            WObj.setBufferDepth(value);
+         }
+
       }
 
-// Generating method code for jsxGet_colorDepth
-      public virtual int JsxGet_colorDepth()
+      public System.Int32 ColorDepth
       {
-         return WObj.jsxGet_colorDepth();
+         get
+         {
+            return WObj.getColorDepth();
+         }
       }
 
-// Generating method code for jsxGet_height
-      public virtual int JsxGet_height()
+      public System.Int32 Height
       {
-         return WObj.jsxGet_height();
+         get
+         {
+            return WObj.getHeight();
+         }
       }
 
-// Generating method code for jsxGet_width
-      public virtual int JsxGet_width()
+      public System.Int32 Width
       {
-         return WObj.jsxGet_width();
+         get
+         {
+            return WObj.getWidth();
+         }
       }
 
-// Generating method code for jsxGet_availLeft
-      public virtual int JsxGet_availLeft()
+      public System.Int32 AvailLeft
       {
-         return WObj.jsxGet_availLeft();
+         get
+         {
+            return WObj.getAvailLeft();
+         }
       }
 
-// Generating method code for jsxGet_availTop
-      public virtual int JsxGet_availTop()
+      public System.Int32 AvailTop
       {
-         return WObj.jsxGet_availTop();
+         get
+         {
+            return WObj.getAvailTop();
+         }
       }
 
-// Generating method code for jsxSet_bufferDepth
-      public virtual void JsxSet_bufferDepth(int bufferDepth)
+      public System.Int32 DeviceXDPI
       {
-         WObj.jsxSet_bufferDepth(bufferDepth);
+         get
+         {
+            return WObj.getDeviceXDPI();
+         }
       }
 
-// Generating method code for jsxGet_deviceXDPI
-      public virtual int JsxGet_deviceXDPI()
+      public System.Int32 DeviceYDPI
       {
-         return WObj.jsxGet_deviceXDPI();
+         get
+         {
+            return WObj.getDeviceYDPI();
+         }
       }
 
-// Generating method code for jsxGet_deviceYDPI
-      public virtual int JsxGet_deviceYDPI()
+      public System.Boolean FontSmoothingEnabled
       {
-         return WObj.jsxGet_deviceYDPI();
+         get
+         {
+            return WObj.getFontSmoothingEnabled();
+         }
       }
 
-// Generating method code for jsxGet_fontSmoothingEnabled
-      public virtual bool JsxGet_fontSmoothingEnabled()
+      public System.Int32 Left
       {
-         return WObj.jsxGet_fontSmoothingEnabled();
+         get
+         {
+            return WObj.getLeft();
+         }
+         set
+         {
+            WObj.setLeft(value);
+         }
+
       }
 
-// Generating method code for jsxGet_left
-      public virtual int JsxGet_left()
+      public System.Int32 LogicalXDPI
       {
-         return WObj.jsxGet_left();
+         get
+         {
+            return WObj.getLogicalXDPI();
+         }
       }
 
-// Generating method code for jsxSet_left
-      public virtual void JsxSet_left(int left)
+      public System.Int32 LogicalYDPI
       {
-         WObj.jsxSet_left(left);
+         get
+         {
+            return WObj.getLogicalYDPI();
+         }
       }
 
-// Generating method code for jsxGet_logicalXDPI
-      public virtual int JsxGet_logicalXDPI()
+      public System.Int32 PixelDepth
       {
-         return WObj.jsxGet_logicalXDPI();
+         get
+         {
+            return WObj.getPixelDepth();
+         }
       }
 
-// Generating method code for jsxGet_logicalYDPI
-      public virtual int JsxGet_logicalYDPI()
+      public System.Int32 Top
       {
-         return WObj.jsxGet_logicalYDPI();
+         get
+         {
+            return WObj.getTop();
+         }
+         set
+         {
+            WObj.setTop(value);
+         }
+
       }
 
-// Generating method code for jsxGet_pixelDepth
-      public virtual int JsxGet_pixelDepth()
+      public System.Int32 UpdateInterval
       {
-         return WObj.jsxGet_pixelDepth();
-      }
+         get
+         {
+            return WObj.getUpdateInterval();
+         }
+         set
+         {
+            WObj.setUpdateInterval(value);
+         }
 
-// Generating method code for jsxGet_top
-      public virtual int JsxGet_top()
-      {
-         return WObj.jsxGet_top();
       }
-
-// Generating method code for jsxSet_top
-      public virtual void JsxSet_top(int top)
-      {
-         WObj.jsxSet_top(top);
-      }
-
-// Generating method code for jsxGet_updateInterval
-      public virtual int JsxGet_updateInterval()
-      {
-         return WObj.jsxGet_updateInterval();
-      }
-
-// Generating method code for jsxSet_updateInterval
-      public virtual void JsxSet_updateInterval(int updateInterval)
-      {
-         WObj.jsxSet_updateInterval(updateInterval);
-      }
-
    }
 
 

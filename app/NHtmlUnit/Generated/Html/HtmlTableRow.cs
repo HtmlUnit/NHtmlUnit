@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlTableRow : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class HtmlTableRow : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlTableRow()
       {
@@ -21,16 +21,6 @@ namespace NHtmlUnit.Html
       public new com.gargoylesoftware.htmlunit.html.HtmlTableRow WObj
       {
          get { return (com.gargoylesoftware.htmlunit.html.HtmlTableRow)WrappedObject; }
-      }
-
-
-      public NHtmlUnit.Html.HtmlTable EnclosingTable
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTable>(
-               WObj.getEnclosingTable());
-         }
       }
 
 
@@ -74,6 +64,16 @@ namespace NHtmlUnit.Html
             return WObj.getValignAttribute();
          }
       }
+
+      public NHtmlUnit.Html.HtmlTable EnclosingTable
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTable>(
+               WObj.getEnclosingTable());
+         }
+      }
+
 
       public System.String BgcolorAttribute
       {

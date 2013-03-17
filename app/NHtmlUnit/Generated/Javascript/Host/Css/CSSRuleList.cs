@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,16 +26,18 @@ namespace NHtmlUnit.Javascript.Host.Css
       public CSSRuleList(NHtmlUnit.Javascript.Host.Css.CSSStyleSheet stylesheet)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSRuleList((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet)stylesheet.WrappedObject)) {}
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
-      }
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item(int index)
+      public System.Int32 Length
       {
-         return WObj.jsxFunction_item(index);
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual object Item(int index)
+      {
+         return WObj.item(index);
       }
 
    }

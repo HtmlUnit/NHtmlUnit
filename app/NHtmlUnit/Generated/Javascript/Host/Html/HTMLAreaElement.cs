@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLAreaElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAreaElement()) {}
 
-// Generating method code for jsxGet_alt
-      public virtual string JsxGet_alt()
-      {
-         return WObj.jsxGet_alt();
-      }
 
-// Generating method code for jsxSet_alt
-      public virtual void JsxSet_alt(string alt)
+      public System.String Alt
       {
-         WObj.jsxSet_alt(alt);
-      }
+         get
+         {
+            return WObj.getAlt();
+         }
+         set
+         {
+            WObj.setAlt(value);
+         }
 
+      }
    }
 
 

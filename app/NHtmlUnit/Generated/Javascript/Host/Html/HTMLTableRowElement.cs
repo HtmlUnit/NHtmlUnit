@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,46 +26,53 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableRowElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableRowElement()) {}
 
-// Generating method code for jsxGet_rowIndex
-      public virtual int JsxGet_rowIndex()
+
+      public System.Int32 RowIndex
       {
-         return WObj.jsxGet_rowIndex();
+         get
+         {
+            return WObj.getRowIndex();
+         }
       }
 
-// Generating method code for jsxGet_sectionRowIndex
-      public virtual int JsxGet_sectionRowIndex()
+      public System.Int32 SectionRowIndex
       {
-         return WObj.jsxGet_sectionRowIndex();
+         get
+         {
+            return WObj.getSectionRowIndex();
+         }
       }
 
-// Generating method code for jsxGet_cells
-      public virtual object JsxGet_cells()
+      public System.Object Cells
       {
-         return WObj.jsxGet_cells();
+         get
+         {
+            return WObj.getCells();
+         }
       }
 
-// Generating method code for jsxGet_bgColor
-      public virtual string JsxGet_bgColor()
+      public System.String BgColor
       {
-         return WObj.jsxGet_bgColor();
+         get
+         {
+            return WObj.getBgColor();
+         }
+         set
+         {
+            WObj.setBgColor(value);
+         }
+
+      }
+// Generating method code for insertCell
+      public virtual object InsertCell(object index)
+      {
+         return WObj.insertCell(index);
       }
 
-// Generating method code for jsxSet_bgColor
-      public virtual void JsxSet_bgColor(string bgColor)
+// Generating method code for deleteCell
+      public virtual void DeleteCell(object index)
       {
-         WObj.jsxSet_bgColor(bgColor);
-      }
-
-// Generating method code for jsxFunction_insertCell
-      public virtual object JsxFunction_insertCell(object index)
-      {
-         return WObj.jsxFunction_insertCell(index);
-      }
-
-// Generating method code for jsxFunction_deleteCell
-      public virtual void JsxFunction_deleteCell(object index)
-      {
-         WObj.jsxFunction_deleteCell(index);
+         WObj.deleteCell(index);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,15 +27,241 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
 
-      public NHtmlUnit.Javascript.Host.BoxObject BoxObject
+      public System.Int32 TabIndex
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(
-               WObj.getBoxObject());
+            return WObj.getTabIndex();
+         }
+         set
+         {
+            WObj.setTabIndex(value);
+         }
+
+      }
+
+      public System.String AccessKey
+      {
+         get
+         {
+            return WObj.getAccessKey();
+         }
+         set
+         {
+            WObj.setAccessKey(value);
+         }
+
+      }
+
+      public System.Int32 ClientLeft
+      {
+         get
+         {
+            return WObj.getClientLeft();
          }
       }
 
+      public System.Int32 ClientTop
+      {
+         get
+         {
+            return WObj.getClientTop();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMStringMap>(
+               WObj.getDataset());
+         }
+      }
+
+
+      public System.Int32 ScrollLeft
+      {
+         get
+         {
+            return WObj.getScrollLeft();
+         }
+         set
+         {
+            WObj.setScrollLeft(value);
+         }
+
+      }
+
+      public System.Int32 ScrollTop
+      {
+         get
+         {
+            return WObj.getScrollTop();
+         }
+         set
+         {
+            WObj.setScrollTop(value);
+         }
+
+      }
+
+      public System.Int32 PosY
+      {
+         get
+         {
+            return WObj.getPosY();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement ParentHTMLElement
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getParentHTMLElement());
+         }
+      }
+
+
+      public System.Int32 PosX
+      {
+         get
+         {
+            return WObj.getPosX();
+         }
+      }
+
+      public System.Int32 OffsetLeft
+      {
+         get
+         {
+            return WObj.getOffsetLeft();
+         }
+      }
+
+      public System.Int32 OffsetTop
+      {
+         get
+         {
+            return WObj.getOffsetTop();
+         }
+      }
+
+      public System.Object OffsetParent_js
+      {
+         get
+         {
+            return WObj.getOffsetParent_js();
+         }
+      }
+
+      public IList<NHtmlUnit.W3C.Dom.INode> All
+      {
+         get
+         {
+            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+               WObj.getAll());
+         }
+       }
+
+      public System.String Id
+      {
+         get
+         {
+            return WObj.getId();
+         }
+         set
+         {
+            WObj.setId(value);
+         }
+
+      }
+
+      public System.String Title
+      {
+         get
+         {
+            return WObj.getTitle();
+         }
+         set
+         {
+            WObj.setTitle(value);
+         }
+
+      }
+
+      public System.Boolean Disabled
+      {
+         get
+         {
+            return WObj.getDisabled();
+         }
+         set
+         {
+            WObj.setDisabled(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Html.DocumentProxy Document
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
+               WObj.getDocument());
+         }
+      }
+
+
+      public System.Object ClassName_js
+      {
+         get
+         {
+            return WObj.getClassName_js();
+         }
+      }
+
+      public System.Int32 ClientHeight
+      {
+         get
+         {
+            return WObj.getClientHeight();
+         }
+      }
+
+      public System.Int32 ClientWidth
+      {
+         get
+         {
+            return WObj.getClientWidth();
+         }
+      }
+
+      public System.String InnerText
+      {
+         get
+         {
+            return WObj.getInnerText();
+         }
+         set
+         {
+            WObj.setInnerText(value);
+         }
+
+      }
+
+      public System.String OuterHTML
+      {
+         get
+         {
+            return WObj.getOuterHTML();
+         }
+         set
+         {
+            WObj.setOuterHTML(value);
+         }
+
+      }
 
       public System.Int32 AvailHeight
       {
@@ -60,6 +286,16 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getBufferDepth();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.BoxObject BoxObject
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(
+               WObj.getBoxObject());
+         }
+      }
+
 
       public System.Int32 ColorDepth
       {
@@ -141,116 +377,144 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Html.HTMLElement ParentHTMLElement
+      public System.Int32 OffsetHeight
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
-               WObj.getParentHTMLElement());
+            return WObj.getOffsetHeight();
          }
       }
 
-// Generating method code for jsxFunction_setActive
-      public virtual void JsxFunction_setActive()
+      public System.Int32 OffsetWidth
       {
-         WObj.jsxFunction_setActive();
+         get
+         {
+            return WObj.getOffsetWidth();
+         }
       }
 
-// Generating method code for jsxGet_clientWidth
-      public virtual int JsxGet_clientWidth()
+      public System.Int32 ScrollHeight
       {
-         return WObj.jsxGet_clientWidth();
+         get
+         {
+            return WObj.getScrollHeight();
+         }
       }
 
-// Generating method code for jsxGet_clientHeight
-      public virtual int JsxGet_clientHeight()
+      public System.Int32 ScrollWidth
       {
-         return WObj.jsxGet_clientHeight();
+         get
+         {
+            return WObj.getScrollWidth();
+         }
       }
 
-// Generating method code for jsxFunction_addBehavior
-      public virtual int JsxFunction_addBehavior(string behavior)
+      public System.String ScopeName
       {
-         return WObj.jsxFunction_addBehavior(behavior);
+         get
+         {
+            return WObj.getScopeName();
+         }
       }
 
-// Generating method code for jsxFunction_removeBehavior
-      public virtual void JsxFunction_removeBehavior(int id)
+      public System.String TagUrn
       {
-         WObj.jsxFunction_removeBehavior(id);
+         get
+         {
+            return WObj.getTagUrn();
+         }
+         set
+         {
+            WObj.setTagUrn(value);
+         }
+
       }
 
-// Generating method code for jsxGet_scrollLeft
-      public virtual int JsxGet_scrollLeft()
+      public System.Object ClientRects
       {
-         return WObj.jsxGet_scrollLeft();
+         get
+         {
+            return WObj.getClientRects();
+         }
       }
 
-// Generating method code for jsxGet_scrollTop
-      public virtual int JsxGet_scrollTop()
+      public System.String UniqueID
       {
-         return WObj.jsxGet_scrollTop();
+         get
+         {
+            return WObj.getUniqueID();
+         }
       }
 
-// Generating method code for jsxFunction_removeAttributeNS
-      public virtual void JsxFunction_removeAttributeNS(string namespaceURI, string localName)
+      public System.Object Filters
       {
-         WObj.jsxFunction_removeAttributeNS(namespaceURI, localName);
+         get
+         {
+            return WObj.getFilters();
+         }
       }
 
-// Generating method code for jsxGet_parentElement
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement JsxGet_parentElement()
+      public System.Boolean Spellcheck
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxGet_parentElement());
+         get
+         {
+            return WObj.getSpellcheck();
+         }
+         set
+         {
+            WObj.setSpellcheck(value);
+         }
+
       }
 
-// Generating method code for jsxGet_all
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxGet_all()
+      public System.String Lang
       {
+         get
+         {
+            return WObj.getLang();
+         }
+         set
+         {
+            WObj.setLang(value);
+         }
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxGet_all());
       }
 
-// Generating method code for jsxGet_id
-      public virtual string JsxGet_id()
+      public System.String Language
       {
-         return WObj.jsxGet_id();
+         get
+         {
+            return WObj.getLanguage();
+         }
+         set
+         {
+            WObj.setLanguage(value);
+         }
+
       }
 
-// Generating method code for jsxSet_id
-      public virtual void JsxSet_id(string newId)
+      public System.String Dir
       {
-         WObj.jsxSet_id(newId);
+         get
+         {
+            return WObj.getDir();
+         }
+         set
+         {
+            WObj.setDir(value);
+         }
+
+      }
+// Generating method code for doScroll
+      public virtual void DoScroll(string scrollAction)
+      {
+         WObj.doScroll(scrollAction);
       }
 
-// Generating method code for jsxGet_title
-      public virtual string JsxGet_title()
+// Generating method code for setActive
+      public virtual void SetActive()
       {
-         return WObj.jsxGet_title();
-      }
-
-// Generating method code for jsxSet_title
-      public virtual void JsxSet_title(string newTitle)
-      {
-         WObj.jsxSet_title(newTitle);
-      }
-
-// Generating method code for jsxGet_disabled
-      public virtual bool JsxGet_disabled()
-      {
-         return WObj.jsxGet_disabled();
-      }
-
-// Generating method code for jsxGet_document
-      public virtual NHtmlUnit.Javascript.Host.Html.DocumentProxy JsxGet_document()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(WObj.jsxGet_document());
-      }
-
-// Generating method code for jsxSet_disabled
-      public virtual void JsxSet_disabled(bool disabled)
-      {
-         WObj.jsxSet_disabled(disabled);
+         WObj.setActive();
       }
 
 // Generating method code for getWithFallback
@@ -259,113 +523,71 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.getWithFallback(name);
       }
 
-// Generating method code for jsxFunction_clearAttributes
-      public virtual void JsxFunction_clearAttributes()
+// Generating method code for clearAttributes
+      public virtual void ClearAttributes()
       {
-         WObj.jsxFunction_clearAttributes();
+         WObj.clearAttributes();
       }
 
-// Generating method code for jsxFunction_mergeAttributes
-      public virtual void JsxFunction_mergeAttributes(NHtmlUnit.Javascript.Host.Html.HTMLElement source, object preserveIdentity)
+// Generating method code for mergeAttributes
+      public virtual void MergeAttributes(NHtmlUnit.Javascript.Host.Html.HTMLElement source, object preserveIdentity)
       {
-         WObj.jsxFunction_mergeAttributes((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)source.WrappedObject, preserveIdentity);
+         WObj.mergeAttributes((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)source.WrappedObject, preserveIdentity);
       }
 
-// Generating method code for jsxFunction_getAttributeNodeNS
-      public virtual object JsxFunction_getAttributeNodeNS(string namespaceURI, string localName)
+// Generating method code for getAttributeNodeNS
+      public virtual object GetAttributeNodeNS(string namespaceURI, string localName)
       {
-         return WObj.jsxFunction_getAttributeNodeNS(namespaceURI, localName);
+         return WObj.getAttributeNodeNS(namespaceURI, localName);
       }
 
-// Generating method code for jsxFunction_getAttributeNS
-      public virtual string JsxFunction_getAttributeNS(string namespaceURI, string localName)
+// Generating method code for removeAttributeNode
+      public virtual void RemoveAttributeNode(NHtmlUnit.Javascript.Host.Attr attribute)
       {
-         return WObj.jsxFunction_getAttributeNS(namespaceURI, localName);
+         WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)attribute.WrappedObject);
       }
 
-// Generating method code for jsxFunction_hasAttributeNS
-      public virtual bool JsxFunction_hasAttributeNS(string namespaceURI, string localName)
+// Generating method code for removeNode
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement RemoveNode(bool removeChildren)
       {
-         return WObj.jsxFunction_hasAttributeNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.removeNode(removeChildren));
       }
 
-// Generating method code for jsxFunction_setAttributeNS
-      public virtual void JsxFunction_setAttributeNS(string namespaceURI, string qualifiedName, string value)
+// Generating method code for setAttributeNode
+      public virtual NHtmlUnit.Javascript.Host.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Attr newAtt)
       {
-         WObj.jsxFunction_setAttributeNS(namespaceURI, qualifiedName, value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)newAtt.WrappedObject));
       }
 
-// Generating method code for jsxFunction_removeAttributeNode
-      public virtual void JsxFunction_removeAttributeNode(NHtmlUnit.Javascript.Host.Attr attribute)
+// Generating method code for getElementsByClassName
+      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByClassName(string className)
       {
-         WObj.jsxFunction_removeAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)attribute.WrappedObject);
+
+         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByClassName(className));
       }
 
-// Generating method code for jsxFunction_removeNode
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement JsxFunction_removeNode(bool removeChildren)
+// Generating method code for insertAdjacentHTML
+      public virtual void InsertAdjacentHTML(string whereArg, string text)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxFunction_removeNode(removeChildren));
+         WObj.insertAdjacentHTML(whereArg, text);
       }
 
-// Generating method code for jsxFunction_setAttributeNode
-      public virtual NHtmlUnit.Javascript.Host.Attr JsxFunction_setAttributeNode(NHtmlUnit.Javascript.Host.Attr newAtt)
+// Generating method code for insertAdjacentElement
+      public virtual object InsertAdjacentElement(string whereArg, object objectArg)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.jsxFunction_setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)newAtt.WrappedObject));
+         return WObj.insertAdjacentElement(whereArg, objectArg);
       }
 
-// Generating method code for jsxFunction_getElementsByClassName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxFunction_getElementsByClassName(string className)
+// Generating method code for addBehavior
+      public virtual int AddBehavior(string behavior)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxFunction_getElementsByClassName(className));
+         return WObj.addBehavior(behavior);
       }
 
-// Generating method code for jsxGet_className
-      public virtual object JsxGet_className()
+// Generating method code for removeBehavior
+      public virtual void RemoveBehavior(int id)
       {
-         return WObj.jsxGet_className();
-      }
-
-// Generating method code for jsxSet_className
-      public virtual void JsxSet_className(string className)
-      {
-         WObj.jsxSet_className(className);
-      }
-
-// Generating method code for jsxGet_innerHTML
-      public virtual string JsxGet_innerHTML()
-      {
-         return WObj.jsxGet_innerHTML();
-      }
-
-// Generating method code for jsxGet_outerHTML
-      public virtual string JsxGet_outerHTML()
-      {
-         return WObj.jsxGet_outerHTML();
-      }
-
-// Generating method code for jsxSet_innerHTML
-      public virtual void JsxSet_innerHTML(object value)
-      {
-         WObj.jsxSet_innerHTML(value);
-      }
-
-// Generating method code for jsxSet_outerHTML
-      public virtual void JsxSet_outerHTML(string value)
-      {
-         WObj.jsxSet_outerHTML(value);
-      }
-
-// Generating method code for jsxFunction_insertAdjacentHTML
-      public virtual void JsxFunction_insertAdjacentHTML(string whereArg, string text)
-      {
-         WObj.jsxFunction_insertAdjacentHTML(whereArg, text);
-      }
-
-// Generating method code for jsxFunction_insertAdjacentElement
-      public virtual object JsxFunction_insertAdjacentElement(string whereArg, object objectArg)
-      {
-         return WObj.jsxFunction_insertAdjacentElement(whereArg, objectArg);
+         WObj.removeBehavior(id);
       }
 
 // Generating method code for addComponentRequest
@@ -422,227 +644,76 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.navigateHomePage();
       }
 
-// Generating method code for jsxGet_children
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxGet_children()
+// Generating method code for scrollIntoView
+      public virtual void ScrollIntoView()
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxGet_children());
+         WObj.scrollIntoView();
       }
 
-// Generating method code for jsxGet_offsetHeight
-      public virtual int JsxGet_offsetHeight()
+// Generating method code for setExpression
+      public virtual void SetExpression(string propertyName, string expression, string language)
       {
-         return WObj.jsxGet_offsetHeight();
+         WObj.setExpression(propertyName, expression, language);
       }
 
-// Generating method code for jsxGet_offsetWidth
-      public virtual int JsxGet_offsetWidth()
+// Generating method code for removeExpression
+      public virtual bool RemoveExpression(string propertyName)
       {
-         return WObj.jsxGet_offsetWidth();
+         return WObj.removeExpression(propertyName);
       }
 
-// Generating method code for jsxSet_scrollTop
-      public virtual void JsxSet_scrollTop(int scroll)
+// Generating method code for dispatchEvent
+      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
-         WObj.jsxSet_scrollTop(scroll);
+         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
       }
 
-// Generating method code for jsxSet_scrollLeft
-      public virtual void JsxSet_scrollLeft(int scroll)
+// Generating method code for blur
+      public virtual void Blur()
       {
-         WObj.jsxSet_scrollLeft(scroll);
+         WObj.blur();
       }
 
-// Generating method code for jsxGet_scrollHeight
-      public virtual int JsxGet_scrollHeight()
+// Generating method code for createTextRange
+      public virtual object CreateTextRange()
       {
-         return WObj.jsxGet_scrollHeight();
+         return WObj.createTextRange();
       }
 
-// Generating method code for jsxGet_scrollWidth
-      public virtual int JsxGet_scrollWidth()
+// Generating method code for focus
+      public virtual void Focus()
       {
-         return WObj.jsxGet_scrollWidth();
+         WObj.focus();
       }
 
-// Generating method code for jsxGet_scopeName
-      public virtual string JsxGet_scopeName()
+// Generating method code for querySelectorAll
+      public virtual NHtmlUnit.Javascript.Host.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return WObj.jsxGet_scopeName();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StaticNodeList>(WObj.querySelectorAll(selectors));
       }
 
-// Generating method code for jsxGet_tagUrn
-      public virtual string JsxGet_tagUrn()
+// Generating method code for querySelector
+      public virtual NHtmlUnit.Javascript.Host.Node QuerySelector(string selectors)
       {
-         return WObj.jsxGet_tagUrn();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.querySelector(selectors));
       }
 
-// Generating method code for jsxSet_tagUrn
-      public virtual void JsxSet_tagUrn(string tagUrn)
+// Generating method code for click
+      public virtual void Click()
       {
-         WObj.jsxSet_tagUrn(tagUrn);
+         WObj.click();
       }
 
-// Generating method code for jsxFunction_scrollIntoView
-      public virtual void JsxFunction_scrollIntoView()
+// Generating method code for getInnerHTML
+      public virtual string GetInnerHTML()
       {
-         WObj.jsxFunction_scrollIntoView();
+         return WObj.getInnerHTML();
       }
 
-// Generating method code for jsxFunction_getClientRects
-      public virtual object JsxFunction_getClientRects()
+// Generating method code for setInnerHTML
+      public virtual void SetInnerHTML(object value)
       {
-         return WObj.jsxFunction_getClientRects();
-      }
-
-// Generating method code for jsxFunction_setExpression
-      public virtual void JsxFunction_setExpression(string propertyName, string expression, string language)
-      {
-         WObj.jsxFunction_setExpression(propertyName, expression, language);
-      }
-
-// Generating method code for jsxFunction_removeExpression
-      public virtual bool JsxFunction_removeExpression(string propertyName)
-      {
-         return WObj.jsxFunction_removeExpression(propertyName);
-      }
-
-// Generating method code for jsxGet_uniqueID
-      public virtual string JsxGet_uniqueID()
-      {
-         return WObj.jsxGet_uniqueID();
-      }
-
-// Generating method code for jsxFunction_dispatchEvent
-      public virtual bool JsxFunction_dispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return WObj.jsxFunction_dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_blur
-      public virtual void JsxFunction_blur()
-      {
-         WObj.jsxFunction_blur();
-      }
-
-// Generating method code for jsxFunction_createTextRange
-      public virtual object JsxFunction_createTextRange()
-      {
-         return WObj.jsxFunction_createTextRange();
-      }
-
-// Generating method code for jsxFunction_contains
-      public virtual bool JsxFunction_contains(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
-      {
-         return WObj.jsxFunction_contains((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_focus
-      public virtual void JsxFunction_focus()
-      {
-         WObj.jsxFunction_focus();
-      }
-
-// Generating method code for jsxFunction_querySelectorAll
-      public virtual NHtmlUnit.Javascript.Host.StaticNodeList JsxFunction_querySelectorAll(string selectors)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StaticNodeList>(WObj.jsxFunction_querySelectorAll(selectors));
-      }
-
-// Generating method code for jsxFunction_querySelector
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_querySelector(string selectors)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_querySelector(selectors));
-      }
-
-// Generating method code for jsxGet_filters
-      public virtual object JsxGet_filters()
-      {
-         return WObj.jsxGet_filters();
-      }
-
-// Generating method code for jsxFunction_click
-      public virtual void JsxFunction_click()
-      {
-         WObj.jsxFunction_click();
-      }
-
-// Generating method code for jsxGet_spellcheck
-      public virtual bool JsxGet_spellcheck()
-      {
-         return WObj.jsxGet_spellcheck();
-      }
-
-// Generating method code for jsxSet_spellcheck
-      public virtual void JsxSet_spellcheck(bool spellcheck)
-      {
-         WObj.jsxSet_spellcheck(spellcheck);
-      }
-
-// Generating method code for jsxGet_lang
-      public virtual string JsxGet_lang()
-      {
-         return WObj.jsxGet_lang();
-      }
-
-// Generating method code for jsxSet_lang
-      public virtual void JsxSet_lang(string lang)
-      {
-         WObj.jsxSet_lang(lang);
-      }
-
-// Generating method code for jsxGet_language
-      public virtual string JsxGet_language()
-      {
-         return WObj.jsxGet_language();
-      }
-
-// Generating method code for jsxSet_language
-      public virtual void JsxSet_language(string language)
-      {
-         WObj.jsxSet_language(language);
-      }
-
-// Generating method code for jsxGet_dir
-      public virtual string JsxGet_dir()
-      {
-         return WObj.jsxGet_dir();
-      }
-
-// Generating method code for jsxSet_dir
-      public virtual void JsxSet_dir(string dir)
-      {
-         WObj.jsxSet_dir(dir);
-      }
-
-// Generating method code for jsxGet_tabIndex
-      public virtual int JsxGet_tabIndex()
-      {
-         return WObj.jsxGet_tabIndex();
-      }
-
-// Generating method code for jsxSet_tabIndex
-      public virtual void JsxSet_tabIndex(int tabIndex)
-      {
-         WObj.jsxSet_tabIndex(tabIndex);
-      }
-
-// Generating method code for jsxFunction_doScroll
-      public virtual void JsxFunction_doScroll(string scrollAction)
-      {
-         WObj.jsxFunction_doScroll(scrollAction);
-      }
-
-// Generating method code for jsxGet_accessKey
-      public virtual string JsxGet_accessKey()
-      {
-         return WObj.jsxGet_accessKey();
-      }
-
-// Generating method code for jsxSet_accessKey
-      public virtual void JsxSet_accessKey(string accessKey)
-      {
-         WObj.jsxSet_accessKey(accessKey);
+         WObj.setInnerHTML(value);
       }
 
    }

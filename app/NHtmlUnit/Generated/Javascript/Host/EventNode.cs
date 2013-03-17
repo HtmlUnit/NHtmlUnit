@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,226 +26,244 @@ namespace NHtmlUnit.Javascript.Host
       public EventNode()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.EventNode()) {}
 
-// Generating method code for jsxSet_onclick
-      public virtual void JsxSet_onclick(object handler)
+
+      public System.Object Onclick
       {
-         WObj.jsxSet_onclick(handler);
+         get
+         {
+            return WObj.getOnclick();
+         }
+         set
+         {
+            WObj.setOnclick(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onclick
-      public virtual object JsxGet_onclick()
+      public System.Object Ondblclick
       {
-         return WObj.jsxGet_onclick();
+         get
+         {
+            return WObj.getOndblclick();
+         }
+         set
+         {
+            WObj.setOndblclick(value);
+         }
+
       }
 
-// Generating method code for jsxSet_ondblclick
-      public virtual void JsxSet_ondblclick(object handler)
+      public System.Object Onblur
       {
-         WObj.jsxSet_ondblclick(handler);
+         get
+         {
+            return WObj.getOnblur();
+         }
+         set
+         {
+            WObj.setOnblur(value);
+         }
+
       }
 
-// Generating method code for jsxGet_ondblclick
-      public virtual object JsxGet_ondblclick()
+      public System.Object Onfocus
       {
-         return WObj.jsxGet_ondblclick();
+         get
+         {
+            return WObj.getOnfocus();
+         }
+         set
+         {
+            WObj.setOnfocus(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onblur
-      public virtual void JsxSet_onblur(object handler)
+      public System.Object Onfocusin
       {
-         WObj.jsxSet_onblur(handler);
+         get
+         {
+            return WObj.getOnfocusin();
+         }
+         set
+         {
+            WObj.setOnfocusin(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onblur
-      public virtual object JsxGet_onblur()
+      public System.Object Onfocusout
       {
-         return WObj.jsxGet_onblur();
+         get
+         {
+            return WObj.getOnfocusout();
+         }
+         set
+         {
+            WObj.setOnfocusout(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onfocus
-      public virtual void JsxSet_onfocus(object handler)
+      public System.Object Onkeydown
       {
-         WObj.jsxSet_onfocus(handler);
+         get
+         {
+            return WObj.getOnkeydown();
+         }
+         set
+         {
+            WObj.setOnkeydown(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onfocus
-      public virtual object JsxGet_onfocus()
+      public System.Object Onkeypress
       {
-         return WObj.jsxGet_onfocus();
+         get
+         {
+            return WObj.getOnkeypress();
+         }
+         set
+         {
+            WObj.setOnkeypress(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onfocusin
-      public virtual void JsxSet_onfocusin(object handler)
+      public System.Object Onkeyup
       {
-         WObj.jsxSet_onfocusin(handler);
+         get
+         {
+            return WObj.getOnkeyup();
+         }
+         set
+         {
+            WObj.setOnkeyup(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onfocusin
-      public virtual object JsxGet_onfocusin()
+      public System.Object Onmousedown
       {
-         return WObj.jsxGet_onfocusin();
+         get
+         {
+            return WObj.getOnmousedown();
+         }
+         set
+         {
+            WObj.setOnmousedown(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onfocusout
-      public virtual void JsxSet_onfocusout(object handler)
+      public System.Object Onmousemove
       {
-         WObj.jsxSet_onfocusout(handler);
+         get
+         {
+            return WObj.getOnmousemove();
+         }
+         set
+         {
+            WObj.setOnmousemove(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onfocusout
-      public virtual object JsxGet_onfocusout()
+      public System.Object Onmouseout
       {
-         return WObj.jsxGet_onfocusout();
+         get
+         {
+            return WObj.getOnmouseout();
+         }
+         set
+         {
+            WObj.setOnmouseout(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onkeydown
-      public virtual void JsxSet_onkeydown(object handler)
+      public System.Object Onmouseover
       {
-         WObj.jsxSet_onkeydown(handler);
+         get
+         {
+            return WObj.getOnmouseover();
+         }
+         set
+         {
+            WObj.setOnmouseover(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onkeydown
-      public virtual object JsxGet_onkeydown()
+      public System.Object Onmouseup
       {
-         return WObj.jsxGet_onkeydown();
+         get
+         {
+            return WObj.getOnmouseup();
+         }
+         set
+         {
+            WObj.setOnmouseup(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onkeypress
-      public virtual void JsxSet_onkeypress(object handler)
+      public System.Object Oncontextmenu
       {
-         WObj.jsxSet_onkeypress(handler);
+         get
+         {
+            return WObj.getOncontextmenu();
+         }
+         set
+         {
+            WObj.setOncontextmenu(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onkeypress
-      public virtual object JsxGet_onkeypress()
+      public System.Object Onresize
       {
-         return WObj.jsxGet_onkeypress();
+         get
+         {
+            return WObj.getOnresize();
+         }
+         set
+         {
+            WObj.setOnresize(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onkeyup
-      public virtual void JsxSet_onkeyup(object handler)
+      public System.Object Onpropertychange
       {
-         WObj.jsxSet_onkeyup(handler);
+         get
+         {
+            return WObj.getOnpropertychange();
+         }
+         set
+         {
+            WObj.setOnpropertychange(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onkeyup
-      public virtual object JsxGet_onkeyup()
+      public System.Object Onerror
       {
-         return WObj.jsxGet_onkeyup();
-      }
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
 
-// Generating method code for jsxSet_onmousedown
-      public virtual void JsxSet_onmousedown(object handler)
-      {
-         WObj.jsxSet_onmousedown(handler);
       }
-
-// Generating method code for jsxGet_onmousedown
-      public virtual object JsxGet_onmousedown()
+// Generating method code for fireEvent
+      public virtual bool FireEvent(string type, NHtmlUnit.Javascript.Host.Event eventArg)
       {
-         return WObj.jsxGet_onmousedown();
-      }
-
-// Generating method code for jsxSet_onmousemove
-      public virtual void JsxSet_onmousemove(object handler)
-      {
-         WObj.jsxSet_onmousemove(handler);
-      }
-
-// Generating method code for jsxGet_onmousemove
-      public virtual object JsxGet_onmousemove()
-      {
-         return WObj.jsxGet_onmousemove();
-      }
-
-// Generating method code for jsxSet_onmouseout
-      public virtual void JsxSet_onmouseout(object handler)
-      {
-         WObj.jsxSet_onmouseout(handler);
-      }
-
-// Generating method code for jsxGet_onmouseout
-      public virtual object JsxGet_onmouseout()
-      {
-         return WObj.jsxGet_onmouseout();
-      }
-
-// Generating method code for jsxSet_onmouseover
-      public virtual void JsxSet_onmouseover(object handler)
-      {
-         WObj.jsxSet_onmouseover(handler);
-      }
-
-// Generating method code for jsxGet_onmouseover
-      public virtual object JsxGet_onmouseover()
-      {
-         return WObj.jsxGet_onmouseover();
-      }
-
-// Generating method code for jsxSet_onmouseup
-      public virtual void JsxSet_onmouseup(object handler)
-      {
-         WObj.jsxSet_onmouseup(handler);
-      }
-
-// Generating method code for jsxGet_onmouseup
-      public virtual object JsxGet_onmouseup()
-      {
-         return WObj.jsxGet_onmouseup();
-      }
-
-// Generating method code for jsxSet_oncontextmenu
-      public virtual void JsxSet_oncontextmenu(object handler)
-      {
-         WObj.jsxSet_oncontextmenu(handler);
-      }
-
-// Generating method code for jsxGet_oncontextmenu
-      public virtual object JsxGet_oncontextmenu()
-      {
-         return WObj.jsxGet_oncontextmenu();
-      }
-
-// Generating method code for jsxSet_onresize
-      public virtual void JsxSet_onresize(object handler)
-      {
-         WObj.jsxSet_onresize(handler);
-      }
-
-// Generating method code for jsxGet_onresize
-      public virtual object JsxGet_onresize()
-      {
-         return WObj.jsxGet_onresize();
-      }
-
-// Generating method code for jsxSet_onpropertychange
-      public virtual void JsxSet_onpropertychange(object handler)
-      {
-         WObj.jsxSet_onpropertychange(handler);
-      }
-
-// Generating method code for jsxGet_onpropertychange
-      public virtual object JsxGet_onpropertychange()
-      {
-         return WObj.jsxGet_onpropertychange();
-      }
-
-// Generating method code for jsxSet_onerror
-      public virtual void JsxSet_onerror(object handler)
-      {
-         WObj.jsxSet_onerror(handler);
-      }
-
-// Generating method code for jsxGet_onerror
-      public virtual object JsxGet_onerror()
-      {
-         return WObj.jsxGet_onerror();
-      }
-
-// Generating method code for jsxFunction_fireEvent
-      public virtual bool JsxFunction_fireEvent(string type, NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return WObj.jsxFunction_fireEvent(type, (com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
+         return WObj.fireEvent(type, (com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
       }
 
    }

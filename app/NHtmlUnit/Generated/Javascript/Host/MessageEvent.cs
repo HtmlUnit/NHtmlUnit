@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,18 +23,20 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.MessageEvent)WrappedObject; }
       }
 
-      public MessageEvent()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent()) {}
-
       public MessageEvent(object data)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent(data)) {}
 
-// Generating method code for jsxGet_data
-      public virtual object JsxGet_data()
-      {
-         return WObj.jsxGet_data();
-      }
+      public MessageEvent()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent()) {}
 
+
+      public System.Object Data
+      {
+         get
+         {
+            return WObj.getData();
+         }
+      }
    }
 
 

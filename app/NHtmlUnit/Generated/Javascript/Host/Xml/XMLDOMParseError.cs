@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,48 +26,62 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLDOMParseError()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDOMParseError()) {}
 
-// Generating method code for jsxGet_errorCode
-      public virtual int JsxGet_errorCode()
+
+      public System.Int32 ErrorCode
       {
-         return WObj.jsxGet_errorCode();
+         get
+         {
+            return WObj.getErrorCode();
+         }
       }
 
-// Generating method code for jsxGet_filepos
-      public virtual int JsxGet_filepos()
+      public System.Int32 Filepos
       {
-         return WObj.jsxGet_filepos();
+         get
+         {
+            return WObj.getFilepos();
+         }
       }
 
-// Generating method code for jsxGet_line
-      public virtual int JsxGet_line()
+      public System.Int32 Line
       {
-         return WObj.jsxGet_line();
+         get
+         {
+            return WObj.getLine();
+         }
       }
 
-// Generating method code for jsxGet_linepos
-      public virtual int JsxGet_linepos()
+      public System.Int32 Linepos
       {
-         return WObj.jsxGet_linepos();
+         get
+         {
+            return WObj.getLinepos();
+         }
       }
 
-// Generating method code for jsxGet_reason
-      public virtual string JsxGet_reason()
+      public System.String Reason
       {
-         return WObj.jsxGet_reason();
+         get
+         {
+            return WObj.getReason();
+         }
       }
 
-// Generating method code for jsxGet_srcText
-      public virtual string JsxGet_srcText()
+      public System.String SrcText
       {
-         return WObj.jsxGet_srcText();
+         get
+         {
+            return WObj.getSrcText();
+         }
       }
 
-// Generating method code for jsxGet_url
-      public virtual string JsxGet_url()
+      public System.String Url
       {
-         return WObj.jsxGet_url();
+         get
+         {
+            return WObj.getUrl();
+         }
       }
-
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,72 +29,96 @@ namespace NHtmlUnit.Javascript.Host
       public BoxObject()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.BoxObject()) {}
 
-// Generating method code for jsxGet_x
-      public virtual int JsxGet_x()
+
+      public System.Int32 X
       {
-         return WObj.jsxGet_x();
+         get
+         {
+            return WObj.getX();
+         }
       }
 
-// Generating method code for jsxGet_y
-      public virtual int JsxGet_y()
+      public System.Int32 Y
       {
-         return WObj.jsxGet_y();
+         get
+         {
+            return WObj.getY();
+         }
       }
 
-// Generating method code for jsxGet_element
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement JsxGet_element()
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement Element
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxGet_element());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getElement());
+         }
       }
 
-// Generating method code for jsxGet_firstChild
-      public virtual object JsxGet_firstChild()
+
+      public System.Object FirstChild
       {
-         return WObj.jsxGet_firstChild();
+         get
+         {
+            return WObj.getFirstChild();
+         }
       }
 
-// Generating method code for jsxGet_lastChild
-      public virtual object JsxGet_lastChild()
+      public System.Object LastChild
       {
-         return WObj.jsxGet_lastChild();
+         get
+         {
+            return WObj.getLastChild();
+         }
       }
 
-// Generating method code for jsxGet_nextSibling
-      public virtual object JsxGet_nextSibling()
+      public System.Object NextSibling
       {
-         return WObj.jsxGet_nextSibling();
+         get
+         {
+            return WObj.getNextSibling();
+         }
       }
 
-// Generating method code for jsxGet_previousSibling
-      public virtual object JsxGet_previousSibling()
+      public System.Object PreviousSibling
       {
-         return WObj.jsxGet_previousSibling();
+         get
+         {
+            return WObj.getPreviousSibling();
+         }
       }
 
-// Generating method code for jsxGet_screenX
-      public virtual int JsxGet_screenX()
+      public System.Int32 ScreenX
       {
-         return WObj.jsxGet_screenX();
+         get
+         {
+            return WObj.getScreenX();
+         }
       }
 
-// Generating method code for jsxGet_screenY
-      public virtual int JsxGet_screenY()
+      public System.Int32 ScreenY
       {
-         return WObj.jsxGet_screenY();
+         get
+         {
+            return WObj.getScreenY();
+         }
       }
 
-// Generating method code for jsxGet_width
-      public virtual int JsxGet_width()
+      public System.Int32 Width
       {
-         return WObj.jsxGet_width();
+         get
+         {
+            return WObj.getWidth();
+         }
       }
 
-// Generating method code for jsxGet_height
-      public virtual int JsxGet_height()
+      public System.Int32 Height
       {
-         return WObj.jsxGet_height();
+         get
+         {
+            return WObj.getHeight();
+         }
       }
-
    }
 
 

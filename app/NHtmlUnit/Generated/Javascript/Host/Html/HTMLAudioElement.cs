@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLAudioElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLAudioElement : NHtmlUnit.Javascript.Host.Html.HTMLMediaElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLAudioElement()
       {

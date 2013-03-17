@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,118 +29,146 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLHttpRequest()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLHttpRequest()) {}
 
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onreadystatechange
+      {
+         get
+         {
+            return WObj.getOnreadystatechange();
+         }
+         set
+         {
+            WObj.setOnreadystatechange(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onload
+      {
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onerror
+      {
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
+
+      }
+
+      public System.Int32 ReadyState
+      {
+         get
+         {
+            return WObj.getReadyState();
+         }
+      }
+
+      public System.String ResponseText
+      {
+         get
+         {
+            return WObj.getResponseText();
+         }
+      }
+
+      public System.Object ResponseXML
+      {
+         get
+         {
+            return WObj.getResponseXML();
+         }
+      }
+
+      public System.Int32 Status
+      {
+         get
+         {
+            return WObj.getStatus();
+         }
+      }
+
+      public System.String StatusText
+      {
+         get
+         {
+            return WObj.getStatusText();
+         }
+      }
+
+      public System.String AllResponseHeaders
+      {
+         get
+         {
+            return WObj.getAllResponseHeaders();
+         }
+      }
+
+      public System.Boolean WithCredentials
+      {
+         get
+         {
+            return WObj.getWithCredentials();
+         }
+         set
+         {
+            WObj.setWithCredentials(value);
+         }
+
+      }
 // Generating method code for jsConstructor
       public virtual void JsConstructor()
       {
          WObj.jsConstructor();
       }
 
-// Generating method code for jsxGet_onreadystatechange
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function JsxGet_onreadystatechange()
+// Generating method code for abort
+      public virtual void Abort()
       {
-         return WObj.jsxGet_onreadystatechange();
+         WObj.abort();
       }
 
-// Generating method code for jsxSet_onreadystatechange
-      public virtual void JsxSet_onreadystatechange(net.sourceforge.htmlunit.corejs.javascript.Function stateChangeHandler)
+// Generating method code for getResponseHeader
+      public virtual string GetResponseHeader(string headerName)
       {
-         WObj.jsxSet_onreadystatechange(stateChangeHandler);
+         return WObj.getResponseHeader(headerName);
       }
 
-// Generating method code for jsxGet_onload
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function JsxGet_onload()
+// Generating method code for open
+      public virtual void Open(string method, object urlParam, bool async, object user, object password)
       {
-         return WObj.jsxGet_onload();
+         WObj.open(method, urlParam, async, user, password);
       }
 
-// Generating method code for jsxSet_onload
-      public virtual void JsxSet_onload(net.sourceforge.htmlunit.corejs.javascript.Function loadHandler)
+// Generating method code for send
+      public virtual void Send(object content)
       {
-         WObj.jsxSet_onload(loadHandler);
+         WObj.send(content);
       }
 
-// Generating method code for jsxGet_onerror
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function JsxGet_onerror()
+// Generating method code for setRequestHeader
+      public virtual void SetRequestHeader(string name, string value)
       {
-         return WObj.jsxGet_onerror();
+         WObj.setRequestHeader(name, value);
       }
 
-// Generating method code for jsxSet_onerror
-      public virtual void JsxSet_onerror(net.sourceforge.htmlunit.corejs.javascript.Function errorHandler)
+// Generating method code for overrideMimeType
+      public virtual void OverrideMimeType(string mimeType)
       {
-         WObj.jsxSet_onerror(errorHandler);
-      }
-
-// Generating method code for jsxGet_readyState
-      public virtual int JsxGet_readyState()
-      {
-         return WObj.jsxGet_readyState();
-      }
-
-// Generating method code for jsxGet_responseText
-      public virtual string JsxGet_responseText()
-      {
-         return WObj.jsxGet_responseText();
-      }
-
-// Generating method code for jsxGet_responseXML
-      public virtual object JsxGet_responseXML()
-      {
-         return WObj.jsxGet_responseXML();
-      }
-
-// Generating method code for jsxGet_status
-      public virtual int JsxGet_status()
-      {
-         return WObj.jsxGet_status();
-      }
-
-// Generating method code for jsxGet_statusText
-      public virtual string JsxGet_statusText()
-      {
-         return WObj.jsxGet_statusText();
-      }
-
-// Generating method code for jsxFunction_abort
-      public virtual void JsxFunction_abort()
-      {
-         WObj.jsxFunction_abort();
-      }
-
-// Generating method code for jsxFunction_getAllResponseHeaders
-      public virtual string JsxFunction_getAllResponseHeaders()
-      {
-         return WObj.jsxFunction_getAllResponseHeaders();
-      }
-
-// Generating method code for jsxFunction_getResponseHeader
-      public virtual string JsxFunction_getResponseHeader(string headerName)
-      {
-         return WObj.jsxFunction_getResponseHeader(headerName);
-      }
-
-// Generating method code for jsxFunction_open
-      public virtual void JsxFunction_open(string method, object urlParam, bool async, object user, object password)
-      {
-         WObj.jsxFunction_open(method, urlParam, async, user, password);
-      }
-
-// Generating method code for jsxFunction_send
-      public virtual void JsxFunction_send(object content)
-      {
-         WObj.jsxFunction_send(content);
-      }
-
-// Generating method code for jsxFunction_setRequestHeader
-      public virtual void JsxFunction_setRequestHeader(string name, string value)
-      {
-         WObj.jsxFunction_setRequestHeader(name, value);
-      }
-
-// Generating method code for jsxFunction_overrideMimeType
-      public virtual void JsxFunction_overrideMimeType(string mimeType)
-      {
-         WObj.jsxFunction_overrideMimeType(mimeType);
+         WObj.overrideMimeType(mimeType);
       }
 
    }

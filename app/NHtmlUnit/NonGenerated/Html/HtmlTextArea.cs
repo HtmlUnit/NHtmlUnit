@@ -13,5 +13,6 @@ namespace NHtmlUnit.Html
 {
     public partial class HtmlTextArea
     {
+        public IPage Page { get; private set; }
     }
 }

@@ -124,6 +124,8 @@ namespace NHtmlUnit.Generator
                     targetType, typeof(Iterable), "IEnumerable", "IterableWrapper", "ShallowIterableWrapper"),
                 new ListTypeMapEntry(
                     targetType, typeof(NodeList), "IList", "NodeListWrapper", "SHALLOW NODELIST NOT SUPPORTED!"),
+                //new ListTypeMapEntry(
+                //    targetType, typeof(Map), "IDictionary", "MapWrapper", "ShallowMapWrapper"),
             };
 
             return mappings.FirstOrDefault(m => m.IsValidMapping);
@@ -373,6 +375,9 @@ namespace NHtmlUnit.Generator
             if (type == typeof(NodeList))
                 Console.WriteLine("BREAK!!");
 
+            if (type == typeof(Map))
+                Console.WriteLine("BREAK!!");
+
             if (type == null)
                 throw new ArgumentNullException("type");
 
@@ -393,7 +398,8 @@ namespace NHtmlUnit.Generator
             Type returnedType = null;
 
             if (javaType is WildcardTypeImpl ||
-                javaType is TypeVariableImpl)
+                javaType is TypeVariableImpl ||
+                javaType is ParameterizedTypeImpl)
             {
                 // Wildcard <?> parameter, this means the method itself is generic.
                 // We don't know how to handle this yet, so just return object. ???

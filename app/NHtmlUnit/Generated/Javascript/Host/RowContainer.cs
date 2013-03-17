@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,46 +26,49 @@ namespace NHtmlUnit.Javascript.Host
       public RowContainer()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.RowContainer()) {}
 
-// Generating method code for jsxGet_rows
-      public virtual object JsxGet_rows()
+
+      public System.Object Rows
       {
-         return WObj.jsxGet_rows();
+         get
+         {
+            return WObj.getRows();
+         }
       }
 
+      public System.String Align
+      {
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
 // Generating method code for insertRow
       public virtual object InsertRow(int index)
       {
          return WObj.insertRow(index);
       }
 
-// Generating method code for jsxFunction_deleteRow
-      public virtual void JsxFunction_deleteRow(int rowIndex)
+// Generating method code for deleteRow
+      public virtual void DeleteRow(int rowIndex)
       {
-         WObj.jsxFunction_deleteRow(rowIndex);
+         WObj.deleteRow(rowIndex);
       }
 
-// Generating method code for jsxFunction_insertRow
-      public virtual object JsxFunction_insertRow(object index)
+// Generating method code for insertRow
+      public virtual object InsertRow(object index)
       {
-         return WObj.jsxFunction_insertRow(index);
+         return WObj.insertRow(index);
       }
 
-// Generating method code for jsxFunction_moveRow
-      public virtual object JsxFunction_moveRow(int sourceIndex, int targetIndex)
+// Generating method code for moveRow
+      public virtual object MoveRow(int sourceIndex, int targetIndex)
       {
-         return WObj.jsxFunction_moveRow(sourceIndex, targetIndex);
-      }
-
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
-      {
-         return WObj.jsxGet_align();
-      }
-
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
-      {
-         WObj.jsxSet_align(align);
+         return WObj.moveRow(sourceIndex, targetIndex);
       }
 
    }

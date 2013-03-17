@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,76 +32,79 @@ namespace NHtmlUnit.Javascript.Host
       public TextRange()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.TextRange()) {}
 
-// Generating method code for jsxGet_text
-      public virtual string JsxGet_text()
+
+      public System.String Text
       {
-         return WObj.jsxGet_text();
+         get
+         {
+            return WObj.getText();
+         }
+         set
+         {
+            WObj.setText(value);
+         }
+
       }
 
-// Generating method code for jsxSet_text
-      public virtual void JsxSet_text(string text)
+      public System.String HtmlText
       {
-         WObj.jsxSet_text(text);
+         get
+         {
+            return WObj.getHtmlText();
+         }
+      }
+// Generating method code for duplicate
+      public virtual object Duplicate()
+      {
+         return WObj.duplicate();
       }
 
-// Generating method code for jsxGet_htmlText
-      public virtual string JsxGet_htmlText()
+// Generating method code for parentElement
+      public virtual NHtmlUnit.Javascript.Host.Node ParentElement()
       {
-         return WObj.jsxGet_htmlText();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.parentElement());
       }
 
-// Generating method code for jsxFunction_duplicate
-      public virtual object JsxFunction_duplicate()
+// Generating method code for collapse
+      public virtual void Collapse(bool toStart)
       {
-         return WObj.jsxFunction_duplicate();
+         WObj.collapse(toStart);
       }
 
-// Generating method code for jsxFunction_parentElement
-      public virtual object JsxFunction_parentElement()
+// Generating method code for select
+      public virtual void Select()
       {
-         return WObj.jsxFunction_parentElement();
+         WObj.select();
       }
 
-// Generating method code for jsxFunction_collapse
-      public virtual void JsxFunction_collapse(bool toStart)
+// Generating method code for moveStart
+      public virtual int MoveStart(string unit, object count)
       {
-         WObj.jsxFunction_collapse(toStart);
+         return WObj.moveStart(unit, count);
       }
 
-// Generating method code for jsxFunction_select
-      public virtual void JsxFunction_select()
+// Generating method code for moveEnd
+      public virtual int MoveEnd(string unit, object count)
       {
-         WObj.jsxFunction_select();
+         return WObj.moveEnd(unit, count);
       }
 
-// Generating method code for jsxFunction_moveStart
-      public virtual int JsxFunction_moveStart(string unit, object count)
+// Generating method code for moveToElementText
+      public virtual void MoveToElementText(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
       {
-         return WObj.jsxFunction_moveStart(unit, count);
+         WObj.moveToElementText((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject);
       }
 
-// Generating method code for jsxFunction_moveEnd
-      public virtual int JsxFunction_moveEnd(string unit, object count)
+// Generating method code for inRange
+      public virtual bool InRange(NHtmlUnit.Javascript.Host.TextRange other)
       {
-         return WObj.jsxFunction_moveEnd(unit, count);
+         return WObj.inRange((com.gargoylesoftware.htmlunit.javascript.host.TextRange)other.WrappedObject);
       }
 
-// Generating method code for jsxFunction_moveToElementText
-      public virtual void JsxFunction_moveToElementText(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
+// Generating method code for setEndPoint
+      public virtual void SetEndPoint(string type, NHtmlUnit.Javascript.Host.TextRange other)
       {
-         WObj.jsxFunction_moveToElementText((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_inRange
-      public virtual bool JsxFunction_inRange(NHtmlUnit.Javascript.Host.TextRange other)
-      {
-         return WObj.jsxFunction_inRange((com.gargoylesoftware.htmlunit.javascript.host.TextRange)other.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_setEndPoint
-      public virtual void JsxFunction_setEndPoint(string type, NHtmlUnit.Javascript.Host.TextRange other)
-      {
-         WObj.jsxFunction_setEndPoint(type, (com.gargoylesoftware.htmlunit.javascript.host.TextRange)other.WrappedObject);
+         WObj.setEndPoint(type, (com.gargoylesoftware.htmlunit.javascript.host.TextRange)other.WrappedObject);
       }
 
    }

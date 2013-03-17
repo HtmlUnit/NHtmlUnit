@@ -26,7 +26,7 @@ namespace IntegrationTests
         public void DoWikipediaSearch()
         {
             // Note that this test works against live wikipedia.org and requires an active Internet connection
-            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_3_6)
+            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_17)
             {
                 JavaScriptEnabled = true,
                 ActiveXNative = true,
@@ -45,7 +45,7 @@ namespace IntegrationTests
 
             submitButton2.Click();
 
-            HtmlElement submitButton = page.GetElementByName("go");
+            HtmlElement submitButton = page.GetElementByName("go") as HtmlElement;
 
             HtmlPage nextPage = submitButton.Click<HtmlPage>();
 

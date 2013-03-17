@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,42 +26,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLObjectElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLObjectElement()) {}
 
-// Generating method code for jsxSet_classid
-      public virtual void JsxSet_classid(string classid)
+
+      public System.String Classid
       {
-         WObj.jsxSet_classid(classid);
+         get
+         {
+            return WObj.getClassid();
+         }
+         set
+         {
+            WObj.setClassid(value);
+         }
+
       }
 
-// Generating method code for jsxGet_alt
-      public virtual string JsxGet_alt()
+      public System.String Alt
       {
-         return WObj.jsxGet_alt();
+         get
+         {
+            return WObj.getAlt();
+         }
+         set
+         {
+            WObj.setAlt(value);
+         }
+
       }
 
-// Generating method code for jsxSet_alt
-      public virtual void JsxSet_alt(string alt)
+      public System.String Border
       {
-         WObj.jsxSet_alt(alt);
-      }
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
 
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
-      {
-         return WObj.jsxGet_border();
       }
-
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
-      }
-
-// Generating method code for jsxGet_classid
-      public virtual string JsxGet_classid()
-      {
-         return WObj.jsxGet_classid();
-      }
-
    }
 
 

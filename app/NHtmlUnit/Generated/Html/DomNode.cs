@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,14 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String NamespaceURI
-      {
-         get
-         {
-            return WObj.getNamespaceURI();
-         }
-      }
-
       public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptObject
       {
          get
@@ -45,6 +37,23 @@ namespace NHtmlUnit.Html
 
       }
 
+      public System.String NamespaceURI
+      {
+         get
+         {
+            return WObj.getNamespaceURI();
+         }
+      }
+
+      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
+      {
+         get
+         {
+            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getHtmlElementDescendants());
+         }
+       }
+
       public NHtmlUnit.SgmlPage Page
       {
          get
@@ -54,19 +63,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public System.String ReadyState
-      {
-         get
-         {
-            return WObj.getReadyState();
-         }
-         set
-         {
-            WObj.setReadyState(value);
-         }
-
-      }
 
       public NHtmlUnit.Html.DomNode ParentNode
       {
@@ -194,15 +190,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
-      {
-         get
-         {
-            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getHtmlElementDescendants());
-         }
-       }
-
       public NHtmlUnit.Html.DomNode PreviousSibling
       {
          get
@@ -285,6 +272,19 @@ namespace NHtmlUnit.Html
       }
 
 
+      public System.String ReadyState
+      {
+         get
+         {
+            return WObj.getReadyState();
+         }
+         set
+         {
+            WObj.setReadyState(value);
+         }
+
+      }
+
       public System.String CanonicalXPath
       {
          get
@@ -292,6 +292,19 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
+// Generating method code for getByXPath
+      public virtual IList<System.Object> GetByXPath(string xpathExpr)
+      {
+
+         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
+      }
+
+// Generating method code for asText
+      public virtual string AsText()
+      {
+         return WObj.asText();
+      }
+
 // Generating method code for isAncestorOf
       public virtual bool IsAncestorOf(NHtmlUnit.Html.DomNode node)
       {
@@ -346,11 +359,11 @@ namespace NHtmlUnit.Html
          WObj.replace((com.gargoylesoftware.htmlunit.html.DomNode)newNode.WrappedObject);
       }
 
-// Generating method code for getByXPath
-      public virtual IList<System.Object> GetByXPath(string xpathExpr)
+// Generating method code for querySelectorAll
+      public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
       {
 
-         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
+         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
       }
 
 // Generating method code for isAncestorOfAny
@@ -443,12 +456,6 @@ namespace NHtmlUnit.Html
          return WObj.isDisplayed();
       }
 
-// Generating method code for asText
-      public virtual string AsText()
-      {
-         return WObj.asText();
-      }
-
 // Generating method code for asXml
       public virtual string AsXml()
       {
@@ -485,10 +492,16 @@ namespace NHtmlUnit.Html
          WObj.removeDomChangeListener((com.gargoylesoftware.htmlunit.html.DomChangeListener)listener.WrappedObject);
       }
 
-// Generating method code for processImportNode
-      public virtual void ProcessImportNode()
+// Generating method code for querySelector
+      public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
       {
-         WObj.processImportNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.querySelector(selectors));
+      }
+
+// Generating method code for processImportNode
+      public virtual void ProcessImportNode(NHtmlUnit.Javascript.Host.Document doc)
+      {
+         WObj.processImportNode((com.gargoylesoftware.htmlunit.javascript.host.Document)doc.WrappedObject);
       }
 
    }

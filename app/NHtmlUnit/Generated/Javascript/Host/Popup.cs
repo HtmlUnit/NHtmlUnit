@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,28 +26,32 @@ namespace NHtmlUnit.Javascript.Host
       public Popup()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Popup()) {}
 
-// Generating method code for jsxGet_document
-      public virtual object JsxGet_document()
+
+      public System.Object Document
       {
-         return WObj.jsxGet_document();
+         get
+         {
+            return WObj.getDocument();
+         }
       }
 
-// Generating method code for jsxGet_isOpen
-      public virtual bool JsxGet_isOpen()
+      public System.Boolean IsOpen
       {
-         return WObj.jsxGet_isOpen();
+         get
+         {
+            return WObj.getIsOpen();
+         }
+      }
+// Generating method code for hide
+      public virtual void Hide()
+      {
+         WObj.hide();
       }
 
-// Generating method code for jsxFunction_hide
-      public virtual void JsxFunction_hide()
+// Generating method code for show
+      public virtual void Show()
       {
-         WObj.jsxFunction_hide();
-      }
-
-// Generating method code for jsxFunction_show
-      public virtual void JsxFunction_show()
-      {
-         WObj.jsxFunction_show();
+         WObj.show();
       }
 
    }

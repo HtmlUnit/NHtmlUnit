@@ -13,5 +13,6 @@ namespace NHtmlUnit.Html
 {
     public partial class HtmlPasswordInput
     {
+        public IPage Page { get; private set; }
     }
 }

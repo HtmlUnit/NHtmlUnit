@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,16 +23,30 @@ namespace NHtmlUnit.Javascript
          get { return (com.gargoylesoftware.htmlunit.javascript.NamedNodeMap)WrappedObject; }
       }
 
-      public NamedNodeMap(NHtmlUnit.Html.DomElement element)
-         : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap((com.gargoylesoftware.htmlunit.html.DomElement)element.WrappedObject)) {}
-
       public NamedNodeMap()
          : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap()) {}
 
-// Generating method code for jsxFunction_getNamedItem
-      public virtual object JsxFunction_getNamedItem(string name)
+      public NamedNodeMap(NHtmlUnit.Html.DomElement element)
+         : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap((com.gargoylesoftware.htmlunit.html.DomElement)element.WrappedObject)) {}
+
+
+      public System.Int32 Length
       {
-         return WObj.jsxFunction_getNamedItem(name);
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual object Item(int index)
+      {
+         return WObj.item(index);
+      }
+
+// Generating method code for getNamedItem
+      public virtual object GetNamedItem(string name)
+      {
+         return WObj.getNamedItem(name);
       }
 
 // Generating method code for getNamedItemWithoutSytheticClassAttr
@@ -41,34 +55,16 @@ namespace NHtmlUnit.Javascript
          return WObj.getNamedItemWithoutSytheticClassAttr(name);
       }
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item(int index)
-      {
-         return WObj.jsxFunction_item(index);
-      }
-
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
          return WObj.getWithFallback(name);
       }
 
-// Generating method code for jsxFunction_setNamedItem
-      public virtual void JsxFunction_setNamedItem(NHtmlUnit.Javascript.Host.Node node)
+// Generating method code for removeNamedItem
+      public virtual void RemoveNamedItem(string name)
       {
-         WObj.jsxFunction_setNamedItem((com.gargoylesoftware.htmlunit.javascript.host.Node)node.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_removeNamedItem
-      public virtual void JsxFunction_removeNamedItem(string name)
-      {
-         WObj.jsxFunction_removeNamedItem(name);
-      }
-
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
+         WObj.removeNamedItem(name);
       }
 
    }
