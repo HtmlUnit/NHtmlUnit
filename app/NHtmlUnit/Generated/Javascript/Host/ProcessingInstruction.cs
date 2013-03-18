@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,24 +26,27 @@ namespace NHtmlUnit.Javascript.Host
       public ProcessingInstruction()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.ProcessingInstruction()) {}
 
-// Generating method code for jsxGet_target
-      public virtual string JsxGet_target()
+
+      public System.String Target
       {
-         return WObj.jsxGet_target();
+         get
+         {
+            return WObj.getTarget();
+         }
       }
 
-// Generating method code for jsxGet_data
-      public virtual string JsxGet_data()
+      public System.String Data
       {
-         return WObj.jsxGet_data();
-      }
+         get
+         {
+            return WObj.getData();
+         }
+         set
+         {
+            WObj.setData(value);
+         }
 
-// Generating method code for jsxSet_data
-      public virtual void JsxSet_data(string data)
-      {
-         WObj.jsxSet_data(data);
       }
-
    }
 
 

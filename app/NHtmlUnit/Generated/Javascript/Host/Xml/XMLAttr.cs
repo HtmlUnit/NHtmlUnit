@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLAttr()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLAttr()) {}
 
-// Generating method code for jsxGet_text
-      public virtual string JsxGet_text()
-      {
-         return WObj.jsxGet_text();
-      }
 
-// Generating method code for jsxSet_text
-      public virtual void JsxSet_text(string value)
+      public System.String Text
       {
-         WObj.jsxSet_text(value);
-      }
+         get
+         {
+            return WObj.getText();
+         }
+         set
+         {
+            WObj.setText(value);
+         }
 
+      }
    }
 
 

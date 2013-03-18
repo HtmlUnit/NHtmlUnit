@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLParagraphElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLParagraphElement()) {}
 
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
-      {
-         return WObj.jsxGet_align();
-      }
 
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
+      public System.String Align
       {
-         WObj.jsxSet_align(align);
-      }
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
 
+      }
    }
 
 

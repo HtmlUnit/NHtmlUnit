@@ -14,8 +14,8 @@ using System.Runtime.InteropServices;
 
 [assembly : AssemblyCompany("OKB AS")]
 [assembly : AssemblyProduct("NHtmlUnit")]
-[assembly : AssemblyCopyright("Copyright © OKB AS 2011")]
-[assembly : AssemblyTrademark("OKB AS 2011")]
+[assembly : AssemblyCopyright("Copyright © OKB AS 2013")]
+[assembly : AssemblyTrademark("OKB AS 2013")]
 [assembly : ComVisible(false)]
-[assembly : AssemblyVersion("2.9.0.0")]
-[assembly : AssemblyFileVersion("2.9.0.0")]
+[assembly : AssemblyVersion("2.12.0.0")]
+[assembly : AssemblyFileVersion("2.12.0.0")]

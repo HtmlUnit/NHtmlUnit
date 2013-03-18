@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,12 +25,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLButtonElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLButtonElement()) {}
-
-// Generating method code for jsxSet_type
-      public virtual void JsxSet_type(string newType)
-      {
-         WObj.jsxSet_type(newType);
-      }
 
    }
 

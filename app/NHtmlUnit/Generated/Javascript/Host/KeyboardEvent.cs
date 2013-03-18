@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,28 +23,35 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.KeyboardEvent)WrappedObject; }
       }
 
-      public KeyboardEvent(NHtmlUnit.Html.DomNode domNode, string type, int character, bool shiftKey, bool ctrlKey, bool altKey)
+      public KeyboardEvent(NHtmlUnit.Html.DomNode domNode, string type, System.Char character, bool shiftKey, bool ctrlKey, bool altKey)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.KeyboardEvent((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type, character, shiftKey, ctrlKey, altKey)) {}
+
+      public KeyboardEvent(NHtmlUnit.Html.DomNode domNode, string type, int keyCode, bool shiftKey, bool ctrlKey, bool altKey)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.KeyboardEvent((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type, keyCode, shiftKey, ctrlKey, altKey)) {}
 
       public KeyboardEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.KeyboardEvent()) {}
 
-// Generating method code for jsxFunction_initKeyEvent
-      public virtual void JsxFunction_initKeyEvent(string type, bool bubbles, bool cancelable, object view, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int keyCode, int charCode)
+
+      public System.Int32 CharCode
       {
-         WObj.jsxFunction_initKeyEvent(type, bubbles, cancelable, view, ctrlKey, altKey, shiftKey, metaKey, keyCode, charCode);
+         get
+         {
+            return WObj.getCharCode();
+         }
       }
 
-// Generating method code for jsxGet_charCode
-      public virtual int JsxGet_charCode()
+      public System.Object Which
       {
-         return WObj.jsxGet_charCode();
+         get
+         {
+            return WObj.getWhich();
+         }
       }
-
-// Generating method code for jsxGet_which
-      public virtual object JsxGet_which()
+// Generating method code for initKeyEvent
+      public virtual void InitKeyEvent(string type, bool bubbles, bool cancelable, object view, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int keyCode, int charCode)
       {
-         return WObj.jsxGet_which();
+         WObj.initKeyEvent(type, bubbles, cancelable, view, ctrlKey, altKey, shiftKey, metaKey, keyCode, charCode);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlInput : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
+   public partial class HtmlInput : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
    {
       static HtmlInput()
       {
@@ -29,6 +29,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getValueAttribute();
+         }
+      }
+
+      public System.String TypeAttribute
+      {
+         get
+         {
+            return WObj.getTypeAttribute();
          }
       }
 
@@ -53,14 +61,6 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getSubmitKeyValuePairs();
-         }
-      }
-
-      public System.String TypeAttribute
-      {
-         get
-         {
-            return WObj.getTypeAttribute();
          }
       }
 
@@ -213,6 +213,12 @@ namespace NHtmlUnit.Html
                WObj.getPreviousNames());
          }
        }
+// Generating method code for isChecked
+      public virtual bool IsChecked()
+      {
+         return WObj.isChecked();
+      }
+
 // Generating method code for setValueAttribute
       public virtual NHtmlUnit.IPage SetValueAttribute(string newValue)
       {
@@ -241,12 +247,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage SetChecked(bool isChecked)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setChecked(isChecked));
-      }
-
-// Generating method code for isChecked
-      public virtual bool IsChecked()
-      {
-         return WObj.isChecked();
       }
 
 // Generating method code for isReadOnly

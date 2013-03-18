@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,6 +37,16 @@ namespace NHtmlUnit.Javascript
       }
 
 
+      public NHtmlUnit.Javascript.Configuration.JavaScriptConfiguration JavaScriptConfiguration
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Configuration.JavaScriptConfiguration>(
+               WObj.getJavaScriptConfiguration());
+         }
+      }
+
+
       public NHtmlUnit.WebClient WebClient
       {
          get
@@ -54,6 +64,24 @@ namespace NHtmlUnit.Javascript
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Background.IJavaScriptExecutor>(
                WObj.getJavaScriptExecutor());
          }
+      }
+
+// Generating method code for registerWindowAndMaybeStartEventLoop
+      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for shutdownJavaScriptExecutor
+      public virtual void ShutdownJavaScriptExecutor()
+      {
+         WObj.shutdownJavaScriptExecutor();
       }
 
 // Generating method code for processPostponedActions
@@ -116,28 +144,10 @@ namespace NHtmlUnit.Javascript
          return WObj.callFunction((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, function, scope, thisObject, args);
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for registerWindowAndMaybeStartEventLoop
-      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
 // Generating method code for pumpEventLoop
       public virtual int PumpEventLoop(System.Int64 timeoutMillis)
       {
          return WObj.pumpEventLoop(timeoutMillis);
-      }
-
-// Generating method code for shutdownJavaScriptExecutor
-      public virtual void ShutdownJavaScriptExecutor()
-      {
-         WObj.shutdownJavaScriptExecutor();
       }
 
    }

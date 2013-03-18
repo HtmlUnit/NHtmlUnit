@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlTable : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class HtmlTable : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlTable()
       {
@@ -23,6 +23,23 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlTable)WrappedObject; }
       }
 
+
+      public IList<NHtmlUnit.Html.HtmlTableRow> Rows
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.Html.HtmlTableRow>(
+               WObj.getRows());
+         }
+       }
+
+      public System.Int32 RowCount
+      {
+         get
+         {
+            return WObj.getRowCount();
+         }
+      }
 
       public System.String CaptionText
       {
@@ -51,23 +68,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public IList<NHtmlUnit.Html.HtmlTableRow> Rows
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.Html.HtmlTableRow>(
-               WObj.getRows());
-         }
-       }
-
-      public System.Int32 RowCount
-      {
-         get
-         {
-            return WObj.getRowCount();
-         }
-      }
 
       public IList<NHtmlUnit.Html.HtmlTableBody> Bodies
       {

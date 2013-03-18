@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,60 +23,64 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.ClientRect)WrappedObject; }
       }
 
-      public ClientRect()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect()) {}
-
       public ClientRect(int bottom, int left, int right, int top)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect(bottom, left, right, top)) {}
 
-// Generating method code for jsxSet_bottom
-      public virtual void JsxSet_bottom(int bottom)
+      public ClientRect()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect()) {}
+
+
+      public System.Int32 Bottom
       {
-         WObj.jsxSet_bottom(bottom);
+         get
+         {
+            return WObj.getBottom();
+         }
+         set
+         {
+            WObj.setBottom(value);
+         }
+
       }
 
-// Generating method code for jsxGet_bottom
-      public virtual int JsxGet_bottom()
+      public System.Int32 Left
       {
-         return WObj.jsxGet_bottom();
+         get
+         {
+            return WObj.getLeft();
+         }
+         set
+         {
+            WObj.setLeft(value);
+         }
+
       }
 
-// Generating method code for jsxSet_left
-      public virtual void JsxSet_left(int left)
+      public System.Int32 Right
       {
-         WObj.jsxSet_left(left);
+         get
+         {
+            return WObj.getRight();
+         }
+         set
+         {
+            WObj.setRight(value);
+         }
+
       }
 
-// Generating method code for jsxGet_left
-      public virtual int JsxGet_left()
+      public System.Int32 Top
       {
-         return WObj.jsxGet_left();
-      }
+         get
+         {
+            return WObj.getTop();
+         }
+         set
+         {
+            WObj.setTop(value);
+         }
 
-// Generating method code for jsxSet_right
-      public virtual void JsxSet_right(int right)
-      {
-         WObj.jsxSet_right(right);
       }
-
-// Generating method code for jsxGet_right
-      public virtual int JsxGet_right()
-      {
-         return WObj.jsxGet_right();
-      }
-
-// Generating method code for jsxSet_top
-      public virtual void JsxSet_top(int top)
-      {
-         WObj.jsxSet_top(top);
-      }
-
-// Generating method code for jsxGet_top
-      public virtual int JsxGet_top()
-      {
-         return WObj.jsxGet_top();
-      }
-
    }
 
 

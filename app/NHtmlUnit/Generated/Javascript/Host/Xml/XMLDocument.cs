@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,101 +23,107 @@ namespace NHtmlUnit.Javascript.Host.Xml
          get { return (com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument)WrappedObject; }
       }
 
-      public XMLDocument(NHtmlUnit.IWebWindow enclosingWindow)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument((com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
-
       public XMLDocument()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
 
-// Generating method code for jsxFunction_loadXML
-      public virtual bool JsxFunction_loadXML(string strXML)
+      public XMLDocument(NHtmlUnit.IWebWindow enclosingWindow)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument((com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
+
+
+      public NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError ParseError
       {
-         return WObj.jsxFunction_loadXML(strXML);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError>(
+               WObj.getParseError());
+         }
       }
 
-// Generating method code for jsxGet_parseError
-      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError JsxGet_parseError()
+
+      public System.Boolean Async
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError>(WObj.jsxGet_parseError());
+         get
+         {
+            return WObj.getAsync();
+         }
+         set
+         {
+            WObj.setAsync(value);
+         }
+
       }
 
-// Generating method code for jsxFunction_selectNodes
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxFunction_selectNodes(string expression)
+      public System.Boolean PreserveWhiteSpace
       {
+         get
+         {
+            return WObj.getPreserveWhiteSpace();
+         }
+         set
+         {
+            WObj.setPreserveWhiteSpace(value);
+         }
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxFunction_selectNodes(expression));
+      }
+// Generating method code for loadXML
+      public virtual bool LoadXML(string strXML)
+      {
+         return WObj.loadXML(strXML);
       }
 
-// Generating method code for jsxSet_async
-      public virtual void JsxSet_async(bool async)
+// Generating method code for selectNodes
+      public virtual IList<NHtmlUnit.W3C.Dom.INode> SelectNodes(string expression)
       {
-         WObj.jsxSet_async(async);
+
+         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.selectNodes(expression));
       }
 
-// Generating method code for jsxGet_async
-      public virtual bool JsxGet_async()
+// Generating method code for load
+      public virtual bool Load(string xmlSource)
       {
-         return WObj.jsxGet_async();
+         return WObj.load(xmlSource);
       }
 
-// Generating method code for jsxFunction_load
-      public virtual bool JsxFunction_load(string xmlSource)
+// Generating method code for setProperty
+      public virtual void SetProperty(string name, string value)
       {
-         return WObj.jsxFunction_load(xmlSource);
+         WObj.setProperty(name, value);
       }
 
-// Generating method code for jsxGet_preserveWhiteSpace
-      public virtual bool JsxGet_preserveWhiteSpace()
+// Generating method code for selectSingleNode
+      public virtual object SelectSingleNode(string expression)
       {
-         return WObj.jsxGet_preserveWhiteSpace();
+         return WObj.selectSingleNode(expression);
       }
 
-// Generating method code for jsxSet_preserveWhiteSpace
-      public virtual void JsxSet_preserveWhiteSpace(bool preserveWhiteSpace)
+// Generating method code for getElementById
+      public virtual object GetElementById(string id)
       {
-         WObj.jsxSet_preserveWhiteSpace(preserveWhiteSpace);
+         return WObj.getElementById(id);
       }
 
-// Generating method code for jsxFunction_setProperty
-      public virtual void JsxFunction_setProperty(string name, string value)
+// Generating method code for nodeFromID
+      public virtual object NodeFromID(string id)
       {
-         WObj.jsxFunction_setProperty(name, value);
+         return WObj.nodeFromID(id);
       }
 
-// Generating method code for jsxFunction_selectSingleNode
-      public virtual object JsxFunction_selectSingleNode(string expression)
+// Generating method code for createProcessingInstruction
+      public virtual object CreateProcessingInstruction(string target, string data)
       {
-         return WObj.jsxFunction_selectSingleNode(expression);
+         return WObj.createProcessingInstruction(target, data);
       }
 
-// Generating method code for jsxFunction_getElementById
-      public virtual object JsxFunction_getElementById(string id)
+// Generating method code for createCDATASection
+      public virtual object CreateCDATASection(string data)
       {
-         return WObj.jsxFunction_getElementById(id);
+         return WObj.createCDATASection(data);
       }
 
-// Generating method code for jsxFunction_nodeFromID
-      public virtual object JsxFunction_nodeFromID(string id)
+// Generating method code for createNode
+      public virtual object CreateNode(object type, string name, object namespaceURI)
       {
-         return WObj.jsxFunction_nodeFromID(id);
-      }
-
-// Generating method code for jsxFunction_createProcessingInstruction
-      public virtual object JsxFunction_createProcessingInstruction(string target, string data)
-      {
-         return WObj.jsxFunction_createProcessingInstruction(target, data);
-      }
-
-// Generating method code for jsxFunction_createCDATASection
-      public virtual object JsxFunction_createCDATASection(string data)
-      {
-         return WObj.jsxFunction_createCDATASection(data);
-      }
-
-// Generating method code for jsxFunction_createNode
-      public virtual object JsxFunction_createNode(object type, string name, object namespaceURI)
-      {
-         return WObj.jsxFunction_createNode(type, name, namespaceURI);
+         return WObj.createNode(type, name, namespaceURI);
       }
 
    }

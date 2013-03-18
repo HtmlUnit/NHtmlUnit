@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -40,6 +40,14 @@ namespace NHtmlUnit.Html
 
       }
 
+      public System.Boolean Specified
+      {
+         get
+         {
+            return WObj.getSpecified();
+         }
+      }
+
       public System.String Name
       {
          get
@@ -57,14 +65,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public System.Boolean Specified
-      {
-         get
-         {
-            return WObj.getSpecified();
-         }
-      }
 
       public NHtmlUnit.W3C.Dom.ITypeInfo SchemaTypeInfo
       {

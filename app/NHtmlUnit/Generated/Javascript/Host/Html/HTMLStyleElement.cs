@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,16 +26,24 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLStyleElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLStyleElement()) {}
 
-// Generating method code for jsxGet_sheet
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet JsxGet_sheet()
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet Sheet
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.jsxGet_sheet());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
+               WObj.getSheet());
+         }
       }
 
-// Generating method code for jsxGet_styleSheet
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet JsxGet_styleSheet()
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet StyleSheet
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.jsxGet_styleSheet());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
+               WObj.getStyleSheet());
+         }
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -89,16 +89,40 @@ namespace NHtmlUnit.Html.Impl
             return WObj.getStartOffset();
          }
       }
+// Generating method code for cloneContents
+      public virtual NHtmlUnit.Html.DomDocumentFragment CloneContents()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.cloneContents());
+      }
+
+// Generating method code for deleteContents
+      public virtual void DeleteContents()
+      {
+         WObj.deleteContents();
+      }
+
+// Generating method code for setStart
+      public virtual void SetStart(NHtmlUnit.W3C.Dom.INode refNode, int offset)
+      {
+         WObj.setStart((org.w3c.dom.Node)refNode.WrappedObject, offset);
+      }
+
 // Generating method code for extractContents
       public virtual NHtmlUnit.Html.DomDocumentFragment ExtractContents()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.extractContents());
       }
 
-// Generating method code for cloneContents
-      public virtual NHtmlUnit.W3C.Dom.IDocumentFragment CloneContents()
+// Generating method code for insertNode
+      public virtual void InsertNode(NHtmlUnit.W3C.Dom.INode newNode)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IDocumentFragment>(WObj.cloneContents());
+         WObj.insertNode((org.w3c.dom.Node)newNode.WrappedObject);
+      }
+
+// Generating method code for setEnd
+      public virtual void SetEnd(NHtmlUnit.W3C.Dom.INode refNode, int offset)
+      {
+         WObj.setEnd((org.w3c.dom.Node)refNode.WrappedObject, offset);
       }
 
 // Generating method code for cloneRange
@@ -119,22 +143,10 @@ namespace NHtmlUnit.Html.Impl
          return WObj.compareBoundaryPoints(how, (org.w3c.dom.ranges.Range)sourceRange.WrappedObject);
       }
 
-// Generating method code for deleteContents
-      public virtual void DeleteContents()
-      {
-         WObj.deleteContents();
-      }
-
 // Generating method code for detach
       public virtual void Detach()
       {
          WObj.detach();
-      }
-
-// Generating method code for insertNode
-      public virtual void InsertNode(NHtmlUnit.W3C.Dom.INode newNode)
-      {
-         WObj.insertNode((org.w3c.dom.Node)newNode.WrappedObject);
       }
 
 // Generating method code for selectNode
@@ -147,18 +159,6 @@ namespace NHtmlUnit.Html.Impl
       public virtual void SelectNodeContents(NHtmlUnit.W3C.Dom.INode node)
       {
          WObj.selectNodeContents((org.w3c.dom.Node)node.WrappedObject);
-      }
-
-// Generating method code for setEnd
-      public virtual void SetEnd(NHtmlUnit.W3C.Dom.INode refNode, int offset)
-      {
-         WObj.setEnd((org.w3c.dom.Node)refNode.WrappedObject, offset);
-      }
-
-// Generating method code for setStart
-      public virtual void SetStart(NHtmlUnit.W3C.Dom.INode refNode, int offset)
-      {
-         WObj.setStart((org.w3c.dom.Node)refNode.WrappedObject, offset);
       }
 
 // Generating method code for surroundContents

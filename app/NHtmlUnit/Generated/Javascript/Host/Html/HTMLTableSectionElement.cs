@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,40 +26,42 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableSectionElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableSectionElement()) {}
 
-// Generating method code for jsxGet_vAlign
-      public virtual string JsxGet_vAlign()
+
+      public System.String Ch
       {
-         return WObj.jsxGet_vAlign();
+         get
+         {
+            return WObj.getCh();
+         }
+         set
+         {
+            WObj.setCh(value);
+         }
+
       }
 
-// Generating method code for jsxSet_vAlign
-      public virtual void JsxSet_vAlign(object vAlign)
+      public System.String ChOff
       {
-         WObj.jsxSet_vAlign(vAlign);
+         get
+         {
+            return WObj.getChOff();
+         }
+         set
+         {
+            WObj.setChOff(value);
+         }
+
+      }
+// Generating method code for getVAlign
+      public virtual string GetVAlign()
+      {
+         return WObj.getVAlign();
       }
 
-// Generating method code for jsxGet_ch
-      public virtual string JsxGet_ch()
+// Generating method code for setVAlign
+      public virtual void SetVAlign(object vAlign)
       {
-         return WObj.jsxGet_ch();
-      }
-
-// Generating method code for jsxSet_ch
-      public virtual void JsxSet_ch(string ch)
-      {
-         WObj.jsxSet_ch(ch);
-      }
-
-// Generating method code for jsxGet_chOff
-      public virtual string JsxGet_chOff()
-      {
-         return WObj.jsxGet_chOff();
-      }
-
-// Generating method code for jsxSet_chOff
-      public virtual void JsxSet_chOff(string chOff)
-      {
-         WObj.jsxSet_chOff(chOff);
+         WObj.setVAlign(vAlign);
       }
 
    }

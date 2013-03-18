@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,30 +23,36 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Plugin)WrappedObject; }
       }
 
-      public Plugin(string name, string description, string filename)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin(name, description, filename)) {}
-
       public Plugin()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin()) {}
 
-// Generating method code for jsxGet_description
-      public virtual string JsxGet_description()
+      public Plugin(string name, string description, string filename)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin(name, description, filename)) {}
+
+
+      public System.String Description
       {
-         return WObj.jsxGet_description();
+         get
+         {
+            return WObj.getDescription();
+         }
       }
 
-// Generating method code for jsxGet_filename
-      public virtual string JsxGet_filename()
+      public System.String Filename
       {
-         return WObj.jsxGet_filename();
+         get
+         {
+            return WObj.getFilename();
+         }
       }
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+      public System.String Name
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getName();
+         }
       }
-
    }
 
 

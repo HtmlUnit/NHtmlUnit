@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,52 +26,60 @@ namespace NHtmlUnit.Javascript.Host
       public History()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.History()) {}
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+
+      public System.Int32 Length
       {
-         return WObj.jsxGet_length();
+         get
+         {
+            return WObj.getLength();
+         }
       }
 
-// Generating method code for jsxFunction_item
-      public virtual string JsxFunction_item(int index)
+      public System.String Current
       {
-         return WObj.jsxFunction_item(index);
+         get
+         {
+            return WObj.getCurrent();
+         }
       }
 
-// Generating method code for jsxFunction_back
-      public virtual void JsxFunction_back()
+      public System.String Previous
       {
-         WObj.jsxFunction_back();
+         get
+         {
+            return WObj.getPrevious();
+         }
       }
 
-// Generating method code for jsxFunction_forward
-      public virtual void JsxFunction_forward()
+      public System.String Next
       {
-         WObj.jsxFunction_forward();
+         get
+         {
+            return WObj.getNext();
+         }
+      }
+// Generating method code for item
+      public virtual string Item(int index)
+      {
+         return WObj.item(index);
       }
 
-// Generating method code for jsxFunction_go
-      public virtual void JsxFunction_go(int relativeIndex)
+// Generating method code for back
+      public virtual void Back()
       {
-         WObj.jsxFunction_go(relativeIndex);
+         WObj.back();
       }
 
-// Generating method code for jsxGet_current
-      public virtual string JsxGet_current()
+// Generating method code for forward
+      public virtual void Forward()
       {
-         return WObj.jsxGet_current();
+         WObj.forward();
       }
 
-// Generating method code for jsxGet_previous
-      public virtual string JsxGet_previous()
+// Generating method code for go
+      public virtual void Go(int relativeIndex)
       {
-         return WObj.jsxGet_previous();
-      }
-
-// Generating method code for jsxGet_next
-      public virtual string JsxGet_next()
-      {
-         return WObj.jsxGet_next();
+         WObj.go(relativeIndex);
       }
 
    }

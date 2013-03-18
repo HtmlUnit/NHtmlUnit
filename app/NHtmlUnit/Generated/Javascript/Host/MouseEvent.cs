@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,58 +29,89 @@ namespace NHtmlUnit.Javascript.Host
       public MouseEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.MouseEvent()) {}
 
-// Generating method code for jsxGet_clientY
-      public virtual int JsxGet_clientY()
+
+      public System.Int32 ClientY
       {
-         return WObj.jsxGet_clientY();
+         get
+         {
+            return WObj.getClientY();
+         }
+         set
+         {
+            WObj.setClientY(value);
+         }
+
       }
 
-// Generating method code for jsxGet_clientX
-      public virtual int JsxGet_clientX()
+      public System.Int32 ClientX
       {
-         return WObj.jsxGet_clientX();
+         get
+         {
+            return WObj.getClientX();
+         }
+         set
+         {
+            WObj.setClientX(value);
+         }
+
       }
 
-// Generating method code for jsxGet_screenX
-      public virtual int JsxGet_screenX()
+      public System.Int32 ScreenX
       {
-         return WObj.jsxGet_screenX();
+         get
+         {
+            return WObj.getScreenX();
+         }
       }
 
-// Generating method code for jsxGet_screenY
-      public virtual int JsxGet_screenY()
+      public System.Int32 ScreenY
       {
-         return WObj.jsxGet_screenY();
+         get
+         {
+            return WObj.getScreenY();
+         }
       }
 
-// Generating method code for jsxGet_pageX
-      public virtual int JsxGet_pageX()
+      public System.Int32 PageX
       {
-         return WObj.jsxGet_pageX();
+         get
+         {
+            return WObj.getPageX();
+         }
       }
 
-// Generating method code for jsxGet_pageY
-      public virtual int JsxGet_pageY()
+      public System.Int32 PageY
       {
-         return WObj.jsxGet_pageY();
+         get
+         {
+            return WObj.getPageY();
+         }
       }
 
-// Generating method code for jsxGet_button
-      public virtual int JsxGet_button()
+      public System.Int32 Button
       {
-         return WObj.jsxGet_button();
+         get
+         {
+            return WObj.getButton();
+         }
+         set
+         {
+            WObj.setButton(value);
+         }
+
       }
 
-// Generating method code for jsxGet_which
-      public virtual int JsxGet_which()
+      public System.Int32 Which
       {
-         return WObj.jsxGet_which();
+         get
+         {
+            return WObj.getWhich();
+         }
       }
-
-// Generating method code for jsxFunction_initMouseEvent
-      public virtual void JsxFunction_initMouseEvent(string type, bool bubbles, bool cancelable, object view, int detail, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int button, object relatedTarget)
+// Generating method code for initMouseEvent
+      public virtual void InitMouseEvent(string type, bool bubbles, bool cancelable, object view, int detail, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int button, object relatedTarget)
       {
-         WObj.jsxFunction_initMouseEvent(type, bubbles, cancelable, view, detail, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey, button, relatedTarget);
+         WObj.initMouseEvent(type, bubbles, cancelable, view, detail, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey, button, relatedTarget);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,150 +26,162 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLAnchorElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAnchorElement()) {}
 
-// Generating method code for jsxSet_href
-      public virtual void JsxSet_href(string href)
+
+      public System.String Href
       {
-         WObj.jsxSet_href(href);
+         get
+         {
+            return WObj.getHref();
+         }
+         set
+         {
+            WObj.setHref(value);
+         }
+
       }
 
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
+      public System.String Name
       {
-         return WObj.jsxGet_href();
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
+         }
+
       }
 
-// Generating method code for jsxSet_name
-      public virtual void JsxSet_name(string name)
+      public System.String Target
       {
-         WObj.jsxSet_name(name);
+         get
+         {
+            return WObj.getTarget();
+         }
+         set
+         {
+            WObj.setTarget(value);
+         }
+
       }
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+      public System.String Rel
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getRel();
+         }
+         set
+         {
+            WObj.setRel(value);
+         }
+
       }
 
-// Generating method code for jsxSet_target
-      public virtual void JsxSet_target(string target)
+      public System.String Rev
       {
-         WObj.jsxSet_target(target);
+         get
+         {
+            return WObj.getRev();
+         }
+         set
+         {
+            WObj.setRev(value);
+         }
+
       }
 
-// Generating method code for jsxGet_target
-      public virtual string JsxGet_target()
+      public System.String Search
       {
-         return WObj.jsxGet_target();
+         get
+         {
+            return WObj.getSearch();
+         }
+         set
+         {
+            WObj.setSearch(value);
+         }
+
       }
 
-// Generating method code for jsxSet_rel
-      public virtual void JsxSet_rel(string rel)
+      public System.String Hash
       {
-         WObj.jsxSet_rel(rel);
+         get
+         {
+            return WObj.getHash();
+         }
+         set
+         {
+            WObj.setHash(value);
+         }
+
       }
 
-// Generating method code for jsxGet_rel
-      public virtual string JsxGet_rel()
+      public System.String Host
       {
-         return WObj.jsxGet_rel();
+         get
+         {
+            return WObj.getHost();
+         }
+         set
+         {
+            WObj.setHost(value);
+         }
+
       }
 
-// Generating method code for jsxSet_rev
-      public virtual void JsxSet_rev(string rel)
+      public System.String Hostname
       {
-         WObj.jsxSet_rev(rel);
+         get
+         {
+            return WObj.getHostname();
+         }
+         set
+         {
+            WObj.setHostname(value);
+         }
+
       }
 
-// Generating method code for jsxGet_rev
-      public virtual string JsxGet_rev()
+      public System.String Pathname
       {
-         return WObj.jsxGet_rev();
+         get
+         {
+            return WObj.getPathname();
+         }
+         set
+         {
+            WObj.setPathname(value);
+         }
+
       }
 
-// Generating method code for jsxGet_search
-      public virtual string JsxGet_search()
+      public System.String Port
       {
-         return WObj.jsxGet_search();
+         get
+         {
+            return WObj.getPort();
+         }
+         set
+         {
+            WObj.setPort(value);
+         }
+
       }
 
-// Generating method code for jsxSet_search
-      public virtual void JsxSet_search(string search)
+      public System.String Protocol
       {
-         WObj.jsxSet_search(search);
-      }
+         get
+         {
+            return WObj.getProtocol();
+         }
+         set
+         {
+            WObj.setProtocol(value);
+         }
 
-// Generating method code for jsxGet_hash
-      public virtual string JsxGet_hash()
-      {
-         return WObj.jsxGet_hash();
       }
-
-// Generating method code for jsxSet_hash
-      public virtual void JsxSet_hash(string hash)
-      {
-         WObj.jsxSet_hash(hash);
-      }
-
-// Generating method code for jsxGet_host
-      public virtual string JsxGet_host()
-      {
-         return WObj.jsxGet_host();
-      }
-
-// Generating method code for jsxSet_host
-      public virtual void JsxSet_host(string host)
-      {
-         WObj.jsxSet_host(host);
-      }
-
-// Generating method code for jsxGet_hostname
-      public virtual string JsxGet_hostname()
-      {
-         return WObj.jsxGet_hostname();
-      }
-
-// Generating method code for jsxSet_hostname
-      public virtual void JsxSet_hostname(string hostname)
-      {
-         WObj.jsxSet_hostname(hostname);
-      }
-
-// Generating method code for jsxGet_pathname
-      public virtual string JsxGet_pathname()
-      {
-         return WObj.jsxGet_pathname();
-      }
-
-// Generating method code for jsxSet_pathname
-      public virtual void JsxSet_pathname(string pathname)
-      {
-         WObj.jsxSet_pathname(pathname);
-      }
-
-// Generating method code for jsxGet_port
-      public virtual string JsxGet_port()
-      {
-         return WObj.jsxGet_port();
-      }
-
-// Generating method code for jsxSet_port
-      public virtual void JsxSet_port(string port)
-      {
-         WObj.jsxSet_port(port);
-      }
-
-// Generating method code for jsxGet_protocol
-      public virtual string JsxGet_protocol()
-      {
-         return WObj.jsxGet_protocol();
-      }
-
-// Generating method code for jsxSet_protocol
-      public virtual void JsxSet_protocol(string protocol)
-      {
-         WObj.jsxSet_protocol(protocol);
-      }
-
    }
 
 

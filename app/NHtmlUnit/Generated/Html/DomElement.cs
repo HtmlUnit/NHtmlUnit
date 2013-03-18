@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class DomElement : NHtmlUnit.Html.DomNamespaceNode, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class DomElement : NHtmlUnit.Html.DomNamespaceNode, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static DomElement()
       {
@@ -35,6 +35,55 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public IEnumerable<NHtmlUnit.Html.DomElement> ChildElements
+      {
+         get
+         {
+            return new IterableWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getChildElements());
+         }
+       }
+
+      public NHtmlUnit.Html.DomElement NextElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getNextElementSibling());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomElement PreviousElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getPreviousElementSibling());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomElement LastElementChild
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getLastElementChild());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomElement FirstElementChild
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getFirstElementChild());
+         }
+      }
+
+
       public java.util.Map AttributesMap
       {
          get
@@ -60,6 +109,20 @@ namespace NHtmlUnit.Html
             return WObj.getId();
          }
       }
+
+      public System.Int32 ChildElementCount
+      {
+         get
+         {
+            return WObj.getChildElementCount();
+         }
+      }
+// Generating method code for getAttribute
+      public virtual string GetAttribute(string attributeName)
+      {
+         return WObj.getAttribute(attributeName);
+      }
+
 // Generating method code for removeAttribute
       public virtual void RemoveAttribute(string attributeName)
       {
@@ -70,12 +133,6 @@ namespace NHtmlUnit.Html
       public virtual void SetAttributeNS(string namespaceURI, string qualifiedName, string attributeValue)
       {
          WObj.setAttributeNS(namespaceURI, qualifiedName, attributeValue);
-      }
-
-// Generating method code for getAttribute
-      public virtual string GetAttribute(string attributeName)
-      {
-         return WObj.getAttribute(attributeName);
       }
 
 // Generating method code for getElementsByTagNameNS

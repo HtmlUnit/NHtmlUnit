@@ -171,13 +171,31 @@ namespace NHtmlUnit.Generator
             foreach (var wc in Constructors)
                 wc.GenerateConstructorCode(sb);
 
-            foreach (var wpi in Properties.Where(x => x.Value.GetterMethod != null))
+            foreach (var wpi in Properties.Where(x => ShouldMapAsProperty(x)))
                 wpi.Value.GeneratePropertyCode(sb);
 
             foreach (var wm in Methods)
                 wm.Value.GenerateMethodCode(sb);
 
             GeneratePartialClassFooter(sb);
+        }
+
+
+        private bool ShouldMapAsProperty(KeyValuePair<string, WrapperPropInfo> x)
+        {
+            if (x.Value.GetterMethod == null)
+                return false;
+
+            if (x.Value.SetterMethod != null
+                && x.Value.GetterMethod.ReturnType != x.Value.SetterMethod.GetParameters().First().ParameterType)
+            {
+                Methods.Add(x.Value.GetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.GetterMethod));
+                Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
+
+                return false;
+            }
+
+            return true;
         }
 
 
@@ -210,7 +228,7 @@ namespace {1}
 }}
 ";
             var namespaceIncludes =
-                @"// Generated class v4, don't modify
+                @"// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -316,7 +334,7 @@ using System.Text;";
         private void GeneratePartialClassHeader(StringBuilder sb, bool isUserFile)
         {
             sb.Append(
-                @"// Generated class v4, don't modify
+                @"// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,42 +26,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLBaseFontElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLBaseFontElement()) {}
 
-// Generating method code for jsxGet_color
-      public virtual string JsxGet_color()
+
+      public System.String Color
       {
-         return WObj.jsxGet_color();
+         get
+         {
+            return WObj.getColor();
+         }
+         set
+         {
+            WObj.setColor(value);
+         }
+
       }
 
-// Generating method code for jsxSet_color
-      public virtual void JsxSet_color(string color)
+      public System.String Face
       {
-         WObj.jsxSet_color(color);
+         get
+         {
+            return WObj.getFace();
+         }
+         set
+         {
+            WObj.setFace(value);
+         }
+
       }
 
-// Generating method code for jsxGet_face
-      public virtual string JsxGet_face()
+      public System.Int32 Size
       {
-         return WObj.jsxGet_face();
-      }
+         get
+         {
+            return WObj.getSize();
+         }
+         set
+         {
+            WObj.setSize(value);
+         }
 
-// Generating method code for jsxSet_face
-      public virtual void JsxSet_face(string face)
-      {
-         WObj.jsxSet_face(face);
       }
-
-// Generating method code for jsxGet_size
-      public virtual int JsxGet_size()
-      {
-         return WObj.jsxGet_size();
-      }
-
-// Generating method code for jsxSet_size
-      public virtual void JsxSet_size(int size)
-      {
-         WObj.jsxSet_size(size);
-      }
-
    }
 
 

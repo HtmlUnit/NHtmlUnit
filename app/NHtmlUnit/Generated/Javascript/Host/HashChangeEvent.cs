@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,24 +23,28 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent)WrappedObject; }
       }
 
+      public HashChangeEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, string oldUrl, string newUrl)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, oldUrl, newUrl)) {}
+
       public HashChangeEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent()) {}
 
-      public HashChangeEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, object oldUrl, object newUrl)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, oldUrl, newUrl)) {}
 
-// Generating method code for jsxGet_oldURL
-      public virtual object JsxGet_oldURL()
+      public System.Object OldURL
       {
-         return WObj.jsxGet_oldURL();
+         get
+         {
+            return WObj.getOldURL();
+         }
       }
 
-// Generating method code for jsxGet_newURL
-      public virtual object JsxGet_newURL()
+      public System.Object NewURL
       {
-         return WObj.jsxGet_newURL();
+         get
+         {
+            return WObj.getNewURL();
+         }
       }
-
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,34 +26,46 @@ namespace NHtmlUnit.Javascript.Host
       public DocumentFragment()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.DocumentFragment()) {}
 
-// Generating method code for jsxFunction_createAttribute
-      public virtual object JsxFunction_createAttribute(string attributeName)
+// Generating method code for createAttribute
+      public virtual object CreateAttribute(string attributeName)
       {
-         return WObj.jsxFunction_createAttribute(attributeName);
+         return WObj.createAttribute(attributeName);
       }
 
-// Generating method code for jsxFunction_createElement
-      public virtual object JsxFunction_createElement(string tagName)
+// Generating method code for createElement
+      public virtual object CreateElement(string tagName)
       {
-         return WObj.jsxFunction_createElement(tagName);
+         return WObj.createElement(tagName);
       }
 
-// Generating method code for jsxFunction_createComment
-      public virtual object JsxFunction_createComment(string comment)
+// Generating method code for createComment
+      public virtual object CreateComment(string comment)
       {
-         return WObj.jsxFunction_createComment(comment);
+         return WObj.createComment(comment);
       }
 
-// Generating method code for jsxFunction_createDocumentFragment
-      public virtual object JsxFunction_createDocumentFragment()
+// Generating method code for createDocumentFragment
+      public virtual object CreateDocumentFragment()
       {
-         return WObj.jsxFunction_createDocumentFragment();
+         return WObj.createDocumentFragment();
       }
 
-// Generating method code for jsxFunction_createTextNode
-      public virtual object JsxFunction_createTextNode(string newData)
+// Generating method code for createTextNode
+      public virtual object CreateTextNode(string newData)
       {
-         return WObj.jsxFunction_createTextNode(newData);
+         return WObj.createTextNode(newData);
+      }
+
+// Generating method code for querySelectorAll
+      public virtual NHtmlUnit.Javascript.Host.StaticNodeList QuerySelectorAll(string selectors)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StaticNodeList>(WObj.querySelectorAll(selectors));
+      }
+
+// Generating method code for querySelector
+      public virtual NHtmlUnit.Javascript.Host.Node QuerySelector(string selectors)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.querySelector(selectors));
       }
 
    }

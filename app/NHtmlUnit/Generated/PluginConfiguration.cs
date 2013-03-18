@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -50,6 +50,12 @@ namespace NHtmlUnit
             return WObj.getFilename();
          }
       }
+// Generating method code for clone
+      public virtual NHtmlUnit.PluginConfiguration Clone()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.PluginConfiguration>(WObj.clone());
+      }
+
    }
 
 

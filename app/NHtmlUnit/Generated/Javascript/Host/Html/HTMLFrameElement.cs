@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,66 +26,78 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLFrameElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLFrameElement()) {}
 
-// Generating method code for jsxGet_src
-      public virtual string JsxGet_src()
+
+      public System.String Src
       {
-         return WObj.jsxGet_src();
+         get
+         {
+            return WObj.getSrc();
+         }
+         set
+         {
+            WObj.setSrc(value);
+         }
+
       }
 
-// Generating method code for jsxGet_contentDocument
-      public virtual NHtmlUnit.Javascript.Host.Html.DocumentProxy JsxGet_contentDocument()
+      public NHtmlUnit.Javascript.Host.Html.DocumentProxy ContentDocument
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(WObj.jsxGet_contentDocument());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
+               WObj.getContentDocument());
+         }
       }
 
-// Generating method code for jsxGet_contentWindow
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_contentWindow()
+
+      public NHtmlUnit.Javascript.Host.WindowProxy ContentWindow
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_contentWindow());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getContentWindow());
+         }
       }
 
-// Generating method code for jsxSet_src
-      public virtual void JsxSet_src(string src)
+
+      public System.String Name
       {
-         WObj.jsxSet_src(src);
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
+         }
+
       }
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+      public System.Object Onload
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
       }
 
-// Generating method code for jsxSet_name
-      public virtual void JsxSet_name(string name)
+      public System.String Border
       {
-         WObj.jsxSet_name(name);
-      }
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
 
-// Generating method code for jsxSet_onload
-      public virtual void JsxSet_onload(object eventHandler)
-      {
-         WObj.jsxSet_onload(eventHandler);
       }
-
-// Generating method code for jsxGet_onload
-      public virtual object JsxGet_onload()
-      {
-         return WObj.jsxGet_onload();
-      }
-
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
-      {
-         return WObj.jsxGet_border();
-      }
-
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
-      }
-
    }
 
 

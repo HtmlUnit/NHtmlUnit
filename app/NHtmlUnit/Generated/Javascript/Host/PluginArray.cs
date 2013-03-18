@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host
       public PluginArray()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.PluginArray()) {}
 
-// Generating method code for jsxFunction_refresh
-      public virtual void JsxFunction_refresh(bool reloadDocuments)
+// Generating method code for refresh
+      public virtual void Refresh(bool reloadDocuments)
       {
-         WObj.jsxFunction_refresh(reloadDocuments);
+         WObj.refresh(reloadDocuments);
       }
 
    }

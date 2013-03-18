@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,18 +23,25 @@ namespace NHtmlUnit.Javascript.Host.Html
          get { return (com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection)WrappedObject; }
       }
 
-      public HTMLOptionsCollection()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection()) {}
-
       public HTMLOptionsCollection(NHtmlUnit.Javascript.SimpleScriptable parentScope)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)parentScope.WrappedObject)) {}
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
-      }
+      public HTMLOptionsCollection()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection()) {}
 
+
+      public System.Int32 Length
+      {
+         get
+         {
+            return WObj.getLength();
+         }
+         set
+         {
+            WObj.setLength(value);
+         }
+
+      }
 // Generating method code for initialize
       public virtual void Initialize(NHtmlUnit.Html.HtmlSelect select)
       {
@@ -47,28 +54,22 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.getWithFallback(name);
       }
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item(int index)
+// Generating method code for item
+      public virtual object Item(int index)
       {
-         return WObj.jsxFunction_item(index);
+         return WObj.item(index);
       }
 
-// Generating method code for jsxSet_length
-      public virtual void JsxSet_length(int newLength)
+// Generating method code for add
+      public virtual void Add(object newOptionObject, object newIndex)
       {
-         WObj.jsxSet_length(newLength);
+         WObj.add(newOptionObject, newIndex);
       }
 
-// Generating method code for jsxFunction_add
-      public virtual void JsxFunction_add(object newOptionObject, object newIndex)
+// Generating method code for remove
+      public virtual void Remove(int index)
       {
-         WObj.jsxFunction_add(newOptionObject, newIndex);
-      }
-
-// Generating method code for jsxFunction_remove
-      public virtual void JsxFunction_remove(int index)
-      {
-         WObj.jsxFunction_remove(index);
+         WObj.remove(index);
       }
 
    }

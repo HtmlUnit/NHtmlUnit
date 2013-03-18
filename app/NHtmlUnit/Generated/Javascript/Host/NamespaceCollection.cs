@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,28 +23,30 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection)WrappedObject; }
       }
 
-      public NamespaceCollection(NHtmlUnit.Javascript.Host.Html.HTMLDocument doc)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)doc.WrappedObject)) {}
-
       public NamespaceCollection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection()) {}
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item(object index)
+      public NamespaceCollection(NHtmlUnit.Javascript.Host.Html.HTMLDocument doc)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)doc.WrappedObject)) {}
+
+
+      public System.Int32 Length
       {
-         return WObj.jsxFunction_item(index);
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual object Item(object index)
+      {
+         return WObj.item(index);
       }
 
-// Generating method code for jsxFunction_add
-      public virtual NHtmlUnit.Javascript.Host.Namespace JsxFunction_add(string namespaceArg, string urn, string url)
+// Generating method code for add
+      public virtual NHtmlUnit.Javascript.Host.Namespace Add(string namespaceArg, string urn, string url)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(WObj.jsxFunction_add(namespaceArg, urn, url));
-      }
-
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(WObj.add(namespaceArg, urn, url));
       }
 
 // Generating method code for call

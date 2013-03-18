@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,78 +26,84 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLMetaElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLMetaElement()) {}
 
-// Generating method code for jsxGet_charset
-      public virtual string JsxGet_charset()
+
+      public System.String Charset
       {
-         return WObj.jsxGet_charset();
+         get
+         {
+            return WObj.getCharset();
+         }
+         set
+         {
+            WObj.setCharset(value);
+         }
+
       }
 
-// Generating method code for jsxSet_charset
-      public virtual void JsxSet_charset(string charset)
+      public System.String Content
       {
-         WObj.jsxSet_charset(charset);
+         get
+         {
+            return WObj.getContent();
+         }
+         set
+         {
+            WObj.setContent(value);
+         }
+
       }
 
-// Generating method code for jsxGet_content
-      public virtual string JsxGet_content()
+      public System.String HttpEquiv
       {
-         return WObj.jsxGet_content();
+         get
+         {
+            return WObj.getHttpEquiv();
+         }
+         set
+         {
+            WObj.setHttpEquiv(value);
+         }
+
       }
 
-// Generating method code for jsxSet_content
-      public virtual void JsxSet_content(string content)
+      public System.String Name
       {
-         WObj.jsxSet_content(content);
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
+         }
+
       }
 
-// Generating method code for jsxGet_httpEquiv
-      public virtual string JsxGet_httpEquiv()
+      public System.String Scheme
       {
-         return WObj.jsxGet_httpEquiv();
+         get
+         {
+            return WObj.getScheme();
+         }
+         set
+         {
+            WObj.setScheme(value);
+         }
+
       }
 
-// Generating method code for jsxSet_httpEquiv
-      public virtual void JsxSet_httpEquiv(string httpEquiv)
+      public System.String Url
       {
-         WObj.jsxSet_httpEquiv(httpEquiv);
-      }
+         get
+         {
+            return WObj.getUrl();
+         }
+         set
+         {
+            WObj.setUrl(value);
+         }
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
-      {
-         return WObj.jsxGet_name();
       }
-
-// Generating method code for jsxSet_name
-      public virtual void JsxSet_name(string name)
-      {
-         WObj.jsxSet_name(name);
-      }
-
-// Generating method code for jsxGet_scheme
-      public virtual string JsxGet_scheme()
-      {
-         return WObj.jsxGet_scheme();
-      }
-
-// Generating method code for jsxSet_scheme
-      public virtual void JsxSet_scheme(string scheme)
-      {
-         WObj.jsxSet_scheme(scheme);
-      }
-
-// Generating method code for jsxGet_url
-      public virtual string JsxGet_url()
-      {
-         return WObj.jsxGet_url();
-      }
-
-// Generating method code for jsxSet_url
-      public virtual void JsxSet_url(string url)
-      {
-         WObj.jsxSet_url(url);
-      }
-
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,50 @@ namespace NHtmlUnit.Javascript.Host
       public Window()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
+
+      public System.Int32 ScrollY
+      {
+         get
+         {
+            return WObj.getScrollY();
+         }
+      }
+
+      public System.Object Onchange
+      {
+         get
+         {
+            return WObj.getOnchange();
+         }
+         set
+         {
+            WObj.setOnchange(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Document Document
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
+               WObj.getDocument());
+         }
+      }
+
+
+      public System.String Status
+      {
+         get
+         {
+            return WObj.getStatus();
+         }
+         set
+         {
+            WObj.setStatus(value);
+         }
+
+      }
 
       public NHtmlUnit.IWebWindow WebWindow
       {
@@ -57,15 +101,359 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public NHtmlUnit.Javascript.Host.Document Document
+      public System.Int32 InnerHeight
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
-               WObj.getDocument());
+            return WObj.getInnerHeight();
          }
       }
 
+      public System.Object Onerror
+      {
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Selection SelectionImpl
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+               WObj.getSelectionImpl());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Html.DocumentProxy Document_js
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
+               WObj.getDocument_js());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.OfflineResourceList ApplicationCache
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.OfflineResourceList>(
+               WObj.getApplicationCache());
+         }
+      }
+
+
+      public System.Object Event
+      {
+         get
+         {
+            return WObj.getEvent();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Navigator Navigator
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(
+               WObj.getNavigator());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Navigator ClientInformation
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(
+               WObj.getClientInformation());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.ClipboardData ClipboardData
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClipboardData>(
+               WObj.getClipboardData());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.WindowProxy Window_js
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getWindow_js());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.WindowProxy Self
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getSelf());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Storage LocalStorage
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(
+               WObj.getLocalStorage());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Storage SessionStorage
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(
+               WObj.getSessionStorage());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.StorageList GlobalStorage
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StorageList>(
+               WObj.getGlobalStorage());
+         }
+      }
+
+
+      public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject Console
+      {
+         get
+         {
+            return WObj.getConsole();
+         }
+         set
+         {
+            WObj.setConsole(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Screen Screen
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(
+               WObj.getScreen());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.History History
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.History>(
+               WObj.getHistory());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.External External
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.External>(
+               WObj.getExternal());
+         }
+      }
+
+
+      public System.Object Top
+      {
+         get
+         {
+            return WObj.getTop();
+         }
+         set
+         {
+            WObj.setTop(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.WindowProxy Parent
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getParent());
+         }
+      }
+
+
+      public System.Object Opener
+      {
+         get
+         {
+            return WObj.getOpener();
+         }
+         set
+         {
+            WObj.setOpener(value);
+         }
+
+      }
+
+      public System.Object FrameElement
+      {
+         get
+         {
+            return WObj.getFrameElement();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.WindowProxy Frames_js
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getFrames_js());
+         }
+      }
+
+
+      public System.Int32 Length
+      {
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+
+      public System.Boolean Closed
+      {
+         get
+         {
+            return WObj.getClosed();
+         }
+      }
+
+      public System.Object Onload
+      {
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
+      }
+
+      public System.Object Onclick
+      {
+         get
+         {
+            return WObj.getOnclick();
+         }
+         set
+         {
+            WObj.setOnclick(value);
+         }
+
+      }
+
+      public System.Object Ondblclick
+      {
+         get
+         {
+            return WObj.getOndblclick();
+         }
+         set
+         {
+            WObj.setOndblclick(value);
+         }
+
+      }
+
+      public System.Object Onhashchange
+      {
+         get
+         {
+            return WObj.getOnhashchange();
+         }
+         set
+         {
+            WObj.setOnhashchange(value);
+         }
+
+      }
+
+      public System.String Name
+      {
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
+         }
+
+      }
+
+      public System.Object Onbeforeunload
+      {
+         get
+         {
+            return WObj.getOnbeforeunload();
+         }
+         set
+         {
+            WObj.setOnbeforeunload(value);
+         }
+
+      }
+
+      public System.Int32 InnerWidth
+      {
+         get
+         {
+            return WObj.getInnerWidth();
+         }
+      }
+
+      public System.Int32 OuterWidth
+      {
+         get
+         {
+            return WObj.getOuterWidth();
+         }
+      }
+
+      public System.Int32 OuterHeight
+      {
+         get
+         {
+            return WObj.getOuterHeight();
+         }
+      }
 
       public NHtmlUnit.Javascript.Host.Selection Selection
       {
@@ -76,232 +464,77 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-// Generating method code for jsxGet_scrollY
-      public virtual int JsxGet_scrollY()
+
+      public System.Object Controllers
       {
-         return WObj.jsxGet_scrollY();
+         get
+         {
+            return WObj.getControllers();
+         }
+         set
+         {
+            WObj.setControllers(value);
+         }
+
       }
 
-// Generating method code for jsxSet_status
-      public virtual void JsxSet_status(string message)
+      public System.Int32 MozInnerScreenX
       {
-         WObj.jsxSet_status(message);
+         get
+         {
+            return WObj.getMozInnerScreenX();
+         }
       }
 
-// Generating method code for jsxFunction_attachEvent
-      public virtual bool JsxFunction_attachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
+      public System.Int32 MozInnerScreenY
       {
-         return WObj.jsxFunction_attachEvent(type, listener);
+         get
+         {
+            return WObj.getMozInnerScreenY();
+         }
       }
 
-// Generating method code for getPrototype
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
+      public System.Int32 MozPaintCount
       {
-         return WObj.getPrototype(jsClass);
+         get
+         {
+            return WObj.getMozPaintCount();
+         }
       }
 
-// Generating method code for jsxFunction_getComputedStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration JsxFunction_getComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
+      public System.Int32 PageXOffset
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.jsxFunction_getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
+         get
+         {
+            return WObj.getPageXOffset();
+         }
       }
 
-// Generating method code for jsxGet_location
-      public virtual NHtmlUnit.Javascript.Host.Location JsxGet_location()
+      public System.Int32 PageYOffset
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.jsxGet_location());
+         get
+         {
+            return WObj.getPageYOffset();
+         }
       }
 
-// Generating method code for jsxSet_location
-      public virtual void JsxSet_location(string newLocation)
+      public System.Int32 ScrollX
       {
-         WObj.jsxSet_location(newLocation);
+         get
+         {
+            return WObj.getScrollX();
+         }
       }
-
-// Generating method code for jsxGet_document
-      public virtual NHtmlUnit.Javascript.Host.Html.DocumentProxy JsxGet_document()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(WObj.jsxGet_document());
-      }
-
-// Generating method code for jsxGet_screen
-      public virtual NHtmlUnit.Javascript.Host.Screen JsxGet_screen()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(WObj.jsxGet_screen());
-      }
-
-// Generating method code for jsxGet_navigator
-      public virtual NHtmlUnit.Javascript.Host.Navigator JsxGet_navigator()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(WObj.jsxGet_navigator());
-      }
-
-// Generating method code for jsxGet_frames
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_frames()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_frames());
-      }
-
-// Generating method code for jsxGet_innerWidth
-      public virtual int JsxGet_innerWidth()
-      {
-         return WObj.jsxGet_innerWidth();
-      }
-
-// Generating method code for jsxGet_innerHeight
-      public virtual int JsxGet_innerHeight()
-      {
-         return WObj.jsxGet_innerHeight();
-      }
-
 // Generating method code for executeEvent
       public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
-// Generating method code for jsxFunction_scrollTo
-      public virtual void JsxFunction_scrollTo(int x, int y)
+// Generating method code for dispatchEvent
+      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
-         WObj.jsxFunction_scrollTo(x, y);
-      }
-
-// Generating method code for jsxGet_onerror
-      public virtual object JsxGet_onerror()
-      {
-         return WObj.jsxGet_onerror();
-      }
-
-// Generating method code for custom_eval
-      public virtual object Custom_eval(string scriptCode)
-      {
-         return WObj.custom_eval(scriptCode);
-      }
-
-// Generating method code for jsxFunction_setTimeout
-      public virtual int JsxFunction_setTimeout(object code, int timeout, object language)
-      {
-         return WObj.jsxFunction_setTimeout(code, timeout, language);
-      }
-
-// Generating method code for jsxFunction_alert
-      public virtual void JsxFunction_alert(object message)
-      {
-         WObj.jsxFunction_alert(message);
-      }
-
-// Generating method code for jsxFunction_btoa
-      public virtual string JsxFunction_btoa(string stringToEncode)
-      {
-         return WObj.jsxFunction_btoa(stringToEncode);
-      }
-
-// Generating method code for jsxFunction_atob
-      public virtual string JsxFunction_atob(string encodedData)
-      {
-         return WObj.jsxFunction_atob(encodedData);
-      }
-
-// Generating method code for jsxFunction_confirm
-      public virtual bool JsxFunction_confirm(string message)
-      {
-         return WObj.jsxFunction_confirm(message);
-      }
-
-// Generating method code for jsxFunction_prompt
-      public virtual string JsxFunction_prompt(string message)
-      {
-         return WObj.jsxFunction_prompt(message);
-      }
-
-// Generating method code for jsxGet_applicationCache
-      public virtual NHtmlUnit.Javascript.Host.OfflineResourceList JsxGet_applicationCache()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.OfflineResourceList>(WObj.jsxGet_applicationCache());
-      }
-
-// Generating method code for jsxGet_event
-      public virtual object JsxGet_event()
-      {
-         return WObj.jsxGet_event();
-      }
-
-// Generating method code for jsxFunction_open
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxFunction_open(object url, object name, object features, object replace)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxFunction_open(url, name, features, replace));
-      }
-
-// Generating method code for jsxFunction_createPopup
-      public virtual NHtmlUnit.Javascript.Host.Popup JsxFunction_createPopup()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Popup>(WObj.jsxFunction_createPopup());
-      }
-
-// Generating method code for jsxFunction_clearTimeout
-      public virtual void JsxFunction_clearTimeout(int timeoutId)
-      {
-         WObj.jsxFunction_clearTimeout(timeoutId);
-      }
-
-// Generating method code for jsxGet_clientInformation
-      public virtual NHtmlUnit.Javascript.Host.Navigator JsxGet_clientInformation()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(WObj.jsxGet_clientInformation());
-      }
-
-// Generating method code for jsxGet_clipboardData
-      public virtual NHtmlUnit.Javascript.Host.ClipboardData JsxGet_clipboardData()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClipboardData>(WObj.jsxGet_clipboardData());
-      }
-
-// Generating method code for jsxGet_window
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_window()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_window());
-      }
-
-// Generating method code for jsxGet_self
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_self()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_self());
-      }
-
-// Generating method code for jsxGet_localStorage
-      public virtual NHtmlUnit.Javascript.Host.Storage JsxGet_localStorage()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.jsxGet_localStorage());
-      }
-
-// Generating method code for jsxGet_sessionStorage
-      public virtual NHtmlUnit.Javascript.Host.Storage JsxGet_sessionStorage()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.jsxGet_sessionStorage());
-      }
-
-// Generating method code for jsxGet_globalStorage
-      public virtual NHtmlUnit.Javascript.Host.StorageList JsxGet_globalStorage()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StorageList>(WObj.jsxGet_globalStorage());
-      }
-
-// Generating method code for jsxGet_history
-      public virtual NHtmlUnit.Javascript.Host.History JsxGet_history()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.History>(WObj.jsxGet_history());
-      }
-
-// Generating method code for jsxGet_external
-      public virtual NHtmlUnit.Javascript.Host.External JsxGet_external()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.External>(WObj.jsxGet_external());
-      }
-
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
       }
 
 // Generating method code for initialize
@@ -316,220 +549,184 @@ namespace NHtmlUnit.Javascript.Host
          WObj.initialize();
       }
 
-// Generating method code for jsxGet_top
-      public virtual object JsxGet_top()
+// Generating method code for attachEvent
+      public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
-         return WObj.jsxGet_top();
+         return WObj.attachEvent(type, listener);
       }
 
-// Generating method code for jsxSet_top
-      public virtual void JsxSet_top(object o)
+// Generating method code for getPrototype
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
       {
-         WObj.jsxSet_top(o);
+         return WObj.getPrototype(jsClass);
       }
 
-// Generating method code for jsxGet_parent
-      public virtual NHtmlUnit.Javascript.Host.WindowProxy JsxGet_parent()
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.jsxGet_parent());
-      }
-
-// Generating method code for jsxGet_opener
-      public virtual object JsxGet_opener()
-      {
-         return WObj.jsxGet_opener();
-      }
-
-// Generating method code for jsxSet_opener
-      public virtual void JsxSet_opener(object newValue)
-      {
-         WObj.jsxSet_opener(newValue);
-      }
-
-// Generating method code for jsxGet_frameElement
-      public virtual object JsxGet_frameElement()
-      {
-         return WObj.jsxGet_frameElement();
-      }
-
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
-      }
-
-// Generating method code for jsxFunction_focus
-      public virtual void JsxFunction_focus()
-      {
-         WObj.jsxFunction_focus();
-      }
-
-// Generating method code for jsxFunction_blur
-      public virtual void JsxFunction_blur()
-      {
-         WObj.jsxFunction_blur();
-      }
-
-// Generating method code for jsxFunction_close
-      public virtual void JsxFunction_close()
-      {
-         WObj.jsxFunction_close();
-      }
-
-// Generating method code for jsxGet_closed
-      public virtual bool JsxGet_closed()
-      {
-         return WObj.jsxGet_closed();
-      }
-
-// Generating method code for jsxFunction_moveTo
-      public virtual void JsxFunction_moveTo(int x, int y)
-      {
-         WObj.jsxFunction_moveTo(x, y);
-      }
-
-// Generating method code for jsxFunction_moveBy
-      public virtual void JsxFunction_moveBy(int x, int y)
-      {
-         WObj.jsxFunction_moveBy(x, y);
-      }
-
-// Generating method code for jsxFunction_resizeBy
-      public virtual void JsxFunction_resizeBy(int width, int height)
-      {
-         WObj.jsxFunction_resizeBy(width, height);
-      }
-
-// Generating method code for jsxFunction_resizeTo
-      public virtual void JsxFunction_resizeTo(int width, int height)
-      {
-         WObj.jsxFunction_resizeTo(width, height);
-      }
-
-// Generating method code for jsxFunction_scroll
-      public virtual void JsxFunction_scroll(int x, int y)
-      {
-         WObj.jsxFunction_scroll(x, y);
-      }
-
-// Generating method code for jsxFunction_scrollBy
-      public virtual void JsxFunction_scrollBy(int x, int y)
-      {
-         WObj.jsxFunction_scrollBy(x, y);
-      }
-
-// Generating method code for jsxFunction_scrollByLines
-      public virtual void JsxFunction_scrollByLines(int lines)
-      {
-         WObj.jsxFunction_scrollByLines(lines);
-      }
-
-// Generating method code for jsxFunction_scrollByPages
-      public virtual void JsxFunction_scrollByPages(int pages)
-      {
-         WObj.jsxFunction_scrollByPages(pages);
-      }
-
-// Generating method code for jsxSet_onload
-      public virtual void JsxSet_onload(object newOnload)
-      {
-         WObj.jsxSet_onload(newOnload);
-      }
-
-// Generating method code for jsxSet_onclick
-      public virtual void JsxSet_onclick(object newOnload)
-      {
-         WObj.jsxSet_onclick(newOnload);
-      }
-
-// Generating method code for jsxGet_onclick
-      public virtual object JsxGet_onclick()
-      {
-         return WObj.jsxGet_onclick();
-      }
-
-// Generating method code for jsxSet_ondblclick
-      public virtual void JsxSet_ondblclick(object newHandler)
-      {
-         WObj.jsxSet_ondblclick(newHandler);
-      }
-
-// Generating method code for jsxGet_ondblclick
-      public virtual object JsxGet_ondblclick()
-      {
-         return WObj.jsxGet_ondblclick();
-      }
-
-// Generating method code for jsxGet_onload
-      public virtual object JsxGet_onload()
-      {
-         return WObj.jsxGet_onload();
-      }
-
-// Generating method code for jsxGet_onhashchange
-      public virtual object JsxGet_onhashchange()
-      {
-         return WObj.jsxGet_onhashchange();
-      }
-
-// Generating method code for jsxSet_onhashchange
-      public virtual void JsxSet_onhashchange(object newHandler)
-      {
-         WObj.jsxSet_onhashchange(newHandler);
-      }
-
-// Generating method code for jsxFunction_addEventListener
-      public virtual void JsxFunction_addEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
-      {
-         WObj.jsxFunction_addEventListener(type, listener, useCapture);
-      }
-
-// Generating method code for jsxFunction_detachEvent
-      public virtual void JsxFunction_detachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         WObj.jsxFunction_detachEvent(type, listener);
-      }
-
-// Generating method code for jsxFunction_removeEventListener
-      public virtual void JsxFunction_removeEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
-      {
-         WObj.jsxFunction_removeEventListener(type, listener, useCapture);
-      }
-
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
-      {
-         return WObj.jsxGet_name();
-      }
-
-// Generating method code for jsxSet_name
-      public virtual void JsxSet_name(string name)
-      {
-         WObj.jsxSet_name(name);
-      }
-
-// Generating method code for jsxGet_onbeforeunload
-      public virtual object JsxGet_onbeforeunload()
-      {
-         return WObj.jsxGet_onbeforeunload();
-      }
-
-// Generating method code for jsxSet_onbeforeunload
-      public virtual void JsxSet_onbeforeunload(object onbeforeunload)
-      {
-         WObj.jsxSet_onbeforeunload(onbeforeunload);
-      }
-
-// Generating method code for jsxSet_onerror
-      public virtual void JsxSet_onerror(object onerror)
-      {
-         WObj.jsxSet_onerror(onerror);
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
       }
 
 // Generating method code for triggerOnError
       public virtual void TriggerOnError(NHtmlUnit.ScriptException e)
       {
          WObj.triggerOnError((com.gargoylesoftware.htmlunit.ScriptException)e.WrappedObject);
+      }
+
+// Generating method code for getStorage
+      public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.getStorage(storageType));
+      }
+
+// Generating method code for scrollTo
+      public virtual void ScrollTo(int x, int y)
+      {
+         WObj.scrollTo(x, y);
+      }
+
+// Generating method code for setTimeout
+      public virtual int SetTimeout(object code, int timeout, object language)
+      {
+         return WObj.setTimeout(code, timeout, language);
+      }
+
+// Generating method code for alert
+      public virtual void Alert(object message)
+      {
+         WObj.alert(message);
+      }
+
+// Generating method code for btoa
+      public virtual string Btoa(string stringToEncode)
+      {
+         return WObj.btoa(stringToEncode);
+      }
+
+// Generating method code for atob
+      public virtual string Atob(string encodedData)
+      {
+         return WObj.atob(encodedData);
+      }
+
+// Generating method code for confirm
+      public virtual bool Confirm(string message)
+      {
+         return WObj.confirm(message);
+      }
+
+// Generating method code for prompt
+      public virtual string Prompt(string message)
+      {
+         return WObj.prompt(message);
+      }
+
+// Generating method code for open
+      public virtual NHtmlUnit.Javascript.Host.WindowProxy Open(object url, object name, object features, object replace)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.open(url, name, features, replace));
+      }
+
+// Generating method code for createPopup
+      public virtual NHtmlUnit.Javascript.Host.Popup CreatePopup()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Popup>(WObj.createPopup());
+      }
+
+// Generating method code for clearTimeout
+      public virtual void ClearTimeout(int timeoutId)
+      {
+         WObj.clearTimeout(timeoutId);
+      }
+
+// Generating method code for dump
+      public virtual void Dump(string message)
+      {
+         WObj.dump(message);
+      }
+
+// Generating method code for focus
+      public virtual void Focus()
+      {
+         WObj.focus();
+      }
+
+// Generating method code for blur
+      public virtual void Blur()
+      {
+         WObj.blur();
+      }
+
+// Generating method code for close
+      public virtual void Close()
+      {
+         WObj.close();
+      }
+
+// Generating method code for moveTo
+      public virtual void MoveTo(int x, int y)
+      {
+         WObj.moveTo(x, y);
+      }
+
+// Generating method code for moveBy
+      public virtual void MoveBy(int x, int y)
+      {
+         WObj.moveBy(x, y);
+      }
+
+// Generating method code for resizeBy
+      public virtual void ResizeBy(int width, int height)
+      {
+         WObj.resizeBy(width, height);
+      }
+
+// Generating method code for resizeTo
+      public virtual void ResizeTo(int width, int height)
+      {
+         WObj.resizeTo(width, height);
+      }
+
+// Generating method code for scroll
+      public virtual void Scroll(int x, int y)
+      {
+         WObj.scroll(x, y);
+      }
+
+// Generating method code for scrollBy
+      public virtual void ScrollBy(int x, int y)
+      {
+         WObj.scrollBy(x, y);
+      }
+
+// Generating method code for scrollByLines
+      public virtual void ScrollByLines(int lines)
+      {
+         WObj.scrollByLines(lines);
+      }
+
+// Generating method code for scrollByPages
+      public virtual void ScrollByPages(int pages)
+      {
+         WObj.scrollByPages(pages);
+      }
+
+// Generating method code for addEventListener
+      public virtual void AddEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
+      {
+         WObj.addEventListener(type, listener, useCapture);
+      }
+
+// Generating method code for detachEvent
+      public virtual void DetachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
+      {
+         WObj.detachEvent(type, listener);
+      }
+
+// Generating method code for removeEventListener
+      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
+      {
+         WObj.removeEventListener(type, listener, useCapture);
       }
 
 // Generating method code for call
@@ -550,154 +747,100 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.getWithFallback(name);
       }
 
-// Generating method code for jsxFunction_execScript
-      public virtual void JsxFunction_execScript(string script, object language)
+// Generating method code for execScript
+      public virtual void ExecScript(string script, object language)
       {
-         WObj.jsxFunction_execScript(script, language);
+         WObj.execScript(script, language);
       }
 
-// Generating method code for jsxGet_status
-      public virtual string JsxGet_status()
+// Generating method code for setInterval
+      public virtual int SetInterval(object code, int timeout, object language)
       {
-         return WObj.jsxGet_status();
+         return WObj.setInterval(code, timeout, language);
       }
 
-// Generating method code for jsxFunction_setInterval
-      public virtual int JsxFunction_setInterval(object code, int timeout, object language)
+// Generating method code for clearInterval
+      public virtual void ClearInterval(int intervalID)
       {
-         return WObj.jsxFunction_setInterval(code, timeout, language);
+         WObj.clearInterval(intervalID);
       }
 
-// Generating method code for jsxFunction_clearInterval
-      public virtual void JsxFunction_clearInterval(int intervalID)
+// Generating method code for print
+      public virtual void Print()
       {
-         WObj.jsxFunction_clearInterval(intervalID);
+         WObj.print();
       }
 
-// Generating method code for jsxGet_outerWidth
-      public virtual int JsxGet_outerWidth()
+// Generating method code for captureEvents
+      public virtual void CaptureEvents(string type)
       {
-         return WObj.jsxGet_outerWidth();
+         WObj.captureEvents(type);
       }
 
-// Generating method code for jsxGet_outerHeight
-      public virtual int JsxGet_outerHeight()
+// Generating method code for CollectGarbage
+      public virtual void CollectGarbage()
       {
-         return WObj.jsxGet_outerHeight();
+         WObj.CollectGarbage();
       }
 
-// Generating method code for jsxFunction_print
-      public virtual void JsxFunction_print()
+// Generating method code for getComputedStyle
+      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
-         WObj.jsxFunction_print();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
       }
 
-// Generating method code for jsxFunction_captureEvents
-      public virtual void JsxFunction_captureEvents(string type)
+// Generating method code for showModalDialog
+      public virtual object ShowModalDialog(string url, object arguments, string features)
       {
-         WObj.jsxFunction_captureEvents(type);
+         return WObj.showModalDialog(url, arguments, features);
       }
 
-// Generating method code for jsxFunction_CollectGarbage
-      public virtual void JsxFunction_CollectGarbage()
+// Generating method code for showModelessDialog
+      public virtual object ShowModelessDialog(string url, object arguments, string features)
       {
-         WObj.jsxFunction_CollectGarbage();
+         return WObj.showModelessDialog(url, arguments, features);
       }
 
-// Generating method code for jsxFunction_getSelection
-      public virtual NHtmlUnit.Javascript.Host.Selection JsxFunction_getSelection()
+// Generating method code for ScriptEngine
+      public virtual string ScriptEngine()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(WObj.jsxFunction_getSelection());
+         return WObj.ScriptEngine();
       }
 
-// Generating method code for jsxFunction_showModalDialog
-      public virtual object JsxFunction_showModalDialog(string url, object arguments, string features)
+// Generating method code for ScriptEngineBuildVersion
+      public virtual int ScriptEngineBuildVersion()
       {
-         return WObj.jsxFunction_showModalDialog(url, arguments, features);
+         return WObj.ScriptEngineBuildVersion();
       }
 
-// Generating method code for jsxFunction_showModelessDialog
-      public virtual object JsxFunction_showModelessDialog(string url, object arguments, string features)
+// Generating method code for ScriptEngineMajorVersion
+      public virtual int ScriptEngineMajorVersion()
       {
-         return WObj.jsxFunction_showModelessDialog(url, arguments, features);
+         return WObj.ScriptEngineMajorVersion();
       }
 
-// Generating method code for jsxGet_controllers
-      public virtual object JsxGet_controllers()
+// Generating method code for ScriptEngineMinorVersion
+      public virtual int ScriptEngineMinorVersion()
       {
-         return WObj.jsxGet_controllers();
+         return WObj.ScriptEngineMinorVersion();
       }
 
-// Generating method code for jsxSet_controllers
-      public virtual void JsxSet_controllers(object value)
+// Generating method code for stop
+      public virtual void Stop()
       {
-         WObj.jsxSet_controllers(value);
+         WObj.stop();
       }
 
-// Generating method code for jsxGet_mozInnerScreenX
-      public virtual int JsxGet_mozInnerScreenX()
+// Generating method code for getLocation
+      public virtual NHtmlUnit.Javascript.Host.Location GetLocation()
       {
-         return WObj.jsxGet_mozInnerScreenX();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.getLocation());
       }
 
-// Generating method code for jsxGet_mozInnerScreenY
-      public virtual int JsxGet_mozInnerScreenY()
+// Generating method code for setLocation
+      public virtual void SetLocation(string newLocation)
       {
-         return WObj.jsxGet_mozInnerScreenY();
-      }
-
-// Generating method code for jsxGet_mozPaintCount
-      public virtual int JsxGet_mozPaintCount()
-      {
-         return WObj.jsxGet_mozPaintCount();
-      }
-
-// Generating method code for jsxFunction_ScriptEngine
-      public virtual string JsxFunction_ScriptEngine()
-      {
-         return WObj.jsxFunction_ScriptEngine();
-      }
-
-// Generating method code for jsxFunction_ScriptEngineBuildVersion
-      public virtual int JsxFunction_ScriptEngineBuildVersion()
-      {
-         return WObj.jsxFunction_ScriptEngineBuildVersion();
-      }
-
-// Generating method code for jsxFunction_ScriptEngineMajorVersion
-      public virtual int JsxFunction_ScriptEngineMajorVersion()
-      {
-         return WObj.jsxFunction_ScriptEngineMajorVersion();
-      }
-
-// Generating method code for jsxFunction_ScriptEngineMinorVersion
-      public virtual int JsxFunction_ScriptEngineMinorVersion()
-      {
-         return WObj.jsxFunction_ScriptEngineMinorVersion();
-      }
-
-// Generating method code for jsxFunction_stop
-      public virtual void JsxFunction_stop()
-      {
-         WObj.jsxFunction_stop();
-      }
-
-// Generating method code for jsxGet_pageXOffset
-      public virtual int JsxGet_pageXOffset()
-      {
-         return WObj.jsxGet_pageXOffset();
-      }
-
-// Generating method code for jsxGet_pageYOffset
-      public virtual int JsxGet_pageYOffset()
-      {
-         return WObj.jsxGet_pageYOffset();
-      }
-
-// Generating method code for jsxGet_scrollX
-      public virtual int JsxGet_scrollX()
-      {
-         return WObj.jsxGet_scrollX();
+         WObj.setLocation(newLocation);
       }
 
    }

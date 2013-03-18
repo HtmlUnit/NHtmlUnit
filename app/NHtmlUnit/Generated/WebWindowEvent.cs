@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,15 +27,13 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebWindowEvent((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, type, (com.gargoylesoftware.htmlunit.Page)oldPage.WrappedObject, (com.gargoylesoftware.htmlunit.Page)newPage.WrappedObject)) {}
 
 
-      public NHtmlUnit.IWebWindow WebWindow
+      public System.Int32 EventType
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
-               WObj.getWebWindow());
+            return WObj.getEventType();
          }
       }
-
 
       public NHtmlUnit.IPage OldPage
       {
@@ -47,20 +45,22 @@ namespace NHtmlUnit
       }
 
 
-      public System.Int32 EventType
-      {
-         get
-         {
-            return WObj.getEventType();
-         }
-      }
-
       public NHtmlUnit.IPage NewPage
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
                WObj.getNewPage());
+         }
+      }
+
+
+      public NHtmlUnit.IWebWindow WebWindow
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
+               WObj.getWebWindow());
          }
       }
 

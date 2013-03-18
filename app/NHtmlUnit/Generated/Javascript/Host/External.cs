@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host
       public External()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.External()) {}
 
-// Generating method code for jsxFunction_AutoCompleteSaveForm
-      public virtual void JsxFunction_AutoCompleteSaveForm()
+// Generating method code for AutoCompleteSaveForm
+      public virtual void AutoCompleteSaveForm()
       {
-         WObj.jsxFunction_AutoCompleteSaveForm();
+         WObj.AutoCompleteSaveForm();
       }
 
    }

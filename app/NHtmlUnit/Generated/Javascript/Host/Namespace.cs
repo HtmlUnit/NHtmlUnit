@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,24 +26,27 @@ namespace NHtmlUnit.Javascript.Host
       public Namespace(net.sourceforge.htmlunit.corejs.javascript.ScriptableObject parentScope, string name, string urn)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Namespace(parentScope, name, urn)) {}
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+
+      public System.String Name
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getName();
+         }
       }
 
-// Generating method code for jsxGet_urn
-      public virtual string JsxGet_urn()
+      public System.String Urn
       {
-         return WObj.jsxGet_urn();
-      }
+         get
+         {
+            return WObj.getUrn();
+         }
+         set
+         {
+            WObj.setUrn(value);
+         }
 
-// Generating method code for jsxSet_urn
-      public virtual void JsxSet_urn(string urn)
-      {
-         WObj.jsxSet_urn(urn);
       }
-
    }
 
 

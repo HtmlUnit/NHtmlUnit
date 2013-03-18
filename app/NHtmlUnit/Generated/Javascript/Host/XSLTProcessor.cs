@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,16 +26,38 @@ namespace NHtmlUnit.Javascript.Host
       public XSLTProcessor()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.XSLTProcessor()) {}
 
-// Generating method code for jsxFunction_importStylesheet
-      public virtual void JsxFunction_importStylesheet(NHtmlUnit.Javascript.Host.Node style)
+
+      public NHtmlUnit.Javascript.Host.Node Input
       {
-         WObj.jsxFunction_importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getInput());
+         }
+         set
+         {
+            WObj.setInput((com.gargoylesoftware.htmlunit.javascript.host.Node)value.WrappedObject);
+         }
+
       }
 
-// Generating method code for jsxFunction_setParameter
-      public virtual void JsxFunction_setParameter(string namespaceURI, string localName, object value)
+
+      public System.Object Output
       {
-         WObj.jsxFunction_setParameter(namespaceURI, localName, value);
+         get
+         {
+            return WObj.getOutput();
+         }
+         set
+         {
+            WObj.setOutput(value);
+         }
+
+      }
+// Generating method code for setParameter
+      public virtual void SetParameter(string namespaceURI, string localName, object value)
+      {
+         WObj.setParameter(namespaceURI, localName, value);
       }
 
 // Generating method code for jsConstructor
@@ -44,58 +66,40 @@ namespace NHtmlUnit.Javascript.Host
          WObj.jsConstructor();
       }
 
-// Generating method code for jsxFunction_transformToDocument
-      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument JsxFunction_transformToDocument(NHtmlUnit.Javascript.Host.Node source)
+// Generating method code for importStylesheet
+      public virtual void ImportStylesheet(NHtmlUnit.Javascript.Host.Node style)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.jsxFunction_transformToDocument((com.gargoylesoftware.htmlunit.javascript.host.Node)source.WrappedObject));
+         WObj.importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
       }
 
-// Generating method code for jsxFunction_transformToFragment
-      public virtual NHtmlUnit.Javascript.Host.DocumentFragment JsxFunction_transformToFragment(NHtmlUnit.Javascript.Host.Node source, object output)
+// Generating method code for transformToDocument
+      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument TransformToDocument(NHtmlUnit.Javascript.Host.Node source)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.DocumentFragment>(WObj.jsxFunction_transformToFragment((com.gargoylesoftware.htmlunit.javascript.host.Node)source.WrappedObject, output));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.transformToDocument((com.gargoylesoftware.htmlunit.javascript.host.Node)source.WrappedObject));
       }
 
-// Generating method code for jsxFunction_getParameter
-      public virtual object JsxFunction_getParameter(string namespaceURI, string localName)
+// Generating method code for transformToFragment
+      public virtual NHtmlUnit.Javascript.Host.DocumentFragment TransformToFragment(NHtmlUnit.Javascript.Host.Node source, object output)
       {
-         return WObj.jsxFunction_getParameter(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.DocumentFragment>(WObj.transformToFragment((com.gargoylesoftware.htmlunit.javascript.host.Node)source.WrappedObject, output));
       }
 
-// Generating method code for jsxSet_input
-      public virtual void JsxSet_input(NHtmlUnit.Javascript.Host.Node input)
+// Generating method code for getParameter
+      public virtual object GetParameter(string namespaceURI, string localName)
       {
-         WObj.jsxSet_input((com.gargoylesoftware.htmlunit.javascript.host.Node)input.WrappedObject);
+         return WObj.getParameter(namespaceURI, localName);
       }
 
-// Generating method code for jsxGet_input
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_input()
+// Generating method code for addParameter
+      public virtual void AddParameter(string baseName, object parameter, object namespaceURI)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_input());
+         WObj.addParameter(baseName, parameter, namespaceURI);
       }
 
-// Generating method code for jsxSet_output
-      public virtual void JsxSet_output(object output)
+// Generating method code for transform
+      public virtual void Transform()
       {
-         WObj.jsxSet_output(output);
-      }
-
-// Generating method code for jsxGet_output
-      public virtual object JsxGet_output()
-      {
-         return WObj.jsxGet_output();
-      }
-
-// Generating method code for jsxFunction_addParameter
-      public virtual void JsxFunction_addParameter(string baseName, object parameter, object namespaceURI)
-      {
-         WObj.jsxFunction_addParameter(baseName, parameter, namespaceURI);
-      }
-
-// Generating method code for jsxFunction_transform
-      public virtual void JsxFunction_transform()
-      {
-         WObj.jsxFunction_transform();
+         WObj.transform();
       }
 
    }

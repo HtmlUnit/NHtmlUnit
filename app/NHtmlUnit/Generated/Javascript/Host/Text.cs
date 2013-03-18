@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,16 +26,24 @@ namespace NHtmlUnit.Javascript.Host
       public Text()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Text()) {}
 
+
+      public System.String WholeText
+      {
+         get
+         {
+            return WObj.getWholeText();
+         }
+      }
 // Generating method code for initialize
       public virtual void Initialize()
       {
          WObj.initialize();
       }
 
-// Generating method code for jsxFunction_splitText
-      public virtual object JsxFunction_splitText(int offset)
+// Generating method code for splitText
+      public virtual object SplitText(int offset)
       {
-         return WObj.jsxFunction_splitText(offset);
+         return WObj.splitText(offset);
       }
 
    }

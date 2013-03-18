@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlElement : NHtmlUnit.Html.DomElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class HtmlElement : NHtmlUnit.Html.DomElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlElement()
       {
@@ -24,6 +24,14 @@ namespace NHtmlUnit.Html
       }
 
 
+      public java.lang.Short TabIndex
+      {
+         get
+         {
+            return WObj.getTabIndex();
+         }
+      }
+
       public NHtmlUnit.Html.HtmlForm EnclosingForm
       {
          get
@@ -34,14 +42,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public java.lang.Short TabIndex
-      {
-         get
-         {
-            return WObj.getTabIndex();
-         }
-      }
-
       public NHtmlUnit.Html.HtmlForm EnclosingFormOrDie
       {
          get
@@ -51,15 +51,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public IEnumerable<NHtmlUnit.Html.HtmlElement> ChildElements
-      {
-         get
-         {
-            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getChildElements());
-         }
-       }
 
       public System.String LangAttribute
       {
@@ -164,6 +155,31 @@ namespace NHtmlUnit.Html
             return WObj.getOnKeyUpAttribute();
          }
       }
+// Generating method code for hasEventHandlers
+      public virtual bool HasEventHandlers(string eventName)
+      {
+         return WObj.hasEventHandlers(eventName);
+      }
+
+// Generating method code for fireEvent
+      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
+      }
+
+// Generating method code for getOneHtmlElementByAttribute
+      public virtual NHtmlUnit.Html.HtmlElement GetOneHtmlElementByAttribute(string elementName, string attributeName, string attributeValue)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue));
+      }
+
+// Generating method code for getHtmlElementsByTagNames
+      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
+      {
+
+         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
+      }
+
 // Generating method code for fireEvent
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
@@ -207,17 +223,17 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click());
       }
 
+// Generating method code for type
+      public virtual NHtmlUnit.IPage Type(int keyCode, bool shiftKey, bool ctrlKey, bool altKey)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type(keyCode, shiftKey, ctrlKey, altKey));
+      }
+
 // Generating method code for getElementsByAttribute
       public virtual IList<System.Object> GetElementsByAttribute(string elementName, string attributeName, string attributeValue)
       {
 
          return new ShallowListWrapper<System.Object>(WObj.getElementsByAttribute(elementName, attributeName, attributeValue));
-      }
-
-// Generating method code for getElementById
-      public virtual NHtmlUnit.Html.HtmlElement GetElementById(string id)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementById(id));
       }
 
 // Generating method code for setEventHandler
@@ -280,13 +296,6 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.dblClick(shiftKey, ctrlKey, altKey));
       }
 
-// Generating method code for getHtmlElementsByTagNames
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
-      {
-
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
-      }
-
 // Generating method code for type
       public virtual void Type(string text)
       {
@@ -299,16 +308,10 @@ namespace NHtmlUnit.Html
          WObj.type(text, shiftKey, ctrlKey, altKey);
       }
 
-// Generating method code for getOneHtmlElementByAttribute
-      public virtual NHtmlUnit.Html.HtmlElement GetOneHtmlElementByAttribute(string elementName, string attributeName, string attributeValue)
+// Generating method code for type
+      public virtual NHtmlUnit.IPage Type(int keyCode)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue));
-      }
-
-// Generating method code for hasHtmlElementWithId
-      public virtual bool HasHtmlElementWithId(string id)
-      {
-         return WObj.hasHtmlElementWithId(id);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type(keyCode));
       }
 
 // Generating method code for appendChildIfNoneExists
@@ -321,12 +324,6 @@ namespace NHtmlUnit.Html
       public virtual void RemoveChild(string tagName, int i)
       {
          WObj.removeChild(tagName, i);
-      }
-
-// Generating method code for hasEventHandlers
-      public virtual bool HasEventHandlers(string eventName)
-      {
-         return WObj.hasEventHandlers(eventName);
       }
 
 // Generating method code for setEventHandler
@@ -351,12 +348,6 @@ namespace NHtmlUnit.Html
       public virtual void RemoveHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
       {
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
-      }
-
-// Generating method code for fireEvent
-      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
       }
 
 // Generating method code for mouseOver
@@ -405,19 +396,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage DblClick()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.dblClick());
-      }
-
-// Generating method code for querySelectorAll
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
-      {
-
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
-      }
-
-// Generating method code for querySelector
-      public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.querySelector(selectors));
       }
 
    }
