@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,106 +26,104 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableCellElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableCellElement()) {}
 
-// Generating method code for jsxGet_cellIndex
-      public virtual java.lang.Integer JsxGet_cellIndex()
+
+      public java.lang.Integer CellIndex
       {
-         return WObj.jsxGet_cellIndex();
+         get
+         {
+            return WObj.getCellIndex();
+         }
       }
 
-// Generating method code for jsxGet_abbr
-      public virtual string JsxGet_abbr()
+      public System.String Abbr
       {
-         return WObj.jsxGet_abbr();
+         get
+         {
+            return WObj.getAbbr();
+         }
+         set
+         {
+            WObj.setAbbr(value);
+         }
+
       }
 
-// Generating method code for jsxSet_abbr
-      public virtual void JsxSet_abbr(string abbr)
+      public System.String Axis
       {
-         WObj.jsxSet_abbr(abbr);
+         get
+         {
+            return WObj.getAxis();
+         }
+         set
+         {
+            WObj.setAxis(value);
+         }
+
       }
 
-// Generating method code for jsxGet_axis
-      public virtual string JsxGet_axis()
+      public System.String BgColor
       {
-         return WObj.jsxGet_axis();
+         get
+         {
+            return WObj.getBgColor();
+         }
+         set
+         {
+            WObj.setBgColor(value);
+         }
+
       }
 
-// Generating method code for jsxSet_axis
-      public virtual void JsxSet_axis(string axis)
+      public System.Boolean NoWrap
       {
-         WObj.jsxSet_axis(axis);
+         get
+         {
+            return WObj.getNoWrap();
+         }
+         set
+         {
+            WObj.setNoWrap(value);
+         }
+
       }
 
-// Generating method code for jsxGet_bgColor
-      public virtual string JsxGet_bgColor()
+      public System.String Width_js
       {
-         return WObj.jsxGet_bgColor();
+         get
+         {
+            return WObj.getWidth_js();
+         }
       }
 
-// Generating method code for jsxSet_bgColor
-      public virtual void JsxSet_bgColor(string bgColor)
+      public System.String Height_js
       {
-         WObj.jsxSet_bgColor(bgColor);
+         get
+         {
+            return WObj.getHeight_js();
+         }
+      }
+// Generating method code for getColSpan
+      public virtual int GetColSpan()
+      {
+         return WObj.getColSpan();
       }
 
-// Generating method code for jsxGet_colSpan
-      public virtual int JsxGet_colSpan()
+// Generating method code for setColSpan
+      public virtual void SetColSpan(string colSpan)
       {
-         return WObj.jsxGet_colSpan();
+         WObj.setColSpan(colSpan);
       }
 
-// Generating method code for jsxSet_colSpan
-      public virtual void JsxSet_colSpan(string colSpan)
+// Generating method code for getRowSpan
+      public virtual int GetRowSpan()
       {
-         WObj.jsxSet_colSpan(colSpan);
+         return WObj.getRowSpan();
       }
 
-// Generating method code for jsxGet_rowSpan
-      public virtual int JsxGet_rowSpan()
+// Generating method code for setRowSpan
+      public virtual void SetRowSpan(string rowSpan)
       {
-         return WObj.jsxGet_rowSpan();
-      }
-
-// Generating method code for jsxSet_rowSpan
-      public virtual void JsxSet_rowSpan(string rowSpan)
-      {
-         WObj.jsxSet_rowSpan(rowSpan);
-      }
-
-// Generating method code for jsxGet_noWrap
-      public virtual bool JsxGet_noWrap()
-      {
-         return WObj.jsxGet_noWrap();
-      }
-
-// Generating method code for jsxSet_noWrap
-      public virtual void JsxSet_noWrap(bool noWrap)
-      {
-         WObj.jsxSet_noWrap(noWrap);
-      }
-
-// Generating method code for jsxGet_width
-      public virtual string JsxGet_width()
-      {
-         return WObj.jsxGet_width();
-      }
-
-// Generating method code for jsxSet_width
-      public virtual void JsxSet_width(string width)
-      {
-         WObj.jsxSet_width(width);
-      }
-
-// Generating method code for jsxGet_height
-      public virtual string JsxGet_height()
-      {
-         return WObj.jsxGet_height();
-      }
-
-// Generating method code for jsxSet_height
-      public virtual void JsxSet_height(string width)
-      {
-         WObj.jsxSet_height(width);
+         WObj.setRowSpan(rowSpan);
       }
 
    }

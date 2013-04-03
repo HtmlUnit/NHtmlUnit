@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,124 +23,148 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Range)WrappedObject; }
       }
 
-      public Range(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Range((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
-
       public Range()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Range()) {}
 
+      public Range(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Range((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
+
+
+      public System.Object StartContainer
+      {
+         get
+         {
+            return WObj.getStartContainer();
+         }
+      }
+
+      public System.Object EndContainer
+      {
+         get
+         {
+            return WObj.getEndContainer();
+         }
+      }
+
+      public System.Int32 StartOffset
+      {
+         get
+         {
+            return WObj.getStartOffset();
+         }
+      }
+
+      public System.Int32 EndOffset
+      {
+         get
+         {
+            return WObj.getEndOffset();
+         }
+      }
+
+      public System.Boolean Collapsed
+      {
+         get
+         {
+            return WObj.getCollapsed();
+         }
+      }
+
+      public System.Object CommonAncestorContainer
+      {
+         get
+         {
+            return WObj.getCommonAncestorContainer();
+         }
+      }
 // Generating method code for toW3C
       public virtual NHtmlUnit.Html.Impl.SimpleRange ToW3C()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.Impl.SimpleRange>(WObj.toW3C());
       }
 
-// Generating method code for jsxFunction_setStartBefore
-      public virtual void JsxFunction_setStartBefore(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for setStart
+      public virtual void SetStart(NHtmlUnit.Javascript.Host.Node refNode, int offset)
       {
-         WObj.jsxFunction_setStartBefore((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         WObj.setStart((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject, offset);
       }
 
-// Generating method code for jsxFunction_setEndAfter
-      public virtual void JsxFunction_setEndAfter(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for setEnd
+      public virtual void SetEnd(NHtmlUnit.Javascript.Host.Node refNode, int offset)
       {
-         WObj.jsxFunction_setEndAfter((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         WObj.setEnd((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject, offset);
       }
 
-// Generating method code for jsxGet_startContainer
-      public virtual object JsxGet_startContainer()
+// Generating method code for selectNodeContents
+      public virtual void SelectNodeContents(NHtmlUnit.Javascript.Host.Node refNode)
       {
-         return WObj.jsxGet_startContainer();
+         WObj.selectNodeContents((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
       }
 
-// Generating method code for jsxGet_endContainer
-      public virtual object JsxGet_endContainer()
+// Generating method code for selectNode
+      public virtual void SelectNode(NHtmlUnit.Javascript.Host.Node refNode)
       {
-         return WObj.jsxGet_endContainer();
+         WObj.selectNode((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
       }
 
-// Generating method code for jsxGet_startOffset
-      public virtual int JsxGet_startOffset()
+// Generating method code for collapse
+      public virtual void Collapse(bool toStart)
       {
-         return WObj.jsxGet_startOffset();
+         WObj.collapse(toStart);
       }
 
-// Generating method code for jsxGet_endOffset
-      public virtual int JsxGet_endOffset()
+// Generating method code for createContextualFragment
+      public virtual object CreateContextualFragment(string valueAsString)
       {
-         return WObj.jsxGet_endOffset();
+         return WObj.createContextualFragment(valueAsString);
       }
 
-// Generating method code for jsxFunction_setStart
-      public virtual void JsxFunction_setStart(NHtmlUnit.Javascript.Host.Node refNode, int offset)
+// Generating method code for extractContents
+      public virtual object ExtractContents()
       {
-         WObj.jsxFunction_setStart((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject, offset);
+         return WObj.extractContents();
       }
 
-// Generating method code for jsxFunction_setStartAfter
-      public virtual void JsxFunction_setStartAfter(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for compareBoundaryPoints
+      public virtual object CompareBoundaryPoints(int how, NHtmlUnit.Javascript.Host.Range sourceRange)
       {
-         WObj.jsxFunction_setStartAfter((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         return WObj.compareBoundaryPoints(how, (com.gargoylesoftware.htmlunit.javascript.host.Range)sourceRange.WrappedObject);
       }
 
-// Generating method code for jsxGet_collapsed
-      public virtual bool JsxGet_collapsed()
+// Generating method code for cloneContents
+      public virtual object CloneContents()
       {
-         return WObj.jsxGet_collapsed();
+         return WObj.cloneContents();
       }
 
-// Generating method code for jsxFunction_setEnd
-      public virtual void JsxFunction_setEnd(NHtmlUnit.Javascript.Host.Node refNode, int offset)
+// Generating method code for deleteContents
+      public virtual void DeleteContents()
       {
-         WObj.jsxFunction_setEnd((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject, offset);
+         WObj.deleteContents();
       }
 
-// Generating method code for jsxFunction_setEndBefore
-      public virtual void JsxFunction_setEndBefore(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for insertNode
+      public virtual void InsertNode(NHtmlUnit.Javascript.Host.Node newNode)
       {
-         WObj.jsxFunction_setEndBefore((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         WObj.insertNode((com.gargoylesoftware.htmlunit.javascript.host.Node)newNode.WrappedObject);
       }
 
-// Generating method code for jsxFunction_selectNodeContents
-      public virtual void JsxFunction_selectNodeContents(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for surroundContents
+      public virtual void SurroundContents(NHtmlUnit.Javascript.Host.Node newNode)
       {
-         WObj.jsxFunction_selectNodeContents((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         WObj.surroundContents((com.gargoylesoftware.htmlunit.javascript.host.Node)newNode.WrappedObject);
       }
 
-// Generating method code for jsxFunction_selectNode
-      public virtual void JsxFunction_selectNode(NHtmlUnit.Javascript.Host.Node refNode)
+// Generating method code for cloneRange
+      public virtual object CloneRange()
       {
-         WObj.jsxFunction_selectNode((com.gargoylesoftware.htmlunit.javascript.host.Node)refNode.WrappedObject);
+         return WObj.cloneRange();
       }
 
-// Generating method code for jsxFunction_collapse
-      public virtual void JsxFunction_collapse(bool toStart)
+// Generating method code for detach
+      public virtual void Detach()
       {
-         WObj.jsxFunction_collapse(toStart);
-      }
-
-// Generating method code for jsxGet_commonAncestorContainer
-      public virtual object JsxGet_commonAncestorContainer()
-      {
-         return WObj.jsxGet_commonAncestorContainer();
-      }
-
-// Generating method code for jsxFunction_createContextualFragment
-      public virtual object JsxFunction_createContextualFragment(string valueAsString)
-      {
-         return WObj.jsxFunction_createContextualFragment(valueAsString);
-      }
-
-// Generating method code for jsxFunction_extractContents
-      public virtual object JsxFunction_extractContents()
-      {
-         return WObj.jsxFunction_extractContents();
-      }
-
-// Generating method code for jsxFunction_compareBoundaryPoints
-      public virtual object JsxFunction_compareBoundaryPoints(int how, NHtmlUnit.Javascript.Host.Range sourceRange)
-      {
-         return WObj.jsxFunction_compareBoundaryPoints(how, (com.gargoylesoftware.htmlunit.javascript.host.Range)sourceRange.WrappedObject);
+         WObj.detach();
       }
 
    }

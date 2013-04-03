@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.html.impl.SelectableTextInput
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,7 @@ namespace NHtmlUnit.Html.Impl
    {
       System.Int32 SelectionStart { get; set; }
       System.Int32 SelectionEnd { get; set; }
+      NHtmlUnit.IPage Page  { get; }
       System.String Text { get; set; }
       System.String SelectedText  { get; }
 // Generating method code for focus

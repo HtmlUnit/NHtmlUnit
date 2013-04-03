@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,42 +26,54 @@ namespace NHtmlUnit.Javascript.Host
       public DocumentType()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.DocumentType()) {}
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+
+      public System.String Name
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getName();
+         }
       }
 
-// Generating method code for jsxGet_publicId
-      public virtual string JsxGet_publicId()
+      public System.String PublicId
       {
-         return WObj.jsxGet_publicId();
+         get
+         {
+            return WObj.getPublicId();
+         }
       }
 
-// Generating method code for jsxGet_systemId
-      public virtual string JsxGet_systemId()
+      public System.String SystemId
       {
-         return WObj.jsxGet_systemId();
+         get
+         {
+            return WObj.getSystemId();
+         }
       }
 
-// Generating method code for jsxGet_internalSubset
-      public virtual string JsxGet_internalSubset()
+      public System.String InternalSubset
       {
-         return WObj.jsxGet_internalSubset();
+         get
+         {
+            return WObj.getInternalSubset();
+         }
       }
 
-// Generating method code for jsxGet_entities
-      public virtual object JsxGet_entities()
+      public System.Object Entities
       {
-         return WObj.jsxGet_entities();
+         get
+         {
+            return WObj.getEntities();
+         }
       }
 
-// Generating method code for jsxGet_notations
-      public virtual object JsxGet_notations()
+      public System.Object Notations
       {
-         return WObj.jsxGet_notations();
+         get
+         {
+            return WObj.getNotations();
+         }
       }
-
    }
 
 

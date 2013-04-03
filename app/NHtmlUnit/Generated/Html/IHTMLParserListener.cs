@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.html.HTMLParserListener
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -14,9 +14,9 @@ namespace NHtmlUnit.Html
    public interface IHTMLParserListener : NHtmlUnit.IObjectWrapper
    {
 // Generating method code for error
-      void Error(string str1, java.net.URL url, int i1, int i2, string str2);
+      void Error(string str1, java.net.URL url, string str2, int i1, int i2, string str3);
 // Generating method code for warning
-      void Warning(string str1, java.net.URL url, int i1, int i2, string str2);
+      void Warning(string str1, java.net.URL url, string str2, int i1, int i2, string str3);
 
    }
 }

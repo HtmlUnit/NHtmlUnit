@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,21 +24,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Background.IJavaScriptJobManager>(
-               WObj.getJobManager());
-         }
-         set
-         {
-            WObj.setJobManager((com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager)value.WrappedObject);
-         }
-
-      }
-
-
       public NHtmlUnit.IPage EnclosedPage
       {
          get
@@ -49,6 +34,21 @@ namespace NHtmlUnit
          set
          {
             WObj.setEnclosedPage((com.gargoylesoftware.htmlunit.Page)value.WrappedObject);
+         }
+
+      }
+
+
+      public NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Background.IJavaScriptJobManager>(
+               WObj.getJobManager());
+         }
+         set
+         {
+            WObj.setJobManager((com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager)value.WrappedObject);
          }
 
       }
@@ -99,6 +99,58 @@ namespace NHtmlUnit
          }
       }
 
+
+      public System.Int32 InnerWidth
+      {
+         get
+         {
+            return WObj.getInnerWidth();
+         }
+         set
+         {
+            WObj.setInnerWidth(value);
+         }
+
+      }
+
+      public System.Int32 OuterWidth
+      {
+         get
+         {
+            return WObj.getOuterWidth();
+         }
+         set
+         {
+            WObj.setOuterWidth(value);
+         }
+
+      }
+
+      public System.Int32 InnerHeight
+      {
+         get
+         {
+            return WObj.getInnerHeight();
+         }
+         set
+         {
+            WObj.setInnerHeight(value);
+         }
+
+      }
+
+      public System.Int32 OuterHeight
+      {
+         get
+         {
+            return WObj.getOuterHeight();
+         }
+         set
+         {
+            WObj.setOuterHeight(value);
+         }
+
+      }
 
       public NHtmlUnit.IWebWindow ParentWindow
       {

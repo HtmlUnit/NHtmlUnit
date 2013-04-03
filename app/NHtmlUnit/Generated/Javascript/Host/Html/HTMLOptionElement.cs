@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,58 +26,57 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLOptionElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement()) {}
 
+
+      public System.String Value
+      {
+         get
+         {
+            return WObj.getValue();
+         }
+         set
+         {
+            WObj.setValue(value);
+         }
+
+      }
+
+      public System.Boolean Selected
+      {
+         get
+         {
+            return WObj.getSelected();
+         }
+         set
+         {
+            WObj.setSelected(value);
+         }
+
+      }
+
+      public System.Boolean DefaultSelected
+      {
+         get
+         {
+            return WObj.getDefaultSelected();
+         }
+      }
+
+      public System.String Label
+      {
+         get
+         {
+            return WObj.getLabel();
+         }
+         set
+         {
+            WObj.setLabel(value);
+         }
+
+      }
 // Generating method code for jsConstructor
       public virtual void JsConstructor(string newText, string newValue, bool defaultSelected, bool selected)
       {
          WObj.jsConstructor(newText, newValue, defaultSelected, selected);
-      }
-
-// Generating method code for jsxGet_value
-      public virtual string JsxGet_value()
-      {
-         return WObj.jsxGet_value();
-      }
-
-// Generating method code for jsxSet_value
-      public virtual void JsxSet_value(string newValue)
-      {
-         WObj.jsxSet_value(newValue);
-      }
-
-// Generating method code for jsxSet_text
-      public virtual void JsxSet_text(string newText)
-      {
-         WObj.jsxSet_text(newText);
-      }
-
-// Generating method code for jsxGet_selected
-      public virtual bool JsxGet_selected()
-      {
-         return WObj.jsxGet_selected();
-      }
-
-// Generating method code for jsxSet_selected
-      public virtual void JsxSet_selected(bool selected)
-      {
-         WObj.jsxSet_selected(selected);
-      }
-
-// Generating method code for jsxGet_defaultSelected
-      public virtual bool JsxGet_defaultSelected()
-      {
-         return WObj.jsxGet_defaultSelected();
-      }
-
-// Generating method code for jsxGet_label
-      public virtual string JsxGet_label()
-      {
-         return WObj.jsxGet_label();
-      }
-
-// Generating method code for jsxSet_label
-      public virtual void JsxSet_label(string label)
-      {
-         WObj.jsxSet_label(label);
       }
 
    }

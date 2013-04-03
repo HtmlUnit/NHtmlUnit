@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLSerializer()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLSerializer()) {}
 
-// Generating method code for jsxFunction_serializeToString
-      public virtual string JsxFunction_serializeToString(NHtmlUnit.Javascript.Host.Node root)
+// Generating method code for serializeToString
+      public virtual string SerializeToString(NHtmlUnit.Javascript.Host.Node root)
       {
-         return WObj.jsxFunction_serializeToString((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject);
+         return WObj.serializeToString((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject);
       }
 
 // Generating method code for jsConstructor

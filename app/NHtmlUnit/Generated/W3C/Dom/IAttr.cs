@@ -1,5 +1,5 @@
 // Wrapper for org.w3c.dom.Attr
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;

@@ -62,7 +62,7 @@ namespace NHtmlUnit.Html
         /// <returns></returns>
         public T GetElementByName<T>(string name) where T : HtmlElement
         {
-            IList<HtmlElement> elements = GetElementsByName(name);
+            IList<DomElement> elements = GetElementsByName(name);
 
             if (elements.Count == 0)
                 throw new HtmlElementNotFoundException("Could not find element with name " + name);

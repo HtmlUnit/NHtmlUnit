@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,28 +26,29 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableCaptionElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableCaptionElement()) {}
 
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
+
+      public System.String Align
       {
-         return WObj.jsxGet_align();
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
+// Generating method code for getVAlign
+      public virtual string GetVAlign()
+      {
+         return WObj.getVAlign();
       }
 
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
+// Generating method code for setVAlign
+      public virtual void SetVAlign(object vAlign)
       {
-         WObj.jsxSet_align(align);
-      }
-
-// Generating method code for jsxGet_vAlign
-      public virtual string JsxGet_vAlign()
-      {
-         return WObj.jsxGet_vAlign();
-      }
-
-// Generating method code for jsxSet_vAlign
-      public virtual void JsxSet_vAlign(object vAlign)
-      {
-         WObj.jsxSet_vAlign(vAlign);
+         WObj.setVAlign(vAlign);
       }
 
    }

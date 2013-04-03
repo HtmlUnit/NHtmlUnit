@@ -2,14 +2,14 @@
 : This file makes a new version of HtmlUnit.dll from the original HtmlUnit JAR files.
 
 : The version should be set to the same as that of the Java version of HtmlUnit
-set VERSION=2.10.0.0
+set VERSION=2.12.0.0
 
 echo Please be patient while compiling HtmlUnit JAR files into HtmlUnit.dll.
 echo There will be a lot of warnings; these can be safely ignored.
 echo.
 echo.
 
-set JAVAC="C:\Program Files\Java\jdk1.7.0_03\bin\javac.exe"
+set JAVAC="C:\Program Files\Java\jdk1.7.0_17\bin\javac.exe"
 set IKVM=..\..\packages\IKVM.NET.7.0.4335.1\lib
 set IKVMC="%IKVM%\ikvmc.exe"
 set IKVMSTUB="%IKVM%\ikvmstub.exe"

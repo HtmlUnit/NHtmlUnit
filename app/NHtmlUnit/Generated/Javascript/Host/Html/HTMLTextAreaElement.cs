@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,94 +26,100 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTextAreaElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTextAreaElement()) {}
 
-// Generating method code for jsxSet_selectionStart
-      public virtual void JsxSet_selectionStart(int start)
+
+      public System.Int32 SelectionStart
       {
-         WObj.jsxSet_selectionStart(start);
+         get
+         {
+            return WObj.getSelectionStart();
+         }
+         set
+         {
+            WObj.setSelectionStart(value);
+         }
+
       }
 
-// Generating method code for jsxSet_selectionEnd
-      public virtual void JsxSet_selectionEnd(int end)
+      public System.Int32 SelectionEnd
       {
-         WObj.jsxSet_selectionEnd(end);
+         get
+         {
+            return WObj.getSelectionEnd();
+         }
+         set
+         {
+            WObj.setSelectionEnd(value);
+         }
+
       }
 
-// Generating method code for jsxGet_cols
-      public virtual int JsxGet_cols()
+      public System.String DefaultValue
       {
-         return WObj.jsxGet_cols();
+         get
+         {
+            return WObj.getDefaultValue();
+         }
+         set
+         {
+            WObj.setDefaultValue(value);
+         }
+
       }
 
-// Generating method code for jsxSet_cols
-      public virtual void JsxSet_cols(string cols)
+      public System.Int32 TextLength
       {
-         WObj.jsxSet_cols(cols);
+         get
+         {
+            return WObj.getTextLength();
+         }
       }
 
-// Generating method code for jsxGet_rows
-      public virtual int JsxGet_rows()
+      public System.Boolean ReadOnly
       {
-         return WObj.jsxGet_rows();
+         get
+         {
+            return WObj.getReadOnly();
+         }
+         set
+         {
+            WObj.setReadOnly(value);
+         }
+
+      }
+// Generating method code for setSelectionRange
+      public virtual void SetSelectionRange(int start, int end)
+      {
+         WObj.setSelectionRange(start, end);
       }
 
-// Generating method code for jsxSet_rows
-      public virtual void JsxSet_rows(string rows)
+// Generating method code for select
+      public virtual void Select()
       {
-         WObj.jsxSet_rows(rows);
+         WObj.select();
       }
 
-// Generating method code for jsxGet_defaultValue
-      public virtual string JsxGet_defaultValue()
+// Generating method code for getCols
+      public virtual int GetCols()
       {
-         return WObj.jsxGet_defaultValue();
+         return WObj.getCols();
       }
 
-// Generating method code for jsxSet_defaultValue
-      public virtual void JsxSet_defaultValue(string defaultValue)
+// Generating method code for setCols
+      public virtual void SetCols(string cols)
       {
-         WObj.jsxSet_defaultValue(defaultValue);
+         WObj.setCols(cols);
       }
 
-// Generating method code for jsxGet_textLength
-      public virtual int JsxGet_textLength()
+// Generating method code for getRows
+      public virtual int GetRows()
       {
-         return WObj.jsxGet_textLength();
+         return WObj.getRows();
       }
 
-// Generating method code for jsxGet_selectionStart
-      public virtual int JsxGet_selectionStart()
+// Generating method code for setRows
+      public virtual void SetRows(string rows)
       {
-         return WObj.jsxGet_selectionStart();
-      }
-
-// Generating method code for jsxGet_selectionEnd
-      public virtual int JsxGet_selectionEnd()
-      {
-         return WObj.jsxGet_selectionEnd();
-      }
-
-// Generating method code for jsxFunction_setSelectionRange
-      public virtual void JsxFunction_setSelectionRange(int start, int end)
-      {
-         WObj.jsxFunction_setSelectionRange(start, end);
-      }
-
-// Generating method code for jsxFunction_select
-      public virtual void JsxFunction_select()
-      {
-         WObj.jsxFunction_select();
-      }
-
-// Generating method code for jsxGet_readOnly
-      public virtual bool JsxGet_readOnly()
-      {
-         return WObj.jsxGet_readOnly();
-      }
-
-// Generating method code for jsxSet_readOnly
-      public virtual void JsxSet_readOnly(bool readOnly)
-      {
-         WObj.jsxSet_readOnly(readOnly);
+         WObj.setRows(rows);
       }
 
    }

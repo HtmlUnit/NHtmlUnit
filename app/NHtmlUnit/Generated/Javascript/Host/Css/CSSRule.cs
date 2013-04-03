@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,34 +23,45 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSRule)WrappedObject; }
       }
 
-// Generating method code for jsxGet_type
-      public virtual System.Int16 JsxGet_type()
+
+      public System.Int16 Type
       {
-         return WObj.jsxGet_type();
+         get
+         {
+            return WObj.getType();
+         }
       }
 
-// Generating method code for jsxGet_cssText
-      public virtual string JsxGet_cssText()
+      public System.String CssText
       {
-         return WObj.jsxGet_cssText();
+         get
+         {
+            return WObj.getCssText();
+         }
+         set
+         {
+            WObj.setCssText(value);
+         }
+
       }
 
-// Generating method code for jsxSet_cssText
-      public virtual void JsxSet_cssText(string cssText)
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet ParentStyleSheet
       {
-         WObj.jsxSet_cssText(cssText);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
+               WObj.getParentStyleSheet());
+         }
       }
 
-// Generating method code for jsxGet_parentStyleSheet
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet JsxGet_parentStyleSheet()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.jsxGet_parentStyleSheet());
-      }
 
-// Generating method code for jsxGet_parentRule
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSRule JsxGet_parentRule()
+      public NHtmlUnit.Javascript.Host.Css.CSSRule ParentRule
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRule>(WObj.jsxGet_parentRule());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRule>(
+               WObj.getParentRule());
+         }
       }
 
    }

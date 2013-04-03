@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,11 +24,11 @@ namespace NHtmlUnit.Html
       }
 
 
-      public NHtmlUnit.Html.BaseFrame FrameElement
+      public NHtmlUnit.Html.BaseFrameElement FrameElement
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.BaseFrame>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.BaseFrameElement>(
                WObj.getFrameElement());
          }
       }

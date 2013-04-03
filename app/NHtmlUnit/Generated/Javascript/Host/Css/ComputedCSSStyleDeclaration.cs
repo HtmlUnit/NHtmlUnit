@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,34 +23,90 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)WrappedObject; }
       }
 
-      public ComputedCSSStyleDeclaration()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration()) {}
-
       public ComputedCSSStyleDeclaration(NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration style)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
 
+      public ComputedCSSStyleDeclaration()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration()) {}
 
-      public System.Int32 MarginRight
+
+      public System.Int32 MarginRightValue
       {
          get
          {
-            return WObj.getMarginRight();
+            return WObj.getMarginRightValue();
          }
       }
 
-      public System.Int32 MarginTop
+      public System.Int32 MarginBottomValue
       {
          get
          {
-            return WObj.getMarginTop();
+            return WObj.getMarginBottomValue();
          }
       }
 
-      public System.Int32 MarginBottom
+      public System.String PositionWithInheritance
       {
          get
          {
-            return WObj.getMarginBottom();
+            return WObj.getPositionWithInheritance();
+         }
+      }
+
+      public System.Int32 MarginLeftValue
+      {
+         get
+         {
+            return WObj.getMarginLeftValue();
+         }
+      }
+
+      public System.Int32 PaddingLeftValue
+      {
+         get
+         {
+            return WObj.getPaddingLeftValue();
+         }
+      }
+
+      public System.Int32 BorderLeftValue
+      {
+         get
+         {
+            return WObj.getBorderLeftValue();
+         }
+      }
+
+      public System.Int32 BorderTopValue
+      {
+         get
+         {
+            return WObj.getBorderTopValue();
+         }
+      }
+
+      public System.Int32 MarginTopValue
+      {
+         get
+         {
+            return WObj.getMarginTopValue();
+         }
+      }
+
+      public System.Int32 PaddingTopValue
+      {
+         get
+         {
+            return WObj.getPaddingTopValue();
+         }
+      }
+
+      public System.Int32 BorderRightValue
+      {
+         get
+         {
+            return WObj.getBorderRightValue();
          }
       }
 
@@ -70,14 +126,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public System.String PositionWithInheritance
-      {
-         get
-         {
-            return WObj.getPositionWithInheritance();
-         }
-      }
-
       public System.String TopWithInheritance
       {
          get
@@ -91,14 +139,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          get
          {
             return WObj.getBottomWithInheritance();
-         }
-      }
-
-      public System.Int32 PaddingTop
-      {
-         get
-         {
-            return WObj.getPaddingTop();
          }
       }
 
@@ -118,69 +158,49 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public System.Int32 MarginLeft
+      public System.Int32 PaddingRightValue
       {
          get
          {
-            return WObj.getMarginLeft();
+            return WObj.getPaddingRightValue();
          }
       }
 
-      public System.Int32 PaddingLeft
+      public System.Int32 PaddingBottomValue
       {
          get
          {
-            return WObj.getPaddingLeft();
+            return WObj.getPaddingBottomValue();
          }
       }
 
-      public System.Int32 PaddingRight
+      public System.Int32 BorderBottomValue
       {
          get
          {
-            return WObj.getPaddingRight();
+            return WObj.getBorderBottomValue();
          }
       }
 
-      public System.Int32 PaddingBottom
+      public java.util.Map StyleMap
       {
          get
          {
-            return WObj.getPaddingBottom();
+            return WObj.getStyleMap();
          }
+      }
+// Generating method code for getCalculatedWidth
+      public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
+      {
+         return WObj.getCalculatedWidth(includeBorder, includePadding);
       }
 
-      public System.Int32 BorderLeft
+// Generating method code for getCalculatedHeight
+      public virtual int GetCalculatedHeight(bool includeBorder, bool includePadding)
       {
-         get
-         {
-            return WObj.getBorderLeft();
-         }
+         return WObj.getCalculatedHeight(includeBorder, includePadding);
       }
 
-      public System.Int32 BorderRight
-      {
-         get
-         {
-            return WObj.getBorderRight();
-         }
-      }
-
-      public System.Int32 BorderTop
-      {
-         get
-         {
-            return WObj.getBorderTop();
-         }
-      }
-
-      public System.Int32 BorderBottom
-      {
-         get
-         {
-            return WObj.getBorderBottom();
-         }
-      }
 // Generating method code for isScrollable
       public virtual bool IsScrollable(bool horizontal)
       {
@@ -193,34 +213,22 @@ namespace NHtmlUnit.Javascript.Host.Css
          return WObj.getLeft(includeMargin, includeBorder, includePadding);
       }
 
-// Generating method code for getCalculatedWidth
-      public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
-      {
-         return WObj.getCalculatedWidth(includeBorder, includePadding);
-      }
-
 // Generating method code for getTop
       public virtual int GetTop(bool includeMargin, bool includeBorder, bool includePadding)
       {
          return WObj.getTop(includeMargin, includeBorder, includePadding);
       }
 
-// Generating method code for getCalculatedHeight
-      public virtual int GetCalculatedHeight(bool includeBorder, bool includePadding)
+// Generating method code for setDefaultLocalStyleAttribute
+      public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
       {
-         return WObj.getCalculatedHeight(includeBorder, includePadding);
+         WObj.setDefaultLocalStyleAttribute(name, newValue);
       }
 
 // Generating method code for applyStyleFromSelector
       public virtual void ApplyStyleFromSelector(NHtmlUnit.W3C.Dom.Css.ICSSStyleDeclaration declaration, org.w3c.css.sac.Selector selector)
       {
          WObj.applyStyleFromSelector((org.w3c.dom.css.CSSStyleDeclaration)declaration.WrappedObject, selector);
-      }
-
-// Generating method code for setDefaultLocalStyleAttribute
-      public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
-      {
-         WObj.setDefaultLocalStyleAttribute(name, newValue);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,28 +32,34 @@ namespace NHtmlUnit.Javascript.Host
       public UIEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.UIEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
 
-// Generating method code for jsxGet_detail
-      public virtual System.Int64 JsxGet_detail()
+
+      public System.Int64 Detail
       {
-         return WObj.jsxGet_detail();
+         get
+         {
+            return WObj.getDetail();
+         }
       }
 
-// Generating method code for jsxGet_view
-      public virtual object JsxGet_view()
+      public System.Object View
       {
-         return WObj.jsxGet_view();
+         get
+         {
+            return WObj.getView();
+         }
       }
 
-// Generating method code for jsxFunction_initUIEvent
-      public virtual void JsxFunction_initUIEvent(string type, bool bubbles, bool cancelable, object view, int detail)
+      public System.Boolean MetaKey
       {
-         WObj.jsxFunction_initUIEvent(type, bubbles, cancelable, view, detail);
+         get
+         {
+            return WObj.getMetaKey();
+         }
       }
-
-// Generating method code for jsxGet_metaKey
-      public virtual bool JsxGet_metaKey()
+// Generating method code for initUIEvent
+      public virtual void InitUIEvent(string type, bool bubbles, bool cancelable, object view, int detail)
       {
-         return WObj.jsxGet_metaKey();
+         WObj.initUIEvent(type, bubbles, cancelable, view, detail);
       }
 
    }

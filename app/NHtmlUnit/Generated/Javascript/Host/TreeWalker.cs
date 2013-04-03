@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,88 +23,103 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.TreeWalker)WrappedObject; }
       }
 
-      public TreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Int64 whatToShow, NHtmlUnit.Javascript.Host.NodeFilter filter, java.lang.Boolean expandEntityReferences)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, (com.gargoylesoftware.htmlunit.javascript.host.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
-
       public TreeWalker()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker()) {}
 
-// Generating method code for jsxGet_root
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_root()
+      public TreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Int64 whatToShow, NHtmlUnit.Javascript.Host.NodeFilter filter, bool expandEntityReferences)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, (com.gargoylesoftware.htmlunit.javascript.host.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
+
+
+      public NHtmlUnit.Javascript.Host.Node Root
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_root());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getRoot());
+         }
       }
 
-// Generating method code for jsxGet_whatToShow
-      public virtual System.Int64 JsxGet_whatToShow()
+
+      public System.Int64 WhatToShow
       {
-         return WObj.jsxGet_whatToShow();
+         get
+         {
+            return WObj.getWhatToShow();
+         }
       }
 
-// Generating method code for jsxGet_filter
-      public virtual NHtmlUnit.Javascript.Host.NodeFilter JsxGet_filter()
+      public NHtmlUnit.Javascript.Host.NodeFilter Filter
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.NodeFilter>(WObj.jsxGet_filter());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.NodeFilter>(
+               WObj.getFilter());
+         }
       }
 
-// Generating method code for jsxGet_expandEntityReferences
-      public virtual bool JsxGet_expandEntityReferences()
+
+      public System.Boolean ExpandEntityReferences
       {
-         return WObj.jsxGet_expandEntityReferences();
+         get
+         {
+            return WObj.getExpandEntityReferences();
+         }
       }
 
-// Generating method code for jsxGet_currentNode
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_currentNode()
+      public NHtmlUnit.Javascript.Host.Node CurrentNode
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_currentNode());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getCurrentNode());
+         }
+         set
+         {
+            WObj.setCurrentNode((com.gargoylesoftware.htmlunit.javascript.host.Node)value.WrappedObject);
+         }
+
       }
 
-// Generating method code for jsxSet_currentNode
-      public virtual void JsxSet_currentNode(NHtmlUnit.Javascript.Host.Node currentNode)
+// Generating method code for parentNode
+      public virtual NHtmlUnit.Javascript.Host.Node ParentNode()
       {
-         WObj.jsxSet_currentNode((com.gargoylesoftware.htmlunit.javascript.host.Node)currentNode.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.parentNode());
       }
 
-// Generating method code for jsxFunction_parentNode
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_parentNode()
+// Generating method code for firstChild
+      public virtual NHtmlUnit.Javascript.Host.Node FirstChild()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_parentNode());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.firstChild());
       }
 
-// Generating method code for jsxFunction_firstChild
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_firstChild()
+// Generating method code for lastChild
+      public virtual NHtmlUnit.Javascript.Host.Node LastChild()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_firstChild());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.lastChild());
       }
 
-// Generating method code for jsxFunction_lastChild
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_lastChild()
+// Generating method code for previousSibling
+      public virtual NHtmlUnit.Javascript.Host.Node PreviousSibling()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_lastChild());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.previousSibling());
       }
 
-// Generating method code for jsxFunction_previousSibling
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_previousSibling()
+// Generating method code for nextSibling
+      public virtual NHtmlUnit.Javascript.Host.Node NextSibling()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_previousSibling());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.nextSibling());
       }
 
-// Generating method code for jsxFunction_nextSibling
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_nextSibling()
+// Generating method code for previousNode
+      public virtual NHtmlUnit.Javascript.Host.Node PreviousNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_nextSibling());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.previousNode());
       }
 
-// Generating method code for jsxFunction_previousNode
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_previousNode()
+// Generating method code for nextNode
+      public virtual NHtmlUnit.Javascript.Host.Node NextNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_previousNode());
-      }
-
-// Generating method code for jsxFunction_nextNode
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_nextNode()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_nextNode());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.nextNode());
       }
 
    }

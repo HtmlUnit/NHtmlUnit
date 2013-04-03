@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,136 +26,147 @@ namespace NHtmlUnit.Javascript.Host
       public OfflineResourceList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.OfflineResourceList()) {}
 
-// Generating method code for jsxGet_onchecking
-      public virtual object JsxGet_onchecking()
+
+      public System.Object Onchecking
       {
-         return WObj.jsxGet_onchecking();
+         get
+         {
+            return WObj.getOnchecking();
+         }
+         set
+         {
+            WObj.setOnchecking(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onchecking
-      public virtual void JsxSet_onchecking(object o)
+      public System.Object Onerror
       {
-         WObj.jsxSet_onchecking(o);
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onerror
-      public virtual object JsxGet_onerror()
+      public System.Object Onnoupdate
       {
-         return WObj.jsxGet_onerror();
+         get
+         {
+            return WObj.getOnnoupdate();
+         }
+         set
+         {
+            WObj.setOnnoupdate(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onerror
-      public virtual void JsxSet_onerror(object o)
+      public System.Object Ondownloading
       {
-         WObj.jsxSet_onerror(o);
+         get
+         {
+            return WObj.getOndownloading();
+         }
+         set
+         {
+            WObj.setOndownloading(value);
+         }
+
       }
 
-// Generating method code for jsxGet_onnoupdate
-      public virtual object JsxGet_onnoupdate()
+      public System.Object Onprogress
       {
-         return WObj.jsxGet_onnoupdate();
+         get
+         {
+            return WObj.getOnprogress();
+         }
+         set
+         {
+            WObj.setOnprogress(value);
+         }
+
       }
 
-// Generating method code for jsxSet_onnoupdate
-      public virtual void JsxSet_onnoupdate(object o)
+      public System.Object Onupdateready
       {
-         WObj.jsxSet_onnoupdate(o);
+         get
+         {
+            return WObj.getOnupdateready();
+         }
+         set
+         {
+            WObj.setOnupdateready(value);
+         }
+
       }
 
-// Generating method code for jsxGet_ondownloading
-      public virtual object JsxGet_ondownloading()
+      public System.Object Oncached
       {
-         return WObj.jsxGet_ondownloading();
+         get
+         {
+            return WObj.getOncached();
+         }
+         set
+         {
+            WObj.setOncached(value);
+         }
+
       }
 
-// Generating method code for jsxSet_ondownloading
-      public virtual void JsxSet_ondownloading(object o)
+      public System.Int16 Status
       {
-         WObj.jsxSet_ondownloading(o);
+         get
+         {
+            return WObj.getStatus();
+         }
       }
 
-// Generating method code for jsxGet_onprogress
-      public virtual object JsxGet_onprogress()
+      public System.Int32 Length
       {
-         return WObj.jsxGet_onprogress();
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for add
+      public virtual void Add(string uri)
+      {
+         WObj.add(uri);
       }
 
-// Generating method code for jsxSet_onprogress
-      public virtual void JsxSet_onprogress(object o)
+// Generating method code for hasItem
+      public virtual bool HasItem(string uri)
       {
-         WObj.jsxSet_onprogress(o);
+         return WObj.hasItem(uri);
       }
 
-// Generating method code for jsxGet_onupdateready
-      public virtual object JsxGet_onupdateready()
+// Generating method code for item
+      public virtual string Item(int index)
       {
-         return WObj.jsxGet_onupdateready();
+         return WObj.item(index);
       }
 
-// Generating method code for jsxSet_onupdateready
-      public virtual void JsxSet_onupdateready(object o)
+// Generating method code for remove
+      public virtual void Remove(string uri)
       {
-         WObj.jsxSet_onupdateready(o);
+         WObj.remove(uri);
       }
 
-// Generating method code for jsxGet_oncached
-      public virtual object JsxGet_oncached()
+// Generating method code for swapCache
+      public virtual void SwapCache()
       {
-         return WObj.jsxGet_oncached();
+         WObj.swapCache();
       }
 
-// Generating method code for jsxSet_oncached
-      public virtual void JsxSet_oncached(object o)
+// Generating method code for update
+      public virtual void Update()
       {
-         WObj.jsxSet_oncached(o);
-      }
-
-// Generating method code for jsxGet_status
-      public virtual System.Int16 JsxGet_status()
-      {
-         return WObj.jsxGet_status();
-      }
-
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
-      {
-         return WObj.jsxGet_length();
-      }
-
-// Generating method code for jsxFunction_add
-      public virtual void JsxFunction_add(string uri)
-      {
-         WObj.jsxFunction_add(uri);
-      }
-
-// Generating method code for jsxFunction_hasItem
-      public virtual bool JsxFunction_hasItem(string uri)
-      {
-         return WObj.jsxFunction_hasItem(uri);
-      }
-
-// Generating method code for jsxFunction_item
-      public virtual string JsxFunction_item(int index)
-      {
-         return WObj.jsxFunction_item(index);
-      }
-
-// Generating method code for jsxFunction_remove
-      public virtual void JsxFunction_remove(string uri)
-      {
-         WObj.jsxFunction_remove(uri);
-      }
-
-// Generating method code for jsxFunction_swapCache
-      public virtual void JsxFunction_swapCache()
-      {
-         WObj.jsxFunction_swapCache();
-      }
-
-// Generating method code for jsxFunction_update
-      public virtual void JsxFunction_update()
-      {
-         WObj.jsxFunction_update();
+         WObj.update();
       }
 
    }

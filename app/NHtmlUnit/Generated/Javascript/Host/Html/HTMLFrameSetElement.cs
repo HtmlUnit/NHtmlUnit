@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,42 +26,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLFrameSetElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLFrameSetElement()) {}
 
-// Generating method code for jsxSet_rows
-      public virtual void JsxSet_rows(string rows)
+
+      public System.String Rows
       {
-         WObj.jsxSet_rows(rows);
+         get
+         {
+            return WObj.getRows();
+         }
+         set
+         {
+            WObj.setRows(value);
+         }
+
       }
 
-// Generating method code for jsxGet_rows
-      public virtual string JsxGet_rows()
+      public System.String Cols
       {
-         return WObj.jsxGet_rows();
+         get
+         {
+            return WObj.getCols();
+         }
+         set
+         {
+            WObj.setCols(value);
+         }
+
       }
 
-// Generating method code for jsxSet_cols
-      public virtual void JsxSet_cols(string cols)
+      public System.String Border
       {
-         WObj.jsxSet_cols(cols);
-      }
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
 
-// Generating method code for jsxGet_cols
-      public virtual string JsxGet_cols()
-      {
-         return WObj.jsxGet_cols();
       }
-
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
-      {
-         return WObj.jsxGet_border();
-      }
-
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
-      }
-
    }
 
 

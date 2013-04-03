@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,42 +24,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersion FIREFOX_3_6
+      public static NHtmlUnit.BrowserVersion FIREFOX_17
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_3_6);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion FIREFOX_10
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_10);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_6
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_6);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_7
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_7);
+               com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_17);
          }
       }
 
@@ -74,12 +44,22 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersion CHROME_16
+      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_9
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.CHROME_16);
+               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_9);
+         }
+      }
+
+
+      public static NHtmlUnit.BrowserVersion CHROME
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               com.gargoylesoftware.htmlunit.BrowserVersion.CHROME);
          }
       }
 
@@ -90,88 +70,6 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric, features)) {}
 
 
-      public System.String ApplicationVersion
-      {
-         get
-         {
-            return WObj.getApplicationVersion();
-         }
-         set
-         {
-            WObj.setApplicationVersion(value);
-         }
-
-      }
-
-      public System.String ApplicationName
-      {
-         get
-         {
-            return WObj.getApplicationName();
-         }
-         set
-         {
-            WObj.setApplicationName(value);
-         }
-
-      }
-
-      public System.String Nickname
-      {
-         get
-         {
-            return WObj.getNickname();
-         }
-      }
-
-      public ICollection<NHtmlUnit.PluginConfiguration> Plugins
-      {
-         get
-         {
-            return new CollectionWrapper<NHtmlUnit.PluginConfiguration>(
-               WObj.getPlugins());
-         }
-       }
-
-      public System.String ApplicationCodeName
-      {
-         get
-         {
-            return WObj.getApplicationCodeName();
-         }
-         set
-         {
-            WObj.setApplicationCodeName(value);
-         }
-
-      }
-
-      public System.String Platform
-      {
-         get
-         {
-            return WObj.getPlatform();
-         }
-         set
-         {
-            WObj.setPlatform(value);
-         }
-
-      }
-
-      public System.String CpuClass
-      {
-         get
-         {
-            return WObj.getCpuClass();
-         }
-         set
-         {
-            WObj.setCpuClass(value);
-         }
-
-      }
-
       public System.String BrowserLanguage
       {
          get
@@ -181,32 +79,6 @@ namespace NHtmlUnit
          set
          {
             WObj.setBrowserLanguage(value);
-         }
-
-      }
-
-      public System.String ApplicationMinorVersion
-      {
-         get
-         {
-            return WObj.getApplicationMinorVersion();
-         }
-         set
-         {
-            WObj.setApplicationMinorVersion(value);
-         }
-
-      }
-
-      public System.String SystemLanguage
-      {
-         get
-         {
-            return WObj.getSystemLanguage();
-         }
-         set
-         {
-            WObj.setSystemLanguage(value);
          }
 
       }
@@ -224,6 +96,105 @@ namespace NHtmlUnit
 
       }
 
+      public System.Single BrowserVersionNumeric
+      {
+         get
+         {
+            return WObj.getBrowserVersionNumeric();
+         }
+      }
+
+      public System.String ApplicationCodeName
+      {
+         get
+         {
+            return WObj.getApplicationCodeName();
+         }
+         set
+         {
+            WObj.setApplicationCodeName(value);
+         }
+
+      }
+
+      public System.String ApplicationMinorVersion
+      {
+         get
+         {
+            return WObj.getApplicationMinorVersion();
+         }
+         set
+         {
+            WObj.setApplicationMinorVersion(value);
+         }
+
+      }
+
+      public System.String ApplicationName
+      {
+         get
+         {
+            return WObj.getApplicationName();
+         }
+         set
+         {
+            WObj.setApplicationName(value);
+         }
+
+      }
+
+      public System.String ApplicationVersion
+      {
+         get
+         {
+            return WObj.getApplicationVersion();
+         }
+         set
+         {
+            WObj.setApplicationVersion(value);
+         }
+
+      }
+
+      public System.String CpuClass
+      {
+         get
+         {
+            return WObj.getCpuClass();
+         }
+         set
+         {
+            WObj.setCpuClass(value);
+         }
+
+      }
+
+      public System.String Platform
+      {
+         get
+         {
+            return WObj.getPlatform();
+         }
+         set
+         {
+            WObj.setPlatform(value);
+         }
+
+      }
+
+      public System.String SystemLanguage
+      {
+         get
+         {
+            return WObj.getSystemLanguage();
+         }
+         set
+         {
+            WObj.setSystemLanguage(value);
+         }
+
+      }
+
       public System.String UserLanguage
       {
          get
@@ -237,17 +208,32 @@ namespace NHtmlUnit
 
       }
 
-      public System.Single BrowserVersionNumeric
+      public ICollection<NHtmlUnit.PluginConfiguration> Plugins
       {
          get
          {
-            return WObj.getBrowserVersionNumeric();
+            return new CollectionWrapper<NHtmlUnit.PluginConfiguration>(
+               WObj.getPlugins());
+         }
+       }
+
+      public System.String Nickname
+      {
+         get
+         {
+            return WObj.getNickname();
          }
       }
-// Generating method code for isChrome
-      public virtual bool IsChrome()
+// Generating method code for hasFeature
+      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
       {
-         return WObj.isChrome();
+         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+      }
+
+// Generating method code for isOnLine
+      public virtual bool IsOnLine()
+      {
+         return WObj.isOnLine();
       }
 
 // Generating method code for isIE
@@ -262,16 +248,16 @@ namespace NHtmlUnit
          return WObj.isFirefox();
       }
 
-// Generating method code for isOnLine
-      public virtual bool IsOnLine()
+// Generating method code for isChrome
+      public virtual bool IsChrome()
       {
-         return WObj.isOnLine();
+         return WObj.isChrome();
       }
 
-// Generating method code for hasFeature
-      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
+// Generating method code for clone
+      public virtual NHtmlUnit.BrowserVersion Clone()
       {
-         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(WObj.clone());
       }
 
    }

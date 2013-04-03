@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,16 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Node()) {}
 
 
+      public NHtmlUnit.Javascript.Host.Node NextSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getNextSibling());
+         }
+      }
+
+
       public NHtmlUnit.Javascript.Host.Node Parent
       {
          get
@@ -34,6 +44,146 @@ namespace NHtmlUnit.Javascript.Host
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
                WObj.getParent());
          }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Element ParentElement
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getParentElement());
+         }
+      }
+
+
+      public System.Int16 NodeType
+      {
+         get
+         {
+            return WObj.getNodeType();
+         }
+      }
+
+      public System.String NodeName
+      {
+         get
+         {
+            return WObj.getNodeName();
+         }
+      }
+
+      public System.String NodeValue
+      {
+         get
+         {
+            return WObj.getNodeValue();
+         }
+         set
+         {
+            WObj.setNodeValue(value);
+         }
+
+      }
+
+      public IList<NHtmlUnit.W3C.Dom.INode> ChildNodes
+      {
+         get
+         {
+            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+               WObj.getChildNodes());
+         }
+       }
+
+      public System.Object ParentNode
+      {
+         get
+         {
+            return WObj.getParentNode();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Node PreviousSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getPreviousSibling());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Node FirstChild
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getFirstChild());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Node LastChild
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getLastChild());
+         }
+      }
+
+
+      public System.Object OwnerDocument
+      {
+         get
+         {
+            return WObj.getOwnerDocument();
+         }
+      }
+
+      public System.String Prefix
+      {
+         get
+         {
+            return WObj.getPrefix();
+         }
+      }
+
+      public System.String LocalName
+      {
+         get
+         {
+            return WObj.getLocalName();
+         }
+      }
+
+      public System.String NamespaceURI
+      {
+         get
+         {
+            return WObj.getNamespaceURI();
+         }
+      }
+
+      public System.Object Xml
+      {
+         get
+         {
+            return WObj.getXml();
+         }
+      }
+
+      public System.Object Attributes
+      {
+         get
+         {
+            return WObj.getAttributes();
+         }
+      }
+// Generating method code for executeEvent
+      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for hasEventHandlers
@@ -54,131 +204,64 @@ namespace NHtmlUnit.Javascript.Host
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
-// Generating method code for executeEvent
-      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+// Generating method code for replaceChild
+      public virtual object ReplaceChild(object newChildObject, object oldChildObject)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
+         return WObj.replaceChild(newChildObject, oldChildObject);
       }
 
-// Generating method code for jsxGet_nextSibling
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_nextSibling()
+// Generating method code for removeChild
+      public virtual object RemoveChild(object childObject)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_nextSibling());
+         return WObj.removeChild(childObject);
       }
 
-// Generating method code for jsxFunction_replaceChild
-      public virtual object JsxFunction_replaceChild(object newChildObject, object oldChildObject)
+// Generating method code for removeEventListener
+      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
       {
-         return WObj.jsxFunction_replaceChild(newChildObject, oldChildObject);
+         WObj.removeEventListener(type, listener, useCapture);
       }
 
-// Generating method code for jsxFunction_removeChild
-      public virtual object JsxFunction_removeChild(object childObject)
+// Generating method code for appendChild
+      public virtual object AppendChild(object childObject)
       {
-         return WObj.jsxFunction_removeChild(childObject);
+         return WObj.appendChild(childObject);
       }
 
-// Generating method code for jsxFunction_removeEventListener
-      public virtual void JsxFunction_removeEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
+// Generating method code for cloneNode
+      public virtual object CloneNode(bool deep)
       {
-         WObj.jsxFunction_removeEventListener(type, listener, useCapture);
+         return WObj.cloneNode(deep);
       }
 
-// Generating method code for jsxGet_nodeType
-      public virtual System.Int16 JsxGet_nodeType()
+// Generating method code for isSameNode
+      public virtual bool IsSameNode(object other)
       {
-         return WObj.jsxGet_nodeType();
+         return WObj.isSameNode(other);
       }
 
-// Generating method code for jsxGet_nodeName
-      public virtual string JsxGet_nodeName()
+// Generating method code for hasChildNodes
+      public virtual bool HasChildNodes()
       {
-         return WObj.jsxGet_nodeName();
+         return WObj.hasChildNodes();
       }
 
-// Generating method code for jsxGet_nodeValue
-      public virtual string JsxGet_nodeValue()
+// Generating method code for attachEvent
+      public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
-         return WObj.jsxGet_nodeValue();
+         return WObj.attachEvent(type, listener);
       }
 
-// Generating method code for jsxSet_nodeValue
-      public virtual void JsxSet_nodeValue(string newValue)
+// Generating method code for addEventListener
+      public virtual void AddEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
       {
-         WObj.jsxSet_nodeValue(newValue);
+         WObj.addEventListener(type, listener, useCapture);
       }
 
-// Generating method code for jsxFunction_appendChild
-      public virtual object JsxFunction_appendChild(object childObject)
+// Generating method code for detachEvent
+      public virtual void DetachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
-         return WObj.jsxFunction_appendChild(childObject);
-      }
-
-// Generating method code for jsxFunction_cloneNode
-      public virtual object JsxFunction_cloneNode(bool deep)
-      {
-         return WObj.jsxFunction_cloneNode(deep);
-      }
-
-// Generating method code for jsxFunction_isSameNode
-      public virtual bool JsxFunction_isSameNode(object other)
-      {
-         return WObj.jsxFunction_isSameNode(other);
-      }
-
-// Generating method code for jsxFunction_hasChildNodes
-      public virtual bool JsxFunction_hasChildNodes()
-      {
-         return WObj.jsxFunction_hasChildNodes();
-      }
-
-// Generating method code for jsxGet_childNodes
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxGet_childNodes()
-      {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxGet_childNodes());
-      }
-
-// Generating method code for jsxGet_parentNode
-      public virtual object JsxGet_parentNode()
-      {
-         return WObj.jsxGet_parentNode();
-      }
-
-// Generating method code for jsxGet_previousSibling
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_previousSibling()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_previousSibling());
-      }
-
-// Generating method code for jsxGet_firstChild
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_firstChild()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_firstChild());
-      }
-
-// Generating method code for jsxGet_lastChild
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_lastChild()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_lastChild());
-      }
-
-// Generating method code for jsxFunction_attachEvent
-      public virtual bool JsxFunction_attachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         return WObj.jsxFunction_attachEvent(type, listener);
-      }
-
-// Generating method code for jsxFunction_addEventListener
-      public virtual void JsxFunction_addEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
-      {
-         WObj.jsxFunction_addEventListener(type, listener, useCapture);
-      }
-
-// Generating method code for jsxFunction_detachEvent
-      public virtual void JsxFunction_detachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         WObj.jsxFunction_detachEvent(type, listener);
+         WObj.detachEvent(type, listener);
       }
 
 // Generating method code for getEventHandler
@@ -187,70 +270,34 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.getEventHandler(eventName);
       }
 
-// Generating method code for jsxGet_ownerDocument
-      public virtual object JsxGet_ownerDocument()
+// Generating method code for compareDocumentPosition
+      public virtual System.Int16 CompareDocumentPosition(object node)
       {
-         return WObj.jsxGet_ownerDocument();
+         return WObj.compareDocumentPosition(node);
       }
 
-// Generating method code for jsxGet_prefix
-      public virtual string JsxGet_prefix()
+// Generating method code for normalize
+      public virtual void Normalize()
       {
-         return WObj.jsxGet_prefix();
+         WObj.normalize();
       }
 
-// Generating method code for jsxGet_localName
-      public virtual string JsxGet_localName()
+// Generating method code for contains
+      public virtual bool Contains(object element)
       {
-         return WObj.jsxGet_localName();
+         return WObj.contains(element);
       }
 
-// Generating method code for jsxGet_namespaceURI
-      public virtual string JsxGet_namespaceURI()
+// Generating method code for getTextContent
+      public virtual string GetTextContent()
       {
-         return WObj.jsxGet_namespaceURI();
+         return WObj.getTextContent();
       }
 
-// Generating method code for jsxFunction_compareDocumentPosition
-      public virtual System.Int16 JsxFunction_compareDocumentPosition(NHtmlUnit.Javascript.Host.Node node)
+// Generating method code for setTextContent
+      public virtual void SetTextContent(object value)
       {
-         return WObj.jsxFunction_compareDocumentPosition((com.gargoylesoftware.htmlunit.javascript.host.Node)node.WrappedObject);
-      }
-
-// Generating method code for jsxFunction_normalize
-      public virtual void JsxFunction_normalize()
-      {
-         WObj.jsxFunction_normalize();
-      }
-
-// Generating method code for jsxGet_xml
-      public virtual object JsxGet_xml()
-      {
-         return WObj.jsxGet_xml();
-      }
-
-// Generating method code for jsxGet_textContent
-      public virtual string JsxGet_textContent()
-      {
-         return WObj.jsxGet_textContent();
-      }
-
-// Generating method code for jsxGet_innerText
-      public virtual string JsxGet_innerText()
-      {
-         return WObj.jsxGet_innerText();
-      }
-
-// Generating method code for jsxSet_innerText
-      public virtual void JsxSet_innerText(string value)
-      {
-         WObj.jsxSet_innerText(value);
-      }
-
-// Generating method code for jsxSet_textContent
-      public virtual void JsxSet_textContent(object value)
-      {
-         WObj.jsxSet_textContent(value);
+         WObj.setTextContent(value);
       }
 
    }

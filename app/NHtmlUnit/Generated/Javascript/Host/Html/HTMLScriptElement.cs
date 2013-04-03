@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,66 +26,66 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLScriptElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLScriptElement()) {}
 
-// Generating method code for jsxGet_src
-      public virtual string JsxGet_src()
+
+      public System.String Src
       {
-         return WObj.jsxGet_src();
+         get
+         {
+            return WObj.getSrc();
+         }
+         set
+         {
+            WObj.setSrc(value);
+         }
+
       }
 
-// Generating method code for jsxSet_src
-      public virtual void JsxSet_src(string src)
+      public System.String Type
       {
-         WObj.jsxSet_src(src);
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
       }
 
-// Generating method code for jsxSet_text
-      public virtual void JsxSet_text(string text)
+      public System.Object Onreadystatechange
       {
-         WObj.jsxSet_text(text);
+         get
+         {
+            return WObj.getOnreadystatechange();
+         }
+         set
+         {
+            WObj.setOnreadystatechange(value);
+         }
+
       }
 
-// Generating method code for jsxGet_type
-      public virtual string JsxGet_type()
+      public System.Object Onload
       {
-         return WObj.jsxGet_type();
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
       }
 
-// Generating method code for jsxSet_type
-      public virtual void JsxSet_type(string type)
+      public System.String ReadyState
       {
-         WObj.jsxSet_type(type);
+         get
+         {
+            return WObj.getReadyState();
+         }
       }
-
-// Generating method code for jsxGet_onreadystatechange
-      public virtual object JsxGet_onreadystatechange()
-      {
-         return WObj.jsxGet_onreadystatechange();
-      }
-
-// Generating method code for jsxSet_onreadystatechange
-      public virtual void JsxSet_onreadystatechange(object handler)
-      {
-         WObj.jsxSet_onreadystatechange(handler);
-      }
-
-// Generating method code for jsxGet_onload
-      public virtual object JsxGet_onload()
-      {
-         return WObj.jsxGet_onload();
-      }
-
-// Generating method code for jsxSet_onload
-      public virtual void JsxSet_onload(object handler)
-      {
-         WObj.jsxSet_onload(handler);
-      }
-
-// Generating method code for jsxGet_readyState
-      public virtual string JsxGet_readyState()
-      {
-         return WObj.jsxGet_readyState();
-      }
-
    }
 
 

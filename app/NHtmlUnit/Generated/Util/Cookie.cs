@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,26 +26,18 @@ namespace NHtmlUnit.Util
       public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure)) {}
 
+      public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure, bool httpOnly)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure, httpOnly)) {}
+
       public Cookie(org.apache.http.cookie.Cookie c)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(c)) {}
 
       public Cookie(string domain, string name, string value)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value)) {}
 
-      public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure, bool httpOnly)
-         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure, httpOnly)) {}
-
       public Cookie(string domain, string name, string value, string path, int maxAge, bool secure)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, maxAge, secure)) {}
 
-
-      public java.util.Date Expires
-      {
-         get
-         {
-            return WObj.getExpires();
-         }
-      }
 
       public System.String Name
       {
@@ -78,12 +70,14 @@ namespace NHtmlUnit.Util
             return WObj.getPath();
          }
       }
-// Generating method code for isHttpOnly
-      public virtual bool IsHttpOnly()
-      {
-         return WObj.isHttpOnly();
-      }
 
+      public java.util.Date Expires
+      {
+         get
+         {
+            return WObj.getExpires();
+         }
+      }
 // Generating method code for toHttpClient
       public virtual org.apache.http.cookie.Cookie ToHttpClient()
       {
@@ -94,6 +88,12 @@ namespace NHtmlUnit.Util
       public virtual bool IsSecure()
       {
          return WObj.isSecure();
+      }
+
+// Generating method code for isHttpOnly
+      public virtual bool IsHttpOnly()
+      {
+         return WObj.isHttpOnly();
       }
 
    }

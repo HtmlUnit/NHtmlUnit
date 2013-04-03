@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,28 +26,24 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableColElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableColElement()) {}
 
-// Generating method code for jsxGet_span
-      public virtual int JsxGet_span()
+
+      public System.String Width_js
       {
-         return WObj.jsxGet_span();
+         get
+         {
+            return WObj.getWidth_js();
+         }
+      }
+// Generating method code for getSpan
+      public virtual int GetSpan()
+      {
+         return WObj.getSpan();
       }
 
-// Generating method code for jsxSet_span
-      public virtual void JsxSet_span(object span)
+// Generating method code for setSpan
+      public virtual void SetSpan(object span)
       {
-         WObj.jsxSet_span(span);
-      }
-
-// Generating method code for jsxGet_width
-      public virtual string JsxGet_width()
-      {
-         return WObj.jsxGet_width();
-      }
-
-// Generating method code for jsxSet_width
-      public virtual void JsxSet_width(object width)
-      {
-         WObj.jsxSet_width(width);
+         WObj.setSpan(span);
       }
 
    }

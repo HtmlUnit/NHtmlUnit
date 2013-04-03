@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,52 +26,66 @@ namespace NHtmlUnit.Javascript.Host
       public XPathResult()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.XPathResult()) {}
 
-// Generating method code for jsxGet_resultType
-      public virtual int JsxGet_resultType()
+
+      public System.Int32 ResultType
       {
-         return WObj.jsxGet_resultType();
+         get
+         {
+            return WObj.getResultType();
+         }
       }
 
-// Generating method code for jsxGet_snapshotLength
-      public virtual int JsxGet_snapshotLength()
+      public System.Int32 SnapshotLength
       {
-         return WObj.jsxGet_snapshotLength();
+         get
+         {
+            return WObj.getSnapshotLength();
+         }
       }
 
-// Generating method code for jsxGet_singleNodeValue
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_singleNodeValue()
+      public NHtmlUnit.Javascript.Host.Node SingleNodeValue
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_singleNodeValue());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getSingleNodeValue());
+         }
       }
 
-// Generating method code for jsxFunction_iterateNext
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_iterateNext()
+
+      public System.Double NumberValue
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_iterateNext());
+         get
+         {
+            return WObj.getNumberValue();
+         }
       }
 
-// Generating method code for jsxFunction_snapshotItem
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_snapshotItem(int index)
+      public System.Boolean BooleanValue
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_snapshotItem(index));
+         get
+         {
+            return WObj.getBooleanValue();
+         }
       }
 
-// Generating method code for jsxGet_numberValue
-      public virtual System.Double JsxGet_numberValue()
+      public System.String StringValue
       {
-         return WObj.jsxGet_numberValue();
+         get
+         {
+            return WObj.getStringValue();
+         }
+      }
+// Generating method code for iterateNext
+      public virtual NHtmlUnit.Javascript.Host.Node IterateNext()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.iterateNext());
       }
 
-// Generating method code for jsxGet_booleanValue
-      public virtual bool JsxGet_booleanValue()
+// Generating method code for snapshotItem
+      public virtual NHtmlUnit.Javascript.Host.Node SnapshotItem(int index)
       {
-         return WObj.jsxGet_booleanValue();
-      }
-
-// Generating method code for jsxGet_stringValue
-      public virtual string JsxGet_stringValue()
-      {
-         return WObj.jsxGet_stringValue();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.snapshotItem(index));
       }
 
    }

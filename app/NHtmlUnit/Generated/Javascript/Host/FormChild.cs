@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,14 @@ namespace NHtmlUnit.Javascript.Host
       public FormChild()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.FormChild()) {}
 
-// Generating method code for jsxGet_form
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLFormElement JsxGet_form()
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLFormElement Form
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLFormElement>(WObj.jsxGet_form());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLFormElement>(
+               WObj.getForm());
+         }
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,24 +27,19 @@ namespace NHtmlUnit.Util
          : this(new com.gargoylesoftware.htmlunit.util.KeyDataPair(key, file, contentType, charset)) {}
 
 
-      public System.Byte[] Data
-      {
-         get
-         {
-            return WObj.getData();
-         }
-         set
-         {
-            WObj.setData(value);
-         }
-
-      }
-
       public java.io.File File
       {
          get
          {
             return WObj.getFile();
+         }
+      }
+
+      public System.String Charset
+      {
+         get
+         {
+            return WObj.getCharset();
          }
       }
 
@@ -56,12 +51,17 @@ namespace NHtmlUnit.Util
          }
       }
 
-      public System.String Charset
+      public System.Byte[] Data
       {
          get
          {
-            return WObj.getCharset();
+            return WObj.getData();
          }
+         set
+         {
+            WObj.setData(value);
+         }
+
       }
    }
 

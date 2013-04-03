@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,22 +26,26 @@ namespace NHtmlUnit.Javascript.Host
       public MediaList(NHtmlUnit.Javascript.Host.Css.CSSStyleSheet parent, NHtmlUnit.W3C.Dom.Stylesheets.IMediaList wrappedList)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.MediaList((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet)parent.WrappedObject, (org.w3c.dom.stylesheets.MediaList)wrappedList.WrappedObject)) {}
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+
+      public System.Int32 Length
       {
-         return WObj.jsxGet_length();
+         get
+         {
+            return WObj.getLength();
+         }
       }
 
-// Generating method code for jsxFunction_item
-      public virtual string JsxFunction_item(int index)
+      public System.String MediaText
       {
-         return WObj.jsxFunction_item(index);
+         get
+         {
+            return WObj.getMediaText();
+         }
       }
-
-// Generating method code for jsxGet_mediaText
-      public virtual string JsxGet_mediaText()
+// Generating method code for item
+      public virtual string Item(int index)
       {
-         return WObj.jsxGet_mediaText();
+         return WObj.item(index);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,160 +26,252 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       public CanvasRenderingContext2D()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.canvas.CanvasRenderingContext2D()) {}
 
-// Generating method code for jsxGet_fillStyle
-      public virtual object JsxGet_fillStyle()
+
+      public System.Object FillStyle
       {
-         return WObj.jsxGet_fillStyle();
+         get
+         {
+            return WObj.getFillStyle();
+         }
+         set
+         {
+            WObj.setFillStyle(value);
+         }
+
       }
 
-// Generating method code for jsxFunction_translate
-      public virtual void JsxFunction_translate(object x, object y)
+      public System.Object StrokeStyle
       {
-         WObj.jsxFunction_translate(x, y);
+         get
+         {
+            return WObj.getStrokeStyle();
+         }
+         set
+         {
+            WObj.setStrokeStyle(value);
+         }
+
+      }
+// Generating method code for translate
+      public virtual void Translate(object x, object y)
+      {
+         WObj.translate(x, y);
       }
 
-// Generating method code for jsxFunction_scale
-      public virtual void JsxFunction_scale(object x, object y)
+// Generating method code for scale
+      public virtual void Scale(object x, object y)
       {
-         WObj.jsxFunction_scale(x, y);
+         WObj.scale(x, y);
       }
 
-// Generating method code for jsxSet_fillStyle
-      public virtual void JsxSet_fillStyle(object fillStyle)
+// Generating method code for clearRect
+      public virtual void ClearRect(System.Double x, System.Double y, System.Double w, System.Double h)
       {
-         WObj.jsxSet_fillStyle(fillStyle);
+         WObj.clearRect(x, y, w, h);
       }
 
-// Generating method code for jsxGet_strokeStyle
-      public virtual object JsxGet_strokeStyle()
+// Generating method code for fillRect
+      public virtual void FillRect(System.Double x, System.Double y, System.Double w, System.Double h)
       {
-         return WObj.jsxGet_strokeStyle();
+         WObj.fillRect(x, y, w, h);
       }
 
-// Generating method code for jsxSet_strokeStyle
-      public virtual void JsxSet_strokeStyle(object strokeStyle)
+// Generating method code for strokeRect
+      public virtual void StrokeRect(System.Double x, System.Double y, System.Double w, System.Double h)
       {
-         WObj.jsxSet_strokeStyle(strokeStyle);
+         WObj.strokeRect(x, y, w, h);
       }
 
-// Generating method code for jsxGet_lineWidth
-      public virtual System.Double JsxGet_lineWidth()
+// Generating method code for beginPath
+      public virtual void BeginPath()
       {
-         return WObj.jsxGet_lineWidth();
+         WObj.beginPath();
       }
 
-// Generating method code for jsxSet_lineWidth
-      public virtual void JsxSet_lineWidth(object lineWidth)
+// Generating method code for closePath
+      public virtual void ClosePath()
       {
-         WObj.jsxSet_lineWidth(lineWidth);
+         WObj.closePath();
       }
 
-// Generating method code for jsxGet_globalAlpha
-      public virtual System.Double JsxGet_globalAlpha()
+// Generating method code for moveTo
+      public virtual void MoveTo(System.Double x, System.Double y)
       {
-         return WObj.jsxGet_globalAlpha();
+         WObj.moveTo(x, y);
       }
 
-// Generating method code for jsxSet_globalAlpha
-      public virtual void JsxSet_globalAlpha(object globalAlpha)
+// Generating method code for lineTo
+      public virtual void LineTo(System.Double x, System.Double y)
       {
-         WObj.jsxSet_globalAlpha(globalAlpha);
+         WObj.lineTo(x, y);
       }
 
-// Generating method code for jsxFunction_clearRect
-      public virtual void JsxFunction_clearRect(System.Double x, System.Double y, System.Double w, System.Double h)
+// Generating method code for save
+      public virtual void Save()
       {
-         WObj.jsxFunction_clearRect(x, y, w, h);
+         WObj.save();
       }
 
-// Generating method code for jsxFunction_fillRect
-      public virtual void JsxFunction_fillRect(System.Double x, System.Double y, System.Double w, System.Double h)
+// Generating method code for restore
+      public virtual void Restore()
       {
-         WObj.jsxFunction_fillRect(x, y, w, h);
+         WObj.restore();
       }
 
-// Generating method code for jsxFunction_strokeRect
-      public virtual void JsxFunction_strokeRect(System.Double x, System.Double y, System.Double w, System.Double h)
+// Generating method code for createLinearGradient
+      public virtual void CreateLinearGradient(System.Double x0, System.Double y0, System.Double r0, System.Double x1, object y1, object r1)
       {
-         WObj.jsxFunction_strokeRect(x, y, w, h);
+         WObj.createLinearGradient(x0, y0, r0, x1, y1, r1);
       }
 
-// Generating method code for jsxFunction_beginPath
-      public virtual void JsxFunction_beginPath()
+// Generating method code for arc
+      public virtual void Arc(System.Double x, System.Double y, System.Double radius, System.Double startAngle, System.Double endAngle, bool anticlockwise)
       {
-         WObj.jsxFunction_beginPath();
+         WObj.arc(x, y, radius, startAngle, endAngle, anticlockwise);
       }
 
-// Generating method code for jsxFunction_closePath
-      public virtual void JsxFunction_closePath()
+// Generating method code for arcTo
+      public virtual void ArcTo(System.Double x1, System.Double y1, System.Double x2, System.Double y2, System.Double radius)
       {
-         WObj.jsxFunction_closePath();
+         WObj.arcTo(x1, y1, x2, y2, radius);
       }
 
-// Generating method code for jsxFunction_moveTo
-      public virtual void JsxFunction_moveTo(System.Double x, System.Double y)
+// Generating method code for bezierCurveTo
+      public virtual void BezierCurveTo(System.Double cp1x, System.Double cp1y, System.Double cp2x, System.Double cp2y, System.Double x, System.Double y)
       {
-         WObj.jsxFunction_moveTo(x, y);
+         WObj.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
       }
 
-// Generating method code for jsxFunction_lineTo
-      public virtual void JsxFunction_lineTo(System.Double x, System.Double y)
+// Generating method code for quadraticCurveTo
+      public virtual void QuadraticCurveTo(System.Double controlPointX, System.Double controlPointY, System.Double endPointX, System.Double endPointY)
       {
-         WObj.jsxFunction_lineTo(x, y);
+         WObj.quadraticCurveTo(controlPointX, controlPointY, endPointX, endPointY);
       }
 
-// Generating method code for jsxFunction_save
-      public virtual void JsxFunction_save()
+// Generating method code for fill
+      public virtual void Fill()
       {
-         WObj.jsxFunction_save();
+         WObj.fill();
       }
 
-// Generating method code for jsxFunction_restore
-      public virtual void JsxFunction_restore()
+// Generating method code for stroke
+      public virtual void Stroke()
       {
-         WObj.jsxFunction_restore();
+         WObj.stroke();
       }
 
-// Generating method code for jsxFunction_createLinearGradient
-      public virtual void JsxFunction_createLinearGradient(System.Double x0, System.Double y0, System.Double r0, System.Double x1, object y1, object r1)
+// Generating method code for clip
+      public virtual void Clip()
       {
-         WObj.jsxFunction_createLinearGradient(x0, y0, r0, x1, y1, r1);
+         WObj.clip();
       }
 
-// Generating method code for jsxFunction_arc
-      public virtual void JsxFunction_arc(System.Double x, System.Double y, System.Double radius, System.Double startAngle, System.Double endAngle, bool anticlockwise)
+// Generating method code for createImageData
+      public virtual void CreateImageData()
       {
-         WObj.jsxFunction_arc(x, y, radius, startAngle, endAngle, anticlockwise);
+         WObj.createImageData();
       }
 
-// Generating method code for jsxFunction_arcTo
-      public virtual void JsxFunction_arcTo(System.Double x1, System.Double y1, System.Double x2, System.Double y2, System.Double radius)
+// Generating method code for createPattern
+      public virtual void CreatePattern()
       {
-         WObj.jsxFunction_arcTo(x1, y1, x2, y2, radius);
+         WObj.createPattern();
       }
 
-// Generating method code for jsxFunction_bezierCurveTo
-      public virtual void JsxFunction_bezierCurveTo(System.Double cp1x, System.Double cp1y, System.Double cp2x, System.Double cp2y, System.Double x, System.Double y)
+// Generating method code for createRadialGradient
+      public virtual void CreateRadialGradient()
       {
-         WObj.jsxFunction_bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+         WObj.createRadialGradient();
       }
 
-// Generating method code for jsxFunction_fill
-      public virtual void JsxFunction_fill()
+// Generating method code for fillText
+      public virtual void FillText()
       {
-         WObj.jsxFunction_fill();
+         WObj.fillText();
       }
 
-// Generating method code for jsxFunction_stroke
-      public virtual void JsxFunction_stroke()
+// Generating method code for getImageData
+      public virtual void GetImageData()
       {
-         WObj.jsxFunction_stroke();
+         WObj.getImageData();
       }
 
-// Generating method code for jsxFunction_clip
-      public virtual void JsxFunction_clip()
+// Generating method code for getLineData
+      public virtual void GetLineData()
       {
-         WObj.jsxFunction_clip();
+         WObj.getLineData();
+      }
+
+// Generating method code for isPointInPath
+      public virtual void IsPointInPath()
+      {
+         WObj.isPointInPath();
+      }
+
+// Generating method code for measureText
+      public virtual void MeasureText()
+      {
+         WObj.measureText();
+      }
+
+// Generating method code for putImageData
+      public virtual void PutImageData()
+      {
+         WObj.putImageData();
+      }
+
+// Generating method code for rect
+      public virtual void Rect()
+      {
+         WObj.rect();
+      }
+
+// Generating method code for rotate
+      public virtual void Rotate()
+      {
+         WObj.rotate();
+      }
+
+// Generating method code for setTransform
+      public virtual void SetTransform()
+      {
+         WObj.setTransform();
+      }
+
+// Generating method code for strokeText
+      public virtual void StrokeText()
+      {
+         WObj.strokeText();
+      }
+
+// Generating method code for transform
+      public virtual void Transform()
+      {
+         WObj.transform();
+      }
+
+// Generating method code for getLineWidth
+      public virtual System.Double GetLineWidth()
+      {
+         return WObj.getLineWidth();
+      }
+
+// Generating method code for setLineWidth
+      public virtual void SetLineWidth(object lineWidth)
+      {
+         WObj.setLineWidth(lineWidth);
+      }
+
+// Generating method code for getGlobalAlpha
+      public virtual System.Double GetGlobalAlpha()
+      {
+         return WObj.getGlobalAlpha();
+      }
+
+// Generating method code for setGlobalAlpha
+      public virtual void SetGlobalAlpha(object globalAlpha)
+      {
+         WObj.setGlobalAlpha(globalAlpha);
       }
 
    }

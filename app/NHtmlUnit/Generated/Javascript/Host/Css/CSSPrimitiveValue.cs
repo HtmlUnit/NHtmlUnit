@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host.Css
       public CSSPrimitiveValue()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSPrimitiveValue()) {}
 
-// Generating method code for jsxFunction_getFloatValue
-      public virtual System.Double JsxFunction_getFloatValue(int unitType)
+// Generating method code for getFloatValue
+      public virtual System.Double GetFloatValue(int unitType)
       {
-         return WObj.jsxFunction_getFloatValue(unitType);
+         return WObj.getFloatValue(unitType);
       }
 
    }

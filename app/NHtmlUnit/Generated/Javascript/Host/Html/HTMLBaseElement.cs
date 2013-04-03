@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,30 +26,32 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLBaseElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLBaseElement()) {}
 
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
+
+      public System.String Href
       {
-         return WObj.jsxGet_href();
+         get
+         {
+            return WObj.getHref();
+         }
+         set
+         {
+            WObj.setHref(value);
+         }
+
       }
 
-// Generating method code for jsxSet_href
-      public virtual void JsxSet_href(string href)
+      public System.String Target
       {
-         WObj.jsxSet_href(href);
-      }
+         get
+         {
+            return WObj.getTarget();
+         }
+         set
+         {
+            WObj.setTarget(value);
+         }
 
-// Generating method code for jsxGet_target
-      public virtual string JsxGet_target()
-      {
-         return WObj.jsxGet_target();
       }
-
-// Generating method code for jsxSet_target
-      public virtual void JsxSet_target(string target)
-      {
-         WObj.jsxSet_target(target);
-      }
-
    }
 
 

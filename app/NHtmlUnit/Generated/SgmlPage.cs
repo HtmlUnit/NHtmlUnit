@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,14 +24,6 @@ namespace NHtmlUnit
       }
 
 
-      public System.String PageEncoding
-      {
-         get
-         {
-            return WObj.getPageEncoding();
-         }
-      }
-
       public NHtmlUnit.Html.DomElement DocumentElement
       {
          get
@@ -41,6 +33,14 @@ namespace NHtmlUnit
          }
       }
 
+
+      public System.String PageEncoding
+      {
+         get
+         {
+            return WObj.getPageEncoding();
+         }
+      }
 
       public System.String InputEncoding
       {
@@ -130,12 +130,20 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.WebClient WebClient
+      public java.net.URL Url
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebClient>(
-               WObj.getWebClient());
+            return WObj.getUrl();
+         }
+      }
+
+      public NHtmlUnit.WebResponse WebResponse
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
+               WObj.getWebResponse());
          }
       }
 
@@ -155,12 +163,12 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.WebResponse WebResponse
+      public NHtmlUnit.WebClient WebClient
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
-               WObj.getWebResponse());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebClient>(
+               WObj.getWebClient());
          }
       }
 
@@ -174,14 +182,6 @@ namespace NHtmlUnit
          }
       }
 
-
-      public java.net.URL Url
-      {
-         get
-         {
-            return WObj.getUrl();
-         }
-      }
 // Generating method code for cleanUp
       public virtual void CleanUp()
       {
@@ -194,16 +194,16 @@ namespace NHtmlUnit
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.createElement(str));
       }
 
-// Generating method code for createElementNS
-      public virtual NHtmlUnit.W3C.Dom.IElement CreateElementNS(string str1, string str2)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.createElementNS(str1, str2));
-      }
-
 // Generating method code for getElementById
       public virtual NHtmlUnit.W3C.Dom.IElement GetElementById(string arg0)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.getElementById(arg0));
+      }
+
+// Generating method code for createElementNS
+      public virtual NHtmlUnit.W3C.Dom.IElement CreateElementNS(string str1, string str2)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.createElementNS(str1, str2));
       }
 
 // Generating method code for getElementsByTagNameNS

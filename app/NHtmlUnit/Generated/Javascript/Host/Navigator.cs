@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,118 +26,210 @@ namespace NHtmlUnit.Javascript.Host
       public Navigator()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Navigator()) {}
 
-// Generating method code for jsxGet_cookieEnabled
-      public virtual bool JsxGet_cookieEnabled()
+
+      public System.Boolean CookieEnabled
       {
-         return WObj.jsxGet_cookieEnabled();
+         get
+         {
+            return WObj.getCookieEnabled();
+         }
       }
 
-// Generating method code for jsxGet_cpuClass
-      public virtual string JsxGet_cpuClass()
+      public System.String CpuClass
       {
-         return WObj.jsxGet_cpuClass();
+         get
+         {
+            return WObj.getCpuClass();
+         }
       }
 
-// Generating method code for jsxFunction_javaEnabled
-      public virtual bool JsxFunction_javaEnabled()
+      public System.String Platform
       {
-         return WObj.jsxFunction_javaEnabled();
+         get
+         {
+            return WObj.getPlatform();
+         }
       }
 
-// Generating method code for jsxGet_platform
-      public virtual string JsxGet_platform()
+      public System.String SystemLanguage
       {
-         return WObj.jsxGet_platform();
+         get
+         {
+            return WObj.getSystemLanguage();
+         }
       }
 
-// Generating method code for jsxGet_systemLanguage
-      public virtual string JsxGet_systemLanguage()
+      public System.String UserLanguage
       {
-         return WObj.jsxGet_systemLanguage();
+         get
+         {
+            return WObj.getUserLanguage();
+         }
       }
 
-// Generating method code for jsxGet_userLanguage
-      public virtual string JsxGet_userLanguage()
+      public System.String AppCodeName
       {
-         return WObj.jsxGet_userLanguage();
+         get
+         {
+            return WObj.getAppCodeName();
+         }
       }
 
-// Generating method code for jsxGet_appCodeName
-      public virtual string JsxGet_appCodeName()
+      public System.String AppMinorVersion
       {
-         return WObj.jsxGet_appCodeName();
+         get
+         {
+            return WObj.getAppMinorVersion();
+         }
       }
 
-// Generating method code for jsxGet_appMinorVersion
-      public virtual string JsxGet_appMinorVersion()
+      public System.String AppName
       {
-         return WObj.jsxGet_appMinorVersion();
+         get
+         {
+            return WObj.getAppName();
+         }
       }
 
-// Generating method code for jsxGet_appName
-      public virtual string JsxGet_appName()
+      public System.String AppVersion
       {
-         return WObj.jsxGet_appName();
+         get
+         {
+            return WObj.getAppVersion();
+         }
       }
 
-// Generating method code for jsxGet_appVersion
-      public virtual string JsxGet_appVersion()
+      public System.String BrowserLanguage
       {
-         return WObj.jsxGet_appVersion();
+         get
+         {
+            return WObj.getBrowserLanguage();
+         }
       }
 
-// Generating method code for jsxGet_browserLanguage
-      public virtual string JsxGet_browserLanguage()
+      public System.String Language
       {
-         return WObj.jsxGet_browserLanguage();
+         get
+         {
+            return WObj.getLanguage();
+         }
       }
 
-// Generating method code for jsxGet_language
-      public virtual string JsxGet_language()
+      public System.Boolean OnLine
       {
-         return WObj.jsxGet_language();
+         get
+         {
+            return WObj.getOnLine();
+         }
       }
 
-// Generating method code for jsxGet_onLine
-      public virtual bool JsxGet_onLine()
+      public System.String Product
       {
-         return WObj.jsxGet_onLine();
+         get
+         {
+            return WObj.getProduct();
+         }
       }
 
-// Generating method code for jsxGet_product
-      public virtual string JsxGet_product()
+      public System.String ProductSub
       {
-         return WObj.jsxGet_product();
+         get
+         {
+            return WObj.getProductSub();
+         }
       }
 
-// Generating method code for jsxGet_productSub
-      public virtual string JsxGet_productSub()
+      public System.String UserAgent
       {
-         return WObj.jsxGet_productSub();
+         get
+         {
+            return WObj.getUserAgent();
+         }
       }
 
-// Generating method code for jsxGet_userAgent
-      public virtual string JsxGet_userAgent()
+      public System.Object Plugins
       {
-         return WObj.jsxGet_userAgent();
+         get
+         {
+            return WObj.getPlugins();
+         }
       }
 
-// Generating method code for jsxGet_plugins
-      public virtual object JsxGet_plugins()
+      public System.Object MimeTypes
       {
-         return WObj.jsxGet_plugins();
+         get
+         {
+            return WObj.getMimeTypes();
+         }
       }
 
-// Generating method code for jsxGet_mimeTypes
-      public virtual object JsxGet_mimeTypes()
+      public NHtmlUnit.Javascript.Host.Geo.Geolocation Geolocation
       {
-         return WObj.jsxGet_mimeTypes();
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Geo.Geolocation>(
+               WObj.getGeolocation());
+         }
       }
 
-// Generating method code for jsxFunction_taintEnabled
-      public virtual bool JsxFunction_taintEnabled()
+
+      public System.String BuildID
       {
-         return WObj.jsxFunction_taintEnabled();
+         get
+         {
+            return WObj.getBuildID();
+         }
+      }
+
+      public System.String Vendor
+      {
+         get
+         {
+            return WObj.getVendor();
+         }
+      }
+
+      public System.String VendorSub
+      {
+         get
+         {
+            return WObj.getVendorSub();
+         }
+      }
+
+      public System.String DoNotTrack
+      {
+         get
+         {
+            return WObj.getDoNotTrack();
+         }
+      }
+
+      public System.String MsDoNotTrack
+      {
+         get
+         {
+            return WObj.getMsDoNotTrack();
+         }
+      }
+
+      public System.String Oscpu
+      {
+         get
+         {
+            return WObj.getOscpu();
+         }
+      }
+// Generating method code for javaEnabled
+      public virtual bool JavaEnabled()
+      {
+         return WObj.javaEnabled();
+      }
+
+// Generating method code for taintEnabled
+      public virtual bool TaintEnabled()
+      {
+         return WObj.taintEnabled();
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,58 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLLinkElement()) {}
 
 
+      public System.String Href
+      {
+         get
+         {
+            return WObj.getHref();
+         }
+         set
+         {
+            WObj.setHref(value);
+         }
+
+      }
+
+      public System.String Rel
+      {
+         get
+         {
+            return WObj.getRel();
+         }
+         set
+         {
+            WObj.setRel(value);
+         }
+
+      }
+
+      public System.String Rev
+      {
+         get
+         {
+            return WObj.getRev();
+         }
+         set
+         {
+            WObj.setRev(value);
+         }
+
+      }
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
+      }
+
       public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet Sheet
       {
          get
@@ -34,54 +86,6 @@ namespace NHtmlUnit.Javascript.Host.Html
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
                WObj.getSheet());
          }
-      }
-
-// Generating method code for jsxSet_href
-      public virtual void JsxSet_href(string href)
-      {
-         WObj.jsxSet_href(href);
-      }
-
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
-      {
-         return WObj.jsxGet_href();
-      }
-
-// Generating method code for jsxSet_rel
-      public virtual void JsxSet_rel(string rel)
-      {
-         WObj.jsxSet_rel(rel);
-      }
-
-// Generating method code for jsxGet_rel
-      public virtual string JsxGet_rel()
-      {
-         return WObj.jsxGet_rel();
-      }
-
-// Generating method code for jsxSet_rev
-      public virtual void JsxSet_rev(string rel)
-      {
-         WObj.jsxSet_rev(rel);
-      }
-
-// Generating method code for jsxGet_rev
-      public virtual string JsxGet_rev()
-      {
-         return WObj.jsxGet_rev();
-      }
-
-// Generating method code for jsxSet_type
-      public virtual void JsxSet_type(string type)
-      {
-         WObj.jsxSet_type(type);
-      }
-
-// Generating method code for jsxGet_type
-      public virtual string JsxGet_type()
-      {
-         return WObj.jsxGet_type();
       }
 
    }

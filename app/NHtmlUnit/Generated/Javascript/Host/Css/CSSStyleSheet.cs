@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,14 +33,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet()) {}
 
 
-      public System.String Uri
-      {
-         get
-         {
-            return WObj.getUri();
-         }
-      }
-
       public NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet WrappedSheet
       {
          get
@@ -50,16 +42,66 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-// Generating method code for jsxGet_ownerNode
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement JsxGet_ownerNode()
+
+      public System.String Uri
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxGet_ownerNode());
+         get
+         {
+            return WObj.getUri();
+         }
       }
 
-// Generating method code for jsxGet_cssRules
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSRuleList JsxGet_cssRules()
+      public NHtmlUnit.Javascript.Host.Css.CSSRuleList CssRules
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRuleList>(WObj.jsxGet_cssRules());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRuleList>(
+               WObj.getCssRules());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement OwnerNode
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getOwnerNode());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement OwningElement
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getOwningElement());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Css.CSSRuleList Rules
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRuleList>(
+               WObj.getRules());
+         }
+      }
+
+
+      public System.String Href
+      {
+         get
+         {
+            return WObj.getHref();
+         }
+      }
+// Generating method code for isActive
+      public virtual bool IsActive()
+      {
+         return WObj.isActive();
       }
 
 // Generating method code for modifyIfNecessary
@@ -74,52 +116,28 @@ namespace NHtmlUnit.Javascript.Host.Css
          return WObj.parseSelectors(source);
       }
 
-// Generating method code for jsxGet_owningElement
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement JsxGet_owningElement()
+// Generating method code for insertRule
+      public virtual int InsertRule(string rule, int position)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.jsxGet_owningElement());
+         return WObj.insertRule(rule, position);
       }
 
-// Generating method code for jsxGet_rules
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSRuleList JsxGet_rules()
+// Generating method code for deleteRule
+      public virtual void DeleteRule(int position)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRuleList>(WObj.jsxGet_rules());
+         WObj.deleteRule(position);
       }
 
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
+// Generating method code for addRule
+      public virtual int AddRule(string selector, string rule)
       {
-         return WObj.jsxGet_href();
+         return WObj.addRule(selector, rule);
       }
 
-// Generating method code for jsxFunction_insertRule
-      public virtual int JsxFunction_insertRule(string rule, int position)
+// Generating method code for removeRule
+      public virtual void RemoveRule(int position)
       {
-         return WObj.jsxFunction_insertRule(rule, position);
-      }
-
-// Generating method code for jsxFunction_deleteRule
-      public virtual void JsxFunction_deleteRule(int position)
-      {
-         WObj.jsxFunction_deleteRule(position);
-      }
-
-// Generating method code for jsxFunction_addRule
-      public virtual int JsxFunction_addRule(string selector, string rule)
-      {
-         return WObj.jsxFunction_addRule(selector, rule);
-      }
-
-// Generating method code for jsxFunction_removeRule
-      public virtual void JsxFunction_removeRule(int position)
-      {
-         WObj.jsxFunction_removeRule(position);
-      }
-
-// Generating method code for isActive
-      public virtual bool IsActive()
-      {
-         return WObj.isActive();
+         WObj.removeRule(position);
       }
 
    }

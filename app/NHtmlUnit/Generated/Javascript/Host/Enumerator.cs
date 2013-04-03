@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,10 +26,10 @@ namespace NHtmlUnit.Javascript.Host
       public Enumerator()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Enumerator()) {}
 
-// Generating method code for jsxFunction_atEnd
-      public virtual bool JsxFunction_atEnd()
+// Generating method code for atEnd
+      public virtual bool AtEnd()
       {
-         return WObj.jsxFunction_atEnd();
+         return WObj.atEnd();
       }
 
 // Generating method code for jsConstructor
@@ -38,22 +38,22 @@ namespace NHtmlUnit.Javascript.Host
          WObj.jsConstructor(o);
       }
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item()
+// Generating method code for item
+      public virtual object Item()
       {
-         return WObj.jsxFunction_item();
+         return WObj.item();
       }
 
-// Generating method code for jsxFunction_moveFirst
-      public virtual void JsxFunction_moveFirst()
+// Generating method code for moveFirst
+      public virtual void MoveFirst()
       {
-         WObj.jsxFunction_moveFirst();
+         WObj.moveFirst();
       }
 
-// Generating method code for jsxFunction_moveNext
-      public virtual void JsxFunction_moveNext()
+// Generating method code for moveNext
+      public virtual void MoveNext()
       {
-         WObj.jsxFunction_moveNext();
+         WObj.moveNext();
       }
 
    }

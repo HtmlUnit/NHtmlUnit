@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,22 +23,32 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSImportRule)WrappedObject; }
       }
 
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
+
+      public System.String Href
       {
-         return WObj.jsxGet_href();
+         get
+         {
+            return WObj.getHref();
+         }
       }
 
-// Generating method code for jsxGet_media
-      public virtual NHtmlUnit.Javascript.Host.MediaList JsxGet_media()
+      public NHtmlUnit.Javascript.Host.MediaList Media
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(WObj.jsxGet_media());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(
+               WObj.getMedia());
+         }
       }
 
-// Generating method code for jsxGet_styleSheet
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet JsxGet_styleSheet()
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet StyleSheet
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.jsxGet_styleSheet());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
+               WObj.getStyleSheet());
+         }
       }
 
    }

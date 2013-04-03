@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,130 +26,132 @@ namespace NHtmlUnit.Javascript.Host
       public Location()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Location()) {}
 
-// Generating method code for jsxSet_hash
-      public virtual void JsxSet_hash(string hash)
+
+      public System.String Hash
       {
-         WObj.jsxSet_hash(hash);
+         get
+         {
+            return WObj.getHash();
+         }
+         set
+         {
+            WObj.setHash(value);
+         }
+
       }
 
-// Generating method code for jsxGet_href
-      public virtual string JsxGet_href()
+      public System.String Href
       {
-         return WObj.jsxGet_href();
+         get
+         {
+            return WObj.getHref();
+         }
+         set
+         {
+            WObj.setHref(value);
+         }
+
       }
 
-// Generating method code for jsxSet_href
-      public virtual void JsxSet_href(string newLocation)
+      public System.String Search
       {
-         WObj.jsxSet_href(newLocation);
+         get
+         {
+            return WObj.getSearch();
+         }
+         set
+         {
+            WObj.setSearch(value);
+         }
+
       }
 
+      public System.String Hostname
+      {
+         get
+         {
+            return WObj.getHostname();
+         }
+         set
+         {
+            WObj.setHostname(value);
+         }
+
+      }
+
+      public System.String Host
+      {
+         get
+         {
+            return WObj.getHost();
+         }
+         set
+         {
+            WObj.setHost(value);
+         }
+
+      }
+
+      public System.String Pathname
+      {
+         get
+         {
+            return WObj.getPathname();
+         }
+         set
+         {
+            WObj.setPathname(value);
+         }
+
+      }
+
+      public System.String Port
+      {
+         get
+         {
+            return WObj.getPort();
+         }
+         set
+         {
+            WObj.setPort(value);
+         }
+
+      }
+
+      public System.String Protocol
+      {
+         get
+         {
+            return WObj.getProtocol();
+         }
+         set
+         {
+            WObj.setProtocol(value);
+         }
+
+      }
 // Generating method code for initialize
       public virtual void Initialize(NHtmlUnit.Javascript.Host.Window window)
       {
          WObj.initialize((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject);
       }
 
-// Generating method code for jsxFunction_assign
-      public virtual void JsxFunction_assign(string url)
+// Generating method code for assign
+      public virtual void Assign(string url)
       {
-         WObj.jsxFunction_assign(url);
+         WObj.assign(url);
       }
 
-// Generating method code for jsxFunction_reload
-      public virtual void JsxFunction_reload(bool force)
+// Generating method code for reload
+      public virtual void Reload(bool force)
       {
-         WObj.jsxFunction_reload(force);
+         WObj.reload(force);
       }
 
-// Generating method code for jsxFunction_replace
-      public virtual void JsxFunction_replace(string url)
+// Generating method code for replace
+      public virtual void Replace(string url)
       {
-         WObj.jsxFunction_replace(url);
-      }
-
-// Generating method code for jsxFunction_toString
-      public virtual string JsxFunction_toString()
-      {
-         return WObj.jsxFunction_toString();
-      }
-
-// Generating method code for jsxGet_search
-      public virtual string JsxGet_search()
-      {
-         return WObj.jsxGet_search();
-      }
-
-// Generating method code for jsxSet_search
-      public virtual void JsxSet_search(string search)
-      {
-         WObj.jsxSet_search(search);
-      }
-
-// Generating method code for jsxGet_hash
-      public virtual string JsxGet_hash()
-      {
-         return WObj.jsxGet_hash();
-      }
-
-// Generating method code for jsxGet_hostname
-      public virtual string JsxGet_hostname()
-      {
-         return WObj.jsxGet_hostname();
-      }
-
-// Generating method code for jsxSet_hostname
-      public virtual void JsxSet_hostname(string hostname)
-      {
-         WObj.jsxSet_hostname(hostname);
-      }
-
-// Generating method code for jsxGet_host
-      public virtual string JsxGet_host()
-      {
-         return WObj.jsxGet_host();
-      }
-
-// Generating method code for jsxSet_host
-      public virtual void JsxSet_host(string host)
-      {
-         WObj.jsxSet_host(host);
-      }
-
-// Generating method code for jsxGet_pathname
-      public virtual string JsxGet_pathname()
-      {
-         return WObj.jsxGet_pathname();
-      }
-
-// Generating method code for jsxSet_pathname
-      public virtual void JsxSet_pathname(string pathname)
-      {
-         WObj.jsxSet_pathname(pathname);
-      }
-
-// Generating method code for jsxGet_port
-      public virtual string JsxGet_port()
-      {
-         return WObj.jsxGet_port();
-      }
-
-// Generating method code for jsxSet_port
-      public virtual void JsxSet_port(string port)
-      {
-         WObj.jsxSet_port(port);
-      }
-
-// Generating method code for jsxGet_protocol
-      public virtual string JsxGet_protocol()
-      {
-         return WObj.jsxGet_protocol();
-      }
-
-// Generating method code for jsxSet_protocol
-      public virtual void JsxSet_protocol(string protocol)
-      {
-         WObj.jsxSet_protocol(protocol);
+         WObj.replace(url);
       }
 
    }

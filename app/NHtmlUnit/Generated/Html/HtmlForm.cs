@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlForm : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
+   public partial class HtmlForm : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlForm()
       {
@@ -129,12 +129,6 @@ namespace NHtmlUnit.Html
             return WObj.getAcceptAttribute();
          }
       }
-// Generating method code for reset
-      public virtual NHtmlUnit.IPage Reset()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.reset());
-      }
-
 // Generating method code for getWebRequest
       public virtual NHtmlUnit.WebRequest GetWebRequest(NHtmlUnit.Html.ISubmittableElement submitElement)
       {
@@ -181,6 +175,12 @@ namespace NHtmlUnit.Html
       {
 
          return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
+      }
+
+// Generating method code for reset
+      public virtual NHtmlUnit.IPage Reset()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.reset());
       }
 
 // Generating method code for getInputByName

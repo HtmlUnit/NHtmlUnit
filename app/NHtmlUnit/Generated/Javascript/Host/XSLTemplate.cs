@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,22 +26,25 @@ namespace NHtmlUnit.Javascript.Host
       public XSLTemplate()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.XSLTemplate()) {}
 
-// Generating method code for jsxSet_stylesheet
-      public virtual void JsxSet_stylesheet(NHtmlUnit.Javascript.Host.Node node)
+
+      public NHtmlUnit.Javascript.Host.Node Stylesheet
       {
-         WObj.jsxSet_stylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)node.WrappedObject);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(
+               WObj.getStylesheet());
+         }
+         set
+         {
+            WObj.setStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)value.WrappedObject);
+         }
+
       }
 
-// Generating method code for jsxGet_stylesheet
-      public virtual NHtmlUnit.Javascript.Host.Node JsxGet_stylesheet()
+// Generating method code for createProcessor
+      public virtual NHtmlUnit.Javascript.Host.XSLTProcessor CreateProcessor()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxGet_stylesheet());
-      }
-
-// Generating method code for jsxFunction_createProcessor
-      public virtual NHtmlUnit.Javascript.Host.XSLTProcessor JsxFunction_createProcessor()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XSLTProcessor>(WObj.jsxFunction_createProcessor());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.XSLTProcessor>(WObj.createProcessor());
       }
 
    }

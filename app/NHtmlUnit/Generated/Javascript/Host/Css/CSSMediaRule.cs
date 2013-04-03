@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,10 +23,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSMediaRule)WrappedObject; }
       }
 
-// Generating method code for jsxGet_media
-      public virtual NHtmlUnit.Javascript.Host.MediaList JsxGet_media()
+
+      public NHtmlUnit.Javascript.Host.MediaList Media
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(WObj.jsxGet_media());
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(
+               WObj.getMedia());
+         }
       }
 
    }

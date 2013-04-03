@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLLabelElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLLabelElement()) {}
 
-// Generating method code for jsxGet_htmlFor
-      public virtual string JsxGet_htmlFor()
-      {
-         return WObj.jsxGet_htmlFor();
-      }
 
-// Generating method code for jsxSet_htmlFor
-      public virtual void JsxSet_htmlFor(string id)
+      public System.String HtmlFor
       {
-         WObj.jsxSet_htmlFor(id);
-      }
+         get
+         {
+            return WObj.getHtmlFor();
+         }
+         set
+         {
+            WObj.setHtmlFor(value);
+         }
 
+      }
    }
 
 

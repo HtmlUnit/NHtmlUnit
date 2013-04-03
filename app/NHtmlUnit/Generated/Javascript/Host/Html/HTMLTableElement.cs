@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,148 +26,153 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLTableElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTableElement()) {}
 
-// Generating method code for jsxFunction_deleteCaption
-      public virtual void JsxFunction_deleteCaption()
+
+      public System.Object Caption
       {
-         WObj.jsxFunction_deleteCaption();
+         get
+         {
+            return WObj.getCaption();
+         }
+         set
+         {
+            WObj.setCaption(value);
+         }
+
       }
 
-// Generating method code for jsxFunction_deleteTFoot
-      public virtual void JsxFunction_deleteTFoot()
+      public System.Object TFoot
       {
-         WObj.jsxFunction_deleteTFoot();
+         get
+         {
+            return WObj.getTFoot();
+         }
+         set
+         {
+            WObj.setTFoot(value);
+         }
+
       }
 
-// Generating method code for jsxFunction_deleteTHead
-      public virtual void JsxFunction_deleteTHead()
+      public System.Object THead
       {
-         WObj.jsxFunction_deleteTHead();
+         get
+         {
+            return WObj.getTHead();
+         }
+         set
+         {
+            WObj.setTHead(value);
+         }
+
       }
 
-// Generating method code for jsxGet_caption
-      public virtual object JsxGet_caption()
+      public System.Object TBodies
       {
-         return WObj.jsxGet_caption();
+         get
+         {
+            return WObj.getTBodies();
+         }
       }
 
-// Generating method code for jsxSet_caption
-      public virtual void JsxSet_caption(object o)
+      public System.String Width_js
       {
-         WObj.jsxSet_caption(o);
+         get
+         {
+            return WObj.getWidth_js();
+         }
       }
 
-// Generating method code for jsxGet_tFoot
-      public virtual object JsxGet_tFoot()
+      public System.String CellSpacing
       {
-         return WObj.jsxGet_tFoot();
+         get
+         {
+            return WObj.getCellSpacing();
+         }
+         set
+         {
+            WObj.setCellSpacing(value);
+         }
+
       }
 
-// Generating method code for jsxSet_tFoot
-      public virtual void JsxSet_tFoot(object o)
+      public System.String CellPadding
       {
-         WObj.jsxSet_tFoot(o);
+         get
+         {
+            return WObj.getCellPadding();
+         }
+         set
+         {
+            WObj.setCellPadding(value);
+         }
+
       }
 
-// Generating method code for jsxGet_tHead
-      public virtual object JsxGet_tHead()
+      public System.String Border
       {
-         return WObj.jsxGet_tHead();
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
+
       }
 
-// Generating method code for jsxSet_tHead
-      public virtual void JsxSet_tHead(object o)
+      public System.String BgColor
       {
-         WObj.jsxSet_tHead(o);
+         get
+         {
+            return WObj.getBgColor();
+         }
+         set
+         {
+            WObj.setBgColor(value);
+         }
+
+      }
+// Generating method code for deleteCaption
+      public virtual void DeleteCaption()
+      {
+         WObj.deleteCaption();
       }
 
-// Generating method code for jsxGet_tBodies
-      public virtual object JsxGet_tBodies()
+// Generating method code for deleteTFoot
+      public virtual void DeleteTFoot()
       {
-         return WObj.jsxGet_tBodies();
+         WObj.deleteTFoot();
       }
 
-// Generating method code for jsxFunction_createCaption
-      public virtual object JsxFunction_createCaption()
+// Generating method code for deleteTHead
+      public virtual void DeleteTHead()
       {
-         return WObj.jsxFunction_createCaption();
+         WObj.deleteTHead();
       }
 
-// Generating method code for jsxFunction_createTFoot
-      public virtual object JsxFunction_createTFoot()
+// Generating method code for createCaption
+      public virtual object CreateCaption()
       {
-         return WObj.jsxFunction_createTFoot();
+         return WObj.createCaption();
       }
 
-// Generating method code for jsxFunction_createTHead
-      public virtual object JsxFunction_createTHead()
+// Generating method code for createTFoot
+      public virtual object CreateTFoot()
       {
-         return WObj.jsxFunction_createTHead();
+         return WObj.createTFoot();
       }
 
-// Generating method code for jsxFunction_refresh
-      public virtual void JsxFunction_refresh()
+// Generating method code for createTHead
+      public virtual object CreateTHead()
       {
-         WObj.jsxFunction_refresh();
+         return WObj.createTHead();
       }
 
-// Generating method code for jsxGet_width
-      public virtual string JsxGet_width()
+// Generating method code for refresh
+      public virtual void Refresh()
       {
-         return WObj.jsxGet_width();
-      }
-
-// Generating method code for jsxSet_width
-      public virtual void JsxSet_width(string width)
-      {
-         WObj.jsxSet_width(width);
-      }
-
-// Generating method code for jsxGet_cellSpacing
-      public virtual string JsxGet_cellSpacing()
-      {
-         return WObj.jsxGet_cellSpacing();
-      }
-
-// Generating method code for jsxSet_cellSpacing
-      public virtual void JsxSet_cellSpacing(string cellSpacing)
-      {
-         WObj.jsxSet_cellSpacing(cellSpacing);
-      }
-
-// Generating method code for jsxGet_cellPadding
-      public virtual string JsxGet_cellPadding()
-      {
-         return WObj.jsxGet_cellPadding();
-      }
-
-// Generating method code for jsxSet_cellPadding
-      public virtual void JsxSet_cellPadding(string cellPadding)
-      {
-         WObj.jsxSet_cellPadding(cellPadding);
-      }
-
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
-      {
-         return WObj.jsxGet_border();
-      }
-
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
-      }
-
-// Generating method code for jsxGet_bgColor
-      public virtual string JsxGet_bgColor()
-      {
-         return WObj.jsxGet_bgColor();
-      }
-
-// Generating method code for jsxSet_bgColor
-      public virtual void JsxSet_bgColor(string bgColor)
-      {
-         WObj.jsxSet_bgColor(bgColor);
+         WObj.refresh();
       }
 
    }

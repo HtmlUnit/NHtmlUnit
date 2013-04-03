@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,42 +26,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLAppletElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAppletElement()) {}
 
-// Generating method code for jsxGet_alt
-      public virtual string JsxGet_alt()
+
+      public System.String Alt
       {
-         return WObj.jsxGet_alt();
+         get
+         {
+            return WObj.getAlt();
+         }
+         set
+         {
+            WObj.setAlt(value);
+         }
+
       }
 
-// Generating method code for jsxSet_alt
-      public virtual void JsxSet_alt(string alt)
+      public System.String Border
       {
-         WObj.jsxSet_alt(alt);
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
+
       }
 
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
+      public System.String Align
       {
-         return WObj.jsxGet_border();
-      }
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
 
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
       }
-
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
-      {
-         return WObj.jsxGet_align();
-      }
-
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
-      {
-         WObj.jsxSet_align(align);
-      }
-
    }
 
 

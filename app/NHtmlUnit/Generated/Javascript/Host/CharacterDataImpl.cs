@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,52 +26,54 @@ namespace NHtmlUnit.Javascript.Host
       public CharacterDataImpl()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.CharacterDataImpl()) {}
 
-// Generating method code for jsxGet_data
-      public virtual object JsxGet_data()
+
+      public System.Int32 Length
       {
-         return WObj.jsxGet_data();
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for appendData
+      public virtual void AppendData(string arg)
+      {
+         WObj.appendData(arg);
       }
 
-// Generating method code for jsxSet_data
-      public virtual void JsxSet_data(string newValue)
+// Generating method code for deleteData
+      public virtual void DeleteData(int offset, int count)
       {
-         WObj.jsxSet_data(newValue);
+         WObj.deleteData(offset, count);
       }
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+// Generating method code for insertData
+      public virtual void InsertData(int offset, string arg)
       {
-         return WObj.jsxGet_length();
+         WObj.insertData(offset, arg);
       }
 
-// Generating method code for jsxFunction_appendData
-      public virtual void JsxFunction_appendData(string arg)
+// Generating method code for replaceData
+      public virtual void ReplaceData(int offset, int count, string arg)
       {
-         WObj.jsxFunction_appendData(arg);
+         WObj.replaceData(offset, count, arg);
       }
 
-// Generating method code for jsxFunction_deleteData
-      public virtual void JsxFunction_deleteData(int offset, int count)
+// Generating method code for substringData
+      public virtual string SubstringData(int offset, int count)
       {
-         WObj.jsxFunction_deleteData(offset, count);
+         return WObj.substringData(offset, count);
       }
 
-// Generating method code for jsxFunction_insertData
-      public virtual void JsxFunction_insertData(int offset, string arg)
+// Generating method code for getData
+      public virtual object GetData()
       {
-         WObj.jsxFunction_insertData(offset, arg);
+         return WObj.getData();
       }
 
-// Generating method code for jsxFunction_replaceData
-      public virtual void JsxFunction_replaceData(int offset, int count, string arg)
+// Generating method code for setData
+      public virtual void SetData(string newValue)
       {
-         WObj.jsxFunction_replaceData(offset, count, arg);
-      }
-
-// Generating method code for jsxFunction_substringData
-      public virtual string JsxFunction_substringData(int offset, int count)
-      {
-         return WObj.jsxFunction_substringData(offset, count);
+         WObj.setData(newValue);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,154 +26,154 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLInputElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLInputElement()) {}
 
-// Generating method code for jsxSet_type
-      public virtual void JsxSet_type(string newType)
+
+      public System.Int32 SelectionStart
       {
-         WObj.jsxSet_type(newType);
+         get
+         {
+            return WObj.getSelectionStart();
+         }
+         set
+         {
+            WObj.setSelectionStart(value);
+         }
+
       }
 
-// Generating method code for jsxSet_selectionStart
-      public virtual void JsxSet_selectionStart(int start)
+      public System.Int32 SelectionEnd
       {
-         WObj.jsxSet_selectionStart(start);
+         get
+         {
+            return WObj.getSelectionEnd();
+         }
+         set
+         {
+            WObj.setSelectionEnd(value);
+         }
+
       }
 
-// Generating method code for jsxSet_selectionEnd
-      public virtual void JsxSet_selectionEnd(int end)
+      public System.Boolean Checked
       {
-         WObj.jsxSet_selectionEnd(end);
+         get
+         {
+            return WObj.getChecked();
+         }
+         set
+         {
+            WObj.setChecked(value);
+         }
+
       }
 
-// Generating method code for jsConstructor
-      public virtual void JsConstructor()
+      public System.String DefaultValue
       {
-         WObj.jsConstructor();
+         get
+         {
+            return WObj.getDefaultValue();
+         }
+         set
+         {
+            WObj.setDefaultValue(value);
+         }
+
       }
 
-// Generating method code for jsxSet_checked
-      public virtual void JsxSet_checked(bool checkedArg)
+      public System.Boolean DefaultChecked
       {
-         WObj.jsxSet_checked(checkedArg);
+         get
+         {
+            return WObj.getDefaultChecked();
+         }
+         set
+         {
+            WObj.setDefaultChecked(value);
+         }
+
       }
 
-// Generating method code for jsxGet_checked
-      public virtual bool JsxGet_checked()
+      public System.Int32 TextLength
       {
-         return WObj.jsxGet_checked();
+         get
+         {
+            return WObj.getTextLength();
+         }
       }
 
-// Generating method code for jsxFunction_select
-      public virtual void JsxFunction_select()
+      public System.Int32 MaxLength
       {
-         WObj.jsxFunction_select();
+         get
+         {
+            return WObj.getMaxLength();
+         }
+         set
+         {
+            WObj.setMaxLength(value);
+         }
+
       }
 
-// Generating method code for jsxGet_defaultValue
-      public virtual string JsxGet_defaultValue()
+      public System.Boolean ReadOnly
       {
-         return WObj.jsxGet_defaultValue();
+         get
+         {
+            return WObj.getReadOnly();
+         }
+         set
+         {
+            WObj.setReadOnly(value);
+         }
+
       }
 
-// Generating method code for jsxSet_defaultValue
-      public virtual void JsxSet_defaultValue(string defaultValue)
+      public System.String Alt
       {
-         WObj.jsxSet_defaultValue(defaultValue);
+         get
+         {
+            return WObj.getAlt();
+         }
+         set
+         {
+            WObj.setAlt(value);
+         }
+
       }
 
-// Generating method code for jsxGet_defaultChecked
-      public virtual bool JsxGet_defaultChecked()
+      public System.String Border
       {
-         return WObj.jsxGet_defaultChecked();
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
+
       }
 
-// Generating method code for jsxSet_defaultChecked
-      public virtual void JsxSet_defaultChecked(bool defaultChecked)
+      public System.String Align
       {
-         WObj.jsxSet_defaultChecked(defaultChecked);
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
+// Generating method code for select
+      public virtual void Select()
+      {
+         WObj.select();
       }
 
-// Generating method code for jsxGet_textLength
-      public virtual int JsxGet_textLength()
+// Generating method code for setSelectionRange
+      public virtual void SetSelectionRange(int start, int end)
       {
-         return WObj.jsxGet_textLength();
-      }
-
-// Generating method code for jsxGet_selectionStart
-      public virtual int JsxGet_selectionStart()
-      {
-         return WObj.jsxGet_selectionStart();
-      }
-
-// Generating method code for jsxGet_selectionEnd
-      public virtual int JsxGet_selectionEnd()
-      {
-         return WObj.jsxGet_selectionEnd();
-      }
-
-// Generating method code for jsxGet_maxLength
-      public virtual int JsxGet_maxLength()
-      {
-         return WObj.jsxGet_maxLength();
-      }
-
-// Generating method code for jsxSet_maxLength
-      public virtual void JsxSet_maxLength(int length)
-      {
-         WObj.jsxSet_maxLength(length);
-      }
-
-// Generating method code for jsxGet_readOnly
-      public virtual bool JsxGet_readOnly()
-      {
-         return WObj.jsxGet_readOnly();
-      }
-
-// Generating method code for jsxSet_readOnly
-      public virtual void JsxSet_readOnly(bool readOnly)
-      {
-         WObj.jsxSet_readOnly(readOnly);
-      }
-
-// Generating method code for jsxFunction_setSelectionRange
-      public virtual void JsxFunction_setSelectionRange(int start, int end)
-      {
-         WObj.jsxFunction_setSelectionRange(start, end);
-      }
-
-// Generating method code for jsxGet_alt
-      public virtual string JsxGet_alt()
-      {
-         return WObj.jsxGet_alt();
-      }
-
-// Generating method code for jsxSet_alt
-      public virtual void JsxSet_alt(string alt)
-      {
-         WObj.jsxSet_alt(alt);
-      }
-
-// Generating method code for jsxGet_border
-      public virtual string JsxGet_border()
-      {
-         return WObj.jsxGet_border();
-      }
-
-// Generating method code for jsxSet_border
-      public virtual void JsxSet_border(string border)
-      {
-         WObj.jsxSet_border(border);
-      }
-
-// Generating method code for jsxGet_align
-      public virtual string JsxGet_align()
-      {
-         return WObj.jsxGet_align();
-      }
-
-// Generating method code for jsxSet_align
-      public virtual void JsxSet_align(string align)
-      {
-         WObj.jsxSet_align(align);
+         WObj.setSelectionRange(start, end);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,16 +26,16 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLListElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLListElement()) {}
 
-// Generating method code for jsxGet_compact
-      public virtual bool JsxGet_compact()
+// Generating method code for getCompact
+      public virtual bool GetCompact()
       {
-         return WObj.jsxGet_compact();
+         return WObj.getCompact();
       }
 
-// Generating method code for jsxSet_compact
-      public virtual void JsxSet_compact(object compact)
+// Generating method code for setCompact
+      public virtual void SetCompact(object compact)
       {
-         WObj.jsxSet_compact(compact);
+         WObj.setCompact(compact);
       }
 
    }

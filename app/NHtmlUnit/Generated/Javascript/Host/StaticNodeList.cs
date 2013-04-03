@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,16 +29,18 @@ namespace NHtmlUnit.Javascript.Host
       public StaticNodeList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.StaticNodeList()) {}
 
-// Generating method code for jsxFunction_item
-      public virtual NHtmlUnit.Javascript.Host.Node JsxFunction_item(int index)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.jsxFunction_item(index));
-      }
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+      public System.Int32 Length
       {
-         return WObj.jsxGet_length();
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual NHtmlUnit.Javascript.Host.Node Item(int index)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.item(index));
       }
 
    }

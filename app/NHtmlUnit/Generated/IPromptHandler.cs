@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.PromptHandler
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;

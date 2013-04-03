@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,13 +26,15 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLMapElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLMapElement()) {}
 
-// Generating method code for jsxGet_areas
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> JsxGet_areas()
+
+      public IList<NHtmlUnit.W3C.Dom.INode> Areas
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.jsxGet_areas());
-      }
-
+         get
+         {
+            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+               WObj.getAreas());
+         }
+       }
    }
 
 

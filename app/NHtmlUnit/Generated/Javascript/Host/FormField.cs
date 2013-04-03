@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,46 +26,50 @@ namespace NHtmlUnit.Javascript.Host
       public FormField()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.FormField()) {}
 
-// Generating method code for jsxGet_value
-      public virtual string JsxGet_value()
+
+      public System.String Value
       {
-         return WObj.jsxGet_value();
+         get
+         {
+            return WObj.getValue();
+         }
+         set
+         {
+            WObj.setValue(value);
+         }
+
       }
 
-// Generating method code for jsxSet_value
-      public virtual void JsxSet_value(string newValue)
+      public System.String Name
       {
-         WObj.jsxSet_value(newValue);
+         get
+         {
+            return WObj.getName();
+         }
+         set
+         {
+            WObj.setName(value);
+         }
+
       }
 
-// Generating method code for jsxGet_name
-      public virtual string JsxGet_name()
+      public System.String Type
       {
-         return WObj.jsxGet_name();
+         get
+         {
+            return WObj.getType();
+         }
+      }
+// Generating method code for getOnchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
+      {
+         return WObj.getOnchange();
       }
 
-// Generating method code for jsxSet_name
-      public virtual void JsxSet_name(string newName)
+// Generating method code for setOnchange
+      public virtual void SetOnchange(object onchange)
       {
-         WObj.jsxSet_name(newName);
-      }
-
-// Generating method code for jsxGet_type
-      public virtual string JsxGet_type()
-      {
-         return WObj.jsxGet_type();
-      }
-
-// Generating method code for jsxSet_onchange
-      public virtual void JsxSet_onchange(object onchange)
-      {
-         WObj.jsxSet_onchange(onchange);
-      }
-
-// Generating method code for jsxGet_onchange
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function JsxGet_onchange()
-      {
-         return WObj.jsxGet_onchange();
+         WObj.setOnchange(onchange);
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,22 +23,24 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList)WrappedObject; }
       }
 
-      public StyleSheetList()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList()) {}
-
       public StyleSheetList(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
 
-// Generating method code for jsxFunction_item
-      public virtual object JsxFunction_item(int index)
-      {
-         return WObj.jsxFunction_item(index);
-      }
+      public StyleSheetList()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList()) {}
 
-// Generating method code for jsxGet_length
-      public virtual int JsxGet_length()
+
+      public System.Int32 Length
       {
-         return WObj.jsxGet_length();
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual object Item(int index)
+      {
+         return WObj.item(index);
       }
 
    }

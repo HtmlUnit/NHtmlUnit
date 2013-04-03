@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -54,14 +54,18 @@ namespace NHtmlUnit.Html
       }
 
 
-      public IList<NHtmlUnit.Html.FrameWindow> Frames
+      public System.String TitleText
       {
          get
          {
-            return new ListWrapper<NHtmlUnit.Html.FrameWindow>(
-               WObj.getFrames());
+            return WObj.getTitleText();
          }
-       }
+         set
+         {
+            WObj.setTitleText(value);
+         }
+
+      }
 
       public IList<NHtmlUnit.Html.HtmlAnchor> Anchors
       {
@@ -69,6 +73,15 @@ namespace NHtmlUnit.Html
          {
             return new ListWrapper<NHtmlUnit.Html.HtmlAnchor>(
                WObj.getAnchors());
+         }
+       }
+
+      public IList<NHtmlUnit.Html.FrameWindow> Frames
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.Html.FrameWindow>(
+               WObj.getFrames());
          }
        }
 
@@ -91,6 +104,16 @@ namespace NHtmlUnit.Html
       }
 
 
+      public NHtmlUnit.Html.HtmlElement Head
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getHead());
+         }
+      }
+
+
       public IList<NHtmlUnit.Html.HtmlForm> Forms
       {
          get
@@ -108,19 +131,12 @@ namespace NHtmlUnit.Html
                WObj.getTabbableElementIds());
          }
        }
-
-      public System.String TitleText
+// Generating method code for writeInParsedStream
+      public virtual void WriteInParsedStream(string stringArg)
       {
-         get
-         {
-            return WObj.getTitleText();
-         }
-         set
-         {
-            WObj.setTitleText(value);
-         }
-
+         WObj.writeInParsedStream(stringArg);
       }
+
 // Generating method code for save
       public virtual void Save(java.io.File file)
       {
@@ -133,23 +149,34 @@ namespace NHtmlUnit.Html
          return WObj.isQuirksMode();
       }
 
-// Generating method code for querySelectorAll
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
+// Generating method code for isOnbeforeunloadAccepted
+      public virtual bool IsOnbeforeunloadAccepted()
       {
-
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
+         return WObj.isOnbeforeunloadAccepted();
       }
 
-// Generating method code for querySelector
-      public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
+// Generating method code for setFocusedElement
+      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement, bool windowActivated)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.querySelector(selectors));
+         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject, windowActivated);
+      }
+
+// Generating method code for executeJavaScriptIfPossible
+      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
       }
 
 // Generating method code for getHtmlElementById
       public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id));
+      }
+
+// Generating method code for getFormByName
+      public virtual NHtmlUnit.Html.HtmlForm GetFormByName(string name)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(WObj.getFormByName(name));
       }
 
 // Generating method code for setFocusedElement
@@ -164,12 +191,6 @@ namespace NHtmlUnit.Html
          return WObj.getFullyQualifiedUrl(relativeUrl);
       }
 
-// Generating method code for executeJavaScriptIfPossible
-      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
-      }
-
 // Generating method code for getResolvedTarget
       public virtual string GetResolvedTarget(string elementTarget)
       {
@@ -182,29 +203,23 @@ namespace NHtmlUnit.Html
          WObj.deregisterFramesIfNeeded();
       }
 
-// Generating method code for getElementsByAccessKey
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetElementsByAccessKey(System.Char accessKey)
+// Generating method code for getElementById
+      public virtual NHtmlUnit.Html.DomElement GetElementById(string id, bool caseSensitive)
       {
-
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementsByAccessKey(accessKey));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementById(id, caseSensitive));
       }
 
-// Generating method code for getElementByAccessKey
-      public virtual NHtmlUnit.Html.HtmlElement GetElementByAccessKey(System.Char accessKey)
+// Generating method code for getHtmlElementByAccessKey
+      public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementByAccessKey(System.Char accessKey)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementByAccessKey(accessKey));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementByAccessKey(accessKey));
       }
 
-// Generating method code for getHtmlElementById
-      public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id, bool caseSensitive)
+// Generating method code for getHtmlElementsByAccessKey
+      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByAccessKey(System.Char accessKey)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id, caseSensitive));
-      }
 
-// Generating method code for setFocusedElement
-      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement, bool windowActivated)
-      {
-         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject, windowActivated);
+         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByAccessKey(accessKey));
       }
 
 // Generating method code for getAnchorByName
@@ -223,12 +238,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByText(string text)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(WObj.getAnchorByText(text));
-      }
-
-// Generating method code for getFormByName
-      public virtual NHtmlUnit.Html.HtmlForm GetFormByName(string name)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(WObj.getFormByName(name));
       }
 
 // Generating method code for executeJavaScript
@@ -267,24 +276,30 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.tabToPreviousElement());
       }
 
-// Generating method code for getElementByName
-      public virtual NHtmlUnit.Html.HtmlElement GetElementByName(string name)
+// Generating method code for getHtmlElementById
+      public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id, bool caseSensitive)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementByName(name));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id, caseSensitive));
+      }
+
+// Generating method code for getElementByName
+      public virtual NHtmlUnit.Html.DomElement GetElementByName(string name)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementByName(name));
       }
 
 // Generating method code for getElementsByName
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetElementsByName(string name)
+      public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementsByName(name));
+         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByName(name));
       }
 
 // Generating method code for getElementsByIdAndOrName
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetElementsByIdAndOrName(string idAndOrName)
+      public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByIdAndOrName(string idAndOrName)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getElementsByIdAndOrName(idAndOrName));
+         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByIdAndOrName(idAndOrName));
       }
 
 // Generating method code for addHtmlAttributeChangeListener
@@ -299,12 +314,6 @@ namespace NHtmlUnit.Html
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
       }
 
-// Generating method code for isOnbeforeunloadAccepted
-      public virtual bool IsOnbeforeunloadAccepted()
-      {
-         return WObj.isOnbeforeunloadAccepted();
-      }
-
 // Generating method code for isBeingParsed
       public virtual bool IsBeingParsed()
       {
@@ -315,12 +324,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage Refresh()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.refresh());
-      }
-
-// Generating method code for writeInParsedStream
-      public virtual void WriteInParsedStream(string stringArg)
-      {
-         WObj.writeInParsedStream(stringArg);
       }
 
    }

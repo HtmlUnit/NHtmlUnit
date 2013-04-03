@@ -1,4 +1,4 @@
-// Generated class v4, don't modify
+// Generated class v5, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,16 @@ namespace NHtmlUnit.Javascript
          : this(new com.gargoylesoftware.htmlunit.javascript.SimpleScriptable()) {}
 
 
+      public NHtmlUnit.Html.DomNode DomNodeOrDie
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
+               WObj.getDomNodeOrDie());
+         }
+      }
+
+
       public NHtmlUnit.Javascript.Host.Window Window
       {
          get
@@ -37,22 +47,22 @@ namespace NHtmlUnit.Javascript
       }
 
 
+      public NHtmlUnit.BrowserVersion BrowserVersion
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               WObj.getBrowserVersion());
+         }
+      }
+
+
       public NHtmlUnit.Html.DomNode DomNodeOrNull
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getDomNodeOrNull());
-         }
-      }
-
-
-      public NHtmlUnit.Html.DomNode DomNodeOrDie
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
-               WObj.getDomNodeOrDie());
          }
       }
 
