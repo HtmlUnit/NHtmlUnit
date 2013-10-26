@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -35,6 +35,14 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
+      public System.Object OwnerElement
+      {
+         get
+         {
+            return WObj.getOwnerElement();
+         }
+      }
+
       public System.String Value
       {
          get
@@ -64,19 +72,19 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-      public System.Object OwnerElement
-      {
-         get
-         {
-            return WObj.getOwnerElement();
-         }
-      }
-
       public System.Boolean Specified
       {
          get
          {
             return WObj.getSpecified();
+         }
+      }
+
+      public System.String BaseURI
+      {
+         get
+         {
+            return WObj.getBaseURI();
          }
       }
 // Generating method code for detachFromParent

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,12 +33,12 @@ namespace NHtmlUnit.Javascript.Host.Css
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet()) {}
 
 
-      public NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet WrappedSheet
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement OwnerNode
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(
-               WObj.getWrappedSheet());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getOwnerNode());
          }
       }
 
@@ -51,22 +51,22 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet WrappedSheet
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(
+               WObj.getWrappedSheet());
+         }
+      }
+
+
       public NHtmlUnit.Javascript.Host.Css.CSSRuleList CssRules
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSRuleList>(
                WObj.getCssRules());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.Html.HTMLElement OwnerNode
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
-               WObj.getOwnerNode());
          }
       }
 
@@ -98,12 +98,6 @@ namespace NHtmlUnit.Javascript.Host.Css
             return WObj.getHref();
          }
       }
-// Generating method code for isActive
-      public virtual bool IsActive()
-      {
-         return WObj.isActive();
-      }
-
 // Generating method code for modifyIfNecessary
       public virtual void ModifyIfNecessary(NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration style, NHtmlUnit.Javascript.Host.Element element)
       {
@@ -138,6 +132,12 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual void RemoveRule(int position)
       {
          WObj.removeRule(position);
+      }
+
+// Generating method code for isActive
+      public virtual bool IsActive()
+      {
+         return WObj.isActive();
       }
 
    }

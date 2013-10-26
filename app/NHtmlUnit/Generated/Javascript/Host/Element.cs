@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,15 +37,13 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration Style
+      public System.String DefaultStyleDisplay
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(
-               WObj.getStyle());
+            return WObj.getDefaultStyleDisplay();
          }
       }
-
 
       public System.String TagName
       {
@@ -144,6 +142,16 @@ namespace NHtmlUnit.Javascript.Host
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMTokenList>(
                WObj.getClassList());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration Style
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(
+               WObj.getStyle());
          }
       }
 

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,23 +27,15 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
 
-      public System.Int32 ScrollY
+      public System.String Status
       {
          get
          {
-            return WObj.getScrollY();
-         }
-      }
-
-      public System.Object Onchange
-      {
-         get
-         {
-            return WObj.getOnchange();
+            return WObj.getStatus();
          }
          set
          {
-            WObj.setOnchange(value);
+            WObj.setStatus(value);
          }
 
       }
@@ -57,19 +49,6 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-
-      public System.String Status
-      {
-         get
-         {
-            return WObj.getStatus();
-         }
-         set
-         {
-            WObj.setStatus(value);
-         }
-
-      }
 
       public NHtmlUnit.IWebWindow WebWindow
       {
@@ -101,6 +80,64 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
+      public NHtmlUnit.Javascript.Host.Html.DocumentProxy Document_js
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
+               WObj.getDocument_js());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Screen Screen
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(
+               WObj.getScreen());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Navigator Navigator
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(
+               WObj.getNavigator());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Selection SelectionImpl
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+               WObj.getSelectionImpl());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.WindowProxy Frames_js
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
+               WObj.getFrames_js());
+         }
+      }
+
+
+      public System.Int32 InnerWidth
+      {
+         get
+         {
+            return WObj.getInnerWidth();
+         }
+      }
+
       public System.Int32 InnerHeight
       {
          get
@@ -122,26 +159,6 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public NHtmlUnit.Javascript.Host.Selection SelectionImpl
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
-               WObj.getSelectionImpl());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.Html.DocumentProxy Document_js
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
-               WObj.getDocument_js());
-         }
-      }
-
-
       public NHtmlUnit.Javascript.Host.OfflineResourceList ApplicationCache
       {
          get
@@ -159,16 +176,6 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getEvent();
          }
       }
-
-      public NHtmlUnit.Javascript.Host.Navigator Navigator
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Navigator>(
-               WObj.getNavigator());
-         }
-      }
-
 
       public NHtmlUnit.Javascript.Host.Navigator ClientInformation
       {
@@ -253,16 +260,6 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public NHtmlUnit.Javascript.Host.Screen Screen
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(
-               WObj.getScreen());
-         }
-      }
-
-
       public NHtmlUnit.Javascript.Host.History History
       {
          get
@@ -326,16 +323,6 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getFrameElement();
          }
       }
-
-      public NHtmlUnit.Javascript.Host.WindowProxy Frames_js
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(
-               WObj.getFrames_js());
-         }
-      }
-
 
       public System.Int32 Length
       {
@@ -431,14 +418,6 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public System.Int32 InnerWidth
-      {
-         get
-         {
-            return WObj.getInnerWidth();
-         }
-      }
-
       public System.Int32 OuterWidth
       {
          get
@@ -525,30 +504,37 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getScrollX();
          }
       }
-// Generating method code for executeEvent
-      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+
+      public System.Int32 ScrollY
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
+         get
+         {
+            return WObj.getScrollY();
+         }
       }
 
-// Generating method code for dispatchEvent
-      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      public NHtmlUnit.Javascript.Host.Netscape Netscape
       {
-         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Netscape>(
+               WObj.getNetscape());
+         }
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IPage enclosedPage)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.Page)enclosedPage.WrappedObject);
-      }
 
-// Generating method code for initialize
-      public virtual void Initialize()
+      public System.Object Onchange
       {
-         WObj.initialize();
-      }
+         get
+         {
+            return WObj.getOnchange();
+         }
+         set
+         {
+            WObj.setOnchange(value);
+         }
 
+      }
 // Generating method code for attachEvent
       public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
@@ -561,22 +547,28 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.getPrototype(jsClass);
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+// Generating method code for getComputedStyle
+      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
       }
 
-// Generating method code for triggerOnError
-      public virtual void TriggerOnError(NHtmlUnit.ScriptException e)
+// Generating method code for executeEvent
+      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
-         WObj.triggerOnError((com.gargoylesoftware.htmlunit.ScriptException)e.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for getStorage
-      public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType)
+      public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder+Type storageType)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.getStorage(storageType));
+      }
+
+// Generating method code for dispatchEvent
+      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      {
+         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
       }
 
 // Generating method code for scrollTo
@@ -643,6 +635,24 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Dump(string message)
       {
          WObj.dump(message);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IPage enclosedPage)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.Page)enclosedPage.WrappedObject);
+      }
+
+// Generating method code for initialize
+      public virtual void Initialize()
+      {
+         WObj.initialize();
       }
 
 // Generating method code for focus
@@ -729,6 +739,12 @@ namespace NHtmlUnit.Javascript.Host
          WObj.removeEventListener(type, listener, useCapture);
       }
 
+// Generating method code for triggerOnError
+      public virtual void TriggerOnError(NHtmlUnit.ScriptException e)
+      {
+         WObj.triggerOnError((com.gargoylesoftware.htmlunit.ScriptException)e.WrappedObject);
+      }
+
 // Generating method code for call
       public virtual object Call(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObj, System.Object[] args)
       {
@@ -783,12 +799,6 @@ namespace NHtmlUnit.Javascript.Host
          WObj.CollectGarbage();
       }
 
-// Generating method code for getComputedStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
-      }
-
 // Generating method code for showModalDialog
       public virtual object ShowModalDialog(string url, object arguments, string features)
       {
@@ -829,6 +839,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Stop()
       {
          WObj.stop();
+      }
+
+// Generating method code for postMessage
+      public virtual void PostMessage(string message, string targetOrigin)
+      {
+         WObj.postMessage(message, targetOrigin);
       }
 
 // Generating method code for getLocation

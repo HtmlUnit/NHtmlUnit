@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.StorageHolder()) {}
 
 // Generating method code for getStore
-      public virtual java.util.Map GetStore(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType, NHtmlUnit.IPage page)
+      public virtual java.util.Map GetStore(com.gargoylesoftware.htmlunit.StorageHolder+Type storageType, NHtmlUnit.IPage page)
       {
          return WObj.getStore(storageType, (com.gargoylesoftware.htmlunit.Page)page.WrappedObject);
       }

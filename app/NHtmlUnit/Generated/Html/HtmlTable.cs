@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,23 +23,6 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlTable)WrappedObject; }
       }
 
-
-      public IList<NHtmlUnit.Html.HtmlTableRow> Rows
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.Html.HtmlTableRow>(
-               WObj.getRows());
-         }
-       }
-
-      public System.Int32 RowCount
-      {
-         get
-         {
-            return WObj.getRowCount();
-         }
-      }
 
       public System.String CaptionText
       {
@@ -68,6 +51,23 @@ namespace NHtmlUnit.Html
          }
       }
 
+
+      public IList<NHtmlUnit.Html.HtmlTableRow> Rows
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.Html.HtmlTableRow>(
+               WObj.getRows());
+         }
+       }
+
+      public System.Int32 RowCount
+      {
+         get
+         {
+            return WObj.getRowCount();
+         }
+      }
 
       public IList<NHtmlUnit.Html.HtmlTableBody> Bodies
       {

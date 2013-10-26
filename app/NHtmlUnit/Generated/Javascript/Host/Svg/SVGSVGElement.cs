@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -40,6 +40,12 @@ namespace NHtmlUnit.Javascript.Host.Svg
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix CreateSVGMatrix()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.createSVGMatrix());
+      }
+
+// Generating method code for createSVGRect
+      public virtual NHtmlUnit.Javascript.Host.Svg.SVGRect CreateSVGRect()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGRect>(WObj.createSVGRect());
       }
 
    }

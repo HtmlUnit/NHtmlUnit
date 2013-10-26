@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class MessageEvent : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class MessageEvent : NHtmlUnit.Javascript.Host.Event
    {
       static MessageEvent()
       {
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.MessageEvent)WrappedObject; }
       }
 
-      public MessageEvent(object data)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent(data)) {}
-
       public MessageEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent()) {}
+
+      public MessageEvent(object data)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.MessageEvent(data)) {}
 
 
       public System.Object Data

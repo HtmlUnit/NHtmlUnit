@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,14 +30,6 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.NodeList((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject, attributeChangeSensitive, description)) {}
 
 
-      public System.Int32 Length
-      {
-         get
-         {
-            return WObj.getLength();
-         }
-      }
-
       public IList<java.lang.Object> Elements
       {
          get
@@ -46,12 +38,14 @@ namespace NHtmlUnit.Javascript.Host
                WObj.getElements());
          }
        }
-// Generating method code for item
-      public virtual object Item(object index)
-      {
-         return WObj.item(index);
-      }
 
+      public System.Int32 Length
+      {
+         get
+         {
+            return WObj.getLength();
+         }
+      }
 // Generating method code for call
       public virtual object Call(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObj, System.Object[] args)
       {
@@ -62,6 +56,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable Construct(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, System.Object[] args)
       {
          return WObj.construct(cx, scope, args);
+      }
+
+// Generating method code for item
+      public virtual object Item(object index)
+      {
+         return WObj.item(index);
       }
 
 // Generating method code for item

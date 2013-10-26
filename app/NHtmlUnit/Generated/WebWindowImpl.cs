@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,21 +24,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.IPage EnclosedPage
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
-               WObj.getEnclosedPage());
-         }
-         set
-         {
-            WObj.setEnclosedPage((com.gargoylesoftware.htmlunit.Page)value.WrappedObject);
-         }
-
-      }
-
-
       public NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager
       {
          get
@@ -49,6 +34,21 @@ namespace NHtmlUnit
          set
          {
             WObj.setJobManager((com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager)value.WrappedObject);
+         }
+
+      }
+
+
+      public NHtmlUnit.IPage EnclosedPage
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
+               WObj.getEnclosedPage());
+         }
+         set
+         {
+            WObj.setEnclosedPage((com.gargoylesoftware.htmlunit.Page)value.WrappedObject);
          }
 
       }

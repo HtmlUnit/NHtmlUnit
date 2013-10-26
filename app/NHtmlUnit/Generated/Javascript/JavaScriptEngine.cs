@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -66,24 +66,6 @@ namespace NHtmlUnit.Javascript
          }
       }
 
-// Generating method code for registerWindowAndMaybeStartEventLoop
-      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
-      {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for shutdownJavaScriptExecutor
-      public virtual void ShutdownJavaScriptExecutor()
-      {
-         WObj.shutdownJavaScriptExecutor();
-      }
-
 // Generating method code for processPostponedActions
       public virtual void ProcessPostponedActions()
       {
@@ -144,10 +126,28 @@ namespace NHtmlUnit.Javascript
          return WObj.callFunction((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, function, scope, thisObject, args);
       }
 
+// Generating method code for initialize
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for registerWindowAndMaybeStartEventLoop
+      public virtual void RegisterWindowAndMaybeStartEventLoop(NHtmlUnit.IWebWindow webWindow)
+      {
+         WObj.registerWindowAndMaybeStartEventLoop((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
 // Generating method code for pumpEventLoop
       public virtual int PumpEventLoop(System.Int64 timeoutMillis)
       {
          return WObj.pumpEventLoop(timeoutMillis);
+      }
+
+// Generating method code for shutdownJavaScriptExecutor
+      public virtual void ShutdownJavaScriptExecutor()
+      {
+         WObj.shutdownJavaScriptExecutor();
       }
 
    }

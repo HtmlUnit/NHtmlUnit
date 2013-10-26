@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,19 +27,19 @@ namespace NHtmlUnit.Util
          : this(new com.gargoylesoftware.htmlunit.util.NameValuePair(name, value)) {}
 
 
-      public System.String Value
-      {
-         get
-         {
-            return WObj.getValue();
-         }
-      }
-
       public System.String Name
       {
          get
          {
             return WObj.getName();
+         }
+      }
+
+      public System.String Value
+      {
+         get
+         {
+            return WObj.getValue();
          }
       }
    }

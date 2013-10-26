@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,6 +24,14 @@ namespace NHtmlUnit
       }
 
 
+      public System.String PageEncoding
+      {
+         get
+         {
+            return WObj.getPageEncoding();
+         }
+      }
+
       public NHtmlUnit.Html.DomElement DocumentElement
       {
          get
@@ -33,14 +41,6 @@ namespace NHtmlUnit
          }
       }
 
-
-      public System.String PageEncoding
-      {
-         get
-         {
-            return WObj.getPageEncoding();
-         }
-      }
 
       public System.String InputEncoding
       {
@@ -130,6 +130,21 @@ namespace NHtmlUnit
       }
 
 
+      public NHtmlUnit.IWebWindow EnclosingWindow
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
+               WObj.getEnclosingWindow());
+         }
+         set
+         {
+            WObj.setEnclosingWindow((com.gargoylesoftware.htmlunit.WebWindow)value.WrappedObject);
+         }
+
+      }
+
+
       public java.net.URL Url
       {
          get
@@ -145,21 +160,6 @@ namespace NHtmlUnit
             return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
                WObj.getWebResponse());
          }
-      }
-
-
-      public NHtmlUnit.IWebWindow EnclosingWindow
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
-               WObj.getEnclosingWindow());
-         }
-         set
-         {
-            WObj.setEnclosingWindow((com.gargoylesoftware.htmlunit.WebWindow)value.WrappedObject);
-         }
-
       }
 
 
@@ -290,6 +290,12 @@ namespace NHtmlUnit
       public virtual NHtmlUnit.W3C.Dom.IProcessingInstruction CreateProcessingInstruction(string arg0, string arg1)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IProcessingInstruction>(WObj.createProcessingInstruction(arg0, arg1));
+      }
+
+// Generating method code for isHtmlPage
+      public virtual bool IsHtmlPage()
+      {
+         return WObj.isHtmlPage();
       }
 
 // Generating method code for createAttribute

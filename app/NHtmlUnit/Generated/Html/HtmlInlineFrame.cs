@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlInlineFrame : NHtmlUnit.Html.BaseFrame, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlInlineFrame : NHtmlUnit.Html.BaseFrameElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
       static HtmlInlineFrame()
       {
