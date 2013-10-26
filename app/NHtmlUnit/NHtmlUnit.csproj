@@ -144,7 +144,6 @@
     <Compile Include="Generated\DialogWindow.cs" />
     <Compile Include="Generated\FormEncodingType.cs" />
     <Compile Include="Generated\History.cs" />
-    <Compile Include="Generated\Html\BaseFrame.cs" />
     <Compile Include="Generated\Html\BaseFrameElement.cs" />
     <Compile Include="Generated\Html\DomAttr.cs" />
     <Compile Include="Generated\Html\DomCDataSection.cs" />
@@ -380,6 +379,7 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLBaseElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBaseFontElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBGSoundElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBlockQuoteElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBodyElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBRElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLButtonElement.cs" />
@@ -404,6 +404,7 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLHtmlElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLIFrameElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLImageElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLInlineQuotationElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLInputElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLInsElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLIsIndexElement.cs" />
@@ -426,7 +427,6 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLParamElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLPreElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLProgressElement.cs" />
-    <Compile Include="Generated\Javascript\Host\Html\HTMLQuoteElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLScriptElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLSelectElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLSourceElement.cs" />
@@ -456,6 +456,7 @@
     <Compile Include="Generated\Javascript\Host\Namespace.cs" />
     <Compile Include="Generated\Javascript\Host\NamespaceCollection.cs" />
     <Compile Include="Generated\Javascript\Host\Navigator.cs" />
+    <Compile Include="Generated\Javascript\Host\Netscape.cs" />
     <Compile Include="Generated\Javascript\Host\Node.cs" />
     <Compile Include="Generated\Javascript\Host\NodeFilter.cs" />
     <Compile Include="Generated\Javascript\Host\NodeList.cs" />
@@ -524,6 +525,7 @@
     <Compile Include="Generated\Javascript\Host\Svg\SVGPolygonElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGPolylineElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGRadialGradientElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Svg\SVGRect.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGRectElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGScriptElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGSetElement.cs" />
@@ -549,6 +551,7 @@
     <Compile Include="Generated\Javascript\Host\Xml\XMLDOMParseError.cs" />
     <Compile Include="Generated\Javascript\Host\Xml\XMLHttpRequest.cs" />
     <Compile Include="Generated\Javascript\Host\Xml\XMLSerializer.cs" />
+    <Compile Include="Generated\Javascript\Host\XPathEvaluator.cs" />
     <Compile Include="Generated\Javascript\Host\XPathNSResolver.cs" />
     <Compile Include="Generated\Javascript\Host\XPathResult.cs" />
     <Compile Include="Generated\Javascript\Host\XSLTemplate.cs" />
@@ -634,7 +637,6 @@
     <Compile Include="Generated\Svg\SvgUse.cs" />
     <Compile Include="Generated\TopLevelWindow.cs" />
     <Compile Include="Generated\Util\Cookie.cs" />
-    <Compile Include="Generated\Util\KeyDataPair.cs" />
     <Compile Include="Generated\Util\NameValuePair.cs" />
     <Compile Include="Generated\Util\WebResponseWrapper.cs" />
     <Compile Include="Generated\W3C\Dom\Css\ICSSStyleDeclaration.cs" />
