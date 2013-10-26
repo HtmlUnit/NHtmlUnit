@@ -9,8 +9,11 @@
 
 #endregion
 
+using System;
+
 namespace NHtmlUnit.Util
 {
+    [Obsolete("Obsoleted in 2.13",true)]
     public partial class KeyDataPair
     {
     }
