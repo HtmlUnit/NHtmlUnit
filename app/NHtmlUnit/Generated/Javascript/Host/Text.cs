@@ -35,12 +35,9 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-      public System.Object Text
+      public System.Object GetText()
       {
-         get
-         {
-            return WObj.getText();
-         }
+          return WObj.getText();
       }
 // Generating method code for splitText
       public virtual object SplitText(int offset)

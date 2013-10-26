@@ -560,7 +560,7 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for getStorage
-      public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder+Type storageType)
+      public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.getStorage(storageType));
       }

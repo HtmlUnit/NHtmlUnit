@@ -27,7 +27,7 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.StorageHolder()) {}
 
 // Generating method code for getStore
-      public virtual java.util.Map GetStore(com.gargoylesoftware.htmlunit.StorageHolder+Type storageType, NHtmlUnit.IPage page)
+      public virtual java.util.Map GetStore(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType, NHtmlUnit.IPage page)
       {
          return WObj.getStore(storageType, (com.gargoylesoftware.htmlunit.Page)page.WrappedObject);
       }
