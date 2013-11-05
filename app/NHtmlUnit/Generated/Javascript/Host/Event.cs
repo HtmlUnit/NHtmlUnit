@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -83,6 +83,19 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
+      public System.Boolean CancelBubble
+      {
+         get
+         {
+            return WObj.getCancelBubble();
+         }
+         set
+         {
+            WObj.setCancelBubble(value);
+         }
+
+      }
+
       public System.Object SrcElement
       {
          get
@@ -139,19 +152,6 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getCancelable();
          }
-      }
-
-      public System.Boolean CancelBubble
-      {
-         get
-         {
-            return WObj.getCancelBubble();
-         }
-         set
-         {
-            WObj.setCancelBubble(value);
-         }
-
       }
 
       public System.String PropertyName

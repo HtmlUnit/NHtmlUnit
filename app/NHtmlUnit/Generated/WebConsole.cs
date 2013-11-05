@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,18 +26,6 @@ namespace NHtmlUnit
       public WebConsole()
          : this(new com.gargoylesoftware.htmlunit.WebConsole()) {}
 
-// Generating method code for trace
-      public virtual void Trace(System.Object[] args)
-      {
-         WObj.trace(args);
-      }
-
-// Generating method code for debug
-      public virtual void Debug(System.Object[] args)
-      {
-         WObj.debug(args);
-      }
-
 // Generating method code for info
       public virtual void Info(System.Object[] args)
       {
@@ -54,6 +42,18 @@ namespace NHtmlUnit
       public virtual void Error(System.Object[] args)
       {
          WObj.error(args);
+      }
+
+// Generating method code for debug
+      public virtual void Debug(System.Object[] args)
+      {
+         WObj.debug(args);
+      }
+
+// Generating method code for trace
+      public virtual void Trace(System.Object[] args)
+      {
+         WObj.trace(args);
       }
 
    }

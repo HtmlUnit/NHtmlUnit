@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Plugin)WrappedObject; }
       }
 
-      public Plugin()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin()) {}
-
       public Plugin(string name, string description, string filename)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin(name, description, filename)) {}
+
+      public Plugin()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin()) {}
 
 
       public System.String Description

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,32 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebClientOptions()) {}
 
 
+      public System.Int32 Timeout
+      {
+         get
+         {
+            return WObj.getTimeout();
+         }
+         set
+         {
+            WObj.setTimeout(value);
+         }
+
+      }
+
+      public System.String HomePage
+      {
+         get
+         {
+            return WObj.getHomePage();
+         }
+         set
+         {
+            WObj.setHomePage(value);
+         }
+
+      }
+
       public NHtmlUnit.ProxyConfig ProxyConfig
       {
          get
@@ -54,36 +80,10 @@ namespace NHtmlUnit
          }
 
       }
-
-      public System.String HomePage
+// Generating method code for isCssEnabled
+      public virtual bool IsCssEnabled()
       {
-         get
-         {
-            return WObj.getHomePage();
-         }
-         set
-         {
-            WObj.setHomePage(value);
-         }
-
-      }
-
-      public System.Int32 Timeout
-      {
-         get
-         {
-            return WObj.getTimeout();
-         }
-         set
-         {
-            WObj.setTimeout(value);
-         }
-
-      }
-// Generating method code for isThrowExceptionOnFailingStatusCode
-      public virtual bool IsThrowExceptionOnFailingStatusCode()
-      {
-         return WObj.isThrowExceptionOnFailingStatusCode();
+         return WObj.isCssEnabled();
       }
 
 // Generating method code for isJavaScriptEnabled
@@ -92,46 +92,10 @@ namespace NHtmlUnit
          return WObj.isJavaScriptEnabled();
       }
 
-// Generating method code for isCssEnabled
-      public virtual bool IsCssEnabled()
-      {
-         return WObj.isCssEnabled();
-      }
-
 // Generating method code for isAppletEnabled
       public virtual bool IsAppletEnabled()
       {
          return WObj.isAppletEnabled();
-      }
-
-// Generating method code for isPopupBlockerEnabled
-      public virtual bool IsPopupBlockerEnabled()
-      {
-         return WObj.isPopupBlockerEnabled();
-      }
-
-// Generating method code for isRedirectEnabled
-      public virtual bool IsRedirectEnabled()
-      {
-         return WObj.isRedirectEnabled();
-      }
-
-// Generating method code for isActiveXNative
-      public virtual bool IsActiveXNative()
-      {
-         return WObj.isActiveXNative();
-      }
-
-// Generating method code for isThrowExceptionOnScriptError
-      public virtual bool IsThrowExceptionOnScriptError()
-      {
-         return WObj.isThrowExceptionOnScriptError();
-      }
-
-// Generating method code for setSSLClientCertificate
-      public virtual void SetSSLClientCertificate(java.net.URL certificateUrl, string certificatePassword, string certificateType)
-      {
-         WObj.setSSLClientCertificate(certificateUrl, certificatePassword, certificateType);
       }
 
 // Generating method code for isUseInsecureSSL
@@ -146,10 +110,46 @@ namespace NHtmlUnit
          return WObj.isDoNotTrackEnabled();
       }
 
+// Generating method code for setSSLClientCertificate
+      public virtual void SetSSLClientCertificate(java.net.URL certificateUrl, string certificatePassword, string certificateType)
+      {
+         WObj.setSSLClientCertificate(certificateUrl, certificatePassword, certificateType);
+      }
+
+// Generating method code for isActiveXNative
+      public virtual bool IsActiveXNative()
+      {
+         return WObj.isActiveXNative();
+      }
+
 // Generating method code for isGeolocationEnabled
       public virtual bool IsGeolocationEnabled()
       {
          return WObj.isGeolocationEnabled();
+      }
+
+// Generating method code for isPopupBlockerEnabled
+      public virtual bool IsPopupBlockerEnabled()
+      {
+         return WObj.isPopupBlockerEnabled();
+      }
+
+// Generating method code for isThrowExceptionOnScriptError
+      public virtual bool IsThrowExceptionOnScriptError()
+      {
+         return WObj.isThrowExceptionOnScriptError();
+      }
+
+// Generating method code for isThrowExceptionOnFailingStatusCode
+      public virtual bool IsThrowExceptionOnFailingStatusCode()
+      {
+         return WObj.isThrowExceptionOnFailingStatusCode();
+      }
+
+// Generating method code for isRedirectEnabled
+      public virtual bool IsRedirectEnabled()
+      {
+         return WObj.isRedirectEnabled();
       }
 
    }

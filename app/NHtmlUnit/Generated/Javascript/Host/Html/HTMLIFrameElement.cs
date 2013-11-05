@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLIFrameElement()) {}
 
 
+      public NHtmlUnit.Javascript.Host.Window ContentWindow
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Window>(
+               WObj.getContentWindow());
+         }
+      }
+
+
       public System.String Src
       {
          get
@@ -46,16 +56,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
                WObj.getContentDocument());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.Window ContentWindow
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Window>(
-               WObj.getContentWindow());
          }
       }
 

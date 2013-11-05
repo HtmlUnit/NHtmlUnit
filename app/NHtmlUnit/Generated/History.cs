@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -42,6 +42,12 @@ namespace NHtmlUnit
             return WObj.getIndex();
          }
       }
+// Generating method code for getUrl
+      public virtual java.net.URL GetUrl(int index)
+      {
+         return WObj.getUrl(index);
+      }
+
 // Generating method code for back
       public virtual NHtmlUnit.History Back()
       {
@@ -64,12 +70,6 @@ namespace NHtmlUnit
       public virtual void RemoveCurrent()
       {
          WObj.removeCurrent();
-      }
-
-// Generating method code for getUrl
-      public virtual java.net.URL GetUrl(int index)
-      {
-         return WObj.getUrl(index);
       }
 
    }

@@ -228,7 +228,7 @@ namespace {1}
 }}
 ";
             var namespaceIncludes =
-                @"// Generated class v5, don't modify
+                @"// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -334,7 +334,7 @@ using System.Text;";
         private void GeneratePartialClassHeader(StringBuilder sb, bool isUserFile)
         {
             sb.Append(
-                @"// Generated class v5, don't modify
+                @"// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;

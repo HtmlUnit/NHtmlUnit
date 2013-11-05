@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.ClientRect)WrappedObject; }
       }
 
-      public ClientRect(int bottom, int left, int right, int top)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect(bottom, left, right, top)) {}
-
       public ClientRect()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect()) {}
+
+      public ClientRect(int bottom, int left, int right, int top)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect(bottom, left, right, top)) {}
 
 
       public System.Int32 Bottom

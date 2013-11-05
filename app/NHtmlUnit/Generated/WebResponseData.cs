@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.WebResponseData)WrappedObject; }
       }
 
-      public WebResponseData(System.Byte[] body, int statusCode, string statusMessage, java.util.List responseHeaders)
-         : this(new com.gargoylesoftware.htmlunit.WebResponseData(body, statusCode, statusMessage, responseHeaders)) {}
-
       public WebResponseData(NHtmlUnit.IDownloadedContent responseBody, int statusCode, string statusMessage, java.util.List responseHeaders)
          : this(new com.gargoylesoftware.htmlunit.WebResponseData((com.gargoylesoftware.htmlunit.DownloadedContent)responseBody.WrappedObject, statusCode, statusMessage, responseHeaders)) {}
+
+      public WebResponseData(System.Byte[] body, int statusCode, string statusMessage, java.util.List responseHeaders)
+         : this(new com.gargoylesoftware.htmlunit.WebResponseData(body, statusCode, statusMessage, responseHeaders)) {}
 
 
       public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders

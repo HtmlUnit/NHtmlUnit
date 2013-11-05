@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,14 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public java.lang.Short TabIndex
-      {
-         get
-         {
-            return WObj.getTabIndex();
-         }
-      }
-
       public NHtmlUnit.Html.HtmlForm EnclosingForm
       {
          get
@@ -41,6 +33,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+
+      public java.lang.Short TabIndex
+      {
+         get
+         {
+            return WObj.getTabIndex();
+         }
+      }
 
       public NHtmlUnit.Html.HtmlForm EnclosingFormOrDie
       {
@@ -155,31 +155,6 @@ namespace NHtmlUnit.Html
             return WObj.getOnKeyUpAttribute();
          }
       }
-// Generating method code for hasEventHandlers
-      public virtual bool HasEventHandlers(string eventName)
-      {
-         return WObj.hasEventHandlers(eventName);
-      }
-
-// Generating method code for fireEvent
-      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
-      }
-
-// Generating method code for getOneHtmlElementByAttribute
-      public virtual NHtmlUnit.Html.HtmlElement GetOneHtmlElementByAttribute(string elementName, string attributeName, string attributeValue)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue));
-      }
-
-// Generating method code for getHtmlElementsByTagNames
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
-      {
-
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
-      }
-
 // Generating method code for fireEvent
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
@@ -296,6 +271,13 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.dblClick(shiftKey, ctrlKey, altKey));
       }
 
+// Generating method code for getHtmlElementsByTagNames
+      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
+      {
+
+         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
+      }
+
 // Generating method code for type
       public virtual void Type(string text)
       {
@@ -314,6 +296,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type(keyCode));
       }
 
+// Generating method code for getOneHtmlElementByAttribute
+      public virtual NHtmlUnit.Html.HtmlElement GetOneHtmlElementByAttribute(string elementName, string attributeName, string attributeValue)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue));
+      }
+
 // Generating method code for appendChildIfNoneExists
       public virtual NHtmlUnit.Html.HtmlElement AppendChildIfNoneExists(string tagName)
       {
@@ -324,6 +312,12 @@ namespace NHtmlUnit.Html
       public virtual void RemoveChild(string tagName, int i)
       {
          WObj.removeChild(tagName, i);
+      }
+
+// Generating method code for hasEventHandlers
+      public virtual bool HasEventHandlers(string eventName)
+      {
+         return WObj.hasEventHandlers(eventName);
       }
 
 // Generating method code for setEventHandler
@@ -348,6 +342,12 @@ namespace NHtmlUnit.Html
       public virtual void RemoveHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
       {
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for fireEvent
+      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
       }
 
 // Generating method code for mouseOver

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -129,6 +129,12 @@ namespace NHtmlUnit.Html
             return WObj.getAcceptAttribute();
          }
       }
+// Generating method code for reset
+      public virtual NHtmlUnit.IPage Reset()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.reset());
+      }
+
 // Generating method code for getWebRequest
       public virtual NHtmlUnit.WebRequest GetWebRequest(NHtmlUnit.Html.ISubmittableElement submitElement)
       {
@@ -175,12 +181,6 @@ namespace NHtmlUnit.Html
       {
 
          return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
-      }
-
-// Generating method code for reset
-      public virtual NHtmlUnit.IPage Reset()
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.reset());
       }
 
 // Generating method code for getInputByName

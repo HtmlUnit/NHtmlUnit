@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -53,6 +53,14 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getHtmlText();
          }
       }
+
+      public System.String Bookmark
+      {
+         get
+         {
+            return WObj.getBookmark();
+         }
+      }
 // Generating method code for duplicate
       public virtual object Duplicate()
       {
@@ -105,6 +113,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void SetEndPoint(string type, NHtmlUnit.Javascript.Host.TextRange other)
       {
          WObj.setEndPoint(type, (com.gargoylesoftware.htmlunit.javascript.host.TextRange)other.WrappedObject);
+      }
+
+// Generating method code for moveToBookmark
+      public virtual bool MoveToBookmark(string bookmark)
+      {
+         return WObj.moveToBookmark(bookmark);
       }
 
    }
