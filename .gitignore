@@ -10,3 +10,5 @@
 /_ReSharper.NHtmlUnit/
 /packages/*
 !/packages/repositories.config
+!/tools/*
+/*.tss
