@@ -16,6 +16,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
+using com.gargoylesoftware.htmlunit;
+
 namespace NHtmlUnit.Generator
 {
     public class WrapperClassInfo
@@ -26,6 +28,7 @@ namespace NHtmlUnit.Generator
         private readonly List<WrapperStaticPublicField> staticPublicFields;
         private readonly Type wrappedType;
         private readonly WrapperRepository wrapperRepository;
+        private readonly string htmlUnitVersion; 
 
 
         public WrapperClassInfo(Type wrappedFromType, WrapperRepository wrapperRepository)
@@ -37,6 +40,8 @@ namespace NHtmlUnit.Generator
             this.constructors = new List<WrapperConstructorInfo>();
             this.staticPublicFields = new List<WrapperStaticPublicField>();
             ScanMembers(wrappedFromType);
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
         }
 
 
@@ -228,7 +233,7 @@ namespace {1}
 }}
 ";
             var namespaceIncludes =
-                @"// Generated class v2.13, don't modify
+                @"// Generated class v" + htmlUnitVersion + @", don't modify
 
 using System;
 using System.Collections.Generic;
@@ -237,6 +242,7 @@ using System.Linq;
 using System.Text;
 
 ";
+
 
             var body = new StringBuilder();
 
@@ -333,8 +339,9 @@ using System.Text;";
 
         private void GeneratePartialClassHeader(StringBuilder sb, bool isUserFile)
         {
-            sb.Append(
-                @"// Generated class v2.13, don't modify
+            sb.Append("// Generated class v");
+            sb.Append(htmlUnitVersion);
+            sb.Append(@", don't modify
 
 using System;
 using System.Collections.Generic;
