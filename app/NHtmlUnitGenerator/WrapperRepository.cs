@@ -16,6 +16,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
+using com.gargoylesoftware.htmlunit;
+
 using ikvm.runtime;
 
 using java.lang;
@@ -557,6 +559,37 @@ namespace NHtmlUnit.Generator
             }
 
             return listType;
+        }
+
+
+        public void GenerateAssemblyInfo()
+        {
+            const string assemblyInfoTemplatePath = @"..\..\Templates\GlobalAssemblyInfo.cs.template";
+            const string assemblyInfoPath = @"..\..\..\GlobalAssemblyInfo.cs";
+            string template = File.ReadAllText(assemblyInfoTemplatePath);
+            
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+
+            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
+
+            File.WriteAllText(assemblyInfoPath,assemblyInfo);
+
+        }
+
+
+        public void GenerateNuspec()
+        {
+            const string nuspecTemplatePath = @"..\..\Templates\NHtmlUnit.nuspec.template";
+            const string nuspecPath = @"..\..\..\..\NHtmlUnit.nuspec";
+            string template = File.ReadAllText(nuspecTemplatePath);
+
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+
+            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
+
+            File.WriteAllText(nuspecPath, assemblyInfo);
         }
     }
 }
