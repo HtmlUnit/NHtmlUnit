@@ -992,6 +992,7 @@
     <Compile Include="NonGenerated\Javascript\SimpleScriptable.cs" />
     <Compile Include="NonGenerated\Javascript\SimpleScriptableProxy.cs" />
     <Compile Include="NonGenerated\W3C\Dom\IElementTraversal.cs" />
+    <Compile Include="NonGenerated\WebClientOptions.cs" />
     <Compile Include="Wrappers\ListWrapper.cs">
       <SubType>Code</SubType>
     </Compile>
