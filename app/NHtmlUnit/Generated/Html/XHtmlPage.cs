@@ -1,4 +1,4 @@
-// Generated class v2.13, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class XHtmlPage : NHtmlUnit.Html.HtmlPage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IDocument, NHtmlUnit.IPage
+   public partial class XHtmlPage : NHtmlUnit.Html.HtmlPage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.IPage, NHtmlUnit.W3C.Dom.IDocument
    {
       static XHtmlPage()
       {
