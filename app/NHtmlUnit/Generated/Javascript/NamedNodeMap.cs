@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript
          get { return (com.gargoylesoftware.htmlunit.javascript.NamedNodeMap)WrappedObject; }
       }
 
-      public NamedNodeMap()
-         : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap()) {}
-
       public NamedNodeMap(NHtmlUnit.Html.DomElement element)
          : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap((com.gargoylesoftware.htmlunit.html.DomElement)element.WrappedObject)) {}
+
+      public NamedNodeMap()
+         : this(new com.gargoylesoftware.htmlunit.javascript.NamedNodeMap()) {}
 
 
       public System.Int32 Length
@@ -37,12 +37,6 @@ namespace NHtmlUnit.Javascript
             return WObj.getLength();
          }
       }
-// Generating method code for item
-      public virtual object Item(int index)
-      {
-         return WObj.item(index);
-      }
-
 // Generating method code for getNamedItem
       public virtual object GetNamedItem(string name)
       {
@@ -53,6 +47,12 @@ namespace NHtmlUnit.Javascript
       public virtual object GetNamedItemWithoutSytheticClassAttr(string name)
       {
          return WObj.getNamedItemWithoutSytheticClassAttr(name);
+      }
+
+// Generating method code for item
+      public virtual object Item(int index)
+      {
+         return WObj.item(index);
       }
 
 // Generating method code for getWithFallback

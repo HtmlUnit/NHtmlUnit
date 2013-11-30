@@ -39,95 +39,80 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\HtmlUnit\anycpu\HtmlUnit.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="ikvm">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\ikvm.exe</HintPath>
-    </Reference>
     <Reference Include="IKVM.AWT.WinForms">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.AWT.WinForms.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.AWT.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Beans">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Beans.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Beans.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Charsets">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Corba">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Corba.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Corba.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Core">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Core.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Jdbc">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Management">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Management.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Management.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Media">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Media.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Media.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Misc">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Misc.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Misc.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Naming">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Naming.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Naming.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Remoting">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Security">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Security.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Security.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.SwingAWT">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Text">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Text.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Text.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Tools">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Tools.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Tools.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.Util">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.Util.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.Util.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.API">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.Bind">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.Crypto">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.Parse">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.Transform">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.WebServices">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.OpenJDK.XML.XPath">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.Reflection">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.Reflection.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.Runtime.dll</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Runtime.JNI">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\IKVM.Runtime.JNI.dll</HintPath>
-    </Reference>
-    <Reference Include="ikvmc">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\ikvmc.exe</HintPath>
-    </Reference>
-    <Reference Include="ikvmstub">
-      <HintPath>..\..\packages\IKVM.NET.7.0.4335.1\lib\ikvmstub.exe</HintPath>
+      <HintPath>..\..\packages\IKVM.7.3.4830.0\lib\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
@@ -144,7 +129,6 @@
     <Compile Include="Generated\DialogWindow.cs" />
     <Compile Include="Generated\FormEncodingType.cs" />
     <Compile Include="Generated\History.cs" />
-    <Compile Include="Generated\Html\BaseFrame.cs" />
     <Compile Include="Generated\Html\BaseFrameElement.cs" />
     <Compile Include="Generated\Html\DomAttr.cs" />
     <Compile Include="Generated\Html\DomCDataSection.cs" />
@@ -380,6 +364,7 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLBaseElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBaseFontElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBGSoundElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLBlockQuoteElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBodyElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLBRElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLButtonElement.cs" />
@@ -404,6 +389,7 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLHtmlElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLIFrameElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLImageElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Html\HTMLInlineQuotationElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLInputElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLInsElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLIsIndexElement.cs" />
@@ -426,7 +412,6 @@
     <Compile Include="Generated\Javascript\Host\Html\HTMLParamElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLPreElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLProgressElement.cs" />
-    <Compile Include="Generated\Javascript\Host\Html\HTMLQuoteElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLScriptElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLSelectElement.cs" />
     <Compile Include="Generated\Javascript\Host\Html\HTMLSourceElement.cs" />
@@ -456,6 +441,7 @@
     <Compile Include="Generated\Javascript\Host\Namespace.cs" />
     <Compile Include="Generated\Javascript\Host\NamespaceCollection.cs" />
     <Compile Include="Generated\Javascript\Host\Navigator.cs" />
+    <Compile Include="Generated\Javascript\Host\Netscape.cs" />
     <Compile Include="Generated\Javascript\Host\Node.cs" />
     <Compile Include="Generated\Javascript\Host\NodeFilter.cs" />
     <Compile Include="Generated\Javascript\Host\NodeList.cs" />
@@ -524,6 +510,7 @@
     <Compile Include="Generated\Javascript\Host\Svg\SVGPolygonElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGPolylineElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGRadialGradientElement.cs" />
+    <Compile Include="Generated\Javascript\Host\Svg\SVGRect.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGRectElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGScriptElement.cs" />
     <Compile Include="Generated\Javascript\Host\Svg\SVGSetElement.cs" />
@@ -549,6 +536,7 @@
     <Compile Include="Generated\Javascript\Host\Xml\XMLDOMParseError.cs" />
     <Compile Include="Generated\Javascript\Host\Xml\XMLHttpRequest.cs" />
     <Compile Include="Generated\Javascript\Host\Xml\XMLSerializer.cs" />
+    <Compile Include="Generated\Javascript\Host\XPathEvaluator.cs" />
     <Compile Include="Generated\Javascript\Host\XPathNSResolver.cs" />
     <Compile Include="Generated\Javascript\Host\XPathResult.cs" />
     <Compile Include="Generated\Javascript\Host\XSLTemplate.cs" />
@@ -634,7 +622,6 @@
     <Compile Include="Generated\Svg\SvgUse.cs" />
     <Compile Include="Generated\TopLevelWindow.cs" />
     <Compile Include="Generated\Util\Cookie.cs" />
-    <Compile Include="Generated\Util\KeyDataPair.cs" />
     <Compile Include="Generated\Util\NameValuePair.cs" />
     <Compile Include="Generated\Util\WebResponseWrapper.cs" />
     <Compile Include="Generated\W3C\Dom\Css\ICSSStyleDeclaration.cs" />
@@ -680,8 +667,6 @@
     <Compile Include="NonGenerated\FormEncodingType.cs" />
     <Compile Include="NonGenerated\History.cs" />
     <Compile Include="NonGenerated\HtmlElementNotFoundException.cs" />
-    <Compile Include="NonGenerated\Html\BaseFrame.cs" />
-    <Compile Include="NonGenerated\Html\BaseFrameElement.cs" />
     <Compile Include="NonGenerated\Html\DomAttr.cs" />
     <Compile Include="NonGenerated\Html\DomCDataSection.cs" />
     <Compile Include="NonGenerated\Html\DomChangeEvent.cs" />
@@ -764,10 +749,8 @@
     <Compile Include="NonGenerated\Html\HtmlListItem.cs" />
     <Compile Include="NonGenerated\Html\HtmlMap.cs" />
     <Compile Include="NonGenerated\Html\HtmlMarquee.cs" />
-    <Compile Include="NonGenerated\Html\HtmlMedia.cs" />
     <Compile Include="NonGenerated\Html\HtmlMenu.cs" />
     <Compile Include="NonGenerated\Html\HtmlMeta.cs" />
-    <Compile Include="NonGenerated\Html\HtmlMeter.cs" />
     <Compile Include="NonGenerated\Html\HtmlMultiColumn.cs" />
     <Compile Include="NonGenerated\Html\HtmlNoBreak.cs" />
     <Compile Include="NonGenerated\Html\HtmlNoEmbed.cs" />
@@ -783,7 +766,6 @@
     <Compile Include="NonGenerated\Html\HtmlPasswordInput.cs" />
     <Compile Include="NonGenerated\Html\HtmlPlainText.cs" />
     <Compile Include="NonGenerated\Html\HtmlPreformattedText.cs" />
-    <Compile Include="NonGenerated\Html\HtmlProgress.cs" />
     <Compile Include="NonGenerated\Html\HtmlRadioButtonInput.cs" />
     <Compile Include="NonGenerated\Html\HtmlResetInput.cs" />
     <Compile Include="NonGenerated\Html\HtmlS.cs" />
@@ -854,35 +836,17 @@
     <Compile Include="NonGenerated\Javascript\Background\JavaScriptFunctionJob.cs" />
     <Compile Include="NonGenerated\Javascript\Background\JavaScriptJob.cs" />
     <Compile Include="NonGenerated\Javascript\Background\JavaScriptStringJob.cs" />
-    <Compile Include="NonGenerated\Javascript\Configuration\ClassConfiguration.cs" />
-    <Compile Include="NonGenerated\Javascript\Configuration\JavaScriptConfiguration.cs" />
     <Compile Include="NonGenerated\Javascript\Host\ActiveXObject.cs" />
     <Compile Include="NonGenerated\Javascript\Host\ActiveXObjectImpl.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\ArrayBuffer.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\ArrayBufferView.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\ArrayBufferViewBase.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\DataView.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Float32Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Float64Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Int16Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Int32Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Int8Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Uint16Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Uint32Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Uint8Array.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Arrays\Uint8ClampedArray.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Attr.cs" />
     <Compile Include="NonGenerated\Javascript\Host\BoxObject.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Canvas\CanvasRenderingContext2D.cs" />
     <Compile Include="NonGenerated\Javascript\Host\CDATASection.cs" />
     <Compile Include="NonGenerated\Javascript\Host\CharacterDataImpl.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\ClientRect.cs" />
     <Compile Include="NonGenerated\Javascript\Host\ClipboardData.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Comment.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Console.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Css\ComputedCSSStyleDeclaration.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Css\CSSCharsetRule.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Css\CSSFontFaceRule.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Css\CSSImportRule.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Css\CSSMediaRule.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Css\CSSPrimitiveValue.cs" />
@@ -896,11 +860,6 @@
     <Compile Include="NonGenerated\Javascript\Host\Document.cs" />
     <Compile Include="NonGenerated\Javascript\Host\DocumentFragment.cs" />
     <Compile Include="NonGenerated\Javascript\Host\DocumentType.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Dom\DOMException.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Dom\DOMImplementation.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Dom\DOMParser.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Dom\DOMStringMap.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Dom\DOMTokenList.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Element.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Enumerator.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Event.cs" />
@@ -909,10 +868,6 @@
     <Compile Include="NonGenerated\Javascript\Host\External.cs" />
     <Compile Include="NonGenerated\Javascript\Host\FormChild.cs" />
     <Compile Include="NonGenerated\Javascript\Host\FormField.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Geo\Coordinates.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Geo\Geolocation.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Geo\Position.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\HashChangeEvent.cs" />
     <Compile Include="NonGenerated\Javascript\Host\History.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\DocumentProxy.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAnchorElement.cs" />
@@ -921,7 +876,7 @@
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLAudioElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBaseElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBaseFontElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBGSoundElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBlockQuoteElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBodyElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLBRElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLButtonElement.cs" />
@@ -946,6 +901,7 @@
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLHtmlElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLIFrameElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLImageElement.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLInlineQuotationElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLInputElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLInsElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLIsIndexElement.cs" />
@@ -955,10 +911,8 @@
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLLinkElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLListElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMapElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMediaElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMenuElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMetaElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLMeterElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLObjectElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOListElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLOptGroupElement.cs" />
@@ -967,7 +921,6 @@
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLParagraphElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLParamElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLPreElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Html\HTMLProgressElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLQuoteElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLScriptElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Html\HTMLSelectElement.cs" />
@@ -991,16 +944,15 @@
     <Compile Include="NonGenerated\Javascript\Host\KeyboardEvent.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Location.cs" />
     <Compile Include="NonGenerated\Javascript\Host\MediaList.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\MessageEvent.cs" />
     <Compile Include="NonGenerated\Javascript\Host\MimeTypeArray.cs" />
     <Compile Include="NonGenerated\Javascript\Host\MouseEvent.cs" />
     <Compile Include="NonGenerated\Javascript\Host\MutationEvent.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Namespace.cs" />
     <Compile Include="NonGenerated\Javascript\Host\NamespaceCollection.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Navigator.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\Netscape.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Node.cs" />
     <Compile Include="NonGenerated\Javascript\Host\NodeFilter.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\NodeList.cs" />
     <Compile Include="NonGenerated\Javascript\Host\OfflineResourceList.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Plugin.cs" />
     <Compile Include="NonGenerated\Javascript\Host\PluginArray.cs" />
@@ -1014,77 +966,11 @@
     <Compile Include="NonGenerated\Javascript\Host\StaticNodeList.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Storage.cs" />
     <Compile Include="NonGenerated\Javascript\Host\StorageList.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAltGlyphElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAngle.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAnimateElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAnimateMotionElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGAnimateTransformElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGCircleElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGClipPathElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGDefsElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGDescElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGEllipseElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEBlendElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEColorMatrixElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEComponentTransferElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFECompositeElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEConvolveMatrixElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEDiffuseLightingElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEDisplacementMapElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEDistantLightElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEFloodElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEFuncAElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEFuncBElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEFuncGElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEFuncRElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEGaussianBlurElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEImageElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEMergeElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEMergeNodeElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEMorphologyElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEOffsetElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFEPointLightElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFESpecularLightingElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFESpotLightElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFETileElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFETurbulenceElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGFilterElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGForeignObjectElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGGElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGImageElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGLinearGradientElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGLineElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGMarkerElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGMaskElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGMatrix.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGMetadataElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGMpathElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGPathElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGPatternElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGPolygonElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGPolylineElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGRadialGradientElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGRectElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGScriptElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGSetElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGStopElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGStyleElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGSVGElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGSwitchElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGSymbolElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGTextElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGTextPathElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGTitleElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGTSpanElement.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\Svg\SVGUseElement.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Text.cs" />
     <Compile Include="NonGenerated\Javascript\Host\TextRange.cs" />
     <Compile Include="NonGenerated\Javascript\Host\TextRectangle.cs" />
     <Compile Include="NonGenerated\Javascript\Host\TreeWalker.cs" />
     <Compile Include="NonGenerated\Javascript\Host\UIEvent.cs" />
-    <Compile Include="NonGenerated\Javascript\Host\WebSocket.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Window.cs" />
     <Compile Include="NonGenerated\Javascript\Host\WindowProxy.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Xml\XMLAttr.cs" />
@@ -1092,6 +978,7 @@
     <Compile Include="NonGenerated\Javascript\Host\Xml\XMLDOMParseError.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Xml\XMLHttpRequest.cs" />
     <Compile Include="NonGenerated\Javascript\Host\Xml\XMLSerializer.cs" />
+    <Compile Include="NonGenerated\Javascript\Host\XPathEvaluator.cs" />
     <Compile Include="NonGenerated\Javascript\Host\XPathNSResolver.cs" />
     <Compile Include="NonGenerated\Javascript\Host\XPathResult.cs" />
     <Compile Include="NonGenerated\Javascript\Host\XSLTemplate.cs" />
@@ -1104,73 +991,8 @@
     <Compile Include="NonGenerated\Javascript\PostponedAction.cs" />
     <Compile Include="NonGenerated\Javascript\SimpleScriptable.cs" />
     <Compile Include="NonGenerated\Javascript\SimpleScriptableProxy.cs" />
-    <Compile Include="NonGenerated\StorageHolder.cs" />
-    <Compile Include="NonGenerated\Svg\SvgAltGlyph.cs" />
-    <Compile Include="NonGenerated\Svg\SvgAnchor.cs" />
-    <Compile Include="NonGenerated\Svg\SvgAnimate.cs" />
-    <Compile Include="NonGenerated\Svg\SvgAnimateMotion.cs" />
-    <Compile Include="NonGenerated\Svg\SvgAnimateTransform.cs" />
-    <Compile Include="NonGenerated\Svg\SvgCircle.cs" />
-    <Compile Include="NonGenerated\Svg\SvgClipPath.cs" />
-    <Compile Include="NonGenerated\Svg\SvgDefs.cs" />
-    <Compile Include="NonGenerated\Svg\SvgDesc.cs" />
-    <Compile Include="NonGenerated\Svg\SvgElement.cs" />
-    <Compile Include="NonGenerated\Svg\SvgEllipse.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeBlend.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeColorMatrix.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeComponentTransfer.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeComposite.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeConvolveMatrix.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeDiffuseLighting.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeDisplacementMap.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeDistantLight.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeFlood.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeFuncA.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeFuncB.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeFuncG.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeFuncR.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeGaussianBlur.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeImage.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeMerge.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeMergeNode.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeMorphology.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeOffset.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFePointLight.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeSpecularLighting.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeSpotLight.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeTile.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFeTurbulence.cs" />
-    <Compile Include="NonGenerated\Svg\SvgFilter.cs" />
-    <Compile Include="NonGenerated\Svg\SvgForeignObject.cs" />
-    <Compile Include="NonGenerated\Svg\SvgGroup.cs" />
-    <Compile Include="NonGenerated\Svg\SvgImage.cs" />
-    <Compile Include="NonGenerated\Svg\SvgLine.cs" />
-    <Compile Include="NonGenerated\Svg\SvgLinearGradient.cs" />
-    <Compile Include="NonGenerated\Svg\SvgMarker.cs" />
-    <Compile Include="NonGenerated\Svg\SvgMask.cs" />
-    <Compile Include="NonGenerated\Svg\SvgMetadata.cs" />
-    <Compile Include="NonGenerated\Svg\SvgMpath.cs" />
-    <Compile Include="NonGenerated\Svg\SvgPath.cs" />
-    <Compile Include="NonGenerated\Svg\SvgPattern.cs" />
-    <Compile Include="NonGenerated\Svg\SvgPolygon.cs" />
-    <Compile Include="NonGenerated\Svg\SvgPolyline.cs" />
-    <Compile Include="NonGenerated\Svg\SvgRadialGradient.cs" />
-    <Compile Include="NonGenerated\Svg\SvgRect.cs" />
-    <Compile Include="NonGenerated\Svg\SvgScript.cs" />
-    <Compile Include="NonGenerated\Svg\SvgSet.cs" />
-    <Compile Include="NonGenerated\Svg\SvgStop.cs" />
-    <Compile Include="NonGenerated\Svg\SvgStyle.cs" />
-    <Compile Include="NonGenerated\Svg\SvgSvg.cs" />
-    <Compile Include="NonGenerated\Svg\SvgSwitch.cs" />
-    <Compile Include="NonGenerated\Svg\SvgSymbol.cs" />
-    <Compile Include="NonGenerated\Svg\SvgText.cs" />
-    <Compile Include="NonGenerated\Svg\SvgTextPath.cs" />
-    <Compile Include="NonGenerated\Svg\SvgTitle.cs" />
-    <Compile Include="NonGenerated\Svg\SvgTSpan.cs" />
-    <Compile Include="NonGenerated\Svg\SvgUse.cs" />
     <Compile Include="NonGenerated\W3C\Dom\IElementTraversal.cs" />
     <Compile Include="NonGenerated\WebClientOptions.cs" />
-    <Compile Include="NonGenerated\WebConsole.cs" />
     <Compile Include="Wrappers\ListWrapper.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -1227,6 +1049,11 @@
     <Compile Include="Wrappers\ShallowCollectionWrapper.cs" />
     <Compile Include="Wrappers\ShallowIterableWrapper.cs" />
     <Compile Include="Wrappers\ShallowListWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NonGenerated\Javascript\Configuration\" />
+    <Folder Include="NonGenerated\Javascript\Host\Svg\" />
+    <Folder Include="NonGenerated\Svg\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

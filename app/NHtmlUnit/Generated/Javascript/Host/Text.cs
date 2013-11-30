@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -34,12 +34,11 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getWholeText();
          }
       }
-// Generating method code for initialize
-      public virtual void Initialize()
-      {
-         WObj.initialize();
-      }
 
+      public System.Object GetText()
+      {
+          return WObj.getText();
+      }
 // Generating method code for splitText
       public virtual object SplitText(int offset)
       {

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -35,16 +35,16 @@ namespace NHtmlUnit
                WObj.getCookies());
          }
        }
+// Generating method code for clearExpired
+      public virtual bool ClearExpired(java.util.Date date)
+      {
+         return WObj.clearExpired(date);
+      }
+
 // Generating method code for isCookiesEnabled
       public virtual bool IsCookiesEnabled()
       {
          return WObj.isCookiesEnabled();
-      }
-
-// Generating method code for addCookie
-      public virtual void AddCookie(NHtmlUnit.Util.Cookie cookie)
-      {
-         WObj.addCookie((com.gargoylesoftware.htmlunit.util.Cookie)cookie.WrappedObject);
       }
 
 // Generating method code for getCookies
@@ -54,28 +54,28 @@ namespace NHtmlUnit
          return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
       }
 
-// Generating method code for clearExpired
-      public virtual bool ClearExpired(java.util.Date date)
-      {
-         return WObj.clearExpired(date);
-      }
-
-// Generating method code for clearCookies
-      public virtual void ClearCookies()
-      {
-         WObj.clearCookies();
-      }
-
 // Generating method code for getCookie
       public virtual NHtmlUnit.Util.Cookie GetCookie(string name)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookie(name));
       }
 
+// Generating method code for addCookie
+      public virtual void AddCookie(NHtmlUnit.Util.Cookie cookie)
+      {
+         WObj.addCookie((com.gargoylesoftware.htmlunit.util.Cookie)cookie.WrappedObject);
+      }
+
 // Generating method code for removeCookie
       public virtual void RemoveCookie(NHtmlUnit.Util.Cookie cookie)
       {
          WObj.removeCookie((com.gargoylesoftware.htmlunit.util.Cookie)cookie.WrappedObject);
+      }
+
+// Generating method code for clearCookies
+      public virtual void ClearCookies()
+      {
+         WObj.clearCookies();
       }
 
    }

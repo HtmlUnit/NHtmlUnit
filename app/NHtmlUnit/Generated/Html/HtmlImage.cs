@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -149,16 +149,16 @@ namespace NHtmlUnit.Html
          WObj.doOnLoad();
       }
 
-// Generating method code for getWebResponse
-      public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getWebResponse(downloadIfNeeded));
-      }
-
 // Generating method code for click
       public virtual NHtmlUnit.IPage Click(int x, int y)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click(x, y));
+      }
+
+// Generating method code for getWebResponse
+      public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getWebResponse(downloadIfNeeded));
       }
 
 // Generating method code for saveAs

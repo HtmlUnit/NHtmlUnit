@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,92 +23,12 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)WrappedObject; }
       }
 
-      public ComputedCSSStyleDeclaration(NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration style)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
-
       public ComputedCSSStyleDeclaration()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration()) {}
 
+      public ComputedCSSStyleDeclaration(NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration style)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
 
-      public System.Int32 MarginRightValue
-      {
-         get
-         {
-            return WObj.getMarginRightValue();
-         }
-      }
-
-      public System.Int32 MarginBottomValue
-      {
-         get
-         {
-            return WObj.getMarginBottomValue();
-         }
-      }
-
-      public System.String PositionWithInheritance
-      {
-         get
-         {
-            return WObj.getPositionWithInheritance();
-         }
-      }
-
-      public System.Int32 MarginLeftValue
-      {
-         get
-         {
-            return WObj.getMarginLeftValue();
-         }
-      }
-
-      public System.Int32 PaddingLeftValue
-      {
-         get
-         {
-            return WObj.getPaddingLeftValue();
-         }
-      }
-
-      public System.Int32 BorderLeftValue
-      {
-         get
-         {
-            return WObj.getBorderLeftValue();
-         }
-      }
-
-      public System.Int32 BorderTopValue
-      {
-         get
-         {
-            return WObj.getBorderTopValue();
-         }
-      }
-
-      public System.Int32 MarginTopValue
-      {
-         get
-         {
-            return WObj.getMarginTopValue();
-         }
-      }
-
-      public System.Int32 PaddingTopValue
-      {
-         get
-         {
-            return WObj.getPaddingTopValue();
-         }
-      }
-
-      public System.Int32 BorderRightValue
-      {
-         get
-         {
-            return WObj.getBorderRightValue();
-         }
-      }
 
       public System.Int32 ContentWidth
       {
@@ -123,6 +43,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          get
          {
             return WObj.getContentHeight();
+         }
+      }
+
+      public System.String PositionWithInheritance
+      {
+         get
+         {
+            return WObj.getPositionWithInheritance();
          }
       }
 
@@ -142,6 +70,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public System.Int32 PaddingTopValue
+      {
+         get
+         {
+            return WObj.getPaddingTopValue();
+         }
+      }
+
       public System.String LeftWithInheritance
       {
          get
@@ -155,6 +91,22 @@ namespace NHtmlUnit.Javascript.Host.Css
          get
          {
             return WObj.getRightWithInheritance();
+         }
+      }
+
+      public System.Int32 MarginLeftValue
+      {
+         get
+         {
+            return WObj.getMarginLeftValue();
+         }
+      }
+
+      public System.Int32 PaddingLeftValue
+      {
+         get
+         {
+            return WObj.getPaddingLeftValue();
          }
       }
 
@@ -174,6 +126,30 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+      public System.Int32 BorderLeftValue
+      {
+         get
+         {
+            return WObj.getBorderLeftValue();
+         }
+      }
+
+      public System.Int32 BorderRightValue
+      {
+         get
+         {
+            return WObj.getBorderRightValue();
+         }
+      }
+
+      public System.Int32 BorderTopValue
+      {
+         get
+         {
+            return WObj.getBorderTopValue();
+         }
+      }
+
       public System.Int32 BorderBottomValue
       {
          get
@@ -182,11 +158,27 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public java.util.Map StyleMap
+      public System.Int32 MarginRightValue
       {
          get
          {
-            return WObj.getStyleMap();
+            return WObj.getMarginRightValue();
+         }
+      }
+
+      public System.Int32 MarginTopValue
+      {
+         get
+         {
+            return WObj.getMarginTopValue();
+         }
+      }
+
+      public System.Int32 MarginBottomValue
+      {
+         get
+         {
+            return WObj.getMarginBottomValue();
          }
       }
 // Generating method code for getCalculatedWidth
@@ -195,10 +187,28 @@ namespace NHtmlUnit.Javascript.Host.Css
          return WObj.getCalculatedWidth(includeBorder, includePadding);
       }
 
+// Generating method code for getTop
+      public virtual int GetTop(bool includeMargin, bool includeBorder, bool includePadding)
+      {
+         return WObj.getTop(includeMargin, includeBorder, includePadding);
+      }
+
 // Generating method code for getCalculatedHeight
       public virtual int GetCalculatedHeight(bool includeBorder, bool includePadding)
       {
          return WObj.getCalculatedHeight(includeBorder, includePadding);
+      }
+
+// Generating method code for applyStyleFromSelector
+      public virtual void ApplyStyleFromSelector(NHtmlUnit.W3C.Dom.Css.ICSSStyleDeclaration declaration, org.w3c.css.sac.Selector selector)
+      {
+         WObj.applyStyleFromSelector((org.w3c.dom.css.CSSStyleDeclaration)declaration.WrappedObject, selector);
+      }
+
+// Generating method code for setDefaultLocalStyleAttribute
+      public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
+      {
+         WObj.setDefaultLocalStyleAttribute(name, newValue);
       }
 
 // Generating method code for isScrollable
@@ -211,24 +221,6 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual int GetLeft(bool includeMargin, bool includeBorder, bool includePadding)
       {
          return WObj.getLeft(includeMargin, includeBorder, includePadding);
-      }
-
-// Generating method code for getTop
-      public virtual int GetTop(bool includeMargin, bool includeBorder, bool includePadding)
-      {
-         return WObj.getTop(includeMargin, includeBorder, includePadding);
-      }
-
-// Generating method code for setDefaultLocalStyleAttribute
-      public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
-      {
-         WObj.setDefaultLocalStyleAttribute(name, newValue);
-      }
-
-// Generating method code for applyStyleFromSelector
-      public virtual void ApplyStyleFromSelector(NHtmlUnit.W3C.Dom.Css.ICSSStyleDeclaration declaration, org.w3c.css.sac.Selector selector)
-      {
-         WObj.applyStyleFromSelector((org.w3c.dom.css.CSSStyleDeclaration)declaration.WrappedObject, selector);
       }
 
    }

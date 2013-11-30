@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,14 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String IdAttribute
-      {
-         get
-         {
-            return WObj.getIdAttribute();
-         }
-      }
-
       public System.String NameAttribute
       {
          get
@@ -45,6 +37,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getValueAttribute();
+         }
+      }
+
+      public System.String IdAttribute
+      {
+         get
+         {
+            return WObj.getIdAttribute();
          }
       }
 

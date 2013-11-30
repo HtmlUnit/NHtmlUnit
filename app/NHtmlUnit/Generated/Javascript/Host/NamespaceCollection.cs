@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection)WrappedObject; }
       }
 
-      public NamespaceCollection()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection()) {}
-
       public NamespaceCollection(NHtmlUnit.Javascript.Host.Html.HTMLDocument doc)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)doc.WrappedObject)) {}
+
+      public NamespaceCollection()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.NamespaceCollection()) {}
 
 
       public System.Int32 Length

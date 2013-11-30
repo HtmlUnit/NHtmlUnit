@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          get { return (com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection)WrappedObject; }
       }
 
-      public HTMLOptionsCollection(NHtmlUnit.Javascript.SimpleScriptable parentScope)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)parentScope.WrappedObject)) {}
-
       public HTMLOptionsCollection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection()) {}
+
+      public HTMLOptionsCollection(NHtmlUnit.Javascript.SimpleScriptable parentScope)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionsCollection((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)parentScope.WrappedObject)) {}
 
 
       public System.Int32 Length

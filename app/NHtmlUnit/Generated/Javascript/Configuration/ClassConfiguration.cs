@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,19 +27,19 @@ namespace NHtmlUnit.Javascript.Configuration
          : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject)) {}
 
 
-      public java.lang.Class HostClass
-      {
-         get
-         {
-            return WObj.getHostClass();
-         }
-      }
-
       public System.String ExtendedClassName
       {
          get
          {
             return WObj.getExtendedClassName();
+         }
+      }
+
+      public java.lang.Class HostClass
+      {
+         get
+         {
+            return WObj.getHostClass();
          }
       }
 
@@ -58,10 +58,16 @@ namespace NHtmlUnit.Javascript.Configuration
             return WObj.getDomClasses();
          }
       }
-// Generating method code for isJsObject
-      public virtual bool IsJsObject()
+// Generating method code for addProperty
+      public virtual void AddProperty(string name, java.lang.reflect.Method getter, java.lang.reflect.Method setter)
       {
-         return WObj.isJsObject();
+         WObj.addProperty(name, getter, setter);
+      }
+
+// Generating method code for addConstant
+      public virtual void AddConstant(string name)
+      {
+         WObj.addConstant(name);
       }
 
 // Generating method code for propertyEntries
@@ -78,13 +84,6 @@ namespace NHtmlUnit.Javascript.Configuration
          return new ShallowCollectionWrapper<System.Object>(WObj.functionEntries());
       }
 
-// Generating method code for constants
-      public virtual IList<System.String> Constants()
-      {
-
-         return new ShallowListWrapper<System.String>(WObj.constants());
-      }
-
 // Generating method code for functionKeys
       public virtual ICollection<System.String> FunctionKeys()
       {
@@ -92,22 +91,23 @@ namespace NHtmlUnit.Javascript.Configuration
          return new ShallowCollectionWrapper<System.String>(WObj.functionKeys());
       }
 
-// Generating method code for addProperty
-      public virtual void AddProperty(string name, java.lang.reflect.Method getter, java.lang.reflect.Method setter)
+// Generating method code for constants
+      public virtual IList<System.String> Constants()
       {
-         WObj.addProperty(name, getter, setter);
-      }
 
-// Generating method code for addConstant
-      public virtual void AddConstant(string name)
-      {
-         WObj.addConstant(name);
+         return new ShallowListWrapper<System.String>(WObj.constants());
       }
 
 // Generating method code for addFunction
       public virtual void AddFunction(java.lang.reflect.Method method)
       {
          WObj.addFunction(method);
+      }
+
+// Generating method code for isJsObject
+      public virtual bool IsJsObject()
+      {
+         return WObj.isJsObject();
       }
 
    }

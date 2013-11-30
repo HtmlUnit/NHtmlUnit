@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -47,11 +47,11 @@ namespace NHtmlUnit.Html
       }
 
 
-      public NHtmlUnit.IWebWindow EnclosedWindow
+      public NHtmlUnit.Html.FrameWindow EnclosedWindow
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.FrameWindow>(
                WObj.getEnclosedWindow());
          }
       }

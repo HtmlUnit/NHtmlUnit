@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.StringWebResponse)WrappedObject; }
       }
 
-      public StringWebResponse(string content, string charset, java.net.URL originatingURL)
-         : this(new com.gargoylesoftware.htmlunit.StringWebResponse(content, charset, originatingURL)) {}
-
       public StringWebResponse(string content, java.net.URL originatingURL)
          : this(new com.gargoylesoftware.htmlunit.StringWebResponse(content, originatingURL)) {}
+
+      public StringWebResponse(string content, string charset, java.net.URL originatingURL)
+         : this(new com.gargoylesoftware.htmlunit.StringWebResponse(content, charset, originatingURL)) {}
 
 // Generating method code for isFromJavascript
       public virtual bool IsFromJavascript()

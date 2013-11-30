@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Xml
          get { return (com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument)WrappedObject; }
       }
 
-      public XMLDocument()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
-
       public XMLDocument(NHtmlUnit.IWebWindow enclosingWindow)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument((com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
+
+      public XMLDocument()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
 
 
       public NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError ParseError
@@ -88,6 +88,12 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public virtual void SetProperty(string name, string value)
       {
          WObj.setProperty(name, value);
+      }
+
+// Generating method code for getProperty
+      public virtual string GetProperty(string name)
+      {
+         return WObj.getProperty(name);
       }
 
 // Generating method code for selectSingleNode

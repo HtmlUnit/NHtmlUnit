@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,22 +27,22 @@ namespace NHtmlUnit.Javascript
          : this(new com.gargoylesoftware.htmlunit.javascript.SimpleScriptable()) {}
 
 
-      public NHtmlUnit.Html.DomNode DomNodeOrDie
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
-               WObj.getDomNodeOrDie());
-         }
-      }
-
-
       public NHtmlUnit.Javascript.Host.Window Window
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Window>(
                WObj.getWindow());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomNode DomNodeOrDie
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
+               WObj.getDomNodeOrDie());
          }
       }
 

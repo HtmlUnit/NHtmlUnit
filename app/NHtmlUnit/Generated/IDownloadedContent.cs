@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.DownloadedContent
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -16,6 +16,8 @@ namespace NHtmlUnit
       java.io.InputStream InputStream  { get; }
 // Generating method code for cleanUp
       void CleanUp();
+// Generating method code for isEmpty
+      bool IsEmpty();
 
    }
 }

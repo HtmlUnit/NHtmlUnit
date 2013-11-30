@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -52,6 +52,12 @@ namespace NHtmlUnit.Javascript
          }
 
       }
+// Generating method code for isDeminifyFunctionCode
+      public virtual bool IsDeminifyFunctionCode()
+      {
+         return WObj.isDeminifyFunctionCode();
+      }
+
    }
 
 

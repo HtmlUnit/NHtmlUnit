@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -165,6 +165,14 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
+      public System.Object BaseName
+      {
+         get
+         {
+            return WObj.getBaseName();
+         }
+      }
+
       public System.Object Xml
       {
          get
@@ -180,12 +188,6 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getAttributes();
          }
       }
-// Generating method code for executeEvent
-      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
-      }
-
 // Generating method code for hasEventHandlers
       public virtual bool HasEventHandlers(string eventName)
       {
@@ -202,6 +204,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
+      }
+
+// Generating method code for executeEvent
+      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for replaceChild

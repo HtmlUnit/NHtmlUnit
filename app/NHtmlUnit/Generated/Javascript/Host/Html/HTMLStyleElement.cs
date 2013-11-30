@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -46,6 +46,27 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
+      }
+
+      public System.String Media
+      {
+         get
+         {
+            return WObj.getMedia();
+         }
+      }
    }
 
 

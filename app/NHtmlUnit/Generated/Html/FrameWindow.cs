@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -41,6 +41,12 @@ namespace NHtmlUnit.Html
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
                WObj.getEnclosingPage());
          }
+      }
+
+// Generating method code for close
+      public virtual void Close()
+      {
+         WObj.close();
       }
 
    }

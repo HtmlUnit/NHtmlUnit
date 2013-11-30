@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,12 +23,20 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.WebResponse)WrappedObject; }
       }
 
-      public WebResponse(NHtmlUnit.WebResponseData responseData, java.net.URL url, NHtmlUnit.HttpMethod requestMethod, System.Int64 loadTime)
-         : this(new com.gargoylesoftware.htmlunit.WebResponse((com.gargoylesoftware.htmlunit.WebResponseData)responseData.WrappedObject, url, (com.gargoylesoftware.htmlunit.HttpMethod)requestMethod.WrappedObject, loadTime)) {}
-
       public WebResponse(NHtmlUnit.WebResponseData responseData, NHtmlUnit.WebRequest request, System.Int64 loadTime)
          : this(new com.gargoylesoftware.htmlunit.WebResponse((com.gargoylesoftware.htmlunit.WebResponseData)responseData.WrappedObject, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, loadTime)) {}
 
+      public WebResponse(NHtmlUnit.WebResponseData responseData, java.net.URL url, NHtmlUnit.HttpMethod requestMethod, System.Int64 loadTime)
+         : this(new com.gargoylesoftware.htmlunit.WebResponse((com.gargoylesoftware.htmlunit.WebResponseData)responseData.WrappedObject, url, (com.gargoylesoftware.htmlunit.HttpMethod)requestMethod.WrappedObject, loadTime)) {}
+
+
+      public java.io.InputStream ContentAsStream
+      {
+         get
+         {
+            return WObj.getContentAsStream();
+         }
+      }
 
       public NHtmlUnit.WebRequest WebRequest
       {
@@ -40,19 +48,11 @@ namespace NHtmlUnit
       }
 
 
-      public System.String ContentAsString
+      public System.String ContentType
       {
          get
          {
-            return WObj.getContentAsString();
-         }
-      }
-
-      public System.String ContentCharset
-      {
-         get
-         {
-            return WObj.getContentCharset();
+            return WObj.getContentType();
          }
       }
 
@@ -72,6 +72,30 @@ namespace NHtmlUnit
          }
       }
 
+      public System.String ContentAsString
+      {
+         get
+         {
+            return WObj.getContentAsString();
+         }
+      }
+
+      public System.String ContentCharset
+      {
+         get
+         {
+            return WObj.getContentCharset();
+         }
+      }
+
+      public System.String ContentCharsetOrNull
+      {
+         get
+         {
+            return WObj.getContentCharsetOrNull();
+         }
+      }
+
       public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders
       {
          get
@@ -86,30 +110,6 @@ namespace NHtmlUnit
          get
          {
             return WObj.getLoadTime();
-         }
-      }
-
-      public System.String ContentType
-      {
-         get
-         {
-            return WObj.getContentType();
-         }
-      }
-
-      public java.io.InputStream ContentAsStream
-      {
-         get
-         {
-            return WObj.getContentAsStream();
-         }
-      }
-
-      public System.String ContentCharsetOrNull
-      {
-         get
-         {
-            return WObj.getContentCharsetOrNull();
          }
       }
 // Generating method code for getResponseHeaderValue

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,6 +24,14 @@ namespace NHtmlUnit.Html
       }
 
 
+      public System.String NamespaceURI
+      {
+         get
+         {
+            return WObj.getNamespaceURI();
+         }
+      }
+
       public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptObject
       {
          get
@@ -37,23 +45,6 @@ namespace NHtmlUnit.Html
 
       }
 
-      public System.String NamespaceURI
-      {
-         get
-         {
-            return WObj.getNamespaceURI();
-         }
-      }
-
-      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
-      {
-         get
-         {
-            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getHtmlElementDescendants());
-         }
-       }
-
       public NHtmlUnit.SgmlPage Page
       {
          get
@@ -63,6 +54,19 @@ namespace NHtmlUnit.Html
          }
       }
 
+
+      public System.String ReadyState
+      {
+         get
+         {
+            return WObj.getReadyState();
+         }
+         set
+         {
+            WObj.setReadyState(value);
+         }
+
+      }
 
       public NHtmlUnit.Html.DomNode ParentNode
       {
@@ -137,6 +141,16 @@ namespace NHtmlUnit.Html
 
       }
 
+      public NHtmlUnit.Html.HtmlPage HtmlPageOrNull
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
+               WObj.getHtmlPageOrNull());
+         }
+      }
+
+
       public IEnumerable<NHtmlUnit.Html.DomNode> Descendants
       {
          get
@@ -189,6 +203,15 @@ namespace NHtmlUnit.Html
             return WObj.getNodeName();
          }
       }
+
+      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
+      {
+         get
+         {
+            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getHtmlElementDescendants());
+         }
+       }
 
       public NHtmlUnit.Html.DomNode PreviousSibling
       {
@@ -272,19 +295,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ReadyState
-      {
-         get
-         {
-            return WObj.getReadyState();
-         }
-         set
-         {
-            WObj.setReadyState(value);
-         }
-
-      }
-
       public System.String CanonicalXPath
       {
          get
@@ -292,19 +302,6 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
-// Generating method code for getByXPath
-      public virtual IList<System.Object> GetByXPath(string xpathExpr)
-      {
-
-         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
-      }
-
-// Generating method code for asText
-      public virtual string AsText()
-      {
-         return WObj.asText();
-      }
-
 // Generating method code for isAncestorOf
       public virtual bool IsAncestorOf(NHtmlUnit.Html.DomNode node)
       {
@@ -357,6 +354,19 @@ namespace NHtmlUnit.Html
       public virtual void Replace(NHtmlUnit.Html.DomNode newNode)
       {
          WObj.replace((com.gargoylesoftware.htmlunit.html.DomNode)newNode.WrappedObject);
+      }
+
+// Generating method code for getFirstByXPath
+      public virtual object GetFirstByXPath(string xpathExpr, org.apache.xml.utils.PrefixResolver resolver)
+      {
+         return WObj.getFirstByXPath(xpathExpr, resolver);
+      }
+
+// Generating method code for getByXPath
+      public virtual IList<System.Object> GetByXPath(string xpathExpr, org.apache.xml.utils.PrefixResolver resolver)
+      {
+
+         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr, resolver));
       }
 
 // Generating method code for querySelectorAll
@@ -456,6 +466,12 @@ namespace NHtmlUnit.Html
          return WObj.isDisplayed();
       }
 
+// Generating method code for asText
+      public virtual string AsText()
+      {
+         return WObj.asText();
+      }
+
 // Generating method code for asXml
       public virtual string AsXml()
       {
@@ -472,6 +488,13 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.W3C.Dom.INode ReplaceChild(NHtmlUnit.W3C.Dom.INode newChild, NHtmlUnit.W3C.Dom.INode oldChild)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.replaceChild((org.w3c.dom.Node)newChild.WrappedObject, (org.w3c.dom.Node)oldChild.WrappedObject));
+      }
+
+// Generating method code for getByXPath
+      public virtual IList<System.Object> GetByXPath(string xpathExpr)
+      {
+
+         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
       }
 
 // Generating method code for getFirstByXPath

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,6 +30,11 @@ namespace NHtmlUnit.Html
          {
             return WObj.getTypeAttribute();
          }
+         set
+         {
+            WObj.setTypeAttribute(value);
+         }
+
       }
 
       public System.String MediaAttribute

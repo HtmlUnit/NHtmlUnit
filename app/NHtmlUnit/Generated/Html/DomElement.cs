@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -117,12 +117,6 @@ namespace NHtmlUnit.Html
             return WObj.getChildElementCount();
          }
       }
-// Generating method code for getAttribute
-      public virtual string GetAttribute(string attributeName)
-      {
-         return WObj.getAttribute(attributeName);
-      }
-
 // Generating method code for removeAttribute
       public virtual void RemoveAttribute(string attributeName)
       {
@@ -133,6 +127,12 @@ namespace NHtmlUnit.Html
       public virtual void SetAttributeNS(string namespaceURI, string qualifiedName, string attributeValue)
       {
          WObj.setAttributeNS(namespaceURI, qualifiedName, attributeValue);
+      }
+
+// Generating method code for getAttribute
+      public virtual string GetAttribute(string attributeName)
+      {
+         return WObj.getAttribute(attributeName);
       }
 
 // Generating method code for getElementsByTagNameNS

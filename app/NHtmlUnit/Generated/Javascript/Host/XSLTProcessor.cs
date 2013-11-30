@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -54,6 +54,12 @@ namespace NHtmlUnit.Javascript.Host
          }
 
       }
+// Generating method code for importStylesheet
+      public virtual void ImportStylesheet(NHtmlUnit.Javascript.Host.Node style)
+      {
+         WObj.importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
+      }
+
 // Generating method code for setParameter
       public virtual void SetParameter(string namespaceURI, string localName, object value)
       {
@@ -64,12 +70,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void JsConstructor()
       {
          WObj.jsConstructor();
-      }
-
-// Generating method code for importStylesheet
-      public virtual void ImportStylesheet(NHtmlUnit.Javascript.Host.Node style)
-      {
-         WObj.importStylesheet((com.gargoylesoftware.htmlunit.javascript.host.Node)style.WrappedObject);
       }
 
 // Generating method code for transformToDocument

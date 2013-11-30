@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,28 +23,15 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.ProxyConfig)WrappedObject; }
       }
 
-      public ProxyConfig()
-         : this(new com.gargoylesoftware.htmlunit.ProxyConfig()) {}
-
       public ProxyConfig(string proxyHost, int proxyPort)
          : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort)) {}
 
       public ProxyConfig(string proxyHost, int proxyPort, bool isSocks)
          : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort, isSocks)) {}
 
+      public ProxyConfig()
+         : this(new com.gargoylesoftware.htmlunit.ProxyConfig()) {}
 
-      public System.String ProxyAutoConfigUrl
-      {
-         get
-         {
-            return WObj.getProxyAutoConfigUrl();
-         }
-         set
-         {
-            WObj.setProxyAutoConfigUrl(value);
-         }
-
-      }
 
       public System.String ProxyHost
       {
@@ -68,6 +55,19 @@ namespace NHtmlUnit
          set
          {
             WObj.setProxyPort(value);
+         }
+
+      }
+
+      public System.String ProxyAutoConfigUrl
+      {
+         get
+         {
+            return WObj.getProxyAutoConfigUrl();
+         }
+         set
+         {
+            WObj.setProxyAutoConfigUrl(value);
          }
 
       }

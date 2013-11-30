@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,16 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLLinkElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLLinkElement()) {}
+
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet Sheet
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
+               WObj.getSheet());
+         }
+      }
 
 
       public System.String Href
@@ -78,16 +88,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-
-      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet Sheet
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
-               WObj.getSheet());
-         }
-      }
-
    }
 
 

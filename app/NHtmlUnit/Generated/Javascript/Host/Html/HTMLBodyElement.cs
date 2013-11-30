@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,19 +27,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLBodyElement()) {}
 
 
-      public System.String BgColor
-      {
-         get
-         {
-            return WObj.getBgColor();
-         }
-         set
-         {
-            WObj.setBgColor(value);
-         }
-
-      }
-
       public System.String ALink
       {
          get
@@ -49,6 +36,32 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setALink(value);
+         }
+
+      }
+
+      public System.String Background
+      {
+         get
+         {
+            return WObj.getBackground();
+         }
+         set
+         {
+            WObj.setBackground(value);
+         }
+
+      }
+
+      public System.String BgColor
+      {
+         get
+         {
+            return WObj.getBgColor();
+         }
+         set
+         {
+            WObj.setBgColor(value);
          }
 
       }
@@ -75,19 +88,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setVLink(value);
-         }
-
-      }
-
-      public System.String Background
-      {
-         get
-         {
-            return WObj.getBackground();
-         }
-         set
-         {
-            WObj.setBackground(value);
          }
 
       }

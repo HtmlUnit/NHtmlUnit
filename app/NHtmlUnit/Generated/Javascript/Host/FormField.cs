@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -60,18 +60,6 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getType();
          }
       }
-// Generating method code for getOnchange
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
-      {
-         return WObj.getOnchange();
-      }
-
-// Generating method code for setOnchange
-      public virtual void SetOnchange(object onchange)
-      {
-         WObj.setOnchange(onchange);
-      }
-
    }
 
 

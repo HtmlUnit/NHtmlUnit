@@ -54,6 +54,8 @@ namespace NHtmlUnit.Generator
 
             wrapperRep.GenerateUntilDone(typeof(DomNode), typeof(WebClient), typeof(HtmlPage));
 
+            wrapperRep.GenerateAssemblyInfo();
+            wrapperRep.GenerateNuspec();
             //var classInfoList = CreateTypeList(
             //   new[] { typeof(HtmlPage).Assembly },
             //   new[]

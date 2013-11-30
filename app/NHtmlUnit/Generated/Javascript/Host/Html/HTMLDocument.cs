@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -45,26 +45,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 
-      public NHtmlUnit.Javascript.Host.Html.HTMLElement Body
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
-               WObj.getBody());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.Css.StyleSheetList StyleSheets
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.StyleSheetList>(
-               WObj.getStyleSheets());
-         }
-      }
-
-
       public System.String Domain
       {
          get
@@ -77,6 +57,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement Body
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getBody());
+         }
+      }
+
 
       public NHtmlUnit.Html.HtmlPage HtmlPageOrNull
       {
@@ -342,6 +332,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
+      public NHtmlUnit.Javascript.Host.Css.StyleSheetList StyleSheets
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.StyleSheetList>(
+               WObj.getStyleSheets());
+         }
+      }
+
+
       public NHtmlUnit.Javascript.Host.Selection Selection
       {
          get
@@ -357,17 +357,17 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.forceDocumentMode(documentMode);
       }
 
+// Generating method code for close
+      public virtual void Close()
+      {
+         WObj.close();
+      }
+
 // Generating method code for getElementsByName
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByName(string elementName)
       {
 
          return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByName(elementName));
-      }
-
-// Generating method code for close
-      public virtual void Close()
-      {
-         WObj.close();
       }
 
 // Generating method code for open
@@ -377,7 +377,7 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for createStyleSheet
-      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet CreateStyleSheet(string url, int index)
+      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet CreateStyleSheet(string url, object index)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.createStyleSheet(url, index));
       }

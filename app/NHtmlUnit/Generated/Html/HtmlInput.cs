@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,14 +32,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String TypeAttribute
-      {
-         get
-         {
-            return WObj.getTypeAttribute();
-         }
-      }
-
       public System.String NameAttribute
       {
          get
@@ -61,6 +53,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getSubmitKeyValuePairs();
+         }
+      }
+
+      public System.String TypeAttribute
+      {
+         get
+         {
+            return WObj.getTypeAttribute();
          }
       }
 
@@ -213,12 +213,6 @@ namespace NHtmlUnit.Html
                WObj.getPreviousNames());
          }
        }
-// Generating method code for isChecked
-      public virtual bool IsChecked()
-      {
-         return WObj.isChecked();
-      }
-
 // Generating method code for setValueAttribute
       public virtual NHtmlUnit.IPage SetValueAttribute(string newValue)
       {
@@ -249,6 +243,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setChecked(isChecked));
       }
 
+// Generating method code for isChecked
+      public virtual bool IsChecked()
+      {
+         return WObj.isChecked();
+      }
+
 // Generating method code for isReadOnly
       public virtual bool IsReadOnly()
       {
@@ -259,6 +259,24 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage Click(int x, int y)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click(x, y));
+      }
+
+// Generating method code for markAsCreatedByJavascript
+      public virtual void MarkAsCreatedByJavascript()
+      {
+         WObj.markAsCreatedByJavascript();
+      }
+
+// Generating method code for unmarkAsCreatedByJavascript
+      public virtual void UnmarkAsCreatedByJavascript()
+      {
+         WObj.unmarkAsCreatedByJavascript();
+      }
+
+// Generating method code for wasCreatedByJavascript
+      public virtual bool WasCreatedByJavascript()
+      {
+         return WObj.wasCreatedByJavascript();
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,19 +27,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLSelectElement()) {}
 
 
-      public System.Int32 Length
-      {
-         get
-         {
-            return WObj.getLength();
-         }
-         set
-         {
-            WObj.setLength(value);
-         }
-
-      }
-
       public System.Int32 SelectedIndex
       {
          get
@@ -49,6 +36,19 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setSelectedIndex(value);
+         }
+
+      }
+
+      public System.Int32 Length
+      {
+         get
+         {
+            return WObj.getLength();
+         }
+         set
+         {
+            WObj.setLength(value);
          }
 
       }

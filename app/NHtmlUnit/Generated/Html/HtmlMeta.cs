@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,19 +24,19 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ContentAttribute
-      {
-         get
-         {
-            return WObj.getContentAttribute();
-         }
-      }
-
       public System.String HttpEquivAttribute
       {
          get
          {
             return WObj.getHttpEquivAttribute();
+         }
+      }
+
+      public System.String ContentAttribute
+      {
+         get
+         {
+            return WObj.getContentAttribute();
          }
       }
 

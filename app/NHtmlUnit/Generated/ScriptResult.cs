@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,14 +27,6 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.ScriptResult(javaScriptResult, (com.gargoylesoftware.htmlunit.Page)newPage.WrappedObject)) {}
 
 
-      public System.Object JavaScriptResult
-      {
-         get
-         {
-            return WObj.getJavaScriptResult();
-         }
-      }
-
       public NHtmlUnit.IPage NewPage
       {
          get
@@ -44,6 +36,14 @@ namespace NHtmlUnit
          }
       }
 
+
+      public System.Object JavaScriptResult
+      {
+         get
+         {
+            return WObj.getJavaScriptResult();
+         }
+      }
    }
 
 

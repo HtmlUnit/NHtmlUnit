@@ -19,59 +19,68 @@ namespace NHtmlUnit
 {
     public partial class WebClient
     {
+        [Obsolete("Use Options.ActiveXNative")]
         public bool ActiveXNative
         {
-            get { return WObj.isActiveXNative(); }
-            set { WObj.setActiveXNative(value); }
+            get { return WObj.getOptions().isActiveXNative(); }
+            set { WObj.getOptions().setActiveXNative(value); }
         }
 
+        [Obsolete("Use Options.AppletEnabled")]
         public bool AppletEnabled
         {
-            get { return WObj.isAppletEnabled(); }
-            set { WObj.setAppletEnabled(value); }
+            get { return WObj.getOptions().isAppletEnabled(); }
+            set { WObj.getOptions().setAppletEnabled(value); }
         }
 
+        [Obsolete("Use Options.CssEnabled")]
         public bool CssEnabled
         {
-            get { return WObj.isCssEnabled(); }
-            set { WObj.setCssEnabled(value); }
+            get { return WObj.getOptions().isCssEnabled(); }
+            set { WObj.getOptions().setCssEnabled(value); }
         }
 
+        [Obsolete("Use Options.JavaScriptEnabled")]
         public bool JavaScriptEnabled
         {
-            get { return WObj.isJavaScriptEnabled(); }
-            set { WObj.setJavaScriptEnabled(value); }
+            get { return WObj.getOptions().isJavaScriptEnabled(); }
+            set { WObj.getOptions().setJavaScriptEnabled(value); }
         }
 
+        [Obsolete("Use Options.PopupBlockerEnabled")]
         public bool PopupBlockerEnabled
         {
-            get { return WObj.isPopupBlockerEnabled(); }
-            set { WObj.setPopupBlockerEnabled(value); }
+            get { return WObj.getOptions().isPopupBlockerEnabled(); }
+            set { WObj.getOptions().setPopupBlockerEnabled(value); }
         }
 
+        [Obsolete("Use Options.RedirectEnabled")]
         public bool RedirectEnabled
         {
-            get { return WObj.isRedirectEnabled(); }
+            get { return WObj.getOptions().isRedirectEnabled(); }
 
-            set { WObj.setRedirectEnabled(value); }
+            set { WObj.getOptions().setRedirectEnabled(value); }
         }
 
+        [Obsolete("Use Options.ThrowExceptionOnFailingStatusCode")]
         public bool ThrowExceptionOnFailingStatusCode
         {
-            get { return WObj.isThrowExceptionOnFailingStatusCode(); }
-            set { WObj.setThrowExceptionOnFailingStatusCode(value); }
+            get { return WObj.getOptions().isThrowExceptionOnFailingStatusCode(); }
+            set { WObj.getOptions().setThrowExceptionOnFailingStatusCode(value); }
         }
 
+        [Obsolete("Use Options.ThrowExceptionOnScriptError")]
         public bool ThrowExceptionOnScriptError
         {
-            get { return WObj.isThrowExceptionOnScriptError(); }
-            set { WObj.setThrowExceptionOnScriptError(value); }
+            get { return WObj.getOptions().isThrowExceptionOnScriptError(); }
+            set { WObj.getOptions().setThrowExceptionOnScriptError(value); }
         }
 
+        [Obsolete("Use Options.UseInsecureSsl")]
         public bool UseInsecureSsl
         {
-            private get { return true; }
-            set { WObj.setUseInsecureSSL(value); }
+            private get { return WObj.getOptions().isUseInsecureSSL(); }
+            set { WObj.getOptions().setUseInsecureSSL(value); }
         }
 
 

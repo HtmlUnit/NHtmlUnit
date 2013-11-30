@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLOptGroupElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptGroupElement()) {}
 
+
+      public System.String Label
+      {
+         get
+         {
+            return WObj.getLabel();
+         }
+         set
+         {
+            WObj.setLabel(value);
+         }
+
+      }
    }
 
 

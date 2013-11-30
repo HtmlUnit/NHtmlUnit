@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -92,19 +92,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setMethod(value);
-         }
-
-      }
-
-      public System.Object Onsubmit
-      {
-         get
-         {
-            return WObj.getOnsubmit();
-         }
-         set
-         {
-            WObj.setOnsubmit(value);
          }
 
       }

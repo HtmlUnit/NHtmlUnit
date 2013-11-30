@@ -1,4 +1,4 @@
-// Generated class v5, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.TreeWalker)WrappedObject; }
       }
 
-      public TreeWalker()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker()) {}
-
       public TreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Int64 whatToShow, NHtmlUnit.Javascript.Host.NodeFilter filter, bool expandEntityReferences)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, (com.gargoylesoftware.htmlunit.javascript.host.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
+
+      public TreeWalker()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.TreeWalker()) {}
 
 
       public NHtmlUnit.Javascript.Host.Node Root
