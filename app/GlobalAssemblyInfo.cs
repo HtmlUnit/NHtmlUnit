@@ -1,7 +1,7 @@
-﻿#region License
+#region License
 
 // --------------------------------------------------
-// Copyright © 2003-2011 OKB. All Rights Reserved.
+// Copyright © 2003-2013 OKB. All Rights Reserved.
 // 
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
@@ -17,5 +17,5 @@ using System.Runtime.InteropServices;
 [assembly : AssemblyCopyright("Copyright © OKB AS 2013")]
 [assembly : AssemblyTrademark("OKB AS 2013")]
 [assembly : ComVisible(false)]
-[assembly : AssemblyVersion("2.13.0.0")]
-[assembly : AssemblyFileVersion("2.13.0.0")]
+[assembly : AssemblyVersion("2.13.0.4")]
+[assembly : AssemblyFileVersion("2.13.0.4")]

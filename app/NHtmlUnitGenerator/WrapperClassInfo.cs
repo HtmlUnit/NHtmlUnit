@@ -16,6 +16,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
+using com.gargoylesoftware.htmlunit;
+
 namespace NHtmlUnit.Generator
 {
     public class WrapperClassInfo
@@ -26,6 +28,7 @@ namespace NHtmlUnit.Generator
         private readonly List<WrapperStaticPublicField> staticPublicFields;
         private readonly Type wrappedType;
         private readonly WrapperRepository wrapperRepository;
+        private readonly string htmlUnitVersion; 
 
 
         public WrapperClassInfo(Type wrappedFromType, WrapperRepository wrapperRepository)
@@ -37,6 +40,8 @@ namespace NHtmlUnit.Generator
             this.constructors = new List<WrapperConstructorInfo>();
             this.staticPublicFields = new List<WrapperStaticPublicField>();
             ScanMembers(wrappedFromType);
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
         }
 
 
@@ -184,7 +189,12 @@ namespace NHtmlUnit.Generator
         private bool ShouldMapAsProperty(KeyValuePair<string, WrapperPropInfo> x)
         {
             if (x.Value.GetterMethod == null)
+            {
+                //TODO: Consider this. When method identified as property has no GetterMethod, the SetterMethod is neither mapped as property or method. [TM]
+                //if (!Methods.ContainsKey(x.Value.SetterMethod.ToString()))
+                //    Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
                 return false;
+            }
 
             if (x.Value.SetterMethod != null
                 && x.Value.GetterMethod.ReturnType != x.Value.SetterMethod.GetParameters().First().ParameterType)
@@ -228,7 +238,7 @@ namespace {1}
 }}
 ";
             var namespaceIncludes =
-                @"// Generated class v2.13, don't modify
+                @"// Generated class v" + htmlUnitVersion + @", don't modify
 
 using System;
 using System.Collections.Generic;
@@ -237,6 +247,7 @@ using System.Linq;
 using System.Text;
 
 ";
+
 
             var body = new StringBuilder();
 
@@ -333,24 +344,26 @@ using System.Text;";
 
         private void GeneratePartialClassHeader(StringBuilder sb, bool isUserFile)
         {
-            sb.Append(
-                @"// Generated class v2.13, don't modify
-
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-
-namespace ");
-
+            
+            sb.AppendLine("// Generated class v" + htmlUnitVersion + (isUserFile ? ", can be modified" : ", don't modify"));
+            sb.AppendLine();
+            if (!isUserFile)
+            {
+                sb.AppendLine("using System;");
+                sb.AppendLine("using System.Collections.Generic;");
+                sb.AppendLine("using System.Collections.Specialized;");
+                sb.AppendLine("using System.Linq;");
+                sb.AppendLine("using System.Text;");
+                sb.AppendLine();
+            }
+            sb.Append("namespace ");
             sb.AppendLine(TargetNamespace);
             sb.AppendLine("{");
-
+            
             var interfaceList = new StringBuilder();
 
             if (isUserFile)
-                sb.AppendLine("public partial class " + TargetNameWithoutNamespace);
+                sb.AppendLine("   public partial class " + TargetNameWithoutNamespace);
             else
             {
                 IEnumerable<Type> wrappedInterfaces = WrappedType

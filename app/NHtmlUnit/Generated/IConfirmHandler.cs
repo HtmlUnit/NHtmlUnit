@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.ConfirmHandler
-// Generated class v2.13, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;

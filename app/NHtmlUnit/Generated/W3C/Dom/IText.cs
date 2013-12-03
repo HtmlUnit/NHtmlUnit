@@ -1,5 +1,5 @@
 // Wrapper for org.w3c.dom.Text
-// Generated class v2.13, don't modify
+// Generated class v2.13.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text;
 
 namespace NHtmlUnit.W3C.Dom
 {
-   public interface IText : NHtmlUnit.IObjectWrapper, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.ICharacterData
+   public interface IText : NHtmlUnit.IObjectWrapper, NHtmlUnit.W3C.Dom.ICharacterData, NHtmlUnit.W3C.Dom.INode
    {
 
    }
