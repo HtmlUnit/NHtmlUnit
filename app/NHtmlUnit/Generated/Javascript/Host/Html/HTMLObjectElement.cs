@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -65,6 +65,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+// Generating method code for unwrap
+      public virtual object Unwrap()
+      {
+         return WObj.unwrap();
+      }
+
    }
 
 

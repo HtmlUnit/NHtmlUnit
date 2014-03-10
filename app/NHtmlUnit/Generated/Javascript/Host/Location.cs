@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -130,6 +130,12 @@ namespace NHtmlUnit.Javascript.Host
          }
 
       }
+// Generating method code for setHash
+      public virtual void SetHash(string oldURL, string hash)
+      {
+         WObj.setHash(oldURL, hash);
+      }
+
 // Generating method code for initialize
       public virtual void Initialize(NHtmlUnit.Javascript.Host.Window window)
       {

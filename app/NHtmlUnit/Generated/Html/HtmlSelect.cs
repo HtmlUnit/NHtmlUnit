@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -172,6 +172,12 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected));
+      }
+
+// Generating method code for setSelectedAttribute
+      public virtual NHtmlUnit.IPage SetSelectedAttribute(string optionValue, bool isSelected, bool invokeOnFocus)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute(optionValue, isSelected, invokeOnFocus));
       }
 
 // Generating method code for getOptionByValue

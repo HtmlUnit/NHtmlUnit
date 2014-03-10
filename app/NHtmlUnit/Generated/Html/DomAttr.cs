@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,22 @@ namespace NHtmlUnit.Html
          : this(new com.gargoylesoftware.htmlunit.html.DomAttr((com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, namespaceURI, qualifiedName, value, specified)) {}
 
 
+      public System.String Name
+      {
+         get
+         {
+            return WObj.getName();
+         }
+      }
+
+      public System.Boolean Specified
+      {
+         get
+         {
+            return WObj.getSpecified();
+         }
+      }
+
       public System.String Value
       {
          get
@@ -40,14 +56,6 @@ namespace NHtmlUnit.Html
 
       }
 
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-      }
-
       public NHtmlUnit.Html.DomElement OwnerElement
       {
          get
@@ -57,14 +65,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public System.Boolean Specified
-      {
-         get
-         {
-            return WObj.getSpecified();
-         }
-      }
 
       public NHtmlUnit.W3C.Dom.ITypeInfo SchemaTypeInfo
       {

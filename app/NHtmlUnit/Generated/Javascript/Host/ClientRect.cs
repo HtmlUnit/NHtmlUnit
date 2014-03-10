@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,15 +30,15 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRect(bottom, left, right, top)) {}
 
 
-      public System.Int32 Bottom
+      public System.Int32 Right
       {
          get
          {
-            return WObj.getBottom();
+            return WObj.getRight();
          }
          set
          {
-            WObj.setBottom(value);
+            WObj.setRight(value);
          }
 
       }
@@ -56,15 +56,15 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public System.Int32 Right
+      public System.Int32 Bottom
       {
          get
          {
-            return WObj.getRight();
+            return WObj.getBottom();
          }
          set
          {
-            WObj.setRight(value);
+            WObj.setBottom(value);
          }
 
       }
@@ -80,6 +80,22 @@ namespace NHtmlUnit.Javascript.Host
             WObj.setTop(value);
          }
 
+      }
+
+      public System.Int32 Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+      }
+
+      public System.Int32 Height
+      {
+         get
+         {
+            return WObj.getHeight();
+         }
       }
    }
 

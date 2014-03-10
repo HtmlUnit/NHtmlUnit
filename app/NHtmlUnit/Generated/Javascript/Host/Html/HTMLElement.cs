@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -56,6 +56,14 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getClientHeight();
+         }
+      }
+
+      public System.String DefaultStyleDisplay
+      {
+         get
+         {
+            return WObj.getDefaultStyleDisplay();
          }
       }
 
@@ -127,6 +135,22 @@ namespace NHtmlUnit.Javascript.Host.Html
             WObj.setScrollTop(value);
          }
 
+      }
+
+      public System.Int32 OffsetHeight
+      {
+         get
+         {
+            return WObj.getOffsetHeight();
+         }
+      }
+
+      public System.Int32 OffsetWidth
+      {
+         get
+         {
+            return WObj.getOffsetWidth();
+         }
       }
 
       public IList<NHtmlUnit.W3C.Dom.INode> All
@@ -322,22 +346,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getWidth();
-         }
-      }
-
-      public System.Int32 OffsetHeight
-      {
-         get
-         {
-            return WObj.getOffsetHeight();
-         }
-      }
-
-      public System.Int32 OffsetWidth
-      {
-         get
-         {
-            return WObj.getOffsetWidth();
          }
       }
 
@@ -572,12 +580,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.removeNode(removeChildren));
       }
 
-// Generating method code for setAttributeNode
-      public virtual NHtmlUnit.Javascript.Host.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Attr newAtt)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)newAtt.WrappedObject));
-      }
-
 // Generating method code for getElementsByClassName
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByClassName(string className)
       {
@@ -586,15 +588,21 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for insertAdjacentHTML
-      public virtual void InsertAdjacentHTML(string whereArg, string text)
+      public virtual void InsertAdjacentHTML(string position, string text)
       {
-         WObj.insertAdjacentHTML(whereArg, text);
+         WObj.insertAdjacentHTML(position, text);
       }
 
 // Generating method code for insertAdjacentElement
-      public virtual object InsertAdjacentElement(string whereArg, object objectArg)
+      public virtual object InsertAdjacentElement(string whereArg, object insertedElement)
       {
-         return WObj.insertAdjacentElement(whereArg, objectArg);
+         return WObj.insertAdjacentElement(whereArg, insertedElement);
+      }
+
+// Generating method code for insertAdjacentText
+      public virtual void InsertAdjacentText(string whereArg, string text)
+      {
+         WObj.insertAdjacentText(whereArg, text);
       }
 
 // Generating method code for addComponentRequest

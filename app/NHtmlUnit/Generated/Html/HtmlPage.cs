@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,6 +37,16 @@ namespace NHtmlUnit.Html
       }
 
 
+      public NHtmlUnit.Html.HtmlElement Body
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getBody());
+         }
+      }
+
+
       public IList<NHtmlUnit.Html.FrameWindow> Frames
       {
          get
@@ -63,16 +73,6 @@ namespace NHtmlUnit.Html
                WObj.getTabbableElements());
          }
        }
-
-      public NHtmlUnit.Html.HtmlElement Body
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getBody());
-         }
-      }
-
 
       public NHtmlUnit.Html.HtmlElement Head
       {
@@ -131,22 +131,22 @@ namespace NHtmlUnit.Html
             return WObj.getNamespaces();
          }
       }
-// Generating method code for getHtmlElementById
-      public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id)
+// Generating method code for isQuirksMode
+      public virtual bool IsQuirksMode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id));
-      }
-
-// Generating method code for setFocusedElement
-      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement)
-      {
-         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject);
+         return WObj.isQuirksMode();
       }
 
 // Generating method code for getFullyQualifiedUrl
       public virtual java.net.URL GetFullyQualifiedUrl(string relativeUrl)
       {
          return WObj.getFullyQualifiedUrl(relativeUrl);
+      }
+
+// Generating method code for setFocusedElement
+      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement)
+      {
+         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject);
       }
 
 // Generating method code for executeJavaScriptIfPossible
@@ -159,6 +159,12 @@ namespace NHtmlUnit.Html
       public virtual string GetResolvedTarget(string elementTarget)
       {
          return WObj.getResolvedTarget(elementTarget);
+      }
+
+// Generating method code for getHtmlElementById
+      public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id));
       }
 
 // Generating method code for deregisterFramesIfNeeded
@@ -228,6 +234,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptFunctionIfPossible(function, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)htmlElementScope.WrappedObject));
       }
 
+// Generating method code for isOnbeforeunloadAccepted
+      public virtual bool IsOnbeforeunloadAccepted()
+      {
+         return WObj.isOnbeforeunloadAccepted();
+      }
+
 // Generating method code for getFrameByName
       public virtual NHtmlUnit.Html.FrameWindow GetFrameByName(string name)
       {
@@ -290,12 +302,6 @@ namespace NHtmlUnit.Html
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
       }
 
-// Generating method code for isOnbeforeunloadAccepted
-      public virtual bool IsOnbeforeunloadAccepted()
-      {
-         return WObj.isOnbeforeunloadAccepted();
-      }
-
 // Generating method code for isBeingParsed
       public virtual bool IsBeingParsed()
       {
@@ -318,12 +324,6 @@ namespace NHtmlUnit.Html
       public virtual void Save(java.io.File file)
       {
          WObj.save(file);
-      }
-
-// Generating method code for isQuirksMode
-      public virtual bool IsQuirksMode()
-      {
-         return WObj.isQuirksMode();
       }
 
    }

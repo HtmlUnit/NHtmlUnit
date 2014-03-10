@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -145,24 +145,6 @@ namespace NHtmlUnit
       }
 
 
-      public java.net.URL Url
-      {
-         get
-         {
-            return WObj.getUrl();
-         }
-      }
-
-      public NHtmlUnit.WebResponse WebResponse
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
-               WObj.getWebResponse());
-         }
-      }
-
-
       public NHtmlUnit.WebClient WebClient
       {
          get
@@ -179,6 +161,24 @@ namespace NHtmlUnit
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IDocumentType>(
                WObj.getDoctype());
+         }
+      }
+
+
+      public java.net.URL Url
+      {
+         get
+         {
+            return WObj.getUrl();
+         }
+      }
+
+      public NHtmlUnit.WebResponse WebResponse
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(
+               WObj.getWebResponse());
          }
       }
 
@@ -298,16 +298,16 @@ namespace NHtmlUnit
          return WObj.isHtmlPage();
       }
 
-// Generating method code for createAttribute
-      public virtual NHtmlUnit.Html.DomAttr CreateAttribute(string name)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomAttr>(WObj.createAttribute(name));
-      }
-
 // Generating method code for createDomDocumentFragment
       public virtual NHtmlUnit.Html.DomDocumentFragment CreateDomDocumentFragment()
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.createDomDocumentFragment());
+      }
+
+// Generating method code for createAttribute
+      public virtual NHtmlUnit.Html.DomAttr CreateAttribute(string name)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomAttr>(WObj.createAttribute(name));
       }
 
 // Generating method code for normalizeDocument

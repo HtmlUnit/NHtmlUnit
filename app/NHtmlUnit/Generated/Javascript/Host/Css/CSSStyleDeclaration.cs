@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,32 @@ namespace NHtmlUnit.Javascript.Host.Css
       public CSSStyleDeclaration(NHtmlUnit.Javascript.Host.Element element)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject)) {}
 
+
+      public System.String Padding
+      {
+         get
+         {
+            return WObj.getPadding();
+         }
+         set
+         {
+            WObj.setPadding(value);
+         }
+
+      }
+
+      public System.String PaddingBottom
+      {
+         get
+         {
+            return WObj.getPaddingBottom();
+         }
+         set
+         {
+            WObj.setPaddingBottom(value);
+         }
+
+      }
 
       public System.String PaddingLeft
       {
@@ -147,6 +173,19 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
+      public System.Int32 PixelHeight
+      {
+         get
+         {
+            return WObj.getPixelHeight();
+         }
+         set
+         {
+            WObj.setPixelHeight(value);
+         }
+
+      }
+
       public System.Int32 PixelLeft
       {
          get
@@ -182,6 +221,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setPixelTop(value);
+         }
+
+      }
+
+      public System.Int32 PixelWidth
+      {
+         get
+         {
+            return WObj.getPixelWidth();
+         }
+         set
+         {
+            WObj.setPixelWidth(value);
          }
 
       }
@@ -745,19 +797,6 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
-      public System.String Width
-      {
-         get
-         {
-            return WObj.getWidth();
-         }
-         set
-         {
-            WObj.setWidth(value);
-         }
-
-      }
-
       public System.String WordSpacing
       {
          get
@@ -836,6 +875,19 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
+      public System.String Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+         set
+         {
+            WObj.setWidth(value);
+         }
+
+      }
+
       public System.String Bottom
       {
          get
@@ -845,6 +897,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setBottom(value);
+         }
+
+      }
+
+      public System.String Height
+      {
+         get
+         {
+            return WObj.getHeight();
+         }
+         set
+         {
+            WObj.setHeight(value);
          }
 
       }
@@ -884,6 +949,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setTop(value);
+         }
+
+      }
+
+      public System.String Accelerator
+      {
+         get
+         {
+            return WObj.getAccelerator();
+         }
+         set
+         {
+            WObj.setAccelerator(value);
          }
 
       }
@@ -1564,19 +1642,6 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
-      public System.String Height
-      {
-         get
-         {
-            return WObj.getHeight();
-         }
-         set
-         {
-            WObj.setHeight(value);
-         }
-
-      }
-
       public System.String ImeMode
       {
          get
@@ -2049,32 +2114,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setOverflowY(value);
-         }
-
-      }
-
-      public System.String Padding
-      {
-         get
-         {
-            return WObj.getPadding();
-         }
-         set
-         {
-            WObj.setPadding(value);
-         }
-
-      }
-
-      public System.String PaddingBottom
-      {
-         get
-         {
-            return WObj.getPaddingBottom();
-         }
-         set
-         {
-            WObj.setPaddingBottom(value);
          }
 
       }

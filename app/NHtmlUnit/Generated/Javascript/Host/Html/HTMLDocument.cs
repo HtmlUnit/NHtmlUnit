@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,6 +32,14 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getDocumentMode();
+         }
+      }
+
+      public System.String CompatMode
+      {
+         get
+         {
+            return WObj.getCompatMode();
          }
       }
 
@@ -137,14 +145,6 @@ namespace NHtmlUnit.Javascript.Host.Html
             WObj.setCookie(value);
          }
 
-      }
-
-      public System.String CompatMode
-      {
-         get
-         {
-            return WObj.getCompatMode();
-         }
       }
 
       public System.Object Images

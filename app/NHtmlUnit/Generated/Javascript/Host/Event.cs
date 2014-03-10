@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,30 +33,6 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Event()) {}
 
 
-      public System.Boolean ShiftKey
-      {
-         get
-         {
-            return WObj.getShiftKey();
-         }
-      }
-
-      public System.Boolean CtrlKey
-      {
-         get
-         {
-            return WObj.getCtrlKey();
-         }
-      }
-
-      public System.Boolean AltKey
-      {
-         get
-         {
-            return WObj.getAltKey();
-         }
-      }
-
       public System.String Type
       {
          get
@@ -79,19 +55,6 @@ namespace NHtmlUnit.Javascript.Host
          set
          {
             WObj.setReturnValue(value);
-         }
-
-      }
-
-      public System.Boolean CancelBubble
-      {
-         get
-         {
-            return WObj.getCancelBubble();
-         }
-         set
-         {
-            WObj.setCancelBubble(value);
          }
 
       }
@@ -138,6 +101,30 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
+      public System.Boolean ShiftKey
+      {
+         get
+         {
+            return WObj.getShiftKey();
+         }
+      }
+
+      public System.Boolean CtrlKey
+      {
+         get
+         {
+            return WObj.getCtrlKey();
+         }
+      }
+
+      public System.Boolean AltKey
+      {
+         get
+         {
+            return WObj.getAltKey();
+         }
+      }
+
       public System.Boolean Bubbles
       {
          get
@@ -152,6 +139,27 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getCancelable();
          }
+      }
+
+      public System.Boolean DefaultPrevented
+      {
+         get
+         {
+            return WObj.getDefaultPrevented();
+         }
+      }
+
+      public System.Boolean CancelBubble
+      {
+         get
+         {
+            return WObj.getCancelBubble();
+         }
+         set
+         {
+            WObj.setCancelBubble(value);
+         }
+
       }
 
       public System.String PropertyName
@@ -179,16 +187,28 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.isPropagationStopped();
       }
 
-// Generating method code for stopPropagation
-      public virtual void StopPropagation()
-      {
-         WObj.stopPropagation();
-      }
-
 // Generating method code for initEvent
       public virtual void InitEvent(string type, bool bubbles, bool cancelable)
       {
          WObj.initEvent(type, bubbles, cancelable);
+      }
+
+// Generating method code for eventCreated
+      public virtual void EventCreated()
+      {
+         WObj.eventCreated();
+      }
+
+// Generating method code for jsConstructor
+      public virtual void JsConstructor(string type, net.sourceforge.htmlunit.corejs.javascript.ScriptableObject details)
+      {
+         WObj.jsConstructor(type, details);
+      }
+
+// Generating method code for stopPropagation
+      public virtual void StopPropagation()
+      {
+         WObj.stopPropagation();
       }
 
 // Generating method code for preventDefault

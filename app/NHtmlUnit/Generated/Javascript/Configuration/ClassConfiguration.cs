@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,27 +27,11 @@ namespace NHtmlUnit.Javascript.Configuration
          : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject)) {}
 
 
-      public System.String ExtendedClassName
-      {
-         get
-         {
-            return WObj.getExtendedClassName();
-         }
-      }
-
       public java.lang.Class HostClass
       {
          get
          {
             return WObj.getHostClass();
-         }
-      }
-
-      public java.lang.reflect.Method JsConstructor
-      {
-         get
-         {
-            return WObj.getJsConstructor();
          }
       }
 
@@ -58,16 +42,44 @@ namespace NHtmlUnit.Javascript.Configuration
             return WObj.getDomClasses();
          }
       }
-// Generating method code for addProperty
-      public virtual void AddProperty(string name, java.lang.reflect.Method getter, java.lang.reflect.Method setter)
+
+      public System.String ExtendedClassName
       {
-         WObj.addProperty(name, getter, setter);
+         get
+         {
+            return WObj.getExtendedClassName();
+         }
+      }
+
+      public java.lang.reflect.Method JsConstructor
+      {
+         get
+         {
+            return WObj.getJsConstructor();
+         }
+      }
+// Generating method code for addFunction
+      public virtual void AddFunction(java.lang.reflect.Method method)
+      {
+         WObj.addFunction(method);
       }
 
 // Generating method code for addConstant
       public virtual void AddConstant(string name)
       {
          WObj.addConstant(name);
+      }
+
+// Generating method code for addProperty
+      public virtual void AddProperty(string name, java.lang.reflect.Method getter, java.lang.reflect.Method setter)
+      {
+         WObj.addProperty(name, getter, setter);
+      }
+
+// Generating method code for isJsObject
+      public virtual bool IsJsObject()
+      {
+         return WObj.isJsObject();
       }
 
 // Generating method code for propertyEntries
@@ -84,13 +96,6 @@ namespace NHtmlUnit.Javascript.Configuration
          return new ShallowCollectionWrapper<System.Object>(WObj.functionEntries());
       }
 
-// Generating method code for functionKeys
-      public virtual ICollection<System.String> FunctionKeys()
-      {
-
-         return new ShallowCollectionWrapper<System.String>(WObj.functionKeys());
-      }
-
 // Generating method code for constants
       public virtual IList<System.String> Constants()
       {
@@ -98,16 +103,11 @@ namespace NHtmlUnit.Javascript.Configuration
          return new ShallowListWrapper<System.String>(WObj.constants());
       }
 
-// Generating method code for addFunction
-      public virtual void AddFunction(java.lang.reflect.Method method)
+// Generating method code for functionKeys
+      public virtual ICollection<System.String> FunctionKeys()
       {
-         WObj.addFunction(method);
-      }
 
-// Generating method code for isJsObject
-      public virtual bool IsJsObject()
-      {
-         return WObj.isJsObject();
+         return new ShallowCollectionWrapper<System.String>(WObj.functionKeys());
       }
 
    }

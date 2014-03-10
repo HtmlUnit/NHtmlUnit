@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -52,78 +52,6 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          }
 
       }
-// Generating method code for translate
-      public virtual void Translate(object x, object y)
-      {
-         WObj.translate(x, y);
-      }
-
-// Generating method code for scale
-      public virtual void Scale(object x, object y)
-      {
-         WObj.scale(x, y);
-      }
-
-// Generating method code for clearRect
-      public virtual void ClearRect(System.Double x, System.Double y, System.Double w, System.Double h)
-      {
-         WObj.clearRect(x, y, w, h);
-      }
-
-// Generating method code for fillRect
-      public virtual void FillRect(System.Double x, System.Double y, System.Double w, System.Double h)
-      {
-         WObj.fillRect(x, y, w, h);
-      }
-
-// Generating method code for strokeRect
-      public virtual void StrokeRect(System.Double x, System.Double y, System.Double w, System.Double h)
-      {
-         WObj.strokeRect(x, y, w, h);
-      }
-
-// Generating method code for beginPath
-      public virtual void BeginPath()
-      {
-         WObj.beginPath();
-      }
-
-// Generating method code for closePath
-      public virtual void ClosePath()
-      {
-         WObj.closePath();
-      }
-
-// Generating method code for moveTo
-      public virtual void MoveTo(System.Double x, System.Double y)
-      {
-         WObj.moveTo(x, y);
-      }
-
-// Generating method code for lineTo
-      public virtual void LineTo(System.Double x, System.Double y)
-      {
-         WObj.lineTo(x, y);
-      }
-
-// Generating method code for save
-      public virtual void Save()
-      {
-         WObj.save();
-      }
-
-// Generating method code for restore
-      public virtual void Restore()
-      {
-         WObj.restore();
-      }
-
-// Generating method code for createLinearGradient
-      public virtual void CreateLinearGradient(System.Double x0, System.Double y0, System.Double r0, System.Double x1, object y1, object r1)
-      {
-         WObj.createLinearGradient(x0, y0, r0, x1, y1, r1);
-      }
-
 // Generating method code for arc
       public virtual void Arc(System.Double x, System.Double y, System.Double radius, System.Double startAngle, System.Double endAngle, bool anticlockwise)
       {
@@ -136,28 +64,22 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.arcTo(x1, y1, x2, y2, radius);
       }
 
+// Generating method code for beginPath
+      public virtual void BeginPath()
+      {
+         WObj.beginPath();
+      }
+
 // Generating method code for bezierCurveTo
       public virtual void BezierCurveTo(System.Double cp1x, System.Double cp1y, System.Double cp2x, System.Double cp2y, System.Double x, System.Double y)
       {
          WObj.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
       }
 
-// Generating method code for quadraticCurveTo
-      public virtual void QuadraticCurveTo(System.Double controlPointX, System.Double controlPointY, System.Double endPointX, System.Double endPointY)
+// Generating method code for clearRect
+      public virtual void ClearRect(System.Double x, System.Double y, System.Double w, System.Double h)
       {
-         WObj.quadraticCurveTo(controlPointX, controlPointY, endPointX, endPointY);
-      }
-
-// Generating method code for fill
-      public virtual void Fill()
-      {
-         WObj.fill();
-      }
-
-// Generating method code for stroke
-      public virtual void Stroke()
-      {
-         WObj.stroke();
+         WObj.clearRect(x, y, w, h);
       }
 
 // Generating method code for clip
@@ -166,10 +88,22 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.clip();
       }
 
+// Generating method code for closePath
+      public virtual void ClosePath()
+      {
+         WObj.closePath();
+      }
+
 // Generating method code for createImageData
       public virtual void CreateImageData()
       {
          WObj.createImageData();
+      }
+
+// Generating method code for createLinearGradient
+      public virtual void CreateLinearGradient(System.Double x0, System.Double y0, System.Double r0, System.Double x1, object y1, object r1)
+      {
+         WObj.createLinearGradient(x0, y0, r0, x1, y1, r1);
       }
 
 // Generating method code for createPattern
@@ -184,6 +118,18 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.createRadialGradient();
       }
 
+// Generating method code for fill
+      public virtual void Fill()
+      {
+         WObj.fill();
+      }
+
+// Generating method code for fillRect
+      public virtual void FillRect(System.Double x, System.Double y, System.Double w, System.Double h)
+      {
+         WObj.fillRect(x, y, w, h);
+      }
+
 // Generating method code for fillText
       public virtual void FillText()
       {
@@ -194,6 +140,12 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       public virtual void GetImageData()
       {
          WObj.getImageData();
+      }
+
+// Generating method code for getLineDash
+      public virtual void GetLineDash()
+      {
+         WObj.getLineDash();
       }
 
 // Generating method code for getLineData
@@ -208,10 +160,22 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.isPointInPath();
       }
 
+// Generating method code for lineTo
+      public virtual void LineTo(System.Double x, System.Double y)
+      {
+         WObj.lineTo(x, y);
+      }
+
 // Generating method code for measureText
       public virtual void MeasureText()
       {
          WObj.measureText();
+      }
+
+// Generating method code for moveTo
+      public virtual void MoveTo(System.Double x, System.Double y)
+      {
+         WObj.moveTo(x, y);
       }
 
 // Generating method code for putImageData
@@ -220,10 +184,22 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.putImageData();
       }
 
+// Generating method code for quadraticCurveTo
+      public virtual void QuadraticCurveTo(System.Double controlPointX, System.Double controlPointY, System.Double endPointX, System.Double endPointY)
+      {
+         WObj.quadraticCurveTo(controlPointX, controlPointY, endPointX, endPointY);
+      }
+
 // Generating method code for rect
       public virtual void Rect()
       {
          WObj.rect();
+      }
+
+// Generating method code for restore
+      public virtual void Restore()
+      {
+         WObj.restore();
       }
 
 // Generating method code for rotate
@@ -232,10 +208,40 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.rotate();
       }
 
+// Generating method code for save
+      public virtual void Save()
+      {
+         WObj.save();
+      }
+
+// Generating method code for scale
+      public virtual void Scale(object x, object y)
+      {
+         WObj.scale(x, y);
+      }
+
+// Generating method code for setLineDash
+      public virtual void SetLineDash()
+      {
+         WObj.setLineDash();
+      }
+
 // Generating method code for setTransform
       public virtual void SetTransform()
       {
          WObj.setTransform();
+      }
+
+// Generating method code for stroke
+      public virtual void Stroke()
+      {
+         WObj.stroke();
+      }
+
+// Generating method code for strokeRect
+      public virtual void StrokeRect(System.Double x, System.Double y, System.Double w, System.Double h)
+      {
+         WObj.strokeRect(x, y, w, h);
       }
 
 // Generating method code for strokeText
@@ -248,6 +254,12 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       public virtual void Transform()
       {
          WObj.transform();
+      }
+
+// Generating method code for translate
+      public virtual void Translate(object x, object y)
+      {
+         WObj.translate(x, y);
       }
 
 // Generating method code for getLineWidth

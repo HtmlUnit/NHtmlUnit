@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -57,6 +57,12 @@ namespace NHtmlUnit
       public virtual void AddToCache(string css, NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet styleSheet)
       {
          WObj.cache(css, (org.w3c.dom.css.CSSStyleSheet)styleSheet.WrappedObject);
+      }
+
+// Generating method code for getCachedResponse
+      public virtual NHtmlUnit.WebResponse GetCachedResponse(NHtmlUnit.WebRequest request)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getCachedResponse((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject));
       }
 
 // Generating method code for getCachedObject

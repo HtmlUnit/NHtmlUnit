@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -15,10 +15,10 @@ namespace NHtmlUnit.Html
    {
 // Generating method code for attributeAdded
       void AttributeAdded(NHtmlUnit.Html.HtmlAttributeChangeEvent hace);
-// Generating method code for attributeReplaced
-      void AttributeReplaced(NHtmlUnit.Html.HtmlAttributeChangeEvent hace);
 // Generating method code for attributeRemoved
       void AttributeRemoved(NHtmlUnit.Html.HtmlAttributeChangeEvent hace);
+// Generating method code for attributeReplaced
+      void AttributeReplaced(NHtmlUnit.Html.HtmlAttributeChangeEvent hace);
 
    }
 }

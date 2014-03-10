@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -49,6 +49,12 @@ namespace NHtmlUnit.Html
          }
 
       }
+// Generating method code for setValueAttribute
+      public virtual NHtmlUnit.IPage SetValueAttribute(System.String[] paths)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setValueAttribute(paths));
+      }
+
    }
 
 

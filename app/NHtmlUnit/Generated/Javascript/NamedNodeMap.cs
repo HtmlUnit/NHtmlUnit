@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,16 +37,16 @@ namespace NHtmlUnit.Javascript
             return WObj.getLength();
          }
       }
-// Generating method code for getNamedItem
-      public virtual object GetNamedItem(string name)
-      {
-         return WObj.getNamedItem(name);
-      }
-
 // Generating method code for getNamedItemWithoutSytheticClassAttr
       public virtual object GetNamedItemWithoutSytheticClassAttr(string name)
       {
          return WObj.getNamedItemWithoutSytheticClassAttr(name);
+      }
+
+// Generating method code for getNamedItem
+      public virtual object GetNamedItem(string name)
+      {
+         return WObj.getNamedItem(name);
       }
 
 // Generating method code for item
