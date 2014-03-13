@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -100,6 +100,12 @@ namespace NHtmlUnit.Html
          return WObj.isSelected();
       }
 
+// Generating method code for isDisabled
+      public virtual bool IsDisabled()
+      {
+         return WObj.isDisabled();
+      }
+
 // Generating method code for setSelected
       public virtual NHtmlUnit.IPage SetSelected(bool selected)
       {
@@ -116,12 +122,6 @@ namespace NHtmlUnit.Html
       public virtual bool IsDefaultSelected()
       {
          return WObj.isDefaultSelected();
-      }
-
-// Generating method code for isDisabled
-      public virtual bool IsDisabled()
-      {
-         return WObj.isDisabled();
       }
 
    }

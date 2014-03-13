@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,16 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
 
+      public NHtmlUnit.IWebWindow WebWindow
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
+               WObj.getWebWindow());
+         }
+      }
+
+
       public System.String Status
       {
          get
@@ -46,16 +56,6 @@ namespace NHtmlUnit.Javascript.Host
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
                WObj.getDocument());
-         }
-      }
-
-
-      public NHtmlUnit.IWebWindow WebWindow
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(
-               WObj.getWebWindow());
          }
       }
 
@@ -159,11 +159,11 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public NHtmlUnit.Javascript.Host.OfflineResourceList ApplicationCache
+      public NHtmlUnit.Javascript.Host.ApplicationCache ApplicationCache
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.OfflineResourceList>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ApplicationCache>(
                WObj.getApplicationCache());
          }
       }
@@ -535,12 +535,6 @@ namespace NHtmlUnit.Javascript.Host
          }
 
       }
-// Generating method code for attachEvent
-      public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         return WObj.attachEvent(type, listener);
-      }
-
 // Generating method code for getPrototype
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
       {
@@ -551,6 +545,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
+      }
+
+// Generating method code for attachEvent
+      public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
+      {
+         return WObj.attachEvent(type, listener);
       }
 
 // Generating method code for executeEvent

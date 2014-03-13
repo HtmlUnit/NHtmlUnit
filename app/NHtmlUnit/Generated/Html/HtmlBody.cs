@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlBody)WrappedObject; }
       }
 
-      public HtmlBody(string namespaceURI, string qualifiedName, NHtmlUnit.SgmlPage page, java.util.Map attributes, bool temporary)
-         : this(new com.gargoylesoftware.htmlunit.html.HtmlBody(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, attributes, temporary)) {}
+      public HtmlBody(string qualifiedName, NHtmlUnit.SgmlPage page, java.util.Map attributes, bool temporary)
+         : this(new com.gargoylesoftware.htmlunit.html.HtmlBody(qualifiedName, (com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, attributes, temporary)) {}
 
 
       public System.String OnLoadAttribute

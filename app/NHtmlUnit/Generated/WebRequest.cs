@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,12 +26,25 @@ namespace NHtmlUnit
       public WebRequest(java.net.URL url)
          : this(new com.gargoylesoftware.htmlunit.WebRequest(url)) {}
 
-      public WebRequest(java.net.URL url, string acceptHeader)
-         : this(new com.gargoylesoftware.htmlunit.WebRequest(url, acceptHeader)) {}
-
       public WebRequest(java.net.URL url, NHtmlUnit.HttpMethod submitMethod)
          : this(new com.gargoylesoftware.htmlunit.WebRequest(url, (com.gargoylesoftware.htmlunit.HttpMethod)submitMethod.WrappedObject)) {}
 
+      public WebRequest(java.net.URL url, string acceptHeader)
+         : this(new com.gargoylesoftware.htmlunit.WebRequest(url, acceptHeader)) {}
+
+
+      public System.String Charset
+      {
+         get
+         {
+            return WObj.getCharset();
+         }
+         set
+         {
+            WObj.setCharset(value);
+         }
+
+      }
 
       public java.net.URL Url
       {
@@ -61,15 +74,41 @@ namespace NHtmlUnit
       }
 
 
-      public System.String Charset
+      public org.apache.http.auth.Credentials Credentials
       {
          get
          {
-            return WObj.getCharset();
+            return WObj.getCredentials();
          }
          set
          {
-            WObj.setCharset(value);
+            WObj.setCredentials(value);
+         }
+
+      }
+
+      public System.String RequestBody
+      {
+         get
+         {
+            return WObj.getRequestBody();
+         }
+         set
+         {
+            WObj.setRequestBody(value);
+         }
+
+      }
+
+      public java.util.Map AdditionalHeaders
+      {
+         get
+         {
+            return WObj.getAdditionalHeaders();
+         }
+         set
+         {
+            WObj.setAdditionalHeaders(value);
          }
 
       }
@@ -98,19 +137,6 @@ namespace NHtmlUnit
       }
 
 
-      public java.util.Map AdditionalHeaders
-      {
-         get
-         {
-            return WObj.getAdditionalHeaders();
-         }
-         set
-         {
-            WObj.setAdditionalHeaders(value);
-         }
-
-      }
-
       public System.String ProxyHost
       {
          get
@@ -137,38 +163,12 @@ namespace NHtmlUnit
 
       }
 
-      public System.String RequestBody
-      {
-         get
-         {
-            return WObj.getRequestBody();
-         }
-         set
-         {
-            WObj.setRequestBody(value);
-         }
-
-      }
-
       public org.apache.http.auth.Credentials UrlCredentials
       {
          get
          {
             return WObj.getUrlCredentials();
          }
-      }
-
-      public org.apache.http.auth.Credentials Credentials
-      {
-         get
-         {
-            return WObj.getCredentials();
-         }
-         set
-         {
-            WObj.setCredentials(value);
-         }
-
       }
 // Generating method code for setAdditionalHeader
       public virtual void SetAdditionalHeader(string name, string value)

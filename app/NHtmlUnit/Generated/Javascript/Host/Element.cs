@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,24 +26,6 @@ namespace NHtmlUnit.Javascript.Host
       public Element()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Element()) {}
 
-
-      public NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration CurrentStyle
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(
-               WObj.getCurrentStyle());
-         }
-      }
-
-
-      public System.String DefaultStyleDisplay
-      {
-         get
-         {
-            return WObj.getDefaultStyleDisplay();
-         }
-      }
 
       public System.String TagName
       {
@@ -165,6 +147,16 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
+
+      public NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration CurrentStyle
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(
+               WObj.getCurrentStyle());
+         }
+      }
+
 // Generating method code for selectNodes
       public virtual IList<NHtmlUnit.W3C.Dom.INode> SelectNodes(string expression)
       {
@@ -243,6 +235,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void RemoveAttributeNS(string namespaceURI, string localName)
       {
          WObj.removeAttributeNS(namespaceURI, localName);
+      }
+
+// Generating method code for setAttributeNode
+      public virtual NHtmlUnit.Javascript.Host.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Attr newAtt)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)newAtt.WrappedObject));
       }
 
    }

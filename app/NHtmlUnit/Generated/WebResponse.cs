@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -38,6 +38,31 @@ namespace NHtmlUnit
          }
       }
 
+      public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.Util.NameValuePair>(
+               WObj.getResponseHeaders());
+         }
+       }
+
+      public System.String ContentCharsetOrNull
+      {
+         get
+         {
+            return WObj.getContentCharsetOrNull();
+         }
+      }
+
+      public System.String ContentType
+      {
+         get
+         {
+            return WObj.getContentType();
+         }
+      }
+
       public NHtmlUnit.WebRequest WebRequest
       {
          get
@@ -48,11 +73,11 @@ namespace NHtmlUnit
       }
 
 
-      public System.String ContentType
+      public System.String ContentCharset
       {
          get
          {
-            return WObj.getContentType();
+            return WObj.getContentCharset();
          }
       }
 
@@ -80,31 +105,6 @@ namespace NHtmlUnit
          }
       }
 
-      public System.String ContentCharset
-      {
-         get
-         {
-            return WObj.getContentCharset();
-         }
-      }
-
-      public System.String ContentCharsetOrNull
-      {
-         get
-         {
-            return WObj.getContentCharsetOrNull();
-         }
-      }
-
-      public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.Util.NameValuePair>(
-               WObj.getResponseHeaders());
-         }
-       }
-
       public System.Int64 LoadTime
       {
          get
@@ -118,16 +118,16 @@ namespace NHtmlUnit
          return WObj.getResponseHeaderValue(headerName);
       }
 
-// Generating method code for cleanUp
-      public virtual void CleanUp()
-      {
-         WObj.cleanUp();
-      }
-
 // Generating method code for getContentAsString
       public virtual string GetContentAsString(string encoding)
       {
          return WObj.getContentAsString(encoding);
+      }
+
+// Generating method code for cleanUp
+      public virtual void CleanUp()
+      {
+         WObj.cleanUp();
       }
 
    }

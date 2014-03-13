@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,19 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLHttpRequest()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLHttpRequest()) {}
 
+
+      public System.Boolean WithCredentials
+      {
+         get
+         {
+            return WObj.getWithCredentials();
+         }
+         set
+         {
+            WObj.setWithCredentials(value);
+         }
+
+      }
 
       public net.sourceforge.htmlunit.corejs.javascript.Function Onreadystatechange
       {
@@ -115,19 +128,6 @@ namespace NHtmlUnit.Javascript.Host.Xml
          {
             return WObj.getAllResponseHeaders();
          }
-      }
-
-      public System.Boolean WithCredentials
-      {
-         get
-         {
-            return WObj.getWithCredentials();
-         }
-         set
-         {
-            WObj.setWithCredentials(value);
-         }
-
       }
 // Generating method code for jsConstructor
       public virtual void JsConstructor()

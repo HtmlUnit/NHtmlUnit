@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,16 +37,6 @@ namespace NHtmlUnit.Javascript
       }
 
 
-      public NHtmlUnit.Html.DomNode DomNodeOrDie
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
-               WObj.getDomNodeOrDie());
-         }
-      }
-
-
       public NHtmlUnit.BrowserVersion BrowserVersion
       {
          get
@@ -63,6 +53,16 @@ namespace NHtmlUnit.Javascript
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getDomNodeOrNull());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomNode DomNodeOrDie
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
+               WObj.getDomNodeOrDie());
          }
       }
 

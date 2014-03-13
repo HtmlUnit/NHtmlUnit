@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,6 +37,38 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getData();
          }
       }
+
+      public System.String Origin
+      {
+         get
+         {
+            return WObj.getOrigin();
+         }
+      }
+
+      public System.String LastEventId
+      {
+         get
+         {
+            return WObj.getLastEventId();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Window Source
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Window>(
+               WObj.getSource());
+         }
+      }
+
+// Generating method code for initMessageEvent
+      public virtual void InitMessageEvent(string type, bool canBubble, bool cancelable, string data, string origin, string lastEventId, NHtmlUnit.Javascript.Host.Window source)
+      {
+         WObj.initMessageEvent(type, canBubble, cancelable, data, origin, lastEventId, (com.gargoylesoftware.htmlunit.javascript.host.Window)source.WrappedObject);
+      }
+
    }
 
 

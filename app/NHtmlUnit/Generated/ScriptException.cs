@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -45,6 +45,14 @@ namespace NHtmlUnit
          get
          {
             return WObj.getFailingLineNumber();
+         }
+      }
+
+      public System.Int32 FailingColumnNumber
+      {
+         get
+         {
+            return WObj.getFailingColumnNumber();
          }
       }
 

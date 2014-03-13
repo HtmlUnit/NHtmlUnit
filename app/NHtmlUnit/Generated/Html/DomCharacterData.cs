@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -44,6 +44,12 @@ namespace NHtmlUnit.Html
             return WObj.getLength();
          }
       }
+// Generating method code for appendData
+      public virtual void AppendData(string newData)
+      {
+         WObj.appendData(newData);
+      }
+
 // Generating method code for deleteData
       public virtual void DeleteData(int offset, int count)
       {
@@ -54,12 +60,6 @@ namespace NHtmlUnit.Html
       public virtual void InsertData(int offset, string arg)
       {
          WObj.insertData(offset, arg);
-      }
-
-// Generating method code for appendData
-      public virtual void AppendData(string newData)
-      {
-         WObj.appendData(newData);
       }
 
 // Generating method code for replaceData

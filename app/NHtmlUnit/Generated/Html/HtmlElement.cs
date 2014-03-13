@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -155,6 +155,12 @@ namespace NHtmlUnit.Html
             return WObj.getOnKeyUpAttribute();
          }
       }
+// Generating method code for addHtmlAttributeChangeListener
+      public virtual void AddHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
+      {
+         WObj.addHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
+      }
+
 // Generating method code for fireEvent
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Event eventArg)
       {
@@ -330,12 +336,6 @@ namespace NHtmlUnit.Html
       public virtual void RemoveEventHandler(string eventName)
       {
          WObj.removeEventHandler(eventName);
-      }
-
-// Generating method code for addHtmlAttributeChangeListener
-      public virtual void AddHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
-      {
-         WObj.addHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
       }
 
 // Generating method code for removeHtmlAttributeChangeListener

@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,14 +24,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String NamespaceURI
-      {
-         get
-         {
-            return WObj.getNamespaceURI();
-         }
-      }
-
       public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptObject
       {
          get
@@ -45,6 +37,14 @@ namespace NHtmlUnit.Html
 
       }
 
+      public System.String NodeName
+      {
+         get
+         {
+            return WObj.getNodeName();
+         }
+      }
+
       public NHtmlUnit.SgmlPage Page
       {
          get
@@ -55,18 +55,23 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String ReadyState
+      public System.String LocalName
       {
          get
          {
-            return WObj.getReadyState();
+            return WObj.getLocalName();
          }
-         set
-         {
-            WObj.setReadyState(value);
-         }
-
       }
+
+      public NHtmlUnit.W3C.Dom.IDocument OwnerDocument
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IDocument>(
+               WObj.getOwnerDocument());
+         }
+      }
+
 
       public NHtmlUnit.Html.DomNode ParentNode
       {
@@ -88,12 +93,84 @@ namespace NHtmlUnit.Html
       }
 
 
+      public NHtmlUnit.Html.DomNode LastChild
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
+               WObj.getLastChild());
+         }
+      }
+
+
+      public System.String NamespaceURI
+      {
+         get
+         {
+            return WObj.getNamespaceURI();
+         }
+      }
+
       public NHtmlUnit.Html.DomNode NextSibling
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getNextSibling());
+         }
+      }
+
+
+      public System.Int16 NodeType
+      {
+         get
+         {
+            return WObj.getNodeType();
+         }
+      }
+
+      public System.String NodeValue
+      {
+         get
+         {
+            return WObj.getNodeValue();
+         }
+         set
+         {
+            WObj.setNodeValue(value);
+         }
+
+      }
+
+      public System.String Prefix
+      {
+         get
+         {
+            return WObj.getPrefix();
+         }
+         set
+         {
+            WObj.setPrefix(value);
+         }
+
+      }
+
+      public NHtmlUnit.Html.HtmlPage HtmlPageOrNull
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
+               WObj.getHtmlPageOrNull());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomNode PreviousSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
+               WObj.getPreviousSibling());
          }
       }
 
@@ -111,14 +188,6 @@ namespace NHtmlUnit.Html
 
       }
 
-      public System.Int16 NodeType
-      {
-         get
-         {
-            return WObj.getNodeType();
-         }
-      }
-
       public IEnumerable<NHtmlUnit.Html.DomNode> Children
       {
          get
@@ -128,29 +197,6 @@ namespace NHtmlUnit.Html
          }
        }
 
-      public System.String NodeValue
-      {
-         get
-         {
-            return WObj.getNodeValue();
-         }
-         set
-         {
-            WObj.setNodeValue(value);
-         }
-
-      }
-
-      public NHtmlUnit.Html.HtmlPage HtmlPageOrNull
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
-               WObj.getHtmlPageOrNull());
-         }
-      }
-
-
       public IEnumerable<NHtmlUnit.Html.DomNode> Descendants
       {
          get
@@ -159,6 +205,29 @@ namespace NHtmlUnit.Html
                WObj.getDescendants());
          }
        }
+
+      public NHtmlUnit.W3C.Dom.INamedNodeMap Attributes
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INamedNodeMap>(
+               WObj.getAttributes());
+         }
+      }
+
+
+      public System.String ReadyState
+      {
+         get
+         {
+            return WObj.getReadyState();
+         }
+         set
+         {
+            WObj.setReadyState(value);
+         }
+
+      }
 
       public System.Int32 StartLineNumber
       {
@@ -176,34 +245,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public NHtmlUnit.Html.DomNode LastChild
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
-               WObj.getLastChild());
-         }
-      }
-
-
-      public NHtmlUnit.W3C.Dom.IDocument OwnerDocument
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IDocument>(
-               WObj.getOwnerDocument());
-         }
-      }
-
-
-      public System.String NodeName
-      {
-         get
-         {
-            return WObj.getNodeName();
-         }
-      }
-
       public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
       {
          get
@@ -212,16 +253,6 @@ namespace NHtmlUnit.Html
                WObj.getHtmlElementDescendants());
          }
        }
-
-      public NHtmlUnit.Html.DomNode PreviousSibling
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
-               WObj.getPreviousSibling());
-         }
-      }
-
 
       public IList<NHtmlUnit.W3C.Dom.INode> ChildNodes
       {
@@ -256,27 +287,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String LocalName
-      {
-         get
-         {
-            return WObj.getLocalName();
-         }
-      }
-
-      public System.String Prefix
-      {
-         get
-         {
-            return WObj.getPrefix();
-         }
-         set
-         {
-            WObj.setPrefix(value);
-         }
-
-      }
-
       public System.String BaseURI
       {
          get
@@ -285,16 +295,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public NHtmlUnit.W3C.Dom.INamedNodeMap Attributes
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INamedNodeMap>(
-               WObj.getAttributes());
-         }
-      }
-
-
       public System.String CanonicalXPath
       {
          get
@@ -302,40 +302,16 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
-// Generating method code for isAncestorOf
-      public virtual bool IsAncestorOf(NHtmlUnit.Html.DomNode node)
+// Generating method code for asXml
+      public virtual string AsXml()
       {
-         return WObj.isAncestorOf((com.gargoylesoftware.htmlunit.html.DomNode)node.WrappedObject);
-      }
-
-// Generating method code for remove
-      public virtual void Remove()
-      {
-         WObj.remove();
-      }
-
-// Generating method code for insertBefore
-      public virtual NHtmlUnit.W3C.Dom.INode InsertBefore(NHtmlUnit.W3C.Dom.INode newChild, NHtmlUnit.W3C.Dom.INode refChild)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.insertBefore((org.w3c.dom.Node)newChild.WrappedObject, (org.w3c.dom.Node)refChild.WrappedObject));
-      }
-
-// Generating method code for removeAllChildren
-      public virtual void RemoveAllChildren()
-      {
-         WObj.removeAllChildren();
+         return WObj.asXml();
       }
 
 // Generating method code for appendChild
       public virtual NHtmlUnit.Html.DomNode AppendChild(NHtmlUnit.W3C.Dom.INode node)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(WObj.appendChild((org.w3c.dom.Node)node.WrappedObject));
-      }
-
-// Generating method code for mayBeDisplayed
-      public virtual bool MayBeDisplayed()
-      {
-         return WObj.mayBeDisplayed();
       }
 
 // Generating method code for cloneNode
@@ -350,10 +326,71 @@ namespace NHtmlUnit.Html
          WObj.insertBefore((com.gargoylesoftware.htmlunit.html.DomNode)newNode.WrappedObject);
       }
 
+// Generating method code for remove
+      public virtual void Remove()
+      {
+         WObj.remove();
+      }
+
 // Generating method code for replace
       public virtual void Replace(NHtmlUnit.Html.DomNode newNode)
       {
          WObj.replace((com.gargoylesoftware.htmlunit.html.DomNode)newNode.WrappedObject);
+      }
+
+// Generating method code for removeChild
+      public virtual NHtmlUnit.W3C.Dom.INode RemoveChild(NHtmlUnit.W3C.Dom.INode child)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.removeChild((org.w3c.dom.Node)child.WrappedObject));
+      }
+
+// Generating method code for addDomChangeListener
+      public virtual void AddDomChangeListener(NHtmlUnit.Html.IDomChangeListener listener)
+      {
+         WObj.addDomChangeListener((com.gargoylesoftware.htmlunit.html.DomChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for normalize
+      public virtual void Normalize()
+      {
+         WObj.normalize();
+      }
+
+// Generating method code for getByXPath
+      public virtual IList<System.Object> GetByXPath(string xpathExpr)
+      {
+
+         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
+      }
+
+// Generating method code for isAncestorOf
+      public virtual bool IsAncestorOf(NHtmlUnit.Html.DomNode node)
+      {
+         return WObj.isAncestorOf((com.gargoylesoftware.htmlunit.html.DomNode)node.WrappedObject);
+      }
+
+// Generating method code for insertBefore
+      public virtual NHtmlUnit.W3C.Dom.INode InsertBefore(NHtmlUnit.W3C.Dom.INode newChild, NHtmlUnit.W3C.Dom.INode refChild)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.insertBefore((org.w3c.dom.Node)newChild.WrappedObject, (org.w3c.dom.Node)refChild.WrappedObject));
+      }
+
+// Generating method code for removeAllChildren
+      public virtual void RemoveAllChildren()
+      {
+         WObj.removeAllChildren();
+      }
+
+// Generating method code for mayBeDisplayed
+      public virtual bool MayBeDisplayed()
+      {
+         return WObj.mayBeDisplayed();
+      }
+
+// Generating method code for isDirectlyAttachedToPage
+      public virtual bool IsDirectlyAttachedToPage()
+      {
+         return WObj.isDirectlyAttachedToPage();
       }
 
 // Generating method code for getFirstByXPath
@@ -392,12 +429,6 @@ namespace NHtmlUnit.Html
       public virtual bool IsSupported(string namespaceArg, string featureName)
       {
          return WObj.isSupported(namespaceArg, featureName);
-      }
-
-// Generating method code for normalize
-      public virtual void Normalize()
-      {
-         WObj.normalize();
       }
 
 // Generating method code for compareDocumentPosition
@@ -472,41 +503,16 @@ namespace NHtmlUnit.Html
          return WObj.asText();
       }
 
-// Generating method code for asXml
-      public virtual string AsXml()
-      {
-         return WObj.asXml();
-      }
-
-// Generating method code for removeChild
-      public virtual NHtmlUnit.W3C.Dom.INode RemoveChild(NHtmlUnit.W3C.Dom.INode child)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.removeChild((org.w3c.dom.Node)child.WrappedObject));
-      }
-
 // Generating method code for replaceChild
       public virtual NHtmlUnit.W3C.Dom.INode ReplaceChild(NHtmlUnit.W3C.Dom.INode newChild, NHtmlUnit.W3C.Dom.INode oldChild)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.replaceChild((org.w3c.dom.Node)newChild.WrappedObject, (org.w3c.dom.Node)oldChild.WrappedObject));
       }
 
-// Generating method code for getByXPath
-      public virtual IList<System.Object> GetByXPath(string xpathExpr)
-      {
-
-         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
-      }
-
 // Generating method code for getFirstByXPath
       public virtual object GetFirstByXPath(string xpathExpr)
       {
          return WObj.getFirstByXPath(xpathExpr);
-      }
-
-// Generating method code for addDomChangeListener
-      public virtual void AddDomChangeListener(NHtmlUnit.Html.IDomChangeListener listener)
-      {
-         WObj.addDomChangeListener((com.gargoylesoftware.htmlunit.html.DomChangeListener)listener.WrappedObject);
       }
 
 // Generating method code for removeDomChangeListener

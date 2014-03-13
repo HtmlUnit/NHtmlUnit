@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,22 @@ namespace NHtmlUnit.Html
       public DomElement(string namespaceURI, string qualifiedName, NHtmlUnit.SgmlPage page, java.util.Map attributes)
          : this(new com.gargoylesoftware.htmlunit.html.DomElement(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, attributes)) {}
 
+
+      public System.String Id
+      {
+         get
+         {
+            return WObj.getId();
+         }
+      }
+
+      public java.util.Map AttributesMap
+      {
+         get
+         {
+            return WObj.getAttributesMap();
+         }
+      }
 
       public System.String TagName
       {
@@ -84,14 +100,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public java.util.Map AttributesMap
-      {
-         get
-         {
-            return WObj.getAttributesMap();
-         }
-      }
-
       public NHtmlUnit.W3C.Dom.ITypeInfo SchemaTypeInfo
       {
          get
@@ -102,14 +110,6 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String Id
-      {
-         get
-         {
-            return WObj.getId();
-         }
-      }
-
       public System.Int32 ChildElementCount
       {
          get
@@ -117,22 +117,34 @@ namespace NHtmlUnit.Html
             return WObj.getChildElementCount();
          }
       }
+// Generating method code for getAttribute
+      public virtual string GetAttribute(string attributeName)
+      {
+         return WObj.getAttribute(attributeName);
+      }
+
 // Generating method code for removeAttribute
       public virtual void RemoveAttribute(string attributeName)
       {
          WObj.removeAttribute(attributeName);
       }
 
+// Generating method code for setAttribute
+      public virtual void SetAttribute(string attributeName, string attributeValue)
+      {
+         WObj.setAttribute(attributeName, attributeValue);
+      }
+
+// Generating method code for setAttributeNode
+      public virtual NHtmlUnit.W3C.Dom.IAttr SetAttributeNode(NHtmlUnit.W3C.Dom.IAttr attribute)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IAttr>(WObj.setAttributeNode((org.w3c.dom.Attr)attribute.WrappedObject));
+      }
+
 // Generating method code for setAttributeNS
       public virtual void SetAttributeNS(string namespaceURI, string qualifiedName, string attributeValue)
       {
          WObj.setAttributeNS(namespaceURI, qualifiedName, attributeValue);
-      }
-
-// Generating method code for getAttribute
-      public virtual string GetAttribute(string attributeName)
-      {
-         return WObj.getAttribute(attributeName);
       }
 
 // Generating method code for getElementsByTagNameNS
@@ -185,12 +197,6 @@ namespace NHtmlUnit.Html
          return WObj.hasAttributeNS(namespaceURI, localName);
       }
 
-// Generating method code for setAttribute
-      public virtual void SetAttribute(string attributeName, string attributeValue)
-      {
-         WObj.setAttribute(attributeName, attributeValue);
-      }
-
 // Generating method code for getAttributeNS
       public virtual string GetAttributeNS(string namespaceURI, string localName)
       {
@@ -207,12 +213,6 @@ namespace NHtmlUnit.Html
       public virtual void SetIdAttributeNS(string namespaceURI, string localName, bool isId)
       {
          WObj.setIdAttributeNS(namespaceURI, localName, isId);
-      }
-
-// Generating method code for setAttributeNode
-      public virtual NHtmlUnit.W3C.Dom.IAttr SetAttributeNode(NHtmlUnit.W3C.Dom.IAttr attribute)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IAttr>(WObj.setAttributeNode((org.w3c.dom.Attr)attribute.WrappedObject));
       }
 
 // Generating method code for setAttributeNodeNS

@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class HashChangeEvent : NHtmlUnit.Javascript.Host.UIEvent
+   public partial class HashChangeEvent : NHtmlUnit.Javascript.Host.Event
    {
       static HashChangeEvent()
       {
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host
       public HashChangeEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent()) {}
 
-      public HashChangeEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, string oldUrl, string newUrl)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, oldUrl, newUrl)) {}
+      public HashChangeEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, string oldURL, string newURL)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, oldURL, newURL)) {}
 
 
       public System.Object OldURL
@@ -45,6 +45,12 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getNewURL();
          }
       }
+// Generating method code for initHashChangeEvent
+      public virtual void InitHashChangeEvent(string type, bool bubbles, bool cancelable, string oldURL, string newURL)
+      {
+         WObj.initHashChangeEvent(type, bubbles, cancelable, oldURL, newURL);
+      }
+
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -54,12 +54,12 @@ namespace NHtmlUnit
       }
 
 
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_10
+      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_11
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_10);
+               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_11);
          }
       }
 
@@ -80,6 +80,14 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric, features)) {}
 
 
+      public System.Single BrowserVersionNumeric
+      {
+         get
+         {
+            return WObj.getBrowserVersionNumeric();
+         }
+      }
+
       public System.String ApplicationVersion
       {
          get
@@ -93,11 +101,11 @@ namespace NHtmlUnit
 
       }
 
-      public System.Single BrowserVersionNumeric
+      public System.String Nickname
       {
          get
          {
-            return WObj.getBrowserVersionNumeric();
+            return WObj.getNickname();
          }
       }
 
@@ -112,14 +120,6 @@ namespace NHtmlUnit
             WObj.setApplicationName(value);
          }
 
-      }
-
-      public System.String Nickname
-      {
-         get
-         {
-            return WObj.getNickname();
-         }
       }
 
       public System.String UserAgent
@@ -157,6 +157,19 @@ namespace NHtmlUnit
          set
          {
             WObj.setApplicationMinorVersion(value);
+         }
+
+      }
+
+      public System.String Vendor
+      {
+         get
+         {
+            return WObj.getVendor();
+         }
+         set
+         {
+            WObj.setVendor(value);
          }
 
       }
@@ -226,6 +239,14 @@ namespace NHtmlUnit
 
       }
 
+      public System.String BuildId
+      {
+         get
+         {
+            return WObj.getBuildId();
+         }
+      }
+
       public System.String HtmlAcceptHeader
       {
          get
@@ -265,6 +286,32 @@ namespace NHtmlUnit
 
       }
 
+      public System.String ScriptAcceptHeader
+      {
+         get
+         {
+            return WObj.getScriptAcceptHeader();
+         }
+         set
+         {
+            WObj.setScriptAcceptHeader(value);
+         }
+
+      }
+
+      public System.String XmlHttpRequestAcceptHeader
+      {
+         get
+         {
+            return WObj.getXmlHttpRequestAcceptHeader();
+         }
+         set
+         {
+            WObj.setXmlHttpRequestAcceptHeader(value);
+         }
+
+      }
+
       public ICollection<NHtmlUnit.PluginConfiguration> Plugins
       {
          get
@@ -273,14 +320,6 @@ namespace NHtmlUnit
                WObj.getPlugins());
          }
        }
-
-      public System.String ScriptAcceptHeader
-      {
-         get
-         {
-            return WObj.getScriptAcceptHeader();
-         }
-      }
 // Generating method code for isIE
       public virtual bool IsIE()
       {
@@ -293,10 +332,10 @@ namespace NHtmlUnit
          return WObj.isFirefox();
       }
 
-// Generating method code for isChrome
-      public virtual bool IsChrome()
+// Generating method code for hasFeature
+      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
       {
-         return WObj.isChrome();
+         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
       }
 
 // Generating method code for isOnLine
@@ -311,10 +350,10 @@ namespace NHtmlUnit
          return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(WObj.clone());
       }
 
-// Generating method code for hasFeature
-      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
+// Generating method code for isChrome
+      public virtual bool IsChrome()
       {
-         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+         return WObj.isChrome();
       }
 
    }

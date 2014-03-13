@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,16 +30,6 @@ namespace NHtmlUnit.Javascript.Host.Xml
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
 
 
-      public NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError ParseError
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDOMParseError>(
-               WObj.getParseError());
-         }
-      }
-
-
       public System.Boolean Async
       {
          get
@@ -52,30 +42,10 @@ namespace NHtmlUnit.Javascript.Host.Xml
          }
 
       }
-
-      public System.Boolean PreserveWhiteSpace
-      {
-         get
-         {
-            return WObj.getPreserveWhiteSpace();
-         }
-         set
-         {
-            WObj.setPreserveWhiteSpace(value);
-         }
-
-      }
 // Generating method code for loadXML
       public virtual bool LoadXML(string strXML)
       {
          return WObj.loadXML(strXML);
-      }
-
-// Generating method code for selectNodes
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> SelectNodes(string expression)
-      {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.selectNodes(expression));
       }
 
 // Generating method code for load
@@ -84,34 +54,10 @@ namespace NHtmlUnit.Javascript.Host.Xml
          return WObj.load(xmlSource);
       }
 
-// Generating method code for setProperty
-      public virtual void SetProperty(string name, string value)
-      {
-         WObj.setProperty(name, value);
-      }
-
-// Generating method code for getProperty
-      public virtual string GetProperty(string name)
-      {
-         return WObj.getProperty(name);
-      }
-
-// Generating method code for selectSingleNode
-      public virtual object SelectSingleNode(string expression)
-      {
-         return WObj.selectSingleNode(expression);
-      }
-
 // Generating method code for getElementById
       public virtual object GetElementById(string id)
       {
          return WObj.getElementById(id);
-      }
-
-// Generating method code for nodeFromID
-      public virtual object NodeFromID(string id)
-      {
-         return WObj.nodeFromID(id);
       }
 
 // Generating method code for createProcessingInstruction
@@ -124,12 +70,6 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public virtual object CreateCDATASection(string data)
       {
          return WObj.createCDATASection(data);
-      }
-
-// Generating method code for createNode
-      public virtual object CreateNode(object type, string name, object namespaceURI)
-      {
-         return WObj.createNode(type, name, namespaceURI);
       }
 
    }

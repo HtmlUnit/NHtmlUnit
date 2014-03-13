@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,14 @@ namespace NHtmlUnit.Html
          : this(new com.gargoylesoftware.htmlunit.html.DomProcessingInstruction((com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, target, data)) {}
 
 
+      public System.String Target
+      {
+         get
+         {
+            return WObj.getTarget();
+         }
+      }
+
       public System.String Data
       {
          get
@@ -38,14 +46,6 @@ namespace NHtmlUnit.Html
             WObj.setData(value);
          }
 
-      }
-
-      public System.String Target
-      {
-         get
-         {
-            return WObj.getTarget();
-         }
       }
    }
 

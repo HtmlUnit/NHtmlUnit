@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -35,6 +35,19 @@ namespace NHtmlUnit.Javascript.Host.Html
                WObj.getElements());
          }
        }
+
+      public System.String Enctype
+      {
+         get
+         {
+            return WObj.getEnctype();
+         }
+         set
+         {
+            WObj.setEnctype(value);
+         }
+
+      }
 
       public System.String Target
       {

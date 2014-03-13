@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,6 +33,21 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, proxyHost, proxyPort)) {}
 
 
+      public NHtmlUnit.Javascript.JavaScriptEngine JavaScriptEngine
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.JavaScriptEngine>(
+               WObj.getJavaScriptEngine());
+         }
+         set
+         {
+            WObj.setJavaScriptEngine((com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine)value.WrappedObject);
+         }
+
+      }
+
+
       public NHtmlUnit.BrowserVersion BrowserVersion
       {
          get
@@ -40,6 +55,21 @@ namespace NHtmlUnit
             return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
                WObj.getBrowserVersion());
          }
+      }
+
+
+      public NHtmlUnit.AjaxController AjaxController
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.AjaxController>(
+               WObj.getAjaxController());
+         }
+         set
+         {
+            WObj.setAjaxController((com.gargoylesoftware.htmlunit.AjaxController)value.WrappedObject);
+         }
+
       }
 
 
@@ -78,21 +108,6 @@ namespace NHtmlUnit
          set
          {
             WObj.setCurrentWindow((com.gargoylesoftware.htmlunit.WebWindow)value.WrappedObject);
-         }
-
-      }
-
-
-      public NHtmlUnit.Javascript.JavaScriptEngine JavaScriptEngine
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.JavaScriptEngine>(
-               WObj.getJavaScriptEngine());
-         }
-         set
-         {
-            WObj.setJavaScriptEngine((com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine)value.WrappedObject);
          }
 
       }
@@ -201,6 +216,16 @@ namespace NHtmlUnit
 
       }
 
+      public NHtmlUnit.Activex.Javascript.Msxml.MSXMLActiveXObjectFactory MSXMLActiveXObjectFactory
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.MSXMLActiveXObjectFactory>(
+               WObj.getMSXMLActiveXObjectFactory());
+         }
+      }
+
+
       public java.util.Map ActiveXObjectMap
       {
          get
@@ -307,21 +332,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.AjaxController AjaxController
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.AjaxController>(
-               WObj.getAjaxController());
-         }
-         set
-         {
-            WObj.setAjaxController((com.gargoylesoftware.htmlunit.AjaxController)value.WrappedObject);
-         }
-
-      }
-
-
       public NHtmlUnit.IScriptPreProcessor ScriptPreProcessor
       {
          get
@@ -412,6 +422,12 @@ namespace NHtmlUnit
 
       }
 
+// Generating method code for loadWebResponse
+      public virtual NHtmlUnit.WebResponse LoadWebResponse(NHtmlUnit.WebRequest webRequest)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.loadWebResponse((com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject));
+      }
+
 // Generating method code for registerWebWindow
       public virtual void RegisterWebWindow(NHtmlUnit.IWebWindow webWindow)
       {
@@ -452,12 +468,6 @@ namespace NHtmlUnit
       public virtual NHtmlUnit.IWebWindow OpenWindow(java.net.URL url, string windowName)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.openWindow(url, windowName));
-      }
-
-// Generating method code for loadWebResponse
-      public virtual NHtmlUnit.WebResponse LoadWebResponse(NHtmlUnit.WebRequest webRequest)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.loadWebResponse((com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject));
       }
 
 // Generating method code for throwFailingHttpStatusCodeExceptionIfNecessary

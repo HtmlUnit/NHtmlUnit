@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLEmbedElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLEmbedElement()) {}
 
+
+      public System.String Align
+      {
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
+
+      public System.String HeightString
+      {
+         get
+         {
+            return WObj.getHeightString();
+         }
+         set
+         {
+            WObj.setHeightString(value);
+         }
+
+      }
+
+      public System.String WidthString
+      {
+         get
+         {
+            return WObj.getWidthString();
+         }
+         set
+         {
+            WObj.setWidthString(value);
+         }
+
+      }
    }
 
 

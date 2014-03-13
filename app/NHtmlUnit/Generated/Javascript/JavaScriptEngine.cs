@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -66,6 +66,18 @@ namespace NHtmlUnit.Javascript
          }
       }
 
+// Generating method code for getJavaScriptClass
+      public virtual java.lang.Class GetJavaScriptClass(java.lang.Class c)
+      {
+         return WObj.getJavaScriptClass(c);
+      }
+
+// Generating method code for callFunction
+      public virtual object CallFunction(NHtmlUnit.Html.HtmlPage htmlPage, net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args)
+      {
+         return WObj.callFunction((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, function, scope, thisObject, args);
+      }
+
 // Generating method code for processPostponedActions
       public virtual void ProcessPostponedActions()
       {
@@ -112,18 +124,6 @@ namespace NHtmlUnit.Javascript
       public virtual net.sourceforge.htmlunit.corejs.javascript.Script Compile(NHtmlUnit.Html.HtmlPage htmlPage, string sourceCode, string sourceName, int startLine)
       {
          return WObj.compile((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, sourceCode, sourceName, startLine);
-      }
-
-// Generating method code for getJavaScriptClass
-      public virtual java.lang.Class GetJavaScriptClass(java.lang.Class c)
-      {
-         return WObj.getJavaScriptClass(c);
-      }
-
-// Generating method code for callFunction
-      public virtual object CallFunction(NHtmlUnit.Html.HtmlPage htmlPage, net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args)
-      {
-         return WObj.callFunction((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, function, scope, thisObject, args);
       }
 
 // Generating method code for initialize

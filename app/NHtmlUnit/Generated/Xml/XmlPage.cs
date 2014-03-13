@@ -1,4 +1,4 @@
-// Generated class v2.13.0.0, don't modify
+// Generated class v2.14.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,9 @@ namespace NHtmlUnit.Xml
       {
          get { return (com.gargoylesoftware.htmlunit.xml.XmlPage)WrappedObject; }
       }
+
+      public XmlPage(NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow enclosingWindow, bool ignoreSAXException, bool handleXHTMLAsHTML)
+         : this(new com.gargoylesoftware.htmlunit.xml.XmlPage((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject, ignoreSAXException, handleXHTMLAsHTML)) {}
 
       public XmlPage(NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow enclosingWindow)
          : this(new com.gargoylesoftware.htmlunit.xml.XmlPage((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
