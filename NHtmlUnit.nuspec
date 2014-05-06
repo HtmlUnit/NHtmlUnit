@@ -10,11 +10,11 @@
     <projectUrl>https://github.com/HtmlUnit/NHtmlUnit</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NHtmlUnit is a .NET wrapper of HtmlUnit; a "GUI-less browser for Java programs". It allows you to write code to test web applications with a headless, automated browser.</description>
-    <releaseNotes>Updated to version 2.14.0.0 of HtmlUnit.</releaseNotes>
+    <releaseNotes>Updated to version 7.4.5196 of IKVM.</releaseNotes>
     <copyright>Copyright © OKB AS 2014</copyright>
     <tags>testing htmlunit nhtmlunit headless browser</tags>
     <dependencies>
-        <dependency id="IKVM" version="7.3.4830.0" />
+        <dependency id="IKVM" version="7.4.5196" />
     </dependencies>
     <frameworkAssemblies />
     <references />
