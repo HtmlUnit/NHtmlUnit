@@ -1,7 +1,7 @@
 ﻿#region License
 
 // --------------------------------------------------
-// Copyright © 2003-2011 OKB. All Rights Reserved.
+// Copyright © OKB. All Rights Reserved.
 // 
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
@@ -79,8 +79,8 @@ namespace NHtmlUnit.Generator
                 returnTypeIsWrapped = Repository.TypeIsWrapped(TargetMethodInfo.ReturnType);
 
                 returnTypeName = returnTypeIsWrapped
-                                     ? Repository.GetTargetFullName(TargetMethodInfo.ReturnType)
-                                     : TargetMethodInfo.ReturnType.FullName;
+                    ? Repository.GetTargetFullName(TargetMethodInfo.ReturnType)
+                    : TargetMethodInfo.ReturnType.FullName;
 
                 if (!returnTypeIsWrapped)
                 {
@@ -96,16 +96,13 @@ namespace NHtmlUnit.Generator
             // Change from camelCase to UpperCamelCase
 
             string origName = TargetMethodInfo.Name;
-            string transformedName =
-                origName.Substring(0, 1).ToUpper() + origName.Substring(1);
+            string transformedName = origName.Substring(0, 1).ToUpper() + origName.Substring(1);
 
             // Check for condition where a method name has same name as property
             if (transformedName == ClassInfo.TargetNameWithoutNamespace)
             {
                 if (transformedName == "Cache")
                     transformedName = "AddToCache";
-                else
-                    transformedName = transformedName;
             }
 
             // No "public" prefix on interface definition
@@ -132,7 +129,8 @@ namespace NHtmlUnit.Generator
                     sb.Append(", ");
                 firstParameter = false;
 
-                sb.AppendFormat("{0} {1}", mp.ParameterTypeName, mp.ParameterName);
+                var parameterTypeName = mp.ParameterTypeName.Replace('+', '.');
+                sb.AppendFormat("{0} {1}", parameterTypeName, mp.ParameterName);
             }
             sb.Append(")");
 
@@ -155,8 +153,10 @@ namespace NHtmlUnit.Generator
                     firstParameter = false;
 
                     if (mp.IsWrapped)
+                    {
                         functionCallSb.AppendFormat(
                             "({0}){1}.WrappedObject", mp.ParameterType.FullName, mp.ParameterName);
+                    }
                     else
                         functionCallSb.Append(mp.ParameterName);
                 }
