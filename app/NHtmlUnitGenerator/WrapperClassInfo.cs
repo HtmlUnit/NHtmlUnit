@@ -460,7 +460,9 @@ using System.Text;";
                 {
                     if (method.Name.StartsWith("get")
                         && method.ReturnType != typeof(void)
-                        && method.GetParameters().Length == 0)
+                        && method.GetParameters().Length == 0
+                        // We can't convert methods to properties that will cause the property to have the same name as the type.
+                        && method.Name.Substring(3) != type.Name)
                     {
                         GetWrapperPropInfoFor(Properties, method.Name.Substring(3)).GetterMethod = method;
                         wrappedAsProperty = true;
