@@ -1,4 +1,4 @@
-// Generated class v2.14.0.0, don't modify
+// Generated class v2.14.1.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -182,6 +182,12 @@ namespace NHtmlUnit
          }
       }
 
+// Generating method code for isHtmlPage
+      public virtual bool IsHtmlPage()
+      {
+         return WObj.isHtmlPage();
+      }
+
 // Generating method code for cleanUp
       public virtual void CleanUp()
       {
@@ -290,12 +296,6 @@ namespace NHtmlUnit
       public virtual NHtmlUnit.W3C.Dom.IProcessingInstruction CreateProcessingInstruction(string arg0, string arg1)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IProcessingInstruction>(WObj.createProcessingInstruction(arg0, arg1));
-      }
-
-// Generating method code for isHtmlPage
-      public virtual bool IsHtmlPage()
-      {
-         return WObj.isHtmlPage();
       }
 
 // Generating method code for createDomDocumentFragment

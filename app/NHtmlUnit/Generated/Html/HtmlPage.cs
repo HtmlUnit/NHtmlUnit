@@ -1,4 +1,4 @@
-// Generated class v2.14.0.0, don't modify
+// Generated class v2.14.1.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,23 @@ namespace NHtmlUnit.Html
       public HtmlPage(java.net.URL originatingUrl, NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow)
          : this(new com.gargoylesoftware.htmlunit.html.HtmlPage(originatingUrl, (com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
 
+
+      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
+               WObj.getSelectionRanges());
+         }
+       }
+
+      public java.util.Map Namespaces
+      {
+         get
+         {
+            return WObj.getNamespaces();
+         }
+      }
 
       public NHtmlUnit.Html.HtmlElement FocusedElement
       {
@@ -114,23 +131,12 @@ namespace NHtmlUnit.Html
          }
 
       }
-
-      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
+// Generating method code for save
+      public virtual void Save(java.io.File file)
       {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
-               WObj.getSelectionRanges());
-         }
-       }
-
-      public java.util.Map Namespaces
-      {
-         get
-         {
-            return WObj.getNamespaces();
-         }
+         WObj.save(file);
       }
+
 // Generating method code for isQuirksMode
       public virtual bool IsQuirksMode()
       {
@@ -318,12 +324,6 @@ namespace NHtmlUnit.Html
       public virtual void WriteInParsedStream(string stringArg)
       {
          WObj.writeInParsedStream(stringArg);
-      }
-
-// Generating method code for save
-      public virtual void Save(java.io.File file)
-      {
-         WObj.save(file);
       }
 
    }

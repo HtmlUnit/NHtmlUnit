@@ -1,4 +1,4 @@
-// Generated class v2.14.0.0, don't modify
+// Generated class v2.14.1.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -21,56 +21,6 @@ namespace NHtmlUnit
       public com.gargoylesoftware.htmlunit.BrowserVersion WObj
       {
          get { return (com.gargoylesoftware.htmlunit.BrowserVersion)WrappedObject; }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion FIREFOX_17
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_17);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_8
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_8);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_9
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_9);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_11
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_11);
-         }
-      }
-
-
-      public static NHtmlUnit.BrowserVersion CHROME
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               com.gargoylesoftware.htmlunit.BrowserVersion.CHROME);
-         }
       }
 
       public BrowserVersion(string applicationName, string applicationVersion, string userAgent, System.Single browserVersionNumeric)

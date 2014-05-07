@@ -1,4 +1,4 @@
-// Generated class v2.14.0.0, don't modify
+// Generated class v2.14.1.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,71 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
+
+      public System.Int32 TabIndex
+      {
+         get
+         {
+            return WObj.getTabIndex();
+         }
+         set
+         {
+            WObj.setTabIndex(value);
+         }
+
+      }
+
+      public System.String AccessKey
+      {
+         get
+         {
+            return WObj.getAccessKey();
+         }
+         set
+         {
+            WObj.setAccessKey(value);
+         }
+
+      }
+
+      public System.Int32 ClientLeft
+      {
+         get
+         {
+            return WObj.getClientLeft();
+         }
+      }
+
+      public System.Int32 ClientTop
+      {
+         get
+         {
+            return WObj.getClientTop();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMStringMap>(
+               WObj.getDataset());
+         }
+      }
+
+
+      public System.Object Onsubmit
+      {
+         get
+         {
+            return WObj.getOnsubmit();
+         }
+         set
+         {
+            WObj.setOnsubmit(value);
+         }
+
+      }
 
       public System.Int32 PosX
       {
@@ -461,71 +526,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-
-      public System.Int32 TabIndex
+// Generating method code for doScroll
+      public virtual void DoScroll(string scrollAction)
       {
-         get
-         {
-            return WObj.getTabIndex();
-         }
-         set
-         {
-            WObj.setTabIndex(value);
-         }
-
+         WObj.doScroll(scrollAction);
       }
 
-      public System.String AccessKey
-      {
-         get
-         {
-            return WObj.getAccessKey();
-         }
-         set
-         {
-            WObj.setAccessKey(value);
-         }
-
-      }
-
-      public System.Int32 ClientLeft
-      {
-         get
-         {
-            return WObj.getClientLeft();
-         }
-      }
-
-      public System.Int32 ClientTop
-      {
-         get
-         {
-            return WObj.getClientTop();
-         }
-      }
-
-      public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMStringMap>(
-               WObj.getDataset());
-         }
-      }
-
-
-      public System.Object Onsubmit
-      {
-         get
-         {
-            return WObj.getOnsubmit();
-         }
-         set
-         {
-            WObj.setOnsubmit(value);
-         }
-
-      }
 // Generating method code for setActive
       public virtual void SetActive()
       {
@@ -719,10 +725,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.click();
       }
 
-// Generating method code for doScroll
-      public virtual void DoScroll(string scrollAction)
+// Generating method code for getOnchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
       {
-         WObj.doScroll(scrollAction);
+         return WObj.getOnchange();
+      }
+
+// Generating method code for setOnchange
+      public virtual void SetOnchange(object onchange)
+      {
+         WObj.setOnchange(onchange);
       }
 
 // Generating method code for getInnerHTML
@@ -735,18 +747,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetInnerHTML(object value)
       {
          WObj.setInnerHTML(value);
-      }
-
-// Generating method code for getOnchange
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
-      {
-         return WObj.getOnchange();
-      }
-
-// Generating method code for setOnchange
-      public virtual void SetOnchange(object onchange)
-      {
-         WObj.setOnchange(onchange);
       }
 
    }

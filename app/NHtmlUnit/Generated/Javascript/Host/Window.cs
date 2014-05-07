@@ -1,4 +1,4 @@
-// Generated class v2.14.0.0, don't modify
+// Generated class v2.14.1.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,61 @@ namespace NHtmlUnit.Javascript.Host
       public Window()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
+
+      public System.Int32 PageXOffset
+      {
+         get
+         {
+            return WObj.getPageXOffset();
+         }
+      }
+
+      public System.Int32 PageYOffset
+      {
+         get
+         {
+            return WObj.getPageYOffset();
+         }
+      }
+
+      public System.Int32 ScrollX
+      {
+         get
+         {
+            return WObj.getScrollX();
+         }
+      }
+
+      public System.Int32 ScrollY
+      {
+         get
+         {
+            return WObj.getScrollY();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Netscape Netscape
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Netscape>(
+               WObj.getNetscape());
+         }
+      }
+
+
+      public System.Object Onchange
+      {
+         get
+         {
+            return WObj.getOnchange();
+         }
+         set
+         {
+            WObj.setOnchange(value);
+         }
+
+      }
 
       public NHtmlUnit.IWebWindow WebWindow
       {
@@ -480,61 +535,18 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getMozPaintCount();
          }
       }
-
-      public System.Int32 PageXOffset
+// Generating method code for stop
+      public virtual void Stop()
       {
-         get
-         {
-            return WObj.getPageXOffset();
-         }
+         WObj.stop();
       }
 
-      public System.Int32 PageYOffset
+// Generating method code for postMessage
+      public virtual void PostMessage(string message, string targetOrigin)
       {
-         get
-         {
-            return WObj.getPageYOffset();
-         }
+         WObj.postMessage(message, targetOrigin);
       }
 
-      public System.Int32 ScrollX
-      {
-         get
-         {
-            return WObj.getScrollX();
-         }
-      }
-
-      public System.Int32 ScrollY
-      {
-         get
-         {
-            return WObj.getScrollY();
-         }
-      }
-
-      public NHtmlUnit.Javascript.Host.Netscape Netscape
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Netscape>(
-               WObj.getNetscape());
-         }
-      }
-
-
-      public System.Object Onchange
-      {
-         get
-         {
-            return WObj.getOnchange();
-         }
-         set
-         {
-            WObj.setOnchange(value);
-         }
-
-      }
 // Generating method code for getPrototype
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
       {
@@ -833,18 +845,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual int ScriptEngineMinorVersion()
       {
          return WObj.ScriptEngineMinorVersion();
-      }
-
-// Generating method code for stop
-      public virtual void Stop()
-      {
-         WObj.stop();
-      }
-
-// Generating method code for postMessage
-      public virtual void PostMessage(string message, string targetOrigin)
-      {
-         WObj.postMessage(message, targetOrigin);
       }
 
 // Generating method code for getLocation
