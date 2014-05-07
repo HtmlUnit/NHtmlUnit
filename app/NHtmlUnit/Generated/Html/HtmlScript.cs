@@ -24,19 +24,19 @@ namespace NHtmlUnit.Html
       }
 
 
-      public System.String SrcAttribute
-      {
-         get
-         {
-            return WObj.getSrcAttribute();
-         }
-      }
-
       public System.String DeferAttribute
       {
          get
          {
             return WObj.getDeferAttribute();
+         }
+      }
+
+      public System.String SrcAttribute
+      {
+         get
+         {
+            return WObj.getSrcAttribute();
          }
       }
 

@@ -875,19 +875,6 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
-      public System.String Width
-      {
-         get
-         {
-            return WObj.getWidth();
-         }
-         set
-         {
-            WObj.setWidth(value);
-         }
-
-      }
-
       public System.String Bottom
       {
          get
@@ -949,6 +936,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setTop(value);
+         }
+
+      }
+
+      public System.String Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+         set
+         {
+            WObj.setWidth(value);
          }
 
       }

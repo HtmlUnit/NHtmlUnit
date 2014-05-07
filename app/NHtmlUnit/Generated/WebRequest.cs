@@ -33,19 +33,6 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebRequest(url, acceptHeader)) {}
 
 
-      public System.String Charset
-      {
-         get
-         {
-            return WObj.getCharset();
-         }
-         set
-         {
-            WObj.setCharset(value);
-         }
-
-      }
-
       public java.net.URL Url
       {
          get
@@ -55,6 +42,19 @@ namespace NHtmlUnit
          set
          {
             WObj.setUrl(value);
+         }
+
+      }
+
+      public System.String Charset
+      {
+         get
+         {
+            return WObj.getCharset();
+         }
+         set
+         {
+            WObj.setCharset(value);
          }
 
       }

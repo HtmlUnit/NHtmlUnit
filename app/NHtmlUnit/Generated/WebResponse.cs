@@ -30,28 +30,11 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebResponse((com.gargoylesoftware.htmlunit.WebResponseData)responseData.WrappedObject, url, (com.gargoylesoftware.htmlunit.HttpMethod)requestMethod.WrappedObject, loadTime)) {}
 
 
-      public java.io.InputStream ContentAsStream
+      public System.String ContentAsString
       {
          get
          {
-            return WObj.getContentAsStream();
-         }
-      }
-
-      public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.Util.NameValuePair>(
-               WObj.getResponseHeaders());
-         }
-       }
-
-      public System.String ContentCharsetOrNull
-      {
-         get
-         {
-            return WObj.getContentCharsetOrNull();
+            return WObj.getContentAsString();
          }
       }
 
@@ -73,14 +56,6 @@ namespace NHtmlUnit
       }
 
 
-      public System.String ContentCharset
-      {
-         get
-         {
-            return WObj.getContentCharset();
-         }
-      }
-
       public System.Int32 StatusCode
       {
          get
@@ -97,11 +72,36 @@ namespace NHtmlUnit
          }
       }
 
-      public System.String ContentAsString
+      public IList<NHtmlUnit.Util.NameValuePair> ResponseHeaders
       {
          get
          {
-            return WObj.getContentAsString();
+            return new ListWrapper<NHtmlUnit.Util.NameValuePair>(
+               WObj.getResponseHeaders());
+         }
+       }
+
+      public java.io.InputStream ContentAsStream
+      {
+         get
+         {
+            return WObj.getContentAsStream();
+         }
+      }
+
+      public System.String ContentCharsetOrNull
+      {
+         get
+         {
+            return WObj.getContentCharsetOrNull();
+         }
+      }
+
+      public System.String ContentCharset
+      {
+         get
+         {
+            return WObj.getContentCharset();
          }
       }
 
