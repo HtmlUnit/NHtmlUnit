@@ -1,3 +1,5 @@
-@ECHO OFF
+@echo off
 echo Performing some hardcore file system nuking!
-FOR /R . %%X IN (bin obj) DO RD /S /Q "%%X" 2> NUL
+for /r /d %%x in (bin obj) do (
+    echo "%%~fx" | find "tools">nul || rd /s /q "%%x" 2>nul
+)
