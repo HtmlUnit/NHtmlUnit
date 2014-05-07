@@ -1,7 +1,7 @@
 ﻿#region License
 
 // --------------------------------------------------
-// Copyright © 2003-2011 OKB. All Rights Reserved.
+// Copyright © OKB. All Rights Reserved.
 // 
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -28,6 +29,7 @@ using org.w3c.dom;
 
 using sun.reflect.generics.reflectiveObjects;
 
+using Exception = System.Exception;
 using NotImplementedException = System.NotImplementedException;
 using Object = System.Object;
 using Random = System.Random;
@@ -51,7 +53,7 @@ namespace NHtmlUnit.Generator
                 { "org.w3c.dom.", "W3C.Dom." },
             };
 
-            Settings.Default.Whaat = new Random().Next().ToString();
+            Settings.Default.Whaat = new Random().Next().ToString(CultureInfo.InvariantCulture);
             Settings.Default.Save();
 
             UsedTypes = new HashSet<Type>();
@@ -125,7 +127,7 @@ namespace NHtmlUnit.Generator
                 new ListTypeMapEntry(
                     targetType, typeof(Iterable), "IEnumerable", "IterableWrapper", "ShallowIterableWrapper"),
                 new ListTypeMapEntry(
-                    targetType, typeof(NodeList), "IList", "NodeListWrapper", "SHALLOW NODELIST NOT SUPPORTED!"),
+                    targetType, typeof(NodeList), "IList", "NodeListWrapper", "SHALLOW NODELIST NOT SUPPORTED!")
                 //new ListTypeMapEntry(
                 //    targetType, typeof(Map), "IDictionary", "MapWrapper", "ShallowMapWrapper"),
             };
@@ -137,6 +139,21 @@ namespace NHtmlUnit.Generator
         public string EncodeListType(Type wrappedType)
         {
             return "ListWrapper<" + GetWrapperClassName(wrappedType) + ">";
+        }
+
+
+        public void GenerateAssemblyInfo()
+        {
+            const string assemblyInfoTemplatePath = @"..\..\Templates\GlobalAssemblyInfo.cs.template";
+            const string assemblyInfoPath = @"..\..\..\GlobalAssemblyInfo.cs";
+            string template = File.ReadAllText(assemblyInfoTemplatePath);
+
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+
+            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
+
+            File.WriteAllText(assemblyInfoPath, assemblyInfo);
         }
 
 
@@ -167,7 +184,7 @@ namespace NHtmlUnit.Generator
                             allAssemblyTypes.Values.Where(t => t.IsSubclassOf(wci.WrappedType) && t.IsPublic)
                                 .Where(TypeIsWrapped))
                     {
-                        if (inheritedType.GetCustomAttributes(typeof(ObsoleteAttribute), true).Count() == 0
+                        if (!inheritedType.GetCustomAttributes(typeof(ObsoleteAttribute), true).Any()
                             && !UsedTypes.Contains(inheritedType))
                             UsedTypes.Add(inheritedType);
                     }
@@ -194,6 +211,21 @@ namespace NHtmlUnit.Generator
         }
 
 
+        public void GenerateNuspec()
+        {
+            const string nuspecTemplatePath = @"..\..\Templates\NHtmlUnit.nuspec.template";
+            const string nuspecPath = @"..\..\..\..\NHtmlUnit.nuspec";
+            string template = File.ReadAllText(nuspecTemplatePath);
+
+            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
+            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+
+            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
+
+            File.WriteAllText(nuspecPath, assemblyInfo);
+        }
+
+
         public void GenerateUntilDone(params Type[] rootTypes)
         {
             foreach (Type t in rootTypes)
@@ -214,11 +246,7 @@ namespace NHtmlUnit.Generator
                 return wpi.PropertyType.DeclaringType;
             string fullPropName = wpi.FullNameDest;
 
-            Type listType;
-
-            string listTypeName;
-
-            listType = LoadListTypeForProperty(fullPropName);
+            Type listType = LoadListTypeForProperty(fullPropName);
 
             if (listType != null)
                 return listType;
@@ -236,14 +264,8 @@ namespace NHtmlUnit.Generator
                     .Where(mi => mi.Name.StartsWith(singularGetNameStart))
                     .Where(mi => mi.Name.Length > singularGetNameStart.Length)
                     .Select(mi => mi.ReturnType)
-                    .FirstOrDefault();
-
-                if (guessedReturnType == null)
-                {
-                    // Try to find type from name
-                    guessedReturnType = TargetAssembly.GetTypes()
-                        .Where(t => t.Name == "Html" + singularName || t.Name == singularName).FirstOrDefault();
-                }
+                    .FirstOrDefault() ?? TargetAssembly.GetTypes()
+                        .FirstOrDefault(t => t.Name == "Html" + singularName || t.Name == singularName);
 
                 if (guessedReturnType != null)
                 {
@@ -386,11 +408,49 @@ namespace NHtmlUnit.Generator
             if (type.FullName == null)
                 throw new ArgumentException("type");
 
-            bool translationOk = Translations
-                                     .Where(trans => type.FullName.StartsWith(trans.Key)).Count() > 0;
+            bool translationOk = Translations.Any(trans => type.FullName.StartsWith(trans.Key));
 
             return /* type.Assembly == TargetAssembly && */ translationOk
                                                             && !type.IsNested /* && !type.IsInterface */&& !type.IsArray;
+        }
+
+
+        /// <summary>
+        /// Helper function that gets the corresponding Java Method class for MethodInfo
+        /// </summary>
+        /// <param name="methodInfo">The method info.</param>
+        /// <returns></returns>
+        private static Method GetJavaMethod(MethodInfo methodInfo)
+        {
+            var javaClass = Util.getFriendlyClassFromType(methodInfo.DeclaringType);
+            Method javaMethod = null;
+
+            try
+            {
+                if (javaClass != null)
+                {
+                    var matchingMethods = javaClass.getMethods()
+                        .Where(m => m.getName() == methodInfo.Name &&
+                                    m.getReturnType() == (Class)methodInfo.ReturnType &&
+                                    m.getParameterTypes().SequenceEqual(
+                                        methodInfo.GetParameters().Select(pi => (Class)pi.ParameterType)))
+                        .ToArray();
+
+                    if (matchingMethods.Length > 1)
+                    {
+                        throw new NotImplementedException(
+                            "Found multiple Method matches for MethodInfo, filtering not strict enough!");
+                    }
+
+                    javaMethod = matchingMethods.FirstOrDefault();
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+            }
+
+            return javaMethod;
         }
 
 
@@ -439,41 +499,6 @@ namespace NHtmlUnit.Generator
         }
 
 
-        /// <summary>
-        /// Helper function that gets the corresponding Java Method class for MethodInfo
-        /// </summary>
-        /// <param name="methodInfo">The method info.</param>
-        /// <returns></returns>
-        private Method GetJavaMethod(MethodInfo methodInfo)
-        {
-            var javaClass = Util.getFriendlyClassFromType(methodInfo.DeclaringType);
-            Method javaMethod = null;
-
-            if (javaClass != null)
-            {
-                var matchingMethods = javaClass
-                    .getMethods()
-                    .Where(
-                        m =>
-                        m.getName() == methodInfo.Name &&
-                        m.getReturnType() == (Class)methodInfo.ReturnType &&
-                        m.getParameterTypes().SequenceEqual(
-                            methodInfo.GetParameters().Select(pi => (Class)pi.ParameterType)))
-                    .ToArray();
-
-                if (matchingMethods.Length > 1)
-                {
-                    throw new NotImplementedException(
-                        "Found multiple Method matches for MethodInfo, filtering not strict enough!");
-                }
-
-                javaMethod = matchingMethods.FirstOrDefault();
-            }
-
-            return javaMethod;
-        }
-
-
         private Type GetListTypeFor(string fullMemberName)
         {
             Type listType = null;
@@ -494,7 +519,7 @@ namespace NHtmlUnit.Generator
 
                         if (listType != null)
                         {
-                            var confString = fullMemberName + ":" + listType.FullName;
+                            // var confString = fullMemberName + ":" + listType.FullName;
                             Settings.Default.ListTypes.Add(fullMemberName + ":" + listType.FullName);
                             Settings.Default.Save();
                         }
@@ -518,8 +543,8 @@ namespace NHtmlUnit.Generator
             if (isInterface)
             {
                 relativeClassName = relativeClassName == null
-                                        ? "I"
-                                        : relativeClassName.Insert(relativeClassName.LastIndexOf('.') + 1, "I");
+                    ? "I"
+                    : relativeClassName.Insert(relativeClassName.LastIndexOf('.') + 1, "I");
             }
 
             if (relativeClassName == null)
@@ -559,37 +584,6 @@ namespace NHtmlUnit.Generator
             }
 
             return listType;
-        }
-
-
-        public void GenerateAssemblyInfo()
-        {
-            const string assemblyInfoTemplatePath = @"..\..\Templates\GlobalAssemblyInfo.cs.template";
-            const string assemblyInfoPath = @"..\..\..\GlobalAssemblyInfo.cs";
-            string template = File.ReadAllText(assemblyInfoTemplatePath);
-            
-            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
-            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
-
-            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
-
-            File.WriteAllText(assemblyInfoPath,assemblyInfo);
-
-        }
-
-
-        public void GenerateNuspec()
-        {
-            const string nuspecTemplatePath = @"..\..\Templates\NHtmlUnit.nuspec.template";
-            const string nuspecPath = @"..\..\..\..\NHtmlUnit.nuspec";
-            string template = File.ReadAllText(nuspecTemplatePath);
-
-            Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
-            string htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
-
-            string assemblyInfo = string.Format(template, DateTime.Now.Year, htmlUnitVersion);
-
-            File.WriteAllText(nuspecPath, assemblyInfo);
         }
     }
 }
