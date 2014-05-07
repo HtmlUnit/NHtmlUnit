@@ -1,7 +1,7 @@
 ﻿#region License
 
 // --------------------------------------------------
-// Copyright © 2003-2011 OKB. All Rights Reserved.
+// Copyright © OKB. All Rights Reserved.
 // 
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
@@ -23,12 +23,12 @@ namespace NHtmlUnit.Generator
     public class WrapperClassInfo
     {
         private readonly List<WrapperConstructorInfo> constructors;
+        private readonly string htmlUnitVersion;
         private readonly Dictionary<string, WrapperMethodInfo> methods;
         private readonly Dictionary<string, WrapperPropInfo> properties;
         private readonly List<WrapperStaticPublicField> staticPublicFields;
         private readonly Type wrappedType;
         private readonly WrapperRepository wrapperRepository;
-        private readonly string htmlUnitVersion; 
 
 
         public WrapperClassInfo(Type wrappedFromType, WrapperRepository wrapperRepository)
@@ -41,7 +41,7 @@ namespace NHtmlUnit.Generator
             this.staticPublicFields = new List<WrapperStaticPublicField>();
             ScanMembers(wrappedFromType);
             Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
-            htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+            this.htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
         }
 
 
@@ -176,36 +176,13 @@ namespace NHtmlUnit.Generator
             foreach (var wc in Constructors)
                 wc.GenerateConstructorCode(sb);
 
-            foreach (var wpi in Properties.Where(x => ShouldMapAsProperty(x)))
+            foreach (var wpi in Properties.Where(ShouldMapAsProperty))
                 wpi.Value.GeneratePropertyCode(sb);
 
             foreach (var wm in Methods)
                 wm.Value.GenerateMethodCode(sb);
 
             GeneratePartialClassFooter(sb);
-        }
-
-
-        private bool ShouldMapAsProperty(KeyValuePair<string, WrapperPropInfo> x)
-        {
-            if (x.Value.GetterMethod == null)
-            {
-                //TODO: Consider this. When method identified as property has no GetterMethod, the SetterMethod is neither mapped as property or method. [TM]
-                //if (!Methods.ContainsKey(x.Value.SetterMethod.ToString()))
-                //    Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
-                return false;
-            }
-
-            if (x.Value.SetterMethod != null
-                && x.Value.GetterMethod.ReturnType != x.Value.SetterMethod.GetParameters().First().ParameterType)
-            {
-                Methods.Add(x.Value.GetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.GetterMethod));
-                Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
-
-                return false;
-            }
-
-            return true;
         }
 
 
@@ -225,8 +202,7 @@ namespace NHtmlUnit.Generator
                 baseInterfaceString.Append(Repository.GetTargetFullName(baseInterface));
             }
 
-            var fileFmt =
-                @"// Wrapper for {5}
+            const string fileFmt = @"// Wrapper for {5}
 {0}
 
 namespace {1}
@@ -238,7 +214,7 @@ namespace {1}
 }}
 ";
             var namespaceIncludes =
-                @"// Generated class v" + htmlUnitVersion + @", don't modify
+                @"// Generated class v" + this.htmlUnitVersion + @", don't modify
 
 using System;
 using System.Collections.Generic;
@@ -247,7 +223,6 @@ using System.Linq;
 using System.Text;
 
 ";
-
 
             var body = new StringBuilder();
 
@@ -261,14 +236,13 @@ using System.Text;
                     wm.Value.GenerateMethodCode(body);
             }
 
-            sb.AppendFormat(
-                fileFmt,
-                namespaceIncludes,
-                TargetNamespace,
-                TargetNameWithoutNamespace,
-                baseInterfaceString,
-                body,
-                WrappedType.FullName);
+            sb.AppendFormat(fileFmt,
+                            namespaceIncludes,
+                            TargetNamespace,
+                            TargetNameWithoutNamespace,
+                            baseInterfaceString,
+                            body,
+                            WrappedType.FullName);
         }
 
 
@@ -293,7 +267,7 @@ using System.Text;
         }
 
 
-        public bool HasNamespaceEntryForType(Type PropertyType)
+        public bool HasNamespaceEntryForType(Type propertyType)
         {
             const string namespaceListText =
                 @"using System;
@@ -309,7 +283,7 @@ using System.Text;";
                 .Where(s => (!String.IsNullOrWhiteSpace(s)))
                 .Concat(new[] { TargetNamespace }).ToList();
 
-            return nameSpaceList.Contains(PropertyType.Namespace);
+            return nameSpaceList.Contains(propertyType.Namespace);
         }
 
 
@@ -344,8 +318,8 @@ using System.Text;";
 
         private void GeneratePartialClassHeader(StringBuilder sb, bool isUserFile)
         {
-            
-            sb.AppendLine("// Generated class v" + htmlUnitVersion + (isUserFile ? ", can be modified" : ", don't modify"));
+            sb.AppendLine("// Generated class v" + this.htmlUnitVersion
+                          + (isUserFile ? ", can be modified" : ", don't modify"));
             sb.AppendLine();
             if (!isUserFile)
             {
@@ -359,7 +333,7 @@ using System.Text;";
             sb.Append("namespace ");
             sb.AppendLine(TargetNamespace);
             sb.AppendLine("{");
-            
+
             var interfaceList = new StringBuilder();
 
             if (isUserFile)
@@ -430,12 +404,13 @@ using System.Text;";
 
                 var conflictingMethods = methodsOfNewInterfaces
                     .Where(m => wmi.TargetMethodInfo.Name == m.Name)
-                    .Where(m => IsMethodSignatureCastable(m, wmi.TargetMethodInfo));
+                    .Where(m => IsMethodSignatureCastable(m, wmi.TargetMethodInfo))
+                    .ToArray();
 
                 foreach (var cm in conflictingMethods)
                     Console.WriteLine("Conflicting method: " + cm);
 
-                if (conflictingMethods.Count() > 0)
+                if (conflictingMethods.Any())
                     throw new InvalidOperationException();
             }
 
@@ -443,14 +418,14 @@ using System.Text;";
 
             IEnumerable<MethodInfo> nonObsoleteMethods = type
                 .GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly)
-                .Where(mi => (mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Count() == 0))
+                .Where(mi => (!mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Any()))
                 .Where(mi => (!mi.Name.Contains("<")))
                 // TODO: Support methods with weird names that starts with "<bridge>"
-                .Where(
-                    mi => (type.BaseType != null
-                               ? type.BaseType.GetMethod(
-                                   mi.Name, mi.GetParameters().Select(pi => pi.ParameterType).ToArray()) == null
-                               : true));
+                .Where(mi =>
+                           (type.BaseType == null
+                            || type.BaseType.GetMethod(mi.Name,
+                                                       mi.GetParameters().Select(pi => pi.ParameterType).ToArray())
+                            == null));
 
             foreach (MethodInfo method in nonObsoleteMethods)
             {
@@ -485,7 +460,7 @@ using System.Text;";
                 // Extract constructors
                 var nonObsoletePublicConstructors = type
                     .GetConstructors()
-                    .Where(mi => (mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Count() == 0))
+                    .Where(mi => (!mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Any()))
                     .Where(mi => mi.DeclaringType == type)
                     .Where(mi => !mi.IsAbstract);
 
@@ -497,11 +472,34 @@ using System.Text;";
 
             var publicStaticFields = type
                 .GetFields(BindingFlags.Public | BindingFlags.Static)
-                .Where(mi => (mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Count() == 0))
+                .Where(mi => (!mi.GetCustomAttributes(typeof(ObsoleteAttribute), true).Any()))
                 .Where(f => !f.FieldType.IsInterface);
 
             foreach (var field in publicStaticFields)
                 StaticPublicFields.Add(new WrapperStaticPublicField(this, field));
+        }
+
+
+        private bool ShouldMapAsProperty(KeyValuePair<string, WrapperPropInfo> x)
+        {
+            if (x.Value.GetterMethod == null)
+            {
+                //TODO: Consider this. When method identified as property has no GetterMethod, the SetterMethod is neither mapped as property or method. [TM]
+                //if (!Methods.ContainsKey(x.Value.SetterMethod.ToString()))
+                //    Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
+                return false;
+            }
+
+            if (x.Value.SetterMethod != null
+                && x.Value.GetterMethod.ReturnType != x.Value.SetterMethod.GetParameters().First().ParameterType)
+            {
+                Methods.Add(x.Value.GetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.GetterMethod));
+                Methods.Add(x.Value.SetterMethod.ToString(), new WrapperMethodInfo(this, x.Value.SetterMethod));
+
+                return false;
+            }
+
+            return true;
         }
     }
 }

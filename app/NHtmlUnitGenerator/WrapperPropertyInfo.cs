@@ -1,7 +1,7 @@
 ﻿#region License
 
 // --------------------------------------------------
-// Copyright © 2003-2011 OKB. All Rights Reserved.
+// Copyright © OKB. All Rights Reserved.
 // 
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
@@ -18,12 +18,13 @@ namespace NHtmlUnit.Generator
     public class WrapperPropInfo
     {
         private readonly WrapperClassInfo classInfo;
+        private readonly string name;
         private readonly WrapperRepository repository;
 
 
         public WrapperPropInfo(WrapperClassInfo wci, string propName, WrapperRepository wrapperRepository)
         {
-            Name = propName;
+            this.name = propName;
             this.classInfo = wci;
             this.repository = wrapperRepository;
         }
@@ -51,7 +52,10 @@ namespace NHtmlUnit.Generator
             get { return SetterMethod == null; }
         }
 
-        public string Name { get; private set; }
+        public string Name
+        {
+            get { return this.name; }
+        }
 
         public Type PropertyType
         {
@@ -155,8 +159,6 @@ namespace NHtmlUnit.Generator
 
             var validMapping = WrapperRepository.GetValidMapping(targetType);
 
-            string getBody = string.Empty;
-
             if (validMapping != null)
             {
                 Type collectionType = Repository.GetMethodReturnListType(GetterMethod);
@@ -174,8 +176,8 @@ namespace NHtmlUnit.Generator
                         Repository.MarkUsageOfType(collectionType);
 
                     string collectionTypeName = Repository.TypeIsWrapped(collectionType)
-                                                    ? Repository.GetTargetFullName(collectionType)
-                                                    : collectionType.FullName;
+                        ? Repository.GetTargetFullName(collectionType)
+                        : collectionType.FullName;
 
                     if (ClassInfo.IsInterface)
                     {
@@ -184,8 +186,7 @@ namespace NHtmlUnit.Generator
                     }
                     else
                     {
-                        getBody =
-                            @"
+                        const string getBody = @"
       public {0}<{1}> {2}
       {{
          get
@@ -202,8 +203,8 @@ namespace NHtmlUnit.Generator
                             /* {1} */ collectionTypeName,
                             /* {2} */ Name,
                             /* {3} */ Repository.TypeIsWrapped(collectionType)
-                                          ? validMapping.FullWrapperName
-                                          : validMapping.ShallowWrapperName,
+                                ? validMapping.FullWrapperName
+                                : validMapping.ShallowWrapperName,
                             /* {4} */ GetterMethod.Name);
                     }
                 }
@@ -216,8 +217,8 @@ namespace NHtmlUnit.Generator
                     Repository.MarkUsageOfType(PropertyType);
 
                 string typeName = propTypeIsWrapped
-                                      ? Repository.GetTargetFullName(PropertyType)
-                                      : PropertyType.FullName;
+                    ? Repository.GetTargetFullName(PropertyType)
+                    : PropertyType.FullName;
 
                 if (ClassInfo.IsInterface)
                 {
@@ -257,8 +258,8 @@ namespace NHtmlUnit.Generator
                             /* {1} */ Name,
                             /* {2} */ GetterMethod.Name,
                             /* {3} */ SetterMethod != null
-                                          ? string.Format(setterBodyTemplate, SetterMethod.Name)
-                                          : string.Empty);
+                                ? string.Format(setterBodyTemplate, SetterMethod.Name)
+                                : string.Empty);
                     }
                     else
                     {
@@ -289,8 +290,8 @@ namespace NHtmlUnit.Generator
                             /* {1} */ Name,
                             /* {2} */ GetterMethod.Name,
                             /* {3} */ SetterMethod != null
-                                          ? string.Format(setterBodyTemplate, SetterMethod.Name, PropertyType.FullName)
-                                          : string.Empty);
+                                ? string.Format(setterBodyTemplate, SetterMethod.Name, PropertyType.FullName)
+                                : string.Empty);
                     }
                 }
             }
