@@ -13,12 +13,12 @@ namespace NHtmlUnit.Html
 {
    public interface ISubmittableElement : NHtmlUnit.IObjectWrapper
    {
-      com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs  { get; }
       System.String DefaultValue { get; set; }
-// Generating method code for reset
-      void Reset();
+      com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs  { get; }
 // Generating method code for isDefaultChecked
       bool IsDefaultChecked();
+// Generating method code for reset
+      void Reset();
 
    }
 }

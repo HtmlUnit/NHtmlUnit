@@ -9,7 +9,7 @@ echo There will be a lot of warnings; these can be safely ignored.
 echo.
 echo.
 
-set JAVAC="C:\Program Files\Java\jdk1.7.0_55\bin\javac.exe"
+set JAVAC="C:\Program Files\Java\jdk1.7.0_60\bin\javac.exe"
 set IKVM=..\..\tools\ikvm-7.4.5196.0\bin
 set IKVMC="%IKVM%\ikvmc.exe"
 set IKVMSTUB="%IKVM%\ikvmstub.exe"

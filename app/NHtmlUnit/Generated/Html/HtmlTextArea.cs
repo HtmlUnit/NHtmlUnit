@@ -188,12 +188,12 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public ICollection<System.String> PreviousNames
+      public ICollection<System.String> NewNames
       {
          get
          {
             return new ShallowCollectionWrapper<System.String>(
-               WObj.getPreviousNames());
+               WObj.getNewNames());
          }
        }
 // Generating method code for reset

@@ -32,6 +32,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public javax.imageio.ImageReader ImageReader
+      {
+         get
+         {
+            return WObj.getImageReader();
+         }
+      }
+
       public System.String UseMapAttribute
       {
          get
@@ -45,14 +53,6 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getIsmapAttribute();
-         }
-      }
-
-      public javax.imageio.ImageReader ImageReader
-      {
-         get
-         {
-            return WObj.getImageReader();
          }
       }
 

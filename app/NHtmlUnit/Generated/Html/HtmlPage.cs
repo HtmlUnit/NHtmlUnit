@@ -27,23 +27,6 @@ namespace NHtmlUnit.Html
          : this(new com.gargoylesoftware.htmlunit.html.HtmlPage(originatingUrl, (com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
 
 
-      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
-               WObj.getSelectionRanges());
-         }
-       }
-
-      public java.util.Map Namespaces
-      {
-         get
-         {
-            return WObj.getNamespaces();
-         }
-      }
-
       public NHtmlUnit.Html.HtmlElement FocusedElement
       {
          get
@@ -131,12 +114,23 @@ namespace NHtmlUnit.Html
          }
 
       }
-// Generating method code for save
-      public virtual void Save(java.io.File file)
-      {
-         WObj.save(file);
-      }
 
+      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
+               WObj.getSelectionRanges());
+         }
+       }
+
+      public java.util.Map Namespaces
+      {
+         get
+         {
+            return WObj.getNamespaces();
+         }
+      }
 // Generating method code for isQuirksMode
       public virtual bool IsQuirksMode()
       {
@@ -155,16 +149,16 @@ namespace NHtmlUnit.Html
          return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject);
       }
 
-// Generating method code for executeJavaScriptIfPossible
-      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
-      }
-
 // Generating method code for getResolvedTarget
       public virtual string GetResolvedTarget(string elementTarget)
       {
          return WObj.getResolvedTarget(elementTarget);
+      }
+
+// Generating method code for executeJavaScriptIfPossible
+      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
       }
 
 // Generating method code for getHtmlElementById
@@ -324,6 +318,12 @@ namespace NHtmlUnit.Html
       public virtual void WriteInParsedStream(string stringArg)
       {
          WObj.writeInParsedStream(stringArg);
+      }
+
+// Generating method code for save
+      public virtual void Save(java.io.File file)
+      {
+         WObj.save(file);
       }
 
    }

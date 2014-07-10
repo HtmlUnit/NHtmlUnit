@@ -717,6 +717,7 @@
     <Compile Include="Generated\Svg\SvgVKern.cs" />
     <Compile Include="Generated\TopLevelWindow.cs" />
     <Compile Include="Generated\Util\Cookie.cs" />
+    <Compile Include="Generated\Util\KeyDataPair.cs" />
     <Compile Include="Generated\Util\NameValuePair.cs" />
     <Compile Include="Generated\Util\WebResponseWrapper.cs" />
     <Compile Include="Generated\W3C\Dom\Css\ICSSStyleDeclaration.cs" />

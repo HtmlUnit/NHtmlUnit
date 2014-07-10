@@ -27,71 +27,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
 
-      public System.Int32 TabIndex
-      {
-         get
-         {
-            return WObj.getTabIndex();
-         }
-         set
-         {
-            WObj.setTabIndex(value);
-         }
-
-      }
-
-      public System.String AccessKey
-      {
-         get
-         {
-            return WObj.getAccessKey();
-         }
-         set
-         {
-            WObj.setAccessKey(value);
-         }
-
-      }
-
-      public System.Int32 ClientLeft
-      {
-         get
-         {
-            return WObj.getClientLeft();
-         }
-      }
-
-      public System.Int32 ClientTop
-      {
-         get
-         {
-            return WObj.getClientTop();
-         }
-      }
-
-      public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMStringMap>(
-               WObj.getDataset());
-         }
-      }
-
-
-      public System.Object Onsubmit
-      {
-         get
-         {
-            return WObj.getOnsubmit();
-         }
-         set
-         {
-            WObj.setOnsubmit(value);
-         }
-
-      }
-
       public System.Int32 PosX
       {
          get
@@ -293,19 +228,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setInnerText(value);
-         }
-
-      }
-
-      public System.String OuterHTML
-      {
-         get
-         {
-            return WObj.getOuterHTML();
-         }
-         set
-         {
-            WObj.setOuterHTML(value);
          }
 
       }
@@ -526,12 +448,71 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-// Generating method code for doScroll
-      public virtual void DoScroll(string scrollAction)
+
+      public System.Int32 TabIndex
       {
-         WObj.doScroll(scrollAction);
+         get
+         {
+            return WObj.getTabIndex();
+         }
+         set
+         {
+            WObj.setTabIndex(value);
+         }
+
       }
 
+      public System.String AccessKey
+      {
+         get
+         {
+            return WObj.getAccessKey();
+         }
+         set
+         {
+            WObj.setAccessKey(value);
+         }
+
+      }
+
+      public System.Int32 ClientLeft
+      {
+         get
+         {
+            return WObj.getClientLeft();
+         }
+      }
+
+      public System.Int32 ClientTop
+      {
+         get
+         {
+            return WObj.getClientTop();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMStringMap>(
+               WObj.getDataset());
+         }
+      }
+
+
+      public System.Object Onsubmit
+      {
+         get
+         {
+            return WObj.getOnsubmit();
+         }
+         set
+         {
+            WObj.setOnsubmit(value);
+         }
+
+      }
 // Generating method code for setActive
       public virtual void SetActive()
       {
@@ -725,16 +706,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.click();
       }
 
-// Generating method code for getOnchange
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
+// Generating method code for doScroll
+      public virtual void DoScroll(string scrollAction)
       {
-         return WObj.getOnchange();
-      }
-
-// Generating method code for setOnchange
-      public virtual void SetOnchange(object onchange)
-      {
-         WObj.setOnchange(onchange);
+         WObj.doScroll(scrollAction);
       }
 
 // Generating method code for getInnerHTML
@@ -747,6 +722,30 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetInnerHTML(object value)
       {
          WObj.setInnerHTML(value);
+      }
+
+// Generating method code for getOuterHTML
+      public virtual string GetOuterHTML()
+      {
+         return WObj.getOuterHTML();
+      }
+
+// Generating method code for setOuterHTML
+      public virtual void SetOuterHTML(object value)
+      {
+         WObj.setOuterHTML(value);
+      }
+
+// Generating method code for getOnchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnchange()
+      {
+         return WObj.getOnchange();
+      }
+
+// Generating method code for setOnchange
+      public virtual void SetOnchange(object onchange)
+      {
+         WObj.setOnchange(onchange);
       }
 
    }
