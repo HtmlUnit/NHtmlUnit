@@ -30,6 +30,84 @@ namespace NHtmlUnit.Javascript.Host.Css
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject)) {}
 
 
+      public System.String Padding
+      {
+         get
+         {
+            return WObj.getPadding();
+         }
+         set
+         {
+            WObj.setPadding(value);
+         }
+
+      }
+
+      public System.String PaddingBottom
+      {
+         get
+         {
+            return WObj.getPaddingBottom();
+         }
+         set
+         {
+            WObj.setPaddingBottom(value);
+         }
+
+      }
+
+      public System.String PaddingLeft
+      {
+         get
+         {
+            return WObj.getPaddingLeft();
+         }
+         set
+         {
+            WObj.setPaddingLeft(value);
+         }
+
+      }
+
+      public System.String PaddingRight
+      {
+         get
+         {
+            return WObj.getPaddingRight();
+         }
+         set
+         {
+            WObj.setPaddingRight(value);
+         }
+
+      }
+
+      public System.String PaddingTop
+      {
+         get
+         {
+            return WObj.getPaddingTop();
+         }
+         set
+         {
+            WObj.setPaddingTop(value);
+         }
+
+      }
+
+      public System.String Page
+      {
+         get
+         {
+            return WObj.getPage();
+         }
+         set
+         {
+            WObj.setPage(value);
+         }
+
+      }
+
       public System.String PageBreakAfter
       {
          get
@@ -784,6 +862,539 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
+      public System.String Display
+      {
+         get
+         {
+            return WObj.getDisplay();
+         }
+         set
+         {
+            WObj.setDisplay(value);
+         }
+
+      }
+
+      public System.String Bottom
+      {
+         get
+         {
+            return WObj.getBottom();
+         }
+         set
+         {
+            WObj.setBottom(value);
+         }
+
+      }
+
+      public System.String Height
+      {
+         get
+         {
+            return WObj.getHeight();
+         }
+         set
+         {
+            WObj.setHeight(value);
+         }
+
+      }
+
+      public System.String Left
+      {
+         get
+         {
+            return WObj.getLeft();
+         }
+         set
+         {
+            WObj.setLeft(value);
+         }
+
+      }
+
+      public System.String Right
+      {
+         get
+         {
+            return WObj.getRight();
+         }
+         set
+         {
+            WObj.setRight(value);
+         }
+
+      }
+
+      public System.String Top
+      {
+         get
+         {
+            return WObj.getTop();
+         }
+         set
+         {
+            WObj.setTop(value);
+         }
+
+      }
+
+      public System.String Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+         set
+         {
+            WObj.setWidth(value);
+         }
+
+      }
+
+      public System.String Accelerator
+      {
+         get
+         {
+            return WObj.getAccelerator();
+         }
+         set
+         {
+            WObj.setAccelerator(value);
+         }
+
+      }
+
+      public System.String Background
+      {
+         get
+         {
+            return WObj.getBackground();
+         }
+         set
+         {
+            WObj.setBackground(value);
+         }
+
+      }
+
+      public System.String BackgroundAttachment
+      {
+         get
+         {
+            return WObj.getBackgroundAttachment();
+         }
+         set
+         {
+            WObj.setBackgroundAttachment(value);
+         }
+
+      }
+
+      public System.String BackgroundColor
+      {
+         get
+         {
+            return WObj.getBackgroundColor();
+         }
+         set
+         {
+            WObj.setBackgroundColor(value);
+         }
+
+      }
+
+      public System.String BackgroundImage
+      {
+         get
+         {
+            return WObj.getBackgroundImage();
+         }
+         set
+         {
+            WObj.setBackgroundImage(value);
+         }
+
+      }
+
+      public System.String BackgroundPosition
+      {
+         get
+         {
+            return WObj.getBackgroundPosition();
+         }
+         set
+         {
+            WObj.setBackgroundPosition(value);
+         }
+
+      }
+
+      public System.String BackgroundPositionX
+      {
+         get
+         {
+            return WObj.getBackgroundPositionX();
+         }
+         set
+         {
+            WObj.setBackgroundPositionX(value);
+         }
+
+      }
+
+      public System.String BackgroundPositionY
+      {
+         get
+         {
+            return WObj.getBackgroundPositionY();
+         }
+         set
+         {
+            WObj.setBackgroundPositionY(value);
+         }
+
+      }
+
+      public System.String BackgroundRepeat
+      {
+         get
+         {
+            return WObj.getBackgroundRepeat();
+         }
+         set
+         {
+            WObj.setBackgroundRepeat(value);
+         }
+
+      }
+
+      public System.String Behavior
+      {
+         get
+         {
+            return WObj.getBehavior();
+         }
+         set
+         {
+            WObj.setBehavior(value);
+         }
+
+      }
+
+      public System.String Border
+      {
+         get
+         {
+            return WObj.getBorder();
+         }
+         set
+         {
+            WObj.setBorder(value);
+         }
+
+      }
+
+      public System.String BorderBottom
+      {
+         get
+         {
+            return WObj.getBorderBottom();
+         }
+         set
+         {
+            WObj.setBorderBottom(value);
+         }
+
+      }
+
+      public System.String BorderBottomColor
+      {
+         get
+         {
+            return WObj.getBorderBottomColor();
+         }
+         set
+         {
+            WObj.setBorderBottomColor(value);
+         }
+
+      }
+
+      public System.String BorderBottomStyle
+      {
+         get
+         {
+            return WObj.getBorderBottomStyle();
+         }
+         set
+         {
+            WObj.setBorderBottomStyle(value);
+         }
+
+      }
+
+      public System.String BorderBottomWidth
+      {
+         get
+         {
+            return WObj.getBorderBottomWidth();
+         }
+         set
+         {
+            WObj.setBorderBottomWidth(value);
+         }
+
+      }
+
+      public System.String BorderCollapse
+      {
+         get
+         {
+            return WObj.getBorderCollapse();
+         }
+         set
+         {
+            WObj.setBorderCollapse(value);
+         }
+
+      }
+
+      public System.String BorderColor
+      {
+         get
+         {
+            return WObj.getBorderColor();
+         }
+         set
+         {
+            WObj.setBorderColor(value);
+         }
+
+      }
+
+      public System.String BorderLeft
+      {
+         get
+         {
+            return WObj.getBorderLeft();
+         }
+         set
+         {
+            WObj.setBorderLeft(value);
+         }
+
+      }
+
+      public System.String BorderLeftColor
+      {
+         get
+         {
+            return WObj.getBorderLeftColor();
+         }
+         set
+         {
+            WObj.setBorderLeftColor(value);
+         }
+
+      }
+
+      public System.String BorderLeftStyle
+      {
+         get
+         {
+            return WObj.getBorderLeftStyle();
+         }
+         set
+         {
+            WObj.setBorderLeftStyle(value);
+         }
+
+      }
+
+      public System.String BorderLeftWidth
+      {
+         get
+         {
+            return WObj.getBorderLeftWidth();
+         }
+         set
+         {
+            WObj.setBorderLeftWidth(value);
+         }
+
+      }
+
+      public System.String BorderRight
+      {
+         get
+         {
+            return WObj.getBorderRight();
+         }
+         set
+         {
+            WObj.setBorderRight(value);
+         }
+
+      }
+
+      public System.String BorderRightColor
+      {
+         get
+         {
+            return WObj.getBorderRightColor();
+         }
+         set
+         {
+            WObj.setBorderRightColor(value);
+         }
+
+      }
+
+      public System.String BorderRightStyle
+      {
+         get
+         {
+            return WObj.getBorderRightStyle();
+         }
+         set
+         {
+            WObj.setBorderRightStyle(value);
+         }
+
+      }
+
+      public System.String BorderRightWidth
+      {
+         get
+         {
+            return WObj.getBorderRightWidth();
+         }
+         set
+         {
+            WObj.setBorderRightWidth(value);
+         }
+
+      }
+
+      public System.String BorderSpacing
+      {
+         get
+         {
+            return WObj.getBorderSpacing();
+         }
+         set
+         {
+            WObj.setBorderSpacing(value);
+         }
+
+      }
+
+      public System.String BorderStyle
+      {
+         get
+         {
+            return WObj.getBorderStyle();
+         }
+         set
+         {
+            WObj.setBorderStyle(value);
+         }
+
+      }
+
+      public System.String BorderTop
+      {
+         get
+         {
+            return WObj.getBorderTop();
+         }
+         set
+         {
+            WObj.setBorderTop(value);
+         }
+
+      }
+
+      public System.String BorderTopColor
+      {
+         get
+         {
+            return WObj.getBorderTopColor();
+         }
+         set
+         {
+            WObj.setBorderTopColor(value);
+         }
+
+      }
+
+      public System.String BorderTopStyle
+      {
+         get
+         {
+            return WObj.getBorderTopStyle();
+         }
+         set
+         {
+            WObj.setBorderTopStyle(value);
+         }
+
+      }
+
+      public System.String BorderTopWidth
+      {
+         get
+         {
+            return WObj.getBorderTopWidth();
+         }
+         set
+         {
+            WObj.setBorderTopWidth(value);
+         }
+
+      }
+
+      public System.String BorderWidth
+      {
+         get
+         {
+            return WObj.getBorderWidth();
+         }
+         set
+         {
+            WObj.setBorderWidth(value);
+         }
+
+      }
+
+      public System.String BoxSizing
+      {
+         get
+         {
+            return WObj.getBoxSizing();
+         }
+         set
+         {
+            WObj.setBoxSizing(value);
+         }
+
+      }
+
+      public System.String CaptionSide
+      {
+         get
+         {
+            return WObj.getCaptionSide();
+         }
+         set
+         {
+            WObj.setCaptionSide(value);
+         }
+
+      }
+
       public System.String Clear
       {
          get
@@ -910,19 +1521,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setDirection(value);
-         }
-
-      }
-
-      public System.String Display
-      {
-         get
-         {
-            return WObj.getDisplay();
-         }
-         set
-         {
-            WObj.setDisplay(value);
          }
 
       }
@@ -1516,604 +2114,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setOverflowY(value);
-         }
-
-      }
-
-      public System.String Padding
-      {
-         get
-         {
-            return WObj.getPadding();
-         }
-         set
-         {
-            WObj.setPadding(value);
-         }
-
-      }
-
-      public System.String PaddingBottom
-      {
-         get
-         {
-            return WObj.getPaddingBottom();
-         }
-         set
-         {
-            WObj.setPaddingBottom(value);
-         }
-
-      }
-
-      public System.String PaddingLeft
-      {
-         get
-         {
-            return WObj.getPaddingLeft();
-         }
-         set
-         {
-            WObj.setPaddingLeft(value);
-         }
-
-      }
-
-      public System.String PaddingRight
-      {
-         get
-         {
-            return WObj.getPaddingRight();
-         }
-         set
-         {
-            WObj.setPaddingRight(value);
-         }
-
-      }
-
-      public System.String PaddingTop
-      {
-         get
-         {
-            return WObj.getPaddingTop();
-         }
-         set
-         {
-            WObj.setPaddingTop(value);
-         }
-
-      }
-
-      public System.String Page
-      {
-         get
-         {
-            return WObj.getPage();
-         }
-         set
-         {
-            WObj.setPage(value);
-         }
-
-      }
-
-      public System.String Bottom
-      {
-         get
-         {
-            return WObj.getBottom();
-         }
-         set
-         {
-            WObj.setBottom(value);
-         }
-
-      }
-
-      public System.String Height
-      {
-         get
-         {
-            return WObj.getHeight();
-         }
-         set
-         {
-            WObj.setHeight(value);
-         }
-
-      }
-
-      public System.String Left
-      {
-         get
-         {
-            return WObj.getLeft();
-         }
-         set
-         {
-            WObj.setLeft(value);
-         }
-
-      }
-
-      public System.String Right
-      {
-         get
-         {
-            return WObj.getRight();
-         }
-         set
-         {
-            WObj.setRight(value);
-         }
-
-      }
-
-      public System.String Top
-      {
-         get
-         {
-            return WObj.getTop();
-         }
-         set
-         {
-            WObj.setTop(value);
-         }
-
-      }
-
-      public System.String Width
-      {
-         get
-         {
-            return WObj.getWidth();
-         }
-         set
-         {
-            WObj.setWidth(value);
-         }
-
-      }
-
-      public System.String Accelerator
-      {
-         get
-         {
-            return WObj.getAccelerator();
-         }
-         set
-         {
-            WObj.setAccelerator(value);
-         }
-
-      }
-
-      public System.String Background
-      {
-         get
-         {
-            return WObj.getBackground();
-         }
-         set
-         {
-            WObj.setBackground(value);
-         }
-
-      }
-
-      public System.String BackgroundAttachment
-      {
-         get
-         {
-            return WObj.getBackgroundAttachment();
-         }
-         set
-         {
-            WObj.setBackgroundAttachment(value);
-         }
-
-      }
-
-      public System.String BackgroundColor
-      {
-         get
-         {
-            return WObj.getBackgroundColor();
-         }
-         set
-         {
-            WObj.setBackgroundColor(value);
-         }
-
-      }
-
-      public System.String BackgroundImage
-      {
-         get
-         {
-            return WObj.getBackgroundImage();
-         }
-         set
-         {
-            WObj.setBackgroundImage(value);
-         }
-
-      }
-
-      public System.String BackgroundPosition
-      {
-         get
-         {
-            return WObj.getBackgroundPosition();
-         }
-         set
-         {
-            WObj.setBackgroundPosition(value);
-         }
-
-      }
-
-      public System.String BackgroundPositionX
-      {
-         get
-         {
-            return WObj.getBackgroundPositionX();
-         }
-         set
-         {
-            WObj.setBackgroundPositionX(value);
-         }
-
-      }
-
-      public System.String BackgroundPositionY
-      {
-         get
-         {
-            return WObj.getBackgroundPositionY();
-         }
-         set
-         {
-            WObj.setBackgroundPositionY(value);
-         }
-
-      }
-
-      public System.String BackgroundRepeat
-      {
-         get
-         {
-            return WObj.getBackgroundRepeat();
-         }
-         set
-         {
-            WObj.setBackgroundRepeat(value);
-         }
-
-      }
-
-      public System.String Behavior
-      {
-         get
-         {
-            return WObj.getBehavior();
-         }
-         set
-         {
-            WObj.setBehavior(value);
-         }
-
-      }
-
-      public System.String Border
-      {
-         get
-         {
-            return WObj.getBorder();
-         }
-         set
-         {
-            WObj.setBorder(value);
-         }
-
-      }
-
-      public System.String BorderBottom
-      {
-         get
-         {
-            return WObj.getBorderBottom();
-         }
-         set
-         {
-            WObj.setBorderBottom(value);
-         }
-
-      }
-
-      public System.String BorderBottomColor
-      {
-         get
-         {
-            return WObj.getBorderBottomColor();
-         }
-         set
-         {
-            WObj.setBorderBottomColor(value);
-         }
-
-      }
-
-      public System.String BorderBottomStyle
-      {
-         get
-         {
-            return WObj.getBorderBottomStyle();
-         }
-         set
-         {
-            WObj.setBorderBottomStyle(value);
-         }
-
-      }
-
-      public System.String BorderBottomWidth
-      {
-         get
-         {
-            return WObj.getBorderBottomWidth();
-         }
-         set
-         {
-            WObj.setBorderBottomWidth(value);
-         }
-
-      }
-
-      public System.String BorderCollapse
-      {
-         get
-         {
-            return WObj.getBorderCollapse();
-         }
-         set
-         {
-            WObj.setBorderCollapse(value);
-         }
-
-      }
-
-      public System.String BorderColor
-      {
-         get
-         {
-            return WObj.getBorderColor();
-         }
-         set
-         {
-            WObj.setBorderColor(value);
-         }
-
-      }
-
-      public System.String BorderLeft
-      {
-         get
-         {
-            return WObj.getBorderLeft();
-         }
-         set
-         {
-            WObj.setBorderLeft(value);
-         }
-
-      }
-
-      public System.String BorderLeftColor
-      {
-         get
-         {
-            return WObj.getBorderLeftColor();
-         }
-         set
-         {
-            WObj.setBorderLeftColor(value);
-         }
-
-      }
-
-      public System.String BorderLeftStyle
-      {
-         get
-         {
-            return WObj.getBorderLeftStyle();
-         }
-         set
-         {
-            WObj.setBorderLeftStyle(value);
-         }
-
-      }
-
-      public System.String BorderLeftWidth
-      {
-         get
-         {
-            return WObj.getBorderLeftWidth();
-         }
-         set
-         {
-            WObj.setBorderLeftWidth(value);
-         }
-
-      }
-
-      public System.String BorderRight
-      {
-         get
-         {
-            return WObj.getBorderRight();
-         }
-         set
-         {
-            WObj.setBorderRight(value);
-         }
-
-      }
-
-      public System.String BorderRightColor
-      {
-         get
-         {
-            return WObj.getBorderRightColor();
-         }
-         set
-         {
-            WObj.setBorderRightColor(value);
-         }
-
-      }
-
-      public System.String BorderRightStyle
-      {
-         get
-         {
-            return WObj.getBorderRightStyle();
-         }
-         set
-         {
-            WObj.setBorderRightStyle(value);
-         }
-
-      }
-
-      public System.String BorderRightWidth
-      {
-         get
-         {
-            return WObj.getBorderRightWidth();
-         }
-         set
-         {
-            WObj.setBorderRightWidth(value);
-         }
-
-      }
-
-      public System.String BorderSpacing
-      {
-         get
-         {
-            return WObj.getBorderSpacing();
-         }
-         set
-         {
-            WObj.setBorderSpacing(value);
-         }
-
-      }
-
-      public System.String BorderStyle
-      {
-         get
-         {
-            return WObj.getBorderStyle();
-         }
-         set
-         {
-            WObj.setBorderStyle(value);
-         }
-
-      }
-
-      public System.String BorderTop
-      {
-         get
-         {
-            return WObj.getBorderTop();
-         }
-         set
-         {
-            WObj.setBorderTop(value);
-         }
-
-      }
-
-      public System.String BorderTopColor
-      {
-         get
-         {
-            return WObj.getBorderTopColor();
-         }
-         set
-         {
-            WObj.setBorderTopColor(value);
-         }
-
-      }
-
-      public System.String BorderTopStyle
-      {
-         get
-         {
-            return WObj.getBorderTopStyle();
-         }
-         set
-         {
-            WObj.setBorderTopStyle(value);
-         }
-
-      }
-
-      public System.String BorderTopWidth
-      {
-         get
-         {
-            return WObj.getBorderTopWidth();
-         }
-         set
-         {
-            WObj.setBorderTopWidth(value);
-         }
-
-      }
-
-      public System.String BorderWidth
-      {
-         get
-         {
-            return WObj.getBorderWidth();
-         }
-         set
-         {
-            WObj.setBorderWidth(value);
-         }
-
-      }
-
-      public System.String BoxSizing
-      {
-         get
-         {
-            return WObj.getBoxSizing();
-         }
-         set
-         {
-            WObj.setBoxSizing(value);
-         }
-
-      }
-
-      public System.String CaptionSide
-      {
-         get
-         {
-            return WObj.getCaptionSide();
-         }
-         set
-         {
-            WObj.setCaptionSide(value);
          }
 
       }

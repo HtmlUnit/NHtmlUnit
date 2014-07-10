@@ -26,6 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLUListElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLUListElement()) {}
 
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
+      }
    }
 
 

@@ -126,6 +126,12 @@ namespace NHtmlUnit.Javascript
          return WObj.compile((com.gargoylesoftware.htmlunit.html.HtmlPage)htmlPage.WrappedObject, sourceCode, sourceName, startLine);
       }
 
+// Generating method code for shutdown
+      public virtual void Shutdown()
+      {
+         WObj.shutdown();
+      }
+
 // Generating method code for initialize
       public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
       {
@@ -142,12 +148,6 @@ namespace NHtmlUnit.Javascript
       public virtual int PumpEventLoop(System.Int64 timeoutMillis)
       {
          return WObj.pumpEventLoop(timeoutMillis);
-      }
-
-// Generating method code for shutdownJavaScriptExecutor
-      public virtual void ShutdownJavaScriptExecutor()
-      {
-         WObj.shutdownJavaScriptExecutor();
       }
 
    }

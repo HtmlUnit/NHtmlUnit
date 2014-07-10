@@ -14,6 +14,6 @@ namespace NHtmlUnit.Html
     public partial class HtmlTextInput : NHtmlUnit.Html.Impl.ISelectableTextInput
   
     {
-        public IPage Page { get; private set; }
+        public new IPage Page { get; private set; }
     }
 }

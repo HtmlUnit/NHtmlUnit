@@ -27,61 +27,6 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Window()) {}
 
 
-      public System.Int32 PageXOffset
-      {
-         get
-         {
-            return WObj.getPageXOffset();
-         }
-      }
-
-      public System.Int32 PageYOffset
-      {
-         get
-         {
-            return WObj.getPageYOffset();
-         }
-      }
-
-      public System.Int32 ScrollX
-      {
-         get
-         {
-            return WObj.getScrollX();
-         }
-      }
-
-      public System.Int32 ScrollY
-      {
-         get
-         {
-            return WObj.getScrollY();
-         }
-      }
-
-      public NHtmlUnit.Javascript.Host.Netscape Netscape
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Netscape>(
-               WObj.getNetscape());
-         }
-      }
-
-
-      public System.Object Onchange
-      {
-         get
-         {
-            return WObj.getOnchange();
-         }
-         set
-         {
-            WObj.setOnchange(value);
-         }
-
-      }
-
       public NHtmlUnit.IWebWindow WebWindow
       {
          get
@@ -535,18 +480,61 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getMozPaintCount();
          }
       }
-// Generating method code for stop
-      public virtual void Stop()
+
+      public System.Int32 PageXOffset
       {
-         WObj.stop();
+         get
+         {
+            return WObj.getPageXOffset();
+         }
       }
 
-// Generating method code for postMessage
-      public virtual void PostMessage(string message, string targetOrigin)
+      public System.Int32 PageYOffset
       {
-         WObj.postMessage(message, targetOrigin);
+         get
+         {
+            return WObj.getPageYOffset();
+         }
       }
 
+      public System.Int32 ScrollX
+      {
+         get
+         {
+            return WObj.getScrollX();
+         }
+      }
+
+      public System.Int32 ScrollY
+      {
+         get
+         {
+            return WObj.getScrollY();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Netscape Netscape
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Netscape>(
+               WObj.getNetscape());
+         }
+      }
+
+
+      public System.Object Onchange
+      {
+         get
+         {
+            return WObj.getOnchange();
+         }
+         set
+         {
+            WObj.setOnchange(value);
+         }
+
+      }
 // Generating method code for getPrototype
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
       {
@@ -577,12 +565,6 @@ namespace NHtmlUnit.Javascript.Host
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.getStorage(storageType));
       }
 
-// Generating method code for dispatchEvent
-      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
-      }
-
 // Generating method code for scrollTo
       public virtual void ScrollTo(int x, int y)
       {
@@ -593,6 +575,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual int SetTimeout(object code, int timeout, object language)
       {
          return WObj.setTimeout(code, timeout, language);
+      }
+
+// Generating method code for dispatchEvent
+      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+      {
+         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
       }
 
 // Generating method code for alert
@@ -695,6 +683,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void MoveBy(int x, int y)
       {
          WObj.moveBy(x, y);
+      }
+
+// Generating method code for navigate
+      public virtual void Navigate(string url)
+      {
+         WObj.navigate(url);
       }
 
 // Generating method code for resizeBy
@@ -845,6 +839,18 @@ namespace NHtmlUnit.Javascript.Host
       public virtual int ScriptEngineMinorVersion()
       {
          return WObj.ScriptEngineMinorVersion();
+      }
+
+// Generating method code for stop
+      public virtual void Stop()
+      {
+         WObj.stop();
+      }
+
+// Generating method code for postMessage
+      public virtual void PostMessage(string message, string targetOrigin)
+      {
+         WObj.postMessage(message, targetOrigin);
       }
 
 // Generating method code for getLocation

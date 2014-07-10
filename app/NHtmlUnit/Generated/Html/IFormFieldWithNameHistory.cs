@@ -14,7 +14,7 @@ namespace NHtmlUnit.Html
    public interface IFormFieldWithNameHistory : NHtmlUnit.IObjectWrapper
    {
       System.String OriginalName  { get; }
-      ICollection<System.String> PreviousNames { get; }
+      ICollection<System.String> NewNames { get; }
 
    }
 }

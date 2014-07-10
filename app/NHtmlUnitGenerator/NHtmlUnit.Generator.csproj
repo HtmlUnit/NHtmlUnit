@@ -70,7 +70,8 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlUnit">
+    <Reference Include="HtmlUnit, Version=2.14.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\HtmlUnit\anycpu\HtmlUnit.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.AWT.WinForms, Version=7.4.5196.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">

@@ -171,6 +171,12 @@ namespace NHtmlUnit
          }
       }
 
+// Generating method code for removeChildWindow
+      public virtual void RemoveChildWindow(NHtmlUnit.WebWindowImpl window)
+      {
+         WObj.removeChildWindow((com.gargoylesoftware.htmlunit.WebWindowImpl)window.WrappedObject);
+      }
+
 // Generating method code for addChildWindow
       public virtual void AddChildWindow(NHtmlUnit.Html.FrameWindow child)
       {

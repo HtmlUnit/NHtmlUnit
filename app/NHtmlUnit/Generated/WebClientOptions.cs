@@ -27,6 +27,45 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebClientOptions()) {}
 
 
+      public System.String[] SSLClientProtocols
+      {
+         get
+         {
+            return WObj.getSSLClientProtocols();
+         }
+         set
+         {
+            WObj.setSSLClientProtocols(value);
+         }
+
+      }
+
+      public System.String[] SSLClientCipherSuites
+      {
+         get
+         {
+            return WObj.getSSLClientCipherSuites();
+         }
+         set
+         {
+            WObj.setSSLClientCipherSuites(value);
+         }
+
+      }
+
+      public System.String SSLInsecureProtocol
+      {
+         get
+         {
+            return WObj.getSSLInsecureProtocol();
+         }
+         set
+         {
+            WObj.setSSLInsecureProtocol(value);
+         }
+
+      }
+
       public System.Int32 Timeout
       {
          get
@@ -36,19 +75,6 @@ namespace NHtmlUnit
          set
          {
             WObj.setTimeout(value);
-         }
-
-      }
-
-      public System.String HomePage
-      {
-         get
-         {
-            return WObj.getHomePage();
-         }
-         set
-         {
-            WObj.setHomePage(value);
          }
 
       }
@@ -67,6 +93,19 @@ namespace NHtmlUnit
 
       }
 
+
+      public System.String HomePage
+      {
+         get
+         {
+            return WObj.getHomePage();
+         }
+         set
+         {
+            WObj.setHomePage(value);
+         }
+
+      }
 
       public System.Boolean PrintContentOnFailingStatusCode
       {

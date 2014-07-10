@@ -458,6 +458,12 @@ namespace NHtmlUnit
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, (com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject));
       }
 
+// Generating method code for openTargetWindow
+      public virtual NHtmlUnit.IWebWindow OpenTargetWindow(NHtmlUnit.IWebWindow opener, string windowName, string defaultName)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.openTargetWindow((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, windowName, defaultName));
+      }
+
 // Generating method code for download
       public virtual void Download(NHtmlUnit.IWebWindow requestingWindow, string target, NHtmlUnit.WebRequest request, bool isHashJump, string description)
       {
@@ -516,6 +522,13 @@ namespace NHtmlUnit
       public virtual void CloseAllWindows()
       {
          WObj.closeAllWindows();
+      }
+
+// Generating method code for getCookies
+      public virtual ICollection<NHtmlUnit.Util.Cookie> GetCookies(java.net.URL url)
+      {
+
+         return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
       }
 
 // Generating method code for loadWebResponseInto

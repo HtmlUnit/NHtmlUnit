@@ -35,23 +35,16 @@ namespace NHtmlUnit
                WObj.getCookies());
          }
        }
-// Generating method code for clearExpired
-      public virtual bool ClearExpired(java.util.Date date)
-      {
-         return WObj.clearExpired(date);
-      }
-
 // Generating method code for isCookiesEnabled
       public virtual bool IsCookiesEnabled()
       {
          return WObj.isCookiesEnabled();
       }
 
-// Generating method code for getCookies
-      public virtual ICollection<NHtmlUnit.Util.Cookie> GetCookies(java.net.URL url)
+// Generating method code for clearExpired
+      public virtual bool ClearExpired(java.util.Date date)
       {
-
-         return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
+         return WObj.clearExpired(date);
       }
 
 // Generating method code for getCookie

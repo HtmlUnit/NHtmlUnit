@@ -52,6 +52,19 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public System.String BgColor
+      {
+         get
+         {
+            return WObj.getBgColor();
+         }
+         set
+         {
+            WObj.setBgColor(value);
+         }
+
+      }
 // Generating method code for getVAlign
       public virtual string GetVAlign()
       {

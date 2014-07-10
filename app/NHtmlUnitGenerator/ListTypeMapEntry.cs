@@ -15,7 +15,6 @@ namespace NHtmlUnit.Generator
 {
     public class ListTypeMapEntry
     {
-        private readonly bool containsGenericArgument;
         private readonly Type fromType;
         private readonly string fullWrapperName;
         private readonly string shallowWrapperName;
@@ -34,7 +33,6 @@ namespace NHtmlUnit.Generator
             this.toTypeName = toTypeName;
             this.fullWrapperName = fullWrapperName;
             this.shallowWrapperName = shallowWrapperName;
-            this.containsGenericArgument = this.containsGenericArgument;
         }
 
 
