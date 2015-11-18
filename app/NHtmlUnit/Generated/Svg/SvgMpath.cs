@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,19 +8,19 @@ using System.Text;
 
 namespace NHtmlUnit.Svg
 {
-   public partial class SvgMpath : NHtmlUnit.Svg.SvgElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class SvgMPath : NHtmlUnit.Svg.SvgElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
    {
-      static SvgMpath()
+      static SvgMPath()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.svg.SvgMpath o) =>
-            new SvgMpath(o));
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.svg.SvgMPath o) =>
+            new SvgMPath(o));
       }
 
-      public SvgMpath(com.gargoylesoftware.htmlunit.svg.SvgMpath wrappedObject) : base(wrappedObject) {}
+      public SvgMPath(com.gargoylesoftware.htmlunit.svg.SvgMPath wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.svg.SvgMpath WObj
+      public new com.gargoylesoftware.htmlunit.svg.SvgMPath WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.svg.SvgMpath)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.svg.SvgMPath)WrappedObject; }
       }
 
    }

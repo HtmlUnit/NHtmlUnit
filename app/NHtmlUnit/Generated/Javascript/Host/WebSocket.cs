@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class WebSocket : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class WebSocket : NHtmlUnit.Javascript.Host.Events.EventTarget
    {
       static WebSocket()
       {
@@ -90,6 +90,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Close(object code, object reason)
       {
          WObj.close(code, reason);
+      }
+
+// Generating method code for close
+      public virtual void Close()
+      {
+         WObj.close();
       }
 
 // Generating method code for send

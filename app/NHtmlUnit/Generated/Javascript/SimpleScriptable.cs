@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript
 {
-   public partial class SimpleScriptable : ObjectWrapper
+   public partial class SimpleScriptable : NHtmlUnit.Javascript.HtmlUnitScriptable
    {
       static SimpleScriptable()
       {
@@ -18,7 +18,7 @@ namespace NHtmlUnit.Javascript
 
       public SimpleScriptable(com.gargoylesoftware.htmlunit.javascript.SimpleScriptable wrappedObject) : base(wrappedObject) {}
 
-      public com.gargoylesoftware.htmlunit.javascript.SimpleScriptable WObj
+      public new com.gargoylesoftware.htmlunit.javascript.SimpleScriptable WObj
       {
          get { return (com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)WrappedObject; }
       }
@@ -37,22 +37,22 @@ namespace NHtmlUnit.Javascript
       }
 
 
-      public NHtmlUnit.BrowserVersion BrowserVersion
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               WObj.getBrowserVersion());
-         }
-      }
-
-
       public NHtmlUnit.Html.DomNode DomNodeOrNull
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getDomNodeOrNull());
+         }
+      }
+
+
+      public NHtmlUnit.BrowserVersion BrowserVersion
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               WObj.getBrowserVersion());
          }
       }
 
@@ -70,6 +70,12 @@ namespace NHtmlUnit.Javascript
       public virtual NHtmlUnit.Javascript.SimpleScriptable MakeScriptableFor(NHtmlUnit.Html.DomNode domNode)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(WObj.makeScriptableFor((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject));
+      }
+
+// Generating method code for getPrototype
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class javaScriptClass)
+      {
+         return WObj.getPrototype(javaScriptClass);
       }
 
 // Generating method code for clone

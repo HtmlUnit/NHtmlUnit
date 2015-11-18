@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,15 +37,6 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
             return WObj.getLength();
          }
       }
-
-      public IList<java.lang.Object> Elements
-      {
-         get
-         {
-            return new ShallowListWrapper<java.lang.Object>(
-               WObj.getElements());
-         }
-       }
 // Generating method code for item
       public virtual object Item(object index)
       {

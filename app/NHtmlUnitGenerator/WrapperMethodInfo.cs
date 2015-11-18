@@ -155,7 +155,7 @@ namespace NHtmlUnit.Generator
                     if (mp.IsWrapped)
                     {
                         functionCallSb.AppendFormat(
-                            "({0}){1}.WrappedObject", mp.ParameterType.FullName, mp.ParameterName);
+                            "({0}){1}.WrappedObject", ClassInfo.SanitizeTypeName(mp.ParameterType.FullName), mp.ParameterName);
                     }
                     else
                         functionCallSb.Append(mp.ParameterName);

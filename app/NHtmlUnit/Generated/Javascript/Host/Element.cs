@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class Element : NHtmlUnit.Javascript.Host.EventNode
+   public partial class Element : NHtmlUnit.Javascript.Host.Dom.EventNode
    {
       static Element()
       {
@@ -40,14 +40,6 @@ namespace NHtmlUnit.Javascript.Host
          get
          {
             return WObj.getBaseURI();
-         }
-      }
-
-      public System.String Text
-      {
-         get
-         {
-            return WObj.getText();
          }
       }
 
@@ -109,14 +101,15 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public IList<NHtmlUnit.W3C.Dom.INode> Children
+      public NHtmlUnit.Javascript.Host.Html.HTMLCollection Children
       {
          get
          {
-            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
                WObj.getChildren());
          }
-       }
+      }
+
 
       public NHtmlUnit.Javascript.Host.Dom.DOMTokenList ClassList
       {
@@ -158,10 +151,9 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for selectNodes
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> SelectNodes(string expression)
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection SelectNodes(string expression)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.selectNodes(expression));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.selectNodes(expression));
       }
 
 // Generating method code for selectSingleNode
@@ -183,10 +175,9 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for getElementsByTagName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByTagName(string tagName)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByTagName(tagName));
       }
 
 // Generating method code for getAttributeNode
@@ -238,9 +229,15 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for setAttributeNode
-      public virtual NHtmlUnit.Javascript.Host.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Attr newAtt)
+      public virtual NHtmlUnit.Javascript.Host.Dom.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Dom.Attr newAtt)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)newAtt.WrappedObject));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Attr)newAtt.WrappedObject));
+      }
+
+// Generating method code for blur
+      public virtual void Blur()
+      {
+         WObj.blur();
       }
 
    }

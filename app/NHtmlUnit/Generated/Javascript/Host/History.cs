@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -35,35 +35,13 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-      public System.String Current
+      public System.Object State
       {
          get
          {
-            return WObj.getCurrent();
+            return WObj.getState();
          }
       }
-
-      public System.String Previous
-      {
-         get
-         {
-            return WObj.getPrevious();
-         }
-      }
-
-      public System.String Next
-      {
-         get
-         {
-            return WObj.getNext();
-         }
-      }
-// Generating method code for item
-      public virtual string Item(int index)
-      {
-         return WObj.item(index);
-      }
-
 // Generating method code for back
       public virtual void Back()
       {
@@ -80,6 +58,18 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Go(int relativeIndex)
       {
          WObj.go(relativeIndex);
+      }
+
+// Generating method code for replaceState
+      public virtual void ReplaceState(object objectArg, string title, string url)
+      {
+         WObj.replaceState(objectArg, title, url);
+      }
+
+// Generating method code for pushState
+      public virtual void PushState(object objectArg, string title, string url)
+      {
+         WObj.pushState(objectArg, title, url);
       }
 
    }

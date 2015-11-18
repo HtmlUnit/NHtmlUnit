@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,12 +25,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
 
       public DOMParser()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMParser()) {}
-
-// Generating method code for jsConstructor
-      public virtual void JsConstructor()
-      {
-         WObj.jsConstructor();
-      }
 
 // Generating method code for parseFromString
       public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument ParseFromString(string str, object type)

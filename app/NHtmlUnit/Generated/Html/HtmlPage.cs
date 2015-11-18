@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlPage : NHtmlUnit.SgmlPage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.IPage, NHtmlUnit.W3C.Dom.IDocument
+   public partial class HtmlPage : NHtmlUnit.InteractivePage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.IPage, NHtmlUnit.W3C.Dom.IDocument
    {
       static HtmlPage()
       {
@@ -25,16 +25,6 @@ namespace NHtmlUnit.Html
 
       public HtmlPage(java.net.URL originatingUrl, NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow)
          : this(new com.gargoylesoftware.htmlunit.html.HtmlPage(originatingUrl, (com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
-
-
-      public NHtmlUnit.Html.HtmlElement FocusedElement
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getFocusedElement());
-         }
-      }
 
 
       public NHtmlUnit.Html.HtmlElement Body
@@ -64,6 +54,14 @@ namespace NHtmlUnit.Html
                WObj.getAnchors());
          }
        }
+
+      public java.net.URL BaseURL
+      {
+         get
+         {
+            return WObj.getBaseURL();
+         }
+      }
 
       public IList<NHtmlUnit.Html.HtmlElement> TabbableElements
       {
@@ -115,15 +113,6 @@ namespace NHtmlUnit.Html
 
       }
 
-      public IList<NHtmlUnit.W3C.Dom.Ranges.IRange> SelectionRanges
-      {
-         get
-         {
-            return new ListWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(
-               WObj.getSelectionRanges());
-         }
-       }
-
       public java.util.Map Namespaces
       {
          get
@@ -141,12 +130,6 @@ namespace NHtmlUnit.Html
       public virtual java.net.URL GetFullyQualifiedUrl(string relativeUrl)
       {
          return WObj.getFullyQualifiedUrl(relativeUrl);
-      }
-
-// Generating method code for setFocusedElement
-      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement)
-      {
-         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject);
       }
 
 // Generating method code for getResolvedTarget
@@ -192,12 +175,6 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementByAccessKey(accessKey));
       }
 
-// Generating method code for setFocusedElement
-      public virtual bool SetFocusedElement(NHtmlUnit.Html.HtmlElement newElement, bool windowActivated)
-      {
-         return WObj.setFocusedElement((com.gargoylesoftware.htmlunit.html.HtmlElement)newElement.WrappedObject, windowActivated);
-      }
-
 // Generating method code for getAnchorByName
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByName(string name)
       {
@@ -228,12 +205,6 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScript(sourceCode));
       }
 
-// Generating method code for executeJavaScriptFunctionIfPossible
-      public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptFunctionIfPossible(net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args, NHtmlUnit.Html.DomNode htmlElementScope)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptFunctionIfPossible(function, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)htmlElementScope.WrappedObject));
-      }
-
 // Generating method code for isOnbeforeunloadAccepted
       public virtual bool IsOnbeforeunloadAccepted()
       {
@@ -247,9 +218,9 @@ namespace NHtmlUnit.Html
       }
 
 // Generating method code for pressAccessKey
-      public virtual NHtmlUnit.Html.HtmlElement PressAccessKey(System.Char accessKey)
+      public virtual NHtmlUnit.Html.DomElement PressAccessKey(System.Char accessKey)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.pressAccessKey(accessKey));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.pressAccessKey(accessKey));
       }
 
 // Generating method code for tabToNextElement
@@ -324,6 +295,12 @@ namespace NHtmlUnit.Html
       public virtual void Save(java.io.File file)
       {
          WObj.save(file);
+      }
+
+// Generating method code for addAutoCloseable
+      public virtual void AddAutoCloseable(System.IDisposable autoCloseable)
+      {
+         WObj.addAutoCloseable(autoCloseable);
       }
 
    }

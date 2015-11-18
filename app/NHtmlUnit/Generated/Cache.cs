@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -47,22 +47,22 @@ namespace NHtmlUnit
             return WObj.getSize();
          }
       }
-// Generating method code for cacheIfPossible
-      public virtual void CacheIfPossible(NHtmlUnit.WebRequest request, NHtmlUnit.WebResponse response, object toCache)
+// Generating method code for getCachedResponse
+      public virtual NHtmlUnit.WebResponse GetCachedResponse(NHtmlUnit.WebRequest request)
       {
-         WObj.cacheIfPossible((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, (com.gargoylesoftware.htmlunit.WebResponse)response.WrappedObject, toCache);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getCachedResponse((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject));
+      }
+
+// Generating method code for cacheIfPossible
+      public virtual bool CacheIfPossible(NHtmlUnit.WebRequest request, NHtmlUnit.WebResponse response, object toCache)
+      {
+         return WObj.cacheIfPossible((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, (com.gargoylesoftware.htmlunit.WebResponse)response.WrappedObject, toCache);
       }
 
 // Generating method code for cache
       public virtual void AddToCache(string css, NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet styleSheet)
       {
          WObj.cache(css, (org.w3c.dom.css.CSSStyleSheet)styleSheet.WrappedObject);
-      }
-
-// Generating method code for getCachedResponse
-      public virtual NHtmlUnit.WebResponse GetCachedResponse(NHtmlUnit.WebRequest request)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getCachedResponse((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject));
       }
 
 // Generating method code for getCachedObject

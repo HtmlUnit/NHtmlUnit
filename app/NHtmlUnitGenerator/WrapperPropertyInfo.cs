@@ -290,7 +290,7 @@ namespace NHtmlUnit.Generator
                             /* {1} */ Name,
                             /* {2} */ GetterMethod.Name,
                             /* {3} */ SetterMethod != null
-                                ? string.Format(setterBodyTemplate, SetterMethod.Name, PropertyType.FullName)
+                                ? string.Format(setterBodyTemplate, SetterMethod.Name, ClassInfo.SanitizeTypeName(PropertyType.FullName))
                                 : string.Empty);
                     }
                 }

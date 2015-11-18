@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,7 +33,7 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for toDataURL
-      public virtual string ToDataURL(string type)
+      public virtual string ToDataURL(object type)
       {
          return WObj.toDataURL(type);
       }

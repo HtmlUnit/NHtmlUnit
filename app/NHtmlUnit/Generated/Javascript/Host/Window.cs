@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class Window : NHtmlUnit.Javascript.SimpleScriptable, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class Window : NHtmlUnit.Javascript.Host.Events.EventTarget, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static Window()
       {
@@ -50,32 +50,37 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public NHtmlUnit.Javascript.Host.Document Document
+      public NHtmlUnit.Javascript.Host.Dom.Document Document
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Document>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Document>(
                WObj.getDocument());
          }
       }
 
 
-      public NHtmlUnit.Javascript.Host.Event CurrentEvent
+      public NHtmlUnit.Javascript.Host.Events.Event CurrentEvent
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Event>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(
                WObj.getCurrentEvent());
          }
+         set
+         {
+            WObj.setCurrentEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)value.WrappedObject);
+         }
+
       }
 
 
-      public NHtmlUnit.Javascript.Host.EventListenersContainer EventListenersContainer
+      public NHtmlUnit.Javascript.Host.Screen Screen
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.EventListenersContainer>(
-               WObj.getEventListenersContainer());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(
+               WObj.getScreen());
          }
       }
 
@@ -90,15 +95,13 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public NHtmlUnit.Javascript.Host.Screen Screen
+      public System.Object Event
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Screen>(
-               WObj.getScreen());
+            return WObj.getEvent();
          }
       }
-
 
       public NHtmlUnit.Javascript.Host.Navigator Navigator
       {
@@ -110,11 +113,11 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public NHtmlUnit.Javascript.Host.Selection SelectionImpl
+      public NHtmlUnit.Javascript.Host.Dom.Selection SelectionImpl
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Selection>(
                WObj.getSelectionImpl());
          }
       }
@@ -169,14 +172,6 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public System.Object Event
-      {
-         get
-         {
-            return WObj.getEvent();
-         }
-      }
-
       public NHtmlUnit.Javascript.Host.Navigator ClientInformation
       {
          get
@@ -187,11 +182,11 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 
-      public NHtmlUnit.Javascript.Host.ClipboardData ClipboardData
+      public NHtmlUnit.Javascript.Host.Html.DataTransfer ClipboardData
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClipboardData>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DataTransfer>(
                WObj.getClipboardData());
          }
       }
@@ -233,16 +228,6 @@ namespace NHtmlUnit.Javascript.Host
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(
                WObj.getSessionStorage());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.StorageList GlobalStorage
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StorageList>(
-               WObj.getGlobalStorage());
          }
       }
 
@@ -418,6 +403,19 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
+      public System.Object Onmessage
+      {
+         get
+         {
+            return WObj.getOnmessage();
+         }
+         set
+         {
+            WObj.setOnmessage(value);
+         }
+
+      }
+
       public System.Int32 OuterWidth
       {
          get
@@ -434,11 +432,11 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Selection Selection
+      public NHtmlUnit.Javascript.Host.Dom.Selection Selection
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Selection>(
                WObj.getSelection());
          }
       }
@@ -535,28 +533,85 @@ namespace NHtmlUnit.Javascript.Host
          }
 
       }
-// Generating method code for getPrototype
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(java.lang.Class jsClass)
+
+      public System.Object Onsubmit
       {
-         return WObj.getPrototype(jsClass);
+         get
+         {
+            return WObj.getOnsubmit();
+         }
+         set
+         {
+            WObj.setOnsubmit(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Performance.Performance Performance
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Performance.Performance>(
+               WObj.getPerformance());
+         }
+      }
+
+
+      public System.Int32 DevicePixelRatio
+      {
+         get
+         {
+            return WObj.getDevicePixelRatio();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Css.StyleMedia StyleMedia
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.StyleMedia>(
+               WObj.getStyleMedia());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Speech.SpeechSynthesis SpeechSynthesis
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Speech.SpeechSynthesis>(
+               WObj.getSpeechSynthesis());
+         }
+      }
+
+
+      public System.Object OffscreenBuffering
+      {
+         get
+         {
+            return WObj.getOffscreenBuffering();
+         }
+      }
+
+      public NHtmlUnit.Javascript.Host.Crypto.Crypto Crypto
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Crypto.Crypto>(
+               WObj.getCrypto());
+         }
       }
 
 // Generating method code for getComputedStyle
-      public virtual NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
+      public virtual NHtmlUnit.Javascript.Host.Css.CSS2Properties GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSS2Properties>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
       }
 
 // Generating method code for attachEvent
       public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
          return WObj.attachEvent(type, listener);
-      }
-
-// Generating method code for executeEvent
-      public virtual NHtmlUnit.ScriptResult ExecuteEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject));
       }
 
 // Generating method code for getStorage
@@ -577,10 +632,16 @@ namespace NHtmlUnit.Javascript.Host
          return WObj.setTimeout(code, timeout, language);
       }
 
-// Generating method code for dispatchEvent
-      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+// Generating method code for getPrototype
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable GetPrototype(string className)
       {
-         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
+         return WObj.getPrototype(className);
+      }
+
+// Generating method code for setPrototypes
+      public virtual void SetPrototypes(java.util.Map map, java.util.Map prototypesPerJSName)
+      {
+         WObj.setPrototypes(map, prototypesPerJSName);
       }
 
 // Generating method code for alert
@@ -635,6 +696,18 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Dump(string message)
       {
          WObj.dump(message);
+      }
+
+// Generating method code for requestAnimationFrame
+      public virtual int RequestAnimationFrame(object callback)
+      {
+         return WObj.requestAnimationFrame(callback);
+      }
+
+// Generating method code for cancelAnimationFrame
+      public virtual void CancelAnimationFrame(object requestId)
+      {
+         WObj.cancelAnimationFrame(requestId);
       }
 
 // Generating method code for initialize
@@ -727,22 +800,10 @@ namespace NHtmlUnit.Javascript.Host
          WObj.scrollByPages(pages);
       }
 
-// Generating method code for addEventListener
-      public virtual void AddEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
-      {
-         WObj.addEventListener(type, listener, useCapture);
-      }
-
 // Generating method code for detachEvent
       public virtual void DetachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
       {
          WObj.detachEvent(type, listener);
-      }
-
-// Generating method code for removeEventListener
-      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
-      {
-         WObj.removeEventListener(type, listener, useCapture);
       }
 
 // Generating method code for triggerOnError
@@ -848,9 +909,15 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for postMessage
-      public virtual void PostMessage(string message, string targetOrigin)
+      public virtual void PostMessage(string message, string targetOrigin, object transfer)
       {
-         WObj.postMessage(message, targetOrigin);
+         WObj.postMessage(message, targetOrigin, transfer);
+      }
+
+// Generating method code for matchMedia
+      public virtual NHtmlUnit.Javascript.Host.Css.MediaQueryList MatchMedia(string mediaQueryString)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.MediaQueryList>(WObj.matchMedia(mediaQueryString));
       }
 
 // Generating method code for getLocation

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,9 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSImportRule)WrappedObject; }
       }
 
+      public CSSImportRule()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSImportRule()) {}
+
 
       public System.String Href
       {
@@ -32,11 +35,11 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public NHtmlUnit.Javascript.Host.MediaList Media
+      public NHtmlUnit.Javascript.Host.Dom.MediaList Media
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.MediaList>(
                WObj.getMedia());
          }
       }

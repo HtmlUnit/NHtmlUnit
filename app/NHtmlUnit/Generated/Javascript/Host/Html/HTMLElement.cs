@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,38 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
 
+      public System.Boolean IsContentEditable
+      {
+         get
+         {
+            return WObj.getIsContentEditable();
+         }
+      }
+
+      public System.Int32 Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+      }
+
+      public System.Int32 Height
+      {
+         get
+         {
+            return WObj.getHeight();
+         }
+      }
+
+      public System.String DefaultStyleDisplay
+      {
+         get
+         {
+            return WObj.getDefaultStyleDisplay();
+         }
+      }
+
       public System.Int32 PosX
       {
          get
@@ -42,40 +74,6 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getPosY();
          }
       }
-
-      public System.Int32 ClientWidth
-      {
-         get
-         {
-            return WObj.getClientWidth();
-         }
-      }
-
-      public System.Int32 ClientHeight
-      {
-         get
-         {
-            return WObj.getClientHeight();
-         }
-      }
-
-      public System.String DefaultStyleDisplay
-      {
-         get
-         {
-            return WObj.getDefaultStyleDisplay();
-         }
-      }
-
-      public NHtmlUnit.Javascript.Host.BoxObject BoxObject
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.BoxObject>(
-               WObj.getBoxObject());
-         }
-      }
-
 
       public NHtmlUnit.Javascript.Host.Html.HTMLElement ParentHTMLElement
       {
@@ -100,14 +98,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getOffsetTop();
-         }
-      }
-
-      public System.Object OffsetParent_js
-      {
-         get
-         {
-            return WObj.getOffsetParent_js();
          }
       }
 
@@ -153,14 +143,28 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public IList<NHtmlUnit.W3C.Dom.INode> All
+      public System.String ContentEditable
       {
          get
          {
-            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+            return WObj.getContentEditable();
+         }
+         set
+         {
+            WObj.setContentEditable(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLCollection All
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
                WObj.getAll());
          }
-       }
+      }
+
 
       public System.String Id
       {
@@ -211,11 +215,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 
-      public System.Object ClassName_js
+      public System.Int32 ClientHeight
       {
          get
          {
-            return WObj.getClassName_js();
+            return WObj.getClientHeight();
+         }
+      }
+
+      public System.Int32 ClientWidth
+      {
+         get
+         {
+            return WObj.getClientWidth();
          }
       }
 
@@ -288,14 +300,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.Int32 Height
-      {
-         get
-         {
-            return WObj.getHeight();
-         }
-      }
-
       public System.Boolean JavaEnabled
       {
          get
@@ -325,14 +329,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getUserLanguage();
-         }
-      }
-
-      public System.Int32 Width
-      {
-         get
-         {
-            return WObj.getWidth();
          }
       }
 
@@ -491,6 +487,14 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
+      public System.Object OffsetParent_js
+      {
+         get
+         {
+            return WObj.getOffsetParent_js();
+         }
+      }
+
       public NHtmlUnit.Javascript.Host.Dom.DOMStringMap Dataset
       {
          get
@@ -556,9 +560,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for removeAttributeNode
-      public virtual void RemoveAttributeNode(NHtmlUnit.Javascript.Host.Attr attribute)
+      public virtual void RemoveAttributeNode(NHtmlUnit.Javascript.Host.Dom.Attr attribute)
       {
-         WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.Attr)attribute.WrappedObject);
+         WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Attr)attribute.WrappedObject);
       }
 
 // Generating method code for removeNode
@@ -568,10 +572,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for getElementsByClassName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByClassName(string className)
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByClassName(string className)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByClassName(className));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByClassName(className));
       }
 
 // Generating method code for insertAdjacentHTML
@@ -664,18 +667,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.removeExpression(propertyName);
       }
 
-// Generating method code for dispatchEvent
-      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
-      {
-         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
-      }
-
-// Generating method code for blur
-      public virtual void Blur()
-      {
-         WObj.blur();
-      }
-
 // Generating method code for createTextRange
       public virtual object CreateTextRange()
       {
@@ -689,15 +680,15 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for querySelectorAll
-      public virtual NHtmlUnit.Javascript.Host.StaticNodeList QuerySelectorAll(string selectors)
+      public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StaticNodeList>(WObj.querySelectorAll(selectors));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
       }
 
 // Generating method code for querySelector
-      public virtual NHtmlUnit.Javascript.Host.Node QuerySelector(string selectors)
+      public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.querySelector(selectors));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
       }
 
 // Generating method code for click
@@ -712,16 +703,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.doScroll(scrollAction);
       }
 
-// Generating method code for getInnerHTML
-      public virtual string GetInnerHTML()
+// Generating method code for releaseCapture
+      public virtual bool ReleaseCapture()
       {
-         return WObj.getInnerHTML();
-      }
-
-// Generating method code for setInnerHTML
-      public virtual void SetInnerHTML(object value)
-      {
-         WObj.setInnerHTML(value);
+         return WObj.releaseCapture();
       }
 
 // Generating method code for getOuterHTML
@@ -734,6 +719,30 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetOuterHTML(object value)
       {
          WObj.setOuterHTML(value);
+      }
+
+// Generating method code for getClassName_js
+      public virtual object GetClassName_js()
+      {
+         return WObj.getClassName_js();
+      }
+
+// Generating method code for setClassName_js
+      public virtual void SetClassName_js(string className)
+      {
+         WObj.setClassName_js(className);
+      }
+
+// Generating method code for getInnerHTML
+      public virtual string GetInnerHTML()
+      {
+         return WObj.getInnerHTML();
+      }
+
+// Generating method code for setInnerHTML
+      public virtual void SetInnerHTML(object value)
+      {
+         WObj.setInnerHTML(value);
       }
 
 // Generating method code for getOnchange

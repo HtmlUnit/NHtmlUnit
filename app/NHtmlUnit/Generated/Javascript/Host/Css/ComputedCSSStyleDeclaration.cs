@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,30 @@ namespace NHtmlUnit.Javascript.Host.Css
       public ComputedCSSStyleDeclaration(NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration style)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
 
+
+      public System.Int32 MarginRightValue
+      {
+         get
+         {
+            return WObj.getMarginRightValue();
+         }
+      }
+
+      public System.Int32 MarginTopValue
+      {
+         get
+         {
+            return WObj.getMarginTopValue();
+         }
+      }
+
+      public System.Int32 MarginBottomValue
+      {
+         get
+         {
+            return WObj.getMarginBottomValue();
+         }
+      }
 
       public System.Int32 ContentWidth
       {
@@ -62,19 +86,19 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public System.String BottomWithInheritance
-      {
-         get
-         {
-            return WObj.getBottomWithInheritance();
-         }
-      }
-
       public System.Int32 PaddingTopValue
       {
          get
          {
             return WObj.getPaddingTopValue();
+         }
+      }
+
+      public System.String BottomWithInheritance
+      {
+         get
+         {
+            return WObj.getBottomWithInheritance();
          }
       }
 
@@ -157,30 +181,18 @@ namespace NHtmlUnit.Javascript.Host.Css
             return WObj.getBorderBottomValue();
          }
       }
-
-      public System.Int32 MarginRightValue
+// Generating method code for isScrollable
+      public virtual bool IsScrollable(bool horizontal)
       {
-         get
-         {
-            return WObj.getMarginRightValue();
-         }
+         return WObj.isScrollable(horizontal);
       }
 
-      public System.Int32 MarginTopValue
+// Generating method code for getLeft
+      public virtual int GetLeft(bool includeMargin, bool includeBorder, bool includePadding)
       {
-         get
-         {
-            return WObj.getMarginTopValue();
-         }
+         return WObj.getLeft(includeMargin, includeBorder, includePadding);
       }
 
-      public System.Int32 MarginBottomValue
-      {
-         get
-         {
-            return WObj.getMarginBottomValue();
-         }
-      }
 // Generating method code for getCalculatedWidth
       public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
       {
@@ -209,18 +221,6 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
       {
          WObj.setDefaultLocalStyleAttribute(name, newValue);
-      }
-
-// Generating method code for isScrollable
-      public virtual bool IsScrollable(bool horizontal)
-      {
-         return WObj.isScrollable(horizontal);
-      }
-
-// Generating method code for getLeft
-      public virtual int GetLeft(bool includeMargin, bool includeBorder, bool includePadding)
-      {
-         return WObj.getLeft(includeMargin, includeBorder, includePadding);
       }
 
    }

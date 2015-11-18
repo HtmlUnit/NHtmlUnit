@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public DOMTokenList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMTokenList()) {}
 
-      public DOMTokenList(NHtmlUnit.Javascript.Host.Node node, string attributeName)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMTokenList((com.gargoylesoftware.htmlunit.javascript.host.Node)node.WrappedObject, attributeName)) {}
+      public DOMTokenList(NHtmlUnit.Javascript.Host.Dom.Node node, string attributeName)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMTokenList((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)node.WrappedObject, attributeName)) {}
 
 
       public System.Int32 Length

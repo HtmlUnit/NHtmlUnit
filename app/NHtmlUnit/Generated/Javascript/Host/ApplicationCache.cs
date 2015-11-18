@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class ApplicationCache : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class ApplicationCache : NHtmlUnit.Javascript.Host.Events.EventTarget
    {
       static ApplicationCache()
       {
@@ -133,6 +133,12 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getLength();
          }
       }
+// Generating method code for removeEventListener
+      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Scriptable listener, bool useCapture)
+      {
+         WObj.removeEventListener(type, listener, useCapture);
+      }
+
 // Generating method code for add
       public virtual void Add(string uri)
       {

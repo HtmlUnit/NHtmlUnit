@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,32 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLMenuElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLMenuElement()) {}
 
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
+      }
+
+      public System.String Label
+      {
+         get
+         {
+            return WObj.getLabel();
+         }
+         set
+         {
+            WObj.setLabel(value);
+         }
+
+      }
    }
 
 

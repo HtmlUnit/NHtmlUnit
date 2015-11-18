@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLDocument : NHtmlUnit.Javascript.Host.Document, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLDocument : NHtmlUnit.Javascript.Host.Dom.Document, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLDocument()
       {
@@ -35,6 +35,21 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement ActiveElement
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getActiveElement());
+         }
+         set
+         {
+            WObj.setActiveElement((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)value.WrappedObject);
+         }
+
+      }
+
+
       public System.String CompatMode
       {
          get
@@ -42,16 +57,6 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getCompatMode();
          }
       }
-
-      public NHtmlUnit.Html.HtmlPage HtmlPage
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
-               WObj.getHtmlPage());
-         }
-      }
-
 
       public System.String Domain
       {
@@ -72,16 +77,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
                WObj.getBody());
-         }
-      }
-
-
-      public NHtmlUnit.Html.HtmlPage HtmlPageOrNull
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
-               WObj.getHtmlPageOrNull());
          }
       }
 
@@ -131,6 +126,14 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getApplets();
+         }
+      }
+
+      public System.String BaseURI
+      {
+         get
+         {
+            return WObj.getBaseURI();
          }
       }
 
@@ -203,14 +206,15 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public IList<NHtmlUnit.W3C.Dom.INode> All
+      public NHtmlUnit.Javascript.Host.Html.HTMLCollection All
       {
          get
          {
-            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
                WObj.getAll());
          }
-       }
+      }
+
 
       public System.Object ParentWindow
       {
@@ -314,11 +318,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Selection Selection_js
+      public NHtmlUnit.Javascript.Host.Dom.Selection Selection_js
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Selection>(
                WObj.getSelection_js());
          }
       }
@@ -342,11 +346,11 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 
-      public NHtmlUnit.Javascript.Host.Selection Selection
+      public NHtmlUnit.Javascript.Host.Dom.Selection Selection
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Selection>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Selection>(
                WObj.getSelection());
          }
       }
@@ -364,10 +368,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for getElementsByName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByName(string elementName)
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByName(string elementName)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByName(elementName));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByName(elementName));
       }
 
 // Generating method code for open
@@ -389,10 +392,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for getElementsByClassName
-      public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByClassName(string className)
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByClassName(string className)
       {
-
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByClassName(className));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByClassName(className));
       }
 
 // Generating method code for getWithFallback
@@ -402,15 +404,15 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for createEvent
-      public virtual NHtmlUnit.Javascript.Host.Event CreateEvent(string eventType)
+      public virtual NHtmlUnit.Javascript.Host.Events.Event CreateEvent(string eventType)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Event>(WObj.createEvent(eventType));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(WObj.createEvent(eventType));
       }
 
 // Generating method code for createEventObject
-      public virtual NHtmlUnit.Javascript.Host.Event CreateEventObject()
+      public virtual NHtmlUnit.Javascript.Host.Events.Event CreateEventObject()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Event>(WObj.createEventObject());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(WObj.createEventObject());
       }
 
 // Generating method code for elementFromPoint
@@ -420,15 +422,15 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for createRange
-      public virtual NHtmlUnit.Javascript.Host.Range CreateRange()
+      public virtual NHtmlUnit.Javascript.Host.Dom.Range CreateRange()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Range>(WObj.createRange());
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Range>(WObj.createRange());
       }
 
 // Generating method code for createTreeWalker
-      public virtual object CreateTreeWalker(NHtmlUnit.Javascript.Host.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter, bool expandEntityReferences)
+      public virtual object CreateTreeWalker(NHtmlUnit.Javascript.Host.Dom.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter, bool expandEntityReferences)
       {
-         return WObj.createTreeWalker((com.gargoylesoftware.htmlunit.javascript.host.Node)root.WrappedObject, whatToShow, filter, expandEntityReferences);
+         return WObj.createTreeWalker((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter, expandEntityReferences);
       }
 
 // Generating method code for queryCommandSupported
@@ -449,22 +451,22 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.execCommand(cmd, userInterface, value);
       }
 
-// Generating method code for dispatchEvent
-      public virtual bool DispatchEvent(NHtmlUnit.Javascript.Host.Event eventArg)
+// Generating method code for hasFocus
+      public virtual bool HasFocus()
       {
-         return WObj.dispatchEvent((com.gargoylesoftware.htmlunit.javascript.host.Event)eventArg.WrappedObject);
+         return WObj.hasFocus();
       }
 
 // Generating method code for querySelectorAll
-      public virtual NHtmlUnit.Javascript.Host.StaticNodeList QuerySelectorAll(string selectors)
+      public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.StaticNodeList>(WObj.querySelectorAll(selectors));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
       }
 
 // Generating method code for querySelector
-      public virtual NHtmlUnit.Javascript.Host.Node QuerySelector(string selectors)
+      public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Node>(WObj.querySelector(selectors));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
       }
 
 // Generating method code for clear
@@ -473,16 +475,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.clear();
       }
 
-// Generating method code for getActiveElement
-      public virtual object GetActiveElement()
+// Generating method code for releaseCapture
+      public virtual bool ReleaseCapture()
       {
-         return WObj.getActiveElement();
+         return WObj.releaseCapture();
       }
 
-// Generating method code for setActiveElement
-      public virtual void SetActiveElement(NHtmlUnit.Javascript.Host.Html.HTMLElement element)
+// Generating method code for createNodeIterator
+      public virtual NHtmlUnit.Javascript.Host.Dom.NodeIterator CreateNodeIterator(NHtmlUnit.Javascript.Host.Dom.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter)
       {
-         WObj.setActiveElement((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeIterator>(WObj.createNodeIterator((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter));
       }
 
 // Generating method code for getHead

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTableElement : NHtmlUnit.Javascript.Host.RowContainer, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTableElement : NHtmlUnit.Javascript.Host.Html.RowContainer, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLTableElement()
       {
@@ -130,6 +130,84 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setBgColor(value);
+         }
+
+      }
+
+      public System.String BorderColor
+      {
+         get
+         {
+            return WObj.getBorderColor();
+         }
+         set
+         {
+            WObj.setBorderColor(value);
+         }
+
+      }
+
+      public System.String BorderColorDark
+      {
+         get
+         {
+            return WObj.getBorderColorDark();
+         }
+         set
+         {
+            WObj.setBorderColorDark(value);
+         }
+
+      }
+
+      public System.String BorderColorLight
+      {
+         get
+         {
+            return WObj.getBorderColorLight();
+         }
+         set
+         {
+            WObj.setBorderColorLight(value);
+         }
+
+      }
+
+      public System.String DataFld
+      {
+         get
+         {
+            return WObj.getDataFld();
+         }
+         set
+         {
+            WObj.setDataFld(value);
+         }
+
+      }
+
+      public System.String DataFormatAs
+      {
+         get
+         {
+            return WObj.getDataFormatAs();
+         }
+         set
+         {
+            WObj.setDataFormatAs(value);
+         }
+
+      }
+
+      public System.String DataSrc
+      {
+         get
+         {
+            return WObj.getDataSrc();
+         }
+         set
+         {
+            WObj.setDataSrc(value);
          }
 
       }

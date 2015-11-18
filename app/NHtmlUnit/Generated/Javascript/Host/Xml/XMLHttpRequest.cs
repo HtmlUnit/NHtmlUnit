@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Xml
 {
-   public partial class XMLHttpRequest : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class XMLHttpRequest : NHtmlUnit.Javascript.Host.Events.EventTarget
    {
       static XMLHttpRequest()
       {
@@ -129,10 +129,14 @@ namespace NHtmlUnit.Javascript.Host.Xml
             return WObj.getAllResponseHeaders();
          }
       }
-// Generating method code for jsConstructor
-      public virtual void JsConstructor()
+
+      public NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestUpload Upload
       {
-         WObj.jsConstructor();
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestUpload>(
+               WObj.getUpload());
+         }
       }
 
 // Generating method code for abort
@@ -148,9 +152,9 @@ namespace NHtmlUnit.Javascript.Host.Xml
       }
 
 // Generating method code for open
-      public virtual void Open(string method, object urlParam, bool async, object user, object password)
+      public virtual void Open(string method, object urlParam, object asyncParam, object user, object password)
       {
-         WObj.open(method, urlParam, async, user, password);
+         WObj.open(method, urlParam, asyncParam, user, password);
       }
 
 // Generating method code for send

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -33,9 +33,9 @@ namespace NHtmlUnit.Javascript.Host.Dom
       }
 
 // Generating method code for createDocument
-      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument CreateDocument(string namespaceURI, string qualifiedName, object doctype)
+      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument CreateDocument(string namespaceURI, string qualifiedName, NHtmlUnit.Javascript.Host.Dom.DocumentType doctype)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.createDocument(namespaceURI, qualifiedName, doctype));
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.createDocument(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.javascript.host.dom.DocumentType)doctype.WrappedObject));
       }
 
    }

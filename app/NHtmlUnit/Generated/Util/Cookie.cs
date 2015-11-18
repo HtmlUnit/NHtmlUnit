@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,14 +23,14 @@ namespace NHtmlUnit.Util
          get { return (com.gargoylesoftware.htmlunit.util.Cookie)WrappedObject; }
       }
 
-      public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure)
-         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure)) {}
-
-      public Cookie(org.apache.http.cookie.Cookie c)
-         : this(new com.gargoylesoftware.htmlunit.util.Cookie(c)) {}
+      public Cookie(org.apache.http.cookie.ClientCookie clientCookie)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(clientCookie)) {}
 
       public Cookie(string domain, string name, string value)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value)) {}
+
+      public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure)
+         : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure)) {}
 
       public Cookie(string domain, string name, string value, string path, java.util.Date expires, bool secure, bool httpOnly)
          : this(new com.gargoylesoftware.htmlunit.util.Cookie(domain, name, value, path, expires, secure, httpOnly)) {}
@@ -84,16 +84,16 @@ namespace NHtmlUnit.Util
          return WObj.isHttpOnly();
       }
 
-// Generating method code for toHttpClient
-      public virtual org.apache.http.cookie.Cookie ToHttpClient()
-      {
-         return WObj.toHttpClient();
-      }
-
 // Generating method code for isSecure
       public virtual bool IsSecure()
       {
          return WObj.isSecure();
+      }
+
+// Generating method code for toHttpClient
+      public virtual org.apache.http.cookie.Cookie ToHttpClient()
+      {
+         return WObj.toHttpClient();
       }
 
    }

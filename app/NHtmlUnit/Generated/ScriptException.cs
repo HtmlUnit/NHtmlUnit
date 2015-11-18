@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,15 +26,15 @@ namespace NHtmlUnit
       public ScriptException(NHtmlUnit.Html.HtmlPage page, System.Exception throwable)
          : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.html.HtmlPage)page.WrappedObject, throwable)) {}
 
-      public ScriptException(NHtmlUnit.Html.HtmlPage page, System.Exception throwable, string scriptSourceCode)
-         : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.html.HtmlPage)page.WrappedObject, throwable, scriptSourceCode)) {}
+      public ScriptException(NHtmlUnit.InteractivePage page, System.Exception throwable, string scriptSourceCode)
+         : this(new com.gargoylesoftware.htmlunit.ScriptException((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, throwable, scriptSourceCode)) {}
 
 
-      public NHtmlUnit.Html.HtmlPage Page
+      public NHtmlUnit.InteractivePage Page
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.InteractivePage>(
                WObj.getPage());
          }
       }

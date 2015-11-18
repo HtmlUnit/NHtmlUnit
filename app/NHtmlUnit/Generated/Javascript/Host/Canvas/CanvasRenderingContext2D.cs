@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,19 +26,9 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       public CanvasRenderingContext2D()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.canvas.CanvasRenderingContext2D()) {}
 
+      public CanvasRenderingContext2D(NHtmlUnit.Javascript.Host.Html.HTMLCanvasElement canvas)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.canvas.CanvasRenderingContext2D((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCanvasElement)canvas.WrappedObject)) {}
 
-      public System.Object FillStyle
-      {
-         get
-         {
-            return WObj.getFillStyle();
-         }
-         set
-         {
-            WObj.setFillStyle(value);
-         }
-
-      }
 
       public System.Object StrokeStyle
       {
@@ -52,6 +42,16 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          }
 
       }
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLCanvasElement Canvas
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCanvasElement>(
+               WObj.getCanvas());
+         }
+      }
+
 // Generating method code for arc
       public virtual void Arc(System.Double x, System.Double y, System.Double radius, System.Double startAngle, System.Double endAngle, bool anticlockwise)
       {
@@ -118,6 +118,24 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          WObj.createRadialGradient();
       }
 
+// Generating method code for drawImage
+      public virtual void DrawImage(object image, int sx, int sy, object sWidth, object sHeight, object dx, object dy, object dWidth, object dHeight)
+      {
+         WObj.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+      }
+
+// Generating method code for toDataURL
+      public virtual string ToDataURL(string type)
+      {
+         return WObj.toDataURL(type);
+      }
+
+// Generating method code for ellipse
+      public virtual void Ellipse(System.Double x, System.Double y, System.Double radiusX, System.Double radiusY, System.Double rotation, System.Double startAngle, System.Double endAngle, bool anticlockwise)
+      {
+         WObj.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+      }
+
 // Generating method code for fill
       public virtual void Fill()
       {
@@ -125,7 +143,7 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       }
 
 // Generating method code for fillRect
-      public virtual void FillRect(System.Double x, System.Double y, System.Double w, System.Double h)
+      public virtual void FillRect(int x, int y, int w, int h)
       {
          WObj.fillRect(x, y, w, h);
       }
@@ -137,9 +155,9 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       }
 
 // Generating method code for getImageData
-      public virtual void GetImageData()
+      public virtual NHtmlUnit.Javascript.Host.Canvas.ImageData GetImageData(int sx, int sy, int sw, int sh)
       {
-         WObj.getImageData();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Canvas.ImageData>(WObj.getImageData(sx, sy, sw, sh));
       }
 
 // Generating method code for getLineDash
@@ -260,6 +278,18 @@ namespace NHtmlUnit.Javascript.Host.Canvas
       public virtual void Translate(object x, object y)
       {
          WObj.translate(x, y);
+      }
+
+// Generating method code for getFillStyle
+      public virtual object GetFillStyle()
+      {
+         return WObj.getFillStyle();
+      }
+
+// Generating method code for setFillStyle
+      public virtual void SetFillStyle(string fillStyle)
+      {
+         WObj.setFillStyle(fillStyle);
       }
 
 // Generating method code for getLineWidth

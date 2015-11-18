@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -21,6 +21,18 @@ namespace NHtmlUnit.Html
       public new com.gargoylesoftware.htmlunit.html.HtmlRt WObj
       {
          get { return (com.gargoylesoftware.htmlunit.html.HtmlRt)WrappedObject; }
+      }
+
+// Generating method code for wasCreatedByJavascript
+      public virtual bool WasCreatedByJavascript()
+      {
+         return WObj.wasCreatedByJavascript();
+      }
+
+// Generating method code for markAsCreatedByJavascript
+      public virtual void MarkAsCreatedByJavascript()
+      {
+         WObj.markAsCreatedByJavascript();
       }
 
    }

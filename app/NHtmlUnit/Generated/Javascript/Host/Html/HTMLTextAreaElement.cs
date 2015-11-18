@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTextAreaElement : NHtmlUnit.Javascript.Host.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTextAreaElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLTextAreaElement()
       {
@@ -53,6 +53,14 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+      }
+
       public System.String DefaultValue
       {
          get
@@ -83,6 +91,58 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setReadOnly(value);
+         }
+
+      }
+
+      public System.String DataFld
+      {
+         get
+         {
+            return WObj.getDataFld();
+         }
+         set
+         {
+            WObj.setDataFld(value);
+         }
+
+      }
+
+      public System.String DataFormatAs
+      {
+         get
+         {
+            return WObj.getDataFormatAs();
+         }
+         set
+         {
+            WObj.setDataFormatAs(value);
+         }
+
+      }
+
+      public System.String DataSrc
+      {
+         get
+         {
+            return WObj.getDataSrc();
+         }
+         set
+         {
+            WObj.setDataSrc(value);
+         }
+
+      }
+
+      public System.String Placeholder
+      {
+         get
+         {
+            return WObj.getPlaceholder();
+         }
+         set
+         {
+            WObj.setPlaceholder(value);
          }
 
       }
@@ -120,6 +180,18 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetRows(string rows)
       {
          WObj.setRows(rows);
+      }
+
+// Generating method code for getMaxLength
+      public virtual object GetMaxLength()
+      {
+         return WObj.getMaxLength();
+      }
+
+// Generating method code for setMaxLength
+      public virtual void SetMaxLength(string maxLength)
+      {
+         WObj.setMaxLength(maxLength);
       }
 
    }

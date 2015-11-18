@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,6 +30,16 @@ namespace NHtmlUnit
          : this(new com.gargoylesoftware.htmlunit.WebResponse((com.gargoylesoftware.htmlunit.WebResponseData)responseData.WrappedObject, url, (com.gargoylesoftware.htmlunit.HttpMethod)requestMethod.WrappedObject, loadTime)) {}
 
 
+      public NHtmlUnit.WebRequest WebRequest
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebRequest>(
+               WObj.getWebRequest());
+         }
+      }
+
+
       public System.String ContentAsString
       {
          get
@@ -45,16 +55,6 @@ namespace NHtmlUnit
             return WObj.getContentType();
          }
       }
-
-      public NHtmlUnit.WebRequest WebRequest
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebRequest>(
-               WObj.getWebRequest());
-         }
-      }
-
 
       public System.Int32 StatusCode
       {
@@ -112,6 +112,12 @@ namespace NHtmlUnit
             return WObj.getLoadTime();
          }
       }
+// Generating method code for cleanUp
+      public virtual void CleanUp()
+      {
+         WObj.cleanUp();
+      }
+
 // Generating method code for getResponseHeaderValue
       public virtual string GetResponseHeaderValue(string headerName)
       {
@@ -122,12 +128,6 @@ namespace NHtmlUnit
       public virtual string GetContentAsString(string encoding)
       {
          return WObj.getContentAsString(encoding);
-      }
-
-// Generating method code for cleanUp
-      public virtual void CleanUp()
-      {
-         WObj.cleanUp();
       }
 
    }

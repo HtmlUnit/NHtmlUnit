@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -44,6 +44,12 @@ namespace NHtmlUnit.Javascript.Host.Arrays
       public virtual NHtmlUnit.Javascript.Host.Arrays.ArrayBuffer Slice(int begin, object end)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.ArrayBuffer>(WObj.slice(begin, end));
+      }
+
+// Generating method code for setBytes
+      public virtual void SetBytes(int index, System.Byte[] array)
+      {
+         WObj.setBytes(index, array);
       }
 
    }

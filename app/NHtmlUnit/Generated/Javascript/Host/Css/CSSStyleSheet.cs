@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class CSSStyleSheet : NHtmlUnit.Javascript.SimpleScriptable
+   public partial class CSSStyleSheet : NHtmlUnit.Javascript.Host.Css.StyleSheet
    {
       static CSSStyleSheet()
       {

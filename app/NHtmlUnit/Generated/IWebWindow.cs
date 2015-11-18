@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.WebWindow
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -13,8 +13,8 @@ namespace NHtmlUnit
 {
    public interface IWebWindow : NHtmlUnit.IObjectWrapper
    {
-      System.Object ScriptObject { get; set; }
       NHtmlUnit.WebClient WebClient  { get; }
+      net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptableObject { get; set; }
       NHtmlUnit.IPage EnclosedPage { get; set; }
       NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager  { get; }
       System.String Name { get; set; }

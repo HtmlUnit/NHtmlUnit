@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -60,6 +60,45 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setBgColor(value);
+         }
+
+      }
+
+      public System.String BorderColor
+      {
+         get
+         {
+            return WObj.getBorderColor();
+         }
+         set
+         {
+            WObj.setBorderColor(value);
+         }
+
+      }
+
+      public System.String BorderColorDark
+      {
+         get
+         {
+            return WObj.getBorderColorDark();
+         }
+         set
+         {
+            WObj.setBorderColorDark(value);
+         }
+
+      }
+
+      public System.String BorderColorLight
+      {
+         get
+         {
+            return WObj.getBorderColorLight();
+         }
+         set
+         {
+            WObj.setBorderColorLight(value);
          }
 
       }

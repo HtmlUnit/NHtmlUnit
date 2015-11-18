@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -36,14 +36,6 @@ namespace NHtmlUnit.Xml
          : this(new com.gargoylesoftware.htmlunit.xml.XmlPage((org.w3c.dom.Node)node.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)enclosingWindow.WrappedObject)) {}
 
 
-      public System.String Content
-      {
-         get
-         {
-            return WObj.getContent();
-         }
-      }
-
       public NHtmlUnit.W3C.Dom.IDocument XmlDocument
       {
          get
@@ -51,18 +43,6 @@ namespace NHtmlUnit.Xml
             return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IDocument>(
                WObj.getXmlDocument());
          }
-      }
-
-// Generating method code for createXmlElementNS
-      public virtual NHtmlUnit.Html.DomElement CreateXmlElementNS(string namespaceURI, string qualifiedName)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.createXmlElementNS(namespaceURI, qualifiedName));
-      }
-
-// Generating method code for createXmlElement
-      public virtual NHtmlUnit.Html.DomElement CreateXmlElement(string tagName)
-      {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.createXmlElement(tagName));
       }
 
    }

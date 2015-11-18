@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,19 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.WebWindowImpl)WrappedObject; }
       }
 
+
+      public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptableObject
+      {
+         get
+         {
+            return WObj.getScriptableObject();
+         }
+         set
+         {
+            WObj.setScriptableObject(value);
+         }
+
+      }
 
       public NHtmlUnit.Javascript.Background.IJavaScriptJobManager JobManager
       {
@@ -70,11 +83,6 @@ namespace NHtmlUnit
          {
             return WObj.getScriptObject();
          }
-         set
-         {
-            WObj.setScriptObject(value);
-         }
-
       }
 
       public System.String Name

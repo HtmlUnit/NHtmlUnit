@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -31,6 +31,21 @@ namespace NHtmlUnit
 
       public WebClient(NHtmlUnit.BrowserVersion browserVersion, string proxyHost, int proxyPort)
          : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, proxyHost, proxyPort)) {}
+
+
+      public NHtmlUnit.Cache Cache
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Cache>(
+               WObj.getCache());
+         }
+         set
+         {
+            WObj.setCache((com.gargoylesoftware.htmlunit.Cache)value.WrappedObject);
+         }
+
+      }
 
 
       public NHtmlUnit.Javascript.JavaScriptEngine JavaScriptEngine
@@ -113,16 +128,16 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.CookieManager CookieManager
+      public NHtmlUnit.IAppletConfirmHandler AppletConfirmHandler
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.CookieManager>(
-               WObj.getCookieManager());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IAppletConfirmHandler>(
+               WObj.getAppletConfirmHandler());
          }
          set
          {
-            WObj.setCookieManager((com.gargoylesoftware.htmlunit.CookieManager)value.WrappedObject);
+            WObj.setAppletConfirmHandler((com.gargoylesoftware.htmlunit.AppletConfirmHandler)value.WrappedObject);
          }
 
       }
@@ -138,21 +153,6 @@ namespace NHtmlUnit
          set
          {
             WObj.setJavaScriptErrorListener((com.gargoylesoftware.htmlunit.javascript.JavaScriptErrorListener)value.WrappedObject);
-         }
-
-      }
-
-
-      public NHtmlUnit.Cache Cache
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Cache>(
-               WObj.getCache());
-         }
-         set
-         {
-            WObj.setCache((com.gargoylesoftware.htmlunit.Cache)value.WrappedObject);
          }
 
       }
@@ -215,6 +215,21 @@ namespace NHtmlUnit
          }
 
       }
+
+      public NHtmlUnit.CookieManager CookieManager
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.CookieManager>(
+               WObj.getCookieManager());
+         }
+         set
+         {
+            WObj.setCookieManager((com.gargoylesoftware.htmlunit.CookieManager)value.WrappedObject);
+         }
+
+      }
+
 
       public NHtmlUnit.Activex.Javascript.Msxml.MSXMLActiveXObjectFactory MSXMLActiveXObjectFactory
       {
@@ -465,9 +480,9 @@ namespace NHtmlUnit
       }
 
 // Generating method code for download
-      public virtual void Download(NHtmlUnit.IWebWindow requestingWindow, string target, NHtmlUnit.WebRequest request, bool isHashJump, string description)
+      public virtual void Download(NHtmlUnit.IWebWindow requestingWindow, string target, NHtmlUnit.WebRequest request, bool forceLoad, string description)
       {
-         WObj.download((com.gargoylesoftware.htmlunit.WebWindow)requestingWindow.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, isHashJump, description);
+         WObj.download((com.gargoylesoftware.htmlunit.WebWindow)requestingWindow.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, forceLoad, description);
       }
 
 // Generating method code for openWindow
@@ -500,6 +515,12 @@ namespace NHtmlUnit
          return WObj.guessContentType(file);
       }
 
+// Generating method code for addCookie
+      public virtual void AddCookie(string cookieString, java.net.URL pageUrl, object origin)
+      {
+         WObj.addCookie(cookieString, pageUrl, origin);
+      }
+
 // Generating method code for printContentIfNecessary
       public virtual void PrintContentIfNecessary(NHtmlUnit.WebResponse webResponse)
       {
@@ -518,10 +539,10 @@ namespace NHtmlUnit
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage(url));
       }
 
-// Generating method code for closeAllWindows
-      public virtual void CloseAllWindows()
+// Generating method code for close
+      public virtual void Close()
       {
-         WObj.closeAllWindows();
+         WObj.close();
       }
 
 // Generating method code for getCookies

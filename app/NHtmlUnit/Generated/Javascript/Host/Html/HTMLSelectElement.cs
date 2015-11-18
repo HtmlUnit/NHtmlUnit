@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLSelectElement : NHtmlUnit.Javascript.Host.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLSelectElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLSelectElement()
       {
@@ -26,6 +26,24 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLSelectElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLSelectElement()) {}
 
+
+      public NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection Options
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection>(
+               WObj.getOptions());
+         }
+      }
+
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+      }
 
       public System.Int32 SelectedIndex
       {
@@ -53,16 +71,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection Options
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionsCollection>(
-               WObj.getOptions());
-         }
-      }
-
-
       public System.Boolean Multiple
       {
          get
@@ -72,6 +80,45 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setMultiple(value);
+         }
+
+      }
+
+      public System.String DataFld
+      {
+         get
+         {
+            return WObj.getDataFld();
+         }
+         set
+         {
+            WObj.setDataFld(value);
+         }
+
+      }
+
+      public System.String DataFormatAs
+      {
+         get
+         {
+            return WObj.getDataFormatAs();
+         }
+         set
+         {
+            WObj.setDataFormatAs(value);
+         }
+
+      }
+
+      public System.String DataSrc
+      {
+         get
+         {
+            return WObj.getDataSrc();
+         }
+         set
+         {
+            WObj.setDataSrc(value);
          }
 
       }
@@ -88,9 +135,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for add
-      public virtual void Add(NHtmlUnit.Javascript.Host.Html.HTMLOptionElement newOptionObject, object arg2)
+      public virtual void Add(NHtmlUnit.Javascript.Host.Html.HTMLOptionElement newOptionObject, object beforeOptionObject)
       {
-         WObj.add((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement)newOptionObject.WrappedObject, arg2);
+         WObj.add((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement)newOptionObject.WrappedObject, beforeOptionObject);
       }
 
 // Generating method code for insertBeforeImpl
@@ -100,9 +147,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 // Generating method code for item
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLOptionElement Item(int index)
+      public virtual object Item(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLOptionElement>(WObj.item(index));
+         return WObj.item(index);
       }
 
 // Generating method code for getSize
