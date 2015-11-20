@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.Page
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -13,15 +13,15 @@ namespace NHtmlUnit
 {
    public interface IPage : NHtmlUnit.IObjectWrapper
    {
-      java.net.URL Url  { get; }
       NHtmlUnit.WebResponse WebResponse  { get; }
       NHtmlUnit.IWebWindow EnclosingWindow  { get; }
-// Generating method code for isHtmlPage
-      bool IsHtmlPage();
+      java.net.URL Url  { get; }
 // Generating method code for initialize
       void Initialize();
 // Generating method code for cleanUp
       void CleanUp();
+// Generating method code for isHtmlPage
+      bool IsHtmlPage();
 
    }
 }

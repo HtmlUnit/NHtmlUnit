@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Plugin)WrappedObject; }
       }
 
-      public Plugin(string name, string description, string filename)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin(name, description, filename)) {}
+      public Plugin(string name, string description, string version, string filename)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin(name, description, version, filename)) {}
 
       public Plugin()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Plugin()) {}
@@ -51,6 +51,14 @@ namespace NHtmlUnit.Javascript.Host
          get
          {
             return WObj.getName();
+         }
+      }
+
+      public System.String Version
+      {
+         get
+         {
+            return WObj.getVersion();
          }
       }
    }

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -90,6 +90,69 @@ namespace NHtmlUnit.Javascript.Host.Html
             WObj.setAlign(value);
          }
 
+      }
+
+      public System.Boolean Complete
+      {
+         get
+         {
+            return WObj.getComplete();
+         }
+      }
+
+      public System.String DataFld
+      {
+         get
+         {
+            return WObj.getDataFld();
+         }
+         set
+         {
+            WObj.setDataFld(value);
+         }
+
+      }
+
+      public System.String DataFormatAs
+      {
+         get
+         {
+            return WObj.getDataFormatAs();
+         }
+         set
+         {
+            WObj.setDataFormatAs(value);
+         }
+
+      }
+
+      public System.String DataSrc
+      {
+         get
+         {
+            return WObj.getDataSrc();
+         }
+         set
+         {
+            WObj.setDataSrc(value);
+         }
+
+      }
+
+      public System.Int32 NaturalWidth
+      {
+         get
+         {
+            return WObj.getNaturalWidth();
+         }
+      }
+
+      public System.Int32 NaturalHeight
+      {
+         get
+         {
+            return WObj.getNaturalHeight();
+         }
       }
 // Generating method code for jsConstructor
       public virtual void JsConstructor()

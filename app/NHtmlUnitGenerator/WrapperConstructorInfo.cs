@@ -63,7 +63,7 @@ namespace NHtmlUnit.Generator
                 if (Repository.TypeIsWrapped(mp.ParameterType))
                     Repository.MarkUsageOfType(mp.ParameterType);
             }
-
+            
             foreach (var mp in parameters)
             {
                 if (!firstParameter)
@@ -86,14 +86,14 @@ namespace NHtmlUnit.Generator
                 firstParameter = false;
 
                 if (mp.IsWrapped)
-                    functionCallSb.AppendFormat("({0}){1}.WrappedObject", mp.ParameterType.FullName, mp.ParameterName);
+                    functionCallSb.AppendFormat("({0}){1}.WrappedObject", ClassInfo.SanitizeTypeName(mp.ParameterType.FullName), mp.ParameterName);
                 else
                     functionCallSb.Append(mp.ParameterName);
             }
 
             functionCallSb.Append(")");
 
-            sb.AppendFormat(")\r\n         : this(new {0}{1}) {{}}\r\n\r\n", ClassInfo.WrappedType, functionCallSb);
+            sb.AppendFormat(")\r\n         : this(new {0}{1}) {{}}\r\n\r\n", ClassInfo.WrappedTypeFullNameSanitized, functionCallSb);
         }
     }
 }

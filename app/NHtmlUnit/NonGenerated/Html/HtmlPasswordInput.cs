@@ -9,10 +9,15 @@
 
 #endregion
 
+using NHtmlUnit.Html.Impl;
+
 namespace NHtmlUnit.Html
 {
     public partial class HtmlPasswordInput
     {
-        public new IPage Page { get; private set; }
+        IPage ISelectableTextInput.Page
+        {
+            get { return Page; }
+        }
     }
 }

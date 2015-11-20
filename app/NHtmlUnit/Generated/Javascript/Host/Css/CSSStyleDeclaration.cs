@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,981 @@ namespace NHtmlUnit.Javascript.Host.Css
       public CSSStyleDeclaration(NHtmlUnit.Javascript.Host.Element element)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject)) {}
 
+
+      public System.String WordSpacing
+      {
+         get
+         {
+            return WObj.getWordSpacing();
+         }
+         set
+         {
+            WObj.setWordSpacing(value);
+         }
+
+      }
+
+      public System.String WordWrap
+      {
+         get
+         {
+            return WObj.getWordWrap();
+         }
+         set
+         {
+            WObj.setWordWrap(value);
+         }
+
+      }
+
+      public System.String WritingMode
+      {
+         get
+         {
+            return WObj.getWritingMode();
+         }
+         set
+         {
+            WObj.setWritingMode(value);
+         }
+
+      }
+
+      public System.Object ZIndex
+      {
+         get
+         {
+            return WObj.getZIndex();
+         }
+         set
+         {
+            WObj.setZIndex(value);
+         }
+
+      }
+
+      public System.String Zoom
+      {
+         get
+         {
+            return WObj.getZoom();
+         }
+         set
+         {
+            WObj.setZoom(value);
+         }
+
+      }
+
+      public System.String MsFlex
+      {
+         get
+         {
+            return WObj.getMsFlex();
+         }
+         set
+         {
+            WObj.setMsFlex(value);
+         }
+
+      }
+
+      public System.String MsFlexAlign
+      {
+         get
+         {
+            return WObj.getMsFlexAlign();
+         }
+         set
+         {
+            WObj.setMsFlexAlign(value);
+         }
+
+      }
+
+      public System.String MsFlexDirection
+      {
+         get
+         {
+            return WObj.getMsFlexDirection();
+         }
+         set
+         {
+            WObj.setMsFlexDirection(value);
+         }
+
+      }
+
+      public System.String MsFlexFlow
+      {
+         get
+         {
+            return WObj.getMsFlexFlow();
+         }
+         set
+         {
+            WObj.setMsFlexFlow(value);
+         }
+
+      }
+
+      public System.String MsFlexItemAlign
+      {
+         get
+         {
+            return WObj.getMsFlexItemAlign();
+         }
+         set
+         {
+            WObj.setMsFlexItemAlign(value);
+         }
+
+      }
+
+      public System.String MsFlexLinePack
+      {
+         get
+         {
+            return WObj.getMsFlexLinePack();
+         }
+         set
+         {
+            WObj.setMsFlexLinePack(value);
+         }
+
+      }
+
+      public System.String MsFlexNegative
+      {
+         get
+         {
+            return WObj.getMsFlexNegative();
+         }
+         set
+         {
+            WObj.setMsFlexNegative(value);
+         }
+
+      }
+
+      public System.String MsFlexOrder
+      {
+         get
+         {
+            return WObj.getMsFlexOrder();
+         }
+         set
+         {
+            WObj.setMsFlexOrder(value);
+         }
+
+      }
+
+      public System.String MsFlexPack
+      {
+         get
+         {
+            return WObj.getMsFlexPack();
+         }
+         set
+         {
+            WObj.setMsFlexPack(value);
+         }
+
+      }
+
+      public System.String MsFlexPositive
+      {
+         get
+         {
+            return WObj.getMsFlexPositive();
+         }
+         set
+         {
+            WObj.setMsFlexPositive(value);
+         }
+
+      }
+
+      public System.String MsFlexPreferredSize
+      {
+         get
+         {
+            return WObj.getMsFlexPreferredSize();
+         }
+         set
+         {
+            WObj.setMsFlexPreferredSize(value);
+         }
+
+      }
+
+      public System.String MsFlexWrap
+      {
+         get
+         {
+            return WObj.getMsFlexWrap();
+         }
+         set
+         {
+            WObj.setMsFlexWrap(value);
+         }
+
+      }
+
+      public System.String MsFlowFrom
+      {
+         get
+         {
+            return WObj.getMsFlowFrom();
+         }
+         set
+         {
+            WObj.setMsFlowFrom(value);
+         }
+
+      }
+
+      public System.String MsFlowInto
+      {
+         get
+         {
+            return WObj.getMsFlowInto();
+         }
+         set
+         {
+            WObj.setMsFlowInto(value);
+         }
+
+      }
+
+      public System.String MsFontFeatureSettings
+      {
+         get
+         {
+            return WObj.getMsFontFeatureSettings();
+         }
+         set
+         {
+            WObj.setMsFontFeatureSettings(value);
+         }
+
+      }
+
+      public System.String MsGridColumn
+      {
+         get
+         {
+            return WObj.getMsGridColumn();
+         }
+         set
+         {
+            WObj.setMsGridColumn(value);
+         }
+
+      }
+
+      public System.String MsGridColumnAlign
+      {
+         get
+         {
+            return WObj.getMsGridColumnAlign();
+         }
+         set
+         {
+            WObj.setMsGridColumnAlign(value);
+         }
+
+      }
+
+      public System.String MsGridColumnSpan
+      {
+         get
+         {
+            return WObj.getMsGridColumnSpan();
+         }
+         set
+         {
+            WObj.setMsGridColumnSpan(value);
+         }
+
+      }
+
+      public System.String MsGridColumns
+      {
+         get
+         {
+            return WObj.getMsGridColumns();
+         }
+         set
+         {
+            WObj.setMsGridColumns(value);
+         }
+
+      }
+
+      public System.String MsGridRow
+      {
+         get
+         {
+            return WObj.getMsGridRow();
+         }
+         set
+         {
+            WObj.setMsGridRow(value);
+         }
+
+      }
+
+      public System.String MsGridRowAlign
+      {
+         get
+         {
+            return WObj.getMsGridRowAlign();
+         }
+         set
+         {
+            WObj.setMsGridRowAlign(value);
+         }
+
+      }
+
+      public System.String MsGridRowSpan
+      {
+         get
+         {
+            return WObj.getMsGridRowSpan();
+         }
+         set
+         {
+            WObj.setMsGridRowSpan(value);
+         }
+
+      }
+
+      public System.String MsGridRows
+      {
+         get
+         {
+            return WObj.getMsGridRows();
+         }
+         set
+         {
+            WObj.setMsGridRows(value);
+         }
+
+      }
+
+      public System.String MsHighContrastAdjust
+      {
+         get
+         {
+            return WObj.getMsHighContrastAdjust();
+         }
+         set
+         {
+            WObj.setMsHighContrastAdjust(value);
+         }
+
+      }
+
+      public System.String MsHyphenateLimitChars
+      {
+         get
+         {
+            return WObj.getMsHyphenateLimitChars();
+         }
+         set
+         {
+            WObj.setMsHyphenateLimitChars(value);
+         }
+
+      }
+
+      public System.String MsHyphenateLimitLines
+      {
+         get
+         {
+            return WObj.getMsHyphenateLimitLines();
+         }
+         set
+         {
+            WObj.setMsHyphenateLimitLines(value);
+         }
+
+      }
+
+      public System.String MsHyphenateLimitZone
+      {
+         get
+         {
+            return WObj.getMsHyphenateLimitZone();
+         }
+         set
+         {
+            WObj.setMsHyphenateLimitZone(value);
+         }
+
+      }
+
+      public System.String MsHyphens
+      {
+         get
+         {
+            return WObj.getMsHyphens();
+         }
+         set
+         {
+            WObj.setMsHyphens(value);
+         }
+
+      }
+
+      public System.String MsImeAlign
+      {
+         get
+         {
+            return WObj.getMsImeAlign();
+         }
+         set
+         {
+            WObj.setMsImeAlign(value);
+         }
+
+      }
+
+      public System.String MsOverflowStyle
+      {
+         get
+         {
+            return WObj.getMsOverflowStyle();
+         }
+         set
+         {
+            WObj.setMsOverflowStyle(value);
+         }
+
+      }
+
+      public System.String MsPerspective
+      {
+         get
+         {
+            return WObj.getMsPerspective();
+         }
+         set
+         {
+            WObj.setMsPerspective(value);
+         }
+
+      }
+
+      public System.String MsPerspectiveOrigin
+      {
+         get
+         {
+            return WObj.getMsPerspectiveOrigin();
+         }
+         set
+         {
+            WObj.setMsPerspectiveOrigin(value);
+         }
+
+      }
+
+      public System.String MsScrollChaining
+      {
+         get
+         {
+            return WObj.getMsScrollChaining();
+         }
+         set
+         {
+            WObj.setMsScrollChaining(value);
+         }
+
+      }
+
+      public System.String MsScrollLimit
+      {
+         get
+         {
+            return WObj.getMsScrollLimit();
+         }
+         set
+         {
+            WObj.setMsScrollLimit(value);
+         }
+
+      }
+
+      public System.String MsScrollLimitXMax
+      {
+         get
+         {
+            return WObj.getMsScrollLimitXMax();
+         }
+         set
+         {
+            WObj.setMsScrollLimitXMax(value);
+         }
+
+      }
+
+      public System.String MsScrollLimitXMin
+      {
+         get
+         {
+            return WObj.getMsScrollLimitXMin();
+         }
+         set
+         {
+            WObj.setMsScrollLimitXMin(value);
+         }
+
+      }
+
+      public System.String MsScrollLimitYMax
+      {
+         get
+         {
+            return WObj.getMsScrollLimitYMax();
+         }
+         set
+         {
+            WObj.setMsScrollLimitYMax(value);
+         }
+
+      }
+
+      public System.String MsScrollLimitYMin
+      {
+         get
+         {
+            return WObj.getMsScrollLimitYMin();
+         }
+         set
+         {
+            WObj.setMsScrollLimitYMin(value);
+         }
+
+      }
+
+      public System.String MsScrollRails
+      {
+         get
+         {
+            return WObj.getMsScrollRails();
+         }
+         set
+         {
+            WObj.setMsScrollRails(value);
+         }
+
+      }
+
+      public System.String MsScrollSnapPointsX
+      {
+         get
+         {
+            return WObj.getMsScrollSnapPointsX();
+         }
+         set
+         {
+            WObj.setMsScrollSnapPointsX(value);
+         }
+
+      }
+
+      public System.String MsScrollSnapPointsY
+      {
+         get
+         {
+            return WObj.getMsScrollSnapPointsY();
+         }
+         set
+         {
+            WObj.setMsScrollSnapPointsY(value);
+         }
+
+      }
+
+      public System.String MsScrollSnapType
+      {
+         get
+         {
+            return WObj.getMsScrollSnapType();
+         }
+         set
+         {
+            WObj.setMsScrollSnapType(value);
+         }
+
+      }
+
+      public System.String MsScrollSnapX
+      {
+         get
+         {
+            return WObj.getMsScrollSnapX();
+         }
+         set
+         {
+            WObj.setMsScrollSnapX(value);
+         }
+
+      }
+
+      public System.String MsScrollSnapY
+      {
+         get
+         {
+            return WObj.getMsScrollSnapY();
+         }
+         set
+         {
+            WObj.setMsScrollSnapY(value);
+         }
+
+      }
+
+      public System.String MsScrollTranslation
+      {
+         get
+         {
+            return WObj.getMsScrollTranslation();
+         }
+         set
+         {
+            WObj.setMsScrollTranslation(value);
+         }
+
+      }
+
+      public System.String MsTextCombineHorizontal
+      {
+         get
+         {
+            return WObj.getMsTextCombineHorizontal();
+         }
+         set
+         {
+            WObj.setMsTextCombineHorizontal(value);
+         }
+
+      }
+
+      public System.String MsTouchAction
+      {
+         get
+         {
+            return WObj.getMsTouchAction();
+         }
+         set
+         {
+            WObj.setMsTouchAction(value);
+         }
+
+      }
+
+      public System.String MsTouchSelect
+      {
+         get
+         {
+            return WObj.getMsTouchSelect();
+         }
+         set
+         {
+            WObj.setMsTouchSelect(value);
+         }
+
+      }
+
+      public System.String MsTransform
+      {
+         get
+         {
+            return WObj.getMsTransform();
+         }
+         set
+         {
+            WObj.setMsTransform(value);
+         }
+
+      }
+
+      public System.String MsTransformOrigin
+      {
+         get
+         {
+            return WObj.getMsTransformOrigin();
+         }
+         set
+         {
+            WObj.setMsTransformOrigin(value);
+         }
+
+      }
+
+      public System.String MsTransformStyle
+      {
+         get
+         {
+            return WObj.getMsTransformStyle();
+         }
+         set
+         {
+            WObj.setMsTransformStyle(value);
+         }
+
+      }
+
+      public System.String MsTransition
+      {
+         get
+         {
+            return WObj.getMsTransition();
+         }
+         set
+         {
+            WObj.setMsTransition(value);
+         }
+
+      }
+
+      public System.String MsTransitionDelay
+      {
+         get
+         {
+            return WObj.getMsTransitionDelay();
+         }
+         set
+         {
+            WObj.setMsTransitionDelay(value);
+         }
+
+      }
+
+      public System.String MsTransitionDuration
+      {
+         get
+         {
+            return WObj.getMsTransitionDuration();
+         }
+         set
+         {
+            WObj.setMsTransitionDuration(value);
+         }
+
+      }
+
+      public System.String MsTransitionProperty
+      {
+         get
+         {
+            return WObj.getMsTransitionProperty();
+         }
+         set
+         {
+            WObj.setMsTransitionProperty(value);
+         }
+
+      }
+
+      public System.String MsTransitionTimingFunction
+      {
+         get
+         {
+            return WObj.getMsTransitionTimingFunction();
+         }
+         set
+         {
+            WObj.setMsTransitionTimingFunction(value);
+         }
+
+      }
+
+      public System.String MsUserSelect
+      {
+         get
+         {
+            return WObj.getMsUserSelect();
+         }
+         set
+         {
+            WObj.setMsUserSelect(value);
+         }
+
+      }
+
+      public System.String MsWrapFlow
+      {
+         get
+         {
+            return WObj.getMsWrapFlow();
+         }
+         set
+         {
+            WObj.setMsWrapFlow(value);
+         }
+
+      }
+
+      public System.String MsWrapMargin
+      {
+         get
+         {
+            return WObj.getMsWrapMargin();
+         }
+         set
+         {
+            WObj.setMsWrapMargin(value);
+         }
+
+      }
+
+      public System.String MsWrapThrough
+      {
+         get
+         {
+            return WObj.getMsWrapThrough();
+         }
+         set
+         {
+            WObj.setMsWrapThrough(value);
+         }
+
+      }
+
+      public System.String Opacity
+      {
+         get
+         {
+            return WObj.getOpacity();
+         }
+         set
+         {
+            WObj.setOpacity(value);
+         }
+
+      }
+
+      public System.String Orphans
+      {
+         get
+         {
+            return WObj.getOrphans();
+         }
+         set
+         {
+            WObj.setOrphans(value);
+         }
+
+      }
+
+      public System.String Outline
+      {
+         get
+         {
+            return WObj.getOutline();
+         }
+         set
+         {
+            WObj.setOutline(value);
+         }
+
+      }
+
+      public System.String OutlineColor
+      {
+         get
+         {
+            return WObj.getOutlineColor();
+         }
+         set
+         {
+            WObj.setOutlineColor(value);
+         }
+
+      }
+
+      public System.String OutlineOffset
+      {
+         get
+         {
+            return WObj.getOutlineOffset();
+         }
+         set
+         {
+            WObj.setOutlineOffset(value);
+         }
+
+      }
+
+      public System.String OutlineStyle
+      {
+         get
+         {
+            return WObj.getOutlineStyle();
+         }
+         set
+         {
+            WObj.setOutlineStyle(value);
+         }
+
+      }
+
+      public System.String OutlineWidth
+      {
+         get
+         {
+            return WObj.getOutlineWidth();
+         }
+         set
+         {
+            WObj.setOutlineWidth(value);
+         }
+
+      }
+
+      public System.String Overflow
+      {
+         get
+         {
+            return WObj.getOverflow();
+         }
+         set
+         {
+            WObj.setOverflow(value);
+         }
+
+      }
+
+      public System.String OverflowX
+      {
+         get
+         {
+            return WObj.getOverflowX();
+         }
+         set
+         {
+            WObj.setOverflowX(value);
+         }
+
+      }
+
+      public System.String OverflowY
+      {
+         get
+         {
+            return WObj.getOverflowY();
+         }
+         set
+         {
+            WObj.setOverflowY(value);
+         }
+
+      }
 
       public System.String Padding
       {
@@ -793,71 +1768,6 @@ namespace NHtmlUnit.Javascript.Host.Css
          set
          {
             WObj.setWidows(value);
-         }
-
-      }
-
-      public System.String WordSpacing
-      {
-         get
-         {
-            return WObj.getWordSpacing();
-         }
-         set
-         {
-            WObj.setWordSpacing(value);
-         }
-
-      }
-
-      public System.String WordWrap
-      {
-         get
-         {
-            return WObj.getWordWrap();
-         }
-         set
-         {
-            WObj.setWordWrap(value);
-         }
-
-      }
-
-      public System.String WritingMode
-      {
-         get
-         {
-            return WObj.getWritingMode();
-         }
-         set
-         {
-            WObj.setWritingMode(value);
-         }
-
-      }
-
-      public System.Object ZIndex
-      {
-         get
-         {
-            return WObj.getZIndex();
-         }
-         set
-         {
-            WObj.setZIndex(value);
-         }
-
-      }
-
-      public System.String Zoom
-      {
-         get
-         {
-            return WObj.getZoom();
-         }
-         set
-         {
-            WObj.setZoom(value);
          }
 
       }
@@ -1988,132 +2898,106 @@ namespace NHtmlUnit.Javascript.Host.Css
 
       }
 
-      public System.String Opacity
+      public System.String MsContentZoomChaining
       {
          get
          {
-            return WObj.getOpacity();
+            return WObj.getMsContentZoomChaining();
          }
          set
          {
-            WObj.setOpacity(value);
+            WObj.setMsContentZoomChaining(value);
          }
 
       }
 
-      public System.String Orphans
+      public System.String MsContentZoomLimit
       {
          get
          {
-            return WObj.getOrphans();
+            return WObj.getMsContentZoomLimit();
          }
          set
          {
-            WObj.setOrphans(value);
+            WObj.setMsContentZoomLimit(value);
          }
 
       }
 
-      public System.String Outline
+      public System.String MsContentZoomLimitMax
       {
          get
          {
-            return WObj.getOutline();
+            return WObj.getMsContentZoomLimitMax();
          }
          set
          {
-            WObj.setOutline(value);
+            WObj.setMsContentZoomLimitMax(value);
          }
 
       }
 
-      public System.String OutlineColor
+      public System.String MsContentZoomLimitMin
       {
          get
          {
-            return WObj.getOutlineColor();
+            return WObj.getMsContentZoomLimitMin();
          }
          set
          {
-            WObj.setOutlineColor(value);
+            WObj.setMsContentZoomLimitMin(value);
          }
 
       }
 
-      public System.String OutlineOffset
+      public System.String MsContentZoomSnap
       {
          get
          {
-            return WObj.getOutlineOffset();
+            return WObj.getMsContentZoomSnap();
          }
          set
          {
-            WObj.setOutlineOffset(value);
+            WObj.setMsContentZoomSnap(value);
          }
 
       }
 
-      public System.String OutlineStyle
+      public System.String MsContentZoomSnapPoints
       {
          get
          {
-            return WObj.getOutlineStyle();
+            return WObj.getMsContentZoomSnapPoints();
          }
          set
          {
-            WObj.setOutlineStyle(value);
+            WObj.setMsContentZoomSnapPoints(value);
          }
 
       }
 
-      public System.String OutlineWidth
+      public System.String MsContentZoomSnapType
       {
          get
          {
-            return WObj.getOutlineWidth();
+            return WObj.getMsContentZoomSnapType();
          }
          set
          {
-            WObj.setOutlineWidth(value);
+            WObj.setMsContentZoomSnapType(value);
          }
 
       }
 
-      public System.String Overflow
+      public System.String MsContentZooming
       {
          get
          {
-            return WObj.getOverflow();
+            return WObj.getMsContentZooming();
          }
          set
          {
-            WObj.setOverflow(value);
-         }
-
-      }
-
-      public System.String OverflowX
-      {
-         get
-         {
-            return WObj.getOverflowX();
-         }
-         set
-         {
-            WObj.setOverflowX(value);
-         }
-
-      }
-
-      public System.String OverflowY
-      {
-         get
-         {
-            return WObj.getOverflowY();
-         }
-         set
-         {
-            WObj.setOverflowY(value);
+            WObj.setMsContentZooming(value);
          }
 
       }
@@ -2129,8 +3013,20 @@ namespace NHtmlUnit.Javascript.Host.Css
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSValue>(WObj.getPropertyCSSValue(name));
       }
 
+// Generating method code for getPropertyPriority
+      public virtual string GetPropertyPriority(string name)
+      {
+         return WObj.getPropertyPriority(name);
+      }
+
+// Generating method code for setProperty
+      public virtual void SetProperty(string name, string value, string important)
+      {
+         WObj.setProperty(name, value, important);
+      }
+
 // Generating method code for removeProperty
-      public virtual string RemoveProperty(string name)
+      public virtual string RemoveProperty(object name)
       {
          return WObj.removeProperty(name);
       }

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,9 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleRule)WrappedObject; }
       }
 
+      public CSSStyleRule()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleRule()) {}
+
 
       public System.String SelectorText
       {
@@ -46,6 +49,14 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
+
+      public System.Boolean ReadOnly
+      {
+         get
+         {
+            return WObj.getReadOnly();
+         }
+      }
    }
 
 

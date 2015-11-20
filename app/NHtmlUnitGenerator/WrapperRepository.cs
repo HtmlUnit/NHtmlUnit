@@ -51,6 +51,7 @@ namespace NHtmlUnit.Generator
             {
                 { "com.gargoylesoftware.htmlunit.", "" },
                 { "org.w3c.dom.", "W3C.Dom." },
+                { "com.gargoylesoftware.htmlunit.javascript.host.event.", "Javascript.Host.Events." }
             };
 
             Settings.Default.Whaat = new Random().Next().ToString(CultureInfo.InvariantCulture);

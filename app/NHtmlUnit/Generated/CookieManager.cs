@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -39,6 +39,18 @@ namespace NHtmlUnit
       public virtual bool IsCookiesEnabled()
       {
          return WObj.isCookiesEnabled();
+      }
+
+// Generating method code for replaceForCookieIfNecessary
+      public virtual java.net.URL ReplaceForCookieIfNecessary(java.net.URL url)
+      {
+         return WObj.replaceForCookieIfNecessary(url);
+      }
+
+// Generating method code for buildCookieOrigin
+      public virtual org.apache.http.cookie.CookieOrigin BuildCookieOrigin(java.net.URL url)
+      {
+         return WObj.buildCookieOrigin(url);
       }
 
 // Generating method code for clearExpired

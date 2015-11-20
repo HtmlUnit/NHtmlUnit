@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -42,6 +42,14 @@ namespace NHtmlUnit
             return WObj.getIndex();
          }
       }
+
+      public System.Object CurrentState
+      {
+         get
+         {
+            return WObj.getCurrentState();
+         }
+      }
 // Generating method code for getUrl
       public virtual java.net.URL GetUrl(int index)
       {
@@ -70,6 +78,12 @@ namespace NHtmlUnit
       public virtual void RemoveCurrent()
       {
          WObj.removeCurrent();
+      }
+
+// Generating method code for replaceState
+      public virtual void ReplaceState(object state, java.net.URL url)
+      {
+         WObj.replaceState(state, url);
       }
 
    }

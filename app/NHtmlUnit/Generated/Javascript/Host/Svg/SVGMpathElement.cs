@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,23 +8,23 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Svg
 {
-   public partial class SVGMpathElement : NHtmlUnit.Javascript.Host.Svg.SVGElement
+   public partial class SVGMPathElement : NHtmlUnit.Javascript.Host.Svg.SVGElement
    {
-      static SVGMpathElement()
+      static SVGMPathElement()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMpathElement o) =>
-            new SVGMpathElement(o));
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMPathElement o) =>
+            new SVGMPathElement(o));
       }
 
-      public SVGMpathElement(com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMpathElement wrappedObject) : base(wrappedObject) {}
+      public SVGMPathElement(com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMPathElement wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMpathElement WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMPathElement WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMpathElement)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMPathElement)WrappedObject; }
       }
 
-      public SVGMpathElement()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMpathElement()) {}
+      public SVGMPathElement()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMPathElement()) {}
 
    }
 

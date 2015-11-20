@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -64,6 +64,74 @@ namespace NHtmlUnit.Javascript.Host.Html
             WObj.setAlign(value);
          }
 
+      }
+
+      public System.String DataFld
+      {
+         get
+         {
+            return WObj.getDataFld();
+         }
+         set
+         {
+            WObj.setDataFld(value);
+         }
+
+      }
+
+      public System.String DataFormatAs
+      {
+         get
+         {
+            return WObj.getDataFormatAs();
+         }
+         set
+         {
+            WObj.setDataFormatAs(value);
+         }
+
+      }
+
+      public System.String DataSrc
+      {
+         get
+         {
+            return WObj.getDataSrc();
+         }
+         set
+         {
+            WObj.setDataSrc(value);
+         }
+
+      }
+
+      public System.String Classid
+      {
+         get
+         {
+            return WObj.getClassid();
+         }
+         set
+         {
+            WObj.setClassid(value);
+         }
+
+      }
+
+      public System.String Width_js
+      {
+         get
+         {
+            return WObj.getWidth_js();
+         }
+      }
+
+      public System.String Height_js
+      {
+         get
+         {
+            return WObj.getHeight_js();
+         }
       }
    }
 

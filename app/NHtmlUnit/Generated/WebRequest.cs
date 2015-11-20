@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -113,6 +113,19 @@ namespace NHtmlUnit
 
       }
 
+      public System.Object State
+      {
+         get
+         {
+            return WObj.getState();
+         }
+         set
+         {
+            WObj.setState(value);
+         }
+
+      }
+
       public IList<NHtmlUnit.Util.NameValuePair> RequestParameters
       {
          get
@@ -174,6 +187,12 @@ namespace NHtmlUnit
       public virtual void SetAdditionalHeader(string name, string value)
       {
          WObj.setAdditionalHeader(name, value);
+      }
+
+// Generating method code for isCloneForHistoryAPI
+      public virtual bool IsCloneForHistoryAPI()
+      {
+         return WObj.isCloneForHistoryAPI();
       }
 
 // Generating method code for isSocksProxy

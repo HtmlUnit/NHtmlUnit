@@ -9,11 +9,16 @@
 
 #endregion
 
+using NHtmlUnit.Html.Impl;
+
 namespace NHtmlUnit.Html
 {
     public partial class HtmlTextInput : NHtmlUnit.Html.Impl.ISelectableTextInput
-  
+
     {
-        public new IPage Page { get; private set; }
+        IPage ISelectableTextInput.Page
+        {
+            get { return Page; }
+        }
     }
 }

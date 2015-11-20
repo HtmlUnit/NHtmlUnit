@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -70,6 +70,19 @@ namespace NHtmlUnit.Html
                WObj.getOptions());
          }
        }
+
+      public System.Int32 SelectedIndex
+      {
+         get
+         {
+            return WObj.getSelectedIndex();
+         }
+         set
+         {
+            WObj.setSelectedIndex(value);
+         }
+
+      }
 
       public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
       {
@@ -174,6 +187,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected));
       }
 
+// Generating method code for ensureSelectedIndex
+      public virtual void EnsureSelectedIndex()
+      {
+         WObj.ensureSelectedIndex();
+      }
+
 // Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(string optionValue, bool isSelected, bool invokeOnFocus)
       {
@@ -238,6 +257,12 @@ namespace NHtmlUnit.Html
       public virtual bool IsDisabled()
       {
          return WObj.isDisabled();
+      }
+
+// Generating method code for indexOf
+      public virtual int IndexOf(NHtmlUnit.Html.HtmlOption option)
+      {
+         return WObj.indexOf((com.gargoylesoftware.htmlunit.html.HtmlOption)option.WrappedObject);
       }
 
    }

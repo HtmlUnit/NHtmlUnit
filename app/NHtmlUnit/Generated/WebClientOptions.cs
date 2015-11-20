@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -53,6 +53,30 @@ namespace NHtmlUnit
 
       }
 
+      public java.security.KeyStore SSLClientCertificateStore
+      {
+         get
+         {
+            return WObj.getSSLClientCertificateStore();
+         }
+      }
+
+      public java.security.KeyStore SSLTrustStore
+      {
+         get
+         {
+            return WObj.getSSLTrustStore();
+         }
+      }
+
+      public System.Char[] SSLClientCertificatePassword
+      {
+         get
+         {
+            return WObj.getSSLClientCertificatePassword();
+         }
+      }
+
       public System.String SSLInsecureProtocol
       {
          get
@@ -93,6 +117,19 @@ namespace NHtmlUnit
 
       }
 
+
+      public System.Int32 MaxInMemory
+      {
+         get
+         {
+            return WObj.getMaxInMemory();
+         }
+         set
+         {
+            WObj.setMaxInMemory(value);
+         }
+
+      }
 
       public System.String HomePage
       {
@@ -149,12 +186,6 @@ namespace NHtmlUnit
          return WObj.isDoNotTrackEnabled();
       }
 
-// Generating method code for setSSLClientCertificate
-      public virtual void SetSSLClientCertificate(java.net.URL certificateUrl, string certificatePassword, string certificateType)
-      {
-         WObj.setSSLClientCertificate(certificateUrl, certificatePassword, certificateType);
-      }
-
 // Generating method code for isActiveXNative
       public virtual bool IsActiveXNative()
       {
@@ -189,6 +220,18 @@ namespace NHtmlUnit
       public virtual bool IsRedirectEnabled()
       {
          return WObj.isRedirectEnabled();
+      }
+
+// Generating method code for setSSLClientCertificate
+      public virtual void SetSSLClientCertificate(java.net.URL certificateUrl, string certificatePassword, string certificateType)
+      {
+         WObj.setSSLClientCertificate(certificateUrl, certificatePassword, certificateType);
+      }
+
+// Generating method code for setSSLTrustStore
+      public virtual void SetSSLTrustStore(java.net.URL sslTrustStoreUrl, string sslTrustStorePassword, string sslTrustStoreType)
+      {
+         WObj.setSSLTrustStore(sslTrustStoreUrl, sslTrustStorePassword, sslTrustStoreType);
       }
 
    }

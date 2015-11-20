@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,12 @@ namespace NHtmlUnit.Javascript
       public virtual void Execute()
       {
          WObj.execute();
+      }
+
+// Generating method code for isStillAlive
+      public virtual bool IsStillAlive()
+      {
+         return WObj.isStillAlive();
       }
 
    }

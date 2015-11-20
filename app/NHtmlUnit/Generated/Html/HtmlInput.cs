@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -213,6 +213,58 @@ namespace NHtmlUnit.Html
                WObj.getNewNames());
          }
        }
+
+      public System.String Size
+      {
+         get
+         {
+            return WObj.getSize();
+         }
+         set
+         {
+            WObj.setSize(value);
+         }
+
+      }
+
+      public System.String Accept
+      {
+         get
+         {
+            return WObj.getAccept();
+         }
+         set
+         {
+            WObj.setAccept(value);
+         }
+
+      }
+
+      public System.String Autocomplete
+      {
+         get
+         {
+            return WObj.getAutocomplete();
+         }
+         set
+         {
+            WObj.setAutocomplete(value);
+         }
+
+      }
+
+      public System.String Placeholder
+      {
+         get
+         {
+            return WObj.getPlaceholder();
+         }
+         set
+         {
+            WObj.setPlaceholder(value);
+         }
+
+      }
 // Generating method code for setValueAttribute
       public virtual NHtmlUnit.IPage SetValueAttribute(string newValue)
       {
@@ -267,16 +319,16 @@ namespace NHtmlUnit.Html
          WObj.markAsCreatedByJavascript();
       }
 
-// Generating method code for unmarkAsCreatedByJavascript
-      public virtual void UnmarkAsCreatedByJavascript()
-      {
-         WObj.unmarkAsCreatedByJavascript();
-      }
-
 // Generating method code for wasCreatedByJavascript
       public virtual bool WasCreatedByJavascript()
       {
          return WObj.wasCreatedByJavascript();
+      }
+
+// Generating method code for isRequired
+      public virtual bool IsRequired()
+      {
+         return WObj.isRequired();
       }
 
    }

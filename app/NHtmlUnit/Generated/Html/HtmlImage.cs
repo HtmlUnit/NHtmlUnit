@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,14 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlImage)WrappedObject; }
       }
 
+
+      public System.String OriginalQualifiedName
+      {
+         get
+         {
+            return WObj.getOriginalQualifiedName();
+         }
+      }
 
       public System.String SrcAttribute
       {
@@ -143,6 +151,20 @@ namespace NHtmlUnit.Html
             return WObj.getWidth();
          }
       }
+
+      public System.Boolean Complete
+      {
+         get
+         {
+            return WObj.getComplete();
+         }
+      }
+// Generating method code for wasCreatedByJavascript
+      public virtual bool WasCreatedByJavascript()
+      {
+         return WObj.wasCreatedByJavascript();
+      }
+
 // Generating method code for doOnLoad
       public virtual void DoOnLoad()
       {
@@ -165,6 +187,12 @@ namespace NHtmlUnit.Html
       public virtual void SaveAs(java.io.File file)
       {
          WObj.saveAs(file);
+      }
+
+// Generating method code for markAsCreatedByJavascript
+      public virtual void MarkAsCreatedByJavascript()
+      {
+         WObj.markAsCreatedByJavascript();
       }
 
    }

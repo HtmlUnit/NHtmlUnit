@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,12 +27,43 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Screen()) {}
 
 
+      public System.Int32 Width
+      {
+         get
+         {
+            return WObj.getWidth();
+         }
+         set
+         {
+            WObj.setWidth(value);
+         }
+
+      }
+
+      public System.Int32 DeviceXDPI
+      {
+         get
+         {
+            return WObj.getDeviceXDPI();
+         }
+         set
+         {
+            WObj.setDeviceXDPI(value);
+         }
+
+      }
+
       public System.Int32 AvailHeight
       {
          get
          {
             return WObj.getAvailHeight();
          }
+         set
+         {
+            WObj.setAvailHeight(value);
+         }
+
       }
 
       public System.Int32 AvailWidth
@@ -41,6 +72,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getAvailWidth();
          }
+         set
+         {
+            WObj.setAvailWidth(value);
+         }
+
       }
 
       public System.Int32 BufferDepth
@@ -62,6 +98,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getColorDepth();
          }
+         set
+         {
+            WObj.setColorDepth(value);
+         }
+
       }
 
       public System.Int32 Height
@@ -70,14 +111,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getHeight();
          }
-      }
-
-      public System.Int32 Width
-      {
-         get
+         set
          {
-            return WObj.getWidth();
+            WObj.setHeight(value);
          }
+
       }
 
       public System.Int32 AvailLeft
@@ -86,6 +124,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getAvailLeft();
          }
+         set
+         {
+            WObj.setAvailLeft(value);
+         }
+
       }
 
       public System.Int32 AvailTop
@@ -94,14 +137,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getAvailTop();
          }
-      }
-
-      public System.Int32 DeviceXDPI
-      {
-         get
+         set
          {
-            return WObj.getDeviceXDPI();
+            WObj.setAvailTop(value);
          }
+
       }
 
       public System.Int32 DeviceYDPI
@@ -110,6 +150,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getDeviceYDPI();
          }
+         set
+         {
+            WObj.setDeviceYDPI(value);
+         }
+
       }
 
       public System.Boolean FontSmoothingEnabled
@@ -118,6 +163,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getFontSmoothingEnabled();
          }
+         set
+         {
+            WObj.setFontSmoothingEnabled(value);
+         }
+
       }
 
       public System.Int32 Left
@@ -139,6 +189,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getLogicalXDPI();
          }
+         set
+         {
+            WObj.setLogicalXDPI(value);
+         }
+
       }
 
       public System.Int32 LogicalYDPI
@@ -147,6 +202,11 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getLogicalYDPI();
          }
+         set
+         {
+            WObj.setLogicalYDPI(value);
+         }
+
       }
 
       public System.Int32 PixelDepth
@@ -155,6 +215,37 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getPixelDepth();
          }
+         set
+         {
+            WObj.setPixelDepth(value);
+         }
+
+      }
+
+      public System.Int32 SystemXDPI
+      {
+         get
+         {
+            return WObj.getSystemXDPI();
+         }
+         set
+         {
+            WObj.setSystemXDPI(value);
+         }
+
+      }
+
+      public System.Int32 SystemYDPI
+      {
+         get
+         {
+            return WObj.getSystemYDPI();
+         }
+         set
+         {
+            WObj.setSystemYDPI(value);
+         }
+
       }
 
       public System.Int32 Top
@@ -176,11 +267,6 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getUpdateInterval();
          }
-         set
-         {
-            WObj.setUpdateInterval(value);
-         }
-
       }
    }
 

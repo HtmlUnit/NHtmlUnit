@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -39,6 +39,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public NHtmlUnit.Javascript.Host.Dom.DOMTokenList RelList
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DOMTokenList>(
+               WObj.getRelList());
+         }
+      }
+
    }
 
 

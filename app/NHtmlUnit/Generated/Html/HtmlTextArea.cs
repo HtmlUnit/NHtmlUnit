@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,6 +37,14 @@ namespace NHtmlUnit.Html
 
       }
 
+      public System.String NameAttribute
+      {
+         get
+         {
+            return WObj.getNameAttribute();
+         }
+      }
+
       public System.Int32 SelectionStart
       {
          get
@@ -61,14 +69,6 @@ namespace NHtmlUnit.Html
             WObj.setSelectionEnd(value);
          }
 
-      }
-
-      public System.String NameAttribute
-      {
-         get
-         {
-            return WObj.getNameAttribute();
-         }
       }
 
       public System.String DefaultValue
@@ -196,6 +196,19 @@ namespace NHtmlUnit.Html
                WObj.getNewNames());
          }
        }
+
+      public System.String Placeholder
+      {
+         get
+         {
+            return WObj.getPlaceholder();
+         }
+         set
+         {
+            WObj.setPlaceholder(value);
+         }
+
+      }
 // Generating method code for reset
       public virtual void Reset()
       {

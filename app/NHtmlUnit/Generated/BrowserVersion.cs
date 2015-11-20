@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -262,6 +262,19 @@ namespace NHtmlUnit
 
       }
 
+      public System.String[] HeaderNamesOrdered
+      {
+         get
+         {
+            return WObj.getHeaderNamesOrdered();
+         }
+         set
+         {
+            WObj.setHeaderNamesOrdered(value);
+         }
+
+      }
+
       public ICollection<NHtmlUnit.PluginConfiguration> Plugins
       {
          get
@@ -280,6 +293,12 @@ namespace NHtmlUnit
       public virtual bool IsFirefox()
       {
          return WObj.isFirefox();
+      }
+
+// Generating method code for isEdge
+      public virtual bool IsEdge()
+      {
+         return WObj.isEdge();
       }
 
 // Generating method code for hasFeature

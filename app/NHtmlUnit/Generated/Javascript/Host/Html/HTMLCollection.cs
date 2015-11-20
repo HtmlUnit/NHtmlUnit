@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLCollection : NHtmlUnit.Javascript.Host.NodeList, NHtmlUnit.W3C.Dom.INodeList
+   public partial class HTMLCollection : NHtmlUnit.Javascript.Host.Dom.AbstractList
    {
       static HTMLCollection()
       {
@@ -22,6 +22,9 @@ namespace NHtmlUnit.Javascript.Host.Html
       {
          get { return (com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection)WrappedObject; }
       }
+
+      public HTMLCollection()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection()) {}
 
       public HTMLCollection(NHtmlUnit.Html.DomNode parentScope, bool attributeChangeSensitive, string description)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject, attributeChangeSensitive, description)) {}

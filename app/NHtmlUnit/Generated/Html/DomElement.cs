@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -147,6 +147,66 @@ namespace NHtmlUnit.Html
          WObj.setAttributeNS(namespaceURI, qualifiedName, attributeValue);
       }
 
+// Generating method code for click
+      public virtual NHtmlUnit.IPage Click(bool shiftKey, bool ctrlKey, bool altKey)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click(shiftKey, ctrlKey, altKey));
+      }
+
+// Generating method code for mouseDown
+      public virtual NHtmlUnit.IPage MouseDown(bool shiftKey, bool ctrlKey, bool altKey, int button)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseDown(shiftKey, ctrlKey, altKey, button));
+      }
+
+// Generating method code for mouseUp
+      public virtual NHtmlUnit.IPage MouseUp(bool shiftKey, bool ctrlKey, bool altKey, int button)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseUp(shiftKey, ctrlKey, altKey, button));
+      }
+
+// Generating method code for click
+      public virtual NHtmlUnit.IPage Click(NHtmlUnit.Javascript.Host.Events.Event eventArg)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject));
+      }
+
+// Generating method code for fireEvent
+      public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Events.Event eventArg)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject));
+      }
+
+// Generating method code for dblClick
+      public virtual NHtmlUnit.IPage DblClick(bool shiftKey, bool ctrlKey, bool altKey)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.dblClick(shiftKey, ctrlKey, altKey));
+      }
+
+// Generating method code for mouseOver
+      public virtual NHtmlUnit.IPage MouseOver(bool shiftKey, bool ctrlKey, bool altKey, int button)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseOver(shiftKey, ctrlKey, altKey, button));
+      }
+
+// Generating method code for mouseMove
+      public virtual NHtmlUnit.IPage MouseMove(bool shiftKey, bool ctrlKey, bool altKey, int button)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseMove(shiftKey, ctrlKey, altKey, button));
+      }
+
+// Generating method code for mouseOut
+      public virtual NHtmlUnit.IPage MouseOut(bool shiftKey, bool ctrlKey, bool altKey, int button)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseOut(shiftKey, ctrlKey, altKey, button));
+      }
+
+// Generating method code for rightClick
+      public virtual NHtmlUnit.IPage RightClick(bool shiftKey, bool ctrlKey, bool altKey)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.rightClick(shiftKey, ctrlKey, altKey));
+      }
+
 // Generating method code for getElementsByTagNameNS
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagNameNS(string namespaceArg, string localName)
       {
@@ -225,6 +285,78 @@ namespace NHtmlUnit.Html
       public virtual void SetIdAttributeNode(NHtmlUnit.W3C.Dom.IAttr idAttr, bool isId)
       {
          WObj.setIdAttributeNode((org.w3c.dom.Attr)idAttr.WrappedObject, isId);
+      }
+
+// Generating method code for click
+      public virtual NHtmlUnit.IPage Click()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click());
+      }
+
+// Generating method code for dblClick
+      public virtual NHtmlUnit.IPage DblClick()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.dblClick());
+      }
+
+// Generating method code for mouseOver
+      public virtual NHtmlUnit.IPage MouseOver()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseOver());
+      }
+
+// Generating method code for mouseMove
+      public virtual NHtmlUnit.IPage MouseMove()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseMove());
+      }
+
+// Generating method code for mouseOut
+      public virtual NHtmlUnit.IPage MouseOut()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseOut());
+      }
+
+// Generating method code for mouseDown
+      public virtual NHtmlUnit.IPage MouseDown()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseDown());
+      }
+
+// Generating method code for mouseUp
+      public virtual NHtmlUnit.IPage MouseUp()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.mouseUp());
+      }
+
+// Generating method code for rightClick
+      public virtual NHtmlUnit.IPage RightClick()
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.rightClick());
+      }
+
+// Generating method code for fireEvent
+      public virtual NHtmlUnit.ScriptResult FireEvent(string eventType)
+      {
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent(eventType));
+      }
+
+// Generating method code for focus
+      public virtual void Focus()
+      {
+         WObj.focus();
+      }
+
+// Generating method code for blur
+      public virtual void Blur()
+      {
+         WObj.blur();
+      }
+
+// Generating method code for removeFocus
+      public virtual void RemoveFocus()
+      {
+         WObj.removeFocus();
       }
 
    }

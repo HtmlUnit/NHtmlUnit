@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -74,12 +74,6 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
             return WObj.getAllResponseHeaders();
          }
       }
-// Generating method code for jsConstructor
-      public virtual void JsConstructor()
-      {
-         WObj.jsConstructor();
-      }
-
 // Generating method code for abort
       public virtual void Abort()
       {
@@ -93,9 +87,9 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       }
 
 // Generating method code for open
-      public virtual void Open(string method, object url, bool async, object user, object password)
+      public virtual void Open(string method, object url, object asyncParam, object user, object password)
       {
-         WObj.open(method, url, async, user, password);
+         WObj.open(method, url, asyncParam, user, password);
       }
 
 // Generating method code for send

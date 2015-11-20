@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -88,6 +88,12 @@ namespace NHtmlUnit.Html
          }
 
       }
+// Generating method code for reset
+      public virtual void Reset()
+      {
+         WObj.reset();
+      }
+
 // Generating method code for setSelected
       public virtual void SetSelected(bool selected, bool invokeOnFocus)
       {
@@ -110,12 +116,6 @@ namespace NHtmlUnit.Html
       public virtual NHtmlUnit.IPage SetSelected(bool selected)
       {
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelected(selected));
-      }
-
-// Generating method code for reset
-      public virtual void Reset()
-      {
-         WObj.reset();
       }
 
 // Generating method code for isDefaultSelected

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -30,6 +30,18 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void AutoCompleteSaveForm()
       {
          WObj.AutoCompleteSaveForm();
+      }
+
+// Generating method code for AddSearchProvider
+      public virtual void AddSearchProvider()
+      {
+         WObj.AddSearchProvider();
+      }
+
+// Generating method code for IsSearchProviderInstalled
+      public virtual int IsSearchProviderInstalled()
+      {
+         return WObj.IsSearchProviderInstalled();
       }
 
    }

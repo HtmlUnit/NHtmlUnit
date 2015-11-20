@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,9 @@ namespace NHtmlUnit.Javascript.Host.Css
       {
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSFontFaceRule)WrappedObject; }
       }
+
+      public CSSFontFaceRule()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSFontFaceRule()) {}
 
    }
 

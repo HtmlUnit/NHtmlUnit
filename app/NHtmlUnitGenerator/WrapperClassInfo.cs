@@ -26,8 +26,10 @@ namespace NHtmlUnit.Generator
         private readonly string htmlUnitVersion;
         private readonly Dictionary<string, WrapperMethodInfo> methods;
         private readonly Dictionary<string, WrapperPropInfo> properties;
+        private readonly string[] reservedKeywords;
         private readonly List<WrapperStaticPublicField> staticPublicFields;
         private readonly Type wrappedType;
+        private readonly string wrappedTypeFullNameSanitized;
         private readonly WrapperRepository wrapperRepository;
 
 
@@ -42,6 +44,12 @@ namespace NHtmlUnit.Generator
             ScanMembers(wrappedFromType);
             Assembly htmlUnitAssembly = Assembly.GetAssembly(typeof(WebClient));
             this.htmlUnitVersion = htmlUnitAssembly.GetName().Version.ToString();
+            
+
+            const string reservedKeywordsList = "object,void,event,delegate,int,double," +
+                                                "namespace,checked,string,decimal,where,if,else,params,as";
+            reservedKeywords = reservedKeywordsList.Split(',');
+            this.wrappedTypeFullNameSanitized = SanitizeTypeName(this.wrappedType.FullName);
         }
 
 
@@ -90,6 +98,11 @@ namespace NHtmlUnit.Generator
             get { return this.wrapperRepository; }
         }
 
+        public string[] ReservedKeywords
+        {
+            get { return this.reservedKeywords; }
+        }
+
         public List<WrapperStaticPublicField> StaticPublicFields
         {
             get { return this.staticPublicFields; }
@@ -126,6 +139,11 @@ namespace NHtmlUnit.Generator
 
                 string ns = String.Join(".", names.Take(names.Length - 1));
 
+                // This namespace contains a class named Event, 
+                // .net doesn't allow classes with the same name as the namespace
+                //if (ns == "NHtmlUnit.Javascript.Host.Event")
+                //    ns = "NHtmlUnit.Javascript.Host.Events";
+
                 return ns;
             }
         }
@@ -140,10 +158,17 @@ namespace NHtmlUnit.Generator
             get { return this.wrappedType; }
         }
 
+        public string WrappedTypeFullNameSanitized
+        {
+            get { return this.wrappedTypeFullNameSanitized; }
+        }
+
         //public string EncodedClassName { get { return 
 
         public void GenerateClassCode(StringBuilder sb)
         {
+            var s = TargetNameWithoutNamespace;
+
             GeneratePartialClassHeader(sb, false);
 
             sb.AppendFormat(
@@ -155,19 +180,19 @@ namespace NHtmlUnit.Generator
 
 ",
                 TargetNameWithoutNamespace,
-                WrappedType.FullName);
+                WrappedTypeFullNameSanitized);
 
             sb.AppendFormat("      public {0}({1} wrappedObject) : base(wrappedObject) {{}}\r\n",
                             TargetNameWithoutNamespace,
-                            WrappedType.FullName);
+                            WrappedTypeFullNameSanitized);
 
             sb.AppendLine();
 
             sb.AppendFormat("      public {0}{1} WObj\r\n",
                             TargetBaseName == "ObjectWrapper" ? "" : "new ",
-                            WrappedType.FullName);
+                            WrappedTypeFullNameSanitized);
             sb.AppendFormat("      {{\r\n         get {{ return ({0})WrappedObject; }}\r\n      }}\r\n",
-                            WrappedType.FullName);
+                            WrappedTypeFullNameSanitized);
             sb.AppendLine();
 
             foreach (var wsf in StaticPublicFields)
@@ -284,6 +309,17 @@ using System.Text;";
                 .Concat(new[] { TargetNamespace }).ToList();
 
             return nameSpaceList.Contains(propertyType.Namespace);
+        }
+
+
+        public string SanitizeTypeName(string fullTypeName)
+        {
+            string[] sanitizedNames = fullTypeName
+                .Split('.')
+                .Select(x => reservedKeywords.Contains(x) ? "@" + x : x)
+                .ToArray();
+
+            return String.Join(".", sanitizedNames);
         }
 
 

@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,12 +25,20 @@ namespace NHtmlUnit.Javascript.Background
       void Shutdown();
 // Generating method code for runSingleJob
       bool RunSingleJob(NHtmlUnit.Javascript.Background.IJavaScriptJob jsj);
+// Generating method code for getJobCount
+      int GetJobCount(com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager.JavaScriptJobFilter jsjmjsjf);
 // Generating method code for removeJob
       void RemoveJob(int i);
 // Generating method code for waitForJobs
       int WaitForJobs(System.Int64 l);
 // Generating method code for waitForJobsStartingBefore
       int WaitForJobsStartingBefore(System.Int64 l);
+// Generating method code for waitForJobsStartingBefore
+      int WaitForJobsStartingBefore(System.Int64 l, com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager.JavaScriptJobFilter jsjmjsjf);
+// Generating method code for getEarliestJob
+      NHtmlUnit.Javascript.Background.IJavaScriptJob GetEarliestJob(com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager.JavaScriptJobFilter jsjmjsjf);
+// Generating method code for jobStatusDump
+      string JobStatusDump(com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager.JavaScriptJobFilter jsjmjsjf);
 
    }
 }

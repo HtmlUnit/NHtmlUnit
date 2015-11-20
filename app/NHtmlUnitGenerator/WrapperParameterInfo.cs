@@ -53,10 +53,7 @@ namespace NHtmlUnit.Generator
                     name = "arg" + WrappedParameterInfo.Position;
                 else
                 {
-                    var reservedKeywords = "object,void,event,delegate,int,double," +
-                                           "namespace,checked,string,decimal,where,if,else,params,as";
-
-                    if (reservedKeywords.Split(',').Contains(name))
+                    if (ClassInfo.ReservedKeywords.Contains(name))
                         name += "Arg";
                 }
 

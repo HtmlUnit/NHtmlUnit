@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class CSSMediaRule : NHtmlUnit.Javascript.Host.Css.CSSRule
+   public partial class CSSMediaRule : NHtmlUnit.Javascript.Host.Css.CSSConditionRule
    {
       static CSSMediaRule()
       {
@@ -23,12 +23,15 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSMediaRule)WrappedObject; }
       }
 
+      public CSSMediaRule()
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSMediaRule()) {}
 
-      public NHtmlUnit.Javascript.Host.MediaList Media
+
+      public NHtmlUnit.Javascript.Host.Dom.MediaList Media
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.MediaList>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.MediaList>(
                WObj.getMedia());
          }
       }

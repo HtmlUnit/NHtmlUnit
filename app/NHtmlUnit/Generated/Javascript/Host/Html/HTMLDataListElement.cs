@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,14 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLDataListElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDataListElement()) {}
 
+
+      public System.Object Options
+      {
+         get
+         {
+            return WObj.getOptions();
+         }
+      }
    }
 
 

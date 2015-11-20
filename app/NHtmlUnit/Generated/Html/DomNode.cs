@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,19 +23,6 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.DomNode)WrappedObject; }
       }
 
-
-      public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptObject
-      {
-         get
-         {
-            return WObj.getScriptObject();
-         }
-         set
-         {
-            WObj.setScriptObject(value);
-         }
-
-      }
 
       public System.String NodeName
       {
@@ -245,12 +232,12 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
+      public IEnumerable<NHtmlUnit.Html.DomElement> DomElementDescendants
       {
          get
          {
-            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
-               WObj.getHtmlElementDescendants());
+            return new IterableWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getDomElementDescendants());
          }
        }
 
@@ -295,6 +282,15 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
+      {
+         get
+         {
+            return new IterableWrapper<NHtmlUnit.Html.HtmlElement>(
+               WObj.getHtmlElementDescendants());
+         }
+       }
+
       public System.String CanonicalXPath
       {
          get
@@ -302,6 +298,12 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
+// Generating method code for hasFeature
+      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures feature)
+      {
+         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)feature.WrappedObject);
+      }
+
 // Generating method code for asXml
       public virtual string AsXml()
       {
@@ -521,6 +523,18 @@ namespace NHtmlUnit.Html
          WObj.removeDomChangeListener((com.gargoylesoftware.htmlunit.html.DomChangeListener)listener.WrappedObject);
       }
 
+// Generating method code for addCharacterDataChangeListener
+      public virtual void AddCharacterDataChangeListener(NHtmlUnit.Html.ICharacterDataChangeListener listener)
+      {
+         WObj.addCharacterDataChangeListener((com.gargoylesoftware.htmlunit.html.CharacterDataChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for removeCharacterDataChangeListener
+      public virtual void RemoveCharacterDataChangeListener(NHtmlUnit.Html.ICharacterDataChangeListener listener)
+      {
+         WObj.removeCharacterDataChangeListener((com.gargoylesoftware.htmlunit.html.CharacterDataChangeListener)listener.WrappedObject);
+      }
+
 // Generating method code for querySelector
       public virtual NHtmlUnit.Html.DomNode QuerySelector(string selectors)
       {
@@ -528,9 +542,21 @@ namespace NHtmlUnit.Html
       }
 
 // Generating method code for processImportNode
-      public virtual void ProcessImportNode(NHtmlUnit.Javascript.Host.Document doc)
+      public virtual void ProcessImportNode(NHtmlUnit.Javascript.Host.Dom.Document doc)
       {
-         WObj.processImportNode((com.gargoylesoftware.htmlunit.javascript.host.Document)doc.WrappedObject);
+         WObj.processImportNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Document)doc.WrappedObject);
+      }
+
+// Generating method code for getScriptableObject
+      public virtual net.sourceforge.htmlunit.corejs.javascript.ScriptableObject GetScriptableObject()
+      {
+         return WObj.getScriptableObject();
+      }
+
+// Generating method code for setScriptableObject
+      public virtual void SetScriptableObject(object scriptObject)
+      {
+         WObj.setScriptableObject(scriptObject);
       }
 
    }

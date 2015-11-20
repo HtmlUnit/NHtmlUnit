@@ -26,7 +26,7 @@ namespace IntegrationTests
         public void DoWikipediaSearch()
         {
             // Note that this test works against live wikipedia.org and requires an active Internet connection
-            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_17);
+            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_38);
 
             webClient.Options.JavaScriptEnabled = true;
             webClient.Options.ActiveXNative = true;

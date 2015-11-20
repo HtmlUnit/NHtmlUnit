@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -42,6 +42,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+// Generating method code for item
+      public virtual object Item(int index)
+      {
+         return WObj.item(index);
+      }
+
 // Generating method code for initialize
       public virtual void Initialize(NHtmlUnit.Html.HtmlSelect select)
       {
@@ -54,16 +60,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.getWithFallback(name);
       }
 
-// Generating method code for item
-      public virtual object Item(int index)
-      {
-         return WObj.item(index);
-      }
-
 // Generating method code for add
-      public virtual void Add(object newOptionObject, object newIndex)
+      public virtual void Add(object newOptionObject, object beforeOptionObject)
       {
-         WObj.add(newOptionObject, newIndex);
+         WObj.add(newOptionObject, beforeOptionObject);
       }
 
 // Generating method code for remove

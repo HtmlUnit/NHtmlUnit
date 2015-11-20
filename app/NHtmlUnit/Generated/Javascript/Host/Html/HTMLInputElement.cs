@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLInputElement : NHtmlUnit.Javascript.Host.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLInputElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
    {
       static HTMLInputElement()
       {
@@ -26,6 +26,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLInputElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLInputElement()) {}
 
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+         set
+         {
+            WObj.setType(value);
+         }
+
+      }
 
       public System.Int32 SelectionStart
       {
@@ -113,6 +126,45 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
+      public System.Int32 MinLength
+      {
+         get
+         {
+            return WObj.getMinLength();
+         }
+         set
+         {
+            WObj.setMinLength(value);
+         }
+
+      }
+
+      public System.String Min
+      {
+         get
+         {
+            return WObj.getMin();
+         }
+         set
+         {
+            WObj.setMin(value);
+         }
+
+      }
+
+      public System.String Max
+      {
+         get
+         {
+            return WObj.getMax();
+         }
+         set
+         {
+            WObj.setMax(value);
+         }
+
+      }
+
       public System.Boolean ReadOnly
       {
          get
@@ -164,6 +216,74 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public System.String Src
+      {
+         get
+         {
+            return WObj.getSrc();
+         }
+      }
+
+      public System.String Size
+      {
+         get
+         {
+            return WObj.getSize();
+         }
+         set
+         {
+            WObj.setSize(value);
+         }
+
+      }
+
+      public System.String Accept
+      {
+         get
+         {
+            return WObj.getAccept();
+         }
+         set
+         {
+            WObj.setAccept(value);
+         }
+
+      }
+
+      public System.String Autocomplete
+      {
+         get
+         {
+            return WObj.getAutocomplete();
+         }
+         set
+         {
+            WObj.setAutocomplete(value);
+         }
+
+      }
+
+      public System.Object Files
+      {
+         get
+         {
+            return WObj.getFiles();
+         }
+      }
+
+      public System.String Placeholder
+      {
+         get
+         {
+            return WObj.getPlaceholder();
+         }
+         set
+         {
+            WObj.setPlaceholder(value);
+         }
+
+      }
 // Generating method code for select
       public virtual void Select()
       {
@@ -174,6 +294,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetSelectionRange(int start, int end)
       {
          WObj.setSelectionRange(start, end);
+      }
+
+// Generating method code for isRequired
+      public virtual bool IsRequired()
+      {
+         return WObj.isRequired();
       }
 
    }

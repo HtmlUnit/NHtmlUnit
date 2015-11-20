@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public DOMStringMap()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMStringMap()) {}
 
-      public DOMStringMap(NHtmlUnit.Javascript.Host.Node node)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMStringMap((com.gargoylesoftware.htmlunit.javascript.host.Node)node.WrappedObject)) {}
+      public DOMStringMap(NHtmlUnit.Javascript.Host.Dom.Node node)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMStringMap((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)node.WrappedObject)) {}
 
    }
 

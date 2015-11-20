@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,6 +27,19 @@ namespace NHtmlUnit.Javascript.Host
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Location()) {}
 
 
+      public System.String Href
+      {
+         get
+         {
+            return WObj.getHref();
+         }
+         set
+         {
+            WObj.setHref(value);
+         }
+
+      }
+
       public System.String Hash
       {
          get
@@ -40,15 +53,15 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public System.String Href
+      public System.String Host
       {
          get
          {
-            return WObj.getHref();
+            return WObj.getHost();
          }
          set
          {
-            WObj.setHref(value);
+            WObj.setHost(value);
          }
 
       }
@@ -75,19 +88,6 @@ namespace NHtmlUnit.Javascript.Host
          set
          {
             WObj.setHostname(value);
-         }
-
-      }
-
-      public System.String Host
-      {
-         get
-         {
-            return WObj.getHost();
-         }
-         set
-         {
-            WObj.setHost(value);
          }
 
       }
@@ -129,6 +129,14 @@ namespace NHtmlUnit.Javascript.Host
             WObj.setProtocol(value);
          }
 
+      }
+
+      public System.String Origin
+      {
+         get
+         {
+            return WObj.getOrigin();
+         }
       }
 // Generating method code for setHash
       public virtual void SetHash(string oldURL, string hash)

@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,9 +23,17 @@ namespace NHtmlUnit.Javascript.Configuration
          get { return (com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration)WrappedObject; }
       }
 
-      public ClassConfiguration(java.lang.Class hostClass, java.lang.Class[] domClasses, bool jsObject)
-         : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject)) {}
+      public ClassConfiguration(java.lang.Class hostClass, java.lang.Class[] domClasses, bool jsObject, bool definedInStandardsMode, string className)
+         : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject, definedInStandardsMode, className)) {}
 
+
+      public System.String ClassName
+      {
+         get
+         {
+            return WObj.getClassName();
+         }
+      }
 
       public java.lang.Class HostClass
       {
@@ -51,7 +59,60 @@ namespace NHtmlUnit.Javascript.Configuration
          }
       }
 
-      public java.lang.reflect.Method JsConstructor
+      public ICollection<System.Object> PropertyEntries
+      {
+         get
+         {
+            return new ShallowCollectionWrapper<System.Object>(
+               WObj.getPropertyEntries());
+         }
+       }
+
+      public ICollection<System.Object> FunctionEntries
+      {
+         get
+         {
+            return new ShallowCollectionWrapper<System.Object>(
+               WObj.getFunctionEntries());
+         }
+       }
+
+      public ICollection<System.Object> StaticPropertyEntries
+      {
+         get
+         {
+            return new ShallowCollectionWrapper<System.Object>(
+               WObj.getStaticPropertyEntries());
+         }
+       }
+
+      public ICollection<System.Object> StaticFunctionEntries
+      {
+         get
+         {
+            return new ShallowCollectionWrapper<System.Object>(
+               WObj.getStaticFunctionEntries());
+         }
+       }
+
+      public ICollection<System.String> FunctionKeys
+      {
+         get
+         {
+            return new ShallowCollectionWrapper<System.String>(
+               WObj.getFunctionKeys());
+         }
+       }
+
+      public System.String HostClassSimpleName
+      {
+         get
+         {
+            return WObj.getHostClassSimpleName();
+         }
+      }
+
+      public java.lang.reflect.Member JsConstructor
       {
          get
          {
@@ -62,6 +123,18 @@ namespace NHtmlUnit.Javascript.Configuration
       public virtual void AddFunction(java.lang.reflect.Method method)
       {
          WObj.addFunction(method);
+      }
+
+// Generating method code for addStaticProperty
+      public virtual void AddStaticProperty(string name, java.lang.reflect.Method getter, java.lang.reflect.Method setter)
+      {
+         WObj.addStaticProperty(name, getter, setter);
+      }
+
+// Generating method code for addStaticFunction
+      public virtual void AddStaticFunction(java.lang.reflect.Method method)
+      {
+         WObj.addStaticFunction(method);
       }
 
 // Generating method code for addConstant
@@ -82,32 +155,10 @@ namespace NHtmlUnit.Javascript.Configuration
          return WObj.isJsObject();
       }
 
-// Generating method code for propertyEntries
-      public virtual ICollection<System.Object> PropertyEntries()
+// Generating method code for isDefinedInStandardsMode
+      public virtual bool IsDefinedInStandardsMode()
       {
-
-         return new ShallowCollectionWrapper<System.Object>(WObj.propertyEntries());
-      }
-
-// Generating method code for functionEntries
-      public virtual ICollection<System.Object> FunctionEntries()
-      {
-
-         return new ShallowCollectionWrapper<System.Object>(WObj.functionEntries());
-      }
-
-// Generating method code for constants
-      public virtual IList<System.String> Constants()
-      {
-
-         return new ShallowListWrapper<System.String>(WObj.constants());
-      }
-
-// Generating method code for functionKeys
-      public virtual ICollection<System.String> FunctionKeys()
-      {
-
-         return new ShallowCollectionWrapper<System.String>(WObj.functionKeys());
+         return WObj.isDefinedInStandardsMode();
       }
 
    }

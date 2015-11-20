@@ -1,4 +1,4 @@
-// Generated class v2.14.1.0, don't modify
+// Generated class v2.19.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,14 +27,15 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLMapElement()) {}
 
 
-      public IList<NHtmlUnit.W3C.Dom.INode> Areas
+      public NHtmlUnit.Javascript.Host.Html.HTMLCollection Areas
       {
          get
          {
-            return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
                WObj.getAreas());
          }
-       }
+      }
+
    }
 
 
