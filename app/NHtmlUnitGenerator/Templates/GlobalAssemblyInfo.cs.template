@@ -17,5 +17,3 @@ using System.Runtime.InteropServices;
 [assembly : AssemblyCopyright("Copyright © OKB AS {0}")]
 [assembly : AssemblyTrademark("OKB AS {0}")]
 [assembly : ComVisible(false)]
-[assembly : AssemblyVersion("{1}")]
-[assembly : AssemblyFileVersion("{1}")]
