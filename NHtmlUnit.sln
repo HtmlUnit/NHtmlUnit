@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHtmlUnit.Generator", "app\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "tests\ConsoleTest\ConsoleTest.csproj", "{DCEE9766-27F8-4E05-ACCE-9AD9CD55AE11}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{5B152A0C-87B8-4920-80AE-77F60A184ABF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8273FDB1-A8CD-4450-A25D-74BAA56DFC94}"
 	ProjectSection(SolutionItems) = preProject
 		clean.cmd = clean.cmd
 		LICENSE-HtmlUnit.txt = LICENSE-HtmlUnit.txt
