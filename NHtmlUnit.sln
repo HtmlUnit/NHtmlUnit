@@ -16,13 +16,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "tests\Consol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8273FDB1-A8CD-4450-A25D-74BAA56DFC94}"
 	ProjectSection(SolutionItems) = preProject
-        .travis.yml = .travis.yml
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
 		clean.cmd = clean.cmd
 		LICENSE-HtmlUnit.txt = LICENSE-HtmlUnit.txt
 		LICENSE.txt = LICENSE.txt
-		lib\HtmlUnit\Make.cmd = lib\HtmlUnit\Make.cmd
 		NHtmlUnit.nuspec = NHtmlUnit.nuspec
-		nuget-pack.cmd = nuget-pack.cmd
+		nuget.cmd = nuget.cmd
 		README.md = README.md
 	EndProjectSection
 EndProject
