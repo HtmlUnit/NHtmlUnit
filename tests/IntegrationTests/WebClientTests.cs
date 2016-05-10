@@ -11,10 +11,8 @@
 
 using System;
 using System.Linq;
-
 using NHtmlUnit;
 using NHtmlUnit.Html;
-
 using NUnit.Framework;
 
 namespace IntegrationTests
@@ -26,33 +24,31 @@ namespace IntegrationTests
         public void DoWikipediaSearch()
         {
             // Note that this test works against live wikipedia.org and requires an active Internet connection
-            WebClient webClient = new WebClient(BrowserVersion.FIREFOX_38);
+            var webClient = new WebClient(BrowserVersion.FIREFOX_38);
 
-            webClient.Options.JavaScriptEnabled = true;
+            webClient.Options.JavaScriptEnabled = false;
             webClient.Options.ActiveXNative = true;
-            webClient.Options.CssEnabled = true; 
+            webClient.Options.CssEnabled = true;
 
-            HtmlPage page = webClient.GetHtmlPage("http://wikipedia.org");
+            var page = webClient.GetHtmlPage("http://wikipedia.org");
+      
+            page.GetElementById<HtmlInput>("searchInput").Type("network");
 
-            HtmlInput queryInputElement = page.GetElementById<HtmlInput>("searchInput");
-            queryInputElement.Type("network");
+            var searchButton = page.HtmlElementDescendants
+                .OfType<HtmlButton>()
+                .First(b => b.TypeAttribute == "submit");
 
-            HtmlSubmitInput submitButton2 =
-                page.HtmlElementDescendants
-                    .OfType<HtmlSubmitInput>()
-                    .First(e => e.NameAttribute == "go");
+            searchButton.Click();
 
-            submitButton2.Click();
+            var submitButton = page.GetElementByName("go") as HtmlElement;
 
-            HtmlElement submitButton = page.GetElementByName("go") as HtmlElement;
-
-            HtmlPage nextPage = submitButton.Click<HtmlPage>();
+            var nextPage = submitButton.Click<HtmlPage>();
 
             // Check whether enumeration works (at least that it doesnt crash)
             foreach (var child in nextPage.Body.HtmlElementDescendants)
                 Console.WriteLine(child.TreeDepth + ": Child in enumerator is " + child);
 
-            int i = 0;
+            var i = 0;
 
             // Check whether list wrapper works
             foreach (var child in nextPage.Forms)
