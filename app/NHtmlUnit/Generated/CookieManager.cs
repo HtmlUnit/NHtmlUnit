@@ -62,7 +62,8 @@ namespace NHtmlUnit
 // Generating method code for getCookie
       public virtual NHtmlUnit.Util.Cookie GetCookie(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookie(name));
+         var arg = WObj.getCookie(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Util.Cookie>(arg);
       }
 
 // Generating method code for addCookie

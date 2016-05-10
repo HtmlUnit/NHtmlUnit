@@ -50,7 +50,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertRow
       public virtual object InsertRow(int index)
       {
-         return WObj.insertRow(index);
+         var arg = WObj.insertRow(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for deleteRow
@@ -62,13 +63,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertRow
       public virtual object InsertRow(object index)
       {
-         return WObj.insertRow(index);
+         var arg = WObj.insertRow(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for moveRow
       public virtual object MoveRow(int sourceIndex, int targetIndex)
       {
-         return WObj.moveRow(sourceIndex, targetIndex);
+         var arg = WObj.moveRow(sourceIndex, targetIndex);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

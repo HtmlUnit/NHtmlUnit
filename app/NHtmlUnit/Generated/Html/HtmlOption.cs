@@ -115,7 +115,8 @@ namespace NHtmlUnit.Html
 // Generating method code for setSelected
       public virtual NHtmlUnit.IPage SetSelected(bool selected)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelected(selected));
+         var arg = WObj.setSelected(selected);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for isDefaultSelected

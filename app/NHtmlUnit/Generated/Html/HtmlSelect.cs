@@ -178,13 +178,15 @@ namespace NHtmlUnit.Html
 // Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected, bool invokeOnFocus)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus));
+         var arg = WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected));
+         var arg = WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for ensureSelectedIndex
@@ -196,25 +198,29 @@ namespace NHtmlUnit.Html
 // Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(string optionValue, bool isSelected, bool invokeOnFocus)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute(optionValue, isSelected, invokeOnFocus));
+         var arg = WObj.setSelectedAttribute(optionValue, isSelected, invokeOnFocus);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getOptionByValue
       public virtual NHtmlUnit.Html.HtmlOption GetOptionByValue(string value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(WObj.getOptionByValue(value));
+         var arg = WObj.getOptionByValue(value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(arg);
       }
 
 // Generating method code for setSelectedAttribute
       public virtual NHtmlUnit.IPage SetSelectedAttribute(string optionValue, bool isSelected)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setSelectedAttribute(optionValue, isSelected));
+         var arg = WObj.setSelectedAttribute(optionValue, isSelected);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getOption
       public virtual NHtmlUnit.Html.HtmlOption GetOption(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(WObj.getOption(index));
+         var arg = WObj.getOption(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(arg);
       }
 
 // Generating method code for removeOption
@@ -250,7 +256,8 @@ namespace NHtmlUnit.Html
 // Generating method code for getOptionByText
       public virtual NHtmlUnit.Html.HtmlOption GetOptionByText(string text)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(WObj.getOptionByText(text));
+         var arg = WObj.getOptionByText(text);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlOption>(arg);
       }
 
 // Generating method code for isDisabled

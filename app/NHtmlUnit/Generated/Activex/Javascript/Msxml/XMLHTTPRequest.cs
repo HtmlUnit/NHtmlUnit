@@ -107,7 +107,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for getOnreadystatechange
       public virtual object GetOnreadystatechange()
       {
-         return WObj.getOnreadystatechange();
+         var arg = WObj.getOnreadystatechange();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setOnreadystatechange

@@ -117,56 +117,64 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for createAttribute
       public virtual object CreateAttribute(string name)
       {
-         return WObj.createAttribute(name);
+         var arg = WObj.createAttribute(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createCDATASection
       public virtual object CreateCDATASection(string data)
       {
-         return WObj.createCDATASection(data);
+         var arg = WObj.createCDATASection(data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createComment
       public virtual object CreateComment(string data)
       {
-         return WObj.createComment(data);
+         var arg = WObj.createComment(data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createDocumentFragment
       public virtual object CreateDocumentFragment()
       {
-         return WObj.createDocumentFragment();
+         var arg = WObj.createDocumentFragment();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createElement
       public virtual object CreateElement(string tagName)
       {
-         return WObj.createElement(tagName);
+         var arg = WObj.createElement(tagName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createNode
       public virtual object CreateNode(object type, string name, object namespaceURI)
       {
-         return WObj.createNode(type, name, namespaceURI);
+         var arg = WObj.createNode(type, name, namespaceURI);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createProcessingInstruction
       public virtual object CreateProcessingInstruction(string target, string data)
       {
-         return WObj.createProcessingInstruction(target, data);
+         var arg = WObj.createProcessingInstruction(target, data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createTextNode
       public virtual object CreateTextNode(string data)
       {
-         return WObj.createTextNode(data);
+         var arg = WObj.createTextNode(data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getElementsByTagName
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
       {
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
+return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
       }
 
 // Generating method code for getProperty
@@ -190,7 +198,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for nodeFromID
       public virtual object NodeFromID(string id)
       {
-         return WObj.nodeFromID(id);
+         var arg = WObj.nodeFromID(id);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setProperty

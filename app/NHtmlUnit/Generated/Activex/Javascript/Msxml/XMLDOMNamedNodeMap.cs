@@ -40,37 +40,43 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for getNamedItemWithoutSyntheticClassAttr
       public virtual object GetNamedItemWithoutSyntheticClassAttr(string name)
       {
-         return WObj.getNamedItemWithoutSyntheticClassAttr(name);
+         var arg = WObj.getNamedItemWithoutSyntheticClassAttr(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for item
       public virtual object Item(int index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getNamedItem
       public virtual object GetNamedItem(string name)
       {
-         return WObj.getNamedItem(name);
+         var arg = WObj.getNamedItem(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for nextNode
       public virtual object NextNode()
       {
-         return WObj.nextNode();
+         var arg = WObj.nextNode();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeNamedItem
       public virtual object RemoveNamedItem(string name)
       {
-         return WObj.removeNamedItem(name);
+         var arg = WObj.removeNamedItem(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for reset
@@ -82,7 +88,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for setNamedItem
       public virtual object SetNamedItem(NHtmlUnit.Activex.Javascript.Msxml.XMLDOMNode node)
       {
-         return WObj.setNamedItem((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMNode)node.WrappedObject);
+         var arg = WObj.setNamedItem((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMNode)node.WrappedObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

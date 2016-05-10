@@ -32,7 +32,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for add
       public virtual NHtmlUnit.Javascript.Host.WeakSet Add(object value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WeakSet>(WObj.add(value));
+         var arg = WObj.add(value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WeakSet>(arg);
       }
 
 // Generating method code for clear

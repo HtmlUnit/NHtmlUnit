@@ -110,67 +110,78 @@ namespace NHtmlUnit.Javascript.Host.Svg
 // Generating method code for flipX
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix FlipX()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.flipX());
+         var arg = WObj.flipX();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for flipY
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix FlipY()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.flipY());
+         var arg = WObj.flipY();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for inverse
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix Inverse()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.inverse());
+         var arg = WObj.inverse();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for multiply
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix Multiply(NHtmlUnit.Javascript.Host.Svg.SVGMatrix by)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.multiply((com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix)by.WrappedObject));
+         var arg = WObj.multiply((com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix)by.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for rotate
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix Rotate(System.Double angle)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.rotate(angle));
+         var arg = WObj.rotate(angle);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for rotateFromVector
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix RotateFromVector(System.Double x, System.Double y)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.rotateFromVector(x, y));
+         var arg = WObj.rotateFromVector(x, y);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for scale
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix Scale(System.Double factor)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.scale(factor));
+         var arg = WObj.scale(factor);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for scaleNonUniform
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix ScaleNonUniform(System.Double factorX, System.Double factorY)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.scaleNonUniform(factorX, factorY));
+         var arg = WObj.scaleNonUniform(factorX, factorY);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for skewX
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix SkewX(System.Double angle)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.skewX(angle));
+         var arg = WObj.skewX(angle);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for skewY
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix SkewY(System.Double angle)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.skewY(angle));
+         var arg = WObj.skewY(angle);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for translate
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix Translate(System.Double x, System.Double y)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.translate(x, y));
+         var arg = WObj.translate(x, y);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
    }

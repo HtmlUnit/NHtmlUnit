@@ -45,7 +45,8 @@ namespace NHtmlUnit.Javascript.Host.Events
 // Generating method code for executeEventLocally
       public virtual NHtmlUnit.ScriptResult ExecuteEventLocally(NHtmlUnit.Javascript.Host.Events.Event eventArg)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeEventLocally((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject));
+         var arg = WObj.executeEventLocally((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for setEventHandler
@@ -57,7 +58,8 @@ namespace NHtmlUnit.Javascript.Host.Events
 // Generating method code for fireEvent
       public virtual NHtmlUnit.ScriptResult FireEvent(NHtmlUnit.Javascript.Host.Events.Event eventArg)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject));
+         var arg = WObj.fireEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for addEventListener

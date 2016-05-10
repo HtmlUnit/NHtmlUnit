@@ -185,7 +185,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getMaxLength
       public virtual object GetMaxLength()
       {
-         return WObj.getMaxLength();
+         var arg = WObj.getMaxLength();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setMaxLength

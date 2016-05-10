@@ -59,19 +59,22 @@ namespace NHtmlUnit
 // Generating method code for back
       public virtual NHtmlUnit.History Back()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(WObj.back());
+         var arg = WObj.back();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(arg);
       }
 
 // Generating method code for forward
       public virtual NHtmlUnit.History Forward()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(WObj.forward());
+         var arg = WObj.forward();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(arg);
       }
 
 // Generating method code for go
       public virtual NHtmlUnit.History Go(int relativeIndex)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(WObj.go(relativeIndex));
+         var arg = WObj.go(relativeIndex);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.History>(arg);
       }
 
 // Generating method code for removeCurrent

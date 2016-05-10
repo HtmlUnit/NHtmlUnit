@@ -79,13 +79,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for iterateNext
       public virtual NHtmlUnit.Javascript.Host.Dom.Node IterateNext()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.iterateNext());
+         var arg = WObj.iterateNext();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for snapshotItem
       public virtual NHtmlUnit.Javascript.Host.Dom.Node SnapshotItem(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.snapshotItem(index));
+         var arg = WObj.snapshotItem(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }

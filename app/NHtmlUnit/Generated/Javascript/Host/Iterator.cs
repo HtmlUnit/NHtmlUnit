@@ -29,7 +29,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for next
       public virtual object Next()
       {
-         return WObj.next();
+         var arg = WObj.next();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

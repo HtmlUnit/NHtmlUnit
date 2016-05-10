@@ -29,7 +29,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for splitText
       public virtual object SplitText(int offset)
       {
-         return WObj.splitText(offset);
+         var arg = WObj.splitText(offset);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

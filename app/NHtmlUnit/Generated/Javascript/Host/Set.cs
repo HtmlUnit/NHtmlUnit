@@ -40,7 +40,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for add
       public virtual NHtmlUnit.Javascript.Host.Set Add(object value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Set>(WObj.add(value));
+         var arg = WObj.add(value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Set>(arg);
       }
 
 // Generating method code for clear
@@ -64,7 +65,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for values
       public virtual object Values()
       {
-         return WObj.values();
+         var arg = WObj.values();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

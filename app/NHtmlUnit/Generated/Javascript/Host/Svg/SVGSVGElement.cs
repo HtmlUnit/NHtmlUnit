@@ -39,13 +39,15 @@ namespace NHtmlUnit.Javascript.Host.Svg
 // Generating method code for createSVGMatrix
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGMatrix CreateSVGMatrix()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(WObj.createSVGMatrix());
+         var arg = WObj.createSVGMatrix();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGMatrix>(arg);
       }
 
 // Generating method code for createSVGRect
       public virtual NHtmlUnit.Javascript.Host.Svg.SVGRect CreateSVGRect()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGRect>(WObj.createSVGRect());
+         var arg = WObj.createSVGRect();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Svg.SVGRect>(arg);
       }
 
    }

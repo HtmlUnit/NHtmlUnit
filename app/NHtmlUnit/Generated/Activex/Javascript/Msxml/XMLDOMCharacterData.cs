@@ -67,7 +67,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for getData
       public virtual object GetData()
       {
-         return WObj.getData();
+         var arg = WObj.getData();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setData

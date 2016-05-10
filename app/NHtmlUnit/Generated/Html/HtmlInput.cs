@@ -268,7 +268,8 @@ namespace NHtmlUnit.Html
 // Generating method code for setValueAttribute
       public virtual NHtmlUnit.IPage SetValueAttribute(string newValue)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setValueAttribute(newValue));
+         var arg = WObj.setValueAttribute(newValue);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for isDisabled
@@ -292,7 +293,8 @@ namespace NHtmlUnit.Html
 // Generating method code for setChecked
       public virtual NHtmlUnit.IPage SetChecked(bool isChecked)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setChecked(isChecked));
+         var arg = WObj.setChecked(isChecked);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for isChecked
@@ -310,7 +312,8 @@ namespace NHtmlUnit.Html
 // Generating method code for click
       public virtual NHtmlUnit.IPage Click(int x, int y)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click(x, y));
+         var arg = WObj.click(x, y);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for markAsCreatedByJavascript

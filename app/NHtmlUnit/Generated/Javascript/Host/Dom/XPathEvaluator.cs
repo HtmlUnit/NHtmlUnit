@@ -29,13 +29,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createNSResolver
       public virtual NHtmlUnit.Javascript.Host.Dom.XPathNSResolver CreateNSResolver(NHtmlUnit.Javascript.Host.Dom.Node nodeResolver)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathNSResolver>(WObj.createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)nodeResolver.WrappedObject));
+         var arg = WObj.createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)nodeResolver.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathNSResolver>(arg);
       }
 
 // Generating method code for evaluate
       public virtual NHtmlUnit.Javascript.Host.Dom.XPathResult Evaluate(string expression, object contextNodeObj, object resolver, int type, object result)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathResult>(WObj.evaluate(expression, contextNodeObj, resolver, type, result));
+         var arg = WObj.evaluate(expression, contextNodeObj, resolver, type, result);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathResult>(arg);
       }
 
    }

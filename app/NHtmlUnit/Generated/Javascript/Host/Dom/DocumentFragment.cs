@@ -37,43 +37,50 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createAttribute
       public virtual object CreateAttribute(string attributeName)
       {
-         return WObj.createAttribute(attributeName);
+         var arg = WObj.createAttribute(attributeName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createElement
       public virtual object CreateElement(string tagName)
       {
-         return WObj.createElement(tagName);
+         var arg = WObj.createElement(tagName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createComment
       public virtual object CreateComment(string comment)
       {
-         return WObj.createComment(comment);
+         var arg = WObj.createComment(comment);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createDocumentFragment
       public virtual object CreateDocumentFragment()
       {
-         return WObj.createDocumentFragment();
+         var arg = WObj.createDocumentFragment();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createTextNode
       public virtual object CreateTextNode(string newData)
       {
-         return WObj.createTextNode(newData);
+         var arg = WObj.createTextNode(newData);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for querySelectorAll
       public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
+         var arg = WObj.querySelectorAll(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
       }
 
 // Generating method code for querySelector
       public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
+         var arg = WObj.querySelector(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }

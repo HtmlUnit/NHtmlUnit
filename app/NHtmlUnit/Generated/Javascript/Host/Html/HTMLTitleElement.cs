@@ -29,7 +29,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getText
       public virtual object GetText()
       {
-         return WObj.getText();
+         var arg = WObj.getText();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setText

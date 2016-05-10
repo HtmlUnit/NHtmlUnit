@@ -52,7 +52,7 @@ namespace NHtmlUnit.Generator
             //GetJavaPropsFromType(typeof(HtmlPage));
             //GetJavaPropsFromType(typeof(HtmlInput));
 
-            wrapperRep.GenerateUntilDone(typeof(DomNode), typeof(WebClient), typeof(HtmlPage));
+            wrapperRep.GenerateUntilDone(typeof(DomNode), typeof(WebClient), typeof(HtmlPage), typeof(CollectingAlertHandler));
 
             wrapperRep.GenerateAssemblyInfo();
             wrapperRep.GenerateNuspec();

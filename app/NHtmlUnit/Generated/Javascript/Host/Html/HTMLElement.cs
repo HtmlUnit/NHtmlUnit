@@ -538,7 +538,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for clearAttributes
@@ -556,7 +557,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getAttributeNodeNS
       public virtual object GetAttributeNodeNS(string namespaceURI, string localName)
       {
-         return WObj.getAttributeNodeNS(namespaceURI, localName);
+         var arg = WObj.getAttributeNodeNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeAttributeNode
@@ -568,13 +570,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for removeNode
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement RemoveNode(bool removeChildren)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.removeNode(removeChildren));
+         var arg = WObj.removeNode(removeChildren);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(arg);
       }
 
 // Generating method code for getElementsByClassName
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByClassName(string className)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByClassName(className));
+         var arg = WObj.getElementsByClassName(className);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for insertAdjacentHTML
@@ -586,7 +590,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertAdjacentElement
       public virtual object InsertAdjacentElement(string whereArg, object insertedElement)
       {
-         return WObj.insertAdjacentElement(whereArg, insertedElement);
+         var arg = WObj.insertAdjacentElement(whereArg, insertedElement);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for insertAdjacentText
@@ -670,7 +675,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createTextRange
       public virtual object CreateTextRange()
       {
-         return WObj.createTextRange();
+         var arg = WObj.createTextRange();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for focus
@@ -682,13 +688,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for querySelectorAll
       public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
+         var arg = WObj.querySelectorAll(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
       }
 
 // Generating method code for querySelector
       public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
+         var arg = WObj.querySelector(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for click
@@ -724,7 +732,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getClassName_js
       public virtual object GetClassName_js()
       {
-         return WObj.getClassName_js();
+         var arg = WObj.getClassName_js();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setClassName_js

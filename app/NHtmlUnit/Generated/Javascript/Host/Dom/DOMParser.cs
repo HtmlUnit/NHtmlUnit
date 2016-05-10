@@ -29,7 +29,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for parseFromString
       public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument ParseFromString(string str, object type)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.parseFromString(str, type));
+         var arg = WObj.parseFromString(str, type);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(arg);
       }
 
    }

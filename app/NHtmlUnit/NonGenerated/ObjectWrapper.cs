@@ -18,7 +18,7 @@ namespace NHtmlUnit
 {
     public class ObjectWrapper : IObjectWrapper
     {
-        private static readonly Dictionary<Type, Func<object, object>> creatorDict =
+        private static readonly Dictionary<Type, Func<object, object>> WrapperCreators =
             new Dictionary<Type, Func<object, object>>();
 
         private readonly object wrappedObject;
@@ -45,25 +45,25 @@ namespace NHtmlUnit
         public static T CreateWrapper<T>(object wrappedObject)
         {
             if (wrappedObject == null)
-                return (T)wrappedObject;
+                return default(T);
 
-            Func<object, object> creator = null;
+            Func<object, object> creator;
             var fromType = wrappedObject.GetType();
 
-            // Search up type hierche until we find a matching creator
+            // Search up type hierchy until we find a matching creator
             do
             {
-                if (!creatorDict.TryGetValue(fromType, out creator))
+                if (!WrapperCreators.TryGetValue(fromType, out creator))
                     fromType = fromType.BaseType;
             } while (creator == null && fromType != null);
 
             if (creator == null)
             {
-                Console.WriteLine("No creator found for " + wrappedObject.GetType().FullName);
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("No creator found for " + wrappedObject.GetType().FullName);
             }
 
-            return (T)creator(wrappedObject);
+            var wrapper = creator(wrappedObject);
+            return (T)wrapper;
         }
 
 
@@ -72,8 +72,7 @@ namespace NHtmlUnit
             var otherObjectWrapper = obj as ObjectWrapper;
 
             return otherObjectWrapper != null
-                       ? WrappedObject.Equals(otherObjectWrapper.WrappedObject)
-                       : false;
+                && WrappedObject.Equals(otherObjectWrapper.WrappedObject);
         }
 
 
@@ -91,7 +90,7 @@ namespace NHtmlUnit
 
         internal static void RegisterWrapperCreator<T>(Func<T, ObjectWrapper> wrapperCreator)
         {
-            creatorDict.Add(typeof(T), o => wrapperCreator((T)o));
+            WrapperCreators.Add(typeof(T), o => wrapperCreator((T)o));
         }
 
 

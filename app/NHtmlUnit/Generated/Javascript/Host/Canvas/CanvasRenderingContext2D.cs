@@ -157,7 +157,8 @@ namespace NHtmlUnit.Javascript.Host.Canvas
 // Generating method code for getImageData
       public virtual NHtmlUnit.Javascript.Host.Canvas.ImageData GetImageData(int sx, int sy, int sw, int sh)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Canvas.ImageData>(WObj.getImageData(sx, sy, sw, sh));
+         var arg = WObj.getImageData(sx, sy, sw, sh);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Canvas.ImageData>(arg);
       }
 
 // Generating method code for getLineDash
@@ -283,7 +284,8 @@ namespace NHtmlUnit.Javascript.Host.Canvas
 // Generating method code for getFillStyle
       public virtual object GetFillStyle()
       {
-         return WObj.getFillStyle();
+         var arg = WObj.getFillStyle();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setFillStyle

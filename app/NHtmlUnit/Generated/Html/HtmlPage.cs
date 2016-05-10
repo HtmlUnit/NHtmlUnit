@@ -141,13 +141,15 @@ namespace NHtmlUnit.Html
 // Generating method code for executeJavaScriptIfPossible
       public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptIfPossible(string sourceCode, string sourceName, int startLine)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine));
+         var arg = WObj.executeJavaScriptIfPossible(sourceCode, sourceName, startLine);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for getHtmlElementById
       public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id));
+         var arg = WObj.getHtmlElementById(id);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for deregisterFramesIfNeeded
@@ -159,50 +161,57 @@ namespace NHtmlUnit.Html
 // Generating method code for getElementById
       public virtual NHtmlUnit.Html.DomElement GetElementById(string id, bool caseSensitive)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementById(id, caseSensitive));
+         var arg = WObj.getElementById(id, caseSensitive);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(arg);
       }
 
 // Generating method code for getHtmlElementsByAccessKey
       public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByAccessKey(System.Char accessKey)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByAccessKey(accessKey));
+return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByAccessKey(accessKey));
       }
 
 // Generating method code for getHtmlElementByAccessKey
       public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementByAccessKey(System.Char accessKey)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementByAccessKey(accessKey));
+         var arg = WObj.getHtmlElementByAccessKey(accessKey);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for getAnchorByName
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(WObj.getAnchorByName(name));
+         var arg = WObj.getAnchorByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(arg);
       }
 
 // Generating method code for getAnchorByHref
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByHref(string href)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(WObj.getAnchorByHref(href));
+         var arg = WObj.getAnchorByHref(href);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(arg);
       }
 
 // Generating method code for getAnchorByText
       public virtual NHtmlUnit.Html.HtmlAnchor GetAnchorByText(string text)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(WObj.getAnchorByText(text));
+         var arg = WObj.getAnchorByText(text);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlAnchor>(arg);
       }
 
 // Generating method code for getFormByName
       public virtual NHtmlUnit.Html.HtmlForm GetFormByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(WObj.getFormByName(name));
+         var arg = WObj.getFormByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(arg);
       }
 
 // Generating method code for executeJavaScript
       public virtual NHtmlUnit.ScriptResult ExecuteJavaScript(string sourceCode)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScript(sourceCode));
+         var arg = WObj.executeJavaScript(sourceCode);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for isOnbeforeunloadAccepted
@@ -214,51 +223,57 @@ namespace NHtmlUnit.Html
 // Generating method code for getFrameByName
       public virtual NHtmlUnit.Html.FrameWindow GetFrameByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.FrameWindow>(WObj.getFrameByName(name));
+         var arg = WObj.getFrameByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.FrameWindow>(arg);
       }
 
 // Generating method code for pressAccessKey
       public virtual NHtmlUnit.Html.DomElement PressAccessKey(System.Char accessKey)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.pressAccessKey(accessKey));
+         var arg = WObj.pressAccessKey(accessKey);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(arg);
       }
 
 // Generating method code for tabToNextElement
       public virtual NHtmlUnit.Html.HtmlElement TabToNextElement()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.tabToNextElement());
+         var arg = WObj.tabToNextElement();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for tabToPreviousElement
       public virtual NHtmlUnit.Html.HtmlElement TabToPreviousElement()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.tabToPreviousElement());
+         var arg = WObj.tabToPreviousElement();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for getHtmlElementById
       public virtual NHtmlUnit.Html.HtmlElement GetHtmlElementById(string id, bool caseSensitive)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementById(id, caseSensitive));
+         var arg = WObj.getHtmlElementById(id, caseSensitive);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for getElementByName
       public virtual NHtmlUnit.Html.DomElement GetElementByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementByName(name));
+         var arg = WObj.getElementByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(arg);
       }
 
 // Generating method code for getElementsByName
       public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByName(name));
+return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByName(name));
       }
 
 // Generating method code for getElementsByIdAndOrName
       public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByIdAndOrName(string idAndOrName)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByIdAndOrName(idAndOrName));
+return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByIdAndOrName(idAndOrName));
       }
 
 // Generating method code for addHtmlAttributeChangeListener
@@ -282,7 +297,8 @@ namespace NHtmlUnit.Html
 // Generating method code for refresh
       public virtual NHtmlUnit.IPage Refresh()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.refresh());
+         var arg = WObj.refresh();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for writeInParsedStream

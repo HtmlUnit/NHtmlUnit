@@ -143,13 +143,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertBeforeImpl
       public virtual object InsertBeforeImpl(System.Object[] args)
       {
-         return WObj.insertBeforeImpl(args);
+         var arg = WObj.insertBeforeImpl(args);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for item
       public virtual object Item(int index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getSize

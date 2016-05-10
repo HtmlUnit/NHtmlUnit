@@ -40,7 +40,8 @@ namespace NHtmlUnit.Javascript.Host.File
 // Generating method code for item
       public virtual NHtmlUnit.Javascript.Host.File.File Item(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.File.File>(WObj.item(index));
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.File.File>(arg);
       }
 
    }

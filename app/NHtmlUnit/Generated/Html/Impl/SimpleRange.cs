@@ -92,7 +92,8 @@ namespace NHtmlUnit.Html.Impl
 // Generating method code for cloneContents
       public virtual NHtmlUnit.Html.DomDocumentFragment CloneContents()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.cloneContents());
+         var arg = WObj.cloneContents();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(arg);
       }
 
 // Generating method code for deleteContents
@@ -110,7 +111,8 @@ namespace NHtmlUnit.Html.Impl
 // Generating method code for extractContents
       public virtual NHtmlUnit.Html.DomDocumentFragment ExtractContents()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.extractContents());
+         var arg = WObj.extractContents();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(arg);
       }
 
 // Generating method code for insertNode
@@ -128,7 +130,8 @@ namespace NHtmlUnit.Html.Impl
 // Generating method code for cloneRange
       public virtual NHtmlUnit.W3C.Dom.Ranges.IRange CloneRange()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(WObj.cloneRange());
+         var arg = WObj.cloneRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Ranges.IRange>(arg);
       }
 
 // Generating method code for collapse

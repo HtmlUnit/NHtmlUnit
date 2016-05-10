@@ -40,19 +40,22 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for item
       public virtual object Item(object index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for add
       public virtual NHtmlUnit.Javascript.Host.Namespace Add(string namespaceArg, string urn, string url)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(WObj.add(namespaceArg, urn, url));
+         var arg = WObj.add(namespaceArg, urn, url);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(arg);
       }
 
 // Generating method code for call
       public virtual object Call(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObj, System.Object[] args)
       {
-         return WObj.call(cx, scope, thisObj, args);
+         var arg = WObj.call(cx, scope, thisObj, args);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for construct

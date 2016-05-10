@@ -132,91 +132,99 @@ namespace NHtmlUnit.Html
 // Generating method code for reset
       public virtual NHtmlUnit.IPage Reset()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.reset());
+         var arg = WObj.reset();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getWebRequest
       public virtual NHtmlUnit.WebRequest GetWebRequest(NHtmlUnit.Html.ISubmittableElement submitElement)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebRequest>(WObj.getWebRequest((com.gargoylesoftware.htmlunit.html.SubmittableElement)submitElement.WrappedObject));
+         var arg = WObj.getWebRequest((com.gargoylesoftware.htmlunit.html.SubmittableElement)submitElement.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebRequest>(arg);
       }
 
 // Generating method code for getInputsByName
       public virtual IList<NHtmlUnit.Html.HtmlInput> GetInputsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByName(name));
       }
 
 // Generating method code for getSelectsByName
       public virtual IList<NHtmlUnit.Html.HtmlSelect> GetSelectsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlSelect>(WObj.getSelectsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlSelect>(WObj.getSelectsByName(name));
       }
 
 // Generating method code for getButtonsByName
       public virtual IList<NHtmlUnit.Html.HtmlButton> GetButtonsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlButton>(WObj.getButtonsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlButton>(WObj.getButtonsByName(name));
       }
 
 // Generating method code for getTextAreasByName
       public virtual IList<NHtmlUnit.Html.HtmlTextArea> GetTextAreasByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlTextArea>(WObj.getTextAreasByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlTextArea>(WObj.getTextAreasByName(name));
       }
 
 // Generating method code for getRadioButtonsByName
       public virtual IList<NHtmlUnit.Html.HtmlRadioButtonInput> GetRadioButtonsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(WObj.getRadioButtonsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(WObj.getRadioButtonsByName(name));
       }
 
 // Generating method code for getInputsByValue
       public virtual IList<NHtmlUnit.Html.HtmlInput> GetInputsByValue(string value)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
+return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
       }
 
 // Generating method code for getInputByName
       public virtual NHtmlUnit.Html.HtmlInput GetInputByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputByName(name));
+         var arg = WObj.getInputByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlInput>(arg);
       }
 
 // Generating method code for getSelectByName
       public virtual NHtmlUnit.Html.HtmlSelect GetSelectByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlSelect>(WObj.getSelectByName(name));
+         var arg = WObj.getSelectByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlSelect>(arg);
       }
 
 // Generating method code for getButtonByName
       public virtual NHtmlUnit.Html.HtmlButton GetButtonByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlButton>(WObj.getButtonByName(name));
+         var arg = WObj.getButtonByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlButton>(arg);
       }
 
 // Generating method code for getTextAreaByName
       public virtual NHtmlUnit.Html.HtmlTextArea GetTextAreaByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTextArea>(WObj.getTextAreaByName(name));
+         var arg = WObj.getTextAreaByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTextArea>(arg);
       }
 
 // Generating method code for getCheckedRadioButton
       public virtual NHtmlUnit.Html.HtmlRadioButtonInput GetCheckedRadioButton(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(WObj.getCheckedRadioButton(name));
+         var arg = WObj.getCheckedRadioButton(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(arg);
       }
 
 // Generating method code for getInputByValue
       public virtual NHtmlUnit.Html.HtmlInput GetInputByValue(string value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputByValue(value));
+         var arg = WObj.getInputByValue(value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlInput>(arg);
       }
 
    }

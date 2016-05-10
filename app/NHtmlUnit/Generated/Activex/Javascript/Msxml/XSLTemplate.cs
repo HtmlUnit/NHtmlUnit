@@ -44,7 +44,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for createProcessor
       public virtual NHtmlUnit.Activex.Javascript.Msxml.XSLProcessor CreateProcessor()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XSLProcessor>(WObj.createProcessor());
+         var arg = WObj.createProcessor();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XSLProcessor>(arg);
       }
 
    }

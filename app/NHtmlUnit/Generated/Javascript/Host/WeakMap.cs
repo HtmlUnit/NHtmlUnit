@@ -32,7 +32,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for set
       public virtual NHtmlUnit.Javascript.Host.WeakMap Set(object key, object value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WeakMap>(WObj.set(key, value));
+         var arg = WObj.set(key, value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WeakMap>(arg);
       }
 
 // Generating method code for clear

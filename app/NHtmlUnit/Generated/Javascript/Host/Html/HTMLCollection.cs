@@ -32,13 +32,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for namedItem
       public virtual object NamedItem(string name)
       {
-         return WObj.namedItem(name);
+         var arg = WObj.namedItem(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for nextNode
       public virtual object NextNode()
       {
-         return WObj.nextNode();
+         var arg = WObj.nextNode();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for reset
@@ -50,7 +52,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for tags
       public virtual object Tags(string tagName)
       {
-         return WObj.tags(tagName);
+         var arg = WObj.tags(tagName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

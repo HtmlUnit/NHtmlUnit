@@ -43,7 +43,8 @@ namespace NHtmlUnit.Javascript.Host.Arrays
 // Generating method code for slice
       public virtual NHtmlUnit.Javascript.Host.Arrays.ArrayBuffer Slice(int begin, object end)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.ArrayBuffer>(WObj.slice(begin, end));
+         var arg = WObj.slice(begin, end);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.ArrayBuffer>(arg);
       }
 
 // Generating method code for setBytes

@@ -57,7 +57,8 @@ namespace NHtmlUnit
 // Generating method code for executeJavaScriptFunctionIfPossible
       public virtual NHtmlUnit.ScriptResult ExecuteJavaScriptFunctionIfPossible(net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args, NHtmlUnit.Html.DomNode htmlElementScope)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeJavaScriptFunctionIfPossible(function, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)htmlElementScope.WrappedObject));
+         var arg = WObj.executeJavaScriptFunctionIfPossible(function, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)htmlElementScope.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
    }

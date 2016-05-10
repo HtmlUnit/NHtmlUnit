@@ -153,19 +153,22 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for selectNodes
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection SelectNodes(string expression)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.selectNodes(expression));
+         var arg = WObj.selectNodes(expression);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for selectSingleNode
       public virtual object SelectSingleNode(string expression)
       {
-         return WObj.selectSingleNode(expression);
+         var arg = WObj.selectSingleNode(expression);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getAttribute
       public virtual object GetAttribute(string attributeName, java.lang.Integer flags)
       {
-         return WObj.getAttribute(attributeName, flags);
+         var arg = WObj.getAttribute(attributeName, flags);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setAttribute
@@ -177,19 +180,22 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getElementsByTagName
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByTagName(string tagName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByTagName(tagName));
+         var arg = WObj.getElementsByTagName(tagName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for getAttributeNode
       public virtual object GetAttributeNode(string name)
       {
-         return WObj.getAttributeNode(name);
+         var arg = WObj.getAttributeNode(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getElementsByTagNameNS
       public virtual object GetElementsByTagNameNS(object namespaceURI, string localName)
       {
-         return WObj.getElementsByTagNameNS(namespaceURI, localName);
+         var arg = WObj.getElementsByTagNameNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for hasAttribute
@@ -231,7 +237,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for setAttributeNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Attr SetAttributeNode(NHtmlUnit.Javascript.Host.Dom.Attr newAtt)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Attr>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Attr)newAtt.WrappedObject));
+         var arg = WObj.setAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Attr)newAtt.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Attr>(arg);
       }
 
 // Generating method code for blur

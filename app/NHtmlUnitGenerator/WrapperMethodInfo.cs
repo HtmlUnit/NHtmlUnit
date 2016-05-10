@@ -47,9 +47,11 @@ namespace NHtmlUnit.Generator
 
         internal void GenerateMethodCode(StringBuilder sb)
         {
-            sb.AppendLine("// Generating method code for " + TargetMethodInfo.Name);
+            var methodName = TargetMethodInfo.Name;
+            sb.AppendLine("// Generating method code for " + methodName);
 
-            var validListMapping = WrapperRepository.GetValidMapping(TargetMethodInfo.ReturnType);
+            var returnType = TargetMethodInfo.ReturnType;
+            var validListMapping = WrapperRepository.GetValidMapping(returnType);
             var returnValueIsWrappedList = validListMapping != null;
 
             string returnTypeName = null;
@@ -76,26 +78,26 @@ namespace NHtmlUnit.Generator
             }
             else
             {
-                returnTypeIsWrapped = Repository.TypeIsWrapped(TargetMethodInfo.ReturnType);
+                returnTypeIsWrapped = Repository.TypeIsWrapped(returnType);
 
                 returnTypeName = returnTypeIsWrapped
-                    ? Repository.GetTargetFullName(TargetMethodInfo.ReturnType)
-                    : TargetMethodInfo.ReturnType.FullName;
+                    ? Repository.GetTargetFullName(returnType)
+                    : returnType.FullName;
 
                 if (!returnTypeIsWrapped)
                 {
-                    string nativeTypeName = Repository.TranslateToNativeTypeName(TargetMethodInfo.ReturnType);
+                    string nativeTypeName = Repository.TranslateToNativeTypeName(returnType);
 
                     if (!string.IsNullOrEmpty(nativeTypeName))
                         returnTypeName = nativeTypeName;
                 }
                 else
-                    Repository.MarkUsageOfType(TargetMethodInfo.ReturnType);
+                    Repository.MarkUsageOfType(returnType);
             }
 
             // Change from camelCase to UpperCamelCase
 
-            string origName = TargetMethodInfo.Name;
+            string origName = methodName;
             string transformedName = origName.Substring(0, 1).ToUpper() + origName.Substring(1);
 
             // Check for condition where a method name has same name as property
@@ -143,7 +145,7 @@ namespace NHtmlUnit.Generator
                 // Generate function call
                 var functionCallSb = new StringBuilder();
 
-                functionCallSb.AppendFormat("WObj.{0}(", TargetMethodInfo.Name);
+                functionCallSb.AppendFormat("WObj.{0}(", methodName);
 
                 firstParameter = true;
                 foreach (var mp in parameters)
@@ -163,15 +165,12 @@ namespace NHtmlUnit.Generator
 
                 functionCallSb.Append(")");
 
-                if (TargetMethodInfo.ReturnType != typeof(void))
+                if (returnType != typeof(void))
                 {
                     if (returnValueIsWrappedList)
                     {
-                        const string template = @"
-         return new {0}<{1}>({2});
-";
-                        sb.AppendFormat(
-                            template,
+                        sb.AppendLine();
+                        sb.AppendFormat("return new {0}<{1}>({2});",
                             listElementsAreWrapped
                                 ? validListMapping.FullWrapperName
                                 : validListMapping.ShallowWrapperName,
@@ -179,13 +178,17 @@ namespace NHtmlUnit.Generator
                                 ? Repository.GetTargetFullName(listElementType)
                                 : listElementType.FullName,
                             functionCallSb);
+
+                        sb.AppendLine();
                     }
                     else
                     {
-                        if (returnTypeIsWrapped)
+                        // Try to wrap returned objects, since they may be anything.
+                        if (returnTypeIsWrapped || returnType == typeof(object))
                         {
                             sb.AppendFormat(
-                                "         return ObjectWrapper.CreateWrapper<{0}>({1});\r\n",
+                                "         var arg = {1};\r\n" +
+                                "         return ObjectWrapper.CreateWrapper<{0}>(arg);\r\n",
                                 returnTypeName,
                                 functionCallSb);
                         }

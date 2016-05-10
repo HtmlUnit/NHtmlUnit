@@ -40,7 +40,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for item
       public virtual NHtmlUnit.Javascript.Host.Dom.Node Item(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.item(index));
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }

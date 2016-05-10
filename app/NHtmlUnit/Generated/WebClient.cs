@@ -440,7 +440,8 @@ namespace NHtmlUnit
 // Generating method code for loadWebResponse
       public virtual NHtmlUnit.WebResponse LoadWebResponse(NHtmlUnit.WebRequest webRequest)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.loadWebResponse((com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject));
+         var arg = WObj.loadWebResponse((com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(arg);
       }
 
 // Generating method code for registerWebWindow
@@ -470,13 +471,15 @@ namespace NHtmlUnit
 // Generating method code for getPage
       public virtual NHtmlUnit.IPage GetPage(NHtmlUnit.IWebWindow webWindow, NHtmlUnit.WebRequest webRequest)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, (com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject));
+         var arg = WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, (com.gargoylesoftware.htmlunit.WebRequest)webRequest.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for openTargetWindow
       public virtual NHtmlUnit.IWebWindow OpenTargetWindow(NHtmlUnit.IWebWindow opener, string windowName, string defaultName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.openTargetWindow((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, windowName, defaultName));
+         var arg = WObj.openTargetWindow((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, windowName, defaultName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(arg);
       }
 
 // Generating method code for download
@@ -488,7 +491,8 @@ namespace NHtmlUnit
 // Generating method code for openWindow
       public virtual NHtmlUnit.IWebWindow OpenWindow(java.net.URL url, string windowName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.openWindow(url, windowName));
+         var arg = WObj.openWindow(url, windowName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(arg);
       }
 
 // Generating method code for throwFailingHttpStatusCodeExceptionIfNecessary
@@ -500,7 +504,8 @@ namespace NHtmlUnit
 // Generating method code for getPage
       public virtual NHtmlUnit.IPage GetPage(NHtmlUnit.IWebWindow opener, string target, NHtmlUnit.WebRequest paramsArg)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)paramsArg.WrappedObject));
+         var arg = WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)paramsArg.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for containsWebWindow
@@ -530,13 +535,15 @@ namespace NHtmlUnit
 // Generating method code for getPage
       public virtual NHtmlUnit.IPage GetPage(NHtmlUnit.WebRequest request)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject));
+         var arg = WObj.getPage((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getPage
       public virtual NHtmlUnit.IPage GetPage(string url)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage(url));
+         var arg = WObj.getPage(url);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for close
@@ -549,31 +556,35 @@ namespace NHtmlUnit
       public virtual ICollection<NHtmlUnit.Util.Cookie> GetCookies(java.net.URL url)
       {
 
-         return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
+return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
       }
 
 // Generating method code for loadWebResponseInto
       public virtual NHtmlUnit.IPage LoadWebResponseInto(NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.loadWebResponseInto((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject));
+         var arg = WObj.loadWebResponseInto((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getWebWindowByName
       public virtual NHtmlUnit.IWebWindow GetWebWindowByName(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.getWebWindowByName(name));
+         var arg = WObj.getWebWindowByName(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(arg);
       }
 
 // Generating method code for openWindow
       public virtual NHtmlUnit.IWebWindow OpenWindow(java.net.URL url, string windowName, NHtmlUnit.IWebWindow opener)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(WObj.openWindow(url, windowName, (com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject));
+         var arg = WObj.openWindow(url, windowName, (com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IWebWindow>(arg);
       }
 
 // Generating method code for openDialogWindow
       public virtual NHtmlUnit.DialogWindow OpenDialogWindow(java.net.URL url, NHtmlUnit.IWebWindow opener, object dialogArguments)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.DialogWindow>(WObj.openDialogWindow(url, (com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, dialogArguments));
+         var arg = WObj.openDialogWindow(url, (com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, dialogArguments);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.DialogWindow>(arg);
       }
 
 // Generating method code for loadDownloadedResponses
@@ -591,7 +602,8 @@ namespace NHtmlUnit
 // Generating method code for getPage
       public virtual NHtmlUnit.IPage GetPage(java.net.URL url)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.getPage(url));
+         var arg = WObj.getPage(url);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for initializeEmptyWindow

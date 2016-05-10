@@ -85,7 +85,8 @@ namespace NHtmlUnit.Html
 // Generating method code for getCell
       public virtual NHtmlUnit.Html.HtmlTableCell GetCell(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableCell>(WObj.getCell(index));
+         var arg = WObj.getCell(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableCell>(arg);
       }
 
    }

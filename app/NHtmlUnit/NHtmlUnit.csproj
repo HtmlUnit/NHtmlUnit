@@ -173,6 +173,7 @@
     <Compile Include="Generated\BrowserVersion.cs" />
     <Compile Include="Generated\BrowserVersionFeatures.cs" />
     <Compile Include="Generated\Cache.cs" />
+    <Compile Include="Generated\CollectingAlertHandler.cs" />
     <Compile Include="Generated\CookieManager.cs" />
     <Compile Include="Generated\DialogWindow.cs" />
     <Compile Include="Generated\FormEncodingType.cs" />
@@ -1151,6 +1152,7 @@
     <Compile Include="NonGenerated\BrowserVersion.cs" />
     <Compile Include="NonGenerated\BrowserVersionFeatures.cs" />
     <Compile Include="NonGenerated\Cache.cs" />
+    <Compile Include="NonGenerated\CollectingAlertHandler.cs" />
     <Compile Include="NonGenerated\CookieManager.cs" />
     <Compile Include="NonGenerated\DialogWindow.cs" />
     <Compile Include="NonGenerated\FormEncodingType.cs" />

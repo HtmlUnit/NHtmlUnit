@@ -40,25 +40,29 @@ namespace NHtmlUnit.Javascript
 // Generating method code for getNamedItemWithoutSytheticClassAttr
       public virtual object GetNamedItemWithoutSytheticClassAttr(string name)
       {
-         return WObj.getNamedItemWithoutSytheticClassAttr(name);
+         var arg = WObj.getNamedItemWithoutSytheticClassAttr(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getNamedItem
       public virtual object GetNamedItem(string name)
       {
-         return WObj.getNamedItem(name);
+         var arg = WObj.getNamedItem(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for item
       public virtual object Item(int index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeNamedItem

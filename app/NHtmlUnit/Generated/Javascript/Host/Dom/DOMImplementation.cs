@@ -35,7 +35,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createDocument
       public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument CreateDocument(string namespaceURI, string qualifiedName, NHtmlUnit.Javascript.Host.Dom.DocumentType doctype)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.createDocument(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.javascript.host.dom.DocumentType)doctype.WrappedObject));
+         var arg = WObj.createDocument(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.javascript.host.dom.DocumentType)doctype.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(arg);
       }
 
    }
