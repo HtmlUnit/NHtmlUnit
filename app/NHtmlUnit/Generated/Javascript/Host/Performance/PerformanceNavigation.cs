@@ -45,7 +45,8 @@ namespace NHtmlUnit.Javascript.Host.Performance
 // Generating method code for toJSON
       public virtual object ToJSON()
       {
-         return WObj.toJSON();
+         var arg = WObj.toJSON();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

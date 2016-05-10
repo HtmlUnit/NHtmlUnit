@@ -117,25 +117,29 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createContextualFragment
       public virtual object CreateContextualFragment(string valueAsString)
       {
-         return WObj.createContextualFragment(valueAsString);
+         var arg = WObj.createContextualFragment(valueAsString);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for extractContents
       public virtual object ExtractContents()
       {
-         return WObj.extractContents();
+         var arg = WObj.extractContents();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for compareBoundaryPoints
       public virtual object CompareBoundaryPoints(int how, NHtmlUnit.Javascript.Host.Dom.Range sourceRange)
       {
-         return WObj.compareBoundaryPoints(how, (com.gargoylesoftware.htmlunit.javascript.host.dom.Range)sourceRange.WrappedObject);
+         var arg = WObj.compareBoundaryPoints(how, (com.gargoylesoftware.htmlunit.javascript.host.dom.Range)sourceRange.WrappedObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for cloneContents
       public virtual object CloneContents()
       {
-         return WObj.cloneContents();
+         var arg = WObj.cloneContents();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for deleteContents
@@ -159,7 +163,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for cloneRange
       public virtual object CloneRange()
       {
-         return WObj.cloneRange();
+         var arg = WObj.cloneRange();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for detach

@@ -819,7 +819,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for call
       public virtual object Call(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObj, System.Object[] args)
       {
-         return WObj.call(cx, scope, thisObj, args);
+         var arg = WObj.call(cx, scope, thisObj, args);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for construct
@@ -831,7 +832,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for execScript
@@ -873,13 +875,15 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for showModalDialog
       public virtual object ShowModalDialog(string url, object arguments, string features)
       {
-         return WObj.showModalDialog(url, arguments, features);
+         var arg = WObj.showModalDialog(url, arguments, features);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for showModelessDialog
       public virtual object ShowModelessDialog(string url, object arguments, string features)
       {
-         return WObj.showModelessDialog(url, arguments, features);
+         var arg = WObj.showModelessDialog(url, arguments, features);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for ScriptEngine

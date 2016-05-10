@@ -232,19 +232,22 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createCaption
       public virtual object CreateCaption()
       {
-         return WObj.createCaption();
+         var arg = WObj.createCaption();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createTFoot
       public virtual object CreateTFoot()
       {
-         return WObj.createTFoot();
+         var arg = WObj.createTFoot();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createTHead
       public virtual object CreateTHead()
       {
-         return WObj.createTHead();
+         var arg = WObj.createTHead();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for refresh

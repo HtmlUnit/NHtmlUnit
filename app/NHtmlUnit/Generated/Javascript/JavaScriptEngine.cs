@@ -88,7 +88,8 @@ namespace NHtmlUnit.Javascript
 // Generating method code for callFunction
       public virtual object CallFunction(NHtmlUnit.InteractivePage page, net.sourceforge.htmlunit.corejs.javascript.Function function, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args)
       {
-         return WObj.callFunction((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, function, scope, thisObject, args);
+         var arg = WObj.callFunction((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, function, scope, thisObject, args);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for holdPosponedActions
@@ -118,19 +119,22 @@ namespace NHtmlUnit.Javascript
 // Generating method code for callFunction
       public virtual object CallFunction(NHtmlUnit.InteractivePage page, net.sourceforge.htmlunit.corejs.javascript.Function javaScriptFunction, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObject, System.Object[] args, NHtmlUnit.Html.DomNode node)
       {
-         return WObj.callFunction((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, javaScriptFunction, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)node.WrappedObject);
+         var arg = WObj.callFunction((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, javaScriptFunction, thisObject, args, (com.gargoylesoftware.htmlunit.html.DomNode)node.WrappedObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for execute
       public virtual object Execute(NHtmlUnit.InteractivePage page, string sourceCode, string sourceName, int startLine)
       {
-         return WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, sourceCode, sourceName, startLine);
+         var arg = WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, sourceCode, sourceName, startLine);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for execute
       public virtual object Execute(NHtmlUnit.InteractivePage page, net.sourceforge.htmlunit.corejs.javascript.Script script)
       {
-         return WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, script);
+         var arg = WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, script);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for compile
@@ -154,7 +158,8 @@ namespace NHtmlUnit.Javascript
 // Generating method code for execute
       public virtual object Execute(NHtmlUnit.InteractivePage page, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Script script)
       {
-         return WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, scope, script);
+         var arg = WObj.execute((com.gargoylesoftware.htmlunit.InteractivePage)page.WrappedObject, scope, script);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for initialize

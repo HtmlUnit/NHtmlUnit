@@ -37,19 +37,22 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for namedItem
       public virtual object NamedItem(string name)
       {
-         return WObj.namedItem(name);
+         var arg = WObj.namedItem(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for item
       public virtual object Item(int index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

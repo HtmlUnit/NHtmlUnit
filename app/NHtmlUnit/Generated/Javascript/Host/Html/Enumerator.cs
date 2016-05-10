@@ -41,7 +41,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for item
       public virtual object Item()
       {
-         return WObj.item();
+         var arg = WObj.item();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for moveFirst

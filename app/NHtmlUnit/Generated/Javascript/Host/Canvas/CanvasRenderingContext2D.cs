@@ -284,7 +284,8 @@ namespace NHtmlUnit.Javascript.Host.Canvas
 // Generating method code for getFillStyle
       public virtual object GetFillStyle()
       {
-         return WObj.getFillStyle();
+         var arg = WObj.getFillStyle();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setFillStyle

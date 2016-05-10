@@ -538,7 +538,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for clearAttributes
@@ -556,7 +557,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getAttributeNodeNS
       public virtual object GetAttributeNodeNS(string namespaceURI, string localName)
       {
-         return WObj.getAttributeNodeNS(namespaceURI, localName);
+         var arg = WObj.getAttributeNodeNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeAttributeNode
@@ -588,7 +590,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertAdjacentElement
       public virtual object InsertAdjacentElement(string whereArg, object insertedElement)
       {
-         return WObj.insertAdjacentElement(whereArg, insertedElement);
+         var arg = WObj.insertAdjacentElement(whereArg, insertedElement);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for insertAdjacentText
@@ -672,7 +675,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createTextRange
       public virtual object CreateTextRange()
       {
-         return WObj.createTextRange();
+         var arg = WObj.createTextRange();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for focus
@@ -728,7 +732,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getClassName_js
       public virtual object GetClassName_js()
       {
-         return WObj.getClassName_js();
+         var arg = WObj.getClassName_js();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setClassName_js

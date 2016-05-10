@@ -50,7 +50,8 @@ namespace NHtmlUnit.Javascript.Host.Intl
 // Generating method code for resolvedOptions
       public virtual object ResolvedOptions()
       {
-         return WObj.resolvedOptions();
+         var arg = WObj.resolvedOptions();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for adoptText

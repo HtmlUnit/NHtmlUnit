@@ -43,13 +43,15 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for getAttribute
       public virtual object GetAttribute(string name)
       {
-         return WObj.getAttribute(name);
+         var arg = WObj.getAttribute(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getAttributeNode
       public virtual object GetAttributeNode(string name)
       {
-         return WObj.getAttributeNode(name);
+         var arg = WObj.getAttributeNode(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeAttributeNode
@@ -76,7 +78,7 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
       {
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
+return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
       }
 
 // Generating method code for normalize

@@ -46,7 +46,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getItem
       public virtual object GetItem(string key)
       {
-         return WObj.getItem(key);
+         var arg = WObj.getItem(key);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeItem

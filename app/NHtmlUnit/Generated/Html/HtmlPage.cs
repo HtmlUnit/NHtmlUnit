@@ -169,7 +169,7 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByAccessKey(System.Char accessKey)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByAccessKey(accessKey));
+return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByAccessKey(accessKey));
       }
 
 // Generating method code for getHtmlElementByAccessKey
@@ -266,14 +266,14 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByName(name));
+return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByName(name));
       }
 
 // Generating method code for getElementsByIdAndOrName
       public virtual IList<NHtmlUnit.Html.DomElement> GetElementsByIdAndOrName(string idAndOrName)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByIdAndOrName(idAndOrName));
+return new ListWrapper<NHtmlUnit.Html.DomElement>(WObj.getElementsByIdAndOrName(idAndOrName));
       }
 
 // Generating method code for addHtmlAttributeChangeListener

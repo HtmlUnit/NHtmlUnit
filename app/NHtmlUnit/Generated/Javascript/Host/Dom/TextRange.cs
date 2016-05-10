@@ -76,7 +76,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for duplicate
       public virtual object Duplicate()
       {
-         return WObj.duplicate();
+         var arg = WObj.duplicate();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for parentElement

@@ -160,13 +160,15 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for selectSingleNode
       public virtual object SelectSingleNode(string expression)
       {
-         return WObj.selectSingleNode(expression);
+         var arg = WObj.selectSingleNode(expression);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getAttribute
       public virtual object GetAttribute(string attributeName, java.lang.Integer flags)
       {
-         return WObj.getAttribute(attributeName, flags);
+         var arg = WObj.getAttribute(attributeName, flags);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setAttribute
@@ -185,13 +187,15 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getAttributeNode
       public virtual object GetAttributeNode(string name)
       {
-         return WObj.getAttributeNode(name);
+         var arg = WObj.getAttributeNode(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getElementsByTagNameNS
       public virtual object GetElementsByTagNameNS(object namespaceURI, string localName)
       {
-         return WObj.getElementsByTagNameNS(namespaceURI, localName);
+         var arg = WObj.getElementsByTagNameNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for hasAttribute

@@ -69,7 +69,8 @@ namespace NHtmlUnit
 // Generating method code for getCachedObject
       public virtual object GetCachedObject(NHtmlUnit.WebRequest request)
       {
-         return WObj.getCachedObject((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject);
+         var arg = WObj.getCachedObject((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getCachedStyleSheet

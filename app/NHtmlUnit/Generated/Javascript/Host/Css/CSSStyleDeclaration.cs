@@ -3047,7 +3047,8 @@ namespace NHtmlUnit.Javascript.Host.Css
 // Generating method code for getAttribute
       public virtual object GetAttribute(string name, int flag)
       {
-         return WObj.getAttribute(name, flag);
+         var arg = WObj.getAttribute(name, flag);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setAttribute
@@ -3065,7 +3066,8 @@ namespace NHtmlUnit.Javascript.Host.Css
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

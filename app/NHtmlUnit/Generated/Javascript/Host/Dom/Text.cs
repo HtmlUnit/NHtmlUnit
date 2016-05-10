@@ -37,13 +37,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for splitText
       public virtual object SplitText(int offset)
       {
-         return WObj.splitText(offset);
+         var arg = WObj.splitText(offset);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getText
       public virtual object GetText()
       {
-         return WObj.getText();
+         var arg = WObj.getText();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

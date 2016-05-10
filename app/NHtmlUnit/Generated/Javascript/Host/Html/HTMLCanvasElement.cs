@@ -29,7 +29,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getContext
       public virtual object GetContext(string contextId)
       {
-         return WObj.getContext(contextId);
+         var arg = WObj.getContext(contextId);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for toDataURL

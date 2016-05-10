@@ -65,7 +65,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for values
       public virtual object Values()
       {
-         return WObj.values();
+         var arg = WObj.values();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

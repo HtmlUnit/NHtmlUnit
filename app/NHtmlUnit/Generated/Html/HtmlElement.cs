@@ -165,7 +165,7 @@ namespace NHtmlUnit.Html
       public virtual IList<System.Object> GetHtmlElementsByTagName(string tagName)
       {
 
-         return new ShallowListWrapper<System.Object>(WObj.getHtmlElementsByTagName(tagName));
+return new ShallowListWrapper<System.Object>(WObj.getHtmlElementsByTagName(tagName));
       }
 
 // Generating method code for getEnclosingElement
@@ -186,7 +186,7 @@ namespace NHtmlUnit.Html
       public virtual IList<System.Object> GetElementsByAttribute(string elementName, string attributeName, string attributeValue)
       {
 
-         return new ShallowListWrapper<System.Object>(WObj.getElementsByAttribute(elementName, attributeName, attributeValue));
+return new ShallowListWrapper<System.Object>(WObj.getElementsByAttribute(elementName, attributeName, attributeValue));
       }
 
 // Generating method code for setEventHandler
@@ -199,7 +199,7 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
+return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
       }
 
 // Generating method code for type

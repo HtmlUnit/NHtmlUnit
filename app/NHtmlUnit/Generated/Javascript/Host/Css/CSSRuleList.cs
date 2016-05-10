@@ -40,7 +40,8 @@ namespace NHtmlUnit.Javascript.Host.Css
 // Generating method code for item
       public virtual object Item(int index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

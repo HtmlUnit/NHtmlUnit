@@ -98,7 +98,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createDocumentFragment
       public virtual object CreateDocumentFragment()
       {
-         return WObj.createDocumentFragment();
+         var arg = WObj.createDocumentFragment();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createAttribute
@@ -111,7 +112,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for importNode
       public virtual object ImportNode(NHtmlUnit.Javascript.Host.Dom.Node importedNode, bool deep)
       {
-         return WObj.importNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)importedNode.WrappedObject, deep);
+         var arg = WObj.importNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)importedNode.WrappedObject, deep);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for captureEvents
@@ -130,13 +132,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createTextNode
       public virtual object CreateTextNode(string newData)
       {
-         return WObj.createTextNode(newData);
+         var arg = WObj.createTextNode(newData);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createComment
       public virtual object CreateComment(string comment)
       {
-         return WObj.createComment(comment);
+         var arg = WObj.createComment(comment);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for evaluate
@@ -149,13 +153,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createElement
       public virtual object CreateElement(string tagName)
       {
-         return WObj.createElement(tagName);
+         var arg = WObj.createElement(tagName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createElementNS
       public virtual object CreateElementNS(string namespaceURI, string qualifiedName)
       {
-         return WObj.createElementNS(namespaceURI, qualifiedName);
+         var arg = WObj.createElementNS(namespaceURI, qualifiedName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getElementsByTagName
@@ -168,7 +174,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for getElementsByTagNameNS
       public virtual object GetElementsByTagNameNS(object namespaceURI, string localName)
       {
-         return WObj.getElementsByTagNameNS(namespaceURI, localName);
+         var arg = WObj.getElementsByTagNameNS(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getLocation

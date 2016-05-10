@@ -233,7 +233,7 @@ namespace NHtmlUnit
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
       {
 
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
+return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
       }
 
 // Generating method code for cleanUp
@@ -300,7 +300,7 @@ namespace NHtmlUnit
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagNameNS(string arg0, string arg1)
       {
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagNameNS(arg0, arg1));
+return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagNameNS(arg0, arg1));
       }
 
 // Generating method code for getElementById

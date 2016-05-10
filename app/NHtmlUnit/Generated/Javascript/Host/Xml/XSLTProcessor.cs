@@ -55,7 +55,8 @@ namespace NHtmlUnit.Javascript.Host.Xml
 // Generating method code for getParameter
       public virtual object GetParameter(string namespaceURI, string localName)
       {
-         return WObj.getParameter(namespaceURI, localName);
+         var arg = WObj.getParameter(namespaceURI, localName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

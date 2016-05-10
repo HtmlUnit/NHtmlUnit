@@ -68,7 +68,8 @@ namespace NHtmlUnit.Javascript.Host.Events
 // Generating method code for getEventHandlerProp
       public virtual object GetEventHandlerProp(string eventName)
       {
-         return WObj.getEventHandlerProp(eventName);
+         var arg = WObj.getEventHandlerProp(eventName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeEventListener
@@ -93,7 +94,7 @@ namespace NHtmlUnit.Javascript.Host.Events
       public virtual IList<net.sourceforge.htmlunit.corejs.javascript.Scriptable> GetHandlers(string eventType, bool useCapture)
       {
 
-         return new ShallowListWrapper<net.sourceforge.htmlunit.corejs.javascript.Scriptable>(WObj.getHandlers(eventType, useCapture));
+return new ShallowListWrapper<net.sourceforge.htmlunit.corejs.javascript.Scriptable>(WObj.getHandlers(eventType, useCapture));
       }
 
    }

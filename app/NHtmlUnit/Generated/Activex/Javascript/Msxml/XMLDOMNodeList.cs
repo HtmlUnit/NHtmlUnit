@@ -40,13 +40,15 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for item
       public virtual object Item(object index)
       {
-         return WObj.item(index);
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for nextNode
       public virtual object NextNode()
       {
-         return WObj.nextNode();
+         var arg = WObj.nextNode();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for reset
@@ -64,7 +66,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for call
       public virtual object Call(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, net.sourceforge.htmlunit.corejs.javascript.Scriptable thisObj, System.Object[] args)
       {
-         return WObj.call(cx, scope, thisObj, args);
+         var arg = WObj.call(cx, scope, thisObj, args);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for item

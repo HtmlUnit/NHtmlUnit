@@ -57,19 +57,22 @@ namespace NHtmlUnit.Javascript.Host.Xml
 // Generating method code for getElementById
       public virtual object GetElementById(string id)
       {
-         return WObj.getElementById(id);
+         var arg = WObj.getElementById(id);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createProcessingInstruction
       public virtual object CreateProcessingInstruction(string target, string data)
       {
-         return WObj.createProcessingInstruction(target, data);
+         var arg = WObj.createProcessingInstruction(target, data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createCDATASection
       public virtual object CreateCDATASection(string data)
       {
-         return WObj.createCDATASection(data);
+         var arg = WObj.createCDATASection(data);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

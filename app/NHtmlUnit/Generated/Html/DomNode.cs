@@ -365,7 +365,7 @@ namespace NHtmlUnit.Html
       public virtual IList<System.Object> GetByXPath(string xpathExpr)
       {
 
-         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
+return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
       }
 
 // Generating method code for isAncestorOf
@@ -402,21 +402,22 @@ namespace NHtmlUnit.Html
 // Generating method code for getFirstByXPath
       public virtual object GetFirstByXPath(string xpathExpr, org.apache.xml.utils.PrefixResolver resolver)
       {
-         return WObj.getFirstByXPath(xpathExpr, resolver);
+         var arg = WObj.getFirstByXPath(xpathExpr, resolver);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getByXPath
       public virtual IList<System.Object> GetByXPath(string xpathExpr, org.apache.xml.utils.PrefixResolver resolver)
       {
 
-         return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr, resolver));
+return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr, resolver));
       }
 
 // Generating method code for querySelectorAll
       public virtual IList<NHtmlUnit.W3C.Dom.INode> QuerySelectorAll(string selectors)
       {
 
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
+return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
       }
 
 // Generating method code for isAncestorOfAny
@@ -476,19 +477,22 @@ namespace NHtmlUnit.Html
 // Generating method code for getFeature
       public virtual object GetFeature(string feature, string version)
       {
-         return WObj.getFeature(feature, version);
+         var arg = WObj.getFeature(feature, version);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getUserData
       public virtual object GetUserData(string key)
       {
-         return WObj.getUserData(key);
+         var arg = WObj.getUserData(key);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for setUserData
       public virtual object SetUserData(string key, object data, NHtmlUnit.W3C.Dom.IUserDataHandler handler)
       {
-         return WObj.setUserData(key, data, (org.w3c.dom.UserDataHandler)handler.WrappedObject);
+         var arg = WObj.setUserData(key, data, (org.w3c.dom.UserDataHandler)handler.WrappedObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for hasAttributes
@@ -519,7 +523,8 @@ namespace NHtmlUnit.Html
 // Generating method code for getFirstByXPath
       public virtual object GetFirstByXPath(string xpathExpr)
       {
-         return WObj.getFirstByXPath(xpathExpr);
+         var arg = WObj.getFirstByXPath(xpathExpr);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeDomChangeListener

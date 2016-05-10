@@ -377,7 +377,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for open
       public virtual object Open(string url, object name, object features, object replace)
       {
-         return WObj.open(url, name, features, replace);
+         var arg = WObj.open(url, name, features, replace);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createStyleSheet
@@ -390,7 +391,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getElementById
       public virtual object GetElementById(string id)
       {
-         return WObj.getElementById(id);
+         var arg = WObj.getElementById(id);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getElementsByClassName
@@ -403,7 +405,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getWithFallback
       public virtual object GetWithFallback(string name)
       {
-         return WObj.getWithFallback(name);
+         var arg = WObj.getWithFallback(name);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createEvent
@@ -423,7 +426,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for elementFromPoint
       public virtual object ElementFromPoint(int x, int y)
       {
-         return WObj.elementFromPoint(x, y);
+         var arg = WObj.elementFromPoint(x, y);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for createRange
@@ -436,7 +440,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createTreeWalker
       public virtual object CreateTreeWalker(NHtmlUnit.Javascript.Host.Dom.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter, bool expandEntityReferences)
       {
-         return WObj.createTreeWalker((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter, expandEntityReferences);
+         var arg = WObj.createTreeWalker((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter, expandEntityReferences);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for queryCommandSupported

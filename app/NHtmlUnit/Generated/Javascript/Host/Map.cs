@@ -65,19 +65,22 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for entries
       public virtual object Entries()
       {
-         return WObj.entries();
+         var arg = WObj.entries();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for keys
       public virtual object Keys()
       {
-         return WObj.keys();
+         var arg = WObj.keys();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for values
       public virtual object Values()
       {
-         return WObj.values();
+         var arg = WObj.values();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

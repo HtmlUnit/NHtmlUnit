@@ -123,7 +123,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for unwrap
       public virtual object Unwrap()
       {
-         return WObj.unwrap();
+         var arg = WObj.unwrap();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

@@ -105,7 +105,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for insertCell
       public virtual object InsertCell(object index)
       {
-         return WObj.insertCell(index);
+         var arg = WObj.insertCell(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for deleteCell

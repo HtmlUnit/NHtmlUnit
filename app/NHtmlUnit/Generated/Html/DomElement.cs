@@ -222,7 +222,7 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagNameNS(string namespaceArg, string localName)
       {
 
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagNameNS(namespaceArg, localName));
+return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagNameNS(namespaceArg, localName));
       }
 
 // Generating method code for getAttributeNodeNS
@@ -236,7 +236,7 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagName(string tagName)
       {
 
-         return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
+return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagName));
       }
 
 // Generating method code for getAttributeNode

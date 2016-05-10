@@ -50,7 +50,8 @@ namespace NHtmlUnit.Generator
             var methodName = TargetMethodInfo.Name;
             sb.AppendLine("// Generating method code for " + methodName);
 
-            var validListMapping = WrapperRepository.GetValidMapping(TargetMethodInfo.ReturnType);
+            var returnType = TargetMethodInfo.ReturnType;
+            var validListMapping = WrapperRepository.GetValidMapping(returnType);
             var returnValueIsWrappedList = validListMapping != null;
 
             string returnTypeName = null;
@@ -77,21 +78,21 @@ namespace NHtmlUnit.Generator
             }
             else
             {
-                returnTypeIsWrapped = Repository.TypeIsWrapped(TargetMethodInfo.ReturnType);
+                returnTypeIsWrapped = Repository.TypeIsWrapped(returnType);
 
                 returnTypeName = returnTypeIsWrapped
-                    ? Repository.GetTargetFullName(TargetMethodInfo.ReturnType)
-                    : TargetMethodInfo.ReturnType.FullName;
+                    ? Repository.GetTargetFullName(returnType)
+                    : returnType.FullName;
 
                 if (!returnTypeIsWrapped)
                 {
-                    string nativeTypeName = Repository.TranslateToNativeTypeName(TargetMethodInfo.ReturnType);
+                    string nativeTypeName = Repository.TranslateToNativeTypeName(returnType);
 
                     if (!string.IsNullOrEmpty(nativeTypeName))
                         returnTypeName = nativeTypeName;
                 }
                 else
-                    Repository.MarkUsageOfType(TargetMethodInfo.ReturnType);
+                    Repository.MarkUsageOfType(returnType);
             }
 
             // Change from camelCase to UpperCamelCase
@@ -164,15 +165,12 @@ namespace NHtmlUnit.Generator
 
                 functionCallSb.Append(")");
 
-                if (TargetMethodInfo.ReturnType != typeof(void))
+                if (returnType != typeof(void))
                 {
                     if (returnValueIsWrappedList)
                     {
-                        const string template = @"
-         return new {0}<{1}>({2});
-";
-                        sb.AppendFormat(
-                            template,
+                        sb.AppendLine();
+                        sb.AppendFormat("return new {0}<{1}>({2});",
                             listElementsAreWrapped
                                 ? validListMapping.FullWrapperName
                                 : validListMapping.ShallowWrapperName,
@@ -180,10 +178,13 @@ namespace NHtmlUnit.Generator
                                 ? Repository.GetTargetFullName(listElementType)
                                 : listElementType.FullName,
                             functionCallSb);
+
+                        sb.AppendLine();
                     }
                     else
                     {
-                        if (returnTypeIsWrapped)
+                        // Try to wrap returned objects, since they may be anything.
+                        if (returnTypeIsWrapped || returnType == typeof(object))
                         {
                             sb.AppendFormat(
                                 "         var arg = {1};\r\n" +

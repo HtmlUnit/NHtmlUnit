@@ -556,7 +556,7 @@ namespace NHtmlUnit
       public virtual ICollection<NHtmlUnit.Util.Cookie> GetCookies(java.net.URL url)
       {
 
-         return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
+return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
       }
 
 // Generating method code for loadWebResponseInto

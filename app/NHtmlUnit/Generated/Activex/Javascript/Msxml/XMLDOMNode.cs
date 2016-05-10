@@ -192,32 +192,36 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for replaceChild
       public virtual object ReplaceChild(object newChild, object oldChild)
       {
-         return WObj.replaceChild(newChild, oldChild);
+         var arg = WObj.replaceChild(newChild, oldChild);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeChild
       public virtual object RemoveChild(object childNode)
       {
-         return WObj.removeChild(childNode);
+         var arg = WObj.removeChild(childNode);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for selectNodes
       public virtual IList<NHtmlUnit.W3C.Dom.INode> SelectNodes(string expression)
       {
 
-         return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.selectNodes(expression));
+return new NodeListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.selectNodes(expression));
       }
 
 // Generating method code for appendChild
       public virtual object AppendChild(object newChild)
       {
-         return WObj.appendChild(newChild);
+         var arg = WObj.appendChild(newChild);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for cloneNode
       public virtual object CloneNode(bool deep)
       {
-         return WObj.cloneNode(deep);
+         var arg = WObj.cloneNode(deep);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for hasChildNodes
@@ -229,7 +233,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for selectSingleNode
       public virtual object SelectSingleNode(string expression)
       {
-         return WObj.selectSingleNode(expression);
+         var arg = WObj.selectSingleNode(expression);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

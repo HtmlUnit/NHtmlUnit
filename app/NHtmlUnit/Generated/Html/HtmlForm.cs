@@ -147,42 +147,42 @@ namespace NHtmlUnit.Html
       public virtual IList<NHtmlUnit.Html.HtmlInput> GetInputsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByName(name));
       }
 
 // Generating method code for getSelectsByName
       public virtual IList<NHtmlUnit.Html.HtmlSelect> GetSelectsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlSelect>(WObj.getSelectsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlSelect>(WObj.getSelectsByName(name));
       }
 
 // Generating method code for getButtonsByName
       public virtual IList<NHtmlUnit.Html.HtmlButton> GetButtonsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlButton>(WObj.getButtonsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlButton>(WObj.getButtonsByName(name));
       }
 
 // Generating method code for getTextAreasByName
       public virtual IList<NHtmlUnit.Html.HtmlTextArea> GetTextAreasByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlTextArea>(WObj.getTextAreasByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlTextArea>(WObj.getTextAreasByName(name));
       }
 
 // Generating method code for getRadioButtonsByName
       public virtual IList<NHtmlUnit.Html.HtmlRadioButtonInput> GetRadioButtonsByName(string name)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(WObj.getRadioButtonsByName(name));
+return new ListWrapper<NHtmlUnit.Html.HtmlRadioButtonInput>(WObj.getRadioButtonsByName(name));
       }
 
 // Generating method code for getInputsByValue
       public virtual IList<NHtmlUnit.Html.HtmlInput> GetInputsByValue(string value)
       {
 
-         return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
+return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
       }
 
 // Generating method code for getInputByName

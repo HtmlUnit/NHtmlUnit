@@ -82,13 +82,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for getAttributeNode
       public virtual object GetAttributeNode(string attributeName)
       {
-         return WObj.getAttributeNode(attributeName);
+         var arg = WObj.getAttributeNode(attributeName);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for getAttribute
       public virtual object GetAttribute(string attributeName, java.lang.Integer flags)
       {
-         return WObj.getAttribute(attributeName, flags);
+         var arg = WObj.getAttribute(attributeName, flags);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

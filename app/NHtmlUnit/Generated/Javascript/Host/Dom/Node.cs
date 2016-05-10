@@ -192,25 +192,29 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for replaceChild
       public virtual object ReplaceChild(object newChildObject, object oldChildObject)
       {
-         return WObj.replaceChild(newChildObject, oldChildObject);
+         var arg = WObj.replaceChild(newChildObject, oldChildObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for removeChild
       public virtual object RemoveChild(object childObject)
       {
-         return WObj.removeChild(childObject);
+         var arg = WObj.removeChild(childObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for appendChild
       public virtual object AppendChild(object childObject)
       {
-         return WObj.appendChild(childObject);
+         var arg = WObj.appendChild(childObject);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for cloneNode
       public virtual object CloneNode(bool deep)
       {
-         return WObj.cloneNode(deep);
+         var arg = WObj.cloneNode(deep);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for isSameNode
