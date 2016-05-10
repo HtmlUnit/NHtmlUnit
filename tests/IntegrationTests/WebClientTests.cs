@@ -11,15 +11,27 @@
 
 using System;
 using System.Linq;
+using java.util;
 using NHtmlUnit;
 using NHtmlUnit.Html;
 using NUnit.Framework;
+using List = java.util.List;
 
 namespace IntegrationTests
 {
     [TestFixture]
     public class WebClientTests
     {
+        [Test]
+        public void CanSetAlertHandler()
+        {
+            var webClient = new WebClient(BrowserVersion.FIREFOX_38);
+
+            List collectedAlerts = new ArrayList();
+            var alertHandler = new CollectingAlertHandler(collectedAlerts);
+            webClient.AlertHandler = alertHandler;
+        }
+
         [Test]
         public void DoWikipediaSearch()
         {
@@ -31,7 +43,7 @@ namespace IntegrationTests
             webClient.Options.CssEnabled = true;
 
             var page = webClient.GetHtmlPage("http://wikipedia.org");
-      
+
             page.GetElementById<HtmlInput>("searchInput").Type("network");
 
             var searchButton = page.HtmlElementDescendants

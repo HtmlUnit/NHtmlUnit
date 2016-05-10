@@ -47,7 +47,8 @@ namespace NHtmlUnit.Generator
 
         internal void GenerateMethodCode(StringBuilder sb)
         {
-            sb.AppendLine("// Generating method code for " + TargetMethodInfo.Name);
+            var methodName = TargetMethodInfo.Name;
+            sb.AppendLine("// Generating method code for " + methodName);
 
             var validListMapping = WrapperRepository.GetValidMapping(TargetMethodInfo.ReturnType);
             var returnValueIsWrappedList = validListMapping != null;
@@ -95,7 +96,7 @@ namespace NHtmlUnit.Generator
 
             // Change from camelCase to UpperCamelCase
 
-            string origName = TargetMethodInfo.Name;
+            string origName = methodName;
             string transformedName = origName.Substring(0, 1).ToUpper() + origName.Substring(1);
 
             // Check for condition where a method name has same name as property
@@ -143,7 +144,7 @@ namespace NHtmlUnit.Generator
                 // Generate function call
                 var functionCallSb = new StringBuilder();
 
-                functionCallSb.AppendFormat("WObj.{0}(", TargetMethodInfo.Name);
+                functionCallSb.AppendFormat("WObj.{0}(", methodName);
 
                 firstParameter = true;
                 foreach (var mp in parameters)
