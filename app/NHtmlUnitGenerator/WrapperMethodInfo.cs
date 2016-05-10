@@ -185,7 +185,8 @@ namespace NHtmlUnit.Generator
                         if (returnTypeIsWrapped)
                         {
                             sb.AppendFormat(
-                                "         return ObjectWrapper.CreateWrapper<{0}>({1});\r\n",
+                                "         var arg = {1};\r\n" +
+                                "         return ObjectWrapper.CreateWrapper<{0}>(arg);\r\n",
                                 returnTypeName,
                                 functionCallSb);
                         }

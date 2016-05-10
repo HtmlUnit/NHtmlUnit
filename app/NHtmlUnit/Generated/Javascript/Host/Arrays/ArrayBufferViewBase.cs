@@ -49,7 +49,8 @@ namespace NHtmlUnit.Javascript.Host.Arrays
 // Generating method code for subarray
       public virtual NHtmlUnit.Javascript.Host.Arrays.ArrayBufferView Subarray(int begin, object end)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.ArrayBufferView>(WObj.subarray(begin, end));
+         var arg = WObj.subarray(begin, end);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.ArrayBufferView>(arg);
       }
 
    }

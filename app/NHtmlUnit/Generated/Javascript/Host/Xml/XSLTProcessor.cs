@@ -35,13 +35,15 @@ namespace NHtmlUnit.Javascript.Host.Xml
 // Generating method code for transformToDocument
       public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument TransformToDocument(NHtmlUnit.Javascript.Host.Dom.Node source)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(WObj.transformToDocument((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)source.WrappedObject));
+         var arg = WObj.transformToDocument((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)source.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(arg);
       }
 
 // Generating method code for transformToFragment
       public virtual NHtmlUnit.Javascript.Host.Dom.DocumentFragment TransformToFragment(NHtmlUnit.Javascript.Host.Dom.Node source, object output)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DocumentFragment>(WObj.transformToFragment((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)source.WrappedObject, output));
+         var arg = WObj.transformToFragment((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)source.WrappedObject, output);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DocumentFragment>(arg);
       }
 
 // Generating method code for setParameter

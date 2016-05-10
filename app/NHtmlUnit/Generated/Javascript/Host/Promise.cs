@@ -35,7 +35,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for then
       public virtual NHtmlUnit.Javascript.Host.Promise Then(net.sourceforge.htmlunit.corejs.javascript.Function onFulfilled, net.sourceforge.htmlunit.corejs.javascript.Function onRejected)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(WObj.then(onFulfilled, onRejected));
+         var arg = WObj.then(onFulfilled, onRejected);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(arg);
       }
 
    }

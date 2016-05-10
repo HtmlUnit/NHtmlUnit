@@ -104,7 +104,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createAttribute
       public virtual NHtmlUnit.Javascript.Host.Dom.Attr CreateAttribute(string attributeName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Attr>(WObj.createAttribute(attributeName));
+         var arg = WObj.createAttribute(attributeName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Attr>(arg);
       }
 
 // Generating method code for importNode
@@ -122,7 +123,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createNSResolver
       public virtual NHtmlUnit.Javascript.Host.Dom.XPathNSResolver CreateNSResolver(NHtmlUnit.Javascript.Host.Dom.Node nodeResolver)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathNSResolver>(WObj.createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)nodeResolver.WrappedObject));
+         var arg = WObj.createNSResolver((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)nodeResolver.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathNSResolver>(arg);
       }
 
 // Generating method code for createTextNode
@@ -140,7 +142,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for evaluate
       public virtual NHtmlUnit.Javascript.Host.Dom.XPathResult Evaluate(string expression, NHtmlUnit.Javascript.Host.Dom.Node contextNode, object resolver, int type, object result)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathResult>(WObj.evaluate(expression, (com.gargoylesoftware.htmlunit.javascript.host.dom.Node)contextNode.WrappedObject, resolver, type, result));
+         var arg = WObj.evaluate(expression, (com.gargoylesoftware.htmlunit.javascript.host.dom.Node)contextNode.WrappedObject, resolver, type, result);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.XPathResult>(arg);
       }
 
 // Generating method code for createElement
@@ -158,7 +161,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for getElementsByTagName
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByTagName(string tagName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByTagName(tagName));
+         var arg = WObj.getElementsByTagName(tagName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for getElementsByTagNameNS
@@ -170,7 +174,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for getLocation
       public virtual NHtmlUnit.Javascript.Host.Location GetLocation()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.getLocation());
+         var arg = WObj.getLocation();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(arg);
       }
 
 // Generating method code for setLocation

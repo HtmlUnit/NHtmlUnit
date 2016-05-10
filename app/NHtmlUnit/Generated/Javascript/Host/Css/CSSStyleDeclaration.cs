@@ -3010,7 +3010,8 @@ namespace NHtmlUnit.Javascript.Host.Css
 // Generating method code for getPropertyCSSValue
       public virtual NHtmlUnit.Javascript.Host.Css.CSSValue GetPropertyCSSValue(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSValue>(WObj.getPropertyCSSValue(name));
+         var arg = WObj.getPropertyCSSValue(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSValue>(arg);
       }
 
 // Generating method code for getPropertyPriority

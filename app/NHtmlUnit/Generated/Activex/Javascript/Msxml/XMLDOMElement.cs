@@ -55,7 +55,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for removeAttributeNode
       public virtual NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute RemoveAttributeNode(NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute att)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute>(WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMAttribute)att.WrappedObject));
+         var arg = WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMAttribute)att.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute>(arg);
       }
 
 // Generating method code for setAttribute
@@ -67,7 +68,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for setAttributeNode
       public virtual NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute SetAttributeNode(NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute newAtt)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute>(WObj.setAttributeNode((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMAttribute)newAtt.WrappedObject));
+         var arg = WObj.setAttributeNode((com.gargoylesoftware.htmlunit.activex.javascript.msxml.XMLDOMAttribute)newAtt.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Activex.Javascript.Msxml.XMLDOMAttribute>(arg);
       }
 
 // Generating method code for getElementsByTagName

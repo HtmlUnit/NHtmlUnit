@@ -316,7 +316,8 @@ namespace NHtmlUnit
 // Generating method code for clone
       public virtual NHtmlUnit.BrowserVersion Clone()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(WObj.clone());
+         var arg = WObj.clone();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(arg);
       }
 
 // Generating method code for isChrome

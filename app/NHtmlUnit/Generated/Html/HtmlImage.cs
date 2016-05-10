@@ -174,13 +174,15 @@ namespace NHtmlUnit.Html
 // Generating method code for click
       public virtual NHtmlUnit.IPage Click(int x, int y)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.click(x, y));
+         var arg = WObj.click(x, y);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getWebResponse
       public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getWebResponse(downloadIfNeeded));
+         var arg = WObj.getWebResponse(downloadIfNeeded);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(arg);
       }
 
 // Generating method code for saveAs

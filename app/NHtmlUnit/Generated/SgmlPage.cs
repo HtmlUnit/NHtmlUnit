@@ -185,31 +185,36 @@ namespace NHtmlUnit
 // Generating method code for createDocumentFragment
       public virtual NHtmlUnit.Html.DomDocumentFragment CreateDocumentFragment()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(WObj.createDocumentFragment());
+         var arg = WObj.createDocumentFragment();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(arg);
       }
 
 // Generating method code for createAttribute
       public virtual NHtmlUnit.Html.DomAttr CreateAttribute(string name)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomAttr>(WObj.createAttribute(name));
+         var arg = WObj.createAttribute(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomAttr>(arg);
       }
 
 // Generating method code for createCDATASection
       public virtual NHtmlUnit.W3C.Dom.ICDATASection CreateCDATASection(string data)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.ICDATASection>(WObj.createCDATASection(data));
+         var arg = WObj.createCDATASection(data);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.ICDATASection>(arg);
       }
 
 // Generating method code for createElement
       public virtual NHtmlUnit.W3C.Dom.IElement CreateElement(string str)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.createElement(str));
+         var arg = WObj.createElement(str);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(arg);
       }
 
 // Generating method code for createElementNS
       public virtual NHtmlUnit.W3C.Dom.IElement CreateElementNS(string str1, string str2)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.createElementNS(str1, str2));
+         var arg = WObj.createElementNS(str1, str2);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(arg);
       }
 
 // Generating method code for isHtmlPage
@@ -252,37 +257,43 @@ namespace NHtmlUnit
 // Generating method code for createTextNode
       public virtual NHtmlUnit.W3C.Dom.IText CreateTextNode(string data)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IText>(WObj.createTextNode(data));
+         var arg = WObj.createTextNode(data);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IText>(arg);
       }
 
 // Generating method code for createComment
       public virtual NHtmlUnit.W3C.Dom.IComment CreateComment(string data)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IComment>(WObj.createComment(data));
+         var arg = WObj.createComment(data);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IComment>(arg);
       }
 
 // Generating method code for createProcessingInstruction
       public virtual NHtmlUnit.W3C.Dom.IProcessingInstruction CreateProcessingInstruction(string arg0, string arg1)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IProcessingInstruction>(WObj.createProcessingInstruction(arg0, arg1));
+         var arg = WObj.createProcessingInstruction(arg0, arg1);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IProcessingInstruction>(arg);
       }
 
 // Generating method code for createEntityReference
       public virtual NHtmlUnit.W3C.Dom.IEntityReference CreateEntityReference(string arg0)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IEntityReference>(WObj.createEntityReference(arg0));
+         var arg = WObj.createEntityReference(arg0);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IEntityReference>(arg);
       }
 
 // Generating method code for importNode
       public virtual NHtmlUnit.W3C.Dom.INode ImportNode(NHtmlUnit.W3C.Dom.INode arg0, bool arg1)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.importNode((org.w3c.dom.Node)arg0.WrappedObject, arg1));
+         var arg = WObj.importNode((org.w3c.dom.Node)arg0.WrappedObject, arg1);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(arg);
       }
 
 // Generating method code for createAttributeNS
       public virtual NHtmlUnit.W3C.Dom.IAttr CreateAttributeNS(string arg0, string arg1)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IAttr>(WObj.createAttributeNS(arg0, arg1));
+         var arg = WObj.createAttributeNS(arg0, arg1);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IAttr>(arg);
       }
 
 // Generating method code for getElementsByTagNameNS
@@ -295,19 +306,22 @@ namespace NHtmlUnit
 // Generating method code for getElementById
       public virtual NHtmlUnit.W3C.Dom.IElement GetElementById(string arg0)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(WObj.getElementById(arg0));
+         var arg = WObj.getElementById(arg0);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IElement>(arg);
       }
 
 // Generating method code for adoptNode
       public virtual NHtmlUnit.W3C.Dom.INode AdoptNode(NHtmlUnit.W3C.Dom.INode arg0)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.adoptNode((org.w3c.dom.Node)arg0.WrappedObject));
+         var arg = WObj.adoptNode((org.w3c.dom.Node)arg0.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(arg);
       }
 
 // Generating method code for renameNode
       public virtual NHtmlUnit.W3C.Dom.INode RenameNode(NHtmlUnit.W3C.Dom.INode arg0, string arg1, string arg2)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.renameNode((org.w3c.dom.Node)arg0.WrappedObject, arg1, arg2));
+         var arg = WObj.renameNode((org.w3c.dom.Node)arg0.WrappedObject, arg1, arg2);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(arg);
       }
 
    }

@@ -152,19 +152,22 @@ namespace NHtmlUnit.Html
 // Generating method code for getCellAt
       public virtual NHtmlUnit.Html.HtmlTableCell GetCellAt(int rowIndex, int columnIndex)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableCell>(WObj.getCellAt(rowIndex, columnIndex));
+         var arg = WObj.getCellAt(rowIndex, columnIndex);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableCell>(arg);
       }
 
 // Generating method code for getRow
       public virtual NHtmlUnit.Html.HtmlTableRow GetRow(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableRow>(WObj.getRow(index));
+         var arg = WObj.getRow(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableRow>(arg);
       }
 
 // Generating method code for getRowById
       public virtual NHtmlUnit.Html.HtmlTableRow GetRowById(string id)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableRow>(WObj.getRowById(id));
+         var arg = WObj.getRowById(id);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlTableRow>(arg);
       }
 
    }

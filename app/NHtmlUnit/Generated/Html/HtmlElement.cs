@@ -171,13 +171,15 @@ namespace NHtmlUnit.Html
 // Generating method code for getEnclosingElement
       public virtual NHtmlUnit.Html.HtmlElement GetEnclosingElement(string tagName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getEnclosingElement(tagName));
+         var arg = WObj.getEnclosingElement(tagName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for type
       public virtual NHtmlUnit.IPage Type(System.Char c)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type(c));
+         var arg = WObj.type(c);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getElementsByAttribute
@@ -209,25 +211,29 @@ namespace NHtmlUnit.Html
 // Generating method code for type
       public virtual NHtmlUnit.IPage Type(int keyCode)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type(keyCode));
+         var arg = WObj.type(keyCode);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for type
       public virtual NHtmlUnit.IPage Type(NHtmlUnit.Html.Keyboard keyboard)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.type((com.gargoylesoftware.htmlunit.html.Keyboard)keyboard.WrappedObject));
+         var arg = WObj.type((com.gargoylesoftware.htmlunit.html.Keyboard)keyboard.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
 // Generating method code for getOneHtmlElementByAttribute
       public virtual NHtmlUnit.Html.HtmlElement GetOneHtmlElementByAttribute(string elementName, string attributeName, string attributeValue)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue));
+         var arg = WObj.getOneHtmlElementByAttribute(elementName, attributeName, attributeValue);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for appendChildIfNoneExists
       public virtual NHtmlUnit.Html.HtmlElement AppendChildIfNoneExists(string tagName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(WObj.appendChildIfNoneExists(tagName));
+         var arg = WObj.appendChildIfNoneExists(tagName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlElement>(arg);
       }
 
 // Generating method code for removeChild

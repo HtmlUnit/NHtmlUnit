@@ -67,13 +67,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for querySelectorAll
       public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
+         var arg = WObj.querySelectorAll(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
       }
 
 // Generating method code for querySelector
       public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
+         var arg = WObj.querySelector(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }

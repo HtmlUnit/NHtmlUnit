@@ -69,7 +69,8 @@ namespace NHtmlUnit.Javascript
 // Generating method code for makeScriptableFor
       public virtual NHtmlUnit.Javascript.SimpleScriptable MakeScriptableFor(NHtmlUnit.Html.DomNode domNode)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(WObj.makeScriptableFor((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject));
+         var arg = WObj.makeScriptableFor((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(arg);
       }
 
 // Generating method code for getPrototype
@@ -81,7 +82,8 @@ namespace NHtmlUnit.Javascript
 // Generating method code for clone
       public virtual NHtmlUnit.Javascript.SimpleScriptable Clone()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(WObj.clone());
+         var arg = WObj.clone();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.SimpleScriptable>(arg);
       }
 
    }

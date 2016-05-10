@@ -46,7 +46,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for add
       public virtual NHtmlUnit.Javascript.Host.Namespace Add(string namespaceArg, string urn, string url)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(WObj.add(namespaceArg, urn, url));
+         var arg = WObj.add(namespaceArg, urn, url);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Namespace>(arg);
       }
 
 // Generating method code for call

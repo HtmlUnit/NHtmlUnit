@@ -52,7 +52,8 @@ namespace NHtmlUnit.Html
 // Generating method code for setValueAttribute
       public virtual NHtmlUnit.IPage SetValueAttribute(System.String[] paths)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.setValueAttribute(paths));
+         var arg = WObj.setValueAttribute(paths);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
    }

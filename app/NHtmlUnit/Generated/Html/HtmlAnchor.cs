@@ -138,7 +138,8 @@ namespace NHtmlUnit.Html
 // Generating method code for openLinkInNewWindow
       public virtual NHtmlUnit.IPage OpenLinkInNewWindow()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(WObj.openLinkInNewWindow());
+         var arg = WObj.openLinkInNewWindow();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
    }

@@ -605,7 +605,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getComputedStyle
       public virtual NHtmlUnit.Javascript.Host.Css.CSS2Properties GetComputedStyle(NHtmlUnit.Javascript.Host.Element element, string pseudo)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSS2Properties>(WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo));
+         var arg = WObj.getComputedStyle((com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudo);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSS2Properties>(arg);
       }
 
 // Generating method code for attachEvent
@@ -617,7 +618,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for getStorage
       public virtual NHtmlUnit.Javascript.Host.Storage GetStorage(com.gargoylesoftware.htmlunit.StorageHolder.Type storageType)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(WObj.getStorage(storageType));
+         var arg = WObj.getStorage(storageType);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Storage>(arg);
       }
 
 // Generating method code for scrollTo
@@ -677,13 +679,15 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for open
       public virtual NHtmlUnit.Javascript.Host.WindowProxy Open(object url, object name, object features, object replace)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(WObj.open(url, name, features, replace));
+         var arg = WObj.open(url, name, features, replace);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.WindowProxy>(arg);
       }
 
 // Generating method code for createPopup
       public virtual NHtmlUnit.Javascript.Host.Popup CreatePopup()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Popup>(WObj.createPopup());
+         var arg = WObj.createPopup();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Popup>(arg);
       }
 
 // Generating method code for clearTimeout
@@ -917,13 +921,15 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for matchMedia
       public virtual NHtmlUnit.Javascript.Host.Css.MediaQueryList MatchMedia(string mediaQueryString)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.MediaQueryList>(WObj.matchMedia(mediaQueryString));
+         var arg = WObj.matchMedia(mediaQueryString);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.MediaQueryList>(arg);
       }
 
 // Generating method code for getLocation
       public virtual NHtmlUnit.Javascript.Host.Location GetLocation()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(WObj.getLocation());
+         var arg = WObj.getLocation();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Location>(arg);
       }
 
 // Generating method code for setLocation

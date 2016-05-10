@@ -89,7 +89,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for createRange
       public virtual NHtmlUnit.Javascript.Host.Dom.TextRange CreateRange()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(WObj.createRange());
+         var arg = WObj.createRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(arg);
       }
 
 // Generating method code for addRange
@@ -113,7 +114,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for getRangeAt
       public virtual NHtmlUnit.Javascript.Host.Dom.Range GetRangeAt(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Range>(WObj.getRangeAt(index));
+         var arg = WObj.getRangeAt(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Range>(arg);
       }
 
 // Generating method code for collapse

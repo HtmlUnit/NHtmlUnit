@@ -50,7 +50,8 @@ namespace NHtmlUnit
 // Generating method code for getCachedResponse
       public virtual NHtmlUnit.WebResponse GetCachedResponse(NHtmlUnit.WebRequest request)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getCachedResponse((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject));
+         var arg = WObj.getCachedResponse((com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(arg);
       }
 
 // Generating method code for cacheIfPossible
@@ -74,7 +75,8 @@ namespace NHtmlUnit
 // Generating method code for getCachedStyleSheet
       public virtual NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet GetCachedStyleSheet(string css)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(WObj.getCachedStyleSheet(css));
+         var arg = WObj.getCachedStyleSheet(css);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(arg);
       }
 
 // Generating method code for clear

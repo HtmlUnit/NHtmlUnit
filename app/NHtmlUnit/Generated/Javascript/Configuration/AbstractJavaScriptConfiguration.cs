@@ -43,7 +43,8 @@ namespace NHtmlUnit.Javascript.Configuration
 // Generating method code for getClassConfiguration
       public virtual NHtmlUnit.Javascript.Configuration.ClassConfiguration GetClassConfiguration(string hostClassName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Configuration.ClassConfiguration>(WObj.getClassConfiguration(hostClassName));
+         var arg = WObj.getClassConfiguration(hostClassName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Configuration.ClassConfiguration>(arg);
       }
 
    }

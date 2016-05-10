@@ -35,19 +35,22 @@ namespace NHtmlUnit.Javascript.Host.Events
 // Generating method code for executeListeners
       public virtual NHtmlUnit.ScriptResult ExecuteListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs));
+         var arg = WObj.executeListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for executeCapturingListeners
       public virtual NHtmlUnit.ScriptResult ExecuteCapturingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeCapturingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args));
+         var arg = WObj.executeCapturingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for executeBubblingListeners
       public virtual NHtmlUnit.ScriptResult ExecuteBubblingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(WObj.executeBubblingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs));
+         var arg = WObj.executeBubblingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
 // Generating method code for hasEventHandlers

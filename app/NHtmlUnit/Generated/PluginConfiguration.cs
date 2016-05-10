@@ -61,7 +61,8 @@ namespace NHtmlUnit
 // Generating method code for clone
       public virtual NHtmlUnit.PluginConfiguration Clone()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.PluginConfiguration>(WObj.clone());
+         var arg = WObj.clone();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.PluginConfiguration>(arg);
       }
 
    }

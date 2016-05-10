@@ -80,7 +80,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for toW3C
       public virtual NHtmlUnit.Html.Impl.SimpleRange ToW3C()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.Impl.SimpleRange>(WObj.toW3C());
+         var arg = WObj.toW3C();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.Impl.SimpleRange>(arg);
       }
 
 // Generating method code for setStart

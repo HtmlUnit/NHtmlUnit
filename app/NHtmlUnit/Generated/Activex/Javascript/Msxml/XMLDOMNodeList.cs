@@ -70,7 +70,8 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
 // Generating method code for item
       public virtual NHtmlUnit.W3C.Dom.INode Item(int index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.item(index));
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(arg);
       }
 
    }

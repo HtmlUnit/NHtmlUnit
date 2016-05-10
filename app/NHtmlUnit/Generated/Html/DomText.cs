@@ -37,7 +37,8 @@ namespace NHtmlUnit.Html
 // Generating method code for splitText
       public virtual NHtmlUnit.Html.DomText SplitText(int offset)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomText>(WObj.splitText(offset));
+         var arg = WObj.splitText(offset);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomText>(arg);
       }
 
 // Generating method code for isElementContentWhitespace
@@ -49,7 +50,8 @@ namespace NHtmlUnit.Html
 // Generating method code for replaceWholeText
       public virtual NHtmlUnit.W3C.Dom.IText ReplaceWholeText(string content)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IText>(WObj.replaceWholeText(content));
+         var arg = WObj.replaceWholeText(content);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IText>(arg);
       }
 
    }

@@ -100,7 +100,8 @@ namespace NHtmlUnit.Html
 // Generating method code for getWebResponse
       public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(WObj.getWebResponse(downloadIfNeeded));
+         var arg = WObj.getWebResponse(downloadIfNeeded);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(arg);
       }
 
    }

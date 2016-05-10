@@ -370,7 +370,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getElementsByName
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByName(string elementName)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByName(elementName));
+         var arg = WObj.getElementsByName(elementName);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for open
@@ -382,7 +383,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createStyleSheet
       public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleSheet CreateStyleSheet(string url, object index)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(WObj.createStyleSheet(url, index));
+         var arg = WObj.createStyleSheet(url, index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(arg);
       }
 
 // Generating method code for getElementById
@@ -394,7 +396,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for getElementsByClassName
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByClassName(string className)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(WObj.getElementsByClassName(className));
+         var arg = WObj.getElementsByClassName(className);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
       }
 
 // Generating method code for getWithFallback
@@ -406,13 +409,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createEvent
       public virtual NHtmlUnit.Javascript.Host.Events.Event CreateEvent(string eventType)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(WObj.createEvent(eventType));
+         var arg = WObj.createEvent(eventType);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(arg);
       }
 
 // Generating method code for createEventObject
       public virtual NHtmlUnit.Javascript.Host.Events.Event CreateEventObject()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(WObj.createEventObject());
+         var arg = WObj.createEventObject();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Events.Event>(arg);
       }
 
 // Generating method code for elementFromPoint
@@ -424,7 +429,8 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createRange
       public virtual NHtmlUnit.Javascript.Host.Dom.Range CreateRange()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Range>(WObj.createRange());
+         var arg = WObj.createRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Range>(arg);
       }
 
 // Generating method code for createTreeWalker
@@ -460,13 +466,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for querySelectorAll
       public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(WObj.querySelectorAll(selectors));
+         var arg = WObj.querySelectorAll(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
       }
 
 // Generating method code for querySelector
       public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.querySelector(selectors));
+         var arg = WObj.querySelector(selectors);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for clear
@@ -484,13 +492,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 // Generating method code for createNodeIterator
       public virtual NHtmlUnit.Javascript.Host.Dom.NodeIterator CreateNodeIterator(NHtmlUnit.Javascript.Host.Dom.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeIterator>(WObj.createNodeIterator((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter));
+         var arg = WObj.createNodeIterator((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeIterator>(arg);
       }
 
 // Generating method code for getHead
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement GetHead()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(WObj.getHead());
+         var arg = WObj.getHead();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(arg);
       }
 
 // Generating method code for setHead

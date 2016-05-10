@@ -40,7 +40,8 @@ namespace NHtmlUnit.Javascript.Host
 // Generating method code for set
       public virtual NHtmlUnit.Javascript.Host.Map Set(object key, object value)
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Map>(WObj.set(key, value));
+         var arg = WObj.set(key, value);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Map>(arg);
       }
 
 // Generating method code for clear

@@ -83,43 +83,50 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for parentNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Node ParentNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.parentNode());
+         var arg = WObj.parentNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for firstChild
       public virtual NHtmlUnit.Javascript.Host.Dom.Node FirstChild()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.firstChild());
+         var arg = WObj.firstChild();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for lastChild
       public virtual NHtmlUnit.Javascript.Host.Dom.Node LastChild()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.lastChild());
+         var arg = WObj.lastChild();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for previousSibling
       public virtual NHtmlUnit.Javascript.Host.Dom.Node PreviousSibling()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.previousSibling());
+         var arg = WObj.previousSibling();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for nextSibling
       public virtual NHtmlUnit.Javascript.Host.Dom.Node NextSibling()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.nextSibling());
+         var arg = WObj.nextSibling();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for previousNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Node PreviousNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.previousNode());
+         var arg = WObj.previousNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for nextNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Node NextNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.nextNode());
+         var arg = WObj.nextNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }

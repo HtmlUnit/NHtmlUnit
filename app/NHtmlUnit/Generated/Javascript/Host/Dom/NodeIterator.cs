@@ -80,13 +80,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
 // Generating method code for nextNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Node NextNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.nextNode());
+         var arg = WObj.nextNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
 // Generating method code for previousNode
       public virtual NHtmlUnit.Javascript.Host.Dom.Node PreviousNode()
       {
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(WObj.previousNode());
+         var arg = WObj.previousNode();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
       }
 
    }
