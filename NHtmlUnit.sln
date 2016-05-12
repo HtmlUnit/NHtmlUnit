@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "tests\IntegrationTests\IntegrationTests.csproj", "{63131319-E7FF-4DC2-A55E-213327E701D1}"
 EndProject
@@ -14,28 +14,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHtmlUnit.Generator", "app\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "tests\ConsoleTest\ConsoleTest.csproj", "{DCEE9766-27F8-4E05-ACCE-9AD9CD55AE11}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{48CA8BC7-E132-40EC-A8AE-5A62B644431A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8273FDB1-A8CD-4450-A25D-74BAA56DFC94}"
 	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{5B152A0C-87B8-4920-80AE-77F60A184ABF}"
-	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
 		clean.cmd = clean.cmd
 		LICENSE-HtmlUnit.txt = LICENSE-HtmlUnit.txt
 		LICENSE.txt = LICENSE.txt
-		lib\HtmlUnit\Make.cmd = lib\HtmlUnit\Make.cmd
 		NHtmlUnit.nuspec = NHtmlUnit.nuspec
-		nuget-pack.cmd = nuget-pack.cmd
+		nuget.cmd = nuget.cmd
 		README.md = README.md
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(CodealikeProperties) = postSolution
-		SolutionGuid = b6764003-5843-4527-bc66-bb40ba5617bc
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -91,8 +82,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{63131319-E7FF-4DC2-A55E-213327E701D1} = {63B6ADAD-20F5-47F6-9354-AFD18F28177B}
-		{DCEE9766-27F8-4E05-ACCE-9AD9CD55AE11} = {63B6ADAD-20F5-47F6-9354-AFD18F28177B}
 		{8E71417D-9EEE-4FCD-B738-9D4939D1F20C} = {B9019988-D169-4DE8-AB0E-16D0EBEB24FD}
 		{15D5F20A-A36D-48CF-9CE3-F79BDB18B7C9} = {B9019988-D169-4DE8-AB0E-16D0EBEB24FD}
+		{DCEE9766-27F8-4E05-ACCE-9AD9CD55AE11} = {63B6ADAD-20F5-47F6-9354-AFD18F28177B}
 	EndGlobalSection
 EndGlobal

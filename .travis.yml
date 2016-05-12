@@ -1,0 +1,11 @@
+language: csharp
+solution: NHtmlUnit.sln
+sudo: false
+install:
+  - nuget restore NHtmlUnit.sln
+  - nuget install NUnit.Runners -Version 3.2.1 -OutputDirectory ./packages
+  - find .
+script:
+  - mkdir -p ./app/NHtmlUnit/obj/Release/ # http://www.johankarlsson.net/2014/12/fileswrittenabsolutetxt.html
+  - xbuild NHtmlUnit.sln /property:Configuration="Release" /verbosity:detailed
+  - mono ./packages/NUnit.ConsoleRunner.3.2.1/tools/nunit3-console.exe ./tests/IntegrationTests/bin/Release/IntegrationTests.dll
