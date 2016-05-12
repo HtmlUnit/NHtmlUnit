@@ -2,7 +2,7 @@ install:
   - choco install gitversion.portable -pre -y
 
 before_build:
-  - nuget restore
+  - nuget restore NHtmlUnit.sln
   - ps: gitversion /l console /output buildserver
 
 build:
