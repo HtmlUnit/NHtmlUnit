@@ -4,7 +4,7 @@ sudo: false
 addons:
   apt:
     packages:
-      - tree
+      - tree: 1.6.0-1
 install:
   - nuget restore NHtmlUnit.sln
   - nuget install NUnit.Runners -Version 3.2.1 -OutputDirectory ./packages
