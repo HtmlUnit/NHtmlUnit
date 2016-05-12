@@ -1,6 +1,8 @@
 NHtmlUnit
 =========
 
+[![Build Status](https://travis-ci.org/HtmlUnit/NHtmlUnit.svg?branch=master)](https://travis-ci.org/HtmlUnit/NHtmlUnit)
+
 NHtmlUnit is a .NET wrapper of [HtmlUnit](http://htmlunit.sourceforge.net/);
 a "GUI-less browser for Java programs".
 
@@ -11,7 +13,7 @@ We really like the HtmlUnit project, which enables headless web testing without 
 to have a complete browser running. By using [IKVM](http://www.ikvm.net/) it is possible
 to convert the HtmlUnit Java library for use on Microsoft's .NET platform.
 
-However, it doesn't feel very natural to use a java library in a .NET language,
+However, it doesn't feel very natural to use a Java library in a .NET language,
 and therefore we created an HtmlUnit wrapper written in C#, so you can write tests for
 your web pages in clean C# code (or any code running on the .NET platform).
 
@@ -29,8 +31,8 @@ If you want to build your own version of NHtmlUnit, you can use MSBuild or Visua
 
 After building you can find `NHtmlUnit.dll` plus its dependencies here:
 
-* app\NHtmlUnit\bin\Debug
-* app\NHtmlUnit\bin\Release
+* `app\NHtmlUnit\bin\Debug`
+* `app\NHtmlUnit\bin\Release`
 
 Usage
 -----
@@ -42,7 +44,7 @@ almost completely reflects the original API.
 The difference is that Java iterators, lists and collections are exposed as their
 .NET-friendly counterparts (`IEnumerable`, `IList` and `ICollection`). In addition,
 properties are "real" .NET properties, so `obj.getSomething()` and `obj.setSomething()` is
-exposed as `obj.Something`.
+exposed as `obj.Something` with a public getter and setter.
 
 NHtmlUnitGenerator
 ------------------
@@ -80,4 +82,4 @@ would be nice, although we're unsure exactly how much this would do for the fina
 Authours
 --------
 
-NHtmlUnit was written by Asbjørn Ulsberg and Karsten Strand at OKB AS.
+NHtmlUnit was written by @asbjornu and @beewarloc.
