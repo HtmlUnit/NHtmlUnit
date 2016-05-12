@@ -1,6 +1,10 @@
 language: csharp
 solution: NHtmlUnit.sln
 sudo: false
+addons:
+  apt:
+    packages:
+      - tree
 install:
   - nuget restore NHtmlUnit.sln
   - nuget install NUnit.Runners -Version 3.2.1 -OutputDirectory ./packages
