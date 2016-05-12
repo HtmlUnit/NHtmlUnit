@@ -1,6 +1,8 @@
 NHtmlUnit
 =========
 
+[![Build Status](https://travis-ci.org/HtmlUnit/NHtmlUnit.svg?branch=master)](https://travis-ci.org/HtmlUnit/NHtmlUnit)
+
 NHtmlUnit is a .NET wrapper of [HtmlUnit](http://htmlunit.sourceforge.net/);
 a "GUI-less browser for Java programs".
 
