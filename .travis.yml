@@ -1,14 +1,10 @@
 language: csharp
 solution: NHtmlUnit.sln
 sudo: false
-addons:
-  apt:
-    packages:
-      - tree: 1.6.0-1
 install:
   - nuget restore NHtmlUnit.sln
   - nuget install NUnit.Runners -Version 3.2.1 -OutputDirectory ./packages
-  - tree .
+  - find .
 script:
   - mkdir -p ./app/NHtmlUnit/obj/Release/ # http://www.johankarlsson.net/2014/12/fileswrittenabsolutetxt.html
   - xbuild NHtmlUnit.sln /property:Configuration="Release" /verbosity:detailed
