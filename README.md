@@ -1,7 +1,13 @@
 NHtmlUnit
 =========
 
-[![Build Status](https://travis-ci.org/HtmlUnit/NHtmlUnit.svg?branch=master)](https://travis-ci.org/HtmlUnit/NHtmlUnit)
+|                        | **Status**                |
+| ---------------------: | :------------------------ |
+|             **GitHub** | [![GitHub release][1]][2] |
+|              **NuGet** | [![NuGet][3]][4]          |
+|     **Travis** (Linux) | [![Master][5]][6]         |
+| **AppVeyor** (Windows) | [![Master][7]][8]         |
+
 
 NHtmlUnit is a .NET wrapper of [HtmlUnit](http://htmlunit.sourceforge.net/);
 a "GUI-less browser for Java programs".
@@ -83,3 +89,14 @@ Authours
 --------
 
 NHtmlUnit was written by @asbjornu and @beewarloc.
+
+<!-- Footnote links: -->
+
+[1]: https://img.shields.io/github/release/HtmlUnit/NHtmlUnit.svg
+[2]: https://github.com/HtmlUnit/NHtmlUnit/releases/latest
+[3]: https://img.shields.io/nuget/v/NHtmlUnit.svg
+[4]: https://www.nuget.org/packages/NHtmlUnit
+[5]: https://travis-ci.org/HtmlUnit/NHtmlUnit.svg?branch=master
+[6]: https://travis-ci.org/HtmlUnit/NHtmlUnit
+[7]: https://img.shields.io/appveyor/ci/HtmlUnit/NHtmlUnit/master.svg
+[8]: https://ci.appveyor.com/project/HtmlUnit/NHtmlUnit/branch/master
