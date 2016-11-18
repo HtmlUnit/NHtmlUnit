@@ -11,3 +11,15 @@ build:
 test:
   assemblies:
     - 'tests/**/bin/*/*Tests.dll'
+
+deploy:
+- provider: NuGet
+  api_key:
+    secure: Rct2fdDCPZdCId+Xelo02OHeWpN2qMkeve07e1bpk8/wVUDO+KESONQOCe/ah9Wu
+  on:
+    branch: develop
+- provider: NuGet
+  api_key:
+    secure: Rct2fdDCPZdCId+Xelo02OHeWpN2qMkeve07e1bpk8/wVUDO+KESONQOCe/ah9Wu
+  on:
+    appveyor_repo_tag: true
