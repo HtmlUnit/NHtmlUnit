@@ -13,6 +13,9 @@ test:
   assemblies:
     - 'tests/**/bin/*/*Tests.dll'
 
+before_deploy:
+  - nuget.cmd pack
+
 deploy:
 - provider: NuGet
   api_key:
