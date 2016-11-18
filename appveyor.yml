@@ -7,6 +7,7 @@ before_build:
 
 build:
   project: NHtmlUnit.sln
+  publish_nuget: true
 
 test:
   assemblies:
