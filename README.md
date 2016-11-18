@@ -7,6 +7,7 @@ NHtmlUnit
 |              **NuGet** | [![NuGet][3]][4]          |
 |     **Travis** (Linux) | [![Master][5]][6]         |
 | **AppVeyor** (Windows) | [![Master][7]][8]         |
+|         **Codefactor** | [![Codefactor][9]][10]    |
 
 
 NHtmlUnit is a .NET wrapper of [HtmlUnit](http://htmlunit.sourceforge.net/);
@@ -100,3 +101,5 @@ NHtmlUnit was written by @asbjornu and @beewarloc.
 [6]: https://travis-ci.org/HtmlUnit/NHtmlUnit
 [7]: https://img.shields.io/appveyor/ci/HtmlUnit/NHtmlUnit/master.svg
 [8]: https://ci.appveyor.com/project/HtmlUnit/NHtmlUnit/branch/master
+[9]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit/badge/master
+[10]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit/overview/master
