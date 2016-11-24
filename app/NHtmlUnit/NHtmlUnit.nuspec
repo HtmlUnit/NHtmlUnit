@@ -2,25 +2,19 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>NHtmlUnit</id>
-    <version>2.19.0.0</version>
+    <version>$version$</version>
     <title>NHtmlUnit</title>
-    <authors>OKB AS</authors>
-    <owners>OKB AS</owners>
+    <authors>PayEx AS</authors>
+    <owners>PayEx AS</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/HtmlUnit/NHtmlUnit</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NHtmlUnit is a .NET wrapper of HtmlUnit; a "GUI-less browser for Java programs". It allows you to write code to test web applications with a headless, automated browser.</description>
     <releaseNotes>Updated to version 7.4.5196 of IKVM.</releaseNotes>
-    <copyright>Copyright © OKB AS 2016</copyright>
+    <copyright>Copyright © PayEx AS 2016</copyright>
     <tags>testing htmlunit nhtmlunit headless browser</tags>
-    <dependencies>
-        <dependency id="IKVM" version="7.4.5196.0" />
-    </dependencies>
-    <frameworkAssemblies />
-    <references />
   </metadata>
   <files>
-    <file src="app\NHtmlUnit\bin\Release\HtmlUnit.dll" target="lib/net45" />
-    <file src="app\NHtmlUnit\bin\Release\NHtmlUnit.dll" target="lib/net45" />
+    <file src="bin\Release\HtmlUnit.dll" target="lib/net45" />
   </files>
 </package>

@@ -1,0 +1,36 @@
+install:
+  - choco install gitversion.portable -pre -y
+
+before_build:
+  - nuget.exe restore NHtmlUnit.sln -verbosity detailed
+  - ps: gitversion /l console /output buildserver
+
+build:
+  project: NHtmlUnit.sln
+
+configuration:
+  - Release
+
+test:
+  assemblies:
+    - 'tests/**/bin/*/*Tests.dll'
+
+after_build:
+  - ps: |
+      Write-Host "nuget pack version $env:GitVersion_NuGetVersion"
+      nuget.exe pack app/NHtmlUnit/NHtmlUnit.csproj -Verbosity detailed -Symbols -Properties Configuration=Release -Version $env:GitVersion_NuGetVersion
+
+artifacts:
+  - path: './NHtmlUnit*.nupkg'
+
+deploy:
+- provider: NuGet
+  api_key:
+    secure: KdnSwO+azzpO5BT7wBbTMrngrcZ6737p4JNDbxo2APhrFFssLPbctMQr7v1YUUvg
+  on:
+    appveyor_repo_tag: true
+
+notifications:
+  on_build_success: false
+  on_build_failure: false
+  on_build_status_changed: true
