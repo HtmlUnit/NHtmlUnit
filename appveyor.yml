@@ -14,7 +14,7 @@ test:
     - 'tests/**/bin/*/*Tests.dll'
 
 before_deploy:
-  - nuget.cmd pack
+  - nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release
 
 deploy:
 - provider: NuGet
