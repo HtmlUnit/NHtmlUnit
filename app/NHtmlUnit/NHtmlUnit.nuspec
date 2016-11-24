@@ -20,7 +20,7 @@
     <references />
   </metadata>
   <files>
-    <file src="app\NHtmlUnit\bin\Release\HtmlUnit.dll" target="lib/net45" />
-    <file src="app\NHtmlUnit\bin\Release\NHtmlUnit.dll" target="lib/net45" />
+    <file src="bin\Release\HtmlUnit.dll" target="lib/net45" />
+    <file src="bin\Release\NHtmlUnit.dll" target="lib/net45" />
   </files>
 </package>
