@@ -29,11 +29,6 @@ deploy:
     secure: KdnSwO+azzpO5BT7wBbTMrngrcZ6737p4JNDbxo2APhrFFssLPbctMQr7v1YUUvg
   on:
     appveyor_repo_tag: true
-- provider: NuGet
-  api_key:
-    secure: KdnSwO+azzpO5BT7wBbTMrngrcZ6737p4JNDbxo2APhrFFssLPbctMQr7v1YUUvg
-  on:
-    branch: feature/appveyor-build
 
 notifications:
   on_build_success: false
