@@ -14,7 +14,7 @@ test:
     - 'tests/**/bin/*/*Tests.dll'
 
 after_build:
-  - nuget.exe pack app/NHtmlUnit/NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release
+  - ps: nuget.exe pack app/NHtmlUnit/NHtmlUnit.csproj -Verbosity detailed -Symbols -Properties Configuration=Release -Version $(env:GitVersion_NuGetVersion)
 
 deploy:
 - provider: NuGet
