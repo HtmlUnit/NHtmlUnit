@@ -21,7 +21,7 @@ after_build:
       nuget.exe pack app/NHtmlUnit/NHtmlUnit.csproj -Verbosity detailed -Symbols -Properties Configuration=Release -Version $env:GitVersion_NuGetVersion
 
 artifacts:
-  - path: '**\*.nupkg'
+  - path: 'app/**/*.nupkg'
 
 deploy:
 - provider: NuGet
