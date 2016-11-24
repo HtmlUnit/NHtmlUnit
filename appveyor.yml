@@ -22,3 +22,8 @@ deploy:
     secure: Rct2fdDCPZdCId+Xelo02OHeWpN2qMkeve07e1bpk8/wVUDO+KESONQOCe/ah9Wu
   on:
     appveyor_repo_tag: true
+
+notifications:
+  on_build_success: false
+  on_build_failure: false
+  on_build_status_changed: true
