@@ -9,6 +9,9 @@ build:
   project: NHtmlUnit.sln
   publish_nuget: true
 
+configuration:
+  - Release
+
 test:
   assemblies:
     - 'tests/**/bin/*/*Tests.dll'
