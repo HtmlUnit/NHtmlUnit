@@ -13,7 +13,7 @@ test:
   assemblies:
     - 'tests/**/bin/*/*Tests.dll'
 
-before_deploy:
+after_build:
   - nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release
 
 deploy:
