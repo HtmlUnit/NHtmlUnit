@@ -2,7 +2,7 @@
 
 // --------------------------------------------------
 // Copyright © OKB. All Rights Reserved.
-// 
+//
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
 // --------------------------------------------------
@@ -54,27 +54,29 @@ namespace NHtmlUnit.Generator
                 { "com.gargoylesoftware.htmlunit.javascript.host.event.", "Javascript.Host.Events." }
             };
 
-            Settings.Default.Whaat = new Random().Next().ToString(CultureInfo.InvariantCulture);
-            Settings.Default.Save();
+            // TODO: Figure out how this is supposed to work in .NET 5
+            // Settings.Default.Whaat = new Random().Next().ToString(CultureInfo.InvariantCulture);
+            // Settings.Default.Save();
 
             UsedTypes = new HashSet<Type>();
             CompleteTypes = new Dictionary<Type, WrapperClassInfo>();
             TargetAssembly = targetAssembly;
+            ListTypes = new Dictionary<string, string>();
 
-            if (Settings.Default.ListTypes != null)
-            {
-                ListTypes =
-                    Settings.Default.ListTypes.Cast<string>()
-                        .Where(s => s.Contains(':'))
-                        .ToDictionary(
-                            s => s.Substring(0, s.IndexOf(':')),
-                            s => s.Substring(s.IndexOf(':') + 1));
-            }
-            else
-            {
-                ListTypes = new Dictionary<string, string>();
-                Settings.Default.ListTypes = new StringCollection();
-            }
+            // if (Settings.Default.ListTypes != null)
+            // {
+            //     ListTypes =
+            //         Settings.Default.ListTypes.Cast<string>()
+            //             .Where(s => s.Contains(':'))
+            //             .ToDictionary(
+            //                 s => s.Substring(0, s.IndexOf(':')),
+            //                 s => s.Substring(s.IndexOf(':') + 1));
+            // }
+            // else
+            // {
+            //     ListTypes = new Dictionary<string, string>();
+            //     Settings.Default.ListTypes = new StringCollection();
+            // }
         }
 
 
@@ -521,8 +523,9 @@ namespace NHtmlUnit.Generator
                         if (listType != null)
                         {
                             // var confString = fullMemberName + ":" + listType.FullName;
-                            Settings.Default.ListTypes.Add(fullMemberName + ":" + listType.FullName);
-                            Settings.Default.Save();
+                            // TODO: Figure out how this is supposed to work in .NET 5.
+                            // Settings.Default.ListTypes.Add(fullMemberName + ":" + listType.FullName);
+                            // Settings.Default.Save();
                         }
                     }
                 }
