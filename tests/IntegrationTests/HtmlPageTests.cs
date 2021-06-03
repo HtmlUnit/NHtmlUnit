@@ -16,7 +16,7 @@ namespace IntegrationTests
             webClient.Options.ActiveXNative = false;
             webClient.Options.CssEnabled = false;
 
-            var page = webClient.GetHtmlPage("http://wikipedia.org");
+            var page = webClient.GetHtmlPage("https://github.com/");
             var anchor = page.GetFirstByXPath("//a");
 
             Assert.That(anchor, Is.TypeOf<HtmlAnchor>());

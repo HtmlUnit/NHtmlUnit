@@ -33,7 +33,7 @@ namespace IntegrationTests
         }
 
         [Test]
-        public void DoWikipediaSearch()
+        public void GitHubSearch()
         {
             // Note that this test works against live wikipedia.org and requires an active Internet connection
             var webClient = new WebClient(BrowserVersion.FIREFOX);
@@ -42,9 +42,9 @@ namespace IntegrationTests
             webClient.Options.ActiveXNative = true;
             webClient.Options.CssEnabled = true;
 
-            var page = webClient.GetHtmlPage("http://wikipedia.org");
+            var page = webClient.GetHtmlPage("https://github.com/search?q=HtmlUnit%2FNHtmlUnit");
 
-            page.GetElementById<HtmlInput>("searchInput").Type("network");
+            page.GetElementByClassName("header-search-input").Type("HtmlUnit/NHtmlUnit");
 
             var searchButton = page.HtmlElementDescendants
                 .OfType<HtmlButton>()
@@ -52,9 +52,9 @@ namespace IntegrationTests
 
             searchButton.Click();
 
-            var submitButton = page.GetElementByName("go") as HtmlElement;
+            var selectRepoButton = page.GetElementByClassName("repo-list").GetOneHtmlElementByAttribute("a", "href", "/HtmlUnit/NHtmlUnit");
 
-            var nextPage = submitButton.Click<HtmlPage>();
+            var nextPage = selectRepoButton.Click<HtmlPage>();
 
             // Check whether enumeration works (at least that it doesnt crash)
             foreach (var child in nextPage.Body.HtmlElementDescendants)
