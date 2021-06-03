@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLMediaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLMediaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLMediaElement()
       {
@@ -30,6 +30,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual string CanPlayType(string type)
       {
          return WObj.canPlayType(type);
+      }
+
+// Generating method code for play
+      public virtual NHtmlUnit.Javascript.Host.Promise Play()
+      {
+         var arg = WObj.play();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(arg);
+      }
+
+// Generating method code for pause
+      public virtual void Pause()
+      {
+         WObj.pause();
       }
 
    }

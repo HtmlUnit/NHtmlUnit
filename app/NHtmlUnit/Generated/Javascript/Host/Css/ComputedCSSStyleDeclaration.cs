@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class ComputedCSSStyleDeclaration : NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class ComputedCSSStyleDeclaration : NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration
    {
       static ComputedCSSStyleDeclaration()
       {
@@ -29,30 +29,6 @@ namespace NHtmlUnit.Javascript.Host.Css
       public ComputedCSSStyleDeclaration(NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration style)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleDeclaration)style.WrappedObject)) {}
 
-
-      public System.Int32 MarginRightValue
-      {
-         get
-         {
-            return WObj.getMarginRightValue();
-         }
-      }
-
-      public System.Int32 MarginTopValue
-      {
-         get
-         {
-            return WObj.getMarginTopValue();
-         }
-      }
-
-      public System.Int32 MarginBottomValue
-      {
-         get
-         {
-            return WObj.getMarginBottomValue();
-         }
-      }
 
       public System.Int32 ContentWidth
       {
@@ -181,18 +157,30 @@ namespace NHtmlUnit.Javascript.Host.Css
             return WObj.getBorderBottomValue();
          }
       }
-// Generating method code for isScrollable
-      public virtual bool IsScrollable(bool horizontal)
+
+      public System.Int32 MarginRightValue
       {
-         return WObj.isScrollable(horizontal);
+         get
+         {
+            return WObj.getMarginRightValue();
+         }
       }
 
-// Generating method code for getLeft
-      public virtual int GetLeft(bool includeMargin, bool includeBorder, bool includePadding)
+      public System.Int32 MarginTopValue
       {
-         return WObj.getLeft(includeMargin, includeBorder, includePadding);
+         get
+         {
+            return WObj.getMarginTopValue();
+         }
       }
 
+      public System.Int32 MarginBottomValue
+      {
+         get
+         {
+            return WObj.getMarginBottomValue();
+         }
+      }
 // Generating method code for getCalculatedWidth
       public virtual int GetCalculatedWidth(bool includeBorder, bool includePadding)
       {
@@ -212,15 +200,27 @@ namespace NHtmlUnit.Javascript.Host.Css
       }
 
 // Generating method code for applyStyleFromSelector
-      public virtual void ApplyStyleFromSelector(NHtmlUnit.W3C.Dom.Css.ICSSStyleDeclaration declaration, org.w3c.css.sac.Selector selector)
+      public virtual void ApplyStyleFromSelector(com.gargoylesoftware.css.dom.CSSStyleDeclarationImpl declaration, com.gargoylesoftware.css.parser.selector.Selector selector)
       {
-         WObj.applyStyleFromSelector((org.w3c.dom.css.CSSStyleDeclaration)declaration.WrappedObject, selector);
+         WObj.applyStyleFromSelector(declaration, selector);
       }
 
 // Generating method code for setDefaultLocalStyleAttribute
       public virtual void SetDefaultLocalStyleAttribute(string name, string newValue)
       {
          WObj.setDefaultLocalStyleAttribute(name, newValue);
+      }
+
+// Generating method code for isScrollable
+      public virtual bool IsScrollable(bool horizontal)
+      {
+         return WObj.isScrollable(horizontal);
+      }
+
+// Generating method code for getLeft
+      public virtual int GetLeft(bool includeMargin, bool includeBorder, bool includePadding)
+      {
+         return WObj.getLeft(includeMargin, includeBorder, includePadding);
       }
 
    }

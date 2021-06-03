@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Css
       public StyleSheetList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList()) {}
 
-      public StyleSheetList(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
+      public StyleSheetList(NHtmlUnit.Javascript.Host.Dom.Document document)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.StyleSheetList((com.gargoylesoftware.htmlunit.javascript.host.dom.Document)document.WrappedObject)) {}
 
 
       public System.Int32 Length

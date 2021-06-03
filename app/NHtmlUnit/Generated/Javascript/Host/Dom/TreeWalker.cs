@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Dom
          get { return (com.gargoylesoftware.htmlunit.javascript.host.dom.TreeWalker)WrappedObject; }
       }
 
+      public TreeWalker(NHtmlUnit.SgmlPage page, NHtmlUnit.Javascript.Host.Dom.Node root, int whatToShow, NHtmlUnit.W3C.Dom.Traversal.INodeFilter filter, bool expandEntityReferences)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TreeWalker((com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, (org.w3c.dom.traversal.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
+
       public TreeWalker()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TreeWalker()) {}
-
-      public TreeWalker(NHtmlUnit.Javascript.Host.Dom.Node root, System.Int64 whatToShow, NHtmlUnit.Javascript.Host.Dom.NodeFilter filter, bool expandEntityReferences)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TreeWalker((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, (com.gargoylesoftware.htmlunit.javascript.host.dom.NodeFilter)filter.WrappedObject, expandEntityReferences)) {}
 
 
       public NHtmlUnit.Javascript.Host.Dom.Node Root
@@ -48,21 +48,11 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Dom.NodeFilter Filter
+      public System.Object Filter
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeFilter>(
-               WObj.getFilter());
-         }
-      }
-
-
-      public System.Boolean ExpandEntityReferences
-      {
-         get
-         {
-            return WObj.getExpandEntityReferences();
+            return WObj.getFilter();
          }
       }
 
@@ -78,6 +68,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
             WObj.setCurrentNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)value.WrappedObject);
          }
 
+      }
+
+// Generating method code for isExpandEntityReferences
+      public virtual bool IsExpandEntityReferences()
+      {
+         return WObj.isExpandEntityReferences();
       }
 
 // Generating method code for parentNode

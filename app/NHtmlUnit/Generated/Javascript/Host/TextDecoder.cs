@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,23 @@ namespace NHtmlUnit.Javascript.Host
 
       public TextDecoder()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.TextDecoder()) {}
+
+      public TextDecoder(object encoding)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.TextDecoder(encoding)) {}
+
+
+      public System.String Encoding
+      {
+         get
+         {
+            return WObj.getEncoding();
+         }
+      }
+// Generating method code for decode
+      public virtual string Decode(object buffer)
+      {
+         return WObj.decode(buffer);
+      }
 
    }
 

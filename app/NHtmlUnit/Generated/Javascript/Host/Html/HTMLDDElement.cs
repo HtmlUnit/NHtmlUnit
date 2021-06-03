@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLDDElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLDDElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLDDElement()
       {
@@ -25,6 +25,12 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLDDElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDDElement()) {}
+
+// Generating method code for isNoWrap
+      public virtual bool IsNoWrap()
+      {
+         return WObj.isNoWrap();
+      }
 
    }
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,49 @@ namespace NHtmlUnit.Javascript.Host.Media
 
       public AudioParam()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.media.AudioParam()) {}
+
+
+      public System.Double DefaultValue
+      {
+         get
+         {
+            return WObj.getDefaultValue();
+         }
+      }
+
+      public System.Double Value
+      {
+         get
+         {
+            return WObj.getValue();
+         }
+         set
+         {
+            WObj.setValue(value);
+         }
+
+      }
+
+      public System.Double MaxValue
+      {
+         get
+         {
+            return WObj.getMaxValue();
+         }
+      }
+
+      public System.Double MinValue
+      {
+         get
+         {
+            return WObj.getMinValue();
+         }
+      }
+// Generating method code for jsConstructor
+      public virtual void JsConstructor()
+      {
+         WObj.jsConstructor();
+      }
 
    }
 

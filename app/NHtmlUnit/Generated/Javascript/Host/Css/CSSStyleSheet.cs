@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,10 +23,13 @@ namespace NHtmlUnit.Javascript.Host.Css
          get { return (com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet)WrappedObject; }
       }
 
-      public CSSStyleSheet(NHtmlUnit.Javascript.Host.Html.HTMLElement element, NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet wrapped, string uri)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject, (org.w3c.dom.css.CSSStyleSheet)wrapped.WrappedObject, uri)) {}
+      public CSSStyleSheet(NHtmlUnit.Javascript.Host.Html.HTMLElement element, com.gargoylesoftware.css.dom.CSSStyleSheetImpl wrapped, string uri)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject, wrapped, uri)) {}
 
-      public CSSStyleSheet(NHtmlUnit.Javascript.Host.Html.HTMLElement element, org.w3c.css.sac.InputSource source, string uri)
+      public CSSStyleSheet(NHtmlUnit.Javascript.Host.Html.HTMLElement element, string styleSheet, string uri)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject, styleSheet, uri)) {}
+
+      public CSSStyleSheet(NHtmlUnit.Javascript.Host.Html.HTMLElement element, com.gargoylesoftware.css.parser.InputSource source, string uri)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)element.WrappedObject, source, uri)) {}
 
       public CSSStyleSheet()
@@ -51,15 +54,13 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-      public NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet WrappedSheet
+      public com.gargoylesoftware.css.dom.CSSStyleSheetImpl WrappedSheet
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(
-               WObj.getWrappedSheet());
+            return WObj.getWrappedSheet();
          }
       }
-
 
       public NHtmlUnit.Javascript.Host.Css.CSSRuleList CssRules
       {
@@ -99,15 +100,16 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 // Generating method code for modifyIfNecessary
-      public virtual void ModifyIfNecessary(NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration style, NHtmlUnit.Javascript.Host.Element element)
+      public virtual void ModifyIfNecessary(NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration style, NHtmlUnit.Javascript.Host.Element element, string pseudoElement)
       {
-         WObj.modifyIfNecessary((com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)style.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject);
+         WObj.modifyIfNecessary((com.gargoylesoftware.htmlunit.javascript.host.css.ComputedCSSStyleDeclaration)style.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.Element)element.WrappedObject, pseudoElement);
       }
 
 // Generating method code for parseSelectors
-      public virtual org.w3c.css.sac.SelectorList ParseSelectors(org.w3c.css.sac.InputSource source)
+      public virtual IList<System.Object> ParseSelectors(string source)
       {
-         return WObj.parseSelectors(source);
+
+return new ShallowListWrapper<System.Object>(WObj.parseSelectors(source));
       }
 
 // Generating method code for insertRule
@@ -138,6 +140,12 @@ namespace NHtmlUnit.Javascript.Host.Css
       public virtual bool IsActive()
       {
          return WObj.isActive();
+      }
+
+// Generating method code for isEnabled
+      public virtual bool IsEnabled()
+      {
+         return WObj.isEnabled();
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlElement : NHtmlUnit.Html.DomElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlElement : NHtmlUnit.Html.DomElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlElement()
       {
@@ -24,6 +24,14 @@ namespace NHtmlUnit.Html
       }
 
 
+      public java.lang.Short TabIndex
+      {
+         get
+         {
+            return WObj.getTabIndex();
+         }
+      }
+
       public NHtmlUnit.Html.HtmlForm EnclosingForm
       {
          get
@@ -33,14 +41,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-
-      public java.lang.Short TabIndex
-      {
-         get
-         {
-            return WObj.getTabIndex();
-         }
-      }
 
       public NHtmlUnit.Html.HtmlForm EnclosingFormOrDie
       {
@@ -161,11 +161,10 @@ namespace NHtmlUnit.Html
          WObj.addHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
       }
 
-// Generating method code for getHtmlElementsByTagName
-      public virtual IList<System.Object> GetHtmlElementsByTagName(string tagName)
+// Generating method code for isHidden
+      public virtual bool IsHidden()
       {
-
-return new ShallowListWrapper<System.Object>(WObj.getHtmlElementsByTagName(tagName));
+         return WObj.isHidden();
       }
 
 // Generating method code for getEnclosingElement
@@ -187,19 +186,6 @@ return new ShallowListWrapper<System.Object>(WObj.getHtmlElementsByTagName(tagNa
       {
 
 return new ShallowListWrapper<System.Object>(WObj.getElementsByAttribute(elementName, attributeName, attributeValue));
-      }
-
-// Generating method code for setEventHandler
-      public virtual void SetEventHandler(string eventName, net.sourceforge.htmlunit.corejs.javascript.Function eventHandler)
-      {
-         WObj.setEventHandler(eventName, eventHandler);
-      }
-
-// Generating method code for getHtmlElementsByTagNames
-      public virtual IList<NHtmlUnit.Html.HtmlElement> GetHtmlElementsByTagNames(java.util.List tagNames)
-      {
-
-return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagNames(tagNames));
       }
 
 // Generating method code for type
@@ -248,22 +234,40 @@ return new ListWrapper<NHtmlUnit.Html.HtmlElement>(WObj.getHtmlElementsByTagName
          return WObj.hasEventHandlers(eventName);
       }
 
-// Generating method code for setEventHandler
-      public virtual void SetEventHandler(string eventName, string jsSnippet)
-      {
-         WObj.setEventHandler(eventName, jsSnippet);
-      }
-
-// Generating method code for removeEventHandler
-      public virtual void RemoveEventHandler(string eventName)
-      {
-         WObj.removeEventHandler(eventName);
-      }
-
 // Generating method code for removeHtmlAttributeChangeListener
       public virtual void RemoveHtmlAttributeChangeListener(NHtmlUnit.Html.IHtmlAttributeChangeListener listener)
       {
          WObj.removeHtmlAttributeChangeListener((com.gargoylesoftware.htmlunit.html.HtmlAttributeChangeListener)listener.WrappedObject);
+      }
+
+// Generating method code for isCtrlPressed
+      public virtual bool IsCtrlPressed()
+      {
+         return WObj.isCtrlPressed();
+      }
+
+// Generating method code for isAltPressed
+      public virtual bool IsAltPressed()
+      {
+         return WObj.isAltPressed();
+      }
+
+// Generating method code for isValid
+      public virtual bool IsValid()
+      {
+         return WObj.isValid();
+      }
+
+// Generating method code for isRequired
+      public virtual bool IsRequired()
+      {
+         return WObj.isRequired();
+      }
+
+// Generating method code for isOptional
+      public virtual bool IsOptional()
+      {
+         return WObj.isOptional();
       }
 
    }

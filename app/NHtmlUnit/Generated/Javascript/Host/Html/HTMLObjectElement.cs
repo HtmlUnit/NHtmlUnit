@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLObjectElement : NHtmlUnit.Javascript.Host.Html.FormChild, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLObjectElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLObjectElement()
       {
@@ -66,45 +66,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
-
       public System.String Width_js
       {
          get
@@ -120,11 +81,30 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getHeight_js();
          }
       }
+
+      public System.String Align
+      {
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
 // Generating method code for unwrap
       public virtual object Unwrap()
       {
          var arg = WObj.unwrap();
          return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
       }
 
    }

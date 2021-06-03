@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,6 +32,15 @@ namespace NHtmlUnit
       public WebClient(NHtmlUnit.BrowserVersion browserVersion, string proxyHost, int proxyPort)
          : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, proxyHost, proxyPort)) {}
 
+      public WebClient(NHtmlUnit.BrowserVersion browserVersion, bool javaScriptEngineEnabled, string proxyHost, int proxyPort, string proxyScheme)
+         : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, javaScriptEngineEnabled, proxyHost, proxyPort, proxyScheme)) {}
+
+      public WebClient(NHtmlUnit.BrowserVersion browserVersion, string proxyHost, int proxyPort, string proxyScheme)
+         : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, proxyHost, proxyPort, proxyScheme)) {}
+
+      public WebClient(NHtmlUnit.BrowserVersion browserVersion, bool javaScriptEngineEnabled, string proxyHost, int proxyPort)
+         : this(new com.gargoylesoftware.htmlunit.WebClient((com.gargoylesoftware.htmlunit.BrowserVersion)browserVersion.WrappedObject, javaScriptEngineEnabled, proxyHost, proxyPort)) {}
+
 
       public NHtmlUnit.Cache Cache
       {
@@ -48,16 +57,16 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.Javascript.JavaScriptEngine JavaScriptEngine
+      public NHtmlUnit.Javascript.IAbstractJavaScriptEngine JavaScriptEngine
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.JavaScriptEngine>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.IAbstractJavaScriptEngine>(
                WObj.getJavaScriptEngine());
          }
          set
          {
-            WObj.setJavaScriptEngine((com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine)value.WrappedObject);
+            WObj.setJavaScriptEngine((com.gargoylesoftware.htmlunit.javascript.AbstractJavaScriptEngine)value.WrappedObject);
          }
 
       }
@@ -128,6 +137,36 @@ namespace NHtmlUnit
       }
 
 
+      public NHtmlUnit.IFrameContentHandler FrameContentHandler
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IFrameContentHandler>(
+               WObj.getFrameContentHandler());
+         }
+         set
+         {
+            WObj.setFrameContentHandler((com.gargoylesoftware.htmlunit.FrameContentHandler)value.WrappedObject);
+         }
+
+      }
+
+
+      public NHtmlUnit.Attachment.IAttachmentHandler AttachmentHandler
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Attachment.IAttachmentHandler>(
+               WObj.getAttachmentHandler());
+         }
+         set
+         {
+            WObj.setAttachmentHandler((com.gargoylesoftware.htmlunit.attachment.AttachmentHandler)value.WrappedObject);
+         }
+
+      }
+
+
       public NHtmlUnit.IAppletConfirmHandler AppletConfirmHandler
       {
          get
@@ -138,6 +177,21 @@ namespace NHtmlUnit
          set
          {
             WObj.setAppletConfirmHandler((com.gargoylesoftware.htmlunit.AppletConfirmHandler)value.WrappedObject);
+         }
+
+      }
+
+
+      public NHtmlUnit.IPageCreator PageCreator
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPageCreator>(
+               WObj.getPageCreator());
+         }
+         set
+         {
+            WObj.setPageCreator((com.gargoylesoftware.htmlunit.PageCreator)value.WrappedObject);
          }
 
       }
@@ -188,16 +242,16 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.Html.IHTMLParserListener HTMLParserListener
+      public NHtmlUnit.Html.Parser.IHTMLParserListener HTMLParserListener
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.IHTMLParserListener>(
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.Parser.IHTMLParserListener>(
                WObj.getHTMLParserListener());
          }
          set
          {
-            WObj.setHTMLParserListener((com.gargoylesoftware.htmlunit.html.HTMLParserListener)value.WrappedObject);
+            WObj.setHTMLParserListener((com.gargoylesoftware.htmlunit.html.parser.HTMLParserListener)value.WrappedObject);
          }
 
       }
@@ -264,7 +318,7 @@ namespace NHtmlUnit
       }
 
 
-      public org.w3c.css.sac.ErrorHandler CssErrorHandler
+      public com.gargoylesoftware.css.parser.CSSErrorHandler CssErrorHandler
       {
          get
          {
@@ -276,6 +330,24 @@ namespace NHtmlUnit
          }
 
       }
+
+      public java.util.concurrent.Executor Executor
+      {
+         get
+         {
+            return WObj.getExecutor();
+         }
+      }
+
+      public NHtmlUnit.WebClientInternals Internals
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.WebClientInternals>(
+               WObj.getInternals());
+         }
+      }
+
 
       public NHtmlUnit.IAlertHandler AlertHandler
       {
@@ -322,16 +394,6 @@ namespace NHtmlUnit
       }
 
 
-      public NHtmlUnit.StorageHolder StorageHolder
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.StorageHolder>(
-               WObj.getStorageHolder());
-         }
-      }
-
-
       public NHtmlUnit.IStatusHandler StatusHandler
       {
          get
@@ -344,6 +406,16 @@ namespace NHtmlUnit
             WObj.setStatusHandler((com.gargoylesoftware.htmlunit.StatusHandler)value.WrappedObject);
          }
 
+      }
+
+
+      public NHtmlUnit.StorageHolder StorageHolder
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.StorageHolder>(
+               WObj.getStorageHolder());
+         }
       }
 
 
@@ -386,21 +458,6 @@ namespace NHtmlUnit
          }
        }
 
-      public NHtmlUnit.IPageCreator PageCreator
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPageCreator>(
-               WObj.getPageCreator());
-         }
-         set
-         {
-            WObj.setPageCreator((com.gargoylesoftware.htmlunit.PageCreator)value.WrappedObject);
-         }
-
-      }
-
-
       public IList<NHtmlUnit.TopLevelWindow> TopLevelWindows
       {
          get
@@ -423,16 +480,16 @@ namespace NHtmlUnit
 
       }
 
-      public NHtmlUnit.Attachment.IAttachmentHandler AttachmentHandler
+      public NHtmlUnit.Webstart.IWebStartHandler WebStartHandler
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Attachment.IAttachmentHandler>(
-               WObj.getAttachmentHandler());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Webstart.IWebStartHandler>(
+               WObj.getWebStartHandler());
          }
          set
          {
-            WObj.setAttachmentHandler((com.gargoylesoftware.htmlunit.attachment.AttachmentHandler)value.WrappedObject);
+            WObj.setWebStartHandler((com.gargoylesoftware.htmlunit.webstart.WebStartHandler)value.WrappedObject);
          }
 
       }
@@ -451,21 +508,33 @@ namespace NHtmlUnit
       }
 
 // Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow)
+      public virtual void Initialize(NHtmlUnit.IWebWindow webWindow, NHtmlUnit.IPage page)
       {
-         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+         WObj.initialize((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, (com.gargoylesoftware.htmlunit.Page)page.WrappedObject);
       }
 
-// Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.IPage newPage)
+// Generating method code for isJavaScriptEngineEnabled
+      public virtual bool IsJavaScriptEngineEnabled()
       {
-         WObj.initialize((com.gargoylesoftware.htmlunit.Page)newPage.WrappedObject);
+         return WObj.isJavaScriptEngineEnabled();
       }
 
 // Generating method code for deregisterWebWindow
       public virtual void DeregisterWebWindow(NHtmlUnit.IWebWindow webWindow)
       {
          WObj.deregisterWebWindow((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+      }
+
+// Generating method code for isJavaScriptEnabled
+      public virtual bool IsJavaScriptEnabled()
+      {
+         return WObj.isJavaScriptEnabled();
+      }
+
+// Generating method code for loadDownloadedResponses
+      public virtual void LoadDownloadedResponses()
+      {
+         WObj.loadDownloadedResponses();
       }
 
 // Generating method code for getPage
@@ -483,9 +552,9 @@ namespace NHtmlUnit
       }
 
 // Generating method code for download
-      public virtual void Download(NHtmlUnit.IWebWindow requestingWindow, string target, NHtmlUnit.WebRequest request, bool forceLoad, string description)
+      public virtual void Download(NHtmlUnit.IWebWindow requestingWindow, string target, NHtmlUnit.WebRequest request, bool checkHash, bool forceLoad, bool forceAttachment, string description)
       {
-         WObj.download((com.gargoylesoftware.htmlunit.WebWindow)requestingWindow.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, forceLoad, description);
+         WObj.download((com.gargoylesoftware.htmlunit.WebWindow)requestingWindow.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject, checkHash, forceLoad, forceAttachment, description);
       }
 
 // Generating method code for openWindow
@@ -501,23 +570,10 @@ namespace NHtmlUnit
          WObj.throwFailingHttpStatusCodeExceptionIfNecessary((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject);
       }
 
-// Generating method code for getPage
-      public virtual NHtmlUnit.IPage GetPage(NHtmlUnit.IWebWindow opener, string target, NHtmlUnit.WebRequest paramsArg)
-      {
-         var arg = WObj.getPage((com.gargoylesoftware.htmlunit.WebWindow)opener.WrappedObject, target, (com.gargoylesoftware.htmlunit.WebRequest)paramsArg.WrappedObject);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
-      }
-
 // Generating method code for containsWebWindow
       public virtual bool ContainsWebWindow(NHtmlUnit.IWebWindow webWindow)
       {
          return WObj.containsWebWindow((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
-      }
-
-// Generating method code for guessContentType
-      public virtual string GuessContentType(java.io.File file)
-      {
-         return WObj.guessContentType(file);
       }
 
 // Generating method code for addCookie
@@ -587,12 +643,6 @@ return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
          return ObjectWrapper.CreateWrapper<NHtmlUnit.DialogWindow>(arg);
       }
 
-// Generating method code for loadDownloadedResponses
-      public virtual void LoadDownloadedResponses()
-      {
-         WObj.loadDownloadedResponses();
-      }
-
 // Generating method code for addWebWindowListener
       public virtual void AddWebWindowListener(NHtmlUnit.IWebWindowListener listener)
       {
@@ -606,10 +656,23 @@ return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
-// Generating method code for initializeEmptyWindow
-      public virtual void InitializeEmptyWindow(NHtmlUnit.IWebWindow webWindow)
+// Generating method code for loadWebResponseInto
+      public virtual NHtmlUnit.IPage LoadWebResponseInto(NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow, bool forceAttachment)
       {
-         WObj.initializeEmptyWindow((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject);
+         var arg = WObj.loadWebResponseInto((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, forceAttachment);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+      }
+
+// Generating method code for initializeEmptyWindow
+      public virtual void InitializeEmptyWindow(NHtmlUnit.IWebWindow webWindow, NHtmlUnit.IPage page)
+      {
+         WObj.initializeEmptyWindow((com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject, (com.gargoylesoftware.htmlunit.Page)page.WrappedObject);
+      }
+
+// Generating method code for guessContentType
+      public virtual string GuessContentType(java.io.File file)
+      {
+         return WObj.guessContentType(file);
       }
 
 // Generating method code for waitForBackgroundJavaScript
@@ -640,6 +703,20 @@ return new CollectionWrapper<NHtmlUnit.Util.Cookie>(WObj.getCookies(url));
       public virtual void RemoveWebWindowListener(NHtmlUnit.IWebWindowListener listener)
       {
          WObj.removeWebWindowListener((com.gargoylesoftware.htmlunit.WebWindowListener)listener.WrappedObject);
+      }
+
+// Generating method code for loadHtmlCodeIntoCurrentWindow
+      public virtual NHtmlUnit.Html.HtmlPage LoadHtmlCodeIntoCurrentWindow(string htmlCode)
+      {
+         var arg = WObj.loadHtmlCodeIntoCurrentWindow(htmlCode);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlPage>(arg);
+      }
+
+// Generating method code for loadXHtmlCodeIntoCurrentWindow
+      public virtual NHtmlUnit.Html.XHtmlPage LoadXHtmlCodeIntoCurrentWindow(string xhtmlCode)
+      {
+         var arg = WObj.loadXHtmlCodeIntoCurrentWindow(xhtmlCode);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.XHtmlPage>(arg);
       }
 
    }

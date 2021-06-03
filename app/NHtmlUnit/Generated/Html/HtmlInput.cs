@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlInput : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
+   public partial class HtmlInput : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
    {
       static HtmlInput()
       {
@@ -30,6 +30,11 @@ namespace NHtmlUnit.Html
          {
             return WObj.getValueAttribute();
          }
+         set
+         {
+            WObj.setValueAttribute(value);
+         }
+
       }
 
       public System.String NameAttribute
@@ -48,11 +53,32 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
+      public System.String MinLengthAttribute
       {
          get
          {
-            return WObj.getSubmitKeyValuePairs();
+            return WObj.getMinLengthAttribute();
+         }
+      }
+
+      public System.String Pattern
+      {
+         get
+         {
+            return WObj.getPattern();
+         }
+         set
+         {
+            WObj.setPattern(value);
+         }
+
+      }
+
+      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitNameValuePairs
+      {
+         get
+         {
+            return WObj.getSubmitNameValuePairs();
          }
       }
 
@@ -102,6 +128,11 @@ namespace NHtmlUnit.Html
          {
             return WObj.getSrcAttribute();
          }
+         set
+         {
+            WObj.setSrcAttribute(value);
+         }
+
       }
 
       public System.String AltAttribute
@@ -265,13 +296,45 @@ namespace NHtmlUnit.Html
          }
 
       }
-// Generating method code for setValueAttribute
-      public virtual NHtmlUnit.IPage SetValueAttribute(string newValue)
+
+      public System.String Min
       {
-         var arg = WObj.setValueAttribute(newValue);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+         get
+         {
+            return WObj.getMin();
+         }
+         set
+         {
+            WObj.setMin(value);
+         }
+
       }
 
+      public System.String Max
+      {
+         get
+         {
+            return WObj.getMax();
+         }
+         set
+         {
+            WObj.setMax(value);
+         }
+
+      }
+
+      public System.String Step
+      {
+         get
+         {
+            return WObj.getStep();
+         }
+         set
+         {
+            WObj.setStep(value);
+         }
+
+      }
 // Generating method code for isDisabled
       public virtual bool IsDisabled()
       {
@@ -309,13 +372,6 @@ namespace NHtmlUnit.Html
          return WObj.isReadOnly();
       }
 
-// Generating method code for click
-      public virtual NHtmlUnit.IPage Click(int x, int y)
-      {
-         var arg = WObj.click(x, y);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
-      }
-
 // Generating method code for markAsCreatedByJavascript
       public virtual void MarkAsCreatedByJavascript()
       {
@@ -328,10 +384,10 @@ namespace NHtmlUnit.Html
          return WObj.wasCreatedByJavascript();
       }
 
-// Generating method code for isRequired
-      public virtual bool IsRequired()
+// Generating method code for valueModifiedByJavascript
+      public virtual void ValueModifiedByJavascript()
       {
-         return WObj.isRequired();
+         WObj.valueModifiedByJavascript();
       }
 
    }

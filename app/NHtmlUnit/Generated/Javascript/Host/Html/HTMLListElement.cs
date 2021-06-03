@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLListElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLListElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLListElement()
       {
@@ -26,16 +26,10 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLListElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLListElement()) {}
 
-// Generating method code for getCompact
-      public virtual bool GetCompact()
+// Generating method code for isCompact
+      public virtual bool IsCompact()
       {
-         return WObj.getCompact();
-      }
-
-// Generating method code for setCompact
-      public virtual void SetCompact(object compact)
-      {
-         WObj.setCompact(compact);
+         return WObj.isCompact();
       }
 
    }

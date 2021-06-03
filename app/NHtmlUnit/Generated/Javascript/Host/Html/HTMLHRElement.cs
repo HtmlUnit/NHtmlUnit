@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLHRElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLHRElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLHRElement()
       {
@@ -33,6 +33,32 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return WObj.getWidth_js();
          }
+      }
+
+      public System.String Align
+      {
+         get
+         {
+            return WObj.getAlign();
+         }
+         set
+         {
+            WObj.setAlign(value);
+         }
+
+      }
+
+      public System.String Color
+      {
+         get
+         {
+            return WObj.getColor();
+         }
+         set
+         {
+            WObj.setColor(value);
+         }
+
       }
    }
 

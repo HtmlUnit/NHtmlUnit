@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -55,19 +55,6 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       }
 
 
-      public System.Boolean Async
-      {
-         get
-         {
-            return WObj.getAsync();
-         }
-         set
-         {
-            WObj.setAsync(value);
-         }
-
-      }
-
       public NHtmlUnit.Activex.Javascript.Msxml.XMLDOMDocumentType Doctype
       {
          get
@@ -88,19 +75,6 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       }
 
 
-      public System.Boolean PreserveWhiteSpace
-      {
-         get
-         {
-            return WObj.getPreserveWhiteSpace();
-         }
-         set
-         {
-            WObj.setPreserveWhiteSpace(value);
-         }
-
-      }
-
       public System.String Url
       {
          get
@@ -119,6 +93,18 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       {
          var arg = WObj.createAttribute(name);
          return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for isAsync
+      public virtual bool IsAsync()
+      {
+         return WObj.isAsync();
+      }
+
+// Generating method code for isPreserveWhiteSpace
+      public virtual bool IsPreserveWhiteSpace()
+      {
+         return WObj.isPreserveWhiteSpace();
       }
 
 // Generating method code for createCDATASection

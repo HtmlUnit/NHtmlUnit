@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Css
 {
-   public partial class CSS2Properties : NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class CSS2Properties : NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration
    {
       static CSS2Properties()
       {

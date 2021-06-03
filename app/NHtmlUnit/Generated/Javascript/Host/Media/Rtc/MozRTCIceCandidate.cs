@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Media.Rtc
    {
       static MozRTCIceCandidate()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCIceCandidate o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCIceCandidate o) =>
             new MozRTCIceCandidate(o));
       }
 
-      public MozRTCIceCandidate(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCIceCandidate wrappedObject) : base(wrappedObject) {}
+      public MozRTCIceCandidate(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCIceCandidate wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCIceCandidate WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCIceCandidate WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCIceCandidate)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCIceCandidate)WrappedObject; }
       }
 
       public MozRTCIceCandidate()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCIceCandidate()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCIceCandidate()) {}
 
    }
 

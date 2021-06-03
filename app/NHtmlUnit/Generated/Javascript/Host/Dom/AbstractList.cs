@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,15 +26,15 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public AbstractList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.AbstractList()) {}
 
-      public AbstractList(NHtmlUnit.Html.DomNode parentScope, bool attributeChangeSensitive, string description)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.AbstractList((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject, attributeChangeSensitive, description)) {}
+      public AbstractList(NHtmlUnit.Html.DomNode domeNode, bool attributeChangeSensitive)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.AbstractList((com.gargoylesoftware.htmlunit.html.DomNode)domeNode.WrappedObject, attributeChangeSensitive)) {}
 
 
-      public IList<java.lang.Object> Elements
+      public IList<NHtmlUnit.Html.DomNode> Elements
       {
          get
          {
-            return new ShallowListWrapper<java.lang.Object>(
+            return new ListWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getElements());
          }
        }
@@ -44,6 +44,14 @@ namespace NHtmlUnit.Javascript.Host.Dom
          get
          {
             return WObj.getLength();
+         }
+      }
+
+      public System.Int32 ArrayLength
+      {
+         get
+         {
+            return WObj.getArrayLength();
          }
       }
 // Generating method code for call
@@ -64,6 +72,19 @@ namespace NHtmlUnit.Javascript.Host.Dom
       {
          var arg = WObj.item(index);
          return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for getArrayElement
+      public virtual object GetArrayElement(int index)
+      {
+         var arg = WObj.getArrayElement(index);
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for setArrayElement
+      public virtual void SetArrayElement(int index, object value)
+      {
+         WObj.setArrayElement(index, value);
       }
 
    }

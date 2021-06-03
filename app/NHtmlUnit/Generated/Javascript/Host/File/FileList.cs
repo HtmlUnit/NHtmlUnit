@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.File
       public FileList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.file.FileList()) {}
 
-      public FileList(java.util.List pathnames)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.file.FileList(pathnames)) {}
+      public FileList(java.io.File[] array)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.file.FileList(array)) {}
 
 
       public System.Int32 Length

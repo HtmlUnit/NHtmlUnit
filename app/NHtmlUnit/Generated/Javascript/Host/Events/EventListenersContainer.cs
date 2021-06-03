@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,69 +32,41 @@ namespace NHtmlUnit.Javascript.Host.Events
          return WObj.addEventListener(type, listener, useCapture);
       }
 
-// Generating method code for executeListeners
-      public virtual NHtmlUnit.ScriptResult ExecuteListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
+// Generating method code for executeAtTargetListeners
+      public virtual void ExecuteAtTargetListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args)
       {
-         var arg = WObj.executeListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
+         WObj.executeAtTargetListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args);
       }
 
 // Generating method code for executeCapturingListeners
-      public virtual NHtmlUnit.ScriptResult ExecuteCapturingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args)
+      public virtual void ExecuteCapturingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args)
       {
-         var arg = WObj.executeCapturingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
+         WObj.executeCapturingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args);
       }
 
 // Generating method code for executeBubblingListeners
-      public virtual NHtmlUnit.ScriptResult ExecuteBubblingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args, System.Object[] propHandlerArgs)
+      public virtual void ExecuteBubblingListeners(NHtmlUnit.Javascript.Host.Events.Event eventArg, System.Object[] args)
       {
-         var arg = WObj.executeBubblingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args, propHandlerArgs);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
-      }
-
-// Generating method code for hasEventHandlers
-      public virtual bool HasEventHandlers(string eventName)
-      {
-         return WObj.hasEventHandlers(eventName);
+         WObj.executeBubblingListeners((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, args);
       }
 
 // Generating method code for getEventHandler
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetEventHandler(string eventName)
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetEventHandler(string eventType)
       {
-         return WObj.getEventHandler(eventName);
+         return WObj.getEventHandler(eventType);
       }
 
-// Generating method code for getEventHandlerProp
-      public virtual object GetEventHandlerProp(string eventName)
+// Generating method code for setEventHandler
+      public virtual void SetEventHandler(string eventType, object value)
       {
-         var arg = WObj.getEventHandlerProp(eventName);
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         WObj.setEventHandler(eventType, value);
       }
 
-// Generating method code for removeEventListener
-      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Scriptable listener, bool useCapture)
-      {
-         WObj.removeEventListener(type, listener, useCapture);
-      }
-
-// Generating method code for setEventHandlerProp
-      public virtual void SetEventHandlerProp(string eventName, object value)
-      {
-         WObj.setEventHandlerProp(eventName, value);
-      }
-
-// Generating method code for copyFrom
-      public virtual void CopyFrom(NHtmlUnit.Javascript.Host.Events.EventListenersContainer eventListenersContainer)
-      {
-         WObj.copyFrom((com.gargoylesoftware.htmlunit.javascript.host.@event.EventListenersContainer)eventListenersContainer.WrappedObject);
-      }
-
-// Generating method code for getHandlers
-      public virtual IList<net.sourceforge.htmlunit.corejs.javascript.Scriptable> GetHandlers(string eventType, bool useCapture)
+// Generating method code for getListeners
+      public virtual IList<net.sourceforge.htmlunit.corejs.javascript.Scriptable> GetListeners(string eventType, bool useCapture)
       {
 
-return new ShallowListWrapper<net.sourceforge.htmlunit.corejs.javascript.Scriptable>(WObj.getHandlers(eventType, useCapture));
+return new ShallowListWrapper<net.sourceforge.htmlunit.corejs.javascript.Scriptable>(WObj.getListeners(eventType, useCapture));
       }
 
    }

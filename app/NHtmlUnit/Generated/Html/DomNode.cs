@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +23,19 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.DomNode)WrappedObject; }
       }
 
+
+      public System.Object ScriptableObject
+      {
+         get
+         {
+            return WObj.getScriptableObject();
+         }
+         set
+         {
+            WObj.setScriptableObject(value);
+         }
+
+      }
 
       public System.String NodeName
       {
@@ -105,6 +118,11 @@ namespace NHtmlUnit.Html
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getNextSibling());
          }
+         set
+         {
+            WObj.setNextSibling((com.gargoylesoftware.htmlunit.html.DomNode)value.WrappedObject);
+         }
+
       }
 
 
@@ -216,6 +234,15 @@ namespace NHtmlUnit.Html
 
       }
 
+      public IList<NHtmlUnit.W3C.Dom.INode> Ancestors
+      {
+         get
+         {
+            return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(
+               WObj.getAncestors());
+         }
+       }
+
       public System.Int32 StartLineNumber
       {
          get
@@ -282,6 +309,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public System.String VisibleText
+      {
+         get
+         {
+            return WObj.getVisibleText();
+         }
+      }
+
       public IEnumerable<NHtmlUnit.Html.HtmlElement> HtmlElementDescendants
       {
          get
@@ -298,6 +333,26 @@ namespace NHtmlUnit.Html
             return WObj.getCanonicalXPath();
          }
       }
+
+      public NHtmlUnit.Html.DomElement PreviousElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getPreviousElementSibling());
+         }
+      }
+
+
+      public NHtmlUnit.Html.DomElement NextElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getNextElementSibling());
+         }
+      }
+
 // Generating method code for hasFeature
       public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures feature)
       {
@@ -393,10 +448,16 @@ return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr));
          return WObj.mayBeDisplayed();
       }
 
-// Generating method code for isDirectlyAttachedToPage
-      public virtual bool IsDirectlyAttachedToPage()
+// Generating method code for isAttachedToPage
+      public virtual bool IsAttachedToPage()
       {
-         return WObj.isDirectlyAttachedToPage();
+         return WObj.isAttachedToPage();
+      }
+
+// Generating method code for onAllChildrenAddedToPage
+      public virtual void OnAllChildrenAddedToPage(bool postponed)
+      {
+         WObj.onAllChildrenAddedToPage(postponed);
       }
 
 // Generating method code for getFirstByXPath
@@ -418,6 +479,18 @@ return new ShallowListWrapper<System.Object>(WObj.getByXPath(xpathExpr, resolver
       {
 
 return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors));
+      }
+
+// Generating method code for setStartLocation
+      public virtual void SetStartLocation(int startLineNumber, int startColumnNumber)
+      {
+         WObj.setStartLocation(startLineNumber, startColumnNumber);
+      }
+
+// Generating method code for setEndLocation
+      public virtual void SetEndLocation(int endLineNumber, int endColumnNumber)
+      {
+         WObj.setEndLocation(endLineNumber, endColumnNumber);
       }
 
 // Generating method code for isAncestorOfAny
@@ -507,10 +580,10 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors)
          return WObj.isDisplayed();
       }
 
-// Generating method code for asText
-      public virtual string AsText()
+// Generating method code for asNormalizedText
+      public virtual string AsNormalizedText()
       {
-         return WObj.asText();
+         return WObj.asNormalizedText();
       }
 
 // Generating method code for replaceChild
@@ -518,6 +591,12 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors)
       {
          var arg = WObj.replaceChild((org.w3c.dom.Node)newChild.WrappedObject, (org.w3c.dom.Node)oldChild.WrappedObject);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.INode>(arg);
+      }
+
+// Generating method code for quietlyRemoveAndMoveChildrenTo
+      public virtual void QuietlyRemoveAndMoveChildrenTo(NHtmlUnit.Html.DomNode destination)
+      {
+         WObj.quietlyRemoveAndMoveChildrenTo((com.gargoylesoftware.htmlunit.html.DomNode)destination.WrappedObject);
       }
 
 // Generating method code for getFirstByXPath
@@ -558,16 +637,10 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.querySelectorAll(selectors)
          WObj.processImportNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Document)doc.WrappedObject);
       }
 
-// Generating method code for getScriptableObject
-      public virtual net.sourceforge.htmlunit.corejs.javascript.ScriptableObject GetScriptableObject()
+// Generating method code for handles
+      public virtual bool Handles(NHtmlUnit.Javascript.Host.Events.Event eventArg)
       {
-         return WObj.getScriptableObject();
-      }
-
-// Generating method code for setScriptableObject
-      public virtual void SetScriptableObject(object scriptObject)
-      {
-         WObj.setScriptableObject(scriptObject);
+         return WObj.handles((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
       }
 
    }

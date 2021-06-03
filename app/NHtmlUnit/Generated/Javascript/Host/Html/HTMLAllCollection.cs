@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLAllCollection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAllCollection()) {}
 
-      public HTMLAllCollection(NHtmlUnit.Html.DomNode parentScope, string description)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAllCollection((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject, description)) {}
+      public HTMLAllCollection(NHtmlUnit.Html.DomNode parentScope)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLAllCollection((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject)) {}
 
    }
 

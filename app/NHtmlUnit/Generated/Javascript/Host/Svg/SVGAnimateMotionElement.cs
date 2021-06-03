@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Svg
 {
-   public partial class SVGAnimateMotionElement : NHtmlUnit.Javascript.Host.Svg.SVGElement
+   public partial class SVGAnimateMotionElement : NHtmlUnit.Javascript.Host.Svg.SVGAnimationElement
    {
       static SVGAnimateMotionElement()
       {

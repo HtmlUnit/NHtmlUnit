@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,7 +26,7 @@ namespace NHtmlUnit
       public StringWebResponse(string content, java.net.URL originatingURL)
          : this(new com.gargoylesoftware.htmlunit.StringWebResponse(content, originatingURL)) {}
 
-      public StringWebResponse(string content, string charset, java.net.URL originatingURL)
+      public StringWebResponse(string content, java.nio.charset.Charset charset, java.net.URL originatingURL)
          : this(new com.gargoylesoftware.htmlunit.StringWebResponse(content, charset, originatingURL)) {}
 
 // Generating method code for isFromJavascript

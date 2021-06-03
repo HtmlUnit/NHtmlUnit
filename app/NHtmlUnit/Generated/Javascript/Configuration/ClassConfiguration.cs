@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Javascript.Configuration
          get { return (com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration)WrappedObject; }
       }
 
-      public ClassConfiguration(java.lang.Class hostClass, java.lang.Class[] domClasses, bool jsObject, bool definedInStandardsMode, string className)
-         : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject, definedInStandardsMode, className)) {}
+      public ClassConfiguration(java.lang.Class hostClass, java.lang.Class[] domClasses, bool jsObject, string className, string extendedClassName)
+         : this(new com.gargoylesoftware.htmlunit.javascript.configuration.ClassConfiguration(hostClass, domClasses, jsObject, className, extendedClassName)) {}
 
 
       public System.String ClassName
@@ -59,50 +59,45 @@ namespace NHtmlUnit.Javascript.Configuration
          }
       }
 
-      public ICollection<System.Object> PropertyEntries
+      public java.util.Map PropertyMap
       {
          get
          {
-            return new ShallowCollectionWrapper<System.Object>(
-               WObj.getPropertyEntries());
+            return WObj.getPropertyMap();
          }
-       }
+      }
 
-      public ICollection<System.Object> FunctionEntries
+      public java.util.Map FunctionMap
       {
          get
          {
-            return new ShallowCollectionWrapper<System.Object>(
-               WObj.getFunctionEntries());
+            return WObj.getFunctionMap();
          }
-       }
+      }
 
-      public ICollection<System.Object> StaticPropertyEntries
+      public java.util.Map SymbolMap
       {
          get
          {
-            return new ShallowCollectionWrapper<System.Object>(
-               WObj.getStaticPropertyEntries());
+            return WObj.getSymbolMap();
          }
-       }
+      }
 
-      public ICollection<System.Object> StaticFunctionEntries
+      public java.util.Map StaticPropertyMap
       {
          get
          {
-            return new ShallowCollectionWrapper<System.Object>(
-               WObj.getStaticFunctionEntries());
+            return WObj.getStaticPropertyMap();
          }
-       }
+      }
 
-      public ICollection<System.String> FunctionKeys
+      public java.util.Map StaticFunctionMap
       {
          get
          {
-            return new ShallowCollectionWrapper<System.String>(
-               WObj.getFunctionKeys());
+            return WObj.getStaticFunctionMap();
          }
-       }
+      }
 
       public System.String HostClassSimpleName
       {
@@ -112,17 +107,23 @@ namespace NHtmlUnit.Javascript.Configuration
          }
       }
 
-      public java.lang.reflect.Member JsConstructor
+      public java.lang.reflect.Executable JsConstructor
       {
          get
          {
             return WObj.getJsConstructor();
          }
       }
-// Generating method code for addFunction
-      public virtual void AddFunction(java.lang.reflect.Method method)
+// Generating method code for addSymbol
+      public virtual void AddSymbol(net.sourceforge.htmlunit.corejs.javascript.Symbol symbol, java.lang.reflect.Method method)
       {
-         WObj.addFunction(method);
+         WObj.addSymbol(symbol, method);
+      }
+
+// Generating method code for addFunction
+      public virtual void AddFunction(string name, java.lang.reflect.Method method)
+      {
+         WObj.addFunction(name, method);
       }
 
 // Generating method code for addStaticProperty
@@ -132,9 +133,9 @@ namespace NHtmlUnit.Javascript.Configuration
       }
 
 // Generating method code for addStaticFunction
-      public virtual void AddStaticFunction(java.lang.reflect.Method method)
+      public virtual void AddStaticFunction(string name, java.lang.reflect.Method method)
       {
-         WObj.addStaticFunction(method);
+         WObj.addStaticFunction(name, method);
       }
 
 // Generating method code for addConstant
@@ -153,12 +154,6 @@ namespace NHtmlUnit.Javascript.Configuration
       public virtual bool IsJsObject()
       {
          return WObj.isJsObject();
-      }
-
-// Generating method code for isDefinedInStandardsMode
-      public virtual bool IsDefinedInStandardsMode()
-      {
-         return WObj.isDefinedInStandardsMode();
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -60,6 +60,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void TimeEnd(string timerName)
       {
          WObj.timeEnd(timerName);
+      }
+
+// Generating method code for timeStamp
+      public virtual void TimeStamp(string label)
+      {
+         WObj.timeStamp(label);
       }
 
    }

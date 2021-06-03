@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlLink : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlLink : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlLink()
       {
@@ -42,6 +42,14 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public System.String RelAttribute
+      {
+         get
+         {
+            return WObj.getRelAttribute();
+         }
+      }
+
       public System.String CharsetAttribute
       {
          get
@@ -63,14 +71,6 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getTypeAttribute();
-         }
-      }
-
-      public System.String RelAttribute
-      {
-         get
-         {
-            return WObj.getRelAttribute();
          }
       }
 
@@ -97,6 +97,13 @@ namespace NHtmlUnit.Html
             return WObj.getTargetAttribute();
          }
       }
+// Generating method code for getWebResponse
+      public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded, NHtmlUnit.WebRequest request)
+      {
+         var arg = WObj.getWebResponse(downloadIfNeeded, (com.gargoylesoftware.htmlunit.WebRequest)request.WrappedObject);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.WebResponse>(arg);
+      }
+
 // Generating method code for getWebResponse
       public virtual NHtmlUnit.WebResponse GetWebResponse(bool downloadIfNeeded)
       {

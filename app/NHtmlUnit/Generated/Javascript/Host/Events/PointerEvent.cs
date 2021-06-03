@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -83,6 +83,22 @@ namespace NHtmlUnit.Javascript.Host.Events
          get
          {
             return WObj.getPointerType();
+         }
+      }
+
+      public System.Double AltitudeAngle
+      {
+         get
+         {
+            return WObj.getAltitudeAngle();
+         }
+      }
+
+      public System.Double AzimuthAngle
+      {
+         get
+         {
+            return WObj.getAzimuthAngle();
          }
       }
 // Generating method code for initPointerEvent

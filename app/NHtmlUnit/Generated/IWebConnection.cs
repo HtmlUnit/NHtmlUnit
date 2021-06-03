@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.WebConnection
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,8 @@ namespace NHtmlUnit
    {
 // Generating method code for getResponse
       NHtmlUnit.WebResponse GetResponse(NHtmlUnit.WebRequest wr);
+// Generating method code for close
+      void Close();
 
    }
 }

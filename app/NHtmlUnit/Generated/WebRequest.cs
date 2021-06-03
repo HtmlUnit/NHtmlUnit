@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,8 +29,8 @@ namespace NHtmlUnit
       public WebRequest(java.net.URL url, NHtmlUnit.HttpMethod submitMethod)
          : this(new com.gargoylesoftware.htmlunit.WebRequest(url, (com.gargoylesoftware.htmlunit.HttpMethod)submitMethod.WrappedObject)) {}
 
-      public WebRequest(java.net.URL url, string acceptHeader)
-         : this(new com.gargoylesoftware.htmlunit.WebRequest(url, acceptHeader)) {}
+      public WebRequest(java.net.URL url, string acceptHeader, string acceptEncodingHeader)
+         : this(new com.gargoylesoftware.htmlunit.WebRequest(url, acceptHeader, acceptEncodingHeader)) {}
 
 
       public java.net.URL Url
@@ -46,7 +46,7 @@ namespace NHtmlUnit
 
       }
 
-      public System.String Charset
+      public java.nio.charset.Charset Charset
       {
          get
          {
@@ -113,19 +113,6 @@ namespace NHtmlUnit
 
       }
 
-      public System.Object State
-      {
-         get
-         {
-            return WObj.getState();
-         }
-         set
-         {
-            WObj.setState(value);
-         }
-
-      }
-
       public IList<NHtmlUnit.Util.NameValuePair> RequestParameters
       {
          get
@@ -176,6 +163,19 @@ namespace NHtmlUnit
 
       }
 
+      public System.String ProxyScheme
+      {
+         get
+         {
+            return WObj.getProxyScheme();
+         }
+         set
+         {
+            WObj.setProxyScheme(value);
+         }
+
+      }
+
       public org.apache.http.auth.Credentials UrlCredentials
       {
          get
@@ -183,22 +183,47 @@ namespace NHtmlUnit
             return WObj.getUrlCredentials();
          }
       }
+
+      public System.Int32 Timeout
+      {
+         get
+         {
+            return WObj.getTimeout();
+         }
+         set
+         {
+            WObj.setTimeout(value);
+         }
+
+      }
 // Generating method code for setAdditionalHeader
       public virtual void SetAdditionalHeader(string name, string value)
       {
          WObj.setAdditionalHeader(name, value);
       }
 
-// Generating method code for isCloneForHistoryAPI
-      public virtual bool IsCloneForHistoryAPI()
-      {
-         return WObj.isCloneForHistoryAPI();
-      }
-
 // Generating method code for isSocksProxy
       public virtual bool IsSocksProxy()
       {
          return WObj.isSocksProxy();
+      }
+
+// Generating method code for hasHint
+      public virtual bool HasHint(com.gargoylesoftware.htmlunit.WebRequest.HttpHint hint)
+      {
+         return WObj.hasHint(hint);
+      }
+
+// Generating method code for getAdditionalHeader
+      public virtual string GetAdditionalHeader(string name)
+      {
+         return WObj.getAdditionalHeader(name);
+      }
+
+// Generating method code for addHint
+      public virtual void AddHint(com.gargoylesoftware.htmlunit.WebRequest.HttpHint hint)
+      {
+         WObj.addHint(hint);
       }
 
 // Generating method code for isAdditionalHeader

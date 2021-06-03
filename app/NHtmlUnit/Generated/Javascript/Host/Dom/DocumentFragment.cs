@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,53 +27,48 @@ namespace NHtmlUnit.Javascript.Host.Dom
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DocumentFragment()) {}
 
 
-      public System.String URL
+      public System.Int32 ChildElementCount
       {
          get
          {
-            return WObj.getURL();
+            return WObj.getChildElementCount();
          }
       }
-// Generating method code for createAttribute
-      public virtual object CreateAttribute(string attributeName)
+
+      public NHtmlUnit.Javascript.Host.Element FirstElementChild
       {
-         var arg = WObj.createAttribute(attributeName);
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getFirstElementChild());
+         }
       }
 
-// Generating method code for createElement
-      public virtual object CreateElement(string tagName)
+
+      public NHtmlUnit.Javascript.Host.Element LastElementChild
       {
-         var arg = WObj.createElement(tagName);
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getLastElementChild());
+         }
       }
 
-// Generating method code for createComment
-      public virtual object CreateComment(string comment)
-      {
-         var arg = WObj.createComment(comment);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
 
-// Generating method code for createDocumentFragment
-      public virtual object CreateDocumentFragment()
+      public NHtmlUnit.Javascript.Host.Html.HTMLCollection Children
       {
-         var arg = WObj.createDocumentFragment();
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for createTextNode
-      public virtual object CreateTextNode(string newData)
-      {
-         var arg = WObj.createTextNode(newData);
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
+               WObj.getChildren());
+         }
       }
 
 // Generating method code for querySelectorAll
-      public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
+      public virtual NHtmlUnit.Javascript.Host.Dom.NodeList QuerySelectorAll(string selectors)
       {
          var arg = WObj.querySelectorAll(selectors);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeList>(arg);
       }
 
 // Generating method code for querySelector
@@ -81,6 +76,13 @@ namespace NHtmlUnit.Javascript.Host.Dom
       {
          var arg = WObj.querySelector(selectors);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
+      }
+
+// Generating method code for getElementById
+      public virtual object GetElementById(object id)
+      {
+         var arg = WObj.getElementById(id);
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

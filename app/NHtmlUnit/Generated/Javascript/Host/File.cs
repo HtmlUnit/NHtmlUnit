@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,9 @@ namespace NHtmlUnit.Javascript.Host.File
 
       public File()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.file.File()) {}
+
+      public File(net.sourceforge.htmlunit.corejs.javascript.NativeArray fileBits, string fileName, net.sourceforge.htmlunit.corejs.javascript.ScriptableObject properties)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.file.File(fileBits, fileName, properties)) {}
 
 
       public System.Int64 LastModified
@@ -56,22 +59,6 @@ namespace NHtmlUnit.Javascript.Host.File
          get
          {
             return WObj.getWebkitRelativePath();
-         }
-      }
-
-      public System.Int64 Size
-      {
-         get
-         {
-            return WObj.getSize();
-         }
-      }
-
-      public System.String Type
-      {
-         get
-         {
-            return WObj.getType();
          }
       }
 // Generating method code for slice

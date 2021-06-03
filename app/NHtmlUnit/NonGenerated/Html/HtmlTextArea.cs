@@ -15,9 +15,6 @@ namespace NHtmlUnit.Html
 {
     public partial class HtmlTextArea
     {
-        IPage ISelectableTextInput.Page
-        {
-            get { return Page; }
-        }
+        public NHtmlUnit.IPage Page  { get; }
     }
 }

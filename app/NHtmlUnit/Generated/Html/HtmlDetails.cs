@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlDetails : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlDetails : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlDetails()
       {
@@ -21,6 +21,12 @@ namespace NHtmlUnit.Html
       public new com.gargoylesoftware.htmlunit.html.HtmlDetails WObj
       {
          get { return (com.gargoylesoftware.htmlunit.html.HtmlDetails)WrappedObject; }
+      }
+
+// Generating method code for isOpen
+      public virtual bool IsOpen()
+      {
+         return WObj.isOpen();
       }
 
    }

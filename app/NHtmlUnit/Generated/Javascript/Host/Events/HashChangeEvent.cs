@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Events
       public HashChangeEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.HashChangeEvent()) {}
 
-      public HashChangeEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, string oldURL, string newURL)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, oldURL, newURL)) {}
+      public HashChangeEvent(NHtmlUnit.Javascript.Host.Events.EventTarget target, string type, string oldURL, string newURL)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.HashChangeEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject, type, oldURL, newURL)) {}
 
 
       public System.Object OldURL

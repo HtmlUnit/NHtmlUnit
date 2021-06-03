@@ -25,7 +25,7 @@ namespace IntegrationTests
         [Test]
         public void CanSetAlertHandler()
         {
-            var webClient = new WebClient(BrowserVersion.FIREFOX_38);
+            var webClient = new WebClient(BrowserVersion.FIREFOX);
 
             List collectedAlerts = new ArrayList();
             var alertHandler = new CollectingAlertHandler(collectedAlerts);
@@ -36,7 +36,7 @@ namespace IntegrationTests
         public void DoWikipediaSearch()
         {
             // Note that this test works against live wikipedia.org and requires an active Internet connection
-            var webClient = new WebClient(BrowserVersion.FIREFOX_38);
+            var webClient = new WebClient(BrowserVersion.FIREFOX);
 
             webClient.Options.JavaScriptEnabled = false;
             webClient.Options.ActiveXNative = true;

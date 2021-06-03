@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -40,19 +40,6 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public System.String Hash
-      {
-         get
-         {
-            return WObj.getHash();
-         }
-         set
-         {
-            WObj.setHash(value);
-         }
-
-      }
-
       public System.String Host
       {
          get
@@ -75,6 +62,19 @@ namespace NHtmlUnit.Javascript.Host
          set
          {
             WObj.setSearch(value);
+         }
+
+      }
+
+      public System.String Hash
+      {
+         get
+         {
+            return WObj.getHash();
+         }
+         set
+         {
+            WObj.setHash(value);
          }
 
       }
@@ -145,9 +145,9 @@ namespace NHtmlUnit.Javascript.Host
       }
 
 // Generating method code for initialize
-      public virtual void Initialize(NHtmlUnit.Javascript.Host.Window window)
+      public virtual void Initialize(NHtmlUnit.Javascript.Host.Window window, NHtmlUnit.IPage page)
       {
-         WObj.initialize((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject);
+         WObj.initialize((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject, (com.gargoylesoftware.htmlunit.Page)page.WrappedObject);
       }
 
 // Generating method code for assign
@@ -166,6 +166,12 @@ namespace NHtmlUnit.Javascript.Host
       public virtual void Replace(string url)
       {
          WObj.replace(url);
+      }
+
+// Generating method code for jsToString
+      public virtual string JsToString()
+      {
+         return WObj.jsToString();
       }
 
    }

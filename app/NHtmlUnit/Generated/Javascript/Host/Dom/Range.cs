@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Dom
          get { return (com.gargoylesoftware.htmlunit.javascript.host.dom.Range)WrappedObject; }
       }
 
+      public Range(NHtmlUnit.Javascript.Host.Dom.Document document)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Range((com.gargoylesoftware.htmlunit.javascript.host.dom.Document)document.WrappedObject)) {}
+
       public Range()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Range()) {}
-
-      public Range(NHtmlUnit.Javascript.Host.Html.HTMLDocument document)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Range((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDocument)document.WrappedObject)) {}
 
 
       public System.Object StartContainer
@@ -62,14 +62,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public System.Boolean Collapsed
-      {
-         get
-         {
-            return WObj.getCollapsed();
-         }
-      }
-
       public System.Object CommonAncestorContainer
       {
          get
@@ -77,6 +69,26 @@ namespace NHtmlUnit.Javascript.Host.Dom
             return WObj.getCommonAncestorContainer();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.ClientRectList ClientRects
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClientRectList>(
+               WObj.getClientRects());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.ClientRect BoundingClientRect
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClientRect>(
+               WObj.getBoundingClientRect());
+         }
+      }
+
 // Generating method code for toW3C
       public virtual NHtmlUnit.Html.Impl.SimpleRange ToW3C()
       {
@@ -88,6 +100,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual void SetStart(NHtmlUnit.Javascript.Host.Dom.Node refNode, int offset)
       {
          WObj.setStart((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)refNode.WrappedObject, offset);
+      }
+
+// Generating method code for isCollapsed
+      public virtual bool IsCollapsed()
+      {
+         return WObj.isCollapsed();
       }
 
 // Generating method code for setEnd
@@ -171,6 +189,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual void Detach()
       {
          WObj.detach();
+      }
+
+// Generating method code for jsToString
+      public virtual string JsToString()
+      {
+         return WObj.jsToString();
       }
 
    }

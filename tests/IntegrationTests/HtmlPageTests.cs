@@ -10,7 +10,7 @@ namespace IntegrationTests
         [Test]
         public void GetFirstByXPath_ReturnsWrappedObject()
         {
-            var webClient = new WebClient(BrowserVersion.FIREFOX_38);
+            var webClient = new WebClient(BrowserVersion.FIREFOX);
 
             webClient.Options.JavaScriptEnabled = false;
             webClient.Options.ActiveXNative = false;

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -39,6 +39,12 @@ namespace NHtmlUnit.Html
       {
          var arg = WObj.splitText(offset);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomText>(arg);
+      }
+
+// Generating method code for moveSelectionToEnd
+      public virtual void MoveSelectionToEnd()
+      {
+         WObj.moveSelectionToEnd();
       }
 
 // Generating method code for isElementContentWhitespace

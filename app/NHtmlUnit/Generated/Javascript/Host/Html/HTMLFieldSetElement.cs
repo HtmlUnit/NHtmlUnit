@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLFieldSetElement : NHtmlUnit.Javascript.Host.Html.FormChild, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLFieldSetElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLFieldSetElement()
       {
@@ -39,6 +39,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
+      }
+
    }
 
 

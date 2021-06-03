@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,14 +26,6 @@ namespace NHtmlUnit.Javascript.Host
       public Navigator()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Navigator()) {}
 
-
-      public System.Boolean CookieEnabled
-      {
-         get
-         {
-            return WObj.getCookieEnabled();
-         }
-      }
 
       public System.String CpuClass
       {
@@ -64,6 +56,14 @@ namespace NHtmlUnit.Javascript.Host
          get
          {
             return WObj.getUserLanguage();
+         }
+      }
+
+      public System.String Language
+      {
+         get
+         {
+            return WObj.getLanguage();
          }
       }
 
@@ -104,22 +104,6 @@ namespace NHtmlUnit.Javascript.Host
          get
          {
             return WObj.getBrowserLanguage();
-         }
-      }
-
-      public System.String Language
-      {
-         get
-         {
-            return WObj.getLanguage();
-         }
-      }
-
-      public System.Boolean OnLine
-      {
-         get
-         {
-            return WObj.getOnLine();
          }
       }
 
@@ -197,19 +181,11 @@ namespace NHtmlUnit.Javascript.Host
          }
       }
 
-      public System.String DoNotTrack
+      public System.Object DoNotTrack
       {
          get
          {
             return WObj.getDoNotTrack();
-         }
-      }
-
-      public System.String MsDoNotTrack
-      {
-         get
-         {
-            return WObj.getMsDoNotTrack();
          }
       }
 
@@ -220,10 +196,42 @@ namespace NHtmlUnit.Javascript.Host
             return WObj.getOscpu();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.Network.NetworkInformation Connection
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Network.NetworkInformation>(
+               WObj.getConnection());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Media.MediaDevices MediaDevices
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Media.MediaDevices>(
+               WObj.getMediaDevices());
+         }
+      }
+
+// Generating method code for isCookieEnabled
+      public virtual bool IsCookieEnabled()
+      {
+         return WObj.isCookieEnabled();
+      }
+
 // Generating method code for javaEnabled
       public virtual bool JavaEnabled()
       {
          return WObj.javaEnabled();
+      }
+
+// Generating method code for isOnLine
+      public virtual bool IsOnLine()
+      {
+         return WObj.isOnLine();
       }
 
 // Generating method code for taintEnabled

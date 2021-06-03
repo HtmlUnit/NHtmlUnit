@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLHeadingElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLHeadingElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLHeadingElement()
       {
@@ -36,6 +36,19 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setAlign(value);
+         }
+
+      }
+
+      public System.String Clear
+      {
+         get
+         {
+            return WObj.getClear();
+         }
+         set
+         {
+            WObj.setClear(value);
          }
 
       }

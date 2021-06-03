@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -32,19 +32,17 @@ namespace NHtmlUnit.Javascript.Configuration
                WObj.getAll());
          }
        }
-
-      public java.util.Map DomJavaScriptMapping
-      {
-         get
-         {
-            return WObj.getDomJavaScriptMapping();
-         }
-      }
 // Generating method code for getClassConfiguration
       public virtual NHtmlUnit.Javascript.Configuration.ClassConfiguration GetClassConfiguration(string hostClassName)
       {
          var arg = WObj.getClassConfiguration(hostClassName);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Configuration.ClassConfiguration>(arg);
+      }
+
+// Generating method code for getDomJavaScriptMappingFor
+      public virtual java.lang.Class GetDomJavaScriptMappingFor(java.lang.Class clazz)
+      {
+         return WObj.getDomJavaScriptMappingFor(clazz);
       }
 
    }

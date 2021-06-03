@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLCollection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection()) {}
 
-      public HTMLCollection(NHtmlUnit.Html.DomNode parentScope, bool attributeChangeSensitive, string description)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection((com.gargoylesoftware.htmlunit.html.DomNode)parentScope.WrappedObject, attributeChangeSensitive, description)) {}
+      public HTMLCollection(NHtmlUnit.Html.DomNode domNode, bool attributeChangeSensitive)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLCollection((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, attributeChangeSensitive)) {}
 
 // Generating method code for namedItem
       public virtual object NamedItem(string name)

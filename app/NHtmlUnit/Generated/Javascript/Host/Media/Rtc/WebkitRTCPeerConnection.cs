@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Media.Rtc
    {
       static WebkitRTCPeerConnection()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.webkitRTCPeerConnection o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.WebkitRTCPeerConnection o) =>
             new WebkitRTCPeerConnection(o));
       }
 
-      public WebkitRTCPeerConnection(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.webkitRTCPeerConnection wrappedObject) : base(wrappedObject) {}
+      public WebkitRTCPeerConnection(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.WebkitRTCPeerConnection wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.webkitRTCPeerConnection WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.WebkitRTCPeerConnection WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.webkitRTCPeerConnection)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.WebkitRTCPeerConnection)WrappedObject; }
       }
 
       public WebkitRTCPeerConnection()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.webkitRTCPeerConnection()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.WebkitRTCPeerConnection()) {}
 
    }
 

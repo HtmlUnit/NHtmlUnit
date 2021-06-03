@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlOption : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement
+   public partial class HtmlOption : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement
    {
       static HtmlOption()
       {
@@ -92,12 +92,6 @@ namespace NHtmlUnit.Html
       public virtual void Reset()
       {
          WObj.reset();
-      }
-
-// Generating method code for setSelected
-      public virtual void SetSelected(bool selected, bool invokeOnFocus)
-      {
-         WObj.setSelected(selected, invokeOnFocus);
       }
 
 // Generating method code for isSelected

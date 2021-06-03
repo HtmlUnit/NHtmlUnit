@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,22 @@ namespace NHtmlUnit.Javascript.Host.Media
 
       public GainNode()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.media.GainNode()) {}
+
+
+      public NHtmlUnit.Javascript.Host.Media.AudioParam Gain
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Media.AudioParam>(
+               WObj.getGain());
+         }
+      }
+
+// Generating method code for jsConstructor
+      public virtual void JsConstructor(object baCtx)
+      {
+         WObj.jsConstructor(baCtx);
+      }
 
    }
 

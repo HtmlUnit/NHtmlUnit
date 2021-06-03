@@ -13,5 +13,6 @@ namespace NHtmlUnit.Html
 {
     public partial class HtmlInput
     {
+        public NHtmlUnit.IPage Page  { get; }
     }
 }

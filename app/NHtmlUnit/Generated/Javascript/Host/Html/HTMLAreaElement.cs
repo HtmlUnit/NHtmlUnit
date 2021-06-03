@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLAreaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLAreaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLAreaElement()
       {
@@ -40,6 +40,19 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
+      public System.String Rel
+      {
+         get
+         {
+            return WObj.getRel();
+         }
+         set
+         {
+            WObj.setRel(value);
+         }
+
+      }
+
       public NHtmlUnit.Javascript.Host.Dom.DOMTokenList RelList
       {
          get
@@ -49,6 +62,19 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
+
+      public System.String Coords
+      {
+         get
+         {
+            return WObj.getCoords();
+         }
+         set
+         {
+            WObj.setCoords(value);
+         }
+
+      }
    }
 
 

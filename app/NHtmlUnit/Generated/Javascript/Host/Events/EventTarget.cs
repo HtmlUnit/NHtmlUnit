@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -43,16 +43,9 @@ namespace NHtmlUnit.Javascript.Host.Events
       }
 
 // Generating method code for executeEventLocally
-      public virtual NHtmlUnit.ScriptResult ExecuteEventLocally(NHtmlUnit.Javascript.Host.Events.Event eventArg)
+      public virtual void ExecuteEventLocally(NHtmlUnit.Javascript.Host.Events.Event eventArg)
       {
-         var arg = WObj.executeEventLocally((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
-      }
-
-// Generating method code for setEventHandler
-      public virtual void SetEventHandler(string eventName, net.sourceforge.htmlunit.corejs.javascript.Function eventHandler)
-      {
-         WObj.setEventHandler(eventName, eventHandler);
+         WObj.executeEventLocally((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
       }
 
 // Generating method code for fireEvent
@@ -69,9 +62,9 @@ namespace NHtmlUnit.Javascript.Host.Events
       }
 
 // Generating method code for getEventHandler
-      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetEventHandler(string eventName)
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetEventHandler(string eventType)
       {
-         return WObj.getEventHandler(eventName);
+         return WObj.getEventHandler(eventType);
       }
 
 // Generating method code for dispatchEvent
@@ -81,9 +74,15 @@ namespace NHtmlUnit.Javascript.Host.Events
       }
 
 // Generating method code for removeEventListener
-      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener, bool useCapture)
+      public virtual void RemoveEventListener(string type, net.sourceforge.htmlunit.corejs.javascript.Scriptable listener, bool useCapture)
       {
          WObj.removeEventListener(type, listener, useCapture);
+      }
+
+// Generating method code for setEventHandler
+      public virtual void SetEventHandler(string eventName, object value)
+      {
+         WObj.setEventHandler(eventName, value);
       }
 
    }

@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.attachment.AttachmentHandler
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,10 @@ namespace NHtmlUnit.Attachment
    {
 // Generating method code for handleAttachment
       void HandleAttachment(NHtmlUnit.IPage p);
+// Generating method code for handleAttachment
+      bool HandleAttachment(NHtmlUnit.WebResponse response);
+// Generating method code for isAttachment
+      bool IsAttachment(NHtmlUnit.WebResponse response);
 
    }
 }

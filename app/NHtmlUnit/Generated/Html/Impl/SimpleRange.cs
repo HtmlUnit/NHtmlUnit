@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -168,6 +168,13 @@ namespace NHtmlUnit.Html.Impl
       public virtual void SurroundContents(NHtmlUnit.W3C.Dom.INode newParent)
       {
          WObj.surroundContents((org.w3c.dom.Node)newParent.WrappedObject);
+      }
+
+// Generating method code for containedNodes
+      public virtual IList<NHtmlUnit.Html.DomNode> ContainedNodes()
+      {
+
+return new ListWrapper<NHtmlUnit.Html.DomNode>(WObj.containedNodes());
       }
 
    }

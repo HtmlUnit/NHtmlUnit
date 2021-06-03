@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,11 @@ namespace NHtmlUnit.Util
          get { return (com.gargoylesoftware.htmlunit.util.KeyDataPair)WrappedObject; }
       }
 
-      public KeyDataPair(string key, java.io.File file, string mimeType, string charset)
-         : this(new com.gargoylesoftware.htmlunit.util.KeyDataPair(key, file, mimeType, charset)) {}
+      public KeyDataPair(string key, java.io.File file, string fileName, string mimeType, java.nio.charset.Charset charset)
+         : this(new com.gargoylesoftware.htmlunit.util.KeyDataPair(key, file, fileName, mimeType, charset)) {}
+
+      public KeyDataPair(string key, java.io.File file, string fileName, string mimeType, string charset)
+         : this(new com.gargoylesoftware.htmlunit.util.KeyDataPair(key, file, fileName, mimeType, charset)) {}
 
 
       public System.Byte[] Data
@@ -56,7 +59,15 @@ namespace NHtmlUnit.Util
          }
       }
 
-      public System.String Charset
+      public System.String FileName
+      {
+         get
+         {
+            return WObj.getFileName();
+         }
+      }
+
+      public java.nio.charset.Charset Charset
       {
          get
          {

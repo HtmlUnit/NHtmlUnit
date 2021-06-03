@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -157,19 +157,6 @@ namespace NHtmlUnit.Javascript.Host
 
       }
 
-      public System.Boolean FontSmoothingEnabled
-      {
-         get
-         {
-            return WObj.getFontSmoothingEnabled();
-         }
-         set
-         {
-            WObj.setFontSmoothingEnabled(value);
-         }
-
-      }
-
       public System.Int32 Left
       {
          get
@@ -260,14 +247,12 @@ namespace NHtmlUnit.Javascript.Host
          }
 
       }
-
-      public System.Int32 UpdateInterval
+// Generating method code for isFontSmoothingEnabled
+      public virtual bool IsFontSmoothingEnabled()
       {
-         get
-         {
-            return WObj.getUpdateInterval();
-         }
+         return WObj.isFontSmoothingEnabled();
       }
+
    }
 
 

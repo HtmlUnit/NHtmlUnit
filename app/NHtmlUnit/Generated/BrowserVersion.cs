@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,14 +23,16 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.BrowserVersion)WrappedObject; }
       }
 
-      public BrowserVersion(string applicationName, string applicationVersion, string userAgent, System.Single browserVersionNumeric)
-         : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric)) {}
 
-      public BrowserVersion(string applicationName, string applicationVersion, string userAgent, System.Single browserVersionNumeric, com.gargoylesoftware.htmlunit.BrowserVersionFeatures[] features)
-         : this(new com.gargoylesoftware.htmlunit.BrowserVersion(applicationName, applicationVersion, userAgent, browserVersionNumeric, features)) {}
+      public System.String Nickname
+      {
+         get
+         {
+            return WObj.getNickname();
+         }
+      }
 
-
-      public System.Single BrowserVersionNumeric
+      public System.Int32 BrowserVersionNumeric
       {
          get
          {
@@ -44,18 +46,13 @@ namespace NHtmlUnit
          {
             return WObj.getApplicationVersion();
          }
-         set
-         {
-            WObj.setApplicationVersion(value);
-         }
-
       }
 
-      public System.String Nickname
+      public System.String UserAgent
       {
          get
          {
-            return WObj.getNickname();
+            return WObj.getUserAgent();
          }
       }
 
@@ -65,24 +62,6 @@ namespace NHtmlUnit
          {
             return WObj.getApplicationName();
          }
-         set
-         {
-            WObj.setApplicationName(value);
-         }
-
-      }
-
-      public System.String UserAgent
-      {
-         get
-         {
-            return WObj.getUserAgent();
-         }
-         set
-         {
-            WObj.setUserAgent(value);
-         }
-
       }
 
       public System.String ApplicationCodeName
@@ -91,11 +70,6 @@ namespace NHtmlUnit
          {
             return WObj.getApplicationCodeName();
          }
-         set
-         {
-            WObj.setApplicationCodeName(value);
-         }
-
       }
 
       public System.String ApplicationMinorVersion
@@ -104,11 +78,6 @@ namespace NHtmlUnit
          {
             return WObj.getApplicationMinorVersion();
          }
-         set
-         {
-            WObj.setApplicationMinorVersion(value);
-         }
-
       }
 
       public System.String Vendor
@@ -117,11 +86,6 @@ namespace NHtmlUnit
          {
             return WObj.getVendor();
          }
-         set
-         {
-            WObj.setVendor(value);
-         }
-
       }
 
       public System.String BrowserLanguage
@@ -130,11 +94,6 @@ namespace NHtmlUnit
          {
             return WObj.getBrowserLanguage();
          }
-         set
-         {
-            WObj.setBrowserLanguage(value);
-         }
-
       }
 
       public System.String CpuClass
@@ -143,11 +102,6 @@ namespace NHtmlUnit
          {
             return WObj.getCpuClass();
          }
-         set
-         {
-            WObj.setCpuClass(value);
-         }
-
       }
 
       public System.String Platform
@@ -156,11 +110,6 @@ namespace NHtmlUnit
          {
             return WObj.getPlatform();
          }
-         set
-         {
-            WObj.setPlatform(value);
-         }
-
       }
 
       public System.String SystemLanguage
@@ -169,11 +118,14 @@ namespace NHtmlUnit
          {
             return WObj.getSystemLanguage();
          }
-         set
-         {
-            WObj.setSystemLanguage(value);
-         }
+      }
 
+      public java.util.TimeZone SystemTimezone
+      {
+         get
+         {
+            return WObj.getSystemTimezone();
+         }
       }
 
       public System.String UserLanguage
@@ -182,11 +134,6 @@ namespace NHtmlUnit
          {
             return WObj.getUserLanguage();
          }
-         set
-         {
-            WObj.setUserLanguage(value);
-         }
-
       }
 
       public System.String BuildId
@@ -197,17 +144,36 @@ namespace NHtmlUnit
          }
       }
 
+      public System.String ProductSub
+      {
+         get
+         {
+            return WObj.getProductSub();
+         }
+      }
+
+      public System.String AcceptEncodingHeader
+      {
+         get
+         {
+            return WObj.getAcceptEncodingHeader();
+         }
+      }
+
+      public System.String AcceptLanguageHeader
+      {
+         get
+         {
+            return WObj.getAcceptLanguageHeader();
+         }
+      }
+
       public System.String HtmlAcceptHeader
       {
          get
          {
             return WObj.getHtmlAcceptHeader();
          }
-         set
-         {
-            WObj.setHtmlAcceptHeader(value);
-         }
-
       }
 
       public System.String ImgAcceptHeader
@@ -216,11 +182,6 @@ namespace NHtmlUnit
          {
             return WObj.getImgAcceptHeader();
          }
-         set
-         {
-            WObj.setImgAcceptHeader(value);
-         }
-
       }
 
       public System.String CssAcceptHeader
@@ -229,11 +190,6 @@ namespace NHtmlUnit
          {
             return WObj.getCssAcceptHeader();
          }
-         set
-         {
-            WObj.setCssAcceptHeader(value);
-         }
-
       }
 
       public System.String ScriptAcceptHeader
@@ -242,11 +198,6 @@ namespace NHtmlUnit
          {
             return WObj.getScriptAcceptHeader();
          }
-         set
-         {
-            WObj.setScriptAcceptHeader(value);
-         }
-
       }
 
       public System.String XmlHttpRequestAcceptHeader
@@ -255,11 +206,6 @@ namespace NHtmlUnit
          {
             return WObj.getXmlHttpRequestAcceptHeader();
          }
-         set
-         {
-            WObj.setXmlHttpRequestAcceptHeader(value);
-         }
-
       }
 
       public System.String[] HeaderNamesOrdered
@@ -268,11 +214,6 @@ namespace NHtmlUnit
          {
             return WObj.getHeaderNamesOrdered();
          }
-         set
-         {
-            WObj.setHeaderNamesOrdered(value);
-         }
-
       }
 
       public ICollection<NHtmlUnit.PluginConfiguration> Plugins
@@ -283,16 +224,18 @@ namespace NHtmlUnit
                WObj.getPlugins());
          }
        }
-// Generating method code for isIE
-      public virtual bool IsIE()
-      {
-         return WObj.isIE();
-      }
 
-// Generating method code for isFirefox
-      public virtual bool IsFirefox()
+      public System.Int32 PixesPerChar
       {
-         return WObj.isFirefox();
+         get
+         {
+            return WObj.getPixesPerChar();
+         }
+      }
+// Generating method code for isChrome
+      public virtual bool IsChrome()
+      {
+         return WObj.isChrome();
       }
 
 // Generating method code for isEdge
@@ -301,10 +244,22 @@ namespace NHtmlUnit
          return WObj.isEdge();
       }
 
-// Generating method code for hasFeature
-      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
+// Generating method code for isIE
+      public virtual bool IsIE()
       {
-         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+         return WObj.isIE();
+      }
+
+// Generating method code for isFirefox78
+      public virtual bool IsFirefox78()
+      {
+         return WObj.isFirefox78();
+      }
+
+// Generating method code for isFirefox
+      public virtual bool IsFirefox()
+      {
+         return WObj.isFirefox();
       }
 
 // Generating method code for isOnLine
@@ -313,17 +268,28 @@ namespace NHtmlUnit
          return WObj.isOnLine();
       }
 
-// Generating method code for clone
-      public virtual NHtmlUnit.BrowserVersion Clone()
+// Generating method code for registerUploadMimeType
+      public virtual void RegisterUploadMimeType(string fileExtension, string mimeType)
       {
-         var arg = WObj.clone();
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(arg);
+         WObj.registerUploadMimeType(fileExtension, mimeType);
       }
 
-// Generating method code for isChrome
-      public virtual bool IsChrome()
+// Generating method code for hasFeature
+      public virtual bool HasFeature(NHtmlUnit.BrowserVersionFeatures property)
       {
-         return WObj.isChrome();
+         return WObj.hasFeature((com.gargoylesoftware.htmlunit.BrowserVersionFeatures)property.WrappedObject);
+      }
+
+// Generating method code for getUploadMimeType
+      public virtual string GetUploadMimeType(java.io.File file)
+      {
+         return WObj.getUploadMimeType(file);
+      }
+
+// Generating method code for getFontHeight
+      public virtual int GetFontHeight(string fontSize)
+      {
+         return WObj.getFontHeight(fontSize);
       }
 
    }

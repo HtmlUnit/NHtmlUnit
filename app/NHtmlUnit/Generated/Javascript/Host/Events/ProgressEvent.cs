@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,24 +26,11 @@ namespace NHtmlUnit.Javascript.Host.Events
       public ProgressEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.ProgressEvent()) {}
 
-      public ProgressEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.ProgressEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
+      public ProgressEvent(NHtmlUnit.Javascript.Host.Events.EventTarget target, string type)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.ProgressEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject, type)) {}
 
 
-      public System.Boolean LengthComputable
-      {
-         get
-         {
-            return WObj.getLengthComputable();
-         }
-         set
-         {
-            WObj.setLengthComputable(value);
-         }
-
-      }
-
-      public System.Int64 Loaded
+      public System.Object Loaded
       {
          get
          {
@@ -68,6 +55,12 @@ namespace NHtmlUnit.Javascript.Host.Events
          }
 
       }
+// Generating method code for isLengthComputable
+      public virtual bool IsLengthComputable()
+      {
+         return WObj.isLengthComputable();
+      }
+
    }
 
 

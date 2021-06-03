@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.PageCreator
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ namespace NHtmlUnit
 {
    public interface IPageCreator : NHtmlUnit.IObjectWrapper
    {
+      NHtmlUnit.Html.Parser.IHTMLParser HtmlParser  { get; }
 // Generating method code for createPage
       NHtmlUnit.IPage CreatePage(NHtmlUnit.WebResponse wr, NHtmlUnit.IWebWindow ww);
 

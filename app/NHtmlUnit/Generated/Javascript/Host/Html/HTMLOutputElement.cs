@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLOutputElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLOutputElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLOutputElement()
       {
@@ -25,6 +25,22 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLOutputElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOutputElement()) {}
+
+
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
+         }
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
+      }
 
    }
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class XHtmlPage : NHtmlUnit.Html.HtmlPage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.IPage, NHtmlUnit.W3C.Dom.IDocument
+   public partial class XHtmlPage : NHtmlUnit.Html.HtmlPage, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.IPage, NHtmlUnit.W3C.Dom.IDocument, NHtmlUnit.W3C.Dom.Traversal.IDocumentTraversal
    {
       static XHtmlPage()
       {
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.XHtmlPage)WrappedObject; }
       }
 
-      public XHtmlPage(java.net.URL originatingUrl, NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow)
-         : this(new com.gargoylesoftware.htmlunit.html.XHtmlPage(originatingUrl, (com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
+      public XHtmlPage(NHtmlUnit.WebResponse webResponse, NHtmlUnit.IWebWindow webWindow)
+         : this(new com.gargoylesoftware.htmlunit.html.XHtmlPage((com.gargoylesoftware.htmlunit.WebResponse)webResponse.WrappedObject, (com.gargoylesoftware.htmlunit.WebWindow)webWindow.WrappedObject)) {}
 
    }
 

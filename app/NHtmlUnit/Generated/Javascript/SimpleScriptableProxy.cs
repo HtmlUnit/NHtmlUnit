@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript
 {
-   public partial class SimpleScriptableProxy : ObjectWrapper, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class SimpleScriptableProxy : ObjectWrapper
    {
       static SimpleScriptableProxy()
       {
@@ -21,13 +21,6 @@ namespace NHtmlUnit.Javascript
       public com.gargoylesoftware.htmlunit.javascript.SimpleScriptableProxy WObj
       {
          get { return (com.gargoylesoftware.htmlunit.javascript.SimpleScriptableProxy)WrappedObject; }
-      }
-
-// Generating method code for getWithFallback
-      public virtual object GetWithFallback(string name)
-      {
-         var arg = WObj.getWithFallback(name);
-         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

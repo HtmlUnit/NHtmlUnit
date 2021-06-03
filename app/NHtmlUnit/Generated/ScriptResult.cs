@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,18 +23,8 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.ScriptResult)WrappedObject; }
       }
 
-      public ScriptResult(object javaScriptResult, NHtmlUnit.IPage newPage)
-         : this(new com.gargoylesoftware.htmlunit.ScriptResult(javaScriptResult, (com.gargoylesoftware.htmlunit.Page)newPage.WrappedObject)) {}
-
-
-      public NHtmlUnit.IPage NewPage
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(
-               WObj.getNewPage());
-         }
-      }
+      public ScriptResult(object javaScriptResult)
+         : this(new com.gargoylesoftware.htmlunit.ScriptResult(javaScriptResult)) {}
 
 
       public System.Object JavaScriptResult

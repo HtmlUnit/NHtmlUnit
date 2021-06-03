@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlButton : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
+   public partial class HtmlButton : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.ILabelableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
    {
       static HtmlButton()
       {
@@ -32,11 +32,11 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String TypeAttribute
+      public System.String Type
       {
          get
          {
-            return WObj.getTypeAttribute();
+            return WObj.getType();
          }
       }
 
@@ -53,11 +53,19 @@ namespace NHtmlUnit.Html
 
       }
 
-      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
+      public System.String TypeAttribute
       {
          get
          {
-            return WObj.getSubmitKeyValuePairs();
+            return WObj.getTypeAttribute();
+         }
+      }
+
+      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitNameValuePairs
+      {
+         get
+         {
+            return WObj.getSubmitNameValuePairs();
          }
       }
 

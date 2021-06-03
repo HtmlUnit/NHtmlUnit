@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -24,7 +24,7 @@ namespace NHtmlUnit
       }
 
 
-      public net.sourceforge.htmlunit.corejs.javascript.ScriptableObject ScriptableObject
+      public System.Object ScriptableObject
       {
          get
          {
@@ -76,14 +76,6 @@ namespace NHtmlUnit
          }
       }
 
-
-      public System.Object ScriptObject
-      {
-         get
-         {
-            return WObj.getScriptObject();
-         }
-      }
 
       public System.String Name
       {

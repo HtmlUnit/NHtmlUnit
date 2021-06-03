@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlTextArea : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.Impl.ISelectableTextInput, NHtmlUnit.Html.IFormFieldWithNameHistory
+   public partial class HtmlTextArea : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.ILabelableElement, NHtmlUnit.Html.Impl.ISelectableTextInput, NHtmlUnit.Html.IFormFieldWithNameHistory
    {
       static HtmlTextArea()
       {
@@ -84,11 +84,11 @@ namespace NHtmlUnit.Html
 
       }
 
-      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
+      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitNameValuePairs
       {
          get
          {
-            return WObj.getSubmitKeyValuePairs();
+            return WObj.getSubmitNameValuePairs();
          }
       }
 

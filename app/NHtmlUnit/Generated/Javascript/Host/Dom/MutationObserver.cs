@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -39,6 +39,13 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual void Disconnect()
       {
          WObj.disconnect();
+      }
+
+// Generating method code for takeRecords
+      public virtual IList<System.Object> TakeRecords()
+      {
+
+return new ShallowListWrapper<System.Object>(WObj.takeRecords());
       }
 
 // Generating method code for characterDataChanged
