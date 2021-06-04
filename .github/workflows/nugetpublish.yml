@@ -1,0 +1,29 @@
+name: Nuget Publish
+
+on: workflow_dispatch
+  
+jobs:
+  publish:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+  
+    - name: Setup NuGet.exe
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: Restore NuGet packages
+      run: nuget restore NHtmlUnit.sln
+      
+    - name: Build Solution
+      run: msbuild NHtmlUnit.sln /property:Configuration=Release
+      
+    - name: Create NuGet Package
+      run: nuget pack NHtmlUnit.nuspec
+
+    - name: Publish To NuGet.org
+      run: nuget push *.nupkg -Source nuget.org -ApiKey ${{ secrets.NuGet_APIKey }}
