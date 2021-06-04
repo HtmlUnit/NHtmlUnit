@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,12 @@ namespace NHtmlUnit.Javascript.Host.Canvas
 
       public CanvasGradient()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.canvas.CanvasGradient()) {}
+
+// Generating method code for addColorStop
+      public virtual void AddColorStop(System.Double offset, string color)
+      {
+         WObj.addColorStop(offset, color);
+      }
 
    }
 

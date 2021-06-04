@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -41,6 +41,19 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getState();
          }
+      }
+
+      public System.String ScrollRestoration
+      {
+         get
+         {
+            return WObj.getScrollRestoration();
+         }
+         set
+         {
+            WObj.setScrollRestoration(value);
+         }
+
       }
 // Generating method code for back
       public virtual void Back()

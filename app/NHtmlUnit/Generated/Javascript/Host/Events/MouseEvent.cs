@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -101,6 +101,19 @@ namespace NHtmlUnit.Javascript.Host.Events
 
       }
 
+      public System.Int32 Buttons
+      {
+         get
+         {
+            return WObj.getButtons();
+         }
+         set
+         {
+            WObj.setButtons(value);
+         }
+
+      }
+
       public System.Int32 Which
       {
          get
@@ -108,6 +121,20 @@ namespace NHtmlUnit.Javascript.Host.Events
             return WObj.getWhich();
          }
       }
+
+      public System.Boolean MetaKey
+      {
+         get
+         {
+            return WObj.getMetaKey();
+         }
+      }
+// Generating method code for disableProcessLabelAfterBubbling
+      public virtual void DisableProcessLabelAfterBubbling()
+      {
+         WObj.disableProcessLabelAfterBubbling();
+      }
+
 // Generating method code for initMouseEvent
       public virtual void InitMouseEvent(string type, bool bubbles, bool cancelable, object view, int detail, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int button, object relatedTarget)
       {

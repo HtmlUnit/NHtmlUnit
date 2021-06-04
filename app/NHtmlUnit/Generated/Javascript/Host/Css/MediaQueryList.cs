@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,14 +37,12 @@ namespace NHtmlUnit.Javascript.Host.Css
             return WObj.getMedia();
          }
       }
-
-      public System.Boolean Matches
+// Generating method code for isMatches
+      public virtual bool IsMatches()
       {
-         get
-         {
-            return WObj.getMatches();
-         }
+         return WObj.isMatches();
       }
+
 // Generating method code for addListener
       public virtual void AddListener(object listener)
       {

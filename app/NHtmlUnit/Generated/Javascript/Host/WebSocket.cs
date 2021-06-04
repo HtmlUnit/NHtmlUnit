@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,14 @@ namespace NHtmlUnit.Javascript.Host
       public WebSocket()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.WebSocket()) {}
 
+
+      public System.String Url
+      {
+         get
+         {
+            return WObj.getUrl();
+         }
+      }
 
       public net.sourceforge.htmlunit.corejs.javascript.Function Onclose
       {
@@ -85,6 +93,35 @@ namespace NHtmlUnit.Javascript.Host
          {
             return WObj.getReadyState();
          }
+      }
+
+      public System.String Protocol
+      {
+         get
+         {
+            return WObj.getProtocol();
+         }
+      }
+
+      public System.Int64 BufferedAmount
+      {
+         get
+         {
+            return WObj.getBufferedAmount();
+         }
+      }
+
+      public System.String BinaryType
+      {
+         get
+         {
+            return WObj.getBinaryType();
+         }
+         set
+         {
+            WObj.setBinaryType(value);
+         }
+
       }
 // Generating method code for close
       public virtual void Close(object code, object reason)

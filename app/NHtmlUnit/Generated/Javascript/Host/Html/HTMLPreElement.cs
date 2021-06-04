@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLPreElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLPreElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLPreElement()
       {
@@ -46,6 +46,19 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return WObj.getWidth_js();
          }
+      }
+
+      public System.String Clear
+      {
+         get
+         {
+            return WObj.getClear();
+         }
+         set
+         {
+            WObj.setClear(value);
+         }
+
       }
    }
 

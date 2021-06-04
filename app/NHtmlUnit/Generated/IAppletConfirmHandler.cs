@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.AppletConfirmHandler
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,8 @@ namespace NHtmlUnit
    {
 // Generating method code for confirm
       bool Confirm(NHtmlUnit.Html.HtmlApplet ha);
+// Generating method code for confirm
+      bool Confirm(NHtmlUnit.Html.HtmlObject ho);
 
    }
 }

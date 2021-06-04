@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,50 +29,10 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLDocument()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLDocument()) {}
 
-
-      public System.Boolean Async
-      {
-         get
-         {
-            return WObj.getAsync();
-         }
-         set
-         {
-            WObj.setAsync(value);
-         }
-
-      }
 // Generating method code for loadXML
       public virtual bool LoadXML(string strXML)
       {
          return WObj.loadXML(strXML);
-      }
-
-// Generating method code for load
-      public virtual bool Load(string xmlSource)
-      {
-         return WObj.load(xmlSource);
-      }
-
-// Generating method code for getElementById
-      public virtual object GetElementById(string id)
-      {
-         var arg = WObj.getElementById(id);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for createProcessingInstruction
-      public virtual object CreateProcessingInstruction(string target, string data)
-      {
-         var arg = WObj.createProcessingInstruction(target, data);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for createCDATASection
-      public virtual object CreateCDATASection(string data)
-      {
-         var arg = WObj.createCDATASection(data);
-         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }

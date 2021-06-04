@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,10 +27,10 @@ namespace NHtmlUnit.Javascript.Host.Dom
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.DOMParser()) {}
 
 // Generating method code for parseFromString
-      public virtual NHtmlUnit.Javascript.Host.Xml.XMLDocument ParseFromString(string str, object type)
+      public virtual NHtmlUnit.Javascript.Host.Dom.Document ParseFromString(string str, object type)
       {
          var arg = WObj.parseFromString(str, type);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(arg);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Document>(arg);
       }
 
    }

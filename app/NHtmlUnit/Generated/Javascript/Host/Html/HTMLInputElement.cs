@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLInputElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLInputElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLInputElement()
       {
@@ -40,45 +40,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Int32 SelectionStart
-      {
-         get
-         {
-            return WObj.getSelectionStart();
-         }
-         set
-         {
-            WObj.setSelectionStart(value);
-         }
-
-      }
-
-      public System.Int32 SelectionEnd
-      {
-         get
-         {
-            return WObj.getSelectionEnd();
-         }
-         set
-         {
-            WObj.setSelectionEnd(value);
-         }
-
-      }
-
-      public System.Boolean Checked
-      {
-         get
-         {
-            return WObj.getChecked();
-         }
-         set
-         {
-            WObj.setChecked(value);
-         }
-
-      }
-
       public System.String DefaultValue
       {
          get
@@ -88,19 +49,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setDefaultValue(value);
-         }
-
-      }
-
-      public System.Boolean DefaultChecked
-      {
-         get
-         {
-            return WObj.getDefaultChecked();
-         }
-         set
-         {
-            WObj.setDefaultChecked(value);
          }
 
       }
@@ -165,15 +113,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Boolean ReadOnly
+      public System.String Step
       {
          get
          {
-            return WObj.getReadOnly();
+            return WObj.getStep();
          }
          set
          {
-            WObj.setReadOnly(value);
+            WObj.setStep(value);
          }
 
       }
@@ -223,6 +171,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return WObj.getSrc();
          }
+         set
+         {
+            WObj.setSrc(value);
+         }
+
       }
 
       public System.String Size
@@ -284,10 +237,38 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
+         }
+      }
+
+// Generating method code for isChecked
+      public virtual bool IsChecked()
+      {
+         return WObj.isChecked();
+      }
+
 // Generating method code for select
       public virtual void Select()
       {
          WObj.select();
+      }
+
+// Generating method code for isDefaultChecked
+      public virtual bool IsDefaultChecked()
+      {
+         return WObj.isDefaultChecked();
+      }
+
+// Generating method code for isReadOnly
+      public virtual bool IsReadOnly()
+      {
+         return WObj.isReadOnly();
       }
 
 // Generating method code for setSelectionRange
@@ -300,6 +281,45 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual bool IsRequired()
       {
          return WObj.isRequired();
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
+      }
+
+// Generating method code for createTextRange
+      public virtual NHtmlUnit.Javascript.Host.Dom.TextRange CreateTextRange()
+      {
+         var arg = WObj.createTextRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(arg);
+      }
+
+// Generating method code for getSelectionStart
+      public virtual object GetSelectionStart()
+      {
+         var arg = WObj.getSelectionStart();
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for setSelectionStart
+      public virtual void SetSelectionStart(int start)
+      {
+         WObj.setSelectionStart(start);
+      }
+
+// Generating method code for getSelectionEnd
+      public virtual object GetSelectionEnd()
+      {
+         var arg = WObj.getSelectionEnd();
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for setSelectionEnd
+      public virtual void SetSelectionEnd(int end)
+      {
+         WObj.setSelectionEnd(end);
       }
 
    }

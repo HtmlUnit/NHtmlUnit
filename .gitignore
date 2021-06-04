@@ -8,6 +8,7 @@
 *.dotCover
 *.nupkg
 .DS_Store
+/.vs
 /_ReSharper.NHtmlUnit/
 /packages/*
 !/packages/repositories.config

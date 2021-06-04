@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,110 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLHttpRequestEventTarget()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLHttpRequestEventTarget()) {}
 
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onload
+      {
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onerror
+      {
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onloadstart
+      {
+         get
+         {
+            return WObj.getOnloadstart();
+         }
+         set
+         {
+            WObj.setOnloadstart(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onloadend
+      {
+         get
+         {
+            return WObj.getOnloadend();
+         }
+         set
+         {
+            WObj.setOnloadend(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onprogress
+      {
+         get
+         {
+            return WObj.getOnprogress();
+         }
+         set
+         {
+            WObj.setOnprogress(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Ontimeout
+      {
+         get
+         {
+            return WObj.getOntimeout();
+         }
+         set
+         {
+            WObj.setOntimeout(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onreadystatechange
+      {
+         get
+         {
+            return WObj.getOnreadystatechange();
+         }
+         set
+         {
+            WObj.setOnreadystatechange(value);
+         }
+
+      }
+
+      public net.sourceforge.htmlunit.corejs.javascript.Function Onabort
+      {
+         get
+         {
+            return WObj.getOnabort();
+         }
+         set
+         {
+            WObj.setOnabort(value);
+         }
+
+      }
    }
 
 

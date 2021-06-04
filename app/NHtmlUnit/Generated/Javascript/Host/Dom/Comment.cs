@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -27,57 +27,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Comment()) {}
 
 
-      public System.String Id
-      {
-         get
-         {
-            return WObj.getId();
-         }
-      }
-
-      public System.Object ClassName_js
-      {
-         get
-         {
-            return WObj.getClassName_js();
-         }
-      }
-
-      public System.Object TagName
-      {
-         get
-         {
-            return WObj.getTagName();
-         }
-      }
-
       public System.String Text
       {
          get
          {
             return WObj.getText();
          }
-      }
-
-      public System.Object Document
-      {
-         get
-         {
-            return WObj.getDocument();
-         }
-      }
-
-      public System.String InnerText
-      {
-         get
-         {
-            return WObj.getInnerText();
-         }
-         set
-         {
-            WObj.setInnerText(value);
-         }
-
       }
 // Generating method code for getAttributeNode
       public virtual object GetAttributeNode(string attributeName)

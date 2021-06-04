@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTemplateElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTemplateElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLTemplateElement()
       {
@@ -25,6 +25,16 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLTemplateElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLTemplateElement()) {}
+
+
+      public NHtmlUnit.Javascript.Host.Dom.DocumentFragment Content
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.DocumentFragment>(
+               WObj.getContent());
+         }
+      }
 
    }
 

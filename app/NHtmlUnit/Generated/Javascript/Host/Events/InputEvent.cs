@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Events
 {
-   public partial class InputEvent : NHtmlUnit.Javascript.Host.Events.Event
+   public partial class InputEvent : NHtmlUnit.Javascript.Host.Events.UIEvent
    {
       static InputEvent()
       {
@@ -26,6 +26,30 @@ namespace NHtmlUnit.Javascript.Host.Events
       public InputEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.InputEvent()) {}
 
+
+      public System.Boolean IsComposing
+      {
+         get
+         {
+            return WObj.getIsComposing();
+         }
+      }
+
+      public System.Object Data
+      {
+         get
+         {
+            return WObj.getData();
+         }
+      }
+
+      public System.Object InputType
+      {
+         get
+         {
+            return WObj.getInputType();
+         }
+      }
    }
 
 

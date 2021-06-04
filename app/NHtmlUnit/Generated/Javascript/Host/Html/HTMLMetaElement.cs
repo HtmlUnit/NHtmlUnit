@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLMetaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLMetaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLMetaElement()
       {
@@ -62,19 +62,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setHttpEquiv(value);
-         }
-
-      }
-
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-         set
-         {
-            WObj.setName(value);
          }
 
       }

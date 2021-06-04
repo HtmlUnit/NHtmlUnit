@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -38,13 +38,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual object SplitText(int offset)
       {
          var arg = WObj.splitText(offset);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for getText
-      public virtual object GetText()
-      {
-         var arg = WObj.getText();
          return ObjectWrapper.CreateWrapper<object>(arg);
       }
 

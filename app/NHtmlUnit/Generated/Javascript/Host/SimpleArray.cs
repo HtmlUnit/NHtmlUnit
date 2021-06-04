@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host
 {
-   public partial class SimpleArray : NHtmlUnit.Javascript.SimpleScriptable, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class SimpleArray : NHtmlUnit.Javascript.SimpleScriptable
    {
       static SimpleArray()
       {
@@ -45,13 +45,6 @@ namespace NHtmlUnit.Javascript.Host
       public virtual object Item(int index)
       {
          var arg = WObj.item(index);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for getWithFallback
-      public virtual object GetWithFallback(string name)
-      {
-         var arg = WObj.getWithFallback(name);
          return ObjectWrapper.CreateWrapper<object>(arg);
       }
 

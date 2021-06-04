@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -74,6 +74,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
             return WObj.getNotations();
          }
       }
+// Generating method code for remove
+      public virtual void Remove()
+      {
+         WObj.remove();
+      }
+
    }
 
 

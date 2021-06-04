@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTextAreaElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTextAreaElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLTextAreaElement()
       {
@@ -82,58 +82,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.Boolean ReadOnly
-      {
-         get
-         {
-            return WObj.getReadOnly();
-         }
-         set
-         {
-            WObj.setReadOnly(value);
-         }
-
-      }
-
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
-
       public System.String Placeholder
       {
          get
@@ -146,6 +94,16 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
+         }
+      }
+
 // Generating method code for setSelectionRange
       public virtual void SetSelectionRange(int start, int end)
       {
@@ -156,6 +114,31 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void Select()
       {
          WObj.select();
+      }
+
+// Generating method code for isReadOnly
+      public virtual bool IsReadOnly()
+      {
+         return WObj.isReadOnly();
+      }
+
+// Generating method code for createTextRange
+      public virtual NHtmlUnit.Javascript.Host.Dom.TextRange CreateTextRange()
+      {
+         var arg = WObj.createTextRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(arg);
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
+      }
+
+// Generating method code for isRequired
+      public virtual bool IsRequired()
+      {
+         return WObj.isRequired();
       }
 
 // Generating method code for getCols
@@ -193,6 +176,19 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetMaxLength(string maxLength)
       {
          WObj.setMaxLength(maxLength);
+      }
+
+// Generating method code for getMinLength
+      public virtual object GetMinLength()
+      {
+         var arg = WObj.getMinLength();
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for setMinLength
+      public virtual void SetMinLength(string minLength)
+      {
+         WObj.setMinLength(minLength);
       }
 
    }

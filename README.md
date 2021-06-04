@@ -3,6 +3,7 @@
 |                        | **Status**                |
 | ---------------------: | :------------------------ |
 |             **GitHub** | [![GitHub release][1]][2] |
+|     **GitHub Actions** | [![Unit Tests][11]][12]   |
 |              **NuGet** | [![NuGet][3]][4]          |
 |     **Travis** (Linux) | [![Master][5]][6]         |
 | **AppVeyor** (Windows) | [![Master][7]][8]         |
@@ -94,8 +95,10 @@ NHtmlUnit was written by @asbjornu and @beewarloc.
 [6]: https://travis-ci.org/HtmlUnit/NHtmlUnit
 [7]: https://img.shields.io/appveyor/ci/HtmlUnit/NHtmlUnit/master.svg
 [8]: https://ci.appveyor.com/project/HtmlUnit/NHtmlUnit/branch/master
-[9]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit/badge/master
-[10]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit/overview/master
+[9]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit/badge
+[10]: https://www.codefactor.io/repository/github/htmlunit/nhtmlunit
+[11]: https://github.com/HtmlUnit/NHtmlUnit/actions/workflows/unittests.yml/badge.svg
+[12]: https://github.com/HtmlUnit/NHtmlUnit/actions/workflows/unittests.yml
 [htmlunit]: http://htmlunit.sourceforge.net/
 [ikvm]: http://www.ikvm.net/
 [nuget]: https://nuget.org/packages/NHtmlUnit

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Events
    {
       static WebkitSpeechRecognitionEvent()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionEvent o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionEvent o) =>
             new WebkitSpeechRecognitionEvent(o));
       }
 
-      public WebkitSpeechRecognitionEvent(com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionEvent wrappedObject) : base(wrappedObject) {}
+      public WebkitSpeechRecognitionEvent(com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionEvent wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionEvent WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionEvent WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionEvent)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionEvent)WrappedObject; }
       }
 
       public WebkitSpeechRecognitionEvent()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionEvent()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionEvent()) {}
 
    }
 

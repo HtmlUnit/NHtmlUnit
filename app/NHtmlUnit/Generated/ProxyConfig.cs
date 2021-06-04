@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,14 +23,14 @@ namespace NHtmlUnit
          get { return (com.gargoylesoftware.htmlunit.ProxyConfig)WrappedObject; }
       }
 
-      public ProxyConfig(string proxyHost, int proxyPort)
-         : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort)) {}
-
-      public ProxyConfig(string proxyHost, int proxyPort, bool isSocks)
-         : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort, isSocks)) {}
+      public ProxyConfig(string proxyHost, int proxyPort, string proxyScheme, bool isSocks)
+         : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort, proxyScheme, isSocks)) {}
 
       public ProxyConfig()
          : this(new com.gargoylesoftware.htmlunit.ProxyConfig()) {}
+
+      public ProxyConfig(string proxyHost, int proxyPort, string proxyScheme)
+         : this(new com.gargoylesoftware.htmlunit.ProxyConfig(proxyHost, proxyPort, proxyScheme)) {}
 
 
       public System.String ProxyHost
@@ -46,17 +46,12 @@ namespace NHtmlUnit
 
       }
 
-      public System.Int32 ProxyPort
+      public System.String ProxyScheme
       {
          get
          {
-            return WObj.getProxyPort();
+            return WObj.getProxyScheme();
          }
-         set
-         {
-            WObj.setProxyPort(value);
-         }
-
       }
 
       public System.String ProxyAutoConfigUrl
@@ -87,6 +82,18 @@ namespace NHtmlUnit
       public virtual void RemoveHostsFromProxyBypass(string pattern)
       {
          WObj.removeHostsFromProxyBypass(pattern);
+      }
+
+// Generating method code for getProxyPort
+      public virtual int GetProxyPort()
+      {
+         return WObj.getProxyPort();
+      }
+
+// Generating method code for setProxyPort
+      public virtual void SetProxyPort(string proxyScheme)
+      {
+         WObj.setProxyPort(proxyScheme);
       }
 
    }

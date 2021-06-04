@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -42,6 +42,12 @@ namespace NHtmlUnit
       public virtual void Close()
       {
          WObj.close();
+      }
+
+// Generating method code for close
+      public virtual void Close(bool ignoreOnbeforeunloadAccepted)
+      {
+         WObj.close(ignoreOnbeforeunloadAccepted);
       }
 
    }

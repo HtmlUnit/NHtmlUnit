@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLImageElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLImageElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLImageElement()
       {
@@ -36,19 +36,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setSrc(value);
-         }
-
-      }
-
-      public System.Object Onload
-      {
-         get
-         {
-            return WObj.getOnload();
-         }
-         set
-         {
-            WObj.setOnload(value);
          }
 
       }
@@ -92,53 +79,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Boolean Complete
-      {
-         get
-         {
-            return WObj.getComplete();
-         }
-      }
-
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
-
       public System.Int32 NaturalWidth
       {
          get
@@ -158,6 +98,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void JsConstructor()
       {
          WObj.jsConstructor();
+      }
+
+// Generating method code for isComplete
+      public virtual bool IsComplete()
+      {
+         return WObj.isComplete();
       }
 
    }

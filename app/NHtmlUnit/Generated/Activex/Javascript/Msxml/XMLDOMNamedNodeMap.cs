@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Activex.Javascript.Msxml
 {
-   public partial class XMLDOMNamedNodeMap : NHtmlUnit.Activex.Javascript.Msxml.MSXMLScriptable, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class XMLDOMNamedNodeMap : NHtmlUnit.Activex.Javascript.Msxml.MSXMLScriptable
    {
       static XMLDOMNamedNodeMap()
       {
@@ -55,13 +55,6 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
       public virtual object GetNamedItem(string name)
       {
          var arg = WObj.getNamedItem(name);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for getWithFallback
-      public virtual object GetWithFallback(string name)
-      {
-         var arg = WObj.getWithFallback(name);
          return ObjectWrapper.CreateWrapper<object>(arg);
       }
 

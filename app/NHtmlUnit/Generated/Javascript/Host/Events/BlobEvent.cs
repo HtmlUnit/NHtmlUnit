@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,16 @@ namespace NHtmlUnit.Javascript.Host.Events
 
       public BlobEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.BlobEvent()) {}
+
+
+      public NHtmlUnit.Javascript.Host.File.Blob Data
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.File.Blob>(
+               WObj.getData());
+         }
+      }
 
    }
 

@@ -13,52 +13,42 @@ namespace NHtmlUnit
 {
     public partial class BrowserVersion
     {
-        public static NHtmlUnit.BrowserVersion EDGE
+        public static NHtmlUnit.BrowserVersion BEST_SUPPORTED
         {
             get
             {
                 return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-                   com.gargoylesoftware.htmlunit.BrowserVersion.EDGE);
+                   com.gargoylesoftware.htmlunit.BrowserVersion.BEST_SUPPORTED);
             }
         }
 
 
-        public static NHtmlUnit.BrowserVersion FIREFOX_31
+        public static NHtmlUnit.BrowserVersion FIREFOX
         {
             get
             {
                 return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-                   com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_31);
+                   com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX);
             }
         }
 
 
-        public static NHtmlUnit.BrowserVersion FIREFOX_38
+        public static NHtmlUnit.BrowserVersion FIREFOX_78
         {
             get
             {
                 return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-                   com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_38);
+                   com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_78);
             }
         }
 
 
-        public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_8
+        public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER
         {
             get
             {
                 return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-                   com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_8);
-            }
-        }
-
-
-        public static NHtmlUnit.BrowserVersion INTERNET_EXPLORER_11
-        {
-            get
-            {
-                return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-                   com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER_11);
+                   com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER);
             }
         }
 

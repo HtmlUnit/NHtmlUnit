@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Worker
 {
-   public partial class DedicatedWorkerGlobalScope : NHtmlUnit.Javascript.HtmlUnitScriptable
+   public partial class DedicatedWorkerGlobalScope : NHtmlUnit.Javascript.Host.Events.EventTarget, NHtmlUnit.Javascript.Host.IWindowOrWorkerGlobalScope
    {
       static DedicatedWorkerGlobalScope()
       {
@@ -34,10 +34,34 @@ namespace NHtmlUnit.Javascript.Host.Worker
             return WObj.getSelf();
          }
       }
+// Generating method code for btoa
+      public virtual string Btoa(string stringToEncode)
+      {
+         return WObj.btoa(stringToEncode);
+      }
+
+// Generating method code for atob
+      public virtual string Atob(string encodedData)
+      {
+         return WObj.atob(encodedData);
+      }
+
 // Generating method code for postMessage
       public virtual void PostMessage(object message)
       {
          WObj.postMessage(message);
+      }
+
+// Generating method code for getOnmessage
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmessage()
+      {
+         return WObj.getOnmessage();
+      }
+
+// Generating method code for setOnmessage
+      public virtual void SetOnmessage(object onmessage)
+      {
+         WObj.setOnmessage(onmessage);
       }
 
    }

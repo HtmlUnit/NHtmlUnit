@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLOptionsCollection : NHtmlUnit.Javascript.SimpleScriptable, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLOptionsCollection : NHtmlUnit.Javascript.SimpleScriptable
    {
       static HTMLOptionsCollection()
       {
@@ -42,6 +42,29 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public System.Int32 SelectedIndex
+      {
+         get
+         {
+            return WObj.getSelectedIndex();
+         }
+         set
+         {
+            WObj.setSelectedIndex(value);
+         }
+
+      }
+
+      public NHtmlUnit.Javascript.Host.Dom.NodeList ChildNodes
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.NodeList>(
+               WObj.getChildNodes());
+         }
+      }
+
 // Generating method code for item
       public virtual object Item(int index)
       {
@@ -53,13 +76,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void Initialize(NHtmlUnit.Html.HtmlSelect select)
       {
          WObj.initialize((com.gargoylesoftware.htmlunit.html.HtmlSelect)select.WrappedObject);
-      }
-
-// Generating method code for getWithFallback
-      public virtual object GetWithFallback(string name)
-      {
-         var arg = WObj.getWithFallback(name);
-         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
 // Generating method code for add

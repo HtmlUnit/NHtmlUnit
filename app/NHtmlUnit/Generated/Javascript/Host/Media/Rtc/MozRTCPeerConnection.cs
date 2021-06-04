@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Media.Rtc
    {
       static MozRTCPeerConnection()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCPeerConnection o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCPeerConnection o) =>
             new MozRTCPeerConnection(o));
       }
 
-      public MozRTCPeerConnection(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCPeerConnection wrappedObject) : base(wrappedObject) {}
+      public MozRTCPeerConnection(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCPeerConnection wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCPeerConnection WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCPeerConnection WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCPeerConnection)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCPeerConnection)WrappedObject; }
       }
 
       public MozRTCPeerConnection()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCPeerConnection()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCPeerConnection()) {}
 
    }
 

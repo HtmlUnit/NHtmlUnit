@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,14 @@ namespace NHtmlUnit.Javascript.Host.Svg
       public SVGTextContentElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGTextContentElement()) {}
 
+
+      public System.Single ComputedTextLength
+      {
+         get
+         {
+            return WObj.getComputedTextLength();
+         }
+      }
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -55,42 +55,22 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
 
       }
-
-      public System.Boolean IsId
-      {
-         get
-         {
-            return WObj.getIsId();
-         }
-      }
-
-      public System.Boolean Expando
-      {
-         get
-         {
-            return WObj.getExpando();
-         }
-      }
-
-      public System.Boolean Specified
-      {
-         get
-         {
-            return WObj.getSpecified();
-         }
-      }
-
-      public System.String BaseURI
-      {
-         get
-         {
-            return WObj.getBaseURI();
-         }
-      }
 // Generating method code for detachFromParent
       public virtual void DetachFromParent()
       {
          WObj.detachFromParent();
+      }
+
+// Generating method code for isExpando
+      public virtual bool IsExpando()
+      {
+         return WObj.isExpando();
+      }
+
+// Generating method code for isSpecified
+      public virtual bool IsSpecified()
+      {
+         return WObj.isSpecified();
       }
 
    }

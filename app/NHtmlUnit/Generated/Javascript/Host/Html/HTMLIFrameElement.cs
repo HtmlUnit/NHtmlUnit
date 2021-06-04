@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLIFrameElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLIFrameElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLIFrameElement()
       {
@@ -60,32 +60,6 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-         set
-         {
-            WObj.setName(value);
-         }
-
-      }
-
-      public System.Object Onload
-      {
-         get
-         {
-            return WObj.getOnload();
-         }
-         set
-         {
-            WObj.setOnload(value);
-         }
-
-      }
-
       public System.String Border
       {
          get
@@ -127,45 +101,12 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getHeight_js();
          }
       }
-
-      public System.String DataFld
+// Generating method code for onRefresh
+      public virtual void OnRefresh()
       {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
+         WObj.onRefresh();
       }
 
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
    }
 
 

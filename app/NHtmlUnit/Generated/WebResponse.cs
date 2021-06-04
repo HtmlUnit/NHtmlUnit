@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -89,7 +89,7 @@ namespace NHtmlUnit
          }
       }
 
-      public System.String ContentCharsetOrNull
+      public java.nio.charset.Charset ContentCharsetOrNull
       {
          get
          {
@@ -97,11 +97,27 @@ namespace NHtmlUnit
          }
       }
 
-      public System.String ContentCharset
+      public java.nio.charset.Charset ContentCharset
       {
          get
          {
             return WObj.getContentCharset();
+         }
+      }
+
+      public System.Int64 ContentLength
+      {
+         get
+         {
+            return WObj.getContentLength();
+         }
+      }
+
+      public java.io.InputStream ContentAsStreamWithBomIfApplicable
+      {
+         get
+         {
+            return WObj.getContentAsStreamWithBomIfApplicable();
          }
       }
 
@@ -124,10 +140,22 @@ namespace NHtmlUnit
          return WObj.getResponseHeaderValue(headerName);
       }
 
+// Generating method code for defaultCharsetUtf8
+      public virtual void DefaultCharsetUtf8()
+      {
+         WObj.defaultCharsetUtf8();
+      }
+
 // Generating method code for getContentAsString
-      public virtual string GetContentAsString(string encoding)
+      public virtual string GetContentAsString(java.nio.charset.Charset encoding)
       {
          return WObj.getContentAsString(encoding);
+      }
+
+// Generating method code for getContentAsString
+      public virtual string GetContentAsString(java.nio.charset.Charset encoding, bool ignoreUtf8Bom)
+      {
+         return WObj.getContentAsString(encoding, ignoreUtf8Bom);
       }
 
    }

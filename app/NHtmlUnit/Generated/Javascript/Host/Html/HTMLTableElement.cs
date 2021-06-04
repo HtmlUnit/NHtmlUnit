@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTableElement : NHtmlUnit.Javascript.Host.Html.RowContainer, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTableElement : NHtmlUnit.Javascript.Host.Html.RowContainer
    {
       static HTMLTableElement()
       {
@@ -173,41 +173,28 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.String DataFld
+      public System.String Summary
       {
          get
          {
-            return WObj.getDataFld();
+            return WObj.getSummary();
          }
          set
          {
-            WObj.setDataFld(value);
+            WObj.setSummary(value);
          }
 
       }
 
-      public System.String DataFormatAs
+      public System.String Rules
       {
          get
          {
-            return WObj.getDataFormatAs();
+            return WObj.getRules();
          }
          set
          {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
+            WObj.setRules(value);
          }
 
       }
@@ -243,17 +230,18 @@ namespace NHtmlUnit.Javascript.Host.Html
          return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
+// Generating method code for createTBody
+      public virtual object CreateTBody()
+      {
+         var arg = WObj.createTBody();
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
 // Generating method code for createTHead
       public virtual object CreateTHead()
       {
          var arg = WObj.createTHead();
          return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for refresh
-      public virtual void Refresh()
-      {
-         WObj.refresh();
       }
 
    }

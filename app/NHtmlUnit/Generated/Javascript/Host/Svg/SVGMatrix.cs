@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Svg
          get { return (com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix)WrappedObject; }
       }
 
-      public SVGMatrix(NHtmlUnit.Javascript.Host.Window scope)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix((com.gargoylesoftware.htmlunit.javascript.host.Window)scope.WrappedObject)) {}
-
       public SVGMatrix()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix()) {}
+
+      public SVGMatrix(NHtmlUnit.Javascript.Host.Window scope)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.svg.SVGMatrix((com.gargoylesoftware.htmlunit.javascript.host.Window)scope.WrappedObject)) {}
 
 
       public System.Double A

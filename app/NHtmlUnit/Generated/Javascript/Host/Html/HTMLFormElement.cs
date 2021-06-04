@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLFormElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLFormElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLFormElement()
       {
@@ -37,6 +37,16 @@ namespace NHtmlUnit.Javascript.Host.Html
       }
 
 
+      public NHtmlUnit.Html.HtmlForm HtmlForm
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlForm>(
+               WObj.getHtmlForm());
+         }
+      }
+
+
       public System.String Enctype
       {
          get
@@ -59,19 +69,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setTarget(value);
-         }
-
-      }
-
-      public System.String Name
-      {
-         get
-         {
-            return WObj.getName();
-         }
-         set
-         {
-            WObj.setName(value);
          }
 
       }
@@ -128,6 +125,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.submit();
       }
 
+// Generating method code for requestSubmit
+      public virtual void RequestSubmit(object submitter)
+      {
+         WObj.requestSubmit(submitter);
+      }
+
 // Generating method code for item
       public virtual object Item(object index, object subIndex)
       {
@@ -152,6 +155,12 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable Construct(net.sourceforge.htmlunit.corejs.javascript.Context cx, net.sourceforge.htmlunit.corejs.javascript.Scriptable scope, System.Object[] args)
       {
          return WObj.construct(cx, scope, args);
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
       }
 
    }

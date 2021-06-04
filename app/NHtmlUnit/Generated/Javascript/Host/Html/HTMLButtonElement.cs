@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLButtonElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLButtonElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLButtonElement()
       {
@@ -40,44 +40,28 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.String DataFld
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
       {
          get
          {
-            return WObj.getDataFld();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
          }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
       }
 
-      public System.String DataFormatAs
+// Generating method code for createTextRange
+      public virtual NHtmlUnit.Javascript.Host.Dom.TextRange CreateTextRange()
       {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
+         var arg = WObj.createTextRange();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(arg);
       }
 
-      public System.String DataSrc
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
       {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
+         return WObj.checkValidity();
       }
+
    }
 
 

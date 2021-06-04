@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -55,6 +55,14 @@ namespace NHtmlUnit
          }
       }
 
+      public System.Int64 ContentLength
+      {
+         get
+         {
+            return WObj.getContentLength();
+         }
+      }
+
       public java.io.InputStream InputStream
       {
          get
@@ -70,6 +78,12 @@ namespace NHtmlUnit
             return WObj.getBody();
          }
       }
+// Generating method code for getInputStreamWithBomIfApplicable
+      public virtual java.io.InputStream GetInputStreamWithBomIfApplicable(org.apache.commons.io.ByteOrderMark[] bomHeaders)
+      {
+         return WObj.getInputStreamWithBomIfApplicable(bomHeaders);
+      }
+
 // Generating method code for cleanUp
       public virtual void CleanUp()
       {

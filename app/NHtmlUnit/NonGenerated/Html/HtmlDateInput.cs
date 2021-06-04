@@ -1,9 +1,10 @@
-// Generated class v2.19.0.0, can be modified
+// Generated class v2.50.0.0, can be modified
 
 namespace NHtmlUnit.Html
 {
    public partial class HtmlDateInput
    {
+       public NHtmlUnit.IPage Page  { get; }
    }
 
 

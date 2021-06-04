@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -47,22 +47,22 @@ namespace NHtmlUnit.Javascript
       }
 
 
-      public NHtmlUnit.BrowserVersion BrowserVersion
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
-               WObj.getBrowserVersion());
-         }
-      }
-
-
       public NHtmlUnit.Html.DomNode DomNodeOrDie
       {
          get
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomNode>(
                WObj.getDomNodeOrDie());
+         }
+      }
+
+
+      public NHtmlUnit.BrowserVersion BrowserVersion
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.BrowserVersion>(
+               WObj.getBrowserVersion());
          }
       }
 

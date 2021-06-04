@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlObject : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlObject : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlObject()
       {
@@ -32,30 +32,6 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String DeclareAttribute
-      {
-         get
-         {
-            return WObj.getDeclareAttribute();
-         }
-      }
-
-      public System.String CodebaseAttribute
-      {
-         get
-         {
-            return WObj.getCodebaseAttribute();
-         }
-      }
-
-      public System.String DataAttribute
-      {
-         get
-         {
-            return WObj.getDataAttribute();
-         }
-      }
-
       public System.String TypeAttribute
       {
          get
@@ -64,27 +40,11 @@ namespace NHtmlUnit.Html
          }
       }
 
-      public System.String CodeTypeAttribute
+      public System.String NameAttribute
       {
          get
          {
-            return WObj.getCodeTypeAttribute();
-         }
-      }
-
-      public System.String ArchiveAttribute
-      {
-         get
-         {
-            return WObj.getArchiveAttribute();
-         }
-      }
-
-      public System.String StandbyAttribute
-      {
-         get
-         {
-            return WObj.getStandbyAttribute();
+            return WObj.getNameAttribute();
          }
       }
 
@@ -104,19 +64,59 @@ namespace NHtmlUnit.Html
          }
       }
 
+      public System.String CodebaseAttribute
+      {
+         get
+         {
+            return WObj.getCodebaseAttribute();
+         }
+      }
+
+      public System.String ArchiveAttribute
+      {
+         get
+         {
+            return WObj.getArchiveAttribute();
+         }
+      }
+
+      public System.String DeclareAttribute
+      {
+         get
+         {
+            return WObj.getDeclareAttribute();
+         }
+      }
+
+      public System.String DataAttribute
+      {
+         get
+         {
+            return WObj.getDataAttribute();
+         }
+      }
+
+      public System.String CodeTypeAttribute
+      {
+         get
+         {
+            return WObj.getCodeTypeAttribute();
+         }
+      }
+
+      public System.String StandbyAttribute
+      {
+         get
+         {
+            return WObj.getStandbyAttribute();
+         }
+      }
+
       public System.String UseMapAttribute
       {
          get
          {
             return WObj.getUseMapAttribute();
-         }
-      }
-
-      public System.String NameAttribute
-      {
-         get
-         {
-            return WObj.getNameAttribute();
          }
       }
 
@@ -157,6 +157,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getVspaceAttribute();
+         }
+      }
+
+      public java.applet.Applet Applet
+      {
+         get
+         {
+            return WObj.getApplet();
          }
       }
    }

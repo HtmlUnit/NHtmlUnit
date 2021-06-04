@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,32 @@ namespace NHtmlUnit
       public WebClientOptions()
          : this(new com.gargoylesoftware.htmlunit.WebClientOptions()) {}
 
+
+      public System.Int32 HistorySizeLimit
+      {
+         get
+         {
+            return WObj.getHistorySizeLimit();
+         }
+         set
+         {
+            WObj.setHistorySizeLimit(value);
+         }
+
+      }
+
+      public System.Int32 HistoryPageCacheLimit
+      {
+         get
+         {
+            return WObj.getHistoryPageCacheLimit();
+         }
+         set
+         {
+            WObj.setHistoryPageCacheLimit(value);
+         }
+
+      }
 
       public System.String[] SSLClientProtocols
       {
@@ -90,6 +116,19 @@ namespace NHtmlUnit
 
       }
 
+      public java.net.InetAddress LocalAddress
+      {
+         get
+         {
+            return WObj.getLocalAddress();
+         }
+         set
+         {
+            WObj.setLocalAddress(value);
+         }
+
+      }
+
       public System.Int32 Timeout
       {
          get
@@ -118,6 +157,19 @@ namespace NHtmlUnit
       }
 
 
+      public System.Int64 ConnectionTimeToLive
+      {
+         get
+         {
+            return WObj.getConnectionTimeToLive();
+         }
+         set
+         {
+            WObj.setConnectionTimeToLive(value);
+         }
+
+      }
+
       public System.Int32 MaxInMemory
       {
          get
@@ -144,40 +196,105 @@ namespace NHtmlUnit
 
       }
 
-      public System.Boolean PrintContentOnFailingStatusCode
+      public System.Int32 ScreenHeight
       {
          get
          {
-            return WObj.getPrintContentOnFailingStatusCode();
+            return WObj.getScreenHeight();
          }
          set
          {
-            WObj.setPrintContentOnFailingStatusCode(value);
+            WObj.setScreenHeight(value);
          }
 
       }
+
+      public System.Int32 ScreenWidth
+      {
+         get
+         {
+            return WObj.getScreenWidth();
+         }
+         set
+         {
+            WObj.setScreenWidth(value);
+         }
+
+      }
+
+      public System.Int32 WebSocketMaxBinaryMessageSize
+      {
+         get
+         {
+            return WObj.getWebSocketMaxBinaryMessageSize();
+         }
+         set
+         {
+            WObj.setWebSocketMaxBinaryMessageSize(value);
+         }
+
+      }
+
+      public System.Int32 WebSocketMaxBinaryMessageBufferSize
+      {
+         get
+         {
+            return WObj.getWebSocketMaxBinaryMessageBufferSize();
+         }
+         set
+         {
+            WObj.setWebSocketMaxBinaryMessageBufferSize(value);
+         }
+
+      }
+
+      public System.Int32 WebSocketMaxTextMessageSize
+      {
+         get
+         {
+            return WObj.getWebSocketMaxTextMessageSize();
+         }
+         set
+         {
+            WObj.setWebSocketMaxTextMessageSize(value);
+         }
+
+      }
+
+      public System.Int32 WebSocketMaxTextMessageBufferSize
+      {
+         get
+         {
+            return WObj.getWebSocketMaxTextMessageBufferSize();
+         }
+         set
+         {
+            WObj.setWebSocketMaxTextMessageBufferSize(value);
+         }
+
+      }
+// Generating method code for isUseInsecureSSL
+      public virtual bool IsUseInsecureSSL()
+      {
+         return WObj.isUseInsecureSSL();
+      }
+
 // Generating method code for isCssEnabled
       public virtual bool IsCssEnabled()
       {
          return WObj.isCssEnabled();
       }
 
-// Generating method code for isJavaScriptEnabled
-      public virtual bool IsJavaScriptEnabled()
+// Generating method code for isDownloadImages
+      public virtual bool IsDownloadImages()
       {
-         return WObj.isJavaScriptEnabled();
+         return WObj.isDownloadImages();
       }
 
 // Generating method code for isAppletEnabled
       public virtual bool IsAppletEnabled()
       {
          return WObj.isAppletEnabled();
-      }
-
-// Generating method code for isUseInsecureSSL
-      public virtual bool IsUseInsecureSSL()
-      {
-         return WObj.isUseInsecureSSL();
       }
 
 // Generating method code for isDoNotTrackEnabled
@@ -204,10 +321,22 @@ namespace NHtmlUnit
          return WObj.isPopupBlockerEnabled();
       }
 
+// Generating method code for isWebSocketEnabled
+      public virtual bool IsWebSocketEnabled()
+      {
+         return WObj.isWebSocketEnabled();
+      }
+
 // Generating method code for isThrowExceptionOnScriptError
       public virtual bool IsThrowExceptionOnScriptError()
       {
          return WObj.isThrowExceptionOnScriptError();
+      }
+
+// Generating method code for isPrintContentOnFailingStatusCode
+      public virtual bool IsPrintContentOnFailingStatusCode()
+      {
+         return WObj.isPrintContentOnFailingStatusCode();
       }
 
 // Generating method code for isThrowExceptionOnFailingStatusCode
@@ -220,6 +349,18 @@ namespace NHtmlUnit
       public virtual bool IsRedirectEnabled()
       {
          return WObj.isRedirectEnabled();
+      }
+
+// Generating method code for isJavaScriptEnabled
+      public virtual bool IsJavaScriptEnabled()
+      {
+         return WObj.isJavaScriptEnabled();
+      }
+
+// Generating method code for setSSLClientCertificate
+      public virtual void SetSSLClientCertificate(java.io.InputStream certificateInputStream, string certificatePassword, string certificateType)
+      {
+         WObj.setSSLClientCertificate(certificateInputStream, certificatePassword, certificateType);
       }
 
 // Generating method code for setSSLClientCertificate

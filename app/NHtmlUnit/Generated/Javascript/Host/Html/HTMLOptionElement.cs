@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLOptionElement : NHtmlUnit.Javascript.Host.Html.FormChild, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLOptionElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLOptionElement()
       {
@@ -27,28 +27,15 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLOptionElement()) {}
 
 
-      public System.Boolean Selected
+      public System.String Label
       {
          get
          {
-            return WObj.getSelected();
+            return WObj.getLabel();
          }
          set
          {
-            WObj.setSelected(value);
-         }
-
-      }
-
-      public System.String Value
-      {
-         get
-         {
-            return WObj.getValue();
-         }
-         set
-         {
-            WObj.setValue(value);
+            WObj.setLabel(value);
          }
 
       }
@@ -66,66 +53,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Boolean DefaultSelected
-      {
-         get
-         {
-            return WObj.getDefaultSelected();
-         }
-      }
-
-      public System.String Label
-      {
-         get
-         {
-            return WObj.getLabel();
-         }
-         set
-         {
-            WObj.setLabel(value);
-         }
-
-      }
-
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
-
       public System.Int32 Index
       {
          get
@@ -134,9 +61,21 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 // Generating method code for jsConstructor
-      public virtual void JsConstructor(string newText, string newValue, bool defaultSelected, bool selected)
+      public virtual void JsConstructor(object newText, string newValue, bool defaultSelected, bool selected)
       {
          WObj.jsConstructor(newText, newValue, defaultSelected, selected);
+      }
+
+// Generating method code for isSelected
+      public virtual bool IsSelected()
+      {
+         return WObj.isSelected();
+      }
+
+// Generating method code for isDefaultSelected
+      public virtual bool IsDefaultSelected()
+      {
+         return WObj.isDefaultSelected();
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLScriptElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLScriptElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLScriptElement()
       {
@@ -65,53 +65,12 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-
-      public System.Object Onreadystatechange
+// Generating method code for isAsync
+      public virtual bool IsAsync()
       {
-         get
-         {
-            return WObj.getOnreadystatechange();
-         }
-         set
-         {
-            WObj.setOnreadystatechange(value);
-         }
-
+         return WObj.isAsync();
       }
 
-      public System.Object Onload
-      {
-         get
-         {
-            return WObj.getOnload();
-         }
-         set
-         {
-            WObj.setOnload(value);
-         }
-
-      }
-
-      public System.String ReadyState
-      {
-         get
-         {
-            return WObj.getReadyState();
-         }
-      }
-
-      public System.String Async
-      {
-         get
-         {
-            return WObj.getAsync();
-         }
-         set
-         {
-            WObj.setAsync(value);
-         }
-
-      }
    }
 
 

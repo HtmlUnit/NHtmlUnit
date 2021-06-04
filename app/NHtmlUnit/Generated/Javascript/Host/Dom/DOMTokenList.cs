@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -55,17 +55,17 @@ namespace NHtmlUnit.Javascript.Host.Dom
          WObj.add(token);
       }
 
-// Generating method code for toggle
-      public virtual bool Toggle(string token)
-      {
-         return WObj.toggle(token);
-      }
-
 // Generating method code for item
       public virtual object Item(int index)
       {
          var arg = WObj.item(index);
          return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for toggle
+      public virtual bool Toggle(string token)
+      {
+         return WObj.toggle(token);
       }
 
    }

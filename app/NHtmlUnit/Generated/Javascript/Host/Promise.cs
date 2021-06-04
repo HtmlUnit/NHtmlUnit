@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,19 +23,34 @@ namespace NHtmlUnit.Javascript.Host
          get { return (com.gargoylesoftware.htmlunit.javascript.host.Promise)WrappedObject; }
       }
 
-      public Promise(object objectArg)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.Promise(objectArg)) {}
-
       public Promise(NHtmlUnit.Javascript.Host.Window window)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Promise((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject)) {}
 
       public Promise()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.Promise()) {}
 
+      public Promise(object objectArg)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.Promise(objectArg)) {}
+
+
+      public System.String LogDetails
+      {
+         get
+         {
+            return WObj.getLogDetails();
+         }
+      }
 // Generating method code for then
-      public virtual NHtmlUnit.Javascript.Host.Promise Then(net.sourceforge.htmlunit.corejs.javascript.Function onFulfilled, net.sourceforge.htmlunit.corejs.javascript.Function onRejected)
+      public virtual NHtmlUnit.Javascript.Host.Promise Then(object onFulfilled, object onRejected)
       {
          var arg = WObj.then(onFulfilled, onRejected);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(arg);
+      }
+
+// Generating method code for catch_js
+      public virtual NHtmlUnit.Javascript.Host.Promise Catch_js(object onRejected)
+      {
+         var arg = WObj.catch_js(onRejected);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(arg);
       }
 

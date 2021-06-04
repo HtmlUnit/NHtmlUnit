@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLDetailsElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLDetailsElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLDetailsElement()
       {
@@ -25,6 +25,12 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       public HTMLDetailsElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLDetailsElement()) {}
+
+// Generating method code for isOpen
+      public virtual bool IsOpen()
+      {
+         return WObj.isOpen();
+      }
 
    }
 

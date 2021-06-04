@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,12 +25,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
 
       public NodeFilter()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.NodeFilter()) {}
-
-// Generating method code for acceptNode
-      public virtual System.Int16 AcceptNode(NHtmlUnit.Javascript.Host.Dom.Node n)
-      {
-         return WObj.acceptNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)n.WrappedObject);
-      }
 
    }
 

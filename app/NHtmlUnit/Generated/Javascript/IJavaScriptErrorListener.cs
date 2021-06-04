@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.javascript.JavaScriptErrorListener
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -14,13 +14,15 @@ namespace NHtmlUnit.Javascript
    public interface IJavaScriptErrorListener : NHtmlUnit.IObjectWrapper
    {
 // Generating method code for malformedScriptURL
-      void MalformedScriptURL(NHtmlUnit.InteractivePage ip, string str, java.net.MalformedURLException murle);
+      void MalformedScriptURL(NHtmlUnit.Html.HtmlPage hp, string str, java.net.MalformedURLException murle);
 // Generating method code for loadScriptError
-      void LoadScriptError(NHtmlUnit.InteractivePage ip, java.net.URL url, java.lang.Exception e);
+      void LoadScriptError(NHtmlUnit.Html.HtmlPage hp, java.net.URL url, java.lang.Exception e);
 // Generating method code for scriptException
-      void ScriptException(NHtmlUnit.InteractivePage ip, NHtmlUnit.ScriptException se);
+      void ScriptException(NHtmlUnit.Html.HtmlPage hp, NHtmlUnit.ScriptException se);
 // Generating method code for timeoutError
-      void TimeoutError(NHtmlUnit.InteractivePage ip, System.Int64 l1, System.Int64 l2);
+      void TimeoutError(NHtmlUnit.Html.HtmlPage hp, System.Int64 l1, System.Int64 l2);
+// Generating method code for warn
+      void Warn(string str1, string str2, int i1, string str3, int i2);
 
    }
 }

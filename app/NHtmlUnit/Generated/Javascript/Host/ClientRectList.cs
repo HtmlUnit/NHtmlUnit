@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,27 @@ namespace NHtmlUnit.Javascript.Host
 
       public ClientRectList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.ClientRectList()) {}
+
+
+      public System.Int32 Length
+      {
+         get
+         {
+            return WObj.getLength();
+         }
+      }
+// Generating method code for item
+      public virtual NHtmlUnit.Javascript.Host.ClientRect Item(int index)
+      {
+         var arg = WObj.item(index);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.ClientRect>(arg);
+      }
+
+// Generating method code for add
+      public virtual void Add(NHtmlUnit.Javascript.Host.ClientRect clientRect)
+      {
+         WObj.add((com.gargoylesoftware.htmlunit.javascript.host.ClientRect)clientRect.WrappedObject);
+      }
 
    }
 

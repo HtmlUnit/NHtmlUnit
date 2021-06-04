@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,8 +29,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public TextRange()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TextRange()) {}
 
-      public TextRange(NHtmlUnit.Javascript.Host.Html.HTMLElement elt)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TextRange((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)elt.WrappedObject)) {}
+      public TextRange(NHtmlUnit.Javascript.Host.Element elt)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.TextRange((com.gargoylesoftware.htmlunit.javascript.host.Element)elt.WrappedObject)) {}
 
 
       public System.String Text

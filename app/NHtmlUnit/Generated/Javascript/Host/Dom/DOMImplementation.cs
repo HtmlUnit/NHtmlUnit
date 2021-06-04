@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -37,6 +37,13 @@ namespace NHtmlUnit.Javascript.Host.Dom
       {
          var arg = WObj.createDocument(namespaceURI, qualifiedName, (com.gargoylesoftware.htmlunit.javascript.host.dom.DocumentType)doctype.WrappedObject);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLDocument>(arg);
+      }
+
+// Generating method code for createHTMLDocument
+      public virtual NHtmlUnit.Javascript.Host.Html.HTMLDocument CreateHTMLDocument(object titleObj)
+      {
+         var arg = WObj.createHTMLDocument(titleObj);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLDocument>(arg);
       }
 
    }

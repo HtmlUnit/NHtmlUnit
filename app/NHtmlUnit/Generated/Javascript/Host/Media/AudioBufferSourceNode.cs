@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Media
 {
-   public partial class AudioBufferSourceNode : NHtmlUnit.Javascript.Host.Media.AudioNode
+   public partial class AudioBufferSourceNode : NHtmlUnit.Javascript.Host.AudioScheduledSourceNode
    {
       static AudioBufferSourceNode()
       {
@@ -25,6 +25,12 @@ namespace NHtmlUnit.Javascript.Host.Media
 
       public AudioBufferSourceNode()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.media.AudioBufferSourceNode()) {}
+
+// Generating method code for start
+      public virtual void Start()
+      {
+         WObj.start();
+      }
 
    }
 

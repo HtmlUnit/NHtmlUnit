@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -34,6 +34,22 @@ namespace NHtmlUnit.Javascript.Host.Performance
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Performance.PerformanceNavigation>(
                WObj.getNavigation());
          }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Performance.PerformanceTiming Timing
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Performance.PerformanceTiming>(
+               WObj.getTiming());
+         }
+      }
+
+// Generating method code for now
+      public virtual System.Double Now()
+      {
+         return WObj.now();
       }
 
    }

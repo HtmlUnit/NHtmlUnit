@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -87,6 +87,12 @@ namespace NHtmlUnit
       public virtual void ReplaceState(object state, java.net.URL url)
       {
          WObj.replaceState(state, url);
+      }
+
+// Generating method code for pushState
+      public virtual void PushState(object state, java.net.URL url)
+      {
+         WObj.pushState(state, url);
       }
 
    }

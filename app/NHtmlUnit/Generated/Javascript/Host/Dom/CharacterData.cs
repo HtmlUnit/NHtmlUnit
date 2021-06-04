@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -34,6 +34,26 @@ namespace NHtmlUnit.Javascript.Host.Dom
             return WObj.getLength();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.Element NextElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getNextElementSibling());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Element PreviousElementSibling
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Element>(
+               WObj.getPreviousElementSibling());
+         }
+      }
+
 // Generating method code for appendData
       public virtual void AppendData(string arg)
       {
@@ -62,6 +82,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual string SubstringData(int offset, int count)
       {
          return WObj.substringData(offset, count);
+      }
+
+// Generating method code for remove
+      public virtual void Remove()
+      {
+         WObj.remove();
       }
 
 // Generating method code for getData

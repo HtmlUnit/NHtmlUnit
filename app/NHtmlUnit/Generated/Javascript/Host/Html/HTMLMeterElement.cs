@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLMeterElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLMeterElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLMeterElement()
       {
@@ -43,14 +43,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.Double Value
-      {
-         get
-         {
-            return WObj.getValue();
-         }
-      }
-
       public System.Double Low
       {
          get
@@ -74,6 +66,16 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getOptimum();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
+         }
+      }
+
    }
 
 

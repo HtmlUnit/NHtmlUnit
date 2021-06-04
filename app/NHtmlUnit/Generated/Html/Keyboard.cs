@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,17 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.Keyboard)WrappedObject; }
       }
 
+      public Keyboard(bool startAtEnd)
+         : this(new com.gargoylesoftware.htmlunit.html.Keyboard(startAtEnd)) {}
+
       public Keyboard()
          : this(new com.gargoylesoftware.htmlunit.html.Keyboard()) {}
+
+// Generating method code for isStartAtEnd
+      public virtual bool IsStartAtEnd()
+      {
+         return WObj.isStartAtEnd();
+      }
 
 // Generating method code for type
       public virtual void Type(System.Char ch)

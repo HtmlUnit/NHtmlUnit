@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLAnchorElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLAnchorElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLAnchorElement()
       {
@@ -40,15 +40,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.String Name
+      public System.String Host
       {
          get
          {
-            return WObj.getName();
+            return WObj.getHost();
          }
          set
          {
-            WObj.setName(value);
+            WObj.setHost(value);
          }
 
       }
@@ -92,6 +92,19 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
+      public System.String ReferrerPolicy
+      {
+         get
+         {
+            return WObj.getReferrerPolicy();
+         }
+         set
+         {
+            WObj.setReferrerPolicy(value);
+         }
+
+      }
+
       public System.String Search
       {
          get
@@ -114,19 +127,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setHash(value);
-         }
-
-      }
-
-      public System.String Host
-      {
-         get
-         {
-            return WObj.getHost();
-         }
-         set
-         {
-            WObj.setHost(value);
          }
 
       }
@@ -241,6 +241,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return WObj.getOrigin();
          }
+         set
+         {
+            WObj.setOrigin(value);
+         }
+
       }
 
       public System.String Username
@@ -385,57 +390,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
-// Generating method code for getSearchParams
-      public virtual string GetSearchParams()
-      {
-         return WObj.getSearchParams();
-      }
-
-// Generating method code for setSearchParams
-      public virtual void SetSearchParams(NHtmlUnit.Javascript.Host.URLSearchParams searchParams)
-      {
-         WObj.setSearchParams((com.gargoylesoftware.htmlunit.javascript.host.URLSearchParams)searchParams.WrappedObject);
-      }
-
    }
 
 

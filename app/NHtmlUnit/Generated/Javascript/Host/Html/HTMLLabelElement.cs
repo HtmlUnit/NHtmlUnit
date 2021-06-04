@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLLabelElement : NHtmlUnit.Javascript.Host.Html.FormChild, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLLabelElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLLabelElement()
       {
@@ -40,44 +40,20 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.String DataFld
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement Control
       {
          get
          {
-            return WObj.getDataFld();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getControl());
          }
          set
          {
-            WObj.setDataFld(value);
+            WObj.setControl((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)value.WrappedObject);
          }
 
       }
 
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
    }
 
 

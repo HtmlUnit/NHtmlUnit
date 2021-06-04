@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLSelectElement : NHtmlUnit.Javascript.Host.Html.FormField, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLSelectElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLSelectElement()
       {
@@ -71,57 +71,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Boolean Multiple
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
       {
          get
          {
-            return WObj.getMultiple();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
          }
-         set
-         {
-            WObj.setMultiple(value);
-         }
-
       }
 
-      public System.String DataFld
-      {
-         get
-         {
-            return WObj.getDataFld();
-         }
-         set
-         {
-            WObj.setDataFld(value);
-         }
-
-      }
-
-      public System.String DataFormatAs
-      {
-         get
-         {
-            return WObj.getDataFormatAs();
-         }
-         set
-         {
-            WObj.setDataFormatAs(value);
-         }
-
-      }
-
-      public System.String DataSrc
-      {
-         get
-         {
-            return WObj.getDataSrc();
-         }
-         set
-         {
-            WObj.setDataSrc(value);
-         }
-
-      }
 // Generating method code for initialize
       public virtual void Initialize()
       {
@@ -152,6 +110,24 @@ namespace NHtmlUnit.Javascript.Host.Html
       {
          var arg = WObj.item(index);
          return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for isMultiple
+      public virtual bool IsMultiple()
+      {
+         return WObj.isMultiple();
+      }
+
+// Generating method code for checkValidity
+      public virtual bool CheckValidity()
+      {
+         return WObj.checkValidity();
+      }
+
+// Generating method code for isRequired
+      public virtual bool IsRequired()
+      {
+         return WObj.isRequired();
       }
 
 // Generating method code for getSize

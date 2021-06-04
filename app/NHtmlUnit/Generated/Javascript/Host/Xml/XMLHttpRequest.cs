@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Xml
 {
-   public partial class XMLHttpRequest : NHtmlUnit.Javascript.Host.Events.EventTarget
+   public partial class XMLHttpRequest : NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestEventTarget
    {
       static XMLHttpRequest()
       {
@@ -29,58 +29,6 @@ namespace NHtmlUnit.Javascript.Host.Xml
       public XMLHttpRequest()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.xml.XMLHttpRequest()) {}
 
-
-      public System.Boolean WithCredentials
-      {
-         get
-         {
-            return WObj.getWithCredentials();
-         }
-         set
-         {
-            WObj.setWithCredentials(value);
-         }
-
-      }
-
-      public net.sourceforge.htmlunit.corejs.javascript.Function Onreadystatechange
-      {
-         get
-         {
-            return WObj.getOnreadystatechange();
-         }
-         set
-         {
-            WObj.setOnreadystatechange(value);
-         }
-
-      }
-
-      public net.sourceforge.htmlunit.corejs.javascript.Function Onload
-      {
-         get
-         {
-            return WObj.getOnload();
-         }
-         set
-         {
-            WObj.setOnload(value);
-         }
-
-      }
-
-      public net.sourceforge.htmlunit.corejs.javascript.Function Onerror
-      {
-         get
-         {
-            return WObj.getOnerror();
-         }
-         set
-         {
-            WObj.setOnerror(value);
-         }
-
-      }
 
       public System.Int32 ReadyState
       {
@@ -137,6 +85,35 @@ namespace NHtmlUnit.Javascript.Host.Xml
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestUpload>(
                WObj.getUpload());
          }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestEventTarget UploadIE
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Xml.XMLHttpRequestEventTarget>(
+               WObj.getUploadIE());
+         }
+      }
+
+
+      public System.Int32 Timeout
+      {
+         get
+         {
+            return WObj.getTimeout();
+         }
+         set
+         {
+            WObj.setTimeout(value);
+         }
+
+      }
+// Generating method code for isWithCredentials
+      public virtual bool IsWithCredentials()
+      {
+         return WObj.isWithCredentials();
       }
 
 // Generating method code for abort

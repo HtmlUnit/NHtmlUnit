@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,11 +23,11 @@ namespace NHtmlUnit.Javascript.Host.Dom
          get { return (com.gargoylesoftware.htmlunit.javascript.host.dom.NodeIterator)WrappedObject; }
       }
 
+      public NodeIterator(NHtmlUnit.SgmlPage page, NHtmlUnit.Javascript.Host.Dom.Node root, int whatToShow, NHtmlUnit.W3C.Dom.Traversal.INodeFilter filter)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.NodeIterator((com.gargoylesoftware.htmlunit.SgmlPage)page.WrappedObject, (com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, (org.w3c.dom.traversal.NodeFilter)filter.WrappedObject)) {}
+
       public NodeIterator()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.NodeIterator()) {}
-
-      public NodeIterator(NHtmlUnit.Javascript.Host.Dom.Node root, System.Double whatToShow, net.sourceforge.htmlunit.corejs.javascript.Scriptable filter)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.NodeIterator((com.gargoylesoftware.htmlunit.javascript.host.dom.Node)root.WrappedObject, whatToShow, filter)) {}
 
 
       public NHtmlUnit.Javascript.Host.Dom.Node Root
@@ -40,7 +40,7 @@ namespace NHtmlUnit.Javascript.Host.Dom
       }
 
 
-      public System.Double WhatToShow
+      public System.Int64 WhatToShow
       {
          get
          {
@@ -48,29 +48,13 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public net.sourceforge.htmlunit.corejs.javascript.Scriptable Filter
+      public System.Object Filter
       {
          get
          {
             return WObj.getFilter();
          }
       }
-
-      public NHtmlUnit.Javascript.Host.Dom.Node ReferenceNode
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(
-               WObj.getReferenceNode());
-         }
-      }
-
-// Generating method code for isPointerBeforeReferenceNode
-      public virtual bool IsPointerBeforeReferenceNode()
-      {
-         return WObj.isPointerBeforeReferenceNode();
-      }
-
 // Generating method code for detach
       public virtual void Detach()
       {

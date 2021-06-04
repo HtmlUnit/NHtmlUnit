@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -61,14 +61,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public System.Boolean BooleanValue
-      {
-         get
-         {
-            return WObj.getBooleanValue();
-         }
-      }
-
       public System.String StringValue
       {
          get
@@ -88,6 +80,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
       {
          var arg = WObj.snapshotItem(index);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
+      }
+
+// Generating method code for isBooleanValue
+      public virtual bool IsBooleanValue()
+      {
+         return WObj.isBooleanValue();
       }
 
    }

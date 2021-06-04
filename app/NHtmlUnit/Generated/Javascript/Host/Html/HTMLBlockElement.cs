@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLBlockElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLBlockElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLBlockElement()
       {
@@ -51,6 +51,27 @@ namespace NHtmlUnit.Javascript.Host.Html
             WObj.setDateTime(value);
          }
 
+      }
+
+      public System.String Clear
+      {
+         get
+         {
+            return WObj.getClear();
+         }
+         set
+         {
+            WObj.setClear(value);
+         }
+
+      }
+
+      public System.String Width_js
+      {
+         get
+         {
+            return WObj.getWidth_js();
+         }
       }
    }
 

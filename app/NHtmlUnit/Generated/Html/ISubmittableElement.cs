@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.html.SubmittableElement
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace NHtmlUnit.Html
 {
    public interface ISubmittableElement : NHtmlUnit.IObjectWrapper
    {
-      com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs  { get; }
+      com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitNameValuePairs  { get; }
       System.String DefaultValue { get; set; }
 // Generating method code for reset
       void Reset();

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,10 +29,16 @@ namespace NHtmlUnit.Javascript.Host.Events
       public BeforeUnloadEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.BeforeUnloadEvent()) {}
 
-// Generating method code for jConstructor
-      public virtual void JConstructor()
+// Generating method code for isBeforeUnloadMessageSet
+      public virtual bool IsBeforeUnloadMessageSet()
       {
-         WObj.jConstructor();
+         return WObj.isBeforeUnloadMessageSet();
+      }
+
+// Generating method code for jsConstructor
+      public virtual void JsConstructor()
+      {
+         WObj.jsConstructor();
       }
 
    }

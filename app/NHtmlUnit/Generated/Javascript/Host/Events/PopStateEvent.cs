@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Javascript.Host.Events
          get { return (com.gargoylesoftware.htmlunit.javascript.host.@event.PopStateEvent)WrappedObject; }
       }
 
-      public PopStateEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type, object state)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.PopStateEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type, state)) {}
+      public PopStateEvent(NHtmlUnit.Javascript.Host.Events.EventTarget target, string type, object state)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.PopStateEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject, type, state)) {}
 
       public PopStateEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.PopStateEvent()) {}
@@ -37,6 +37,12 @@ namespace NHtmlUnit.Javascript.Host.Events
             return WObj.getState();
          }
       }
+// Generating method code for initPopStateEvent
+      public virtual void InitPopStateEvent(string type, bool bubbles, bool cancelable, object state)
+      {
+         WObj.initPopStateEvent(type, bubbles, cancelable, state);
+      }
+
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,8 +29,8 @@ namespace NHtmlUnit.Javascript.Host.Events
       public UIEvent(NHtmlUnit.Html.DomNode domNode, string type)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.UIEvent((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type)) {}
 
-      public UIEvent(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.UIEvent((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
+      public UIEvent(NHtmlUnit.Javascript.Host.Events.EventTarget target, string type)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.UIEvent((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject, type)) {}
 
 
       public System.Int64 Detail
@@ -46,14 +46,6 @@ namespace NHtmlUnit.Javascript.Host.Events
          get
          {
             return WObj.getView();
-         }
-      }
-
-      public System.Boolean MetaKey
-      {
-         get
-         {
-            return WObj.getMetaKey();
          }
       }
 // Generating method code for initUIEvent

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,14 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public Selection()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Selection()) {}
 
+
+      public System.Int32 RangeCount
+      {
+         get
+         {
+            return WObj.getRangeCount();
+         }
+      }
 
       public NHtmlUnit.Javascript.Host.Dom.Node AnchorNode
       {
@@ -63,22 +71,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public System.Boolean IsCollapsed
-      {
-         get
-         {
-            return WObj.getIsCollapsed();
-         }
-      }
-
-      public System.Int32 RangeCount
-      {
-         get
-         {
-            return WObj.getRangeCount();
-         }
-      }
-
       public System.String Type
       {
          get
@@ -86,11 +78,22 @@ namespace NHtmlUnit.Javascript.Host.Dom
             return WObj.getType();
          }
       }
-// Generating method code for createRange
-      public virtual NHtmlUnit.Javascript.Host.Dom.TextRange CreateRange()
+// Generating method code for jsToString
+      public virtual string JsToString()
       {
-         var arg = WObj.createRange();
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.TextRange>(arg);
+         return WObj.jsToString();
+      }
+
+// Generating method code for removeAllRanges
+      public virtual void RemoveAllRanges()
+      {
+         WObj.removeAllRanges();
+      }
+
+// Generating method code for isIsCollapsed
+      public virtual bool IsIsCollapsed()
+      {
+         return WObj.isIsCollapsed();
       }
 
 // Generating method code for addRange
@@ -103,12 +106,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual void RemoveRange(NHtmlUnit.Javascript.Host.Dom.Range range)
       {
          WObj.removeRange((com.gargoylesoftware.htmlunit.javascript.host.dom.Range)range.WrappedObject);
-      }
-
-// Generating method code for removeAllRanges
-      public virtual void RemoveAllRanges()
-      {
-         WObj.removeAllRanges();
       }
 
 // Generating method code for getRangeAt

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLProgressElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLProgressElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLProgressElement()
       {
@@ -27,14 +27,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLProgressElement()) {}
 
 
-      public System.Double Value
-      {
-         get
-         {
-            return WObj.getValue();
-         }
-      }
-
       public System.Double Max
       {
          get
@@ -42,6 +34,16 @@ namespace NHtmlUnit.Javascript.Host.Html
             return WObj.getMax();
          }
       }
+
+      public NHtmlUnit.Javascript.Host.Dom.AbstractList Labels
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.AbstractList>(
+               WObj.getLabels());
+         }
+      }
+
    }
 
 

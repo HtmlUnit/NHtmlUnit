@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -43,15 +43,14 @@ namespace NHtmlUnit.Javascript.Host.Canvas
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Arrays.Uint8ClampedArray Data
+      public IList<System.Object> Data
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Arrays.Uint8ClampedArray>(
+            return new ShallowListWrapper<System.Object>(
                WObj.getData());
          }
-      }
-
+       }
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,16 @@ namespace NHtmlUnit.Javascript.Host.Media
 
       public MediaDevices()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.media.MediaDevices()) {}
+
+
+      public NHtmlUnit.Javascript.Host.Promise UserMedia
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Promise>(
+               WObj.getUserMedia());
+         }
+      }
 
    }
 

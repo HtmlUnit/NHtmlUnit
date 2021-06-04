@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,6 +26,14 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public Node()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.Node()) {}
 
+
+      public System.Object OwnerDocument
+      {
+         get
+         {
+            return WObj.getOwnerDocument();
+         }
+      }
 
       public NHtmlUnit.Javascript.Host.Element ParentElement
       {
@@ -134,11 +142,19 @@ namespace NHtmlUnit.Javascript.Host.Dom
       }
 
 
-      public System.Object OwnerDocument
+      public System.Object Attributes
       {
          get
          {
-            return WObj.getOwnerDocument();
+            return WObj.getAttributes();
+         }
+      }
+
+      public System.String BaseURI
+      {
+         get
+         {
+            return WObj.getBaseURI();
          }
       }
 
@@ -150,7 +166,7 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public System.String LocalName
+      public System.Object LocalName
       {
          get
          {
@@ -158,35 +174,11 @@ namespace NHtmlUnit.Javascript.Host.Dom
          }
       }
 
-      public System.String NamespaceURI
+      public System.Object NamespaceURI
       {
          get
          {
             return WObj.getNamespaceURI();
-         }
-      }
-
-      public System.Object BaseName
-      {
-         get
-         {
-            return WObj.getBaseName();
-         }
-      }
-
-      public System.Object Xml
-      {
-         get
-         {
-            return WObj.getXml();
-         }
-      }
-
-      public System.Object Attributes
-      {
-         get
-         {
-            return WObj.getAttributes();
          }
       }
 // Generating method code for replaceChild
@@ -229,18 +221,6 @@ namespace NHtmlUnit.Javascript.Host.Dom
          return WObj.hasChildNodes();
       }
 
-// Generating method code for attachEvent
-      public virtual bool AttachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         return WObj.attachEvent(type, listener);
-      }
-
-// Generating method code for detachEvent
-      public virtual void DetachEvent(string type, net.sourceforge.htmlunit.corejs.javascript.Function listener)
-      {
-         WObj.detachEvent(type, listener);
-      }
-
 // Generating method code for compareDocumentPosition
       public virtual System.Int16 CompareDocumentPosition(object node)
       {
@@ -257,6 +237,12 @@ namespace NHtmlUnit.Javascript.Host.Dom
       public virtual bool Contains(object element)
       {
          return WObj.contains(element);
+      }
+
+// Generating method code for hasAttributes
+      public virtual bool HasAttributes()
+      {
+         return WObj.hasAttributes();
       }
 
 // Generating method code for getTextContent

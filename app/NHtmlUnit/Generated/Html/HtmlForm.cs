@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlForm : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlForm : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlForm()
       {
@@ -129,6 +129,12 @@ namespace NHtmlUnit.Html
             return WObj.getAcceptAttribute();
          }
       }
+// Generating method code for submit
+      public virtual void Submit(NHtmlUnit.Html.ISubmittableElement submitElement)
+      {
+         WObj.submit((com.gargoylesoftware.htmlunit.html.SubmittableElement)submitElement.WrappedObject);
+      }
+
 // Generating method code for reset
       public virtual NHtmlUnit.IPage Reset()
       {
@@ -141,6 +147,13 @@ namespace NHtmlUnit.Html
       {
          var arg = WObj.getWebRequest((com.gargoylesoftware.htmlunit.html.SubmittableElement)submitElement.WrappedObject);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.WebRequest>(arg);
+      }
+
+// Generating method code for getParameterListForSubmit
+      public virtual IList<NHtmlUnit.Util.NameValuePair> GetParameterListForSubmit(NHtmlUnit.Html.ISubmittableElement submitElement)
+      {
+
+return new ListWrapper<NHtmlUnit.Util.NameValuePair>(WObj.getParameterListForSubmit((com.gargoylesoftware.htmlunit.html.SubmittableElement)submitElement.WrappedObject));
       }
 
 // Generating method code for getInputsByName
@@ -225,6 +238,12 @@ return new ListWrapper<NHtmlUnit.Html.HtmlInput>(WObj.getInputsByValue(value));
       {
          var arg = WObj.getInputByValue(value);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.HtmlInput>(arg);
+      }
+
+// Generating method code for addLostChild
+      public virtual void AddLostChild(NHtmlUnit.Html.HtmlElement field)
+      {
+         WObj.addLostChild((com.gargoylesoftware.htmlunit.html.HtmlElement)field.WrappedObject);
       }
 
    }

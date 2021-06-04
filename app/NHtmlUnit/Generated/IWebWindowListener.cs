@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.WebWindowListener
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -13,10 +13,10 @@ namespace NHtmlUnit
 {
    public interface IWebWindowListener : NHtmlUnit.IObjectWrapper
    {
-// Generating method code for webWindowContentChanged
-      void WebWindowContentChanged(NHtmlUnit.WebWindowEvent wwe);
 // Generating method code for webWindowOpened
       void WebWindowOpened(NHtmlUnit.WebWindowEvent wwe);
+// Generating method code for webWindowContentChanged
+      void WebWindowContentChanged(NHtmlUnit.WebWindowEvent wwe);
 // Generating method code for webWindowClosed
       void WebWindowClosed(NHtmlUnit.WebWindowEvent wwe);
 

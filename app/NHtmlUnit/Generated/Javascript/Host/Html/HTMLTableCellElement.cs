@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLTableCellElement : NHtmlUnit.Javascript.Host.Html.HTMLTableComponent, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLTableCellElement : NHtmlUnit.Javascript.Host.Html.HTMLTableComponent
    {
       static HTMLTableCellElement()
       {
@@ -74,19 +74,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Boolean NoWrap
-      {
-         get
-         {
-            return WObj.getNoWrap();
-         }
-         set
-         {
-            WObj.setNoWrap(value);
-         }
-
-      }
-
       public System.String Width_js
       {
          get
@@ -141,6 +128,38 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
+
+      public System.String Headers
+      {
+         get
+         {
+            return WObj.getHeaders();
+         }
+         set
+         {
+            WObj.setHeaders(value);
+         }
+
+      }
+
+      public System.String Scope
+      {
+         get
+         {
+            return WObj.getScope();
+         }
+         set
+         {
+            WObj.setScope(value);
+         }
+
+      }
+// Generating method code for isNoWrap
+      public virtual bool IsNoWrap()
+      {
+         return WObj.isNoWrap();
+      }
+
 // Generating method code for getColSpan
       public virtual int GetColSpan()
       {

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Events
    {
       static WebkitSpeechRecognitionError()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionError o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionError o) =>
             new WebkitSpeechRecognitionError(o));
       }
 
-      public WebkitSpeechRecognitionError(com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionError wrappedObject) : base(wrappedObject) {}
+      public WebkitSpeechRecognitionError(com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionError wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionError WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionError WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionError)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionError)WrappedObject; }
       }
 
       public WebkitSpeechRecognitionError()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.webkitSpeechRecognitionError()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.WebkitSpeechRecognitionError()) {}
 
    }
 

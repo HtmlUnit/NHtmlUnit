@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -12,19 +12,19 @@ namespace NHtmlUnit.Javascript.Host.Media.Rtc
    {
       static MozRTCSessionDescription()
       {
-         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCSessionDescription o) =>
+         ObjectWrapper.RegisterWrapperCreator((com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCSessionDescription o) =>
             new MozRTCSessionDescription(o));
       }
 
-      public MozRTCSessionDescription(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCSessionDescription wrappedObject) : base(wrappedObject) {}
+      public MozRTCSessionDescription(com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCSessionDescription wrappedObject) : base(wrappedObject) {}
 
-      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCSessionDescription WObj
+      public new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCSessionDescription WObj
       {
-         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCSessionDescription)WrappedObject; }
+         get { return (com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCSessionDescription)WrappedObject; }
       }
 
       public MozRTCSessionDescription()
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.mozRTCSessionDescription()) {}
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.media.rtc.MozRTCSessionDescription()) {}
 
    }
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLParamElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLParamElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLParamElement()
       {
@@ -26,6 +26,22 @@ namespace NHtmlUnit.Javascript.Host.Html
       public HTMLParamElement()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLParamElement()) {}
 
+
+      public System.String Type
+      {
+         get
+         {
+            return WObj.getType();
+         }
+      }
+
+      public System.String ValueType
+      {
+         get
+         {
+            return WObj.getValueType();
+         }
+      }
    }
 
 

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,8 +26,8 @@ namespace NHtmlUnit.Javascript.Host.Events
       public Event(NHtmlUnit.Html.DomNode domNode, string type)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.Event((com.gargoylesoftware.htmlunit.html.DomNode)domNode.WrappedObject, type)) {}
 
-      public Event(NHtmlUnit.Javascript.SimpleScriptable scriptable, string type)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.Event((com.gargoylesoftware.htmlunit.javascript.SimpleScriptable)scriptable.WrappedObject, type)) {}
+      public Event(NHtmlUnit.Javascript.Host.Events.EventTarget target, string type)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.Event((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject, type)) {}
 
       public Event()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.Event()) {}
@@ -46,45 +46,6 @@ namespace NHtmlUnit.Javascript.Host.Events
 
       }
 
-      public System.Object ReturnValue
-      {
-         get
-         {
-            return WObj.getReturnValue();
-         }
-         set
-         {
-            WObj.setReturnValue(value);
-         }
-
-      }
-
-      public System.Object Target
-      {
-         get
-         {
-            return WObj.getTarget();
-         }
-         set
-         {
-            WObj.setTarget(value);
-         }
-
-      }
-
-      public System.Boolean CancelBubble
-      {
-         get
-         {
-            return WObj.getCancelBubble();
-         }
-         set
-         {
-            WObj.setCancelBubble(value);
-         }
-
-      }
-
       public System.Object SrcElement
       {
          get
@@ -94,6 +55,19 @@ namespace NHtmlUnit.Javascript.Host.Events
          set
          {
             WObj.setSrcElement(value);
+         }
+
+      }
+
+      public System.Object ReturnValue
+      {
+         get
+         {
+            return WObj.getReturnValue();
+         }
+         set
+         {
+            WObj.setReturnValue(value);
          }
 
       }
@@ -119,59 +93,11 @@ namespace NHtmlUnit.Javascript.Host.Events
          }
       }
 
-      public System.Object KeyCode
+      public System.Int32 KeyCode
       {
          get
          {
             return WObj.getKeyCode();
-         }
-      }
-
-      public System.Boolean ShiftKey
-      {
-         get
-         {
-            return WObj.getShiftKey();
-         }
-      }
-
-      public System.Boolean CtrlKey
-      {
-         get
-         {
-            return WObj.getCtrlKey();
-         }
-      }
-
-      public System.Boolean AltKey
-      {
-         get
-         {
-            return WObj.getAltKey();
-         }
-      }
-
-      public System.Boolean Bubbles
-      {
-         get
-         {
-            return WObj.getBubbles();
-         }
-      }
-
-      public System.Boolean Cancelable
-      {
-         get
-         {
-            return WObj.getCancelable();
-         }
-      }
-
-      public System.Boolean DefaultPrevented
-      {
-         get
-         {
-            return WObj.getDefaultPrevented();
          }
       }
 
@@ -182,16 +108,30 @@ namespace NHtmlUnit.Javascript.Host.Events
             return WObj.getPropertyName();
          }
       }
+
+      public System.Object Composed
+      {
+         get
+         {
+            return WObj.getComposed();
+         }
+      }
 // Generating method code for isAborted
       public virtual bool IsAborted(NHtmlUnit.ScriptResult result)
       {
          return WObj.isAborted((com.gargoylesoftware.htmlunit.ScriptResult)result.WrappedObject);
       }
 
-// Generating method code for applies
-      public virtual bool Applies(NHtmlUnit.Html.DomNode node)
+// Generating method code for isShiftKey
+      public virtual bool IsShiftKey()
       {
-         return WObj.applies((com.gargoylesoftware.htmlunit.html.DomNode)node.WrappedObject);
+         return WObj.isShiftKey();
+      }
+
+// Generating method code for isCtrlKey
+      public virtual bool IsCtrlKey()
+      {
+         return WObj.isCtrlKey();
       }
 
 // Generating method code for startFire
@@ -212,22 +152,28 @@ namespace NHtmlUnit.Javascript.Host.Events
          WObj.endFire();
       }
 
+// Generating method code for isBubbles
+      public virtual bool IsBubbles()
+      {
+         return WObj.isBubbles();
+      }
+
+// Generating method code for processLabelAfterBubbling
+      public virtual bool ProcessLabelAfterBubbling()
+      {
+         return WObj.processLabelAfterBubbling();
+      }
+
+// Generating method code for isAltKey
+      public virtual bool IsAltKey()
+      {
+         return WObj.isAltKey();
+      }
+
 // Generating method code for initEvent
       public virtual void InitEvent(string type, bool bubbles, bool cancelable)
       {
          WObj.initEvent(type, bubbles, cancelable);
-      }
-
-// Generating method code for eventCreated
-      public virtual void EventCreated()
-      {
-         WObj.eventCreated();
-      }
-
-// Generating method code for jsConstructor
-      public virtual void JsConstructor(string type, net.sourceforge.htmlunit.corejs.javascript.ScriptableObject details)
-      {
-         WObj.jsConstructor(type, details);
       }
 
 // Generating method code for stopPropagation
@@ -242,6 +188,48 @@ namespace NHtmlUnit.Javascript.Host.Events
          WObj.preventDefault();
       }
 
+// Generating method code for isCancelable
+      public virtual bool IsCancelable()
+      {
+         return WObj.isCancelable();
+      }
+
+// Generating method code for eventCreated
+      public virtual void EventCreated()
+      {
+         WObj.eventCreated();
+      }
+
+// Generating method code for jsConstructor
+      public virtual void JsConstructor(string type, net.sourceforge.htmlunit.corejs.javascript.ScriptableObject details)
+      {
+         WObj.jsConstructor(type, details);
+      }
+
+// Generating method code for isDefaultPrevented
+      public virtual bool IsDefaultPrevented()
+      {
+         return WObj.isDefaultPrevented();
+      }
+
+// Generating method code for isCancelBubble
+      public virtual bool IsCancelBubble()
+      {
+         return WObj.isCancelBubble();
+      }
+
+// Generating method code for stopImmediatePropagation
+      public virtual void StopImmediatePropagation()
+      {
+         WObj.stopImmediatePropagation();
+      }
+
+// Generating method code for isImmediatePropagationStopped
+      public virtual bool IsImmediatePropagationStopped()
+      {
+         return WObj.isImmediatePropagationStopped();
+      }
+
 // Generating method code for getEventPhase
       public virtual int GetEventPhase()
       {
@@ -252,6 +240,19 @@ namespace NHtmlUnit.Javascript.Host.Events
       public virtual void SetEventPhase(System.Int16 phase)
       {
          WObj.setEventPhase(phase);
+      }
+
+// Generating method code for getTarget
+      public virtual object GetTarget()
+      {
+         var arg = WObj.getTarget();
+         return ObjectWrapper.CreateWrapper<object>(arg);
+      }
+
+// Generating method code for setTarget
+      public virtual void SetTarget(NHtmlUnit.Javascript.Host.Events.EventTarget target)
+      {
+         WObj.setTarget((com.gargoylesoftware.htmlunit.javascript.host.@event.EventTarget)target.WrappedObject);
       }
 
    }

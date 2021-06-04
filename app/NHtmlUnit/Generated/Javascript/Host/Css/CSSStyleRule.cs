@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -49,14 +49,12 @@ namespace NHtmlUnit.Javascript.Host.Css
          }
       }
 
-
-      public System.Boolean ReadOnly
+// Generating method code for isReadOnly
+      public virtual bool IsReadOnly()
       {
-         get
-         {
-            return WObj.getReadOnly();
-         }
+         return WObj.isReadOnly();
       }
+
    }
 
 

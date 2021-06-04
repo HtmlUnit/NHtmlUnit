@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlNumberInput : NHtmlUnit.Html.HtmlInput, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory, NHtmlUnit.Html.Impl.ISelectableTextInput
+   public partial class HtmlNumberInput : NHtmlUnit.Html.HtmlInput, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory, NHtmlUnit.Html.Impl.ISelectableTextInput, NHtmlUnit.Html.ILabelableElement
    {
       static HtmlNumberInput()
       {
@@ -23,27 +23,6 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlNumberInput)WrappedObject; }
       }
 
-
-      public System.String SelectedText
-      {
-         get
-         {
-            return WObj.getSelectedText();
-         }
-      }
-
-      public System.String Text
-      {
-         get
-         {
-            return WObj.getText();
-         }
-         set
-         {
-            WObj.setText(value);
-         }
-
-      }
 
       public System.Int32 SelectionStart
       {
@@ -67,6 +46,27 @@ namespace NHtmlUnit.Html
          set
          {
             WObj.setSelectionEnd(value);
+         }
+
+      }
+
+      public System.String SelectedText
+      {
+         get
+         {
+            return WObj.getSelectedText();
+         }
+      }
+
+      public System.String Text
+      {
+         get
+         {
+            return WObj.getText();
+         }
+         set
+         {
+            WObj.setText(value);
          }
 
       }

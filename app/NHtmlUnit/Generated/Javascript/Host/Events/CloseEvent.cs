@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,44 @@ namespace NHtmlUnit.Javascript.Host.Events
 
       public CloseEvent()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.@event.CloseEvent()) {}
+
+
+      public System.Int32 Code
+      {
+         get
+         {
+            return WObj.getCode();
+         }
+         set
+         {
+            WObj.setCode(value);
+         }
+
+      }
+
+      public System.String Reason
+      {
+         get
+         {
+            return WObj.getReason();
+         }
+         set
+         {
+            WObj.setReason(value);
+         }
+
+      }
+// Generating method code for initCloseEvent
+      public virtual void InitCloseEvent(string type, bool bubbles, bool cancelable, bool wasClean, int reasonCode, string reason)
+      {
+         WObj.initCloseEvent(type, bubbles, cancelable, wasClean, reasonCode, reason);
+      }
+
+// Generating method code for isWasClean
+      public virtual bool IsWasClean()
+      {
+         return WObj.isWasClean();
+      }
 
    }
 

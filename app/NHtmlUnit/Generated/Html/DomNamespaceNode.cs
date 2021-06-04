@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getQualifiedName();
+         }
+      }
+
+      public System.String LowercaseName
+      {
+         get
+         {
+            return WObj.getLowercaseName();
          }
       }
    }

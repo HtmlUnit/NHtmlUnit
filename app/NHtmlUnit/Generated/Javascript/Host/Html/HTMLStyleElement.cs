@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLStyleElement : NHtmlUnit.Javascript.Host.Html.HTMLElement, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLStyleElement : NHtmlUnit.Javascript.Host.Html.HTMLElement
    {
       static HTMLStyleElement()
       {
@@ -33,16 +33,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
                WObj.getSheet());
-         }
-      }
-
-
-      public NHtmlUnit.Javascript.Host.Css.CSSStyleSheet StyleSheet
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleSheet>(
-               WObj.getStyleSheet());
          }
       }
 

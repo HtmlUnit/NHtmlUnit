@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -61,9 +61,9 @@ namespace NHtmlUnit
       }
 
 // Generating method code for cache
-      public virtual void AddToCache(string css, NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet styleSheet)
+      public virtual void AddToCache(string css, com.gargoylesoftware.css.dom.CSSStyleSheetImpl styleSheet)
       {
-         WObj.cache(css, (org.w3c.dom.css.CSSStyleSheet)styleSheet.WrappedObject);
+         WObj.cache(css, styleSheet);
       }
 
 // Generating method code for getCachedObject
@@ -74,16 +74,21 @@ namespace NHtmlUnit
       }
 
 // Generating method code for getCachedStyleSheet
-      public virtual NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet GetCachedStyleSheet(string css)
+      public virtual com.gargoylesoftware.css.dom.CSSStyleSheetImpl GetCachedStyleSheet(string css)
       {
-         var arg = WObj.getCachedStyleSheet(css);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.Css.ICSSStyleSheet>(arg);
+         return WObj.getCachedStyleSheet(css);
       }
 
 // Generating method code for clear
       public virtual void Clear()
       {
          WObj.clear();
+      }
+
+// Generating method code for clearOutdated
+      public virtual void ClearOutdated()
+      {
+         WObj.clearOutdated();
       }
 
    }

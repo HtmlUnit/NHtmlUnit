@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlImage : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlImage : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlImage()
       {
@@ -151,14 +151,6 @@ namespace NHtmlUnit.Html
             return WObj.getWidth();
          }
       }
-
-      public System.Boolean Complete
-      {
-         get
-         {
-            return WObj.getComplete();
-         }
-      }
 // Generating method code for wasCreatedByJavascript
       public virtual bool WasCreatedByJavascript()
       {
@@ -189,6 +181,12 @@ namespace NHtmlUnit.Html
       public virtual void SaveAs(java.io.File file)
       {
          WObj.saveAs(file);
+      }
+
+// Generating method code for isComplete
+      public virtual bool IsComplete()
+      {
+         return WObj.isComplete();
       }
 
 // Generating method code for markAsCreatedByJavascript

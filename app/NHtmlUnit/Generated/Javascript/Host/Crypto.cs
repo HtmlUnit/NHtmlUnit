@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -29,10 +29,21 @@ namespace NHtmlUnit.Javascript.Host.Crypto
       public Crypto(NHtmlUnit.Javascript.Host.Window window)
          : this(new com.gargoylesoftware.htmlunit.javascript.host.crypto.Crypto((com.gargoylesoftware.htmlunit.javascript.host.Window)window.WrappedObject)) {}
 
-// Generating method code for getRandomValues
-      public virtual void GetRandomValues(NHtmlUnit.Javascript.Host.Arrays.ArrayBufferViewBase array)
+
+      public NHtmlUnit.Javascript.Host.Crypto.SubtleCrypto Subtle
       {
-         WObj.getRandomValues((com.gargoylesoftware.htmlunit.javascript.host.arrays.ArrayBufferViewBase)array.WrappedObject);
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Crypto.SubtleCrypto>(
+               WObj.getSubtle());
+         }
+      }
+
+// Generating method code for getRandomValues
+      public virtual IList<System.Object> GetRandomValues(net.sourceforge.htmlunit.corejs.javascript.typedarrays.NativeTypedArrayView array)
+      {
+
+return new ShallowListWrapper<System.Object>(WObj.getRandomValues(array));
       }
 
    }

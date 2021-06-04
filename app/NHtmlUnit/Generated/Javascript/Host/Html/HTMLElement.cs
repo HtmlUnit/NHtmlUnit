@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Javascript.Host.Html
 {
-   public partial class HTMLElement : NHtmlUnit.Javascript.Host.Element, NHtmlUnit.Javascript.IScriptableWithFallbackGetter
+   public partial class HTMLElement : NHtmlUnit.Javascript.Host.Element
    {
       static HTMLElement()
       {
@@ -27,12 +27,30 @@ namespace NHtmlUnit.Javascript.Host.Html
          : this(new com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement()) {}
 
 
-      public System.Boolean IsContentEditable
+      public System.String Name
       {
          get
          {
-            return WObj.getIsContentEditable();
+            return WObj.getName();
          }
+         set
+         {
+            WObj.setName(value);
+         }
+
+      }
+
+      public System.Object Value
+      {
+         get
+         {
+            return WObj.getValue();
+         }
+         set
+         {
+            WObj.setValue(value);
+         }
+
       }
 
       public System.Int32 Width
@@ -51,11 +69,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.String DefaultStyleDisplay
+      public System.Int32 OffsetHeight
       {
          get
          {
-            return WObj.getDefaultStyleDisplay();
+            return WObj.getOffsetHeight();
          }
       }
 
@@ -75,16 +93,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public NHtmlUnit.Javascript.Host.Html.HTMLElement ParentHTMLElement
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
-               WObj.getParentHTMLElement());
-         }
-      }
-
-
       public System.Int32 OffsetLeft
       {
          get
@@ -98,40 +106,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          get
          {
             return WObj.getOffsetTop();
-         }
-      }
-
-      public System.Int32 ScrollLeft
-      {
-         get
-         {
-            return WObj.getScrollLeft();
-         }
-         set
-         {
-            WObj.setScrollLeft(value);
-         }
-
-      }
-
-      public System.Int32 ScrollTop
-      {
-         get
-         {
-            return WObj.getScrollTop();
-         }
-         set
-         {
-            WObj.setScrollTop(value);
-         }
-
-      }
-
-      public System.Int32 OffsetHeight
-      {
-         get
-         {
-            return WObj.getOffsetHeight();
          }
       }
 
@@ -156,28 +130,15 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public NHtmlUnit.Javascript.Host.Html.HTMLCollection All
+      public NHtmlUnit.Javascript.Host.Html.HTMLFormElement Form
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(
-               WObj.getAll());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLFormElement>(
+               WObj.getForm());
          }
       }
 
-
-      public System.String Id
-      {
-         get
-         {
-            return WObj.getId();
-         }
-         set
-         {
-            WObj.setId(value);
-         }
-
-      }
 
       public System.String Title
       {
@@ -188,58 +149,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          set
          {
             WObj.setTitle(value);
-         }
-
-      }
-
-      public System.Boolean Disabled
-      {
-         get
-         {
-            return WObj.getDisabled();
-         }
-         set
-         {
-            WObj.setDisabled(value);
-         }
-
-      }
-
-      public NHtmlUnit.Javascript.Host.Html.DocumentProxy Document
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.DocumentProxy>(
-               WObj.getDocument());
-         }
-      }
-
-
-      public System.Int32 ClientHeight
-      {
-         get
-         {
-            return WObj.getClientHeight();
-         }
-      }
-
-      public System.Int32 ClientWidth
-      {
-         get
-         {
-            return WObj.getClientWidth();
-         }
-      }
-
-      public System.String InnerText
-      {
-         get
-         {
-            return WObj.getInnerText();
-         }
-         set
-         {
-            WObj.setInnerText(value);
          }
 
       }
@@ -276,35 +185,11 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.String ConnectionType
-      {
-         get
-         {
-            return WObj.getConnectionType();
-         }
-      }
-
-      public System.Boolean CookieEnabled
-      {
-         get
-         {
-            return WObj.getCookieEnabled();
-         }
-      }
-
       public System.String CpuClass
       {
          get
          {
             return WObj.getCpuClass();
-         }
-      }
-
-      public System.Boolean JavaEnabled
-      {
-         get
-         {
-            return WObj.getJavaEnabled();
          }
       }
 
@@ -332,50 +217,15 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
       }
 
-      public System.Int32 ScrollHeight
+      public NHtmlUnit.Javascript.Host.Html.HTMLElement ParentHTMLElement
       {
          get
          {
-            return WObj.getScrollHeight();
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(
+               WObj.getParentHTMLElement());
          }
       }
 
-      public System.Int32 ScrollWidth
-      {
-         get
-         {
-            return WObj.getScrollWidth();
-         }
-      }
-
-      public System.String ScopeName
-      {
-         get
-         {
-            return WObj.getScopeName();
-         }
-      }
-
-      public System.String TagUrn
-      {
-         get
-         {
-            return WObj.getTagUrn();
-         }
-         set
-         {
-            WObj.setTagUrn(value);
-         }
-
-      }
-
-      public System.Object ClientRects
-      {
-         get
-         {
-            return WObj.getClientRects();
-         }
-      }
 
       public System.String UniqueID
       {
@@ -383,27 +233,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          {
             return WObj.getUniqueID();
          }
-      }
-
-      public System.Object Filters
-      {
-         get
-         {
-            return WObj.getFilters();
-         }
-      }
-
-      public System.Boolean Spellcheck
-      {
-         get
-         {
-            return WObj.getSpellcheck();
-         }
-         set
-         {
-            WObj.setSpellcheck(value);
-         }
-
       }
 
       public System.String Lang
@@ -471,22 +300,6 @@ namespace NHtmlUnit.Javascript.Host.Html
 
       }
 
-      public System.Int32 ClientLeft
-      {
-         get
-         {
-            return WObj.getClientLeft();
-         }
-      }
-
-      public System.Int32 ClientTop
-      {
-         get
-         {
-            return WObj.getClientTop();
-         }
-      }
-
       public System.Object OffsetParent_js
       {
          get
@@ -517,10 +330,251 @@ namespace NHtmlUnit.Javascript.Host.Html
          }
 
       }
-// Generating method code for setActive
-      public virtual void SetActive()
+
+      public NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration RuntimeStyle
       {
-         WObj.setActive();
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(
+               WObj.getRuntimeStyle());
+         }
+      }
+
+
+      public NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration CurrentStyle
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.ComputedCSSStyleDeclaration>(
+               WObj.getCurrentStyle());
+         }
+      }
+
+
+      public System.Object Onclick
+      {
+         get
+         {
+            return WObj.getOnclick();
+         }
+         set
+         {
+            WObj.setOnclick(value);
+         }
+
+      }
+
+      public System.Object Ondblclick
+      {
+         get
+         {
+            return WObj.getOndblclick();
+         }
+         set
+         {
+            WObj.setOndblclick(value);
+         }
+
+      }
+
+      public System.Object Onblur
+      {
+         get
+         {
+            return WObj.getOnblur();
+         }
+         set
+         {
+            WObj.setOnblur(value);
+         }
+
+      }
+
+      public System.Object Onfocus
+      {
+         get
+         {
+            return WObj.getOnfocus();
+         }
+         set
+         {
+            WObj.setOnfocus(value);
+         }
+
+      }
+
+      public System.Object Onfocusin
+      {
+         get
+         {
+            return WObj.getOnfocusin();
+         }
+         set
+         {
+            WObj.setOnfocusin(value);
+         }
+
+      }
+
+      public System.Object Onfocusout
+      {
+         get
+         {
+            return WObj.getOnfocusout();
+         }
+         set
+         {
+            WObj.setOnfocusout(value);
+         }
+
+      }
+
+      public System.Object Onkeydown
+      {
+         get
+         {
+            return WObj.getOnkeydown();
+         }
+         set
+         {
+            WObj.setOnkeydown(value);
+         }
+
+      }
+
+      public System.Object Onkeypress
+      {
+         get
+         {
+            return WObj.getOnkeypress();
+         }
+         set
+         {
+            WObj.setOnkeypress(value);
+         }
+
+      }
+
+      public System.Object Onkeyup
+      {
+         get
+         {
+            return WObj.getOnkeyup();
+         }
+         set
+         {
+            WObj.setOnkeyup(value);
+         }
+
+      }
+
+      public System.Object Onmousedown
+      {
+         get
+         {
+            return WObj.getOnmousedown();
+         }
+         set
+         {
+            WObj.setOnmousedown(value);
+         }
+
+      }
+
+      public System.Object Onmousemove
+      {
+         get
+         {
+            return WObj.getOnmousemove();
+         }
+         set
+         {
+            WObj.setOnmousemove(value);
+         }
+
+      }
+
+      public System.Object Onmouseout
+      {
+         get
+         {
+            return WObj.getOnmouseout();
+         }
+         set
+         {
+            WObj.setOnmouseout(value);
+         }
+
+      }
+
+      public System.Object Onmouseover
+      {
+         get
+         {
+            return WObj.getOnmouseover();
+         }
+         set
+         {
+            WObj.setOnmouseover(value);
+         }
+
+      }
+
+      public System.Object Onmouseup
+      {
+         get
+         {
+            return WObj.getOnmouseup();
+         }
+         set
+         {
+            WObj.setOnmouseup(value);
+         }
+
+      }
+
+      public System.Object Oncontextmenu
+      {
+         get
+         {
+            return WObj.getOncontextmenu();
+         }
+         set
+         {
+            WObj.setOncontextmenu(value);
+         }
+
+      }
+
+      public System.Object Onerror
+      {
+         get
+         {
+            return WObj.getOnerror();
+         }
+         set
+         {
+            WObj.setOnerror(value);
+         }
+
+      }
+
+      public System.Object Onload
+      {
+         get
+         {
+            return WObj.getOnload();
+         }
+         set
+         {
+            WObj.setOnload(value);
+         }
+
+      }
+// Generating method code for isIsContentEditable
+      public virtual bool IsIsContentEditable()
+      {
+         return WObj.isIsContentEditable();
       }
 
 // Generating method code for addBehavior
@@ -529,17 +583,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          return WObj.addBehavior(behavior);
       }
 
-// Generating method code for removeBehavior
-      public virtual void RemoveBehavior(int id)
+// Generating method code for isDisabled
+      public virtual bool IsDisabled()
       {
-         WObj.removeBehavior(id);
-      }
-
-// Generating method code for getWithFallback
-      public virtual object GetWithFallback(string name)
-      {
-         var arg = WObj.getWithFallback(name);
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         return WObj.isDisabled();
       }
 
 // Generating method code for clearAttributes
@@ -554,19 +601,6 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.mergeAttributes((com.gargoylesoftware.htmlunit.javascript.host.html.HTMLElement)source.WrappedObject, preserveIdentity);
       }
 
-// Generating method code for getAttributeNodeNS
-      public virtual object GetAttributeNodeNS(string namespaceURI, string localName)
-      {
-         var arg = WObj.getAttributeNodeNS(namespaceURI, localName);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for removeAttributeNode
-      public virtual void RemoveAttributeNode(NHtmlUnit.Javascript.Host.Dom.Attr attribute)
-      {
-         WObj.removeAttributeNode((com.gargoylesoftware.htmlunit.javascript.host.dom.Attr)attribute.WrappedObject);
-      }
-
 // Generating method code for removeNode
       public virtual NHtmlUnit.Javascript.Host.Html.HTMLElement RemoveNode(bool removeChildren)
       {
@@ -574,30 +608,22 @@ namespace NHtmlUnit.Javascript.Host.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLElement>(arg);
       }
 
-// Generating method code for getElementsByClassName
-      public virtual NHtmlUnit.Javascript.Host.Html.HTMLCollection GetElementsByClassName(string className)
+// Generating method code for removeBehavior
+      public virtual void RemoveBehavior(int id)
       {
-         var arg = WObj.getElementsByClassName(className);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Html.HTMLCollection>(arg);
+         WObj.removeBehavior(id);
       }
 
-// Generating method code for insertAdjacentHTML
-      public virtual void InsertAdjacentHTML(string position, string text)
+// Generating method code for isCookieEnabled
+      public virtual bool IsCookieEnabled()
       {
-         WObj.insertAdjacentHTML(position, text);
+         return WObj.isCookieEnabled();
       }
 
-// Generating method code for insertAdjacentElement
-      public virtual object InsertAdjacentElement(string whereArg, object insertedElement)
+// Generating method code for isJavaEnabled
+      public virtual bool IsJavaEnabled()
       {
-         var arg = WObj.insertAdjacentElement(whereArg, insertedElement);
-         return ObjectWrapper.CreateWrapper<object>(arg);
-      }
-
-// Generating method code for insertAdjacentText
-      public virtual void InsertAdjacentText(string whereArg, string text)
-      {
-         WObj.insertAdjacentText(whereArg, text);
+         return WObj.isJavaEnabled();
       }
 
 // Generating method code for addComponentRequest
@@ -654,29 +680,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.navigateHomePage();
       }
 
-// Generating method code for scrollIntoView
-      public virtual void ScrollIntoView()
+// Generating method code for blur
+      public virtual void Blur()
       {
-         WObj.scrollIntoView();
-      }
-
-// Generating method code for setExpression
-      public virtual void SetExpression(string propertyName, string expression, string language)
-      {
-         WObj.setExpression(propertyName, expression, language);
-      }
-
-// Generating method code for removeExpression
-      public virtual bool RemoveExpression(string propertyName)
-      {
-         return WObj.removeExpression(propertyName);
-      }
-
-// Generating method code for createTextRange
-      public virtual object CreateTextRange()
-      {
-         var arg = WObj.createTextRange();
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         WObj.blur();
       }
 
 // Generating method code for focus
@@ -685,18 +692,10 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.focus();
       }
 
-// Generating method code for querySelectorAll
-      public virtual NHtmlUnit.Javascript.Host.Dom.StaticNodeList QuerySelectorAll(string selectors)
+// Generating method code for setActive
+      public virtual void SetActive()
       {
-         var arg = WObj.querySelectorAll(selectors);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.StaticNodeList>(arg);
-      }
-
-// Generating method code for querySelector
-      public virtual NHtmlUnit.Javascript.Host.Dom.Node QuerySelector(string selectors)
-      {
-         var arg = WObj.querySelector(selectors);
-         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Dom.Node>(arg);
+         WObj.setActive();
       }
 
 // Generating method code for click
@@ -705,53 +704,377 @@ namespace NHtmlUnit.Javascript.Host.Html
          WObj.click();
       }
 
-// Generating method code for doScroll
-      public virtual void DoScroll(string scrollAction)
+// Generating method code for isSpellcheck
+      public virtual bool IsSpellcheck()
       {
-         WObj.doScroll(scrollAction);
+         return WObj.isSpellcheck();
       }
 
-// Generating method code for releaseCapture
-      public virtual bool ReleaseCapture()
+// Generating method code for isHidden
+      public virtual bool IsHidden()
       {
-         return WObj.releaseCapture();
+         return WObj.isHidden();
       }
 
-// Generating method code for getOuterHTML
-      public virtual string GetOuterHTML()
+// Generating method code for getOnstalled
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnstalled()
       {
-         return WObj.getOuterHTML();
+         return WObj.getOnstalled();
       }
 
-// Generating method code for setOuterHTML
-      public virtual void SetOuterHTML(object value)
+// Generating method code for setOnstalled
+      public virtual void SetOnstalled(object onstalled)
       {
-         WObj.setOuterHTML(value);
+         WObj.setOnstalled(onstalled);
       }
 
-// Generating method code for getClassName_js
-      public virtual object GetClassName_js()
+// Generating method code for getOnsuspend
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnsuspend()
       {
-         var arg = WObj.getClassName_js();
-         return ObjectWrapper.CreateWrapper<object>(arg);
+         return WObj.getOnsuspend();
       }
 
-// Generating method code for setClassName_js
-      public virtual void SetClassName_js(string className)
+// Generating method code for setOnsuspend
+      public virtual void SetOnsuspend(object onsuspend)
       {
-         WObj.setClassName_js(className);
+         WObj.setOnsuspend(onsuspend);
       }
 
-// Generating method code for getInnerHTML
-      public virtual string GetInnerHTML()
+// Generating method code for getOntimeupdate
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntimeupdate()
       {
-         return WObj.getInnerHTML();
+         return WObj.getOntimeupdate();
       }
 
-// Generating method code for setInnerHTML
-      public virtual void SetInnerHTML(object value)
+// Generating method code for setOntimeupdate
+      public virtual void SetOntimeupdate(object ontimeupdate)
       {
-         WObj.setInnerHTML(value);
+         WObj.setOntimeupdate(ontimeupdate);
+      }
+
+// Generating method code for getOntoggle
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntoggle()
+      {
+         return WObj.getOntoggle();
+      }
+
+// Generating method code for setOntoggle
+      public virtual void SetOntoggle(object ontoggle)
+      {
+         WObj.setOntoggle(ontoggle);
+      }
+
+// Generating method code for getOnvolumechange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnvolumechange()
+      {
+         return WObj.getOnvolumechange();
+      }
+
+// Generating method code for setOnvolumechange
+      public virtual void SetOnvolumechange(object onvolumechange)
+      {
+         WObj.setOnvolumechange(onvolumechange);
+      }
+
+// Generating method code for getOnwaiting
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnwaiting()
+      {
+         return WObj.getOnwaiting();
+      }
+
+// Generating method code for setOnwaiting
+      public virtual void SetOnwaiting(object onwaiting)
+      {
+         WObj.setOnwaiting(onwaiting);
+      }
+
+// Generating method code for getOncopy
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncopy()
+      {
+         return WObj.getOncopy();
+      }
+
+// Generating method code for setOncopy
+      public virtual void SetOncopy(object oncopy)
+      {
+         WObj.setOncopy(oncopy);
+      }
+
+// Generating method code for getOncut
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncut()
+      {
+         return WObj.getOncut();
+      }
+
+// Generating method code for setOncut
+      public virtual void SetOncut(object oncut)
+      {
+         WObj.setOncut(oncut);
+      }
+
+// Generating method code for getOnpaste
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnpaste()
+      {
+         return WObj.getOnpaste();
+      }
+
+// Generating method code for setOnpaste
+      public virtual void SetOnpaste(object onpaste)
+      {
+         WObj.setOnpaste(onpaste);
+      }
+
+// Generating method code for getOnmozfullscreenchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmozfullscreenchange()
+      {
+         return WObj.getOnmozfullscreenchange();
+      }
+
+// Generating method code for setOnmozfullscreenchange
+      public virtual void SetOnmozfullscreenchange(object onmozfullscreenchange)
+      {
+         WObj.setOnmozfullscreenchange(onmozfullscreenchange);
+      }
+
+// Generating method code for getOnmozfullscreenerror
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmozfullscreenerror()
+      {
+         return WObj.getOnmozfullscreenerror();
+      }
+
+// Generating method code for setOnmozfullscreenerror
+      public virtual void SetOnmozfullscreenerror(object onmozfullscreenerror)
+      {
+         WObj.setOnmozfullscreenerror(onmozfullscreenerror);
+      }
+
+// Generating method code for getOnactivate
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnactivate()
+      {
+         return WObj.getOnactivate();
+      }
+
+// Generating method code for setOnactivate
+      public virtual void SetOnactivate(object onactivate)
+      {
+         WObj.setOnactivate(onactivate);
+      }
+
+// Generating method code for getOnbeforeactivate
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnbeforeactivate()
+      {
+         return WObj.getOnbeforeactivate();
+      }
+
+// Generating method code for setOnbeforeactivate
+      public virtual void SetOnbeforeactivate(object onbeforeactivate)
+      {
+         WObj.setOnbeforeactivate(onbeforeactivate);
+      }
+
+// Generating method code for getOnbeforedeactivate
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnbeforedeactivate()
+      {
+         return WObj.getOnbeforedeactivate();
+      }
+
+// Generating method code for setOnbeforedeactivate
+      public virtual void SetOnbeforedeactivate(object onbeforedeactivate)
+      {
+         WObj.setOnbeforedeactivate(onbeforedeactivate);
+      }
+
+// Generating method code for getOndeactivate
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndeactivate()
+      {
+         return WObj.getOndeactivate();
+      }
+
+// Generating method code for setOndeactivate
+      public virtual void SetOndeactivate(object ondeactivate)
+      {
+         WObj.setOndeactivate(ondeactivate);
+      }
+
+// Generating method code for getOnhelp
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnhelp()
+      {
+         return WObj.getOnhelp();
+      }
+
+// Generating method code for setOnhelp
+      public virtual void SetOnhelp(object onhelp)
+      {
+         WObj.setOnhelp(onhelp);
+      }
+
+// Generating method code for getOnmscontentzoom
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmscontentzoom()
+      {
+         return WObj.getOnmscontentzoom();
+      }
+
+// Generating method code for setOnmscontentzoom
+      public virtual void SetOnmscontentzoom(object onmscontentzoom)
+      {
+         WObj.setOnmscontentzoom(onmscontentzoom);
+      }
+
+// Generating method code for getOnmsmanipulationstatechanged
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmsmanipulationstatechanged()
+      {
+         return WObj.getOnmsmanipulationstatechanged();
+      }
+
+// Generating method code for setOnmsmanipulationstatechanged
+      public virtual void SetOnmsmanipulationstatechanged(object onmsmanipulationstatechanged)
+      {
+         WObj.setOnmsmanipulationstatechanged(onmsmanipulationstatechanged);
+      }
+
+// Generating method code for getOnselectstart
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnselectstart()
+      {
+         return WObj.getOnselectstart();
+      }
+
+// Generating method code for setOnselectstart
+      public virtual void SetOnselectstart(object onselectstart)
+      {
+         WObj.setOnselectstart(onselectstart);
+      }
+
+// Generating method code for getOnanimationcancel
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnanimationcancel()
+      {
+         return WObj.getOnanimationcancel();
+      }
+
+// Generating method code for setOnanimationcancel
+      public virtual void SetOnanimationcancel(object onanimationcancel)
+      {
+         WObj.setOnanimationcancel(onanimationcancel);
+      }
+
+// Generating method code for getOnanimationend
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnanimationend()
+      {
+         return WObj.getOnanimationend();
+      }
+
+// Generating method code for setOnanimationend
+      public virtual void SetOnanimationend(object onanimationend)
+      {
+         WObj.setOnanimationend(onanimationend);
+      }
+
+// Generating method code for getOnanimationiteration
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnanimationiteration()
+      {
+         return WObj.getOnanimationiteration();
+      }
+
+// Generating method code for setOnanimationiteration
+      public virtual void SetOnanimationiteration(object onanimationiteration)
+      {
+         WObj.setOnanimationiteration(onanimationiteration);
+      }
+
+// Generating method code for getOnanimationstart
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnanimationstart()
+      {
+         return WObj.getOnanimationstart();
+      }
+
+// Generating method code for setOnanimationstart
+      public virtual void SetOnanimationstart(object onanimationstart)
+      {
+         WObj.setOnanimationstart(onanimationstart);
+      }
+
+// Generating method code for getOnselectionchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnselectionchange()
+      {
+         return WObj.getOnselectionchange();
+      }
+
+// Generating method code for setOnselectionchange
+      public virtual void SetOnselectionchange(object onselectionchange)
+      {
+         WObj.setOnselectionchange(onselectionchange);
+      }
+
+// Generating method code for getOntransitioncancel
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntransitioncancel()
+      {
+         return WObj.getOntransitioncancel();
+      }
+
+// Generating method code for setOntransitioncancel
+      public virtual void SetOntransitioncancel(object ontransitioncancel)
+      {
+         WObj.setOntransitioncancel(ontransitioncancel);
+      }
+
+// Generating method code for getOntransitionend
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntransitionend()
+      {
+         return WObj.getOntransitionend();
+      }
+
+// Generating method code for setOntransitionend
+      public virtual void SetOntransitionend(object ontransitionend)
+      {
+         WObj.setOntransitionend(ontransitionend);
+      }
+
+// Generating method code for getOntransitionrun
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntransitionrun()
+      {
+         return WObj.getOntransitionrun();
+      }
+
+// Generating method code for setOntransitionrun
+      public virtual void SetOntransitionrun(object ontransitionrun)
+      {
+         WObj.setOntransitionrun(ontransitionrun);
+      }
+
+// Generating method code for getOntransitionstart
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOntransitionstart()
+      {
+         return WObj.getOntransitionstart();
+      }
+
+// Generating method code for setOntransitionstart
+      public virtual void SetOntransitionstart(object ontransitionstart)
+      {
+         WObj.setOntransitionstart(ontransitionstart);
+      }
+
+// Generating method code for getStyle
+      public virtual NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration GetStyle()
+      {
+         var arg = WObj.getStyle();
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Javascript.Host.Css.CSSStyleDeclaration>(arg);
+      }
+
+// Generating method code for setStyle
+      public virtual void SetStyle(string style)
+      {
+         WObj.setStyle(style);
+      }
+
+// Generating method code for getInnerText
+      public virtual string GetInnerText()
+      {
+         return WObj.getInnerText();
+      }
+
+// Generating method code for setInnerText
+      public virtual void SetInnerText(object value)
+      {
+         WObj.setInnerText(value);
       }
 
 // Generating method code for getOnchange
@@ -764,6 +1087,450 @@ namespace NHtmlUnit.Javascript.Host.Html
       public virtual void SetOnchange(object onchange)
       {
          WObj.setOnchange(onchange);
+      }
+
+// Generating method code for getOnresize
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnresize()
+      {
+         return WObj.getOnresize();
+      }
+
+// Generating method code for setOnresize
+      public virtual void SetOnresize(object handler)
+      {
+         WObj.setOnresize(handler);
+      }
+
+// Generating method code for getOninput
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOninput()
+      {
+         return WObj.getOninput();
+      }
+
+// Generating method code for setOninput
+      public virtual void SetOninput(object oninput)
+      {
+         WObj.setOninput(oninput);
+      }
+
+// Generating method code for getOnabort
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnabort()
+      {
+         return WObj.getOnabort();
+      }
+
+// Generating method code for setOnabort
+      public virtual void SetOnabort(object onabort)
+      {
+         WObj.setOnabort(onabort);
+      }
+
+// Generating method code for getOnauxclick
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnauxclick()
+      {
+         return WObj.getOnauxclick();
+      }
+
+// Generating method code for setOnauxclick
+      public virtual void SetOnauxclick(object onauxclick)
+      {
+         WObj.setOnauxclick(onauxclick);
+      }
+
+// Generating method code for getOncancel
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncancel()
+      {
+         return WObj.getOncancel();
+      }
+
+// Generating method code for setOncancel
+      public virtual void SetOncancel(object oncancel)
+      {
+         WObj.setOncancel(oncancel);
+      }
+
+// Generating method code for getOncanplay
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncanplay()
+      {
+         return WObj.getOncanplay();
+      }
+
+// Generating method code for setOncanplay
+      public virtual void SetOncanplay(object oncanplay)
+      {
+         WObj.setOncanplay(oncanplay);
+      }
+
+// Generating method code for getOncanplaythrough
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncanplaythrough()
+      {
+         return WObj.getOncanplaythrough();
+      }
+
+// Generating method code for setOncanplaythrough
+      public virtual void SetOncanplaythrough(object oncanplaythrough)
+      {
+         WObj.setOncanplaythrough(oncanplaythrough);
+      }
+
+// Generating method code for getOnclose
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnclose()
+      {
+         return WObj.getOnclose();
+      }
+
+// Generating method code for setOnclose
+      public virtual void SetOnclose(object onclose)
+      {
+         WObj.setOnclose(onclose);
+      }
+
+// Generating method code for getOncuechange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOncuechange()
+      {
+         return WObj.getOncuechange();
+      }
+
+// Generating method code for setOncuechange
+      public virtual void SetOncuechange(object oncuechange)
+      {
+         WObj.setOncuechange(oncuechange);
+      }
+
+// Generating method code for getOndrag
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndrag()
+      {
+         return WObj.getOndrag();
+      }
+
+// Generating method code for setOndrag
+      public virtual void SetOndrag(object ondrag)
+      {
+         WObj.setOndrag(ondrag);
+      }
+
+// Generating method code for getOndragend
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndragend()
+      {
+         return WObj.getOndragend();
+      }
+
+// Generating method code for setOndragend
+      public virtual void SetOndragend(object ondragend)
+      {
+         WObj.setOndragend(ondragend);
+      }
+
+// Generating method code for getOndragenter
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndragenter()
+      {
+         return WObj.getOndragenter();
+      }
+
+// Generating method code for setOndragenter
+      public virtual void SetOndragenter(object ondragenter)
+      {
+         WObj.setOndragenter(ondragenter);
+      }
+
+// Generating method code for getOndragleave
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndragleave()
+      {
+         return WObj.getOndragleave();
+      }
+
+// Generating method code for setOndragleave
+      public virtual void SetOndragleave(object ondragleave)
+      {
+         WObj.setOndragleave(ondragleave);
+      }
+
+// Generating method code for getOndragover
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndragover()
+      {
+         return WObj.getOndragover();
+      }
+
+// Generating method code for setOndragover
+      public virtual void SetOndragover(object ondragover)
+      {
+         WObj.setOndragover(ondragover);
+      }
+
+// Generating method code for getOndragstart
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndragstart()
+      {
+         return WObj.getOndragstart();
+      }
+
+// Generating method code for setOndragstart
+      public virtual void SetOndragstart(object ondragstart)
+      {
+         WObj.setOndragstart(ondragstart);
+      }
+
+// Generating method code for getOndrop
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndrop()
+      {
+         return WObj.getOndrop();
+      }
+
+// Generating method code for setOndrop
+      public virtual void SetOndrop(object ondrop)
+      {
+         WObj.setOndrop(ondrop);
+      }
+
+// Generating method code for getOndurationchange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOndurationchange()
+      {
+         return WObj.getOndurationchange();
+      }
+
+// Generating method code for setOndurationchange
+      public virtual void SetOndurationchange(object ondurationchange)
+      {
+         WObj.setOndurationchange(ondurationchange);
+      }
+
+// Generating method code for getOnemptied
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnemptied()
+      {
+         return WObj.getOnemptied();
+      }
+
+// Generating method code for setOnemptied
+      public virtual void SetOnemptied(object onemptied)
+      {
+         WObj.setOnemptied(onemptied);
+      }
+
+// Generating method code for getOnended
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnended()
+      {
+         return WObj.getOnended();
+      }
+
+// Generating method code for setOnended
+      public virtual void SetOnended(object onended)
+      {
+         WObj.setOnended(onended);
+      }
+
+// Generating method code for getOninvalid
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOninvalid()
+      {
+         return WObj.getOninvalid();
+      }
+
+// Generating method code for setOninvalid
+      public virtual void SetOninvalid(object oninvalid)
+      {
+         WObj.setOninvalid(oninvalid);
+      }
+
+// Generating method code for getOnloadeddata
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnloadeddata()
+      {
+         return WObj.getOnloadeddata();
+      }
+
+// Generating method code for setOnloadeddata
+      public virtual void SetOnloadeddata(object onloadeddata)
+      {
+         WObj.setOnloadeddata(onloadeddata);
+      }
+
+// Generating method code for getOnloadedmetadata
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnloadedmetadata()
+      {
+         return WObj.getOnloadedmetadata();
+      }
+
+// Generating method code for setOnloadedmetadata
+      public virtual void SetOnloadedmetadata(object onloadedmetadata)
+      {
+         WObj.setOnloadedmetadata(onloadedmetadata);
+      }
+
+// Generating method code for getOnloadstart
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnloadstart()
+      {
+         return WObj.getOnloadstart();
+      }
+
+// Generating method code for setOnloadstart
+      public virtual void SetOnloadstart(object onloadstart)
+      {
+         WObj.setOnloadstart(onloadstart);
+      }
+
+// Generating method code for getOnmouseenter
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmouseenter()
+      {
+         return WObj.getOnmouseenter();
+      }
+
+// Generating method code for setOnmouseenter
+      public virtual void SetOnmouseenter(object onmouseenter)
+      {
+         WObj.setOnmouseenter(onmouseenter);
+      }
+
+// Generating method code for getOnmouseleave
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmouseleave()
+      {
+         return WObj.getOnmouseleave();
+      }
+
+// Generating method code for setOnmouseleave
+      public virtual void SetOnmouseleave(object onmouseleave)
+      {
+         WObj.setOnmouseleave(onmouseleave);
+      }
+
+// Generating method code for getOnmousewheel
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnmousewheel()
+      {
+         return WObj.getOnmousewheel();
+      }
+
+// Generating method code for setOnmousewheel
+      public virtual void SetOnmousewheel(object onmousewheel)
+      {
+         WObj.setOnmousewheel(onmousewheel);
+      }
+
+// Generating method code for getOnpause
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnpause()
+      {
+         return WObj.getOnpause();
+      }
+
+// Generating method code for setOnpause
+      public virtual void SetOnpause(object onpause)
+      {
+         WObj.setOnpause(onpause);
+      }
+
+// Generating method code for getOnplay
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnplay()
+      {
+         return WObj.getOnplay();
+      }
+
+// Generating method code for setOnplay
+      public virtual void SetOnplay(object onplay)
+      {
+         WObj.setOnplay(onplay);
+      }
+
+// Generating method code for getOnplaying
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnplaying()
+      {
+         return WObj.getOnplaying();
+      }
+
+// Generating method code for setOnplaying
+      public virtual void SetOnplaying(object onplaying)
+      {
+         WObj.setOnplaying(onplaying);
+      }
+
+// Generating method code for getOnprogress
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnprogress()
+      {
+         return WObj.getOnprogress();
+      }
+
+// Generating method code for setOnprogress
+      public virtual void SetOnprogress(object onprogress)
+      {
+         WObj.setOnprogress(onprogress);
+      }
+
+// Generating method code for getOnratechange
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnratechange()
+      {
+         return WObj.getOnratechange();
+      }
+
+// Generating method code for setOnratechange
+      public virtual void SetOnratechange(object onratechange)
+      {
+         WObj.setOnratechange(onratechange);
+      }
+
+// Generating method code for getOnreset
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnreset()
+      {
+         return WObj.getOnreset();
+      }
+
+// Generating method code for setOnreset
+      public virtual void SetOnreset(object onreset)
+      {
+         WObj.setOnreset(onreset);
+      }
+
+// Generating method code for getOnscroll
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnscroll()
+      {
+         return WObj.getOnscroll();
+      }
+
+// Generating method code for setOnscroll
+      public virtual void SetOnscroll(object onscroll)
+      {
+         WObj.setOnscroll(onscroll);
+      }
+
+// Generating method code for getOnseeked
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnseeked()
+      {
+         return WObj.getOnseeked();
+      }
+
+// Generating method code for setOnseeked
+      public virtual void SetOnseeked(object onseeked)
+      {
+         WObj.setOnseeked(onseeked);
+      }
+
+// Generating method code for getOnseeking
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnseeking()
+      {
+         return WObj.getOnseeking();
+      }
+
+// Generating method code for setOnseeking
+      public virtual void SetOnseeking(object onseeking)
+      {
+         WObj.setOnseeking(onseeking);
+      }
+
+// Generating method code for getOnselect
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnselect()
+      {
+         return WObj.getOnselect();
+      }
+
+// Generating method code for setOnselect
+      public virtual void SetOnselect(object onselect)
+      {
+         WObj.setOnselect(onselect);
+      }
+
+// Generating method code for getOnshow
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Function GetOnshow()
+      {
+         return WObj.getOnshow();
+      }
+
+// Generating method code for setOnshow
+      public virtual void SetOnshow(object onshow)
+      {
+         WObj.setOnshow(onshow);
       }
 
    }

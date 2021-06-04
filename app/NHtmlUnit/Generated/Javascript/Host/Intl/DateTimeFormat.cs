@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -25,6 +25,18 @@ namespace NHtmlUnit.Javascript.Host.Intl
 
       public DateTimeFormat()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.intl.DateTimeFormat()) {}
+
+// Generating method code for format
+      public virtual string Format(object objectArg)
+      {
+         return WObj.format(objectArg);
+      }
+
+// Generating method code for resolvedOptions
+      public virtual net.sourceforge.htmlunit.corejs.javascript.Scriptable ResolvedOptions()
+      {
+         return WObj.resolvedOptions();
+      }
 
    }
 

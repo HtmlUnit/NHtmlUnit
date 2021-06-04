@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlTemplate : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class HtmlTemplate : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static HtmlTemplate()
       {
@@ -21,6 +21,16 @@ namespace NHtmlUnit.Html
       public new com.gargoylesoftware.htmlunit.html.HtmlTemplate WObj
       {
          get { return (com.gargoylesoftware.htmlunit.html.HtmlTemplate)WrappedObject; }
+      }
+
+
+      public NHtmlUnit.Html.DomDocumentFragment Content
+      {
+         get
+         {
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomDocumentFragment>(
+               WObj.getContent());
+         }
       }
 
    }

@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -47,14 +47,12 @@ namespace NHtmlUnit.Activex.Javascript.Msxml
             return WObj.getName();
          }
       }
-
-      public System.Boolean Specified
+// Generating method code for isSpecified
+      public virtual bool IsSpecified()
       {
-         get
-         {
-            return WObj.getSpecified();
-         }
+         return WObj.isSpecified();
       }
+
 // Generating method code for detachFromParent
       public virtual void DetachFromParent()
       {

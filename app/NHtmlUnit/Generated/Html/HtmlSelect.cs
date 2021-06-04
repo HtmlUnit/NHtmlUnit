@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class HtmlSelect : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
+   public partial class HtmlSelect : NHtmlUnit.Html.HtmlElement, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.Html.IDisabledElement, NHtmlUnit.Html.ISubmittableElement, NHtmlUnit.Html.ILabelableElement, NHtmlUnit.Html.IFormFieldWithNameHistory
    {
       static HtmlSelect()
       {
@@ -23,19 +23,6 @@ namespace NHtmlUnit.Html
          get { return (com.gargoylesoftware.htmlunit.html.HtmlSelect)WrappedObject; }
       }
 
-
-      public System.Int32 OptionSize
-      {
-         get
-         {
-            return WObj.getOptionSize();
-         }
-         set
-         {
-            WObj.setOptionSize(value);
-         }
-
-      }
 
       public System.String NameAttribute
       {
@@ -71,6 +58,19 @@ namespace NHtmlUnit.Html
          }
        }
 
+      public System.Int32 OptionSize
+      {
+         get
+         {
+            return WObj.getOptionSize();
+         }
+         set
+         {
+            WObj.setOptionSize(value);
+         }
+
+      }
+
       public System.Int32 SelectedIndex
       {
          get
@@ -84,11 +84,11 @@ namespace NHtmlUnit.Html
 
       }
 
-      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitKeyValuePairs
+      public com.gargoylesoftware.htmlunit.util.NameValuePair[] SubmitNameValuePairs
       {
          get
          {
-            return WObj.getSubmitKeyValuePairs();
+            return WObj.getSubmitNameValuePairs();
          }
       }
 
@@ -169,16 +169,10 @@ namespace NHtmlUnit.Html
                WObj.getNewNames());
          }
        }
-// Generating method code for isMultipleSelectEnabled
-      public virtual bool IsMultipleSelectEnabled()
-      {
-         return WObj.isMultipleSelectEnabled();
-      }
-
 // Generating method code for setSelectedAttribute
-      public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected, bool invokeOnFocus)
+      public virtual NHtmlUnit.IPage SetSelectedAttribute(NHtmlUnit.Html.HtmlOption selectedOption, bool isSelected, bool invokeOnFocus, bool shiftKey, bool ctrlKey, bool isClick)
       {
-         var arg = WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus);
+         var arg = WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected, invokeOnFocus, shiftKey, ctrlKey, isClick);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
@@ -187,6 +181,12 @@ namespace NHtmlUnit.Html
       {
          var arg = WObj.setSelectedAttribute((com.gargoylesoftware.htmlunit.html.HtmlOption)selectedOption.WrappedObject, isSelected);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+      }
+
+// Generating method code for isMultipleSelectEnabled
+      public virtual bool IsMultipleSelectEnabled()
+      {
+         return WObj.isMultipleSelectEnabled();
       }
 
 // Generating method code for ensureSelectedIndex

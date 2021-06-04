@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -23,8 +23,8 @@ namespace NHtmlUnit.Javascript.Host.Dom
          get { return (com.gargoylesoftware.htmlunit.javascript.host.dom.MediaList)WrappedObject; }
       }
 
-      public MediaList(NHtmlUnit.Javascript.Host.Css.CSSStyleSheet parent, NHtmlUnit.W3C.Dom.Stylesheets.IMediaList wrappedList)
-         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.MediaList((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet)parent.WrappedObject, (org.w3c.dom.stylesheets.MediaList)wrappedList.WrappedObject)) {}
+      public MediaList(NHtmlUnit.Javascript.Host.Css.CSSStyleSheet parent, com.gargoylesoftware.css.dom.MediaListImpl wrappedList)
+         : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.MediaList((com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet)parent.WrappedObject, wrappedList)) {}
 
       public MediaList()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.dom.MediaList()) {}

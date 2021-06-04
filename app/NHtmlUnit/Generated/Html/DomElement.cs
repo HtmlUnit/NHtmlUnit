@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NHtmlUnit.Html
 {
-   public partial class DomElement : NHtmlUnit.Html.DomNamespaceNode, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement, NHtmlUnit.W3C.Dom.IElementTraversal
+   public partial class DomElement : NHtmlUnit.Html.DomNamespaceNode, NHtmlUnit.W3C.Dom.INode, NHtmlUnit.W3C.Dom.IElement
    {
       static DomElement()
       {
@@ -33,6 +33,11 @@ namespace NHtmlUnit.Html
          {
             return WObj.getId();
          }
+         set
+         {
+            WObj.setId(value);
+         }
+
       }
 
       public java.util.Map AttributesMap
@@ -40,6 +45,14 @@ namespace NHtmlUnit.Html
          get
          {
             return WObj.getAttributesMap();
+         }
+      }
+
+      public java.util.Map StyleMap
+      {
+         get
+         {
+            return WObj.getStyleMap();
          }
       }
 
@@ -60,32 +73,12 @@ namespace NHtmlUnit.Html
          }
        }
 
-      public NHtmlUnit.Html.DomElement NextElementSibling
+      public NHtmlUnit.W3C.Dom.ITypeInfo SchemaTypeInfo
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
-               WObj.getNextElementSibling());
-         }
-      }
-
-
-      public NHtmlUnit.Html.DomElement PreviousElementSibling
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
-               WObj.getPreviousElementSibling());
-         }
-      }
-
-
-      public NHtmlUnit.Html.DomElement LastElementChild
-      {
-         get
-         {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
-               WObj.getLastElementChild());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.ITypeInfo>(
+               WObj.getSchemaTypeInfo());
          }
       }
 
@@ -100,12 +93,12 @@ namespace NHtmlUnit.Html
       }
 
 
-      public NHtmlUnit.W3C.Dom.ITypeInfo SchemaTypeInfo
+      public NHtmlUnit.Html.DomElement LastElementChild
       {
          get
          {
-            return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.ITypeInfo>(
-               WObj.getSchemaTypeInfo());
+            return ObjectWrapper.CreateWrapper<NHtmlUnit.Html.DomElement>(
+               WObj.getLastElementChild());
          }
       }
 
@@ -121,6 +114,12 @@ namespace NHtmlUnit.Html
       public virtual string GetAttribute(string attributeName)
       {
          return WObj.getAttribute(attributeName);
+      }
+
+// Generating method code for getAttributeDirect
+      public virtual string GetAttributeDirect(string attributeName)
+      {
+         return WObj.getAttributeDirect(attributeName);
       }
 
 // Generating method code for removeAttribute
@@ -142,6 +141,18 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.W3C.Dom.IAttr>(arg);
       }
 
+// Generating method code for removeStyleAttribute
+      public virtual string RemoveStyleAttribute(string name)
+      {
+         return WObj.removeStyleAttribute(name);
+      }
+
+// Generating method code for writeStyleToElement
+      public virtual void WriteStyleToElement(java.util.Map styleMap)
+      {
+         WObj.writeStyleToElement(styleMap);
+      }
+
 // Generating method code for setAttributeNS
       public virtual void SetAttributeNS(string namespaceURI, string qualifiedName, string attributeValue)
       {
@@ -155,11 +166,31 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
+// Generating method code for click
+      public virtual NHtmlUnit.IPage Click(bool shiftKey, bool ctrlKey, bool altKey, bool triggerMouseEvents)
+      {
+         var arg = WObj.click(shiftKey, ctrlKey, altKey, triggerMouseEvents);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+      }
+
+// Generating method code for click
+      public virtual NHtmlUnit.IPage Click(bool shiftKey, bool ctrlKey, bool altKey, bool triggerMouseEvents, bool ignoreVisibility, bool disableProcessLabelAfterBubbling)
+      {
+         var arg = WObj.click(shiftKey, ctrlKey, altKey, triggerMouseEvents, ignoreVisibility, disableProcessLabelAfterBubbling);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+      }
+
 // Generating method code for mouseDown
       public virtual NHtmlUnit.IPage MouseDown(bool shiftKey, bool ctrlKey, bool altKey, int button)
       {
          var arg = WObj.mouseDown(shiftKey, ctrlKey, altKey, button);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
+      }
+
+// Generating method code for focus
+      public virtual void Focus()
+      {
+         WObj.focus();
       }
 
 // Generating method code for mouseUp
@@ -170,9 +201,9 @@ namespace NHtmlUnit.Html
       }
 
 // Generating method code for click
-      public virtual NHtmlUnit.IPage Click(NHtmlUnit.Javascript.Host.Events.Event eventArg)
+      public virtual NHtmlUnit.IPage Click(NHtmlUnit.Javascript.Host.Events.Event eventArg, bool shiftKey, bool ctrlKey, bool altKey, bool ignoreVisibility)
       {
-         var arg = WObj.click((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject);
+         var arg = WObj.click((com.gargoylesoftware.htmlunit.javascript.host.@event.Event)eventArg.WrappedObject, shiftKey, ctrlKey, altKey, ignoreVisibility);
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
@@ -218,6 +249,12 @@ namespace NHtmlUnit.Html
          return ObjectWrapper.CreateWrapper<NHtmlUnit.IPage>(arg);
       }
 
+// Generating method code for isMouseOver
+      public virtual bool IsMouseOver()
+      {
+         return WObj.isMouseOver();
+      }
+
 // Generating method code for getElementsByTagNameNS
       public virtual IList<NHtmlUnit.W3C.Dom.INode> GetElementsByTagNameNS(string namespaceArg, string localName)
       {
@@ -250,6 +287,26 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagNam
       public virtual bool HasAttribute(string attributeName)
       {
          return WObj.hasAttribute(attributeName);
+      }
+
+// Generating method code for replaceStyleAttribute
+      public virtual void ReplaceStyleAttribute(string name, string value, string priority)
+      {
+         WObj.replaceStyleAttribute(name, value, priority);
+      }
+
+// Generating method code for getStyleElement
+      public virtual NHtmlUnit.Css.StyleElement GetStyleElement(string name)
+      {
+         var arg = WObj.getStyleElement(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Css.StyleElement>(arg);
+      }
+
+// Generating method code for getStyleElementCaseInSensitive
+      public virtual NHtmlUnit.Css.StyleElement GetStyleElementCaseInSensitive(string name)
+      {
+         var arg = WObj.getStyleElementCaseInSensitive(name);
+         return ObjectWrapper.CreateWrapper<NHtmlUnit.Css.StyleElement>(arg);
       }
 
 // Generating method code for removeAttributeNS
@@ -365,12 +422,6 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagNam
          return ObjectWrapper.CreateWrapper<NHtmlUnit.ScriptResult>(arg);
       }
 
-// Generating method code for focus
-      public virtual void Focus()
-      {
-         WObj.focus();
-      }
-
 // Generating method code for blur
       public virtual void Blur()
       {
@@ -381,6 +432,12 @@ return new ListWrapper<NHtmlUnit.W3C.Dom.INode>(WObj.getElementsByTagName(tagNam
       public virtual void RemoveFocus()
       {
          WObj.removeFocus();
+      }
+
+// Generating method code for matches
+      public virtual bool Matches(string selectorString)
+      {
+         return WObj.matches(selectorString);
       }
 
    }

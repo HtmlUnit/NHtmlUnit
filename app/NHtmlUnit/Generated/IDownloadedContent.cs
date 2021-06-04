@@ -1,5 +1,5 @@
 // Wrapper for com.gargoylesoftware.htmlunit.DownloadedContent
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -18,6 +18,8 @@ namespace NHtmlUnit
       void CleanUp();
 // Generating method code for isEmpty
       bool IsEmpty();
+// Generating method code for length
+      System.Int64 Length();
 
    }
 }

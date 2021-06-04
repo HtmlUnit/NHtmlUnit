@@ -1,4 +1,4 @@
-// Generated class v2.19.0.0, don't modify
+// Generated class v2.50.0.0, don't modify
 
 using System;
 using System.Collections.Generic;
@@ -26,22 +26,23 @@ namespace NHtmlUnit.Javascript.Host
       public External()
          : this(new com.gargoylesoftware.htmlunit.javascript.host.External()) {}
 
-// Generating method code for AutoCompleteSaveForm
+// Generating method code for autoCompleteSaveForm
       public virtual void AutoCompleteSaveForm()
       {
-         WObj.AutoCompleteSaveForm();
+         WObj.autoCompleteSaveForm();
       }
 
-// Generating method code for AddSearchProvider
+// Generating method code for addSearchProvider
       public virtual void AddSearchProvider()
       {
-         WObj.AddSearchProvider();
+         WObj.addSearchProvider();
       }
 
-// Generating method code for IsSearchProviderInstalled
-      public virtual int IsSearchProviderInstalled()
+// Generating method code for isSearchProviderInstalled
+      public virtual object IsSearchProviderInstalled()
       {
-         return WObj.IsSearchProviderInstalled();
+         var arg = WObj.isSearchProviderInstalled();
+         return ObjectWrapper.CreateWrapper<object>(arg);
       }
 
    }
