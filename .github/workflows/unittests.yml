@@ -1,4 +1,4 @@
-name: .NET
+name: Unit Tests
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  tests:
+  runalltests:
 
     runs-on: windows-latest
 
