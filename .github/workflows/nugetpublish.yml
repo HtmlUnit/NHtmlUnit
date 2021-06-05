@@ -26,4 +26,4 @@ jobs:
       run: nuget pack NHtmlUnit.nuspec
 
     - name: Publish To NuGet.org
-      run: nuget push *.nupkg -Source nuget.org -ApiKey ${{ secrets.NuGet_APIKey }}
+      run: nuget push *.nupkg -Source nuget.org -ApiKey ${{ secrets.NUGET_API_KEY }}
