@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Build
 
 on:
   push:
@@ -7,24 +7,41 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-
+  build:
     runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
-    
+      with:
+        fetch-depth: 0
+
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
-  
+
     - name: Setup NuGet.exe
       uses: NuGet/setup-nuget@v1.0.5
-      
+
     - name: Restore NuGet packages
       run: nuget restore NHtmlUnit.sln
-      
+
+    - uses: gittools/actions/gitversion/setup@v0.9.9
+      with:
+        versionSpec: '5.x.x'
+
+    - uses: gittools/actions/gitversion/execute@v0.9.9
+      id: gitversion # step id used as reference for output values
+      with:
+        updateAssemblyInfo: true
+
     - name: Build Solution
       run: msbuild NHtmlUnit.sln
-      
+
     - name: Test Solution
       run: packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe tests\IntegrationTests\bin\x64\Debug\IntegrationTests.dll
+
+    - name: Create NuGet Package
+      run: nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release -Version ${{ steps.gitversion.outputs.nuGetVersion }}
+
+    - name: Publish To NuGet.org
+      if: startsWith(github.ref, 'refs/tags/') # Only publish tagged commits
+      run: nuget push *.nupkg -Source nuget.org -ApiKey ${{ secrets.NUGET_API_KEY }}
