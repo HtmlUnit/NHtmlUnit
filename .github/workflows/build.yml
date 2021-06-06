@@ -34,10 +34,10 @@ jobs:
         updateAssemblyInfo: true
 
     - name: Build Solution
-      run: msbuild NHtmlUnit.sln
+      run: msbuild NHtmlUnit.sln /property:Configuration=Release
 
     - name: Test Solution
-      run: packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe tests\IntegrationTests\bin\x64\Debug\IntegrationTests.dll
+      run: packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe tests\IntegrationTests\bin\x64\Release\IntegrationTests.dll
 
     - name: Create NuGet Package
       run: nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release -Version ${{ steps.gitversion.outputs.nuGetVersion }}
