@@ -60,6 +60,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: '*.nupgk'
+        allow_override: true
 
   publish:
     runs-on: ubuntu-latest
