@@ -44,9 +44,10 @@ jobs:
         name: NHtmlUnit.nupkg
         path: '*.nupkg'
 
-  publish:
+  release:
     runs-on: ubuntu-latest
     needs: build
+    if: startsWith(github.ref, 'refs/tags/') # Only release tagged commits
 
     steps:
     - uses: actions/download-artifact@v2
@@ -58,6 +59,15 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: '*.nupgk'
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: NHtmlUnit.nupkg
 
     - uses: NuGet/setup-nuget@v1.0.5
 
