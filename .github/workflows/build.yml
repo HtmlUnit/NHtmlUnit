@@ -22,11 +22,11 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore NHtmlUnit.sln
 
-    - uses: gittools/actions/gitversion/setup@v0.9.9
+    - uses: gittools/actions/gitversion/setup@v0.9.10
       with:
         versionSpec: '5.x.x'
 
-    - uses: gittools/actions/gitversion/execute@v0.9.9
+    - uses: gittools/actions/gitversion/execute@v0.9.10
       id: gitversion # step id used as reference for output values
       with:
         updateAssemblyInfo: true
