@@ -59,7 +59,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
     <PackageReference Include="IKVM" Version="8.2.1" />
-    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.2.220602">
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.336902">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
