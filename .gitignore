@@ -16,3 +16,6 @@
 /tools/.DS_Store
 /*.tss
 /TestResult.xml
+
+# JetBrains Rider
+.idea
