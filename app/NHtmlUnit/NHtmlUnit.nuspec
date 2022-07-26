@@ -15,6 +15,6 @@
     <tags>testing htmlunit nhtmlunit headless browser</tags>
   </metadata>
   <files>
-    <file src="bin\Release\HtmlUnit.dll" target="lib/net45" />
+    <file src="bin\Release\HtmlUnit.dll" target="lib/net6.0" />
   </files>
 </package>
