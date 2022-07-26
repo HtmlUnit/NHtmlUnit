@@ -32,6 +32,8 @@ jobs:
 
       - run: dotnet restore
 
+      - run: dotnet run --configuration Release --no-restore --project app/NHtmlUnitGenerator/NHtmlUnit.Generator.csproj
+
       - run: dotnet build --configuration Release --no-restore
 
       - run: dotnet test --project tests/IntegrationTests/IntegrationTests.csproj --configuration Release --no-build --no-restore -p:CollectCoverage=true -p:CoverletOutputFormat=opencover -p:Exclude="[NHtmlUnit.Test*]*"
