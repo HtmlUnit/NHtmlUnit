@@ -6,7 +6,7 @@
     <title>NHtmlUnit</title>
     <authors>OKB AS</authors>
     <owners>OKB AS</owners>
-	<license type="expression">Apache-2.0</license>
+    <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/HtmlUnit/NHtmlUnit</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NHtmlUnit is a .NET wrapper of HtmlUnit; a "GUI-less browser for Java programs". It allows you to write code to test web applications with a headless, automated browser.</description>
@@ -14,13 +14,13 @@
     <copyright>Copyright © OKB AS 2021</copyright>
     <tags>testing htmlunit nhtmlunit headless browser</tags>
     <dependencies>
-		<dependency id="IKVM" version="8.1.5717" />
+      <dependency id="IKVM" version="8.2.1" />
     </dependencies>
     <frameworkAssemblies />
     <references />
   </metadata>
   <files>
-    <file src="app\NHtmlUnit\bin\Release\HtmlUnit.dll" target="lib/net45" />
-    <file src="app\NHtmlUnit\bin\Release\NHtmlUnit.dll" target="lib/net45" />
+    <file src="app\NHtmlUnit\bin\Release\HtmlUnit.dll" target="lib/net6.0" />
+    <file src="app\NHtmlUnit\bin\Release\NHtmlUnit.dll" target="lib/net6.0" />
   </files>
 </package>

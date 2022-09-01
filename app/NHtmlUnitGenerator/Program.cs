@@ -2,7 +2,7 @@
 
 // --------------------------------------------------
 // Copyright © 2003-2011 OKB. All Rights Reserved.
-// 
+//
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
 // --------------------------------------------------
@@ -10,6 +10,7 @@
 #endregion
 
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -41,12 +42,9 @@ namespace NHtmlUnit.Generator
             return dict;
         }
 
-
-        private static void Main(string[] args)
+        private static void GenerateWrapper()
         {
-            // Console.WriteLine("App config path: " + Settings.Default);
-
-            Type webClientType = typeof(WebClient);
+          Type webClientType = typeof(WebClient);
             var wrapperRep = new WrapperRepository(typeof(HtmlPage).Assembly);
             //GetJavaPropsFromType(webClientType);
             //GetJavaPropsFromType(typeof(HtmlPage));
@@ -74,6 +72,20 @@ namespace NHtmlUnit.Generator
             Console.WriteLine("Done! Press any key to exit.");
 
             Console.ReadKey();
+        }
+
+        private static Assembly AssemblyResolveEventHandler(object sender, ResolveEventArgs args)
+        {
+            Console.Error.WriteLine($"ERROR! '{args.RequestingAssembly}' failed to load '{args.Name}'.");
+            return null;
+        }
+
+        private static void Main(string[] args)
+        {
+            // Console.WriteLine("App config path: " + Settings.Default);
+
+            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(AssemblyResolveEventHandler);
+            GenerateWrapper();
         }
     }
 }

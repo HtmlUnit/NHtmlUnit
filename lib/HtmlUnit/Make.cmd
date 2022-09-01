@@ -10,7 +10,7 @@ echo.
 echo.
 
 set JAVAC="C:\Program Files\Java\jdk1.8.0_291\bin\javac.exe"
-set IKVM=..\..\tools\ikvm-8.1.5717.0\bin
+set IKVM=..\..\tools\ikvm-8.2.1.0\bin
 set IKVMC="%IKVM%\ikvmc.exe"
 set IKVMSTUB="%IKVM%\ikvmstub.exe"
 

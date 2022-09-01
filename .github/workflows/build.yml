@@ -1,49 +1,51 @@
-name: Build
+name: build
 
-on:
-  push:
-    tags: ['*']
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: windows-latest
-
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+    env:
+      NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
     steps:
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-    - uses: microsoft/setup-msbuild@v1
-    - uses: NuGet/setup-nuget@v1.0.7
+      - uses: gittools/actions/gitversion/setup@v0.9.13
+        with:
+          versionSpec: '5.x'
 
-    - name: Restore NuGet packages
-      run: nuget restore NHtmlUnit.sln
+      - uses: gittools/actions/gitversion/execute@v0.9.13
+        id: gitversion
+        with:
+          updateAssemblyInfo: true
 
-    - uses: gittools/actions/gitversion/setup@v0.9.13
-      with:
-        versionSpec: '5.x.x'
+      - uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: ${{ runner.os }}-nuget-
 
-    - uses: gittools/actions/gitversion/execute@v0.9.13
-      id: gitversion # step id used as reference for output values
-      with:
-        updateAssemblyInfo: true
+      - run: dotnet restore
 
-    - name: Build Solution
-      run: msbuild NHtmlUnit.sln /property:Configuration=Release
+      - run: dotnet run --configuration Release --no-restore --project app/NHtmlUnitGenerator/NHtmlUnit.Generator.csproj
 
-    - name: Test Solution
-      run: packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe tests\IntegrationTests\bin\Release\IntegrationTests.dll
+      - run: dotnet build --configuration Release --no-restore
 
-    - name: Create NuGet Package
-      run: nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release -Version ${{ steps.gitversion.outputs.nuGetVersion }}
+      - run: dotnet test --project tests/IntegrationTests/IntegrationTests.csproj --configuration Release --no-build --no-restore -p:CollectCoverage=true -p:CoverletOutputFormat=opencover -p:Exclude="[NHtmlUnit.Test*]*"
 
-    - uses: actions/upload-artifact@v3
-      with:
-        name: NHtmlUnit.nupkg
-        path: '*.nupkg'
+      - uses: codecov/codecov-action@v2
+
+      - run: dotnet pack --include-source --configuration Release --no-build --no-restore -p:PackageVersion="${{ steps.gitversion.outputs.fullSemVer }}" app/NHtmlUnit/NHtmlUnit.csproj --output ${{ github.workspace }}/nugets/
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: NHtmlUnit.nupkg
+          path: ${{ github.workspace }}/nugets/*.nupkg
 
   release:
     runs-on: ubuntu-latest
