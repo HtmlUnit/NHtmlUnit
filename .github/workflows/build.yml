@@ -51,7 +51,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/') # Only release tagged commits
 
     steps:
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: NHtmlUnit.nupkg
 
@@ -68,7 +68,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/') # Only publish tagged commits
 
     steps:
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: NHtmlUnit.nupkg
 
