@@ -58,7 +58,7 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-    <PackageReference Include="IKVM" Version="8.1.5717.0" />
+    <PackageReference Include="IKVM" Version="8.2.1" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.2.220602">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
