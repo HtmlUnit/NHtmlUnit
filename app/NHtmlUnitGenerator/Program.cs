@@ -74,28 +74,18 @@ namespace NHtmlUnit.Generator
             Console.ReadKey();
         }
 
+        private static Assembly AssemblyResolveEventHandler(object sender, ResolveEventArgs args)
+        {
+            Console.Error.WriteLine($"ERROR! '{args.RequestingAssembly}' failed to load '{args.Name}'.");
+            return null;
+        }
 
         private static void Main(string[] args)
         {
             // Console.WriteLine("App config path: " + Settings.Default);
 
-            try
-            {
-                GenerateWrapper();
-            }
-            catch (FileNotFoundException e)
-            {
-                Console.Error.WriteLine("ERROR!");
-                Console.Error.WriteLine("ERROR! Fusion Log:");
-                Console.Error.WriteLine(e.FusionLog);
-                Console.Error.WriteLine("ERROR!");
-                Console.Error.WriteLine("ERROR! Inner Exception:");
-                Console.Error.WriteLine(e.InnerException);
-                Console.Error.WriteLine("ERROR!");
-                Console.Error.WriteLine("ERROR! FileNotFoundException:");
-                Console.Error.WriteLine(e);
-                throw;
-            }
+            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(AssemblyResolveEventHandler);
+            GenerateWrapper();
         }
     }
 }
