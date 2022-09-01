@@ -2,7 +2,7 @@
 
 // --------------------------------------------------
 // Copyright © 2003-2011 OKB. All Rights Reserved.
-// 
+//
 // This software is proprietary information of OKB.
 // USE IS SUBJECT TO LICENSE TERMS.
 // --------------------------------------------------
@@ -10,6 +10,7 @@
 #endregion
 
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -41,12 +42,9 @@ namespace NHtmlUnit.Generator
             return dict;
         }
 
-
-        private static void Main(string[] args)
+        private static void GenerateWrapper()
         {
-            // Console.WriteLine("App config path: " + Settings.Default);
-
-            Type webClientType = typeof(WebClient);
+          Type webClientType = typeof(WebClient);
             var wrapperRep = new WrapperRepository(typeof(HtmlPage).Assembly);
             //GetJavaPropsFromType(webClientType);
             //GetJavaPropsFromType(typeof(HtmlPage));
@@ -74,6 +72,23 @@ namespace NHtmlUnit.Generator
             Console.WriteLine("Done! Press any key to exit.");
 
             Console.ReadKey();
+        }
+
+
+        private static void Main(string[] args)
+        {
+            // Console.WriteLine("App config path: " + Settings.Default);
+
+            try
+            {
+                GenerateWrapper();
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.Error.WriteLine(e.FusionLog);
+                Console.Error.WriteLine(e);
+                throw;
+            }
         }
     }
 }
