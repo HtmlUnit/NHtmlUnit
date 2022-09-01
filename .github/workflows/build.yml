@@ -40,7 +40,7 @@ jobs:
     - name: Create NuGet Package
       run: nuget.exe pack NHtmlUnit.nuspec -Verbosity detailed -Symbols -Properties Configuration=Release -Version ${{ steps.gitversion.outputs.nuGetVersion }}
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: NHtmlUnit.nupkg
         path: '*.nupkg'
