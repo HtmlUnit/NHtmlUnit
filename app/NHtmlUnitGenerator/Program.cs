@@ -85,7 +85,14 @@ namespace NHtmlUnit.Generator
             }
             catch (FileNotFoundException e)
             {
+                Console.Error.WriteLine("ERROR!");
+                Console.Error.WriteLine("ERROR! Fusion Log:");
                 Console.Error.WriteLine(e.FusionLog);
+                Console.Error.WriteLine("ERROR!");
+                Console.Error.WriteLine("ERROR! Inner Exception:");
+                Console.Error.WriteLine(e.InnerException);
+                Console.Error.WriteLine("ERROR!");
+                Console.Error.WriteLine("ERROR! FileNotFoundException:");
                 Console.Error.WriteLine(e);
                 throw;
             }
