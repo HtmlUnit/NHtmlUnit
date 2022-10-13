@@ -17,7 +17,7 @@ jobs:
         fetch-depth: 0
 
     - uses: microsoft/setup-msbuild@v1
-    - uses: NuGet/setup-nuget@v1.0.7
+    - uses: NuGet/setup-nuget@v1.1.1
 
     - name: Restore NuGet packages
       run: nuget restore NHtmlUnit.sln
@@ -72,7 +72,7 @@ jobs:
       with:
         name: NHtmlUnit.nupkg
 
-    - uses: NuGet/setup-nuget@v1.0.7
+    - uses: NuGet/setup-nuget@v1.1.1
 
     - name: Publish To NuGet.org
       run: nuget push *.nupkg -Source nuget.org -ApiKey ${{ secrets.NUGET_API_KEY }}
